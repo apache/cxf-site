@@ -1,0 +1,529 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+AbstractConfigurableProvider (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AbstractConfigurableProvider (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractConfigurableProvider.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractCachingMessageProvider.html" title="class in org.apache.cxf.jaxrs.provider"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html" title="class in org.apache.cxf.jaxrs.provider"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractConfigurableProvider.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.jaxrs.provider</FONT>
+<BR>
+Class AbstractConfigurableProvider</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.jaxrs.provider.AbstractConfigurableProvider</B>
+</PRE>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractCachingMessageProvider.html" title="class in org.apache.cxf.jaxrs.provider">AbstractCachingMessageProvider</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html" title="class in org.apache.cxf.jaxrs.provider">AbstractJAXBProvider</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/atom/AtomPojoProvider.html" title="class in org.apache.cxf.jaxrs.provider.atom">AtomPojoProvider</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/BinaryDataProvider.html" title="class in org.apache.cxf.jaxrs.provider">BinaryDataProvider</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/dom4j/DOM4JProvider.html" title="class in org.apache.cxf.jaxrs.provider.dom4j">DOM4JProvider</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/MultipartProvider.html" title="class in org.apache.cxf.jaxrs.provider">MultipartProvider</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/RequestDispatcherProvider.html" title="class in org.apache.cxf.jaxrs.provider">RequestDispatcherProvider</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/SourceProvider.html" title="class in org.apache.cxf.jaxrs.provider">SourceProvider</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/xmlbeans/XMLBeansElementProvider.html" title="class in org.apache.cxf.jaxrs.provider.xmlbeans">XMLBeansElementProvider</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>AbstractConfigurableProvider</B><DT>extends <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#AbstractConfigurableProvider()">AbstractConfigurableProvider</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#getBus()">getBus</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the Bus.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#getConsumeMediaTypes()">getConsumeMediaTypes</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the custom Consumes media types</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#getEnableBuffering()">getEnableBuffering</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the buffering mode</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#getEnableStreaming()">getEnableStreaming</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the streaming mode</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#getProduceMediaTypes()">getProduceMediaTypes</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the custom Produces media types</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#init(java.util.List)">init</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/jaxrs/model/ClassResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">ClassResourceInfo</A>&gt;&nbsp;resources)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gives providers a chance to introspect the JAX-RS model classes.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#isPayloadEmpty(javax.ws.rs.core.HttpHeaders)">isPayloadEmpty</A></B>(javax.ws.rs.core.HttpHeaders&nbsp;headers)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#isPayloadEmpty(javax.ws.rs.core.MultivaluedMap)">isPayloadEmpty</A></B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;headers)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#setBus(org.apache.cxf.Bus)">setBus</A></B>(<A HREF="../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the Bus</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#setConsumeMediaTypes(java.util.List)">setConsumeMediaTypes</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;types)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets custom Consumes media types; can be used to override static
+ <CODE>Consumes</CODE> annotation value set on the provider.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#setEnableBuffering(boolean)">setEnableBuffering</A></B>(boolean&nbsp;enableBuf)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enables the buffering mode.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#setEnableStreaming(boolean)">setEnableStreaming</A></B>(boolean&nbsp;enableStream)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enables the support for streaming.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#setProduceMediaTypes(java.util.List)">setProduceMediaTypes</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;types)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets custom Produces media types; can be used to override static
+ <CODE>Produces</CODE> annotation value set on the provider.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="AbstractConfigurableProvider()"><!-- --></A><H3>
+AbstractConfigurableProvider</H3>
+<PRE>
+public <B>AbstractConfigurableProvider</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="setBus(org.apache.cxf.Bus)"><!-- --></A><H3>
+setBus</H3>
+<PRE>
+public void <B>setBus</B>(<A HREF="../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b)</PRE>
+<DL>
+<DD>Sets the Bus
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>b</CODE> - </DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBus()"><!-- --></A><H3>
+getBus</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A> <B>getBus</B>()</PRE>
+<DL>
+<DD>Gets the Bus. 
+ Providers may use the bus to resolve resource references.
+ Example:
+ ResourceUtils.getResourceStream(reference, this.getBus())
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setConsumeMediaTypes(java.util.List)"><!-- --></A><H3>
+setConsumeMediaTypes</H3>
+<PRE>
+public void <B>setConsumeMediaTypes</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;types)</PRE>
+<DL>
+<DD>Sets custom Consumes media types; can be used to override static
+ <CODE>Consumes</CODE> annotation value set on the provider.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>types</CODE> - the media types</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getConsumeMediaTypes()"><!-- --></A><H3>
+getConsumeMediaTypes</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>getConsumeMediaTypes</B>()</PRE>
+<DL>
+<DD>Gets the custom Consumes media types
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>media types</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setProduceMediaTypes(java.util.List)"><!-- --></A><H3>
+setProduceMediaTypes</H3>
+<PRE>
+public void <B>setProduceMediaTypes</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;types)</PRE>
+<DL>
+<DD>Sets custom Produces media types; can be used to override static
+ <CODE>Produces</CODE> annotation value set on the provider.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>types</CODE> - the media types</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getProduceMediaTypes()"><!-- --></A><H3>
+getProduceMediaTypes</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>getProduceMediaTypes</B>()</PRE>
+<DL>
+<DD>Gets the custom Produces media types
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>media types</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEnableBuffering(boolean)"><!-- --></A><H3>
+setEnableBuffering</H3>
+<PRE>
+public void <B>setEnableBuffering</B>(boolean&nbsp;enableBuf)</PRE>
+<DL>
+<DD>Enables the buffering mode. If set to true then the runtime will ensure
+ that the provider writes to a cached stream.
+  
+ For example, the JAXB marshalling process may fail after the initial XML
+ tags have already been written out to the HTTP output stream. Enabling
+ the buffering ensures no incomplete payloads are sent back to clients
+ in case of marshalling errors at the cost of the initial buffering - which
+ might be negligible for small payloads.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>enableBuf</CODE> - the value of the buffering mode, false is default.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEnableBuffering()"><!-- --></A><H3>
+getEnableBuffering</H3>
+<PRE>
+public boolean <B>getEnableBuffering</B>()</PRE>
+<DL>
+<DD>Gets the value of the buffering mode
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if the buffering is enabled</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEnableStreaming(boolean)"><!-- --></A><H3>
+setEnableStreaming</H3>
+<PRE>
+public void <B>setEnableStreaming</B>(boolean&nbsp;enableStream)</PRE>
+<DL>
+<DD>Enables the support for streaming. XML-aware providers which prefer 
+ writing to Stax XMLStreamWriter can set this value to true. Additionally,
+ if the streaming and the buffering modes are enabled, the runtime will
+ ensure the XMLStreamWriter events are cached properly.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>enableStream</CODE> - the value of the streaming mode, false is default.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEnableStreaming()"><!-- --></A><H3>
+getEnableStreaming</H3>
+<PRE>
+public boolean <B>getEnableStreaming</B>()</PRE>
+<DL>
+<DD>Gets the value of the streaming mode
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>true if the streaming is enabled</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="init(java.util.List)"><!-- --></A><H3>
+init</H3>
+<PRE>
+public void <B>init</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/jaxrs/model/ClassResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">ClassResourceInfo</A>&gt;&nbsp;resources)</PRE>
+<DL>
+<DD>Gives providers a chance to introspect the JAX-RS model classes.
+ For example, the JAXB provider may use the model classes to create
+ a single composite JAXBContext supporting all the JAXB-annotated 
+ root resource classes/types.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>resources</CODE> - </DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isPayloadEmpty(javax.ws.rs.core.HttpHeaders)"><!-- --></A><H3>
+isPayloadEmpty</H3>
+<PRE>
+protected boolean <B>isPayloadEmpty</B>(javax.ws.rs.core.HttpHeaders&nbsp;headers)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isPayloadEmpty(javax.ws.rs.core.MultivaluedMap)"><!-- --></A><H3>
+isPayloadEmpty</H3>
+<PRE>
+protected boolean <B>isPayloadEmpty</B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;headers)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractConfigurableProvider.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractCachingMessageProvider.html" title="class in org.apache.cxf.jaxrs.provider"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html" title="class in org.apache.cxf.jaxrs.provider"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractConfigurableProvider.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

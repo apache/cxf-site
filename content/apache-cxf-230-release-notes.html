@@ -1,0 +1,212 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - Apache CXF 2.3.0 Release Notes">
+
+
+
+
+    <title>
+Apache CXF -- Apache CXF 2.3.0 Release Notes
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="download.html">Download</a>&nbsp;&gt;&nbsp;<a href="apache-cxf-230-release-notes.html">Apache CXF 2.3.0 Release Notes</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><h2 id="ApacheCXF2.3.0ReleaseNotes-Overview">Overview</h2>
+
+<p>Apache CXF 2.3.0 is a pretty significant upgrade from the 2.2.x series of releases.  There are plenty of new features and other improvements including:</p>
+
+<ul><li>JAX-WS 2.2 Support</li><li>JAX-RS 1.1 Support</li><li>New annotations of java first use cases
+	<ul><li>@WSDLDocumentation annotation to add documentation nodes to generated wsdl</li><li>@SchemaValidation annotation to turn on schema validation</li><li>@DataBinding to set the databinding used (if other than JAXB)</li><li>@GZIP to turn on GZIP compression</li><li>@FastInfoset to turn on FastInfoset support</li><li>@Logging to turn on and control various Logging functionality</li><li>@EndpointProperty to configure endpoint properties</li><li>@Policy to associate WS-Policy documents with the service</li></ul>
+	</li><li>SOAP/JMS spec implementation</li><li>SDO databinding</li><li>Schema Validation support for Aegis Databinding if Woodstox 4 is used for the Stax parser</li></ul>
+
+
+
+<h2 id="ApacheCXF2.3.0ReleaseNotes-InstallationPrerequisites">Installation Prerequisites </h2>
+
+<p>Before installing Apache CXF, make sure the following products, with the specified versions, are installed on your system:</p>
+
+<ul><li><a shape="rect" class="external-link" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" rel="nofollow">Java SE 6 with JDK 1.6.0</a> or <a shape="rect" class="external-link" href="http://www.oracle.com/technetwork/java/javase/downloads/index-jdk5-jsp-142662.html" rel="nofollow">Java 2 SE 5.0 with JDK 1.5.0</a></li><li>Apache Ant 1.6 or Apache Maven 2.2.1 or newer</li></ul>
+
+
+<h3 id="ApacheCXF2.3.0ReleaseNotes-JavaDevelopmentKit">Java  Development Kit</h3>
+
+<p>You must install the Java SE Development Kit</p>
+
+<p>After installing the JDK, set or modify the following environment variables:</p>
+
+<ul><li>JAVA_HOME &#8211; set this environment variable<br clear="none">
+      to point at the root directory of the JDK  installation.</li></ul>
+
+
+<ul><li>PATH &#8211; make sure that your PATH includes:<br clear="none">
+      %JAVA_HOME%\bin  (Windows) <br clear="none">
+      $JAVA_HOME/bin   (UNIX)</li></ul>
+
+
+<h3 id="ApacheCXF2.3.0ReleaseNotes-ApacheAnt1.6.5(ornewer,1.7.0shouldworkaswell)orApacheMaven">Apache Ant 1.6.5 (or newer, 1.7.0 should work as well)  or Apache Maven</h3>
+
+<p>To run samples included in the binary distribution of Apache CXF, you must install the Apache Ant 1.6.5 build utility or Apache Maven 2.2.1 or newer, which can be downloaded from:</p>
+
+<p>    Ant: <a shape="rect" class="external-link" href="http://ant.apache.org/bindownload.cgi">http://ant.apache.org/bindownload.cgi</a><br clear="none">
+    Maven: <a shape="rect" class="external-link" href="http://maven.apache.org/download.html">http://maven.apache.org/download.html</a></p>
+
+<p>After installing Apache Ant or Apache Maven, add the &lt;InstallDir&gt;/bin directory to your PATH.</p>
+
+<p>For more details, see the Installation Guide.</p>
+
+
+<h2 id="ApacheCXF2.3.0ReleaseNotes-BuildingtheSamples">Building the Samples</h2>
+
+<p>Building the samples included in the binary distribution is easy. Change to the samples directory and follow the build instructions in the README.txt file included with each sample.</p>
+
+<h2 id="ApacheCXF2.3.0ReleaseNotes-ReportingProblems">Reporting Problems</h2>
+
+<p>If you have any problems or want to send feedback of any kind, please e-mail the cxf dev list, dev@cxf.apache.org.  You can also file issues in JIRA at:</p>
+
+<p><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">http://issues.apache.org/jira/browse/CXF</a></p>
+
+
+<h2 id="ApacheCXF2.3.0ReleaseNotes-Migrationnotes:">Migration notes:</h2>
+
+<p>See the migration guide at:
+<a shape="rect" href="http://cxf.apache.org/docs/23-migration-guide.html">http://cxf.apache.org/docs/23-migration-guide.html</a><br clear="none">
+for caveats when upgrading from CXF 2.2.x to 2.3.0.</p>
+
+<h2 id="ApacheCXF2.3.0ReleaseNotes-JARsreleasedwithCXF2.3.0">JARs released with CXF 2.3.0</h2>
+
+<div class="table-wrap"><table class="confluenceTable"><tbody><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>Technology</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Description</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>CXF Uses This For</p></th></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.antlr.org/download.html" rel="nofollow">ANTLR</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>ANother Tool for Language Recognition, is a language tool that provides a framework for constructing recognizers, interpreters, compilers, and translators from grammatical descriptions containing actions in a variety of target languages</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>CORBA Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://sourceforge.net/projects/aopalliance/" rel="nofollow">AOP Alliance (Java/J2EE AOP standard)</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>AOP Alliance intends to facilitate and standardize the use of AOP to enhance existing middleware environments (such as J2EE), or development environments (e.g. JBuilder, Eclipse)</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>XML Configuration Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://commons.apache.org/collections/download_collections.cgi">Apache Commons Collections</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Commons-Collections seek to build upon the JDK classes by providing new interfaces, implementations and utilities.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Java2WSDL and WSDL2Java</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://commons.apache.org/lang/">Apache Commons Lang</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Lang provides a host of helper utilities for the java.lang API, notably String manipulation methods, basic numerical methods, object reflection, concurrency, creation and serialization and System properties.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Java2WSDL and WSDL2Java</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://commons.apache.org/logging/download_logging.cgi">Apache Commons Logging</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>The Logging package is an ultra-thin bridge between different logging implementations</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>General CXF Usage</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://commons.apache.org/pool/download_pool.cgi">Apache Commons Pool</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Provides an Object-pooling API</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>JMS Transport</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://geronimo.apache.org/">Apache Geronimo</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>The goal of the Geronimo project is to produce a server runtime framework that pulls together the best Open Source alternatives to create runtimes that meet the needs of developers and system administrators.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>General CXF Usage, JAX-WS Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://ws.apache.org/commons/neethi/download.cgi">Apache Neethi</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Apache Neethi provides general framework for the programmers to use WS Policy.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>General CXF Usage, Standalone HTTP Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://santuario.apache.org/mirrors.cgi">Apache Santuario</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>The Apache Santuario project is aimed at providing implementation of security standards for XML.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>WS-Security Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://velocity.apache.org/download.cgi">Apache Velocity</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Open-source templating engine</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Java2WSDL and WSDL2Java</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://ws.apache.org/wss4j/">Apache WSS4J</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Apache WSS4J is an implementation of the OASIS Web Services Security (WS-Security) from OASIS Web Services Security TC.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>WS-Security Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://xml.apache.org/xalan-j/downloads.html">Apache Xalan-Java</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Xalan-Java is an XSLT processor for transforming XML documents into HTML, text, or other XML document types. It implements XSL Transformations (XSLT) Version 1.0 and XML Path Language (XPath) Version 1.0 and can be used from the command line, in an applet or a servlet, or as a module in other program. </p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>WS-Security Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://xml.apache.org/commons/components/resolver/">Apache XML Commons - Resolver</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Apache XML Commons -Resolver</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>XML Catalog Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://xmlbeans.apache.org/">Apache XMLBeans </a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>XMLBeans is a technology for accessing XML by binding it to Java types.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>XMLBeans Databinding Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://ws.apache.org/commons/XmlSchema/download.html">Apache XMLSchema</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>XMLSchema is a lightweight Java object model that can be used to manipulate and generate XML schema representations.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>General CXF Usage</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://forge.ow2.org/projects/asm" rel="nofollow">ASM</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>ASM is a Java bytecode manipulation framework. It offers similar functionalities as BCEL or SERP, but is much more smaller and faster than these tools.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>JAX-WS Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://jra.codehaus.org/" rel="nofollow">Codehaus Java Rest Annotations</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Java Rest Annotations</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>HTTP Binding Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://jettison.codehaus.org/Download" rel="nofollow">Codehaus Jettison</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Jettison is a collection of Java APIs (like STaX and DOM) which read and write JSON.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>HTTP Binding Support, JAX-RS Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://dist.codehaus.org/jetty/jetty-hightide-7.1.6/" rel="nofollow">Codehaus Jetty</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Jetty is an open-source project providing a HTTP server, HTTP client and javax.servlet container.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Standalone HTTP Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://wiki.fasterxml.com/WoodstoxDownload" rel="nofollow">Codehaus Woodstox</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>High-performance XML processor.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>General CXF Usage</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="https://fi.dev.java.net/servlets/ProjectDocumentList?folderID=6570&amp;ex" rel="nofollow">Fast Infoset</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Fast Infoset (or FI) is an international standard that specifies a binary encoding format for the XML Information Set (XML Infoset) as an alternative to the XML document forma</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>XML Configuration Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://jakarta.apache.org/site/downloads/downloads_oro.cgi">Jakarta ORO</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>A set of text-processing Java classes that provide Perl5 compatible regular expressions, AWK-like regular expressions, glob expressions, and utility classes for performing substitutions, splits, filtering filenames, etc.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Java2WSDL and WSDL2Java</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="https://jaxb.dev.java.net/" rel="nofollow">Java Architecture for XML Binding (JAXB)</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Allows Java developers to map Java classes to XML representations</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>General CXF Usage, Java2WSDL and WSDL2Java</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>JAX-RS</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>JAX-RS: Java API for RESTful Web Services is a Java programming language API that provides support in creating web services according to the Representational State Transfer (REST) architectural style. JAX-RS uses annotations, introduced in Java SE 5, to simplify the development and deployment of web service clients and endpoints. From version 1.1 on, JAX-RS is an official part of Java EE.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>JAX-RS Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.mozilla.org/rhino/download.html" rel="nofollow">Rhino Javascript</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Rhino is an open-source implementation of JavaScript written entirely in Java</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Javascript Functionality</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.slf4j.org/download.html" rel="nofollow">Simple Logging Facade for Java (SLF4J)</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Serves as a simple facade or abstraction for various logging frameworks</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Standalone HTTP Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="https://saaj.dev.java.net/servlets/ProjectDocumentList?folderID=11956&amp;expandFolder=11956&amp;folderID=11182" rel="nofollow">SOAP with Attachments API for Java (SAAJ)</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Provides a standard way to send XML documents over the Internet from the Java platform.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>JAX-WS Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.springsource.org/" rel="nofollow">Spring Framework</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>An open source application framework for the Java platform</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>XML Configuration Support, JMS Transport</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://grepcode.com/snapshot/repo1.maven.org/maven2/org.codehaus.woodstox/stax2-api/3.0.2" rel="nofollow">Streaming API for XML</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Stax2 API is an extension to basic Stax 1.0 API that adds significant new functionality, such as full-featured bi-direction validation interface and high-performance Typed Access API.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>General CXF Usage</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.bouncycastle.org/latest_releases.html" rel="nofollow">The Legion of the Bouncy Castle</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Java cryptography APIs.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>WS-Security Support</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://xerces.apache.org/mirrors.cgi#binary">XML Serializer</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>XML Serializer, Release 2.7.1, allows you to write out XML, HTML etc. as a stream of characters from an input DOM or from input SAX events.</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>WS-Security Support</p></td></tr></tbody></table></div></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=23340476">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=23340476&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

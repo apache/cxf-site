@@ -1,0 +1,530 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>Uses of Interface org.apache.cxf.rs.security.jose.jws.JwsSignatureProvider (Apache CXF JavaDoc 3.1.0 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Interface org.apache.cxf.rs.security.jose.jws.JwsSignatureProvider (Apache CXF JavaDoc 3.1.0 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../../../../../../../../overview-tree.html">Tree</a></li>
+<li><a href="../../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../../index.html?org/apache/cxf/rs/security/jose/jws/class-use/JwsSignatureProvider.html" target="_top">Frames</a></li>
+<li><a href="JwsSignatureProvider.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<div class="header">
+<h2 title="Uses of Interface org.apache.cxf.rs.security.jose.jws.JwsSignatureProvider" class="title">Uses of Interface<br>org.apache.cxf.rs.security.jose.jws.JwsSignatureProvider</h2>
+</div>
+<div class="classUseContainer">
+<ul class="blockList">
+<li class="blockList">
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing packages, and an explanation">
+<caption><span>Packages that use <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Package</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.cxf.rs.security.jose.jaxrs">org.apache.cxf.rs.security.jose.jaxrs</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.cxf.rs.security.jose.jws">org.apache.cxf.rs.security.jose.jws</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.cxf.rs.security.jose.jwt">org.apache.cxf.rs.security.jose.jwt</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.cxf.rs.security.oauth2.client">org.apache.cxf.rs.security.oauth2.client</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.cxf.rs.security.oauth2.grants.code">org.apache.cxf.rs.security.oauth2.grants.code</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.cxf.rs.security.oauth2.provider">org.apache.cxf.rs.security.oauth2.provider</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.cxf.rs.security.oauth2.tokens.jwt">org.apache.cxf.rs.security.oauth2.tokens.jwt</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.cxf.rs.security.oidc.idp">org.apache.cxf.rs.security.oidc.idp</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<ul class="blockList">
+<li class="blockList"><a name="org.apache.cxf.rs.security.jose.jaxrs">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a> in <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jaxrs/package-summary.html">org.apache.cxf.rs.security.jose.jaxrs</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jaxrs/package-summary.html">org.apache.cxf.rs.security.jose.jaxrs</a> that return <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></code></td>
+<td class="colLast"><span class="strong">AbstractJwsWriterProvider.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jaxrs/AbstractJwsWriterProvider.html#getInitializedSigProvider(org.apache.cxf.rs.security.jose.JoseHeaders)">getInitializedSigProvider</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/jose/JoseHeaders.html" title="class in org.apache.cxf.rs.security.jose">JoseHeaders</a>&nbsp;headers)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jaxrs/package-summary.html">org.apache.cxf.rs.security.jose.jaxrs</a> that return types with arguments of type <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a>&gt;</code></td>
+<td class="colLast"><span class="strong">AbstractJwsJsonWriterProvider.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jaxrs/AbstractJwsJsonWriterProvider.html#getInitializedSigProviders()">getInitializedSigProviders</a></strong>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jaxrs/package-summary.html">org.apache.cxf.rs.security.jose.jaxrs</a> with parameters of type <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">AbstractJwsJsonWriterProvider.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jaxrs/AbstractJwsJsonWriterProvider.html#setSignatureProvider(org.apache.cxf.rs.security.jose.jws.JwsSignatureProvider)">setSignatureProvider</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a>&nbsp;signatureProvider)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">AbstractJwsWriterProvider.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jaxrs/AbstractJwsWriterProvider.html#setSignatureProvider(org.apache.cxf.rs.security.jose.jws.JwsSignatureProvider)">setSignatureProvider</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a>&nbsp;signatureProvider)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><span class="strong">AbstractJwsWriterProvider.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jaxrs/AbstractJwsWriterProvider.html#writeJws(org.apache.cxf.rs.security.jose.jws.JwsCompactProducer,%20org.apache.cxf.rs.security.jose.jws.JwsSignatureProvider,%20java.io.OutputStream)">writeJws</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsCompactProducer.html" title="class in org.apache.cxf.rs.security.jose.jws">JwsCompactProducer</a>&nbsp;p,
+        <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a>&nbsp;theSigProvider,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</a>&nbsp;os)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Method parameters in <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jaxrs/package-summary.html">org.apache.cxf.rs.security.jose.jaxrs</a> with type arguments of type <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">AbstractJwsJsonWriterProvider.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jaxrs/AbstractJwsJsonWriterProvider.html#setSignatureProviders(java.util.List)">setSignatureProviders</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a>&gt;&nbsp;signatureProviders)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.rs.security.jose.jws">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a> in <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/package-summary.html">org.apache.cxf.rs.security.jose.jws</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/package-summary.html">org.apache.cxf.rs.security.jose.jws</a> that implement <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/AbstractJwsSignatureProvider.html" title="class in org.apache.cxf.rs.security.jose.jws">AbstractJwsSignatureProvider</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/EcDsaJwsSignatureProvider.html" title="class in org.apache.cxf.rs.security.jose.jws">EcDsaJwsSignatureProvider</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/HmacJwsSignatureProvider.html" title="class in org.apache.cxf.rs.security.jose.jws">HmacJwsSignatureProvider</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/NoneJwsSignatureProvider.html" title="class in org.apache.cxf.rs.security.jose.jws">NoneJwsSignatureProvider</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/PrivateKeyJwsSignatureProvider.html" title="class in org.apache.cxf.rs.security.jose.jws">PrivateKeyJwsSignatureProvider</a></strong></code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/package-summary.html">org.apache.cxf.rs.security.jose.jws</a> that return <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></code></td>
+<td class="colLast"><span class="strong">JwsUtils.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsUtils.html#getHmacSignatureProvider(byte[],%20java.lang.String)">getHmacSignatureProvider</a></strong>(byte[]&nbsp;key,
+                        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;algo)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></code></td>
+<td class="colLast"><span class="strong">JwsUtils.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsUtils.html#getPrivateKeySignatureProvider(java.security.PrivateKey,%20java.lang.String)">getPrivateKeySignatureProvider</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/security/PrivateKey.html?is-external=true" title="class or interface in java.security">PrivateKey</a>&nbsp;key,
+                              <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;algo)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></code></td>
+<td class="colLast"><span class="strong">JwsUtils.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsUtils.html#getSignatureProvider(org.apache.cxf.rs.security.jose.jwk.JsonWebKey)">getSignatureProvider</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jwk/JsonWebKey.html" title="class in org.apache.cxf.rs.security.jose.jwk">JsonWebKey</a>&nbsp;jwk)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></code></td>
+<td class="colLast"><span class="strong">JwsUtils.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsUtils.html#getSignatureProvider(org.apache.cxf.rs.security.jose.jwk.JsonWebKey,%20java.lang.String)">getSignatureProvider</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jwk/JsonWebKey.html" title="class in org.apache.cxf.rs.security.jose.jwk">JsonWebKey</a>&nbsp;jwk,
+                    <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;defaultAlgorithm)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></code></td>
+<td class="colLast"><span class="strong">JwsUtils.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsUtils.html#loadSignatureProvider(boolean)">loadSignatureProvider</a></strong>(boolean&nbsp;required)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></code></td>
+<td class="colLast"><span class="strong">JwsUtils.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsUtils.html#loadSignatureProvider(org.apache.cxf.rs.security.jose.JoseHeaders,%20boolean)">loadSignatureProvider</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/jose/JoseHeaders.html" title="class in org.apache.cxf.rs.security.jose">JoseHeaders</a>&nbsp;headers,
+                     boolean&nbsp;required)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/package-summary.html">org.apache.cxf.rs.security.jose.jws</a> that return types with arguments of type <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a>&gt;</code></td>
+<td class="colLast"><span class="strong">JwsUtils.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsUtils.html#loadSignatureProviders(java.lang.String,%20org.apache.cxf.message.Message)">loadSignatureProviders</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;propLoc,
+                      <a href="../../../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&nbsp;m)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/package-summary.html">org.apache.cxf.rs.security.jose.jws</a> with parameters of type <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="strong">JwsUtils.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsUtils.html#sign(org.apache.cxf.rs.security.jose.jws.JwsSignatureProvider,%20java.lang.String,%20java.lang.String)">sign</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a>&nbsp;jwsSig,
+    <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;content,
+    <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ct)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="strong">JwsCompactProducer.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsCompactProducer.html#signWith(org.apache.cxf.rs.security.jose.jws.JwsSignatureProvider)">signWith</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a>&nbsp;signer)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="strong">JwsJsonProducer.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsJsonProducer.html#signWith(org.apache.cxf.rs.security.jose.jws.JwsSignatureProvider)">signWith</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a>&nbsp;signer)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="strong">JwsJsonProducer.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsJsonProducer.html#signWith(org.apache.cxf.rs.security.jose.jws.JwsSignatureProvider,%20org.apache.cxf.rs.security.jose.JoseHeaders)">signWith</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a>&nbsp;signer,
+        <a href="../../../../../../../../org/apache/cxf/rs/security/jose/JoseHeaders.html" title="class in org.apache.cxf.rs.security.jose">JoseHeaders</a>&nbsp;protectedHeader)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="strong">JwsJsonProducer.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsJsonProducer.html#signWith(org.apache.cxf.rs.security.jose.jws.JwsSignatureProvider,%20org.apache.cxf.rs.security.jose.JoseHeaders,%20org.apache.cxf.rs.security.jose.JoseHeaders)">signWith</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a>&nbsp;signer,
+        <a href="../../../../../../../../org/apache/cxf/rs/security/jose/JoseHeaders.html" title="class in org.apache.cxf.rs.security.jose">JoseHeaders</a>&nbsp;protectedHeader,
+        <a href="../../../../../../../../org/apache/cxf/rs/security/jose/JoseHeaders.html" title="class in org.apache.cxf.rs.security.jose">JoseHeaders</a>&nbsp;unprotectedHeader)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Method parameters in <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/package-summary.html">org.apache.cxf.rs.security.jose.jws</a> with type arguments of type <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><span class="strong">JwsJsonProducer.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsJsonProducer.html#signWith(java.util.List)">signWith</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a>&gt;&nbsp;signers)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.rs.security.jose.jwt">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a> in <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jwt/package-summary.html">org.apache.cxf.rs.security.jose.jwt</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jwt/package-summary.html">org.apache.cxf.rs.security.jose.jwt</a> that return <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></code></td>
+<td class="colLast"><span class="strong">AbstractJoseJwtProducer.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jwt/AbstractJoseJwtProducer.html#getInitializedSigProvider(boolean,%20boolean)">getInitializedSigProvider</a></strong>(boolean&nbsp;jwsRequired,
+                         boolean&nbsp;jweRequired)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.rs.security.oauth2.client">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a> in <a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/client/package-summary.html">org.apache.cxf.rs.security.oauth2.client</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/client/package-summary.html">org.apache.cxf.rs.security.oauth2.client</a> that return <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></code></td>
+<td class="colLast"><span class="strong">JoseClientCodeStateManager.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/client/JoseClientCodeStateManager.html#getInitializedSigProvider()">getInitializedSigProvider</a></strong>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/client/package-summary.html">org.apache.cxf.rs.security.oauth2.client</a> with parameters of type <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">JoseClientCodeStateManager.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/client/JoseClientCodeStateManager.html#setSignatureProvider(org.apache.cxf.rs.security.jose.jws.JwsSignatureProvider)">setSignatureProvider</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a>&nbsp;signatureProvider)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.rs.security.oauth2.grants.code">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a> in <a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/grants/code/package-summary.html">org.apache.cxf.rs.security.oauth2.grants.code</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/grants/code/package-summary.html">org.apache.cxf.rs.security.oauth2.grants.code</a> that return <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></code></td>
+<td class="colLast"><span class="strong">JwtRequestCodeGrant.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/grants/code/JwtRequestCodeGrant.html#getInitializedSigProvider()">getInitializedSigProvider</a></strong>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/grants/code/package-summary.html">org.apache.cxf.rs.security.oauth2.grants.code</a> with parameters of type <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">JwtRequestCodeGrant.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/grants/code/JwtRequestCodeGrant.html#setSignatureProvider(org.apache.cxf.rs.security.jose.jws.JwsSignatureProvider)">setSignatureProvider</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a>&nbsp;signatureProvider)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.rs.security.oauth2.provider">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a> in <a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/provider/package-summary.html">org.apache.cxf.rs.security.oauth2.provider</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/provider/package-summary.html">org.apache.cxf.rs.security.oauth2.provider</a> that return <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></code></td>
+<td class="colLast"><span class="strong">JoseSessionTokenProvider.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/provider/JoseSessionTokenProvider.html#getInitializedSigProvider()">getInitializedSigProvider</a></strong>()</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/provider/package-summary.html">org.apache.cxf.rs.security.oauth2.provider</a> with parameters of type <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">JoseSessionTokenProvider.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/provider/JoseSessionTokenProvider.html#setJwsProvider(org.apache.cxf.rs.security.jose.jws.JwsSignatureProvider)">setJwsProvider</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a>&nbsp;jwsProvider)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.rs.security.oauth2.tokens.jwt">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a> in <a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/tokens/jwt/package-summary.html">org.apache.cxf.rs.security.oauth2.tokens.jwt</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/tokens/jwt/package-summary.html">org.apache.cxf.rs.security.oauth2.tokens.jwt</a> with parameters of type <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/common/ServerAccessToken.html" title="class in org.apache.cxf.rs.security.oauth2.common">ServerAccessToken</a></code></td>
+<td class="colLast"><span class="strong">JwtAccessTokenUtils.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/tokens/jwt/JwtAccessTokenUtils.html#signToAccessToken(org.apache.cxf.rs.security.jose.jwt.JwtToken,%20org.apache.cxf.rs.security.oauth2.common.Client,%20org.apache.cxf.rs.security.jose.jws.JwsSignatureProvider)">signToAccessToken</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jwt/JwtToken.html" title="class in org.apache.cxf.rs.security.jose.jwt">JwtToken</a>&nbsp;jwt,
+                 <a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/common/Client.html" title="class in org.apache.cxf.rs.security.oauth2.common">Client</a>&nbsp;client,
+                 <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a>&nbsp;jws)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.rs.security.oidc.idp">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a> in <a href="../../../../../../../../org/apache/cxf/rs/security/oidc/idp/package-summary.html">org.apache.cxf.rs.security.oidc.idp</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../../org/apache/cxf/rs/security/oidc/idp/package-summary.html">org.apache.cxf.rs.security.oidc.idp</a> that return <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></code></td>
+<td class="colLast"><span class="strong">AbstractJwsJweProducer.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/oidc/idp/AbstractJwsJweProducer.html#getInitializedSigProvider(org.apache.cxf.rs.security.oauth2.common.Client,%20boolean)">getInitializedSigProvider</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/oauth2/common/Client.html" title="class in org.apache.cxf.rs.security.oauth2.common">Client</a>&nbsp;c,
+                         boolean&nbsp;required)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../../../../org/apache/cxf/rs/security/oidc/idp/package-summary.html">org.apache.cxf.rs.security.oidc.idp</a> with parameters of type <a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><span class="strong">AbstractJwsJweProducer.</span><code><strong><a href="../../../../../../../../org/apache/cxf/rs/security/oidc/idp/AbstractJwsJweProducer.html#setSignatureProvider(org.apache.cxf.rs.security.jose.jws.JwsSignatureProvider)">setSignatureProvider</a></strong>(<a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">JwsSignatureProvider</a>&nbsp;signatureProvider)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../../../../../../../../org/apache/cxf/rs/security/jose/jws/JwsSignatureProvider.html" title="interface in org.apache.cxf.rs.security.jose.jws">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../../../../../../../../overview-tree.html">Tree</a></li>
+<li><a href="../../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../../index.html?org/apache/cxf/rs/security/jose/jws/class-use/JwsSignatureProvider.html" target="_top">Frames</a></li>
+<li><a href="JwsSignatureProvider.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Apache CXF</small></p>
+</body>
+</html>

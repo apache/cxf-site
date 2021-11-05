@@ -114,7 +114,7 @@ public class SiteExporter implements Runnable {
     
     
     
-    static boolean debug;
+    static boolean debug = false;
     static String userName = "cxf-export-user";
     static String password;
     
@@ -144,7 +144,7 @@ public class SiteExporter implements Runnable {
     String pageCacheFile = "pagesConfig.obj";
     String templateName = "template/template.vm";
     String mainDivClass;
-    boolean forceAll;
+    boolean forceAll = true;
     String breadCrumbRoot;
     
     File outputDir = rootOutputDir;
@@ -188,6 +188,7 @@ public class SiteExporter implements Runnable {
         props.put("resource.loader", "url");
         props.put("url.resource.loader.class", clzName);
         props.put("url.resource.loader.root", "");
+        props.put("url.resource.loader.timeout", 10000);
         
         VelocityEngine engine = new VelocityEngine();
         engine.init(props);
@@ -283,6 +284,7 @@ public class SiteExporter implements Runnable {
     }
     
     public void run() {
+    	System.out.println("In run");
         try {
             render();
         } catch (Exception e) {
@@ -362,7 +364,7 @@ public class SiteExporter implements Runnable {
     }
 
     protected void render() throws Exception {
-        for (Page p : modifiedPages) {
+    	for (Page p : modifiedPages) {
             if (globalPages.contains(p.getTitle())) {
                 modifiedPages.clear();
                 modifiedPages.addAll(pages.values());
@@ -475,6 +477,7 @@ public class SiteExporter implements Runnable {
                 ctx.put("exporter", this);
                 
                 File file = new File(outputDir, p.createFileName());
+                System.out.println("   -> " + file);
                 boolean isNew = !file.exists();
                 
                 FileWriter writer = new FileWriter(file);
@@ -1216,6 +1219,7 @@ public class SiteExporter implements Runnable {
         
         List<SiteExporter> exporters = new ArrayList<SiteExporter>();
         for (String file : files) {
+        	System.out.println("Setting up " + file);
             exporters.add(new SiteExporter(file, forceAll));
         }
         List<SiteExporter> modified = new ArrayList<SiteExporter>();

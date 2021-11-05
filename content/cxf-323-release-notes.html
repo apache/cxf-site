@@ -1,0 +1,149 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - CXF 3.2.3 Release Notes">
+
+
+
+
+    <title>
+Apache CXF -- CXF 3.2.3 Release Notes
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="download.html">Download</a>&nbsp;&gt;&nbsp;<a href="cxf-323-release-notes.html">CXF 3.2.3 Release Notes</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><h1 id="CXF3.2.3ReleaseNotes-CXF3.2.3ReleaseNotes">CXF 3.2.3 Release Notes</h1><h2 id="CXF3.2.3ReleaseNotes-Overview">Overview</h2><p>Apache CXF 3.2.3 delivers the latest set of patches and bug fixes for Apache CXF 3.2.x. This release fixes over 64 JIRA issues that have been reported by users.</p><h2 id="CXF3.2.3ReleaseNotes-Download">Download</h2><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>Description</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>File</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>MD5</p></th></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>Source distribution</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.apache.org/dyn/closer.cgi?path=/cxf/3.2.3/apache-cxf-3.2.3-src.tar.gz">apache-cxf-3.2.3-src.tar.gz</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.apache.org/dist/cxf/3.2.3/apache-cxf-3.2.3-src.tar.gz.md5">apache-cxf-3.2.3-src.tar.gz.md5</a></p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>&#160;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.apache.org/dyn/closer.cgi?path=/cxf/3.2.3/apache-cxf-3.2.3-src.zip">apache-cxf-3.2.3-src.zip</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.apache.org/dist/cxf/3.2.3/apache-cxf-3.2.3-src.zip.md5">apache-cxf-3.2.3-src.zip.md5</a></p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>Binary distribution</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.apache.org/dyn/closer.cgi?path=/cxf/3.2.3/apache-cxf-3.2.3.tar.gz">apache-cxf-3.2.3.tar.gz</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.apache.org/dist/cxf/3.2.3/apache-cxf-3.2.3.tar.gz.md5">apache-cxf-3.2.3.tar.gz.md5</a></p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>&#160;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.apache.org/dyn/closer.cgi?path=/cxf/3.2.3/apache-cxf-3.2.3.zip">apache-cxf-3.2.3.zip</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.apache.org/dist/cxf/3.2.3/apache-cxf-3.2.3.zip.md5">apache-cxf-3.2.3.zip.md5</a></p></td></tr></tbody></table></div><h2 id="CXF3.2.3ReleaseNotes-InstallationPrerequisites">Installation Prerequisites</h2><p>Before installing Apache CXF, make sure the following products,<br clear="none"> with the specified versions, are installed on your system:</p><ul><li>Java 8 Development Kit</li><li>Maven 3.1 or later</li></ul><h3 id="CXF3.2.3ReleaseNotes-JavaDevelopmentKit">Java Development Kit</h3><p>You must install the J2SE Development Kit (JDK) 8.0, which can be downloaded<br clear="none"> from:</p><p><a shape="rect" class="external-link" href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" rel="nofollow">http://www.oracle.com/technetwork/java/javase/downloads/index.html</a></p><p>After installing the JDK, set or modify the following environment variables:</p><ul><li>JAVA_HOME &#8211; set this environment variable<br clear="none"> to point at the root directory of the Java installation.</li></ul><ul><li>PATH &#8211; make sure that your PATH includes:<br clear="none"> %JAVA_HOME%\bin (Windows) <br clear="none"> $JAVA_HOME/bin (UNIX)</li></ul><h2 id="CXF3.2.3ReleaseNotes-BuildingtheSamples">Building the Samples</h2><p>Building the samples included in the binary distribution is easy. Change to<br clear="none"> the samples directory and follow the build instructions in the README.txt file <br clear="none"> included with each sample.</p><h2 id="CXF3.2.3ReleaseNotes-ReportingProblems">Reporting Problems</h2><p>If you have any problems or want to send feedback of any kind, please e-mail the<br clear="none"> cxf dev list, dev@cxf.apache.org. You can also file issues in JIRA at:</p><p><a shape="rect" class="external-link" href="https://issues.apache.org/jira/browse/CXF">https://issues.apache.org/jira/browse/CXF</a></p><h2 id="CXF3.2.3ReleaseNotes-Changelog">Changelog</h2><p>For a more detailed view of new features and bug fixes, see the <a shape="rect" class="external-link" href="https://issues.apache.org/jira/secure/ReleaseNote.jspa?projectId=12310511&amp;version=12342742">release notes</a>.</p></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=75976769">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=75976769&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

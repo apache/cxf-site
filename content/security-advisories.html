@@ -1,0 +1,149 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - Security Advisories">
+
+
+
+
+    <title>
+Apache CXF -- Security Advisories
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="security-advisories.html">Security Advisories</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><h3 id="SecurityAdvisories-2021">2021</h3><ul><li><a shape="rect" href="security-advisories.data/CVE-2021-30468.txt.asc?version=1&amp;modificationDate=1623835370000&amp;api=v2" data-linked-resource-id="181310680" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2021-30468.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2021-30468</a>: Apache CXF Denial of service vulnerability in parsing JSON via JsonMapObjectReaderWriter</li><li><a shape="rect" href="security-advisories.data/CVE-2021-22696.txt.asc?version=1&amp;modificationDate=1617355743000&amp;api=v2" data-linked-resource-id="177049091" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2021-22696.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2021-22696</a>: OAuth 2 authorization service vulnerable to DDos attacks</li></ul><h3 id="SecurityAdvisories-2020">2020</h3><ul><li><a shape="rect" href="security-advisories.data/CVE-2020-13954.txt.asc?version=1&amp;modificationDate=1605183671000&amp;api=v2" data-linked-resource-id="165225095" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2020-13954.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2020-13954</a>: Apache CXF Reflected XSS in the services listing page via the styleSheetPath</li><li><a shape="rect" href="security-advisories.data/CVE-2020-1954.txt.asc?version=1&amp;modificationDate=1585730169000&amp;api=v2" data-linked-resource-id="148645097" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2020-1954.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2020-1954</a>: Apache CXF JMX Integration is vulnerable to a MITM attack</li></ul><h3 id="SecurityAdvisories-2019">2019</h3><ul><li><a shape="rect" href="security-advisories.data/CVE-2019-17573.txt.asc?version=2&amp;modificationDate=1584610519000&amp;api=v2" data-linked-resource-id="145722246" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2019-17573.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2019-17573</a>: Apache CXF Reflected XSS in the services listing page</li><li><a shape="rect" href="security-advisories.data/CVE-2019-12423.txt.asc?version=1&amp;modificationDate=1579178393000&amp;api=v2" data-linked-resource-id="145722244" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2019-12423.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2019-12423</a>: Apache CXF OpenId Connect JWK Keys service returns private/secret credentials if configured with a jwk keystore</li><li><a shape="rect" href="security-advisories.data/CVE-2019-12419.txt.asc?version=2&amp;modificationDate=1572961201000&amp;api=v2" data-linked-resource-id="135859612" data-linked-resource-version="2" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2019-12419.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2019-12419</a>: Apache CXF OpenId Connect token service does not properly validate the clientId</li><li><a shape="rect" href="security-advisories.data/CVE-2019-12406.txt.asc?version=1&amp;modificationDate=1572957147000&amp;api=v2" data-linked-resource-id="135859607" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2019-12406.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2019-12406</a>: Apache CXF does not restrict the number of message attachments</li></ul><h3 id="SecurityAdvisories-2018">2018</h3><ul><li><a shape="rect" href="security-advisories.data/CVE-2018-8039.txt.asc?version=1&amp;modificationDate=1530184663000&amp;api=v2" data-linked-resource-id="87296645" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2018-8039.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2018-8039</a>: Apache CXF TLS hostname verification does not work correctly with com.sun.net.ssl.</li><li><a shape="rect" href="security-advisories.data/CVE-2018-8038.txt.asc?version=1&amp;modificationDate=1530712328000&amp;api=v2" data-linked-resource-id="87297524" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2018-8038.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2018-8038</a>: Apache CXF Fediz is vulnerable to DTD based XML attacks</li></ul><h3 id="SecurityAdvisories-2017">2017</h3><ul><li><a shape="rect" href="security-advisories.data/CVE-2017-12631.txt.asc?version=1&amp;modificationDate=1512037276000&amp;api=v2" data-linked-resource-id="74688816" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2017-12631.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2017-12631</a>: CSRF vulnerabilities in the Apache CXF Fediz Spring plugins.</li><li><a shape="rect" href="security-advisories.data/CVE-2017-12624.txt.asc?version=1&amp;modificationDate=1510661632000&amp;api=v2" data-linked-resource-id="74687100" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2017-12624.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2017-12624</a>: Apache CXF web services that process attachments are vulnerable to Denial of Service (DoS) attacks.</li><li><a shape="rect" href="security-advisories.data/CVE-2017-7662.txt.asc?version=1&amp;modificationDate=1494949377000&amp;api=v2" data-linked-resource-id="70255583" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2017-7662.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2017-7662</a>: The Apache CXF Fediz OIDC Client Registration Service is vulnerable to CSRF attacks.</li><li><a shape="rect" href="security-advisories.data/CVE-2017-7661.txt.asc?version=1&amp;modificationDate=1494949364000&amp;api=v2" data-linked-resource-id="70255582" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2017-7661.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2017-7661</a>: The Apache CXF Fediz Jetty and Spring plugins are vulnerable to CSRF attacks.</li><li><a shape="rect" href="security-advisories.data/CVE-2017-5656.txt.asc?version=1&amp;modificationDate=1492515113000&amp;api=v2" data-linked-resource-id="69406543" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2017-5656.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2017-5656</a>: Apache CXF's STSClient uses a flawed way of caching tokens that are associated with delegation tokens.</li><li><a shape="rect" href="security-advisories.data/CVE-2017-5653.txt.asc?version=1&amp;modificationDate=1492515074000&amp;api=v2" data-linked-resource-id="69406542" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2017-5653.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2017-5653</a>: Apache CXF JAX-RS XML Security streaming clients do not validate that the service response was signed or encrypted.</li><li><a shape="rect" href="security-advisories.data/CVE-2017-3156.txt.asc?version=1&amp;modificationDate=1487590374000&amp;api=v2" data-linked-resource-id="68715428" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2017-3156.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2017-3156</a>: Apache CXF OAuth2 Hawk and JOSE MAC Validation code is vulnerable to the timing attacks</li></ul><h3 id="SecurityAdvisories-2016">2016</h3><ul><li><a shape="rect" href="security-advisories.data/CVE-2016-8739.txt.asc?version=1&amp;modificationDate=1482164360000&amp;api=v2" data-linked-resource-id="67635454" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2016-8739.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2016-8739</a>: Atom entity provider of Apache CXF JAX-RS is vulnerable to XXE</li><li><a shape="rect" href="security-advisories.data/CVE-2016-6812.txt.asc?version=1&amp;modificationDate=1482164360000&amp;api=v2" data-linked-resource-id="67635455" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2016-6812.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2016-6812</a>: XSS risk in Apache CXF FormattedServiceListWriter when a request URL contains matrix parameters</li><li><a shape="rect" href="security-advisories.data/CVE-2016-4464.txt.asc?version=1&amp;modificationDate=1473350153000&amp;api=v2" data-linked-resource-id="65869472" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2016-4464.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2016-4464</a>: Apache CXF Fediz application plugins do not match the SAML AudienceRestriction values against the list of configured audience URIs</li></ul><h3 id="SecurityAdvisories-2015">2015</h3><ul><li><a shape="rect" href="security-advisories.data/CVE-2015-5253.txt.asc?version=1&amp;modificationDate=1447433340000&amp;api=v2" data-linked-resource-id="61328642" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2015-5253.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2015-5253</a>: Apache CXF SAML SSO processing is vulnerable to a wrapping attack</li><li><a shape="rect" href="security-advisories.data/CVE-2015-5175.txt.asc?version=1&amp;modificationDate=1440598018000&amp;api=v2" data-linked-resource-id="61316328" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2015-5175.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2015-5175</a>: Apache CXF Fediz application plugins are vulnerable to Denial of Service (DoS) attacks</li></ul><h3 id="SecurityAdvisories-2014">2014</h3><ul><li><a shape="rect" href="security-advisories.data/CVE-2014-3577.txt.asc?version=1&amp;modificationDate=1419245371000&amp;api=v2" data-linked-resource-id="51183657" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2014-3577.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2014-3577</a>: Apache CXF SSL hostname verification bypass</li><li><a shape="rect" href="security-advisories.data/CVE-2014-3566.txt.asc?version=1&amp;modificationDate=1418740474000&amp;api=v2" data-linked-resource-id="50561078" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2014-3566.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">Note on CVE-2014-3566</a>: SSL 3.0 support in Apache CXF, aka the "POODLE" attack.</li><li><a shape="rect" href="security-advisories.data/CVE-2014-3623.txt.asc?version=1&amp;modificationDate=1414169368000&amp;api=v2" data-linked-resource-id="47743195" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2014-3623.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2014-3623</a>: Apache CXF does not properly enforce the security semantics of SAML SubjectConfirmation methods when used with the TransportBinding</li><li><a shape="rect" href="security-advisories.data/CVE-2014-3584.txt.asc?version=1&amp;modificationDate=1414169326000&amp;api=v2" data-linked-resource-id="47743194" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2014-3584.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2014-3584</a>: Apache CXF JAX-RS SAML handling is vulnerable to a Denial of Service (DoS) attack</li><li><a shape="rect" href="security-advisories.data/CVE-2014-0109.txt.asc?version=1&amp;modificationDate=1398873370000&amp;api=v2" data-linked-resource-id="40895138" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2014-0109.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2014-0109</a>: HTML content posted to SOAP endpoint could cause OOM errors</li><li><a shape="rect" href="security-advisories.data/CVE-2014-0110.txt.asc?version=1&amp;modificationDate=1398873378000&amp;api=v2" data-linked-resource-id="40895139" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2014-0110.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2014-0110</a>: Large invalid content could cause temporary space to fill</li><li><a shape="rect" href="security-advisories.data/CVE-2014-0034.txt.asc?version=1&amp;modificationDate=1398873385000&amp;api=v2" data-linked-resource-id="40895140" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2014-0034.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2014-0034</a>: The SecurityTokenService accepts certain invalid SAML Tokens as valid</li><li><a shape="rect" href="security-advisories.data/CVE-2014-0035.txt.asc?version=1&amp;modificationDate=1398873391000&amp;api=v2" data-linked-resource-id="40895141" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2014-0035.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2014-0035</a>: UsernameTokens are sent in plaintext with a Symmetric EncryptBeforeSigning policy</li></ul><h3 id="SecurityAdvisories-2013">2013</h3><ul><li><a shape="rect" href="security-advisories.data/CVE-2013-2160.txt.asc?version=1&amp;modificationDate=1372324301000&amp;api=v2" data-linked-resource-id="33095710" data-linked-resource-version="1" data-linked-resource-type="attachment" data-linked-resource-default-alias="CVE-2013-2160.txt.asc" data-nice-type="Text File" data-linked-resource-content-type="text/plain" data-linked-resource-container-id="27837502" data-linked-resource-container-version="40">CVE-2013-2160</a> - Denial of Service Attacks on Apache CXF</li><li><a shape="rect" href="cve-2012-5575.html">Note on CVE-2012-5575</a> - XML Encryption backwards compatibility attack on Apache CXF.</li><li><a shape="rect" href="cve-2013-0239.html">CVE-2013-0239</a> - Authentication bypass in the case of WS-SecurityPolicy enabled plaintext UsernameTokens.</li></ul><h3 id="SecurityAdvisories-2012">2012</h3><ul><li><a shape="rect" href="cve-2012-5633.html">CVE-2012-5633</a> - WSS4JInInterceptor always allows HTTP Get requests from browser.</li><li><a shape="rect" href="note-on-cve-2011-2487.html">Note on CVE-2011-2487</a> - Bleichenbacher attack against distributed symmetric key in WS-Security.</li><li><a shape="rect" href="cve-2012-3451.html">CVE-2012-3451</a> - Apache CXF is vulnerable to SOAP Action spoofing attacks on Document Literal web services.</li><li><a shape="rect" href="cve-2012-2379.html">CVE-2012-2379</a> - Apache CXF does not verify that elements were signed or encrypted by a particular Supporting Token.</li><li><a shape="rect" href="cve-2012-2378.html">CVE-2012-2378</a> - Apache CXF does not pick up some child policies of WS-SecurityPolicy 1.1 SupportingToken policy assertions on the client side.</li><li><a shape="rect" href="note-on-cve-2011-1096.html">Note on CVE-2011-1096</a> - XML Encryption flaw / Character pattern encoding attack.</li><li><a shape="rect" href="cve-2012-0803.html">CVE-2012-0803</a> - Apache CXF does not validate UsernameToken policies correctly.</li></ul><h3 id="SecurityAdvisories-2010">2010</h3><ul><li><a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/trunk/security/CVE-2010-2076.pdf">CVE-2010-2076</a> - DTD based XML attacks.</li></ul></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=27837502">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=27837502&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

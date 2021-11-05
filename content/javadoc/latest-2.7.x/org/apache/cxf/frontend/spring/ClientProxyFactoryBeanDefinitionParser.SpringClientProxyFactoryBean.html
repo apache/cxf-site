@@ -1,0 +1,435 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean (Apache CXF Bundle Jar 2.7.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean (Apache CXF Bundle Jar 2.7.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/cxf/frontend/spring/ClientProxyFactoryBeanDefinitionParser.html" title="class in org.apache.cxf.frontend.spring"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/frontend/spring/NamespaceHandler.html" title="class in org.apache.cxf.frontend.spring"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/frontend/spring/ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.cxf.frontend.ClientProxyFactoryBean">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.frontend.spring</FONT>
+<BR>
+Class ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html" title="class in org.apache.cxf.interceptor">org.apache.cxf.interceptor.AbstractBasicInterceptorProvider</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html" title="class in org.apache.cxf.frontend">org.apache.cxf.frontend.ClientProxyFactoryBean</A>
+          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.frontend.spring.ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../org/apache/cxf/interceptor/InterceptorProvider.html" title="interface in org.apache.cxf.interceptor">InterceptorProvider</A>, org.springframework.beans.factory.DisposableBean, org.springframework.beans.factory.FactoryBean&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;, org.springframework.context.ApplicationContextAware</DD>
+</DL>
+<DL>
+<DT><B>Enclosing class:</B><DD><A HREF="../../../../../org/apache/cxf/frontend/spring/ClientProxyFactoryBeanDefinitionParser.html" title="class in org.apache.cxf.frontend.spring">ClientProxyFactoryBeanDefinitionParser</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public static class <B>ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean</B><DT>extends <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html" title="class in org.apache.cxf.frontend">ClientProxyFactoryBean</A><DT>implements org.springframework.context.ApplicationContextAware, org.springframework.beans.factory.FactoryBean&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;, org.springframework.beans.factory.DisposableBean</DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.frontend.ClientProxyFactoryBean"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.frontend.<A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html" title="class in org.apache.cxf.frontend">ClientProxyFactoryBean</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#configured">configured</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/frontend/spring/ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean.html#ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean()">ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/frontend/spring/ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean.html#ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean(org.apache.cxf.frontend.ClientFactoryBean)">ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean</A></B>(<A HREF="../../../../../org/apache/cxf/frontend/ClientFactoryBean.html" title="class in org.apache.cxf.frontend">ClientFactoryBean</A>&nbsp;fact)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/frontend/spring/ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean.html#create()">create</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a proxy object that can be used to make remote invocations.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/frontend/spring/ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean.html#destroy()">destroy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/frontend/spring/ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean.html#getObject()">getObject</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;?&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/frontend/spring/ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean.html#getObjectType()">getObjectType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/frontend/spring/ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean.html#isSingleton()">isSingleton</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/frontend/spring/ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean.html#setApplicationContext(org.springframework.context.ApplicationContext)">setApplicationContext</A></B>(org.springframework.context.ApplicationContext&nbsp;ctx)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.frontend.ClientProxyFactoryBean"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.frontend.<A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html" title="class in org.apache.cxf.frontend">ClientProxyFactoryBean</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#clientClientProxy(org.apache.cxf.endpoint.Client)">clientClientProxy</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#create(java.lang.Class)">create</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getAddress()">getAddress</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getBindingConfig()">getBindingConfig</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getBindingId()">getBindingId</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getBus()">getBus</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getClientFactoryBean()">getClientFactoryBean</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getConduitSelector()">getConduitSelector</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getConfiguredName()">getConfiguredName</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getDataBinding()">getDataBinding</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getEndpointName()">getEndpointName</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getFeatures()">getFeatures</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getImplementingClasses()">getImplementingClasses</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getPassword()">getPassword</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getProperties()">getProperties</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getServiceClass()">getServiceClass</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getServiceFactory()">getServiceFactory</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getServiceName()">getServiceName</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getTransportId()">getTransportId</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getUsername()">getUsername</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getWsdlLocation()">getWsdlLocation</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#getWsdlURL()">getWsdlURL</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#initFeatures()">initFeatures</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setAddress(java.lang.String)">setAddress</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setBindingConfig(org.apache.cxf.binding.BindingConfiguration)">setBindingConfig</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setBindingId(java.lang.String)">setBindingId</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setBus(org.apache.cxf.Bus)">setBus</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setClientFactoryBean(org.apache.cxf.frontend.ClientFactoryBean)">setClientFactoryBean</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setConduitSelector(org.apache.cxf.endpoint.ConduitSelector)">setConduitSelector</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setDataBinding(org.apache.cxf.databinding.DataBinding)">setDataBinding</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setEndpointName(javax.xml.namespace.QName)">setEndpointName</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setFeatures(java.util.List)">setFeatures</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setPassword(java.lang.String)">setPassword</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setProperties(java.util.Map)">setProperties</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setServiceClass(java.lang.Class)">setServiceClass</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setServiceFactory(org.apache.cxf.service.factory.ReflectionServiceFactoryBean)">setServiceFactory</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setServiceName(javax.xml.namespace.QName)">setServiceName</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setTransportId(java.lang.String)">setTransportId</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setUsername(java.lang.String)">setUsername</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setWsdlLocation(java.lang.String)">setWsdlLocation</A>, <A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#setWsdlURL(java.lang.String)">setWsdlURL</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.interceptor.AbstractBasicInterceptorProvider"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.interceptor.<A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html" title="class in org.apache.cxf.interceptor">AbstractBasicInterceptorProvider</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html#getInFaultInterceptors()">getInFaultInterceptors</A>, <A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html#getInInterceptors()">getInInterceptors</A>, <A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html#getOutFaultInterceptors()">getOutFaultInterceptors</A>, <A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html#getOutInterceptors()">getOutInterceptors</A>, <A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html#setInFaultInterceptors(java.util.List)">setInFaultInterceptors</A>, <A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html#setInInterceptors(java.util.List)">setInInterceptors</A>, <A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html#setOutFaultInterceptors(java.util.List)">setOutFaultInterceptors</A>, <A HREF="../../../../../org/apache/cxf/interceptor/AbstractBasicInterceptorProvider.html#setOutInterceptors(java.util.List)">setOutInterceptors</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean()"><!-- --></A><H3>
+ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean</H3>
+<PRE>
+public <B>ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean</B>()</PRE>
+<DL>
+</DL>
+<HR>
+
+<A NAME="ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean(org.apache.cxf.frontend.ClientFactoryBean)"><!-- --></A><H3>
+ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean</H3>
+<PRE>
+public <B>ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean</B>(<A HREF="../../../../../org/apache/cxf/frontend/ClientFactoryBean.html" title="class in org.apache.cxf.frontend">ClientFactoryBean</A>&nbsp;fact)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="setApplicationContext(org.springframework.context.ApplicationContext)"><!-- --></A><H3>
+setApplicationContext</H3>
+<PRE>
+public void <B>setApplicationContext</B>(org.springframework.context.ApplicationContext&nbsp;ctx)
+                           throws org.springframework.beans.BeansException</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>setApplicationContext</CODE> in interface <CODE>org.springframework.context.ApplicationContextAware</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>org.springframework.beans.BeansException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="create()"><!-- --></A><H3>
+create</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A> <B>create</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#create()">ClientProxyFactoryBean</A></CODE></B></DD>
+<DD>Creates a proxy object that can be used to make remote invocations.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html#create()">create</A></CODE> in class <CODE><A HREF="../../../../../org/apache/cxf/frontend/ClientProxyFactoryBean.html" title="class in org.apache.cxf.frontend">ClientProxyFactoryBean</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the proxy. You must cast the returned object to the appropriate class before using it.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getObject()"><!-- --></A><H3>
+getObject</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A> <B>getObject</B>()
+                 throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>getObject</CODE> in interface <CODE>org.springframework.beans.factory.FactoryBean&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getObjectType()"><!-- --></A><H3>
+getObjectType</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;?&gt; <B>getObjectType</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>getObjectType</CODE> in interface <CODE>org.springframework.beans.factory.FactoryBean&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSingleton()"><!-- --></A><H3>
+isSingleton</H3>
+<PRE>
+public boolean <B>isSingleton</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>isSingleton</CODE> in interface <CODE>org.springframework.beans.factory.FactoryBean&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="destroy()"><!-- --></A><H3>
+destroy</H3>
+<PRE>
+public void <B>destroy</B>()
+             throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>destroy</CODE> in interface <CODE>org.springframework.beans.factory.DisposableBean</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/cxf/frontend/spring/ClientProxyFactoryBeanDefinitionParser.html" title="class in org.apache.cxf.frontend.spring"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/frontend/spring/NamespaceHandler.html" title="class in org.apache.cxf.frontend.spring"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/frontend/spring/ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ClientProxyFactoryBeanDefinitionParser.SpringClientProxyFactoryBean.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.cxf.frontend.ClientProxyFactoryBean">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

@@ -1,0 +1,273 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - Fediz Metadata">
+
+
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shCoreCXF.css">
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shThemeCXF.css">
+
+<script src='/resources/highlighter/scripts/shCore.js'></script>
+<script src='/resources/highlighter/scripts/shBrushXml.js'></script>
+<script src='/resources/highlighter/scripts/shBrushJava.js'></script>
+<script>
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+
+    <title>
+Apache CXF -- Fediz Metadata
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="fediz.html">Fediz</a>&nbsp;&gt;&nbsp;<a href="fediz-metadata.html">Fediz Metadata</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><p><style type="text/css">/*<![CDATA[*/
+div.rbtoc1636141617637 {padding: 0px;}
+div.rbtoc1636141617637 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1636141617637 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p><div class="toc-macro rbtoc1636141617637">
+<ul class="toc-indentation"><li><a shape="rect" href="#FedizMetadata-Introduction">Introduction</a></li><li><a shape="rect" href="#FedizMetadata-IDP/STS">IDP/STS</a>
+<ul class="toc-indentation"><li><a shape="rect" href="#FedizMetadata-WS-Federation">WS-Federation</a></li><li><a shape="rect" href="#FedizMetadata-SAMLSSO">SAML SSO</a></li></ul>
+</li><li><a shape="rect" href="#FedizMetadata-RP">RP</a>
+<ul class="toc-indentation"><li><a shape="rect" href="#FedizMetadata-WS-Federation.1">WS-Federation</a></li><li><a shape="rect" href="#FedizMetadata-SAMLSSO.1">SAML SSO</a></li><li><a shape="rect" href="#FedizMetadata-ExampleRPMetadataDocument">Example RP Metadata Document</a></li></ul>
+</li></ul>
+</div><h1 id="FedizMetadata-Introduction">Introduction</h1><p>Both the Relying Party (RP) and IDP/STS (Security Token Service) support publishing metadata information in a standardized metadata document, for both the WS-Federation and SAML SSO protocols. The metadata document provides an easier way to configure the RP in the IDP/STS or to configure the IDP/STS in the RP.</p><p>If WS-Federation is configured then the Federation Metadata document is created as defined <a shape="rect" class="external-link" href="http://docs.oasis-open.org/wsfed/federation/v1.2/os/ws-federation-1.2-spec-os.html#_Toc223174943" rel="nofollow">here</a>. If SAML-SSO is configured, then the document that is published is defined in the following <a shape="rect" class="external-link" href="https://docs.oasis-open.org/security/saml/v2.0/saml-metadata-2.0-os.pdf" rel="nofollow">spec</a>.</p><h1 id="FedizMetadata-IDP/STS">IDP/STS</h1><p>The metadata document of the IDP/STS can be used to resolve IDP/STS configuration information at runtime or during deployment time.</p><p><em>Example:</em> The Microsoft tool FedUtil allows to establish the trust in the RP application to an already existing IDP/STS. You configure the URL of the published metadata document and it generates the federation related configuration in the application configuration file <code>web.config</code> thus you don't have to configure it manually.</p><p>Fediz doesn't provide such kind of tool to generate the IDP/STS related configuration in the <a shape="rect" href="fediz-configuration.html">Fediz configuration</a> file right now.</p><h2 id="FedizMetadata-WS-Federation">WS-Federation</h2><p>The metadata for the IdP/STS for WS-Federation is published automatically in both of the following URLs</p><p><strong><code>https://&lt;host&gt;:&lt;port&gt;/&lt;context&gt;/FederationMetadata/2007-06/FederationMetadata.xml</code></strong></p><p><strong><strong><code>https://&lt;host&gt;:&lt;port&gt;/&lt;context&gt;/metadata</code><br clear="none"></strong><br clear="none"></strong>For example:</p><p><br clear="none"><strong><span class="nolink">https://localhost:9443/fediz-idp/FederationMetadata/2007-06/FederationMetadata.xml</span></strong></p><p><strong><br clear="none"></strong>The WS-Federation metadata document defines the <strong>SecurityTokenServiceType</strong> describes the capabilities of the IDP/STS:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">&lt;EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+   xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+   xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+   entityID="..."&gt;
+   &lt;ds:Signature&gt;...&lt;/ds:Signature&gt;
+   &lt;RoleDescriptor xsi:type="fed:SecurityTokenServiceType"
+          protocolSupportEnumeration="http://docs.oasis-open.org/wsfed/federation/200706"
+          "http://docs.oasis-open.org/ws-sx/ws-trust/200512"&gt;
+          ...
+   &lt;/RoleDescriptor&gt;
+   ...
+&lt;/EntityDescriptor&gt;
+</pre>
+</div></div><h2 id="FedizMetadata-SAMLSSO">SAML SSO</h2><p>The metadata for the IdP/STS for SAML-SSO is published automatically at the URL:</p><p><strong><strong><code>https://&lt;host&gt;:&lt;port&gt;/&lt;context&gt;/metadata</code>?protocol=saml<br clear="none"></strong><br clear="none"></strong>For example:</p><p><br clear="none"><strong><span class="nolink"><span class="nolink">https://localhost:9443/fediz-idp/metadata?protocol=saml</span><a shape="rect" class="external-link" href="https://localhost:9443/fediz-idp/FederationMetadata/2007-06/FederationMetadata.xml" rel="nofollow"><br clear="none"></a></span></strong></p><p><br clear="none">The SAML SSO metadata document defines the&#160;<strong>IDPSSODescriptor</strong> describes the capabilities of the IDP/STS:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">&lt;EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+   xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+   xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+   entityID="..."&gt;
+   &lt;ds:Signature&gt;...&lt;/ds:Signature&gt;
+   &lt;IDPSSODescriptor WantAuthnRequestsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"&gt;
+       ... 
+   &lt;/IDPSSODescriptor&gt;
+   ...
+&lt;/EntityDescriptor&gt;
+</pre>
+</div></div><h1 id="FedizMetadata-RP">RP</h1><p>The metadata document of the RP can be used within the IDP/STS to resolve configuration information at runtime. This is pretty useful as it allows to tell the IDP/STS what claims are required by the application. If the application requires additional claims it can be configured on the application side.</p><p>Fediz supports publishing the Metadata document on the RP side. This document is built at runtime based on the <a shape="rect" href="fediz-configuration.html">Fediz configuration</a>.</p><h2 id="FedizMetadata-WS-Federation.1">WS-Federation</h2><p>It is possible to configure the metadata URL for a WS-Federation relying part application by specifying the 'metadataURI' configuration option. By default, the metadata for the Relying Party for WS-Federation is published at the following URL</p><p><strong><code>https://&lt;host&gt;:&lt;port&gt;/&lt;context&gt;/FederationMetadata/2007-06/FederationMetadata.xml</code><strong><br clear="none"></strong><br clear="none"></strong>For example:</p><p><br clear="none"><strong><span class="nolink"><span class="nolink">https://localhost:9443/fedizhelloworld/FederationMetadata/2007-06/FederationMetadata.xml</span></span></strong></p><p><br clear="none">The WS-Federation metadata document defines the&#160;<strong>ApplicationServiceType</strong> describes the capabilities of the Relying Party:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+&lt;EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+   xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+   xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+   entityID="..."&gt;
+   &lt;ds:Signature&gt;...&lt;/ds:Signature&gt;
+   &lt;RoleDescriptor xsi:type="fed:ApplicationServiceType"
+          protocolSupportEnumeration="http://docs.oasis-open.org/wsfed/federation/200706"
+          "http://docs.oasis-open.org/ws-sx/ws-trust/200512"&gt;
+          ...
+   &lt;/RoleDescriptor&gt;
+   ...
+&lt;/EntityDescriptor&gt;
+</pre>
+</div></div><h2 id="FedizMetadata-SAMLSSO.1">SAML SSO</h2><p>It is possible to configure the metadata URL for a SAML SSO relying party application by specifying the 'metadataURI' configuration option. By default, the metadata for the Relying Party for SAML SSO is published at the following URL</p><p><strong><code>https://&lt;host&gt;:&lt;port&gt;/&lt;context&gt;/SAML/Metadata.xml</code><strong><br clear="none"></strong><br clear="none"></strong>For example:</p><p><br clear="none"><strong><span class="nolink"><span class="nolink">https://localhost:9443/fedizhelloworld/<strong><code>SAML/Metadata.xml</code></strong></span></span></strong></p><p><strong><span class="nolink"><span class="nolink"><strong><br clear="none"></strong></span></span></strong><span class="nolink"><span class="nolink">The SAML SSO metadata document defines the&#160;<strong>SPSSODescriptor</strong> describes the capabilities of the Relying Party:</span></span></p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">&lt;EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+   xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+   xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+   entityID="..."&gt;
+   &lt;ds:Signature&gt;...&lt;/ds:Signature&gt;
+   &lt;SPSSODescriptor AuthnRequestsSigned="true" WantAssertionsSigned="true" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol"&gt;
+          ...
+   &lt;/SPSSODescriptor&gt;
+   ...
+&lt;/EntityDescriptor&gt;
+</pre>
+</div></div><h2 id="FedizMetadata-ExampleRPMetadataDocument">Example RP Metadata Document</h2><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+&lt;EntityDescriptor ID="_36BF9BFBF49BA48A2D13395075556522" entityID="https://localhost:8443/fedizhelloworld/" 
+   xmlns:auth="http://docs.oasis-open.org/wsfed/federation/200706" 
+   xmlns:fed="http://docs.oasis-open.org/wsfed/federation/200706" 
+   xmlns:wsa="http://www.w3.org/2005/08/addressing" 
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+   &lt;Signature xmlns="http://www.w3.org/2000/09/xmldsig#"&gt;
+      &lt;SignedInfo&gt;
+         &lt;CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/&gt;
+         &lt;SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/&gt;
+         &lt;Reference URI="#_36BF9BFBF49BA48A2D13395075556522"&gt;
+            &lt;Transforms&gt;
+               &lt;Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/&gt;
+            &lt;/Transforms&gt;
+            &lt;DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/&gt;
+            &lt;DigestValue&gt;GP0clMqrkm58j17R/IlG+ksITDQ=&lt;/DigestValue&gt;
+         &lt;/Reference&gt;
+      &lt;/SignedInfo&gt;
+      &lt;SignatureValue&gt;REMOVED&lt;/SignatureValue&gt;
+      &lt;KeyInfo&gt;
+         &lt;X509Data&gt;
+            &lt;X509SubjectName&gt;CN=localhost&lt;/X509SubjectName&gt;
+            &lt;X509Certificate&gt;REMOVED&lt;/X509Certificate&gt;
+         &lt;/X509Data&gt;
+      &lt;/KeyInfo&gt;
+   &lt;/Signature&gt;
+   &lt;fed:RoleDescriptor protocolSupportEnumeration="http://docs.oasis-open.org/wsfed/federation/200706" 
+      xsi:type="fed:ApplicationServiceType"&gt;
+      &lt;fed:ApplicationServiceEndpoint&gt;
+         &lt;wsa:EndpointReference&gt;
+            &lt;wsa:Address&gt;https://localhost:8443/fedizhelloworld/&lt;/wsa:Address&gt;
+         &lt;/wsa:EndpointReference&gt;
+      &lt;/fed:ApplicationServiceEndpoint&gt;
+      &lt;fed:TargetScope&gt;
+         &lt;wsa:EndpointReference&gt;
+            &lt;wsa:Address/&gt;
+         &lt;/wsa:EndpointReference&gt;
+         &lt;/fed:TargetScope&gt;
+      &lt;fed:ClaimTypesRequested&gt;
+         &lt;auth:ClaimType Optional="true" Uri="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/role"/&gt;
+      &lt;/fed:ClaimTypesRequested&gt;
+      &lt;fed:PassiveRequestorEndpoint&gt;
+         &lt;wsa:EndpointReference&gt;
+            &lt;wsa:Address&gt;https://localhost:9443/fediz-idp/&lt;/wsa:Address&gt;
+         &lt;/wsa:EndpointReference&gt;
+      &lt;/fed:PassiveRequestorEndpoint&gt;
+   &lt;/fed:RoleDescriptor&gt;
+&lt;/EntityDescriptor&gt;
+</pre>
+</div></div><p><br clear="none"></p></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=27849296">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=27849296&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

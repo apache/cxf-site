@@ -1,0 +1,590 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+FileCertificateRepo (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="FileCertificateRepo (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/FileCertificateRepo.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="FileCertificateRepo.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.xkms.x509.repo.file</FONT>
+<BR>
+Class FileCertificateRepo</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.xkms.x509.repo.file.FileCertificateRepo</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html" title="interface in org.apache.cxf.xkms.x509.repo">CertificateRepo</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>FileCertificateRepo</B><DT>extends <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html" title="interface in org.apache.cxf.xkms.x509.repo">CertificateRepo</A></DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html#FileCertificateRepo(java.lang.String)">FileCertificateRepo</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html#convertIdForFileSystem(java.lang.String)">convertIdForFileSystem</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;dn)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html#findByEndpoint(java.lang.String)">findByEndpoint</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;endpoint)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html#findByIssuerSerial(java.lang.String, java.lang.String)">findByIssuerSerial</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;issuer,
+                   <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;serial)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html#findByServiceName(java.lang.String)">findByServiceName</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;serviceName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html#findBySubjectDn(java.lang.String)">findBySubjectDn</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;subjectDn)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html#getCaCerts()">getCaCerts</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html#getCertPath(java.security.cert.X509Certificate, org.apache.cxf.xkms.model.xkms.UseKeyWithType)">getCertPath</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A>&nbsp;cert,
+            <A HREF="../../../../../../../org/apache/cxf/xkms/model/xkms/UseKeyWithType.html" title="class in org.apache.cxf.xkms.model.xkms">UseKeyWithType</A>&nbsp;id)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509CRL.html?is-external=true" title="class or interface in java.security.cert">X509CRL</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html#getCRLs()">getCRLs</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html#getTrustedCaCerts()">getTrustedCaCerts</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html#readCertificate(java.io.File)">readCertificate</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</A>&nbsp;certFile)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509CRL.html?is-external=true" title="class or interface in java.security.cert">X509CRL</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html#readCRL(java.io.File)">readCRL</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</A>&nbsp;crlFile)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html#saveCACertificate(java.security.cert.X509Certificate, org.apache.cxf.xkms.model.xkms.UseKeyWithType)">saveCACertificate</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A>&nbsp;cert,
+                  <A HREF="../../../../../../../org/apache/cxf/xkms/model/xkms/UseKeyWithType.html" title="class in org.apache.cxf.xkms.model.xkms">UseKeyWithType</A>&nbsp;id)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html#saveCertificate(java.security.cert.X509Certificate, org.apache.cxf.xkms.model.xkms.UseKeyWithType)">saveCertificate</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A>&nbsp;cert,
+                <A HREF="../../../../../../../org/apache/cxf/xkms/model/xkms/UseKeyWithType.html" title="class in org.apache.cxf.xkms.model.xkms">UseKeyWithType</A>&nbsp;id)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html#saveCRL(java.security.cert.X509CRL, org.apache.cxf.xkms.model.xkms.UseKeyWithType)">saveCRL</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509CRL.html?is-external=true" title="class or interface in java.security.cert">X509CRL</A>&nbsp;crl,
+        <A HREF="../../../../../../../org/apache/cxf/xkms/model/xkms/UseKeyWithType.html" title="class in org.apache.cxf.xkms.model.xkms">UseKeyWithType</A>&nbsp;id)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html#saveTrustedCACertificate(java.security.cert.X509Certificate, org.apache.cxf.xkms.model.xkms.UseKeyWithType)">saveTrustedCACertificate</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A>&nbsp;cert,
+                         <A HREF="../../../../../../../org/apache/cxf/xkms/model/xkms/UseKeyWithType.html" title="class in org.apache.cxf.xkms.model.xkms">UseKeyWithType</A>&nbsp;id)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="FileCertificateRepo(java.lang.String)"><!-- --></A><H3>
+FileCertificateRepo</H3>
+<PRE>
+public <B>FileCertificateRepo</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="saveCertificate(java.security.cert.X509Certificate, org.apache.cxf.xkms.model.xkms.UseKeyWithType)"><!-- --></A><H3>
+saveCertificate</H3>
+<PRE>
+public void <B>saveCertificate</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A>&nbsp;cert,
+                            <A HREF="../../../../../../../org/apache/cxf/xkms/model/xkms/UseKeyWithType.html" title="class in org.apache.cxf.xkms.model.xkms">UseKeyWithType</A>&nbsp;id)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html#saveCertificate(java.security.cert.X509Certificate, org.apache.cxf.xkms.model.xkms.UseKeyWithType)">saveCertificate</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html" title="interface in org.apache.cxf.xkms.x509.repo">CertificateRepo</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="saveTrustedCACertificate(java.security.cert.X509Certificate, org.apache.cxf.xkms.model.xkms.UseKeyWithType)"><!-- --></A><H3>
+saveTrustedCACertificate</H3>
+<PRE>
+public void <B>saveTrustedCACertificate</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A>&nbsp;cert,
+                                     <A HREF="../../../../../../../org/apache/cxf/xkms/model/xkms/UseKeyWithType.html" title="class in org.apache.cxf.xkms.model.xkms">UseKeyWithType</A>&nbsp;id)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="saveCACertificate(java.security.cert.X509Certificate, org.apache.cxf.xkms.model.xkms.UseKeyWithType)"><!-- --></A><H3>
+saveCACertificate</H3>
+<PRE>
+public void <B>saveCACertificate</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A>&nbsp;cert,
+                              <A HREF="../../../../../../../org/apache/cxf/xkms/model/xkms/UseKeyWithType.html" title="class in org.apache.cxf.xkms.model.xkms">UseKeyWithType</A>&nbsp;id)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="saveCRL(java.security.cert.X509CRL, org.apache.cxf.xkms.model.xkms.UseKeyWithType)"><!-- --></A><H3>
+saveCRL</H3>
+<PRE>
+public void <B>saveCRL</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509CRL.html?is-external=true" title="class or interface in java.security.cert">X509CRL</A>&nbsp;crl,
+                    <A HREF="../../../../../../../org/apache/cxf/xkms/model/xkms/UseKeyWithType.html" title="class in org.apache.cxf.xkms.model.xkms">UseKeyWithType</A>&nbsp;id)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="convertIdForFileSystem(java.lang.String)"><!-- --></A><H3>
+convertIdForFileSystem</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>convertIdForFileSystem</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;dn)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCertPath(java.security.cert.X509Certificate, org.apache.cxf.xkms.model.xkms.UseKeyWithType)"><!-- --></A><H3>
+getCertPath</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getCertPath</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A>&nbsp;cert,
+                          <A HREF="../../../../../../../org/apache/cxf/xkms/model/xkms/UseKeyWithType.html" title="class in org.apache.cxf.xkms.model.xkms">UseKeyWithType</A>&nbsp;id)
+                   throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/net/URISyntaxException.html?is-external=true" title="class or interface in java.net">URISyntaxException</A></PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/net/URISyntaxException.html?is-external=true" title="class or interface in java.net">URISyntaxException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="readCertificate(java.io.File)"><!-- --></A><H3>
+readCertificate</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A> <B>readCertificate</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</A>&nbsp;certFile)
+                                throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertificateException.html?is-external=true" title="class or interface in java.security.cert">CertificateException</A>,
+                                       <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/FileNotFoundException.html?is-external=true" title="class or interface in java.io">FileNotFoundException</A></PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/CertificateException.html?is-external=true" title="class or interface in java.security.cert">CertificateException</A></CODE>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/FileNotFoundException.html?is-external=true" title="class or interface in java.io">FileNotFoundException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="readCRL(java.io.File)"><!-- --></A><H3>
+readCRL</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509CRL.html?is-external=true" title="class or interface in java.security.cert">X509CRL</A> <B>readCRL</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</A>&nbsp;crlFile)
+                throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/FileNotFoundException.html?is-external=true" title="class or interface in java.io">FileNotFoundException</A>,
+                       <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/CRLException.html?is-external=true" title="class or interface in java.security.cert">CRLException</A></PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/FileNotFoundException.html?is-external=true" title="class or interface in java.io">FileNotFoundException</A></CODE>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/CRLException.html?is-external=true" title="class or interface in java.security.cert">CRLException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTrustedCaCerts()"><!-- --></A><H3>
+getTrustedCaCerts</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A>&gt; <B>getTrustedCaCerts</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html#getTrustedCaCerts()">getTrustedCaCerts</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html" title="interface in org.apache.cxf.xkms.x509.repo">CertificateRepo</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCaCerts()"><!-- --></A><H3>
+getCaCerts</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A>&gt; <B>getCaCerts</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html#getCaCerts()">getCaCerts</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html" title="interface in org.apache.cxf.xkms.x509.repo">CertificateRepo</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCRLs()"><!-- --></A><H3>
+getCRLs</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509CRL.html?is-external=true" title="class or interface in java.security.cert">X509CRL</A>&gt; <B>getCRLs</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html#getCRLs()">getCRLs</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html" title="interface in org.apache.cxf.xkms.x509.repo">CertificateRepo</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="findByServiceName(java.lang.String)"><!-- --></A><H3>
+findByServiceName</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A> <B>findByServiceName</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;serviceName)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html#findByServiceName(java.lang.String)">findByServiceName</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html" title="interface in org.apache.cxf.xkms.x509.repo">CertificateRepo</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="findByEndpoint(java.lang.String)"><!-- --></A><H3>
+findByEndpoint</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A> <B>findByEndpoint</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;endpoint)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html#findByEndpoint(java.lang.String)">findByEndpoint</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html" title="interface in org.apache.cxf.xkms.x509.repo">CertificateRepo</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="findBySubjectDn(java.lang.String)"><!-- --></A><H3>
+findBySubjectDn</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A> <B>findBySubjectDn</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;subjectDn)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html#findBySubjectDn(java.lang.String)">findBySubjectDn</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html" title="interface in org.apache.cxf.xkms.x509.repo">CertificateRepo</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="findByIssuerSerial(java.lang.String, java.lang.String)"><!-- --></A><H3>
+findByIssuerSerial</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</A> <B>findByIssuerSerial</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;issuer,
+                                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;serial)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html#findByIssuerSerial(java.lang.String, java.lang.String)">findByIssuerSerial</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/xkms/x509/repo/CertificateRepo.html" title="interface in org.apache.cxf.xkms.x509.repo">CertificateRepo</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/FileCertificateRepo.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/xkms/x509/repo/file/FileCertificateRepo.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="FileCertificateRepo.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

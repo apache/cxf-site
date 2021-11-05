@@ -1,0 +1,347 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>SoapRefRegistry (Apache CXF JavaDoc 3.1.0 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SoapRefRegistry (Apache CXF JavaDoc 3.1.0 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/SoapRefRegistry.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/apache/cxf/aegis/type/encoded/SoapRef.Action.html" title="interface in org.apache.cxf.aegis.type.encoded"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/apache/cxf/aegis/type/encoded/SoapRefType.html" title="class in org.apache.cxf.aegis.type.encoded"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/apache/cxf/aegis/type/encoded/SoapRefRegistry.html" target="_top">Frames</a></li>
+<li><a href="SoapRefRegistry.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.cxf.aegis.type.encoded</div>
+<h2 title="Class SoapRefRegistry" class="title">Class SoapRefRegistry</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.cxf.aegis.type.encoded.SoapRefRegistry</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">SoapRefRegistry</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></pre>
+<div class="block">SoapRefRegistry handles resolving all SOAP encoded references.  After each object is unmarshalled if the
+ xml contained a SOAP id attribute it is registered with that attribute.  As each object is unmarshalled if
+ any nested elements have a SOAP ref attribute it, the references is registered.  If there is a object
+ instance already registered with the referenced id, the SOAP reference is immediately set. Otherwise, the
+ reference is set when an object instance is registered with the id.  This allows for the objects to occur
+ in any order in the XML document.
+ <p/>
+ Note: only the StructType and TraillingBlocks register objects with this class.</div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/apache/cxf/aegis/type/encoded/SoapRefRegistry.html#SoapRefRegistry()">SoapRefRegistry</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/aegis/type/encoded/SoapRefRegistry.html#addInstance(java.lang.String,%20java.lang.Object)">addInstance</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
+           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;instance)</code>
+<div class="block">Add an object instance to the registry.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/aegis/type/encoded/SoapRefRegistry.html#addRef(java.lang.String,%20org.apache.cxf.aegis.type.encoded.SoapRef)">addRef</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
+      <a href="../../../../../../org/apache/cxf/aegis/type/encoded/SoapRef.html" title="class in org.apache.cxf.aegis.type.encoded">SoapRef</a>&nbsp;soapRef)</code>
+<div class="block">Adds a reference to the specified id.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../../org/apache/cxf/aegis/type/encoded/SoapRefRegistry.html" title="class in org.apache.cxf.aegis.type.encoded">SoapRefRegistry</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/aegis/type/encoded/SoapRefRegistry.html#get(org.apache.cxf.aegis.Context)">get</a></strong>(<a href="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</a>&nbsp;context)</code>
+<div class="block">Get the SoapRefRegistry stored in the context, and if necessary create a new one.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/aegis/type/encoded/SoapRefRegistry.html#getIds()">getIds</a></strong>()</code>
+<div class="block">Gets the ids of the registered object instances.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/aegis/type/encoded/SoapRef.html" title="class in org.apache.cxf.aegis.type.encoded">SoapRef</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/aegis/type/encoded/SoapRefRegistry.html#getUnresolvedRefs()">getUnresolvedRefs</a></strong>()</code>
+<div class="block">Gets the unresolved SOAP references by referenced id.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="SoapRefRegistry()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>SoapRefRegistry</h4>
+<pre>public&nbsp;SoapRefRegistry()</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="get(org.apache.cxf.aegis.Context)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>get</h4>
+<pre>public static&nbsp;<a href="../../../../../../org/apache/cxf/aegis/type/encoded/SoapRefRegistry.html" title="class in org.apache.cxf.aegis.type.encoded">SoapRefRegistry</a>&nbsp;get(<a href="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</a>&nbsp;context)</pre>
+<div class="block">Get the SoapRefRegistry stored in the context, and if necessary create a new one.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>context</code> - the unmarshal context</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the SoapRefRegistry; never null</dd></dl>
+</li>
+</ul>
+<a name="addInstance(java.lang.String, java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addInstance</h4>
+<pre>public&nbsp;void&nbsp;addInstance(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
+               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;instance)</pre>
+<div class="block">Add an object instance to the registry.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>id</code> - the unique identifier of the instance</dd><dd><code>instance</code> - the instance</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/cxf/aegis/DatabindingException.html" title="class in org.apache.cxf.aegis">DatabindingException</a></code> - if another object instance is already registered with the id</dd></dl>
+</li>
+</ul>
+<a name="addRef(java.lang.String, org.apache.cxf.aegis.type.encoded.SoapRef)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addRef</h4>
+<pre>public&nbsp;void&nbsp;addRef(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;id,
+          <a href="../../../../../../org/apache/cxf/aegis/type/encoded/SoapRef.html" title="class in org.apache.cxf.aegis.type.encoded">SoapRef</a>&nbsp;soapRef)</pre>
+<div class="block">Adds a reference to the specified id.  If an object is already registered with the specified id, the
+ SOAP reference will immedately be set.  Otherwise, the reference will be set when an object is
+ registered with the specified id.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>id</code> - the id of the referenced object instance</dd><dd><code>soapRef</code> - the reference to set</dd></dl>
+</li>
+</ul>
+<a name="getIds()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIds</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getIds()</pre>
+<div class="block">Gets the ids of the registered object instances.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the ids of the registered object instances</dd></dl>
+</li>
+</ul>
+<a name="getUnresolvedRefs()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getUnresolvedRefs</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/SortedMap.html?is-external=true" title="class or interface in java.util">SortedMap</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/aegis/type/encoded/SoapRef.html" title="class in org.apache.cxf.aegis.type.encoded">SoapRef</a>&gt;&gt;&nbsp;getUnresolvedRefs()</pre>
+<div class="block">Gets the unresolved SOAP references by referenced id.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the unresolved SOAP references by referenced id</dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/SoapRefRegistry.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/apache/cxf/aegis/type/encoded/SoapRef.Action.html" title="interface in org.apache.cxf.aegis.type.encoded"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/apache/cxf/aegis/type/encoded/SoapRefType.html" title="class in org.apache.cxf.aegis.type.encoded"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/apache/cxf/aegis/type/encoded/SoapRefRegistry.html" target="_top">Frames</a></li>
+<li><a href="SoapRefRegistry.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Apache CXF</small></p>
+</body>
+</html>

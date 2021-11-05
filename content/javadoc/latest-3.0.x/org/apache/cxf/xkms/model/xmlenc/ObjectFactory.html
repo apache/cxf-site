@@ -1,0 +1,815 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+ObjectFactory (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ObjectFactory (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ObjectFactory.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertyType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceList.html" title="class in org.apache.cxf.xkms.model.xmlenc"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ObjectFactory.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.xkms.model.xmlenc</FONT>
+<BR>
+Class ObjectFactory</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.xkms.model.xmlenc.ObjectFactory</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>ObjectFactory</B><DT>extends <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+This object contains factory methods for each 
+ Java content interface and Java element interface 
+ generated in the org.apache.cxf.xkms.model.xmlenc package. 
+ <p>An ObjectFactory allows you to programatically 
+ construct new instances of the Java representation 
+ for XML content. The Java representation of XML 
+ content can consist of schema derived interfaces 
+ and classes representing the binding of schema 
+ type definitions, element declarations and model 
+ groups.  Factory methods for each of these are 
+ provided in this class.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#ObjectFactory()">ObjectFactory</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.apache.cxf.xkms.model.xmlenc</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/AgreementMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc">AgreementMethodType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createAgreementMethod(org.apache.cxf.xkms.model.xmlenc.AgreementMethodType)">createAgreementMethod</A></B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/AgreementMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc">AgreementMethodType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/AgreementMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>AgreementMethodType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/AgreementMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc">AgreementMethodType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createAgreementMethodType()">createAgreementMethodType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/AgreementMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>AgreementMethodType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;byte[]&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createAgreementMethodTypeKANonce(byte[])">createAgreementMethodTypeKANonce</A></B>(byte[]&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><CODE>byte[]</CODE><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig">KeyInfoType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createAgreementMethodTypeOriginatorKeyInfo(org.apache.cxf.xkms.model.xmldsig.KeyInfoType)">createAgreementMethodTypeOriginatorKeyInfo</A></B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig">KeyInfoType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig"><CODE>KeyInfoType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig">KeyInfoType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createAgreementMethodTypeRecipientKeyInfo(org.apache.cxf.xkms.model.xmldsig.KeyInfoType)">createAgreementMethodTypeRecipientKeyInfo</A></B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig">KeyInfoType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig"><CODE>KeyInfoType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherDataType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createCipherData(org.apache.cxf.xkms.model.xmlenc.CipherDataType)">createCipherData</A></B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherDataType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>CipherDataType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherDataType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createCipherDataType()">createCipherDataType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>CipherDataType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherReferenceType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createCipherReference(org.apache.cxf.xkms.model.xmlenc.CipherReferenceType)">createCipherReference</A></B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherReferenceType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>CipherReferenceType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherReferenceType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createCipherReferenceType()">createCipherReferenceType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>CipherReferenceType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/DHKeyValueType.html" title="class in org.apache.cxf.xkms.model.xmlenc">DHKeyValueType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createDHKeyValue(org.apache.cxf.xkms.model.xmlenc.DHKeyValueType)">createDHKeyValue</A></B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/DHKeyValueType.html" title="class in org.apache.cxf.xkms.model.xmlenc">DHKeyValueType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/DHKeyValueType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>DHKeyValueType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/DHKeyValueType.html" title="class in org.apache.cxf.xkms.model.xmlenc">DHKeyValueType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createDHKeyValueType()">createDHKeyValueType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/DHKeyValueType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>DHKeyValueType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptedDataType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createEncryptedData(org.apache.cxf.xkms.model.xmlenc.EncryptedDataType)">createEncryptedData</A></B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptedDataType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptedDataType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptedDataType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createEncryptedDataType()">createEncryptedDataType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptedDataType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedKeyType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptedKeyType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createEncryptedKey(org.apache.cxf.xkms.model.xmlenc.EncryptedKeyType)">createEncryptedKey</A></B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedKeyType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptedKeyType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedKeyType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptedKeyType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedKeyType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptedKeyType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createEncryptedKeyType()">createEncryptedKeyType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedKeyType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptedKeyType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionMethodType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createEncryptionMethodType()">createEncryptionMethodType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptionMethodType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createEncryptionMethodTypeKeySize(java.math.BigInteger)">createEncryptionMethodTypeKeySize</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math"><CODE>BigInteger</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;byte[]&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createEncryptionMethodTypeOAEPparams(byte[])">createEncryptionMethodTypeOAEPparams</A></B>(byte[]&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><CODE>byte[]</CODE><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertiesType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createEncryptionProperties(org.apache.cxf.xkms.model.xmlenc.EncryptionPropertiesType)">createEncryptionProperties</A></B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertiesType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptionPropertiesType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertiesType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createEncryptionPropertiesType()">createEncryptionPropertiesType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptionPropertiesType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertyType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertyType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createEncryptionProperty(org.apache.cxf.xkms.model.xmlenc.EncryptionPropertyType)">createEncryptionProperty</A></B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertyType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertyType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertyType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptionPropertyType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertyType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertyType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createEncryptionPropertyType()">createEncryptionPropertyType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertyType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptionPropertyType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceList.html" title="class in org.apache.cxf.xkms.model.xmlenc">ReferenceList</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createReferenceList()">createReferenceList</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceList.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>ReferenceList</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc">ReferenceType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createReferenceListDataReference(org.apache.cxf.xkms.model.xmlenc.ReferenceType)">createReferenceListDataReference</A></B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc">ReferenceType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>ReferenceType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc">ReferenceType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createReferenceListKeyReference(org.apache.cxf.xkms.model.xmlenc.ReferenceType)">createReferenceListKeyReference</A></B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc">ReferenceType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>ReferenceType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc">ReferenceType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createReferenceType()">createReferenceType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>ReferenceType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/TransformsType.html" title="class in org.apache.cxf.xkms.model.xmlenc">TransformsType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html#createTransformsType()">createTransformsType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/TransformsType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>TransformsType</CODE></A></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ObjectFactory()"><!-- --></A><H3>
+ObjectFactory</H3>
+<PRE>
+public <B>ObjectFactory</B>()</PRE>
+<DL>
+<DD>Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.apache.cxf.xkms.model.xmlenc
+<P>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="createEncryptionMethodType()"><!-- --></A><H3>
+createEncryptionMethodType</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionMethodType</A> <B>createEncryptionMethodType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptionMethodType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createReferenceList()"><!-- --></A><H3>
+createReferenceList</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceList.html" title="class in org.apache.cxf.xkms.model.xmlenc">ReferenceList</A> <B>createReferenceList</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceList.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>ReferenceList</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createCipherReferenceType()"><!-- --></A><H3>
+createCipherReferenceType</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherReferenceType</A> <B>createCipherReferenceType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>CipherReferenceType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createEncryptedDataType()"><!-- --></A><H3>
+createEncryptedDataType</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptedDataType</A> <B>createEncryptedDataType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptedDataType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createEncryptionPropertyType()"><!-- --></A><H3>
+createEncryptionPropertyType</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertyType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertyType</A> <B>createEncryptionPropertyType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertyType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptionPropertyType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createTransformsType()"><!-- --></A><H3>
+createTransformsType</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/TransformsType.html" title="class in org.apache.cxf.xkms.model.xmlenc">TransformsType</A> <B>createTransformsType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/TransformsType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>TransformsType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createEncryptionPropertiesType()"><!-- --></A><H3>
+createEncryptionPropertiesType</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertiesType</A> <B>createEncryptionPropertiesType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptionPropertiesType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createCipherDataType()"><!-- --></A><H3>
+createCipherDataType</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherDataType</A> <B>createCipherDataType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>CipherDataType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createReferenceType()"><!-- --></A><H3>
+createReferenceType</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc">ReferenceType</A> <B>createReferenceType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>ReferenceType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createEncryptedKeyType()"><!-- --></A><H3>
+createEncryptedKeyType</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedKeyType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptedKeyType</A> <B>createEncryptedKeyType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedKeyType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptedKeyType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createDHKeyValueType()"><!-- --></A><H3>
+createDHKeyValueType</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/DHKeyValueType.html" title="class in org.apache.cxf.xkms.model.xmlenc">DHKeyValueType</A> <B>createDHKeyValueType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/DHKeyValueType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>DHKeyValueType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createAgreementMethodType()"><!-- --></A><H3>
+createAgreementMethodType</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/AgreementMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc">AgreementMethodType</A> <B>createAgreementMethodType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/AgreementMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>AgreementMethodType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createAgreementMethodTypeOriginatorKeyInfo(org.apache.cxf.xkms.model.xmldsig.KeyInfoType)"><!-- --></A><H3>
+createAgreementMethodTypeOriginatorKeyInfo</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig">KeyInfoType</A>&gt; <B>createAgreementMethodTypeOriginatorKeyInfo</B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig">KeyInfoType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig"><CODE>KeyInfoType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createAgreementMethodTypeRecipientKeyInfo(org.apache.cxf.xkms.model.xmldsig.KeyInfoType)"><!-- --></A><H3>
+createAgreementMethodTypeRecipientKeyInfo</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig">KeyInfoType</A>&gt; <B>createAgreementMethodTypeRecipientKeyInfo</B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig">KeyInfoType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig"><CODE>KeyInfoType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createAgreementMethodTypeKANonce(byte[])"><!-- --></A><H3>
+createAgreementMethodTypeKANonce</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;byte[]&gt; <B>createAgreementMethodTypeKANonce</B>(byte[]&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><CODE>byte[]</CODE><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createEncryptionMethodTypeKeySize(java.math.BigInteger)"><!-- --></A><H3>
+createEncryptionMethodTypeKeySize</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A>&gt; <B>createEncryptionMethodTypeKeySize</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math">BigInteger</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/math/BigInteger.html?is-external=true" title="class or interface in java.math"><CODE>BigInteger</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createEncryptionMethodTypeOAEPparams(byte[])"><!-- --></A><H3>
+createEncryptionMethodTypeOAEPparams</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;byte[]&gt; <B>createEncryptionMethodTypeOAEPparams</B>(byte[]&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><CODE>byte[]</CODE><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createEncryptionProperty(org.apache.cxf.xkms.model.xmlenc.EncryptionPropertyType)"><!-- --></A><H3>
+createEncryptionProperty</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertyType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertyType</A>&gt; <B>createEncryptionProperty</B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertyType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertyType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertyType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptionPropertyType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createEncryptedKey(org.apache.cxf.xkms.model.xmlenc.EncryptedKeyType)"><!-- --></A><H3>
+createEncryptedKey</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedKeyType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptedKeyType</A>&gt; <B>createEncryptedKey</B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedKeyType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptedKeyType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedKeyType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptedKeyType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createCipherReference(org.apache.cxf.xkms.model.xmlenc.CipherReferenceType)"><!-- --></A><H3>
+createCipherReference</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherReferenceType</A>&gt; <B>createCipherReference</B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherReferenceType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>CipherReferenceType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createEncryptedData(org.apache.cxf.xkms.model.xmlenc.EncryptedDataType)"><!-- --></A><H3>
+createEncryptedData</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptedDataType</A>&gt; <B>createEncryptedData</B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptedDataType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptedDataType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createCipherData(org.apache.cxf.xkms.model.xmlenc.CipherDataType)"><!-- --></A><H3>
+createCipherData</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherDataType</A>&gt; <B>createCipherData</B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherDataType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>CipherDataType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createEncryptionProperties(org.apache.cxf.xkms.model.xmlenc.EncryptionPropertiesType)"><!-- --></A><H3>
+createEncryptionProperties</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertiesType</A>&gt; <B>createEncryptionProperties</B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertiesType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptionPropertiesType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createDHKeyValue(org.apache.cxf.xkms.model.xmlenc.DHKeyValueType)"><!-- --></A><H3>
+createDHKeyValue</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/DHKeyValueType.html" title="class in org.apache.cxf.xkms.model.xmlenc">DHKeyValueType</A>&gt; <B>createDHKeyValue</B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/DHKeyValueType.html" title="class in org.apache.cxf.xkms.model.xmlenc">DHKeyValueType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/DHKeyValueType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>DHKeyValueType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createAgreementMethod(org.apache.cxf.xkms.model.xmlenc.AgreementMethodType)"><!-- --></A><H3>
+createAgreementMethod</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/AgreementMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc">AgreementMethodType</A>&gt; <B>createAgreementMethod</B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/AgreementMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc">AgreementMethodType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/AgreementMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>AgreementMethodType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createReferenceListDataReference(org.apache.cxf.xkms.model.xmlenc.ReferenceType)"><!-- --></A><H3>
+createReferenceListDataReference</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc">ReferenceType</A>&gt; <B>createReferenceListDataReference</B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc">ReferenceType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>ReferenceType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createReferenceListKeyReference(org.apache.cxf.xkms.model.xmlenc.ReferenceType)"><!-- --></A><H3>
+createReferenceListKeyReference</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc">ReferenceType</A>&gt; <B>createReferenceListKeyReference</B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc">ReferenceType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>ReferenceType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ObjectFactory.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertyType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/ReferenceList.html" title="class in org.apache.cxf.xkms.model.xmlenc"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/xkms/model/xmlenc/ObjectFactory.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ObjectFactory.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

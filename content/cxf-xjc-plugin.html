@@ -1,0 +1,221 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - cxf-xjc-plugin">
+
+
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shCoreCXF.css">
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shThemeCXF.css">
+
+<script src='/resources/highlighter/scripts/shCore.js'></script>
+<script src='/resources/highlighter/scripts/shBrushXml.js'></script>
+<script src='/resources/highlighter/scripts/shBrushJava.js'></script>
+<script>
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+
+    <title>
+Apache CXF -- cxf-xjc-plugin
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="site.html">Site</a>&nbsp;&gt;&nbsp;<a href="navigation.html">Navigation</a>&nbsp;&gt;&nbsp;<a href="xjc-utils.html">XJC Utils</a>&nbsp;&gt;&nbsp;<a href="cxf-xjc-plugin.html">cxf-xjc-plugin</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><h2 id="cxfxjcplugin-TheCXFXJCMavenPlugin">The CXF XJC Maven Plugin</h2><p>The CXF XJC Maven Plugin is a wrapper around the JAXB XJC tool to handle the XSD -&gt; Java tasks.</p><p>There are two targets:</p><div class="table-wrap"><table class="confluenceTable"><colgroup span="1"><col span="1"><col span="1"></colgroup><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>xsdtojava</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Defaults into generate-sources phase and outputs to ${project.build.directory}/generated/src/main/java</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>xsdtojava-tests</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Defaults into generate-test-sources phase and outputs to ${project.build.directory}/generated/src/test/java</p></td></tr></tbody></table></div><p>Parameters</p><div class="table-wrap"><table class="confluenceTable"><colgroup span="1"><col span="1"><col span="1"></colgroup><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>extensions</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>List of maven artifacts to add to the extension classpath. Each item in the list is a string of groupId:artifactId:version.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>xsdOptions</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>List of XsdOption objects. See below.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>sourceRoot/testSourceRoot</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>For the two targets above, override the default output directory.</p></td></tr></tbody></table></div><p>The XsdOption object is used to pass specific options and configuration for each XSD file that is to be processed.</p><div class="table-wrap"><table class="confluenceTable"><colgroup span="1"><col span="1"><col span="1"></colgroup><tbody><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>xsd</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>The location of the schema to process.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>bindingFile</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>The location of the JAXB binding file to customize the output.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">bindingFiles</td><td colspan="1" rowspan="1" class="confluenceTd">It's possible to specify multiple bindingFile options using "bindingFiles" since the 3.2.3 release.</td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>packagename</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Specifies the package name to use for the outputted code.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>extension</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>(boolean) Turns on the custom JAXB implementation extensions.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>catalog</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>The location of a catalog file for mapping schema locations.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>extensionArgs</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>List of additional arguements passed to XJC. (ex: -Xlocator)</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>dependencies</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>List of files that are examined to determine if subsequent runs of the plugin must re-generate code.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>deleteDirs</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>List of directories that are removed after generation. If you have schemas that generate code that has already been generated, (possibly in a different maven module) you can specify this to have them removed. The preferred method to do this, however, is a binding file with the "skip" flag set on those namespaces.</p></td></tr></tbody></table></div><h3 id="cxfxjcplugin-Example:">Example:</h3><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+
+            &lt;plugin&gt;
+                &lt;groupId&gt;org.apache.cxf&lt;/groupId&gt;
+                &lt;artifactId&gt;cxf-xjc-plugin&lt;/artifactId&gt;
+                &lt;version&gt;3.2.3&lt;/version&gt;
+                &lt;configuration&gt;
+                    &lt;extensions&gt;
+                        &lt;extension&gt;org.apache.cxf.xjcplugins:cxf-xjc-dv:3.2.3&lt;/extension&gt;
+                    &lt;/extensions&gt;
+                &lt;/configuration&gt;
+                &lt;executions&gt;
+                    &lt;execution&gt;
+                        &lt;id&gt;generate-sources&lt;/id&gt;
+                        &lt;phase&gt;generate-sources&lt;/phase&gt;
+                        &lt;goals&gt;
+                            &lt;goal&gt;xsdtojava&lt;/goal&gt;
+                        &lt;/goals&gt;
+                        &lt;configuration&gt;
+                            &lt;sourceRoot&gt;${basedir}/target/generated/src/main/java&lt;/sourceRoot&gt;
+                            &lt;xsdOptions&gt;
+                                &lt;xsdOption&gt;
+                                    &lt;xsd&gt;classpath:/schemas/wsdl/http.xsd&lt;/xsd&gt;
+                                    &lt;bindingFile&gt;classpath:/schemas/wsdl/http.xjb&lt;/bindingFile&gt;
+                                    &lt;catalog&gt;${basedir}/src/main/build-resources/catalog.cat&lt;/catalog&gt;
+                                &lt;/xsdOption&gt;
+                                &lt;xsdOption&gt;
+                                    &lt;xsd&gt;classpath:/schemas/wsdl/ws-addr.xsd&lt;/xsd&gt;
+                                    &lt;packagename&gt;org.apache.cxf.ws.addressing&lt;/packagename&gt;
+                                &lt;/xsdOption&gt;
+                                &lt;xsdOption&gt;
+                                    &lt;xsd&gt;classpath:/schemas/wsdl/addressing.xsd&lt;/xsd&gt;
+                                    &lt;bindingFile&gt;classpath:/schemas/wsdl/addressing.xjb&lt;/bindingFile&gt;
+                                &lt;/xsdOption&gt;
+                                &lt;xsdOption&gt;
+                                    &lt;xsd&gt;classpath:/schemas/configuration/security.xsd&lt;/xsd&gt;
+                                    &lt;bindingFiles&gt;
+                                         &lt;bindingFile&gt;classpath:/schemas/configuration/security.xjb&lt;/bindingFile&gt;
+                                         &lt;bindingFile&gt;classpath:/schemas/configuration/security2.xjb&lt;/bindingFile&gt;
+                                    &lt;/bindingFiles&gt;
+                                   &#160;&lt;catalog&gt;${basedir}/src/main/build-resources/catalog.cat&lt;/catalog&gt;
+                                    &lt;extensionArgs&gt;
+                                        &lt;extensionArg&gt;-Xdv&lt;/extensionArg&gt;
+                                    &lt;/extensionArgs&gt;
+                                &lt;/xsdOption&gt;
+                                &lt;xsdOption&gt;
+                                    &lt;xsd&gt;classpath:/schemas/wsdl/ws-addr-wsdl.xsd&lt;/xsd&gt;
+                                    &lt;bindingFile&gt;classpath:/schemas/wsdl/ws-addr-wsdl.xjb&lt;/bindingFile&gt;
+                                    &lt;extension&gt;true&lt;/extension&gt;
+                                &lt;/xsdOption&gt;
+                                &lt;xsdOption&gt;
+                                    &lt;xsd&gt;classpath:/schemas/wsdl/addressing200403.xsd&lt;/xsd&gt;
+                                    &lt;bindingFile&gt;classpath:/schemas/wsdl/addressing200403.xjb&lt;/bindingFile&gt;
+                                &lt;/xsdOption&gt;
+                            &lt;/xsdOptions&gt;
+                        &lt;/configuration&gt;
+                    &lt;/execution&gt;
+                &lt;/executions&gt;
+            &lt;/plugin&gt;
+
+</pre>
+</div></div></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=24184060">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=24184060&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

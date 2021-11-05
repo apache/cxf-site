@@ -1,0 +1,197 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - Setting up Eclipse">
+
+
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shCoreCXF.css">
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shThemeCXF.css">
+
+<script src='/resources/highlighter/scripts/shCore.js'></script>
+<script src='/resources/highlighter/scripts/shBrushBash.js'></script>
+<script src='/resources/highlighter/scripts/shBrushJava.js'></script>
+<script>
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+
+    <title>
+Apache CXF -- Setting up Eclipse
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="setting-up-eclipse.html">Setting up Eclipse</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><p>Setting up an <a shape="rect" class="external-link" href="http://www.eclipse.org/downloads/" rel="nofollow">Eclipse</a> project to build CXF is pretty easy. There are three parts to it:</p><h3 id="SettingupEclipse-Requiredplugins">Required plugins</h3><p>We use several Eclipse plugins to make building CXF a bit easier</p><ul><li>Checkstyle - we use checkstyle to make sure we have consistent code style as well as to find various types of bugs and other issues. <a shape="rect" class="external-link" href="http://eclipse-cs.sourceforge.net/update" rel="nofollow">http://eclipse-cs.sourceforge.net/update</a></li><li>PMD - like Checkstyle, we use PMD to find potential programming problems in the code. Point the Eclipse auto-install thing at <a shape="rect" class="external-link" href="http://sourceforge.net/projects/pmd/files/pmd-eclipse/update-site/" rel="nofollow">http://sourceforge.net/projects/pmd/files/pmd-eclipse/update-site/</a><br clear="none"><br clear="none"></li></ul><div class="panel" style="border-width: 1px;"><div class="panelContent">
+<p><img class="emoticon emoticon-information" src="https://cwiki.apache.org/confluence/s/9h3cbz/8703/189cb2l/_/images/icons/emoticons/information.svg" data-emoticon-name="information" alt="(info)"> While there exist Maven plug-ins for Eclipse, team developer experience has found using them with CXF <a shape="rect" class="external-link" href="http://cxf.547215.n5.nabble.com/Using-the-Eclipse-Maven-plugin-for-CXF-tp575175p575176.html" rel="nofollow">problematic</a> at best. We recommend importing the CXF source code as Eclipse projects as shown below and/or using Maven externally (i.e., from a command-line window) as discussed on the <a shape="rect" href="building.html">CXF build</a> page.</p>
+</div></div><h4 id="SettingupEclipse-Toinstalltheplugins:">To install the plugins:</h4><ul><li><p>Go to</p><div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>Help -&gt; Install New Software -&gt; Install
+</pre>
+</div></div></li></ul><ul><li>Click "Available Software Sites" and add the three remote sites listed above. Select just those three.</li><li>Back on the Install window, select "Work With: -<span style="text-decoration: line-through;">All Available Sites</span>-, and choose the three plugins listed above.</li><li>Return to "Available Software Sites" and reactivate the other remote sites (for subsequent updates/installs).</li></ul><p>Eclipse will then download and install those plugins.</p><h3 id="SettingupEclipse-ExperimentalAlternative:M2Eclipse">Experimental Alternative: M2Eclipse</h3><p>Some of us are starting to experiment with using M2Eclipse. See <a shape="rect" href="cxf-m2eclipse.html">this page</a> for instructions.</p><h3 id="SettingupEclipse-Creatingaworkspace">Creating a workspace</h3><p>First <a shape="rect" href="http://cxf.apache.org/source-repository.html">check out CXF</a> from Subversion.</p><p>To create a workspace, just run from the root directory of the CXF project (see the <a shape="rect" href="http://cxf.apache.org/building.html">build page</a> for more detailed information):</p><div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>&gt; mvn -Pfastinstall
+&gt; mvn -Psetup.eclipse  
+</pre>
+</div></div><p><strong>OR</strong></p><div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>&gt; mvn install -Pfastinstall -Psetup.eclipse
+</pre>
+</div></div><p>This creates a new workspace in "../workspace" for use with CXF.</p><p>If you don't want the workspace there, you can run:</p><div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>"mvn -Psetup.eclipse -Declipse.workspace.dir=path/to/workspace"
+</pre>
+</div></div><p>If you don't want the eclipse projects' output directory to be ./target directory (by default) but ./eclipse-classes, you can run:</p><div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>"mvn -Psetup.eclipse -Pset.eclipse.output"
+</pre>
+</div></div><p>What this does is create a workspace and imports our checkstyle rules, the maven 2 repository, code format rules, import order rules, etc... into that workspace. It also goes through each sub-project and creates the .project and .classpath files. This process will take some time. It will down load source jars for most of the dependencies and hook them up in the .classpath file as well. Thus, while coding/debugging, you can trace right into the dependent libraries. While running, you <strong><em>WILL</em></strong> see a bunch of warnings and such flying by. There are a bunch of jars on ibiblio that do NOT have source jars with them. Thus, you will see warning about those. Those warnings are safely ignorable. As long as it says "BUILD SUCCESSFUL" at the end, you should be OK.</p><h3 id="SettingupEclipse-CreatetheprojectinEclipse">Create the project in Eclipse</h3><ul><li>In eclipse, switch to the workspace you created above.</li><li><p>Go To:</p><div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>File -&gt; Import....
+</pre>
+</div></div></li><li>Select "Existing Projects into Workspace" and hit Next</li><li>Select root directory: enter the path to your trunk directory and hit Next.</li><li>Select all the subprojects and hit Finish. Eclipse will import and rebuild all the subprojects selected. This will take a while.</li></ul><p>That's all there is to it. From eclipse, all the unit tests and system tests should be runnable. However, to build kits/jars and stuff, you still need to use the command line "mvn" stuff.</p><h4 id="SettingupEclipse-ImportingnewprojectsthatdependonCXFprojects">Importing new projects that depend on CXF projects</h4><p>With the latest version (2.5) of the maven-eclipse-plugin, when you run "mvn eclipse:eclipse" on a project, if it knows where your workspace is, it will see what projects are already defined and wire them in to the new project instead of pointing at the jars in your ~/.m2/repository dir. Thus, debugging is a lot easier. There are two ways to get it to know where your workspace is:</p><ol><li>Explicitly on the command line. When running eclipse:eclipse, add -Declipse.workspace=/home/dkulp/working/workspace</li><li><p>Update your Maven ~/.m2/settings.xml to have a active profile that always sets these variables. Thus, whenever the eclipse plugin looks for it, it know where the workspace is. In settings.xml, do:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">...
+    &lt;activeProfiles&gt;
+        &lt;activeProfile&gt;extra&lt;/activeProfile&gt;
+    &lt;/activeProfiles&gt;
+    &lt;profiles&gt;
+        &lt;profile&gt;
+            &lt;id&gt;extra&lt;/id&gt;
+            &lt;properties&gt;
+                &lt;eclipse.workspace&gt;/home/dkulp/working/workspace&lt;/eclipse.workspace&gt;
+
+                &lt;eclipse.workspace.dir&gt;/home/dkulp/working/workspace&lt;/eclipse.workspace.dir&gt;
+            &lt;/properties&gt;
+        &lt;/profile&gt;
+    &lt;/profiles&gt;
+...
+</pre>
+</div></div><p>By doing that, you can pretty much run eclipse:eclipse (or -Psetup.eclipse for cxf projects) at any point and it will always wire the new project to depend on the existing projects.</p></li></ol><h3 id="SettingupEclipse-HowDoesThisAllWork,Anyway?">How Does This All Work, Anyway?</h3><p>If you are wondering about how all this manages to make Eclipse, Maven, Checkstyle, and PMD <br clear="none"> cooperate, see <a shape="rect" href="connecting-maven-eclipse-checkstyle-and-pmd.html">Connecting Maven, Eclipse, Checkstyle, and PMD</a>.</p></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=20273">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=20273&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

@@ -1,0 +1,213 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - Fediz Configuration">
+
+
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shCoreCXF.css">
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shThemeCXF.css">
+
+<script src='/resources/highlighter/scripts/shCore.js'></script>
+<script src='/resources/highlighter/scripts/shBrushXml.js'></script>
+<script src='/resources/highlighter/scripts/shBrushJava.js'></script>
+<script>
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+
+    <title>
+Apache CXF -- Fediz Configuration
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="fediz.html">Fediz</a>&nbsp;&gt;&nbsp;<a href="fediz-configuration.html">Fediz Configuration</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><h1 id="FedizConfiguration-FedizPluginconfiguration">Fediz Plugin configuration</h1><p>This page describes the Fediz configuration file referenced by the security interceptor of the Servlet Container (eg. authenticator in Tomcat/Jetty).</p><p>The Fediz configuration information is used to publish the WS-Federation or SAML SSO Metadata document, which is described <a shape="rect" href="fediz-metadata.html">here.</a></p><h3 id="FedizConfiguration-WS-FederationExample">WS-Federation Example</h3><p>The following example shows the minimum configuration for Fediz.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;FedizConfig&gt;
+    &lt;contextConfig name="/fedizhelloworld"&gt;
+        &lt;audienceUris&gt;
+            &lt;audienceItem&gt;https://localhost:8443/fedizhelloworld&lt;/audienceItem&gt;
+        &lt;/audienceUris&gt;
+        &lt;certificateStores&gt;
+            &lt;trustManager&gt;
+                &lt;keyStore file="conf/stsstore.jks" password="stsspass" type="JKS" /&gt;
+            &lt;/trustManager&gt;
+        &lt;/certificateStores&gt;
+        &lt;trustedIssuers&gt;
+            &lt;issuer certificateValidation="PeerTrust" /&gt;
+        &lt;/trustedIssuers&gt;
+        &lt;protocol xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="federationProtocolType" version="1.2"&gt;
+            &lt;issuer&gt;https://localhost:9443/fediz-idp/federation/&lt;/issuer&gt;
+        &lt;/protocol&gt;
+    &lt;/contextConfig&gt;
+&lt;/FedizConfig&gt;
+</pre>
+</div></div><p>The IDP issues a SAML token which must be validated by the plugin. The validation requires the certificate store of the Certificate Authority(ies) of the certificate which signed the SAML token. This is defined in <code>certificateStore</code>. The signing certificate itself is not required because <code>certificateValidation</code> is set to <code>ChainTrust</code>. The audience URI is validated against the audience restriction in the SAML token.</p><p>The protocol element declares that the WS-Federation protocol is being used. If SAML SSO was being used instead, then the "xsi:type" value would be "samlProtocolType". The configuration items outside of the "protocol" section are independent of whether WS-Federation or SAML SSO are being used.</p><p>The issuer element shows the URL to which authenticated requests will be redirected with a SignIn request.</p><h3 id="FedizConfiguration-Protocol-independentconfigurationreference">Protocol-independent configuration reference</h3><p>The configuration schema can be seen <a shape="rect" class="external-link" href="https://github.com/apache/cxf-fediz/blob/master/plugins/core/src/main/resources/schemas/FedizConfig.xsd" rel="nofollow">here</a>.</p><div class="table-wrap"><table class="confluenceTable"><colgroup span="1"><col span="1"><col span="1"><col span="1"></colgroup><tbody><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>XML element</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Use</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Description</p></th></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>audienceUris</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>The values of the list of audience URIs are verified against the element <code>AudienceRestriction</code> in the SAML token. If a SAML token contains a audience restriction which is not listed within this collection, the token will be refused.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>certificateStores</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>The list of keystores (JKS, PEM) includes at least the certificate of the Certificate Authorities (CA) which signed the certificate which is used to sign the SAML token.<br clear="none"> If the file location is not fully qualified it needs to be relative to the Container home directory</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">tokenExpirationValidation</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd"><p>Decision whether the token validation (e.g. lifetime) shall be performed on every request (true) or only once at initial authentication (false). The default is "false".</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">addAuthenticatedRole</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd"><p>Whether to add the "Authenticated" role to the list of roles associated with the "authenticated" user. This could be useful if you don't care about authorizing the user, only about authentication. A role is required to activate authentication, and it may be problematic to list all relevant roles in web.xml. Note that if the user has no roles, then the "Authenticated" role is added automatically. The default is "false".</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>maximumClockSkew</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Maximum allowable time difference between the system clocks of the IDP and RP. Default 5 seconds.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>tokenReplayCache</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>The <a shape="rect" class="external-link" href="https://svn.apache.org/repos/asf/webservices/wss4j/trunk/ws-security-common/src/main/java/org/apache/wss4j/common/cache/ReplayCache.java">ReplayCache</a> implementation to use to cache tokens. The default is an implementation based on EHCache.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>signingKey</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>If configured, the published (WS-Federation or SAML SSO) <a shape="rect" href="fediz-metadata.html">Metadata document</a> is signed by this key. Otherwise, not signed.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>tokenDecryptionKey</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>A Keystore used to decrypt an encrypted token.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>trustedIssuers</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>There are two ways to configure a trusted issuer (IDP). Either you configure the subject name and the CA(s) who signed the certificate of the IDP (<code>certificateValidation=ChainTrust</code>) or you configure the certificate of the IDP and the CA(s) who signed it (<code>certificateValidation=PeerTrust</code>)</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">protocol</td><td colspan="1" rowspan="1" class="confluenceTd">Required</td><td colspan="1" rowspan="1" class="confluenceTd">A protocolType instance that defines the SSO protocol that is supported. Currently supported protocols are "federationProtocolType" and "samlProtocolType". See below for protocol-specific configuration items.</td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">logoutURL</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd">User defined logout URL to trigger federated logout process.</td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">logoutRedirectTo</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd"><p>URL to landing-page after successful logout.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">logoutRedirectToConstraint</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd"><p>A regular expression constraint on the 'wreply' parameter, which is used to obtain the URL to navigate to after successful logout. Only applies to WS-Federation protocol.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">requestStateValidation</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd"><p>Decision on whether the received state must match the state saved in the context. Set it to "false" to support IdP initiated SSO. Only supported for CXF + Spring plugins thus far. The default is "true".</p></td></tr></tbody></table></div><h5 id="FedizConfiguration-WS-Federationprotocolconfigurationreference">WS-Federation protocol configuration reference</h5><div class="table-wrap"><table class="relative-table confluenceTable" style="width: 92.1635%;"><colgroup span="1"><col span="1" style="width: 12.2678%;"><col span="1" style="width: 5.85594%;"><col span="1" style="width: 15.8395%;"><col span="1" style="width: 66.0368%;"></colgroup><tbody><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>XML element</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Use</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Metadata</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Description</p></th></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">applicationServiceURL</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd">entityID</td><td colspan="1" rowspan="1" class="confluenceTd">Used to set the "entityID" for the Metadata. If not specified, the context path of the application is used instead.</td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>roleDelimiter</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>NA</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>There are different ways to encode multi value attributes in SAML:</p><ul><li>Single attribute with multiple values</li><li>Several attributes with the same name but only one value</li><li>Single attribute with single value. Roles are delimited by <code>roleDelimiter</code></li></ul></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>roleURI</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>NA</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Defines the attribute name of the SAML token which contains the roles. Required for Role Based Access Control. Typically this is configured with the value "<span class="nolink">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/role</span>".</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>claimTypesRequested</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>ClaimTypesRequested (WS-Fed) / RequestedAttribute (SAML SSO)</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>The claims required by the Relying Party are listed here. Claims can be optional. If a mandatory claim can't be provided by the IDP the issuance of the token should fail.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>issuer</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>NA</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>This URL defines the location of the IDP to whom unauthenticated requests are redirected.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>realm</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd">NA</td><td colspan="1" rowspan="1" class="confluenceTd"><p>Security realm of the Relying Party / Application. For WS-Federation, this value is part of the SignIn request as the <code>wtrealm</code> parameter. For SAML SSO, it is used as the Issuer of the AuthnRequest. Default: URL including the Servlet Context</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>tokenValidators</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>NA</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Custom Token validator classes can be configured here. The SAML Token validator is enabled by default. See example <a shape="rect" class="external-link" href="https://github.com/apache/cxf-fediz/blob/master/plugins/core/src/test/java/org/apache/cxf/fediz/core/federation/CustomValidator.java" rel="nofollow">here.</a></p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">metadataURI</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd">NA</td><td colspan="1" rowspan="1" class="confluenceTd">The URI where Metadata is served. The default is "FederationMetadata/2007-06/FederationMetadata.xml" for WS-Federation and "SAML/Metadata.xml" for SAML SSO.</td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">reply</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd">NA</td><td colspan="1" rowspan="1" class="confluenceTd">The value to send to the IdP in the "wreply" parameter.</td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>authenticationType</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>NA</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>The authentication type defines what kind of authentication is required. This information is provided in the SignInRequest to the IDP (parameter <code>wauth</code>). The WS-Federation standard defines a list of predefined URIs for wauth <a shape="rect" class="external-link" href="http://docs.oasis-open.org/wsfed/federation/v1.2/os/ws-federation-1.2-spec-os.html#_Toc223174997" rel="nofollow">here</a>.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>homeRealm</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>NA</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Indicates the Resource IDP the home realm of the requestor. This may be an URL or an identifier like urn: or uuid: and depends on the Resource IDP implementation. This value is part of the SignIn request as the <code>whr</code> parameter</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>freshness</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>NA</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>The desired "freshness" of the token from the IdP. This information is provided in the SignInRequest to the IdP (parameter <code>wfresh</code>)</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">request</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd">NA</td><td colspan="1" rowspan="1" class="confluenceTd">This value is part of the SignIn request as the wreq parameter. It can be used to specify a desired TokenType from the IdP.</td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">signInQuery</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd">NA</td><td colspan="1" rowspan="1" class="confluenceTd">Additional queries to be appended to the sign-in URL.</td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">signOutQuery</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd">NA</td><td colspan="1" rowspan="1" class="confluenceTd">Additional queries to be appended to the sign-out URL.</td></tr></tbody></table></div><h5 id="FedizConfiguration-SAMLSSOprotocolconfigurationreference">SAML SSO protocol configuration reference</h5><div class="table-wrap"><table class="relative-table confluenceTable" style="width: 93.4696%;"><colgroup span="1"><col span="1" style="width: 10.8815%;"><col span="1" style="width: 5.22796%;"><col span="1" style="width: 15.5572%;"><col span="1" style="width: 68.3333%;"></colgroup><tbody><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>XML element</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Use</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Metadata</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Description</p></th></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">applicationServiceURL</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd">entityID</td><td colspan="1" rowspan="1" class="confluenceTd">Used to set the "entityID" for the Metadata. If not specified, the context path of the application is used instead.</td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>roleDelimiter</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>NA</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>There are different ways to encode multi value attributes in SAML:</p><ul><li>Single attribute with multiple values</li><li>Several attributes with the same name but only one value</li><li>Single attribute with single value. Roles are delimited by <code>roleDelimiter</code></li></ul></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>roleURI</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>NA</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Defines the attribute name of the SAML token which contains the roles. Required for Role Based Access Control. Typically this is configured with the value "<span class="nolink"><a shape="rect" class="external-link" href="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/role" rel="nofollow">http://schemas.xmlsoap.org/ws/2005/05/identity/claims/role</a></span>".</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>claimTypesRequested</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>ClaimTypesRequested (WS-Fed) / RequestedAttribute (SAML SSO)</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>The claims required by the Relying Party are listed here. Claims can be optional. If a mandatory claim can't be provided by the IDP the issuance of the token should fail.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>issuer</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Required</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>NA</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>This URL defines the location of the IDP to whom unauthenticated requests are redirected.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>realm</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd">NA</td><td colspan="1" rowspan="1" class="confluenceTd"><p>Security realm of the Relying Party / Application. For WS-Federation, this value is part of the SignIn request as the <code>wtrealm</code> parameter. For SAML SSO, it is used as the Issuer of the AuthnRequest. Default: URL including the Servlet Context</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>tokenValidators</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Optional</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>NA</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Custom Token validator classes can be configured here. The SAML Token validator is enabled by default. See example <a shape="rect" class="external-link" href="https://github.com/apache/cxf-fediz/blob/master/plugins/core/src/test/java/org/apache/cxf/fediz/core/federation/CustomValidator.java" rel="nofollow">here.</a></p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">metadataURI</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd">NA</td><td colspan="1" rowspan="1" class="confluenceTd">The URI where Metadata is served. The default is "FederationMetadata/2007-06/FederationMetadata.xml" for WS-Federation and "SAML/Metadata.xml" for SAML SSO.</td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">reply</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd">NA</td><td colspan="1" rowspan="1" class="confluenceTd">The value for the AssertionConsumerService URL in the AuthnRequest</td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">signRequest</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd">NA</td><td colspan="1" rowspan="1" class="confluenceTd">Whether to sign the AuthnRequest or not. The default is false.</td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">authnRequestBuilder</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd">NA</td><td colspan="1" rowspan="1" class="confluenceTd">A <a shape="rect" class="external-link" href="https://github.com/apache/cxf-fediz/blob/master/plugins/core/src/main/java/org/apache/cxf/fediz/core/samlsso/SAMLPRequestBuilder.java" rel="nofollow">SAMLPRequestBuilder</a> instance used to build the AuthnRequest/LogoutRequest. The default is <a shape="rect" class="external-link" href="https://github.com/apache/cxf-fediz/blob/master/plugins/core/src/main/java/org/apache/cxf/fediz/core/samlsso/DefaultSAMLPRequestBuilder.java" rel="nofollow">here</a>.</td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">disableDeflateEncoding</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd">NA</td><td colspan="1" rowspan="1" class="confluenceTd">Whether to disable deflate encoding or not. The default is "false".</td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">doNotEnforceKnownIssuer</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd">NA</td><td colspan="1" rowspan="1" class="confluenceTd">Whether to not enforce that the issuer of the SAML Response is a known value. The default it false (meaning that it is enforced).</td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">issuerLogoutURL</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd">NA</td><td colspan="1" rowspan="1" class="confluenceTd">The logout URL to redirect to. If not specified it falls back to the Issuer URL.</td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">checkClientAddress</td><td colspan="1" rowspan="1" class="confluenceTd">Optional</td><td colspan="1" rowspan="1" class="confluenceTd">NA</td><td colspan="1" rowspan="1" class="confluenceTd">Whether to check the client address against the subject confirmation data address. The default is true.</td></tr></tbody></table></div><h5 id="FedizConfiguration-Attributesresolvedatruntime">Attributes resolved at runtime</h5><p>The following attributes can be either configured statically at deployment time or dynamically when the initial request is received:</p><ul><li>authenticationType</li><li>homeRealm</li><li>issuer</li><li>realm</li><li>logoutRedirectToConstraint</li><li>request</li><li>freshness</li><li>signInQuery</li><li>signOutQuery</li><li>reply</li></ul><p>These configuration elements allows for configuring a CallbackHandler which gets a Callback object where the appropriate value must be set. The CallbackHandler implementation has access to the HttpServletRequest. The XML attribute <code>type</code> must be set to <code>Class</code>.</p><p>For more information see <a shape="rect" href="fediz-extensions.html">Fediz Extensions</a>.</p><h3 id="FedizConfiguration-AdvancedWS-Federationexample">Advanced WS-Federation example</h3><p>The following example defines the required claims and configures a custom callback handler to define some configuration values at runtime.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;FedizConfig&gt;
+    &lt;contextConfig name="/fedizhelloworld"&gt;
+        &lt;audienceUris&gt;
+            &lt;audienceItem&gt;https://localhost:8443/fedizhelloworld&lt;/audienceItem&gt;
+        &lt;/audienceUris&gt;
+        &lt;certificateStores&gt;
+            &lt;keyStore file="conf/stsstore.jks" password="stsspass" type="JKS" /&gt;
+        &lt;/certificateStores&gt;
+        &lt;maximumClockSkew&gt;10&lt;/maximumClockSkew&gt;
+        &lt;trustedIssuers&gt;
+            &lt;issuer certificateValidation="PeerTrust" /&gt;
+        &lt;/trustedIssuers&gt;
+        &lt;signingKey keyPassword="tompass"&gt;
+            &lt;keyStore file="tomcatKeystore.jks" password="tompass" type="JKS" /&gt;
+        &lt;/signingKey&gt;
+        &lt;protocol xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="federationProtocolType" version="1.2"&gt;
+            &lt;issuer&gt;https://localhost:9443/fediz-idp/federation/&lt;/issuer&gt;
+            &lt;roleDelimiter&gt;,&lt;/roleDelimiter&gt;
+            &lt;roleURI&gt;http://schemas.xmlsoap.org/ws/2005/05/identity/claims/role&lt;/roleURI&gt;
+            &lt;claimTypesRequested&gt;
+                &lt;claimType type="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/role" optional="true" /&gt;
+            &lt;/claimTypesRequested&gt;
+            &lt;authenticationType type="String" value="http://docs.oasis-open.org/wsfed/authorization/200706/authntypes/smartcard" /&gt;
+            &lt;homeRealm type="Class" value="example.HomeRealmCallbackHandler" /&gt;
+            &lt;tokenValidators&gt;
+                &lt;validator&gt;org.apache.cxf.fediz.core.CustomValidator&lt;/validator&gt;
+            &lt;/tokenValidators&gt;
+        &lt;/protocol&gt;
+    &lt;/contextConfig&gt;
+&lt;/FedizConfig&gt;
+</pre>
+</div></div></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=27846708">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=27846708&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

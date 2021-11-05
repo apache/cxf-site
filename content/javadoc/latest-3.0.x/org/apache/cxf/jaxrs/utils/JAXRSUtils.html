@@ -1,0 +1,1870 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+JAXRSUtils (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="JAXRSUtils (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/JAXRSUtils.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXBUtils.html" title="class in org.apache.cxf.jaxrs.utils"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/utils/ParameterizedCollectionType.html" title="class in org.apache.cxf.jaxrs.utils"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/jaxrs/utils/JAXRSUtils.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="JAXRSUtils.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.jaxrs.utils</FONT>
+<BR>
+Class JAXRSUtils</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.jaxrs.utils.JAXRSUtils</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public final class <B>JAXRSUtils</B><DT>extends <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;javax.ws.rs.core.MediaType</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#ALL_TYPES">ALL_TYPES</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#DOC_LOCATION">DOC_LOCATION</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#EXCEPTION_FROM_MAPPER">EXCEPTION_FROM_MAPPER</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#IGNORE_MESSAGE_WRITERS">IGNORE_MESSAGE_WRITERS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#MEDIA_TYPE_Q_PARAM">MEDIA_TYPE_Q_PARAM</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#MEDIA_TYPE_QS_PARAM">MEDIA_TYPE_QS_PARAM</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#PARTIAL_HIERARCHICAL_MEDIA_SUBTYPE_CHECK">PARTIAL_HIERARCHICAL_MEDIA_SUBTYPE_CHECK</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#ROOT_INSTANCE">ROOT_INSTANCE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#ROOT_PROVIDER">ROOT_PROVIDER</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#ROOT_RESOURCE_CLASS">ROOT_RESOURCE_CLASS</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#compareMediaTypes(javax.ws.rs.core.MediaType, javax.ws.rs.core.MediaType)">compareMediaTypes</A></B>(javax.ws.rs.core.MediaType&nbsp;mt1,
+                  javax.ws.rs.core.MediaType&nbsp;mt2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#compareMediaTypes(javax.ws.rs.core.MediaType, javax.ws.rs.core.MediaType, java.lang.String)">compareMediaTypes</A></B>(javax.ws.rs.core.MediaType&nbsp;mt1,
+                  javax.ws.rs.core.MediaType&nbsp;mt2,
+                  <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;qs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#compareMediaTypesQualityFactors(javax.ws.rs.core.MediaType, javax.ws.rs.core.MediaType)">compareMediaTypesQualityFactors</A></B>(javax.ws.rs.core.MediaType&nbsp;mt1,
+                                javax.ws.rs.core.MediaType&nbsp;mt2)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#compareMediaTypesQualityFactors(javax.ws.rs.core.MediaType, javax.ws.rs.core.MediaType, java.lang.String)">compareMediaTypesQualityFactors</A></B>(javax.ws.rs.core.MediaType&nbsp;mt1,
+                                javax.ws.rs.core.MediaType&nbsp;mt2,
+                                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;qs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#compareSortedAcceptMediaTypes(java.util.List, java.util.List, java.util.List)">compareSortedAcceptMediaTypes</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;mts1,
+                              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;mts2,
+                              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;acceptTypes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#compareSortedConsumesMediaTypes(java.util.List, java.util.List, javax.ws.rs.core.MediaType)">compareSortedConsumesMediaTypes</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;mts1,
+                                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;mts2,
+                                javax.ws.rs.core.MediaType&nbsp;ct)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#compareSortedMediaTypes(java.util.List, java.util.List, java.lang.String)">compareSortedMediaTypes</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;mts1,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;mts2,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;qs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T extends <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</A>&gt; 
+<BR>
+javax.ws.rs.core.Response</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#convertFaultToResponse(T, org.apache.cxf.message.Message)">convertFaultToResponse</A></B>(T&nbsp;ex,
+                       <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;currentMessage)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#convertStringToQName(java.lang.String)">convertStringToQName</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;javax.ws.rs.core.Response</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#copyResponseIfNeeded(javax.ws.rs.core.Response)">copyResponseIfNeeded</A></B>(javax.ws.rs.core.Response&nbsp;response)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#createBeanParamValue(org.apache.cxf.message.Message, java.lang.Class, org.apache.cxf.jaxrs.model.OperationResourceInfo)">createBeanParamValue</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m,
+                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;clazz,
+                     <A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;javax.ws.rs.ext.ContextResolver&lt;?&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#createContextResolver(java.lang.reflect.Type, org.apache.cxf.message.Message)">createContextResolver</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+                      <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T&gt; T</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#createContextValue(org.apache.cxf.message.Message, java.lang.reflect.Type, java.lang.Class)">createContextValue</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m,
+                   <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+                   <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;T&gt;&nbsp;clazz)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#createHttpParameterValue(org.apache.cxf.jaxrs.model.Parameter, java.lang.Class, java.lang.reflect.Type, java.lang.annotation.Annotation[], org.apache.cxf.message.Message, javax.ws.rs.core.MultivaluedMap, org.apache.cxf.jaxrs.model.OperationResourceInfo)">createHttpParameterValue</A></B>(<A HREF="../../../../../org/apache/cxf/jaxrs/model/Parameter.html" title="class in org.apache.cxf.jaxrs.model">Parameter</A>&nbsp;parameter,
+                         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;parameterClass,
+                         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericParam,
+                         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</A>[]&nbsp;paramAnns,
+                         <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+                         javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;values,
+                         <A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#createResourceValue(org.apache.cxf.message.Message, java.lang.reflect.Type, java.lang.Class)">createResourceValue</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m,
+                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;clazz)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;javax.ws.rs.core.Response</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#createResponse(java.util.List, org.apache.cxf.message.Message, java.lang.String, int, boolean)">createResponse</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/jaxrs/model/ClassResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">ClassResourceInfo</A>&gt;&nbsp;cris,
+               <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;msg,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;responseMessage,
+               int&nbsp;status,
+               boolean&nbsp;addAllow)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T&gt; T</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#createServletResourceValue(org.apache.cxf.message.Message, java.lang.Class)">createServletResourceValue</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m,
+                           <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;T&gt;&nbsp;clazz)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#findTargetMethod(java.util.Map, org.apache.cxf.message.Message, java.lang.String, javax.ws.rs.core.MultivaluedMap, java.lang.String, java.util.List)">findTargetMethod</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="../../../../../org/apache/cxf/jaxrs/model/ClassResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">ClassResourceInfo</A>,javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&gt;&nbsp;matchedResources,
+                 <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;httpMethod,
+                 javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;matchedValues,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;requestContentType,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;acceptContentTypes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#findTargetMethod(java.util.Map, org.apache.cxf.message.Message, java.lang.String, javax.ws.rs.core.MultivaluedMap, java.lang.String, java.util.List, boolean)">findTargetMethod</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="../../../../../org/apache/cxf/jaxrs/model/ClassResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">ClassResourceInfo</A>,javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&gt;&nbsp;matchedResources,
+                 <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;httpMethod,
+                 javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;matchedValues,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;requestContentType,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;acceptContentTypes,
+                 boolean&nbsp;throwException)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;javax.ws.rs.core.Response.ResponseBuilder</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#fromResponse(javax.ws.rs.core.Response)">fromResponse</A></B>(javax.ws.rs.core.Response&nbsp;response)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#getClassQName(java.lang.Class)">getClassQName</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#getConsumeTypes(javax.ws.rs.Consumes)">getConsumeTypes</A></B>(javax.ws.rs.Consumes&nbsp;cm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#getCurrentMessage()">getCurrentMessage</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#getMatrixParams(java.lang.String, boolean)">getMatrixParams</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path,
+                boolean&nbsp;decode)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;float</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#getMediaTypeQualityFactor(java.lang.String)">getMediaTypeQualityFactor</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;q)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#getMediaTypes(java.lang.String[])">getMediaTypes</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>[]&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.PathSegment&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#getPathSegments(java.lang.String, boolean)">getPathSegments</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;thePath,
+                boolean&nbsp;decode)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.PathSegment&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#getPathSegments(java.lang.String, boolean, boolean)">getPathSegments</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;thePath,
+                boolean&nbsp;decode,
+                boolean&nbsp;ignoreLastSlash)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#getProduceTypes(javax.ws.rs.Produces)">getProduceTypes</A></B>(javax.ws.rs.Produces&nbsp;pm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#getProviderConsumeTypes(javax.ws.rs.ext.MessageBodyReader)">getProviderConsumeTypes</A></B>(javax.ws.rs.ext.MessageBodyReader&lt;?&gt;&nbsp;provider)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#getProviderProduceTypes(javax.ws.rs.ext.MessageBodyWriter)">getProviderProduceTypes</A></B>(javax.ws.rs.ext.MessageBodyWriter&lt;?&gt;&nbsp;provider)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/model/ClassResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">ClassResourceInfo</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#getRootResource(org.apache.cxf.message.Message)">getRootResource</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/jaxrs/model/ClassResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">ClassResourceInfo</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#getRootResources(org.apache.cxf.message.Message)">getRootResources</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#getStructuredParams(javax.ws.rs.core.MultivaluedMap, java.lang.String, java.lang.String, boolean, boolean)">getStructuredParams</A></B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;queries,
+                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;query,
+                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;sep,
+                    boolean&nbsp;decode,
+                    boolean&nbsp;decodePlus)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#getStructuredParams(java.lang.String, java.lang.String, boolean, boolean)">getStructuredParams</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;query,
+                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;sep,
+                    boolean&nbsp;decode,
+                    boolean&nbsp;decodePlus)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieve map of query parameters from the passed in message</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#headMethodPossible(java.lang.String, java.lang.String)">headMethodPossible</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;expectedMethod,
+                   <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;httpMethod)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#injectParameters(org.apache.cxf.jaxrs.model.OperationResourceInfo, org.apache.cxf.jaxrs.model.BeanResourceInfo, java.lang.Object, org.apache.cxf.message.Message)">injectParameters</A></B>(<A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori,
+                 <A HREF="../../../../../org/apache/cxf/jaxrs/model/BeanResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">BeanResourceInfo</A>&nbsp;bri,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;requestObject,
+                 <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#injectParameters(org.apache.cxf.jaxrs.model.OperationResourceInfo, java.lang.Object, org.apache.cxf.message.Message)">injectParameters</A></B>(<A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;requestObject,
+                 <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#intersectMimeTypes(java.util.List, java.util.List, boolean)">intersectMimeTypes</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;requiredMediaTypes,
+                   <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;userMediaTypes,
+                   boolean&nbsp;addRequiredParamsIfPossible)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;intersect two mime types</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#intersectMimeTypes(java.util.List, java.util.List, boolean, boolean)">intersectMimeTypes</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;requiredMediaTypes,
+                   <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;userMediaTypes,
+                   boolean&nbsp;addRequiredParamsIfPossible,
+                   boolean&nbsp;addDistanceParameter)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#intersectMimeTypes(java.util.List, javax.ws.rs.core.MediaType)">intersectMimeTypes</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;mimeTypesA,
+                   javax.ws.rs.core.MediaType&nbsp;mimeTypeB)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#intersectMimeTypes(java.lang.String, java.lang.String)">intersectMimeTypes</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;mimeTypesA,
+                   <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;mimeTypesB)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#logMessageHandlerProblem(java.lang.String, java.lang.Class, javax.ws.rs.core.MediaType)">logMessageHandlerProblem</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name,
+                         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;cls,
+                         javax.ws.rs.core.MediaType&nbsp;ct)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#matchConsumeTypes(javax.ws.rs.core.MediaType, org.apache.cxf.jaxrs.model.OperationResourceInfo)">matchConsumeTypes</A></B>(javax.ws.rs.core.MediaType&nbsp;requestContentType,
+                  <A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#matchMimeTypes(javax.ws.rs.core.MediaType, javax.ws.rs.core.MediaType, org.apache.cxf.jaxrs.model.OperationResourceInfo)">matchMimeTypes</A></B>(javax.ws.rs.core.MediaType&nbsp;requestContentType,
+               javax.ws.rs.core.MediaType&nbsp;acceptContentType,
+               <A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#matchProduceTypes(javax.ws.rs.core.MediaType, org.apache.cxf.jaxrs.model.OperationResourceInfo)">matchProduceTypes</A></B>(javax.ws.rs.core.MediaType&nbsp;acceptContentType,
+                  <A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#mediaTypeToString(javax.ws.rs.core.MediaType, java.lang.String...)">mediaTypeToString</A></B>(javax.ws.rs.core.MediaType&nbsp;mt,
+                  <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>...&nbsp;ignoreParams)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#noResourceMethodForOptions(javax.ws.rs.core.Response, java.lang.String)">noResourceMethodForOptions</A></B>(javax.ws.rs.core.Response&nbsp;exResponse,
+                           <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;httpMethod)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#parseMediaTypes(java.lang.String)">parseMediaTypes</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;types)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#processParameters(org.apache.cxf.jaxrs.model.OperationResourceInfo, javax.ws.rs.core.MultivaluedMap, org.apache.cxf.message.Message)">processParameters</A></B>(<A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori,
+                  javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;values,
+                  <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#pushOntoStack(org.apache.cxf.jaxrs.model.OperationResourceInfo, javax.ws.rs.core.MultivaluedMap, org.apache.cxf.message.Message)">pushOntoStack</A></B>(<A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori,
+              javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;params,
+              <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#readFromMessageBodyReader(java.util.List, java.lang.Class, java.lang.reflect.Type, java.lang.annotation.Annotation[], java.io.InputStream, javax.ws.rs.core.MediaType, org.apache.cxf.message.Message)">readFromMessageBodyReader</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.ext.ReaderInterceptor&gt;&nbsp;readers,
+                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;targetTypeClass,
+                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;parameterType,
+                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</A>[]&nbsp;parameterAnnotations,
+                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</A>&nbsp;is,
+                          javax.ws.rs.core.MediaType&nbsp;mediaType,
+                          <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#runContainerRequestFilters(org.apache.cxf.jaxrs.provider.ServerProviderFactory, org.apache.cxf.message.Message, boolean, java.util.Set, boolean)">runContainerRequestFilters</A></B>(<A HREF="../../../../../org/apache/cxf/jaxrs/provider/ServerProviderFactory.html" title="class in org.apache.cxf.jaxrs.provider">ServerProviderFactory</A>&nbsp;pf,
+                           <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m,
+                           boolean&nbsp;preMatch,
+                           <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;names,
+                           boolean&nbsp;sub)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#runContainerResponseFilters(org.apache.cxf.jaxrs.provider.ServerProviderFactory, org.apache.cxf.jaxrs.impl.ResponseImpl, org.apache.cxf.message.Message, org.apache.cxf.jaxrs.model.OperationResourceInfo, java.lang.reflect.Method)">runContainerResponseFilters</A></B>(<A HREF="../../../../../org/apache/cxf/jaxrs/provider/ServerProviderFactory.html" title="class in org.apache.cxf.jaxrs.provider">ServerProviderFactory</A>&nbsp;pf,
+                            <A HREF="../../../../../org/apache/cxf/jaxrs/impl/ResponseImpl.html" title="class in org.apache.cxf.jaxrs.impl">ResponseImpl</A>&nbsp;r,
+                            <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m,
+                            <A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori,
+                            <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html?is-external=true" title="class or interface in java.lang.reflect">Method</A>&nbsp;invoked)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="../../../../../org/apache/cxf/jaxrs/model/ClassResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">ClassResourceInfo</A>,javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#selectResourceClass(java.util.List, java.lang.String, org.apache.cxf.message.Message)">selectResourceClass</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/jaxrs/model/ClassResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">ClassResourceInfo</A>&gt;&nbsp;resources,
+                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path,
+                    <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#setMessageContentType(org.apache.cxf.message.Message, javax.ws.rs.core.Response)">setMessageContentType</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+                      javax.ws.rs.core.Response&nbsp;response)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#sortMediaTypes(java.util.List, java.lang.String)">sortMediaTypes</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;types,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;qs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#sortMediaTypes(java.lang.String, java.lang.String)">sortMediaTypes</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;mediaTypes,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;qs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;javax.ws.rs.core.MediaType</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#toMediaType(java.lang.String)">toMediaType</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;javax.ws.rs.core.Response</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#toResponse(int)">toResponse</A></B>(int&nbsp;status)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;javax.ws.rs.core.Response</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#toResponse(javax.ws.rs.core.Response.Status)">toResponse</A></B>(javax.ws.rs.core.Response.Status&nbsp;status)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;javax.ws.rs.core.Response.ResponseBuilder</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#toResponseBuilder(int)">toResponseBuilder</A></B>(int&nbsp;status)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;javax.ws.rs.core.Response.ResponseBuilder</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#toResponseBuilder(javax.ws.rs.core.Response.Status)">toResponseBuilder</A></B>(javax.ws.rs.core.Response.Status&nbsp;status)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXRSUtils.html#writeMessageBody(java.util.List, java.lang.Object, java.lang.Class, java.lang.reflect.Type, java.lang.annotation.Annotation[], javax.ws.rs.core.MediaType, javax.ws.rs.core.MultivaluedMap, org.apache.cxf.message.Message)">writeMessageBody</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.ext.WriterInterceptor&gt;&nbsp;writers,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;entity,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;type,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</A>[]&nbsp;annotations,
+                 javax.ws.rs.core.MediaType&nbsp;mediaType,
+                 javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;&nbsp;httpHeaders,
+                 <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ALL_TYPES"><!-- --></A><H3>
+ALL_TYPES</H3>
+<PRE>
+public static final javax.ws.rs.core.MediaType <B>ALL_TYPES</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="ROOT_RESOURCE_CLASS"><!-- --></A><H3>
+ROOT_RESOURCE_CLASS</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>ROOT_RESOURCE_CLASS</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.jaxrs.utils.JAXRSUtils.ROOT_RESOURCE_CLASS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="IGNORE_MESSAGE_WRITERS"><!-- --></A><H3>
+IGNORE_MESSAGE_WRITERS</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>IGNORE_MESSAGE_WRITERS</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.jaxrs.utils.JAXRSUtils.IGNORE_MESSAGE_WRITERS">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ROOT_INSTANCE"><!-- --></A><H3>
+ROOT_INSTANCE</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>ROOT_INSTANCE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.jaxrs.utils.JAXRSUtils.ROOT_INSTANCE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="ROOT_PROVIDER"><!-- --></A><H3>
+ROOT_PROVIDER</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>ROOT_PROVIDER</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.jaxrs.utils.JAXRSUtils.ROOT_PROVIDER">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="EXCEPTION_FROM_MAPPER"><!-- --></A><H3>
+EXCEPTION_FROM_MAPPER</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>EXCEPTION_FROM_MAPPER</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.jaxrs.utils.JAXRSUtils.EXCEPTION_FROM_MAPPER">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="PARTIAL_HIERARCHICAL_MEDIA_SUBTYPE_CHECK"><!-- --></A><H3>
+PARTIAL_HIERARCHICAL_MEDIA_SUBTYPE_CHECK</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>PARTIAL_HIERARCHICAL_MEDIA_SUBTYPE_CHECK</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.jaxrs.utils.JAXRSUtils.PARTIAL_HIERARCHICAL_MEDIA_SUBTYPE_CHECK">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="DOC_LOCATION"><!-- --></A><H3>
+DOC_LOCATION</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>DOC_LOCATION</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.jaxrs.utils.JAXRSUtils.DOC_LOCATION">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="MEDIA_TYPE_Q_PARAM"><!-- --></A><H3>
+MEDIA_TYPE_Q_PARAM</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>MEDIA_TYPE_Q_PARAM</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.jaxrs.utils.JAXRSUtils.MEDIA_TYPE_Q_PARAM">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="MEDIA_TYPE_QS_PARAM"><!-- --></A><H3>
+MEDIA_TYPE_QS_PARAM</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>MEDIA_TYPE_QS_PARAM</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.jaxrs.utils.JAXRSUtils.MEDIA_TYPE_QS_PARAM">Constant Field Values</A></DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getPathSegments(java.lang.String, boolean)"><!-- --></A><H3>
+getPathSegments</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.PathSegment&gt; <B>getPathSegments</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;thePath,
+                                                                 boolean&nbsp;decode)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPathSegments(java.lang.String, boolean, boolean)"><!-- --></A><H3>
+getPathSegments</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.PathSegment&gt; <B>getPathSegments</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;thePath,
+                                                                 boolean&nbsp;decode,
+                                                                 boolean&nbsp;ignoreLastSlash)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getProviderConsumeTypes(javax.ws.rs.ext.MessageBodyReader)"><!-- --></A><H3>
+getProviderConsumeTypes</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt; <B>getProviderConsumeTypes</B>(javax.ws.rs.ext.MessageBodyReader&lt;?&gt;&nbsp;provider)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getProviderProduceTypes(javax.ws.rs.ext.MessageBodyWriter)"><!-- --></A><H3>
+getProviderProduceTypes</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt; <B>getProviderProduceTypes</B>(javax.ws.rs.ext.MessageBodyWriter&lt;?&gt;&nbsp;provider)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMediaTypes(java.lang.String[])"><!-- --></A><H3>
+getMediaTypes</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt; <B>getMediaTypes</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>[]&nbsp;values)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="injectParameters(org.apache.cxf.jaxrs.model.OperationResourceInfo, java.lang.Object, org.apache.cxf.message.Message)"><!-- --></A><H3>
+injectParameters</H3>
+<PRE>
+public static void <B>injectParameters</B>(<A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori,
+                                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;requestObject,
+                                    <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="injectParameters(org.apache.cxf.jaxrs.model.OperationResourceInfo, org.apache.cxf.jaxrs.model.BeanResourceInfo, java.lang.Object, org.apache.cxf.message.Message)"><!-- --></A><H3>
+injectParameters</H3>
+<PRE>
+public static void <B>injectParameters</B>(<A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori,
+                                    <A HREF="../../../../../org/apache/cxf/jaxrs/model/BeanResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">BeanResourceInfo</A>&nbsp;bri,
+                                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;requestObject,
+                                    <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="selectResourceClass(java.util.List, java.lang.String, org.apache.cxf.message.Message)"><!-- --></A><H3>
+selectResourceClass</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="../../../../../org/apache/cxf/jaxrs/model/ClassResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">ClassResourceInfo</A>,javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&gt; <B>selectResourceClass</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/jaxrs/model/ClassResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">ClassResourceInfo</A>&gt;&nbsp;resources,
+                                                                                                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path,
+                                                                                                        <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="findTargetMethod(java.util.Map, org.apache.cxf.message.Message, java.lang.String, javax.ws.rs.core.MultivaluedMap, java.lang.String, java.util.List)"><!-- --></A><H3>
+findTargetMethod</H3>
+<PRE>
+public static <A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A> <B>findTargetMethod</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="../../../../../org/apache/cxf/jaxrs/model/ClassResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">ClassResourceInfo</A>,javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&gt;&nbsp;matchedResources,
+                                                     <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+                                                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;httpMethod,
+                                                     javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;matchedValues,
+                                                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;requestContentType,
+                                                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;acceptContentTypes)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="findTargetMethod(java.util.Map, org.apache.cxf.message.Message, java.lang.String, javax.ws.rs.core.MultivaluedMap, java.lang.String, java.util.List, boolean)"><!-- --></A><H3>
+findTargetMethod</H3>
+<PRE>
+public static <A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A> <B>findTargetMethod</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="../../../../../org/apache/cxf/jaxrs/model/ClassResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">ClassResourceInfo</A>,javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&gt;&nbsp;matchedResources,
+                                                     <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+                                                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;httpMethod,
+                                                     javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;matchedValues,
+                                                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;requestContentType,
+                                                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;acceptContentTypes,
+                                                     boolean&nbsp;throwException)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRootResources(org.apache.cxf.message.Message)"><!-- --></A><H3>
+getRootResources</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/jaxrs/model/ClassResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">ClassResourceInfo</A>&gt; <B>getRootResources</B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="noResourceMethodForOptions(javax.ws.rs.core.Response, java.lang.String)"><!-- --></A><H3>
+noResourceMethodForOptions</H3>
+<PRE>
+public static boolean <B>noResourceMethodForOptions</B>(javax.ws.rs.core.Response&nbsp;exResponse,
+                                                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;httpMethod)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createResponse(java.util.List, org.apache.cxf.message.Message, java.lang.String, int, boolean)"><!-- --></A><H3>
+createResponse</H3>
+<PRE>
+public static javax.ws.rs.core.Response <B>createResponse</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/jaxrs/model/ClassResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">ClassResourceInfo</A>&gt;&nbsp;cris,
+                                                       <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;msg,
+                                                       <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;responseMessage,
+                                                       int&nbsp;status,
+                                                       boolean&nbsp;addAllow)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="headMethodPossible(java.lang.String, java.lang.String)"><!-- --></A><H3>
+headMethodPossible</H3>
+<PRE>
+public static boolean <B>headMethodPossible</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;expectedMethod,
+                                         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;httpMethod)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getConsumeTypes(javax.ws.rs.Consumes)"><!-- --></A><H3>
+getConsumeTypes</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt; <B>getConsumeTypes</B>(javax.ws.rs.Consumes&nbsp;cm)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getProduceTypes(javax.ws.rs.Produces)"><!-- --></A><H3>
+getProduceTypes</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt; <B>getProduceTypes</B>(javax.ws.rs.Produces&nbsp;pm)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="compareSortedConsumesMediaTypes(java.util.List, java.util.List, javax.ws.rs.core.MediaType)"><!-- --></A><H3>
+compareSortedConsumesMediaTypes</H3>
+<PRE>
+public static int <B>compareSortedConsumesMediaTypes</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;mts1,
+                                                  <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;mts2,
+                                                  javax.ws.rs.core.MediaType&nbsp;ct)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="compareSortedAcceptMediaTypes(java.util.List, java.util.List, java.util.List)"><!-- --></A><H3>
+compareSortedAcceptMediaTypes</H3>
+<PRE>
+public static int <B>compareSortedAcceptMediaTypes</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;mts1,
+                                                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;mts2,
+                                                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;acceptTypes)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="compareSortedMediaTypes(java.util.List, java.util.List, java.lang.String)"><!-- --></A><H3>
+compareSortedMediaTypes</H3>
+<PRE>
+public static int <B>compareSortedMediaTypes</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;mts1,
+                                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;mts2,
+                                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;qs)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="compareMediaTypes(javax.ws.rs.core.MediaType, javax.ws.rs.core.MediaType)"><!-- --></A><H3>
+compareMediaTypes</H3>
+<PRE>
+public static int <B>compareMediaTypes</B>(javax.ws.rs.core.MediaType&nbsp;mt1,
+                                    javax.ws.rs.core.MediaType&nbsp;mt2)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="compareMediaTypes(javax.ws.rs.core.MediaType, javax.ws.rs.core.MediaType, java.lang.String)"><!-- --></A><H3>
+compareMediaTypes</H3>
+<PRE>
+public static int <B>compareMediaTypes</B>(javax.ws.rs.core.MediaType&nbsp;mt1,
+                                    javax.ws.rs.core.MediaType&nbsp;mt2,
+                                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;qs)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="compareMediaTypesQualityFactors(javax.ws.rs.core.MediaType, javax.ws.rs.core.MediaType)"><!-- --></A><H3>
+compareMediaTypesQualityFactors</H3>
+<PRE>
+public static int <B>compareMediaTypesQualityFactors</B>(javax.ws.rs.core.MediaType&nbsp;mt1,
+                                                  javax.ws.rs.core.MediaType&nbsp;mt2)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="compareMediaTypesQualityFactors(javax.ws.rs.core.MediaType, javax.ws.rs.core.MediaType, java.lang.String)"><!-- --></A><H3>
+compareMediaTypesQualityFactors</H3>
+<PRE>
+public static int <B>compareMediaTypesQualityFactors</B>(javax.ws.rs.core.MediaType&nbsp;mt1,
+                                                  javax.ws.rs.core.MediaType&nbsp;mt2,
+                                                  <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;qs)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMediaTypeQualityFactor(java.lang.String)"><!-- --></A><H3>
+getMediaTypeQualityFactor</H3>
+<PRE>
+public static float <B>getMediaTypeQualityFactor</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;q)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="processParameters(org.apache.cxf.jaxrs.model.OperationResourceInfo, javax.ws.rs.core.MultivaluedMap, org.apache.cxf.message.Message)"><!-- --></A><H3>
+processParameters</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt; <B>processParameters</B>(<A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori,
+                                             javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;values,
+                                             <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)
+                                      throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A>,
+                                             javax.ws.rs.WebApplicationException</PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE>
+<DD><CODE>javax.ws.rs.WebApplicationException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createHttpParameterValue(org.apache.cxf.jaxrs.model.Parameter, java.lang.Class, java.lang.reflect.Type, java.lang.annotation.Annotation[], org.apache.cxf.message.Message, javax.ws.rs.core.MultivaluedMap, org.apache.cxf.jaxrs.model.OperationResourceInfo)"><!-- --></A><H3>
+createHttpParameterValue</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A> <B>createHttpParameterValue</B>(<A HREF="../../../../../org/apache/cxf/jaxrs/model/Parameter.html" title="class in org.apache.cxf.jaxrs.model">Parameter</A>&nbsp;parameter,
+                                              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;parameterClass,
+                                              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericParam,
+                                              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</A>[]&nbsp;paramAnns,
+                                              <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+                                              javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;values,
+                                              <A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMatrixParams(java.lang.String, boolean)"><!-- --></A><H3>
+getMatrixParams</H3>
+<PRE>
+public static javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>getMatrixParams</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path,
+                                                                             boolean&nbsp;decode)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createBeanParamValue(org.apache.cxf.message.Message, java.lang.Class, org.apache.cxf.jaxrs.model.OperationResourceInfo)"><!-- --></A><H3>
+createBeanParamValue</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A> <B>createBeanParamValue</B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m,
+                                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;clazz,
+                                          <A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createContextValue(org.apache.cxf.message.Message, java.lang.reflect.Type, java.lang.Class)"><!-- --></A><H3>
+createContextValue</H3>
+<PRE>
+public static &lt;T&gt; T <B>createContextValue</B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m,
+                                       <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+                                       <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;T&gt;&nbsp;clazz)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createContextResolver(java.lang.reflect.Type, org.apache.cxf.message.Message)"><!-- --></A><H3>
+createContextResolver</H3>
+<PRE>
+public static javax.ws.rs.ext.ContextResolver&lt;?&gt; <B>createContextResolver</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+                                                                       <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createResourceValue(org.apache.cxf.message.Message, java.lang.reflect.Type, java.lang.Class)"><!-- --></A><H3>
+createResourceValue</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A> <B>createResourceValue</B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m,
+                                         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+                                         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;clazz)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createServletResourceValue(org.apache.cxf.message.Message, java.lang.Class)"><!-- --></A><H3>
+createServletResourceValue</H3>
+<PRE>
+public static &lt;T&gt; T <B>createServletResourceValue</B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m,
+                                               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;T&gt;&nbsp;clazz)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStructuredParams(java.lang.String, java.lang.String, boolean, boolean)"><!-- --></A><H3>
+getStructuredParams</H3>
+<PRE>
+public static javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>getStructuredParams</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;query,
+                                                                                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;sep,
+                                                                                 boolean&nbsp;decode,
+                                                                                 boolean&nbsp;decodePlus)</PRE>
+<DL>
+<DD>Retrieve map of query parameters from the passed in message
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>message</CODE> - 
+<DT><B>Returns:</B><DD>a Map of query parameters.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStructuredParams(javax.ws.rs.core.MultivaluedMap, java.lang.String, java.lang.String, boolean, boolean)"><!-- --></A><H3>
+getStructuredParams</H3>
+<PRE>
+public static void <B>getStructuredParams</B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;queries,
+                                       <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;query,
+                                       <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;sep,
+                                       boolean&nbsp;decode,
+                                       boolean&nbsp;decodePlus)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="readFromMessageBodyReader(java.util.List, java.lang.Class, java.lang.reflect.Type, java.lang.annotation.Annotation[], java.io.InputStream, javax.ws.rs.core.MediaType, org.apache.cxf.message.Message)"><!-- --></A><H3>
+readFromMessageBodyReader</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A> <B>readFromMessageBodyReader</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.ext.ReaderInterceptor&gt;&nbsp;readers,
+                                               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;targetTypeClass,
+                                               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;parameterType,
+                                               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</A>[]&nbsp;parameterAnnotations,
+                                               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</A>&nbsp;is,
+                                               javax.ws.rs.core.MediaType&nbsp;mediaType,
+                                               <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m)
+                                        throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A>,
+                                               javax.ws.rs.WebApplicationException</PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE>
+<DD><CODE>javax.ws.rs.WebApplicationException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="writeMessageBody(java.util.List, java.lang.Object, java.lang.Class, java.lang.reflect.Type, java.lang.annotation.Annotation[], javax.ws.rs.core.MediaType, javax.ws.rs.core.MultivaluedMap, org.apache.cxf.message.Message)"><!-- --></A><H3>
+writeMessageBody</H3>
+<PRE>
+public static void <B>writeMessageBody</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.ext.WriterInterceptor&gt;&nbsp;writers,
+                                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;entity,
+                                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;type,
+                                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+                                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/annotation/Annotation.html?is-external=true" title="class or interface in java.lang.annotation">Annotation</A>[]&nbsp;annotations,
+                                    javax.ws.rs.core.MediaType&nbsp;mediaType,
+                                    javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;&nbsp;httpHeaders,
+                                    <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)
+                             throws javax.ws.rs.WebApplicationException,
+                                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>javax.ws.rs.WebApplicationException</CODE>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="matchConsumeTypes(javax.ws.rs.core.MediaType, org.apache.cxf.jaxrs.model.OperationResourceInfo)"><!-- --></A><H3>
+matchConsumeTypes</H3>
+<PRE>
+public static boolean <B>matchConsumeTypes</B>(javax.ws.rs.core.MediaType&nbsp;requestContentType,
+                                        <A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="matchProduceTypes(javax.ws.rs.core.MediaType, org.apache.cxf.jaxrs.model.OperationResourceInfo)"><!-- --></A><H3>
+matchProduceTypes</H3>
+<PRE>
+public static boolean <B>matchProduceTypes</B>(javax.ws.rs.core.MediaType&nbsp;acceptContentType,
+                                        <A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="matchMimeTypes(javax.ws.rs.core.MediaType, javax.ws.rs.core.MediaType, org.apache.cxf.jaxrs.model.OperationResourceInfo)"><!-- --></A><H3>
+matchMimeTypes</H3>
+<PRE>
+public static boolean <B>matchMimeTypes</B>(javax.ws.rs.core.MediaType&nbsp;requestContentType,
+                                     javax.ws.rs.core.MediaType&nbsp;acceptContentType,
+                                     <A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="parseMediaTypes(java.lang.String)"><!-- --></A><H3>
+parseMediaTypes</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt; <B>parseMediaTypes</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;types)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="intersectMimeTypes(java.util.List, java.util.List, boolean)"><!-- --></A><H3>
+intersectMimeTypes</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt; <B>intersectMimeTypes</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;requiredMediaTypes,
+                                                                  <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;userMediaTypes,
+                                                                  boolean&nbsp;addRequiredParamsIfPossible)</PRE>
+<DL>
+<DD>intersect two mime types
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>mimeTypesA</CODE> - <DD><CODE>mimeTypesB</CODE> - 
+<DT><B>Returns:</B><DD>return a list of intersected mime types</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="intersectMimeTypes(java.util.List, java.util.List, boolean, boolean)"><!-- --></A><H3>
+intersectMimeTypes</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt; <B>intersectMimeTypes</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;requiredMediaTypes,
+                                                                  <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;userMediaTypes,
+                                                                  boolean&nbsp;addRequiredParamsIfPossible,
+                                                                  boolean&nbsp;addDistanceParameter)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="intersectMimeTypes(java.util.List, javax.ws.rs.core.MediaType)"><!-- --></A><H3>
+intersectMimeTypes</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt; <B>intersectMimeTypes</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;mimeTypesA,
+                                                                  javax.ws.rs.core.MediaType&nbsp;mimeTypeB)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="intersectMimeTypes(java.lang.String, java.lang.String)"><!-- --></A><H3>
+intersectMimeTypes</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt; <B>intersectMimeTypes</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;mimeTypesA,
+                                                                  <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;mimeTypesB)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sortMediaTypes(java.lang.String, java.lang.String)"><!-- --></A><H3>
+sortMediaTypes</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt; <B>sortMediaTypes</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;mediaTypes,
+                                                              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;qs)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="sortMediaTypes(java.util.List, java.lang.String)"><!-- --></A><H3>
+sortMediaTypes</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt; <B>sortMediaTypes</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;types,
+                                                              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;qs)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="convertFaultToResponse(java.lang.Throwable,org.apache.cxf.message.Message)"><!-- --></A><A NAME="convertFaultToResponse(T, org.apache.cxf.message.Message)"><!-- --></A><H3>
+convertFaultToResponse</H3>
+<PRE>
+public static &lt;T extends <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</A>&gt; javax.ws.rs.core.Response <B>convertFaultToResponse</B>(T&nbsp;ex,
+                                                                                     <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;currentMessage)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMessageContentType(org.apache.cxf.message.Message, javax.ws.rs.core.Response)"><!-- --></A><H3>
+setMessageContentType</H3>
+<PRE>
+public static void <B>setMessageContentType</B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+                                         javax.ws.rs.core.Response&nbsp;response)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getClassQName(java.lang.Class)"><!-- --></A><H3>
+getClassQName</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A> <B>getClassQName</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;type)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="convertStringToQName(java.lang.String)"><!-- --></A><H3>
+convertStringToQName</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A> <B>convertStringToQName</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="runContainerRequestFilters(org.apache.cxf.jaxrs.provider.ServerProviderFactory, org.apache.cxf.message.Message, boolean, java.util.Set, boolean)"><!-- --></A><H3>
+runContainerRequestFilters</H3>
+<PRE>
+public static boolean <B>runContainerRequestFilters</B>(<A HREF="../../../../../org/apache/cxf/jaxrs/provider/ServerProviderFactory.html" title="class in org.apache.cxf.jaxrs.provider">ServerProviderFactory</A>&nbsp;pf,
+                                                 <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m,
+                                                 boolean&nbsp;preMatch,
+                                                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;names,
+                                                 boolean&nbsp;sub)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="runContainerResponseFilters(org.apache.cxf.jaxrs.provider.ServerProviderFactory, org.apache.cxf.jaxrs.impl.ResponseImpl, org.apache.cxf.message.Message, org.apache.cxf.jaxrs.model.OperationResourceInfo, java.lang.reflect.Method)"><!-- --></A><H3>
+runContainerResponseFilters</H3>
+<PRE>
+public static void <B>runContainerResponseFilters</B>(<A HREF="../../../../../org/apache/cxf/jaxrs/provider/ServerProviderFactory.html" title="class in org.apache.cxf.jaxrs.provider">ServerProviderFactory</A>&nbsp;pf,
+                                               <A HREF="../../../../../org/apache/cxf/jaxrs/impl/ResponseImpl.html" title="class in org.apache.cxf.jaxrs.impl">ResponseImpl</A>&nbsp;r,
+                                               <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m,
+                                               <A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori,
+                                               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Method.html?is-external=true" title="class or interface in java.lang.reflect">Method</A>&nbsp;invoked)
+                                        throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A>,
+                                               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Throwable.html?is-external=true" title="class or interface in java.lang">Throwable</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mediaTypeToString(javax.ws.rs.core.MediaType, java.lang.String...)"><!-- --></A><H3>
+mediaTypeToString</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>mediaTypeToString</B>(javax.ws.rs.core.MediaType&nbsp;mt,
+                                       <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>...&nbsp;ignoreParams)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toMediaType(java.lang.String)"><!-- --></A><H3>
+toMediaType</H3>
+<PRE>
+public static javax.ws.rs.core.MediaType <B>toMediaType</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toResponse(int)"><!-- --></A><H3>
+toResponse</H3>
+<PRE>
+public static javax.ws.rs.core.Response <B>toResponse</B>(int&nbsp;status)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toResponse(javax.ws.rs.core.Response.Status)"><!-- --></A><H3>
+toResponse</H3>
+<PRE>
+public static javax.ws.rs.core.Response <B>toResponse</B>(javax.ws.rs.core.Response.Status&nbsp;status)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toResponseBuilder(int)"><!-- --></A><H3>
+toResponseBuilder</H3>
+<PRE>
+public static javax.ws.rs.core.Response.ResponseBuilder <B>toResponseBuilder</B>(int&nbsp;status)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toResponseBuilder(javax.ws.rs.core.Response.Status)"><!-- --></A><H3>
+toResponseBuilder</H3>
+<PRE>
+public static javax.ws.rs.core.Response.ResponseBuilder <B>toResponseBuilder</B>(javax.ws.rs.core.Response.Status&nbsp;status)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="fromResponse(javax.ws.rs.core.Response)"><!-- --></A><H3>
+fromResponse</H3>
+<PRE>
+public static javax.ws.rs.core.Response.ResponseBuilder <B>fromResponse</B>(javax.ws.rs.core.Response&nbsp;response)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="copyResponseIfNeeded(javax.ws.rs.core.Response)"><!-- --></A><H3>
+copyResponseIfNeeded</H3>
+<PRE>
+public static javax.ws.rs.core.Response <B>copyResponseIfNeeded</B>(javax.ws.rs.core.Response&nbsp;response)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCurrentMessage()"><!-- --></A><H3>
+getCurrentMessage</H3>
+<PRE>
+public static <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A> <B>getCurrentMessage</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRootResource(org.apache.cxf.message.Message)"><!-- --></A><H3>
+getRootResource</H3>
+<PRE>
+public static <A HREF="../../../../../org/apache/cxf/jaxrs/model/ClassResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">ClassResourceInfo</A> <B>getRootResource</B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="pushOntoStack(org.apache.cxf.jaxrs.model.OperationResourceInfo, javax.ws.rs.core.MultivaluedMap, org.apache.cxf.message.Message)"><!-- --></A><H3>
+pushOntoStack</H3>
+<PRE>
+public static void <B>pushOntoStack</B>(<A HREF="../../../../../org/apache/cxf/jaxrs/model/OperationResourceInfo.html" title="class in org.apache.cxf.jaxrs.model">OperationResourceInfo</A>&nbsp;ori,
+                                 javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;params,
+                                 <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;msg)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="logMessageHandlerProblem(java.lang.String, java.lang.Class, javax.ws.rs.core.MediaType)"><!-- --></A><H3>
+logMessageHandlerProblem</H3>
+<PRE>
+public static <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>logMessageHandlerProblem</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name,
+                                              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;cls,
+                                              javax.ws.rs.core.MediaType&nbsp;ct)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/JAXRSUtils.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/utils/JAXBUtils.html" title="class in org.apache.cxf.jaxrs.utils"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/utils/ParameterizedCollectionType.html" title="class in org.apache.cxf.jaxrs.utils"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/jaxrs/utils/JAXRSUtils.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="JAXRSUtils.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

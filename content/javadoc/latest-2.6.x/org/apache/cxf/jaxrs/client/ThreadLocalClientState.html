@@ -1,0 +1,627 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+ThreadLocalClientState (Apache CXF Bundle Jar 2.6.3 API)
+</TITLE>
+
+<META NAME="keywords" CONTENT="org.apache.cxf.jaxrs.client.ThreadLocalClientState class">
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="ThreadLocalClientState (Apache CXF Bundle Jar 2.6.3 API)";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ThreadLocalClientState.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/client/ServerWebApplicationException.html" title="class in org.apache.cxf.jaxrs.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/jaxrs/client/ThreadLocalClientState.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ThreadLocalClientState.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.jaxrs.client</FONT>
+<BR>
+Class ThreadLocalClientState</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.jaxrs.client.ThreadLocalClientState</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>ThreadLocalClientState</B><DT>extends <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A></DL>
+</PRE>
+
+<P>
+Keeps the client state such as the baseURI, currentURI, requestHeaders, current response
+ in a thread local storage
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/client/ThreadLocalClientState.html#ThreadLocalClientState(org.apache.cxf.jaxrs.client.LocalClientState, long)">ThreadLocalClientState</A></B>(<A HREF="../../../../../org/apache/cxf/jaxrs/client/LocalClientState.html" title="class in org.apache.cxf.jaxrs.client">LocalClientState</A>&nbsp;initialState,
+                       long&nbsp;timeToKeepState)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/client/ThreadLocalClientState.html#ThreadLocalClientState(java.lang.String)">ThreadLocalClientState</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;baseURI)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/client/ThreadLocalClientState.html#ThreadLocalClientState(java.lang.String, long)">ThreadLocalClientState</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;baseURI,
+                       long&nbsp;timeToKeepState)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/net/URI.html" title="class or interface in java.net">URI</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/client/ThreadLocalClientState.html#getBaseURI()">getBaseURI</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the base URI</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.ws.rs.core.UriBuilder</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/client/ThreadLocalClientState.html#getCurrentBuilder()">getCurrentBuilder</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the current builder</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/client/ThreadLocalClientState.html#getRequestHeaders()">getRequestHeaders</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the request headers</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.ws.rs.core.Response.ResponseBuilder</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/client/ThreadLocalClientState.html#getResponseBuilder()">getResponseBuilder</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the responseBuilder</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/client/ThreadLocalClientState.html#getState()">getState</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/client/ThreadLocalClientState.html#getTemplates()">getTemplates</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the templates map</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/client/ThreadLocalClientState.html#newState(java.net.URI, javax.ws.rs.core.MultivaluedMap, javax.ws.rs.core.MultivaluedMap)">newState</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/net/URI.html" title="class or interface in java.net">URI</A>&nbsp;baseURI,
+         javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;headers,
+         javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;templates)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The factory method for creating a new state.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/client/ThreadLocalClientState.html#reset()">reset</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resets the current state to the baseURI</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/client/ThreadLocalClientState.html#setBaseURI(java.net.URI)">setBaseURI</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/net/URI.html" title="class or interface in java.net">URI</A>&nbsp;baseURI)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the base URI</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/client/ThreadLocalClientState.html#setCurrentBuilder(javax.ws.rs.core.UriBuilder)">setCurrentBuilder</A></B>(javax.ws.rs.core.UriBuilder&nbsp;currentBuilder)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the current builder</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/client/ThreadLocalClientState.html#setRequestHeaders(javax.ws.rs.core.MultivaluedMap)">setRequestHeaders</A></B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;requestHeaders)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the request headers</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/client/ThreadLocalClientState.html#setResponseBuilder(javax.ws.rs.core.Response.ResponseBuilder)">setResponseBuilder</A></B>(javax.ws.rs.core.Response.ResponseBuilder&nbsp;responseBuilder)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the responseBuilder</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/client/ThreadLocalClientState.html#setTemplates(javax.ws.rs.core.MultivaluedMap)">setTemplates</A></B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;map)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the map containing template name and value pairs</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/client/ThreadLocalClientState.html#setTimeToKeepState(long)">setTimeToKeepState</A></B>(long&nbsp;timeToKeepState)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ThreadLocalClientState(java.lang.String)"><!-- --></A><H3>
+ThreadLocalClientState</H3>
+<PRE>
+public <B>ThreadLocalClientState</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;baseURI)</PRE>
+<DL>
+</DL>
+<HR>
+
+<A NAME="ThreadLocalClientState(java.lang.String, long)"><!-- --></A><H3>
+ThreadLocalClientState</H3>
+<PRE>
+public <B>ThreadLocalClientState</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;baseURI,
+                              long&nbsp;timeToKeepState)</PRE>
+<DL>
+</DL>
+<HR>
+
+<A NAME="ThreadLocalClientState(org.apache.cxf.jaxrs.client.LocalClientState, long)"><!-- --></A><H3>
+ThreadLocalClientState</H3>
+<PRE>
+public <B>ThreadLocalClientState</B>(<A HREF="../../../../../org/apache/cxf/jaxrs/client/LocalClientState.html" title="class in org.apache.cxf.jaxrs.client">LocalClientState</A>&nbsp;initialState,
+                              long&nbsp;timeToKeepState)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="setCurrentBuilder(javax.ws.rs.core.UriBuilder)"><!-- --></A><H3>
+setCurrentBuilder</H3>
+<PRE>
+public void <B>setCurrentBuilder</B>(javax.ws.rs.core.UriBuilder&nbsp;currentBuilder)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#setCurrentBuilder(javax.ws.rs.core.UriBuilder)">ClientState</A></CODE></B></DD>
+<DD>Sets the current builder
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#setCurrentBuilder(javax.ws.rs.core.UriBuilder)">setCurrentBuilder</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>currentBuilder</CODE> - the builder</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCurrentBuilder()"><!-- --></A><H3>
+getCurrentBuilder</H3>
+<PRE>
+public javax.ws.rs.core.UriBuilder <B>getCurrentBuilder</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#getCurrentBuilder()">ClientState</A></CODE></B></DD>
+<DD>Gets the current builder
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#getCurrentBuilder()">getCurrentBuilder</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setBaseURI(java.net.URI)"><!-- --></A><H3>
+setBaseURI</H3>
+<PRE>
+public void <B>setBaseURI</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/net/URI.html" title="class or interface in java.net">URI</A>&nbsp;baseURI)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#setBaseURI(java.net.URI)">ClientState</A></CODE></B></DD>
+<DD>Sets the base URI
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#setBaseURI(java.net.URI)">setBaseURI</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>baseURI</CODE> - baseURI</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBaseURI()"><!-- --></A><H3>
+getBaseURI</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/net/URI.html" title="class or interface in java.net">URI</A> <B>getBaseURI</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#getBaseURI()">ClientState</A></CODE></B></DD>
+<DD>Gets the base URI
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#getBaseURI()">getBaseURI</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>baseURI</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setResponseBuilder(javax.ws.rs.core.Response.ResponseBuilder)"><!-- --></A><H3>
+setResponseBuilder</H3>
+<PRE>
+public void <B>setResponseBuilder</B>(javax.ws.rs.core.Response.ResponseBuilder&nbsp;responseBuilder)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#setResponseBuilder(javax.ws.rs.core.Response.ResponseBuilder)">ClientState</A></CODE></B></DD>
+<DD>Sets the responseBuilder
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#setResponseBuilder(javax.ws.rs.core.Response.ResponseBuilder)">setResponseBuilder</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>responseBuilder</CODE> - responseBuilder</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getResponseBuilder()"><!-- --></A><H3>
+getResponseBuilder</H3>
+<PRE>
+public javax.ws.rs.core.Response.ResponseBuilder <B>getResponseBuilder</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#getResponseBuilder()">ClientState</A></CODE></B></DD>
+<DD>Gets the responseBuilder
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#getResponseBuilder()">getResponseBuilder</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>responseBuilder</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setRequestHeaders(javax.ws.rs.core.MultivaluedMap)"><!-- --></A><H3>
+setRequestHeaders</H3>
+<PRE>
+public void <B>setRequestHeaders</B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;requestHeaders)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#setRequestHeaders(javax.ws.rs.core.MultivaluedMap)">ClientState</A></CODE></B></DD>
+<DD>Sets the request headers
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#setRequestHeaders(javax.ws.rs.core.MultivaluedMap)">setRequestHeaders</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>requestHeaders</CODE> - request headers</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRequestHeaders()"><!-- --></A><H3>
+getRequestHeaders</H3>
+<PRE>
+public javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt; <B>getRequestHeaders</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#getRequestHeaders()">ClientState</A></CODE></B></DD>
+<DD>Gets the request headers
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#getRequestHeaders()">getRequestHeaders</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>request headers, may be immutable</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTemplates()"><!-- --></A><H3>
+getTemplates</H3>
+<PRE>
+public javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt; <B>getTemplates</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#getTemplates()">ClientState</A></CODE></B></DD>
+<DD>Gets the templates map
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#getTemplates()">getTemplates</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>templates</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setTemplates(javax.ws.rs.core.MultivaluedMap)"><!-- --></A><H3>
+setTemplates</H3>
+<PRE>
+public void <B>setTemplates</B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;map)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#setTemplates(javax.ws.rs.core.MultivaluedMap)">ClientState</A></CODE></B></DD>
+<DD>Sets the map containing template name and value pairs
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#setTemplates(javax.ws.rs.core.MultivaluedMap)">setTemplates</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="reset()"><!-- --></A><H3>
+reset</H3>
+<PRE>
+public void <B>reset</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#reset()">ClientState</A></CODE></B></DD>
+<DD>Resets the current state to the baseURI
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#reset()">reset</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newState(java.net.URI, javax.ws.rs.core.MultivaluedMap, javax.ws.rs.core.MultivaluedMap)"><!-- --></A><H3>
+newState</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A> <B>newState</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/net/URI.html" title="class or interface in java.net">URI</A>&nbsp;baseURI,
+                            javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;headers,
+                            javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;templates)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#newState(java.net.URI, javax.ws.rs.core.MultivaluedMap, javax.ws.rs.core.MultivaluedMap)">ClientState</A></CODE></B></DD>
+<DD>The factory method for creating a new state. 
+ Example, proxy and WebClient.fromClient will use this method when creating 
+ subresource proxies and new web clients respectively to ensure thet stay
+ thread-local if needed
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html#newState(java.net.URI, javax.ws.rs.core.MultivaluedMap, javax.ws.rs.core.MultivaluedMap)">newState</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>baseURI</CODE> - baseURI<DD><CODE>headers</CODE> - request headers, can be null<DD><CODE>templates</CODE> - initial templates map, can be null
+<DT><B>Returns:</B><DD>client state</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getState()"><!-- --></A><H3>
+getState</H3>
+<PRE>
+protected <A HREF="../../../../../org/apache/cxf/jaxrs/client/ClientState.html" title="interface in org.apache.cxf.jaxrs.client">ClientState</A> <B>getState</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setTimeToKeepState(long)"><!-- --></A><H3>
+setTimeToKeepState</H3>
+<PRE>
+public void <B>setTimeToKeepState</B>(long&nbsp;timeToKeepState)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ThreadLocalClientState.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/client/ServerWebApplicationException.html" title="class in org.apache.cxf.jaxrs.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/jaxrs/client/ThreadLocalClientState.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ThreadLocalClientState.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

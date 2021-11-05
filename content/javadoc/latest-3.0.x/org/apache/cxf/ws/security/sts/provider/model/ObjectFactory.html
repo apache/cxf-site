@@ -1,0 +1,1928 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+ObjectFactory (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ObjectFactory (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ObjectFactory.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/LifetimeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/OnBehalfOfType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../../index.html?org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ObjectFactory.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.ws.security.sts.provider.model</FONT>
+<BR>
+Class ObjectFactory</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.ws.security.sts.provider.model.ObjectFactory</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>ObjectFactory</B><DT>extends <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+This object contains factory methods for each 
+ Java content interface and Java element interface 
+ generated in the org.apache.cxf.ws.security.sts.provider.model package. 
+ <p>An ObjectFactory allows you to programatically 
+ construct new instances of the Java representation 
+ for XML content. The Java representation of XML 
+ content can consist of schema derived interfaces 
+ and classes representing the binding of schema 
+ type definitions, element declarations and model 
+ groups.  Factory methods for each of these are 
+ provided in this class.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#ObjectFactory()">ObjectFactory</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.apache.cxf.ws.security.sts.provider.model</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AllowPostdatingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">AllowPostdatingType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createAllowPostdating(org.apache.cxf.ws.security.sts.provider.model.AllowPostdatingType)">createAllowPostdating</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AllowPostdatingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">AllowPostdatingType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AllowPostdatingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>AllowPostdatingType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AllowPostdatingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">AllowPostdatingType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createAllowPostdatingType()">createAllowPostdatingType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AllowPostdatingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>AllowPostdatingType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createAuthenticationType(java.lang.String)">createAuthenticationType</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AuthenticatorType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">AuthenticatorType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createAuthenticator(org.apache.cxf.ws.security.sts.provider.model.AuthenticatorType)">createAuthenticator</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AuthenticatorType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">AuthenticatorType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AuthenticatorType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>AuthenticatorType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AuthenticatorType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">AuthenticatorType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createAuthenticatorType()">createAuthenticatorType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AuthenticatorType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>AuthenticatorType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinaryExchangeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">BinaryExchangeType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createBinaryExchange(org.apache.cxf.ws.security.sts.provider.model.BinaryExchangeType)">createBinaryExchange</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinaryExchangeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">BinaryExchangeType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinaryExchangeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>BinaryExchangeType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinaryExchangeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">BinaryExchangeType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createBinaryExchangeType()">createBinaryExchangeType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinaryExchangeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>BinaryExchangeType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinarySecretType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">BinarySecretType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createBinarySecret(org.apache.cxf.ws.security.sts.provider.model.BinarySecretType)">createBinarySecret</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinarySecretType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">BinarySecretType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinarySecretType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>BinarySecretType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinarySecretType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">BinarySecretType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createBinarySecretType()">createBinarySecretType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinarySecretType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>BinarySecretType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/CancelTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">CancelTargetType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createCancelTarget(org.apache.cxf.ws.security.sts.provider.model.CancelTargetType)">createCancelTarget</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/CancelTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">CancelTargetType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/CancelTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>CancelTargetType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/CancelTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">CancelTargetType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createCancelTargetType()">createCancelTargetType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/CancelTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>CancelTargetType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createCanonicalizationAlgorithm(java.lang.String)">createCanonicalizationAlgorithm</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createChallenge(java.lang.String)">createChallenge</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ClaimsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ClaimsType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createClaims(org.apache.cxf.ws.security.sts.provider.model.ClaimsType)">createClaims</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ClaimsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ClaimsType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ClaimsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ClaimsType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ClaimsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ClaimsType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createClaimsType()">createClaimsType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ClaimsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ClaimsType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;byte[]&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createCombinedHash(byte[])">createCombinedHash</A></B>(byte[]&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><CODE>byte[]</CODE><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createComputedKey(java.lang.String)">createComputedKey</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createComputedKeyAlgorithm(java.lang.String)">createComputedKeyAlgorithm</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createDelegatable(java.lang.Boolean)">createDelegatable</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang"><CODE>Boolean</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/DelegateToType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">DelegateToType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createDelegateTo(org.apache.cxf.ws.security.sts.provider.model.DelegateToType)">createDelegateTo</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/DelegateToType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">DelegateToType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/DelegateToType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>DelegateToType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/DelegateToType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">DelegateToType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createDelegateToType()">createDelegateToType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/DelegateToType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>DelegateToType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">EncryptionType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createEncryption(org.apache.cxf.ws.security.sts.provider.model.EncryptionType)">createEncryption</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">EncryptionType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>EncryptionType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createEncryptionAlgorithm(java.lang.String)">createEncryptionAlgorithm</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">EncryptionType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createEncryptionType()">createEncryptionType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>EncryptionType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createEncryptWith(java.lang.String)">createEncryptWith</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EntropyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">EntropyType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createEntropy(org.apache.cxf.ws.security.sts.provider.model.EntropyType)">createEntropy</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EntropyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">EntropyType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EntropyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>EntropyType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EntropyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">EntropyType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createEntropyType()">createEntropyType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EntropyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>EntropyType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createForwardable(java.lang.Boolean)">createForwardable</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang"><CODE>Boolean</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenResponseCollectionType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createIssuedTokens(org.apache.cxf.ws.security.sts.provider.model.RequestSecurityTokenResponseCollectionType)">createIssuedTokens</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenResponseCollectionType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenResponseCollectionType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing">EndpointReferenceType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createIssuer(org.apache.cxf.ws.addressing.EndpointReferenceType)">createIssuer</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing">EndpointReferenceType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing"><CODE>EndpointReferenceType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/KeyExchangeTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">KeyExchangeTokenType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createKeyExchangeToken(org.apache.cxf.ws.security.sts.provider.model.KeyExchangeTokenType)">createKeyExchangeToken</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/KeyExchangeTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">KeyExchangeTokenType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/KeyExchangeTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>KeyExchangeTokenType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/KeyExchangeTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">KeyExchangeTokenType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createKeyExchangeTokenType()">createKeyExchangeTokenType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/KeyExchangeTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>KeyExchangeTokenType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createKeySize(java.lang.Long)">createKeySize</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang"><CODE>Long</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createKeyType(java.lang.String)">createKeyType</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createKeyWrapAlgorithm(java.lang.String)">createKeyWrapAlgorithm</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/LifetimeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">LifetimeType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createLifetime(org.apache.cxf.ws.security.sts.provider.model.LifetimeType)">createLifetime</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/LifetimeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">LifetimeType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/LifetimeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>LifetimeType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/LifetimeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">LifetimeType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createLifetimeType()">createLifetimeType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/LifetimeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>LifetimeType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/OnBehalfOfType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">OnBehalfOfType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createOnBehalfOf(org.apache.cxf.ws.security.sts.provider.model.OnBehalfOfType)">createOnBehalfOf</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/OnBehalfOfType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">OnBehalfOfType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/OnBehalfOfType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>OnBehalfOfType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/OnBehalfOfType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">OnBehalfOfType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createOnBehalfOfType()">createOnBehalfOfType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/OnBehalfOfType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>OnBehalfOfType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ParticipantsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ParticipantsType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createParticipants(org.apache.cxf.ws.security.sts.provider.model.ParticipantsType)">createParticipants</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ParticipantsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ParticipantsType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ParticipantsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ParticipantsType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ParticipantsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ParticipantsType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createParticipantsType()">createParticipantsType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ParticipantsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ParticipantsType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ParticipantType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ParticipantType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createParticipantType()">createParticipantType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ParticipantType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ParticipantType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ProofEncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ProofEncryptionType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createProofEncryption(org.apache.cxf.ws.security.sts.provider.model.ProofEncryptionType)">createProofEncryption</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ProofEncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ProofEncryptionType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ProofEncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ProofEncryptionType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ProofEncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ProofEncryptionType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createProofEncryptionType()">createProofEncryptionType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ProofEncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ProofEncryptionType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RenewingType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRenewing(org.apache.cxf.ws.security.sts.provider.model.RenewingType)">createRenewing</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RenewingType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RenewingType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RenewingType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRenewingType()">createRenewingType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RenewingType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RenewTargetType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRenewTarget(org.apache.cxf.ws.security.sts.provider.model.RenewTargetType)">createRenewTarget</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RenewTargetType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RenewTargetType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RenewTargetType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRenewTargetType()">createRenewTargetType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RenewTargetType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedReferenceType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedReferenceType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestedAttachedReference(org.apache.cxf.ws.security.sts.provider.model.RequestedReferenceType)">createRequestedAttachedReference</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedReferenceType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedReferenceType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedReferenceType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedReferenceType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedProofTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedProofTokenType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestedProofToken(org.apache.cxf.ws.security.sts.provider.model.RequestedProofTokenType)">createRequestedProofToken</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedProofTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedProofTokenType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedProofTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedProofTokenType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedProofTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedProofTokenType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestedProofTokenType()">createRequestedProofTokenType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedProofTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedProofTokenType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedReferenceType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedReferenceType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestedReferenceType()">createRequestedReferenceType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedReferenceType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedReferenceType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedSecurityTokenType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestedSecurityToken(org.apache.cxf.ws.security.sts.provider.model.RequestedSecurityTokenType)">createRequestedSecurityToken</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedSecurityTokenType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedSecurityTokenType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedSecurityTokenType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestedSecurityTokenType()">createRequestedSecurityTokenType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedSecurityTokenType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedTokenCancelledType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedTokenCancelledType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestedTokenCancelled(org.apache.cxf.ws.security.sts.provider.model.RequestedTokenCancelledType)">createRequestedTokenCancelled</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedTokenCancelledType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedTokenCancelledType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedTokenCancelledType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedTokenCancelledType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedTokenCancelledType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedTokenCancelledType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestedTokenCancelledType()">createRequestedTokenCancelledType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedTokenCancelledType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedTokenCancelledType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedReferenceType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedReferenceType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestedUnattachedReference(org.apache.cxf.ws.security.sts.provider.model.RequestedReferenceType)">createRequestedUnattachedReference</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedReferenceType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedReferenceType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedReferenceType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedReferenceType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestKETType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestKETType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestKET(org.apache.cxf.ws.security.sts.provider.model.RequestKETType)">createRequestKET</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestKETType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestKETType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestKETType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestKETType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestKETType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestKETType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestKETType()">createRequestKETType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestKETType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestKETType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestSecurityToken(org.apache.cxf.ws.security.sts.provider.model.RequestSecurityTokenType)">createRequestSecurityToken</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenCollectionType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestSecurityTokenCollection(org.apache.cxf.ws.security.sts.provider.model.RequestSecurityTokenCollectionType)">createRequestSecurityTokenCollection</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenCollectionType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenCollectionType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenCollectionType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestSecurityTokenCollectionType()">createRequestSecurityTokenCollectionType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenCollectionType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenResponseType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestSecurityTokenResponse(org.apache.cxf.ws.security.sts.provider.model.RequestSecurityTokenResponseType)">createRequestSecurityTokenResponse</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenResponseType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenResponseType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenResponseCollectionType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestSecurityTokenResponseCollection(org.apache.cxf.ws.security.sts.provider.model.RequestSecurityTokenResponseCollectionType)">createRequestSecurityTokenResponseCollection</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenResponseCollectionType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenResponseCollectionType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenResponseCollectionType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestSecurityTokenResponseCollectionType()">createRequestSecurityTokenResponseCollectionType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenResponseCollectionType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenResponseType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestSecurityTokenResponseType()">createRequestSecurityTokenResponseType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenResponseType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestSecurityTokenType()">createRequestSecurityTokenType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createRequestType(java.lang.String)">createRequestType</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createSignatureAlgorithm(java.lang.String)">createSignatureAlgorithm</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">SignChallengeType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createSignChallenge(org.apache.cxf.ws.security.sts.provider.model.SignChallengeType)">createSignChallenge</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">SignChallengeType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>SignChallengeType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">SignChallengeType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createSignChallengeResponse(org.apache.cxf.ws.security.sts.provider.model.SignChallengeType)">createSignChallengeResponse</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">SignChallengeType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>SignChallengeType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">SignChallengeType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createSignChallengeType()">createSignChallengeType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>SignChallengeType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createSignWith(java.lang.String)">createSignWith</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/StatusType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">StatusType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createStatus(org.apache.cxf.ws.security.sts.provider.model.StatusType)">createStatus</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/StatusType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">StatusType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/StatusType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>StatusType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/StatusType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">StatusType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createStatusType()">createStatusType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/StatusType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>StatusType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createTokenType(java.lang.String)">createTokenType</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/UseKeyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">UseKeyType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createUseKey(org.apache.cxf.ws.security.sts.provider.model.UseKeyType)">createUseKey</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/UseKeyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">UseKeyType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/UseKeyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>UseKeyType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/UseKeyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">UseKeyType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createUseKeyType()">createUseKeyType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/UseKeyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>UseKeyType</CODE></A></TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ValidateTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ValidateTargetType</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createValidateTarget(org.apache.cxf.ws.security.sts.provider.model.ValidateTargetType)">createValidateTarget</A></B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ValidateTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ValidateTargetType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ValidateTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ValidateTargetType</CODE></A><code>&gt;</code>}</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ValidateTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ValidateTargetType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html#createValidateTargetType()">createValidateTargetType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ValidateTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ValidateTargetType</CODE></A></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ObjectFactory()"><!-- --></A><H3>
+ObjectFactory</H3>
+<PRE>
+public <B>ObjectFactory</B>()</PRE>
+<DL>
+<DD>Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.apache.cxf.ws.security.sts.provider.model
+<P>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="createAllowPostdatingType()"><!-- --></A><H3>
+createAllowPostdatingType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AllowPostdatingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">AllowPostdatingType</A> <B>createAllowPostdatingType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AllowPostdatingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>AllowPostdatingType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClaimsType()"><!-- --></A><H3>
+createClaimsType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ClaimsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ClaimsType</A> <B>createClaimsType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ClaimsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ClaimsType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createProofEncryptionType()"><!-- --></A><H3>
+createProofEncryptionType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ProofEncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ProofEncryptionType</A> <B>createProofEncryptionType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ProofEncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ProofEncryptionType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestSecurityTokenType()"><!-- --></A><H3>
+createRequestSecurityTokenType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenType</A> <B>createRequestSecurityTokenType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createCancelTargetType()"><!-- --></A><H3>
+createCancelTargetType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/CancelTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">CancelTargetType</A> <B>createCancelTargetType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/CancelTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>CancelTargetType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRenewingType()"><!-- --></A><H3>
+createRenewingType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RenewingType</A> <B>createRenewingType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RenewingType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestedTokenCancelledType()"><!-- --></A><H3>
+createRequestedTokenCancelledType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedTokenCancelledType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedTokenCancelledType</A> <B>createRequestedTokenCancelledType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedTokenCancelledType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedTokenCancelledType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createParticipantsType()"><!-- --></A><H3>
+createParticipantsType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ParticipantsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ParticipantsType</A> <B>createParticipantsType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ParticipantsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ParticipantsType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createBinaryExchangeType()"><!-- --></A><H3>
+createBinaryExchangeType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinaryExchangeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">BinaryExchangeType</A> <B>createBinaryExchangeType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinaryExchangeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>BinaryExchangeType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createOnBehalfOfType()"><!-- --></A><H3>
+createOnBehalfOfType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/OnBehalfOfType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">OnBehalfOfType</A> <B>createOnBehalfOfType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/OnBehalfOfType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>OnBehalfOfType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestedReferenceType()"><!-- --></A><H3>
+createRequestedReferenceType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedReferenceType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedReferenceType</A> <B>createRequestedReferenceType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedReferenceType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedReferenceType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRenewTargetType()"><!-- --></A><H3>
+createRenewTargetType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RenewTargetType</A> <B>createRenewTargetType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RenewTargetType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestSecurityTokenCollectionType()"><!-- --></A><H3>
+createRequestSecurityTokenCollectionType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenCollectionType</A> <B>createRequestSecurityTokenCollectionType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenCollectionType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createKeyExchangeTokenType()"><!-- --></A><H3>
+createKeyExchangeTokenType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/KeyExchangeTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">KeyExchangeTokenType</A> <B>createKeyExchangeTokenType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/KeyExchangeTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>KeyExchangeTokenType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestedProofTokenType()"><!-- --></A><H3>
+createRequestedProofTokenType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedProofTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedProofTokenType</A> <B>createRequestedProofTokenType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedProofTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedProofTokenType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createStatusType()"><!-- --></A><H3>
+createStatusType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/StatusType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">StatusType</A> <B>createStatusType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/StatusType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>StatusType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createEncryptionType()"><!-- --></A><H3>
+createEncryptionType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">EncryptionType</A> <B>createEncryptionType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>EncryptionType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestSecurityTokenResponseCollectionType()"><!-- --></A><H3>
+createRequestSecurityTokenResponseCollectionType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenResponseCollectionType</A> <B>createRequestSecurityTokenResponseCollectionType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenResponseCollectionType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createSignChallengeType()"><!-- --></A><H3>
+createSignChallengeType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">SignChallengeType</A> <B>createSignChallengeType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>SignChallengeType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestedSecurityTokenType()"><!-- --></A><H3>
+createRequestedSecurityTokenType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedSecurityTokenType</A> <B>createRequestedSecurityTokenType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedSecurityTokenType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createLifetimeType()"><!-- --></A><H3>
+createLifetimeType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/LifetimeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">LifetimeType</A> <B>createLifetimeType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/LifetimeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>LifetimeType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createAuthenticatorType()"><!-- --></A><H3>
+createAuthenticatorType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AuthenticatorType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">AuthenticatorType</A> <B>createAuthenticatorType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AuthenticatorType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>AuthenticatorType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createValidateTargetType()"><!-- --></A><H3>
+createValidateTargetType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ValidateTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ValidateTargetType</A> <B>createValidateTargetType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ValidateTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ValidateTargetType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createDelegateToType()"><!-- --></A><H3>
+createDelegateToType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/DelegateToType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">DelegateToType</A> <B>createDelegateToType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/DelegateToType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>DelegateToType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createUseKeyType()"><!-- --></A><H3>
+createUseKeyType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/UseKeyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">UseKeyType</A> <B>createUseKeyType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/UseKeyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>UseKeyType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestKETType()"><!-- --></A><H3>
+createRequestKETType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestKETType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestKETType</A> <B>createRequestKETType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestKETType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestKETType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createEntropyType()"><!-- --></A><H3>
+createEntropyType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EntropyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">EntropyType</A> <B>createEntropyType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EntropyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>EntropyType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createBinarySecretType()"><!-- --></A><H3>
+createBinarySecretType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinarySecretType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">BinarySecretType</A> <B>createBinarySecretType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinarySecretType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>BinarySecretType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createParticipantType()"><!-- --></A><H3>
+createParticipantType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ParticipantType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ParticipantType</A> <B>createParticipantType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ParticipantType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ParticipantType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestSecurityTokenResponseType()"><!-- --></A><H3>
+createRequestSecurityTokenResponseType</H3>
+<PRE>
+public <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenResponseType</A> <B>createRequestSecurityTokenResponseType</B>()</PRE>
+<DL>
+<DD>Create an instance of <A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenResponseType</CODE></A>
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createAuthenticator(org.apache.cxf.ws.security.sts.provider.model.AuthenticatorType)"><!-- --></A><H3>
+createAuthenticator</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AuthenticatorType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">AuthenticatorType</A>&gt; <B>createAuthenticator</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AuthenticatorType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">AuthenticatorType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AuthenticatorType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>AuthenticatorType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createIssuer(org.apache.cxf.ws.addressing.EndpointReferenceType)"><!-- --></A><H3>
+createIssuer</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing">EndpointReferenceType</A>&gt; <B>createIssuer</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing">EndpointReferenceType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing"><CODE>EndpointReferenceType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createAllowPostdating(org.apache.cxf.ws.security.sts.provider.model.AllowPostdatingType)"><!-- --></A><H3>
+createAllowPostdating</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AllowPostdatingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">AllowPostdatingType</A>&gt; <B>createAllowPostdating</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AllowPostdatingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">AllowPostdatingType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/AllowPostdatingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>AllowPostdatingType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestKET(org.apache.cxf.ws.security.sts.provider.model.RequestKETType)"><!-- --></A><H3>
+createRequestKET</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestKETType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestKETType</A>&gt; <B>createRequestKET</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestKETType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestKETType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestKETType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestKETType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestSecurityToken(org.apache.cxf.ws.security.sts.provider.model.RequestSecurityTokenType)"><!-- --></A><H3>
+createRequestSecurityToken</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenType</A>&gt; <B>createRequestSecurityToken</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createIssuedTokens(org.apache.cxf.ws.security.sts.provider.model.RequestSecurityTokenResponseCollectionType)"><!-- --></A><H3>
+createIssuedTokens</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenResponseCollectionType</A>&gt; <B>createIssuedTokens</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenResponseCollectionType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenResponseCollectionType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createSignChallenge(org.apache.cxf.ws.security.sts.provider.model.SignChallengeType)"><!-- --></A><H3>
+createSignChallenge</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">SignChallengeType</A>&gt; <B>createSignChallenge</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">SignChallengeType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>SignChallengeType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestSecurityTokenResponse(org.apache.cxf.ws.security.sts.provider.model.RequestSecurityTokenResponseType)"><!-- --></A><H3>
+createRequestSecurityTokenResponse</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenResponseType</A>&gt; <B>createRequestSecurityTokenResponse</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenResponseType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenResponseType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestedSecurityToken(org.apache.cxf.ws.security.sts.provider.model.RequestedSecurityTokenType)"><!-- --></A><H3>
+createRequestedSecurityToken</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedSecurityTokenType</A>&gt; <B>createRequestedSecurityToken</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedSecurityTokenType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedSecurityTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedSecurityTokenType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestSecurityTokenResponseCollection(org.apache.cxf.ws.security.sts.provider.model.RequestSecurityTokenResponseCollectionType)"><!-- --></A><H3>
+createRequestSecurityTokenResponseCollection</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenResponseCollectionType</A>&gt; <B>createRequestSecurityTokenResponseCollection</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenResponseCollectionType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenResponseCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenResponseCollectionType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClaims(org.apache.cxf.ws.security.sts.provider.model.ClaimsType)"><!-- --></A><H3>
+createClaims</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ClaimsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ClaimsType</A>&gt; <B>createClaims</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ClaimsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ClaimsType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ClaimsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ClaimsType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createSignatureAlgorithm(java.lang.String)"><!-- --></A><H3>
+createSignatureAlgorithm</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>createSignatureAlgorithm</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestedTokenCancelled(org.apache.cxf.ws.security.sts.provider.model.RequestedTokenCancelledType)"><!-- --></A><H3>
+createRequestedTokenCancelled</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedTokenCancelledType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedTokenCancelledType</A>&gt; <B>createRequestedTokenCancelled</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedTokenCancelledType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedTokenCancelledType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedTokenCancelledType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedTokenCancelledType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createSignWith(java.lang.String)"><!-- --></A><H3>
+createSignWith</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>createSignWith</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRenewTarget(org.apache.cxf.ws.security.sts.provider.model.RenewTargetType)"><!-- --></A><H3>
+createRenewTarget</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RenewTargetType</A>&gt; <B>createRenewTarget</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RenewTargetType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RenewTargetType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestedAttachedReference(org.apache.cxf.ws.security.sts.provider.model.RequestedReferenceType)"><!-- --></A><H3>
+createRequestedAttachedReference</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedReferenceType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedReferenceType</A>&gt; <B>createRequestedAttachedReference</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedReferenceType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedReferenceType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedReferenceType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedReferenceType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createDelegatable(java.lang.Boolean)"><!-- --></A><H3>
+createDelegatable</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A>&gt; <B>createDelegatable</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang"><CODE>Boolean</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createForwardable(java.lang.Boolean)"><!-- --></A><H3>
+createForwardable</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A>&gt; <B>createForwardable</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang"><CODE>Boolean</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createComputedKey(java.lang.String)"><!-- --></A><H3>
+createComputedKey</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>createComputedKey</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestedProofToken(org.apache.cxf.ws.security.sts.provider.model.RequestedProofTokenType)"><!-- --></A><H3>
+createRequestedProofToken</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedProofTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedProofTokenType</A>&gt; <B>createRequestedProofToken</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedProofTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedProofTokenType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedProofTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedProofTokenType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createKeyExchangeToken(org.apache.cxf.ws.security.sts.provider.model.KeyExchangeTokenType)"><!-- --></A><H3>
+createKeyExchangeToken</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/KeyExchangeTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">KeyExchangeTokenType</A>&gt; <B>createKeyExchangeToken</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/KeyExchangeTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">KeyExchangeTokenType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/KeyExchangeTokenType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>KeyExchangeTokenType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createEncryptWith(java.lang.String)"><!-- --></A><H3>
+createEncryptWith</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>createEncryptWith</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createBinarySecret(org.apache.cxf.ws.security.sts.provider.model.BinarySecretType)"><!-- --></A><H3>
+createBinarySecret</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinarySecretType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">BinarySecretType</A>&gt; <B>createBinarySecret</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinarySecretType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">BinarySecretType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinarySecretType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>BinarySecretType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createUseKey(org.apache.cxf.ws.security.sts.provider.model.UseKeyType)"><!-- --></A><H3>
+createUseKey</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/UseKeyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">UseKeyType</A>&gt; <B>createUseKey</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/UseKeyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">UseKeyType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/UseKeyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>UseKeyType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createDelegateTo(org.apache.cxf.ws.security.sts.provider.model.DelegateToType)"><!-- --></A><H3>
+createDelegateTo</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/DelegateToType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">DelegateToType</A>&gt; <B>createDelegateTo</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/DelegateToType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">DelegateToType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/DelegateToType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>DelegateToType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createEncryption(org.apache.cxf.ws.security.sts.provider.model.EncryptionType)"><!-- --></A><H3>
+createEncryption</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">EncryptionType</A>&gt; <B>createEncryption</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">EncryptionType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>EncryptionType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createParticipants(org.apache.cxf.ws.security.sts.provider.model.ParticipantsType)"><!-- --></A><H3>
+createParticipants</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ParticipantsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ParticipantsType</A>&gt; <B>createParticipants</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ParticipantsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ParticipantsType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ParticipantsType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ParticipantsType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createKeyType(java.lang.String)"><!-- --></A><H3>
+createKeyType</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>createKeyType</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createKeyWrapAlgorithm(java.lang.String)"><!-- --></A><H3>
+createKeyWrapAlgorithm</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>createKeyWrapAlgorithm</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRenewing(org.apache.cxf.ws.security.sts.provider.model.RenewingType)"><!-- --></A><H3>
+createRenewing</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RenewingType</A>&gt; <B>createRenewing</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RenewingType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RenewingType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RenewingType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createEntropy(org.apache.cxf.ws.security.sts.provider.model.EntropyType)"><!-- --></A><H3>
+createEntropy</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EntropyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">EntropyType</A>&gt; <B>createEntropy</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EntropyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">EntropyType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/EntropyType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>EntropyType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createProofEncryption(org.apache.cxf.ws.security.sts.provider.model.ProofEncryptionType)"><!-- --></A><H3>
+createProofEncryption</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ProofEncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ProofEncryptionType</A>&gt; <B>createProofEncryption</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ProofEncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ProofEncryptionType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ProofEncryptionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ProofEncryptionType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createAuthenticationType(java.lang.String)"><!-- --></A><H3>
+createAuthenticationType</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>createAuthenticationType</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createComputedKeyAlgorithm(java.lang.String)"><!-- --></A><H3>
+createComputedKeyAlgorithm</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>createComputedKeyAlgorithm</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createEncryptionAlgorithm(java.lang.String)"><!-- --></A><H3>
+createEncryptionAlgorithm</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>createEncryptionAlgorithm</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createOnBehalfOf(org.apache.cxf.ws.security.sts.provider.model.OnBehalfOfType)"><!-- --></A><H3>
+createOnBehalfOf</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/OnBehalfOfType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">OnBehalfOfType</A>&gt; <B>createOnBehalfOf</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/OnBehalfOfType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">OnBehalfOfType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/OnBehalfOfType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>OnBehalfOfType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createSignChallengeResponse(org.apache.cxf.ws.security.sts.provider.model.SignChallengeType)"><!-- --></A><H3>
+createSignChallengeResponse</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">SignChallengeType</A>&gt; <B>createSignChallengeResponse</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">SignChallengeType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/SignChallengeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>SignChallengeType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestedUnattachedReference(org.apache.cxf.ws.security.sts.provider.model.RequestedReferenceType)"><!-- --></A><H3>
+createRequestedUnattachedReference</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedReferenceType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedReferenceType</A>&gt; <B>createRequestedUnattachedReference</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedReferenceType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestedReferenceType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestedReferenceType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestedReferenceType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createTokenType(java.lang.String)"><!-- --></A><H3>
+createTokenType</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>createTokenType</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestSecurityTokenCollection(org.apache.cxf.ws.security.sts.provider.model.RequestSecurityTokenCollectionType)"><!-- --></A><H3>
+createRequestSecurityTokenCollection</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenCollectionType</A>&gt; <B>createRequestSecurityTokenCollection</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">RequestSecurityTokenCollectionType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/RequestSecurityTokenCollectionType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>RequestSecurityTokenCollectionType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createCombinedHash(byte[])"><!-- --></A><H3>
+createCombinedHash</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;byte[]&gt; <B>createCombinedHash</B>(byte[]&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><CODE>byte[]</CODE><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createKeySize(java.lang.Long)"><!-- --></A><H3>
+createKeySize</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</A>&gt; <B>createKeySize</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang"><CODE>Long</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createLifetime(org.apache.cxf.ws.security.sts.provider.model.LifetimeType)"><!-- --></A><H3>
+createLifetime</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/LifetimeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">LifetimeType</A>&gt; <B>createLifetime</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/LifetimeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">LifetimeType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/LifetimeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>LifetimeType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createValidateTarget(org.apache.cxf.ws.security.sts.provider.model.ValidateTargetType)"><!-- --></A><H3>
+createValidateTarget</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ValidateTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ValidateTargetType</A>&gt; <B>createValidateTarget</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ValidateTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">ValidateTargetType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/ValidateTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>ValidateTargetType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createStatus(org.apache.cxf.ws.security.sts.provider.model.StatusType)"><!-- --></A><H3>
+createStatus</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/StatusType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">StatusType</A>&gt; <B>createStatus</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/StatusType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">StatusType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/StatusType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>StatusType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createChallenge(java.lang.String)"><!-- --></A><H3>
+createChallenge</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>createChallenge</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createCanonicalizationAlgorithm(java.lang.String)"><!-- --></A><H3>
+createCanonicalizationAlgorithm</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>createCanonicalizationAlgorithm</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createRequestType(java.lang.String)"><!-- --></A><H3>
+createRequestType</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>createRequestType</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createBinaryExchange(org.apache.cxf.ws.security.sts.provider.model.BinaryExchangeType)"><!-- --></A><H3>
+createBinaryExchange</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinaryExchangeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">BinaryExchangeType</A>&gt; <B>createBinaryExchange</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinaryExchangeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">BinaryExchangeType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/BinaryExchangeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>BinaryExchangeType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createCancelTarget(org.apache.cxf.ws.security.sts.provider.model.CancelTargetType)"><!-- --></A><H3>
+createCancelTarget</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind">JAXBElement</A>&lt;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/CancelTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">CancelTargetType</A>&gt; <B>createCancelTarget</B>(<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/CancelTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model">CancelTargetType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Create an instance of <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBElement.html?is-external=true" title="class or interface in javax.xml.bind"><CODE>JAXBElement</CODE></A><code>&lt;</code><A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/CancelTargetType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><CODE>CancelTargetType</CODE></A><code>&gt;</code>}
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ObjectFactory.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/LifetimeType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../../org/apache/cxf/ws/security/sts/provider/model/OnBehalfOfType.html" title="class in org.apache.cxf.ws.security.sts.provider.model"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../../index.html?org/apache/cxf/ws/security/sts/provider/model/ObjectFactory.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ObjectFactory.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

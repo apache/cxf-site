@@ -1,0 +1,629 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Class org.apache.cxf.jaxrs.client.WebClient (Apache CXF Bundle Jar 2.7.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Class org.apache.cxf.jaxrs.client.WebClient (Apache CXF Bundle Jar 2.7.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/jaxrs/client//class-useWebClient.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="WebClient.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Class<br>org.apache.cxf.jaxrs.client.WebClient</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.jaxrs.client"><B>org.apache.cxf.jaxrs.client</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.rs.security.oauth.client"><B>org.apache.cxf.rs.security.oauth.client</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.rs.security.oauth2.client"><B>org.apache.cxf.rs.security.oauth2.client</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.rs.security.oauth2.filters"><B>org.apache.cxf.rs.security.oauth2.filters</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.jaxrs.client"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A> in <A HREF="../../../../../../org/apache/cxf/jaxrs/client/package-summary.html">org.apache.cxf.jaxrs.client</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/jaxrs/client/package-summary.html">org.apache.cxf.jaxrs.client</A> that return <A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#accept(javax.ws.rs.core.MediaType...)">accept</A></B>(javax.ws.rs.core.MediaType...&nbsp;types)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#accept(java.lang.String...)">accept</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>...&nbsp;types)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#acceptEncoding(java.lang.String...)">acceptEncoding</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>...&nbsp;encodings)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#acceptLanguage(java.lang.String...)">acceptLanguage</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>...&nbsp;languages)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#back(boolean)">back</A></B>(boolean&nbsp;fast)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Goes back</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#cookie(javax.ws.rs.core.Cookie)">cookie</A></B>(javax.ws.rs.core.Cookie&nbsp;cookie)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#create(java.lang.String)">create</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;baseAddress)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates WebClient</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#create(java.lang.String, boolean)">create</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;baseURI,
+       boolean&nbsp;threadSafe)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates WebClient</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#create(java.lang.String, java.util.List)">create</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;baseAddress,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;?&gt;&nbsp;providers)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates WebClient</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#create(java.lang.String, java.util.List, boolean)">create</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;baseAddress,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;?&gt;&nbsp;providers,
+       boolean&nbsp;threadSafe)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates WebClient</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#create(java.lang.String, java.util.List, java.util.List, java.lang.String)">create</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;baseAddress,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;?&gt;&nbsp;providers,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;? extends <A HREF="../../../../../../org/apache/cxf/feature/Feature.html" title="interface in org.apache.cxf.feature">Feature</A>&gt;&nbsp;features,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;configLocation)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates WebClient with a list of custom features</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#create(java.lang.String, java.util.List, java.lang.String)">create</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;baseAddress,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;?&gt;&nbsp;providers,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;configLocation)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates WebClient</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#create(java.lang.String, java.lang.String)">create</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;baseAddress,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;configLocation)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates WebClient</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#create(java.lang.String, java.lang.String, java.lang.String, java.lang.String)">create</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;baseAddress,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;username,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;password,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;configLocation)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates WebClient which will do basic authentication</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#create(java.net.URI)">create</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</A>&nbsp;baseURI)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates WebClient</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>JAXRSClientFactoryBean.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/JAXRSClientFactoryBean.html#createWebClient()">createWebClient</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates a WebClient instance</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#encoding(java.lang.String)">encoding</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encoding)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#fragment(java.lang.String)">fragment</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates the current URI fragment</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#fromClient(org.apache.cxf.jaxrs.client.Client)">fromClient</A></B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/client/Client.html" title="interface in org.apache.cxf.jaxrs.client">Client</A>&nbsp;client)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates WebClient, baseURI will be set to Client currentURI</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#fromClient(org.apache.cxf.jaxrs.client.Client, boolean)">fromClient</A></B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/client/Client.html" title="interface in org.apache.cxf.jaxrs.client">Client</A>&nbsp;client,
+           boolean&nbsp;inheritHeaders)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates WebClient, baseURI will be set to Client currentURI</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#header(java.lang.String, java.lang.Object...)">header</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>...&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#headers(javax.ws.rs.core.MultivaluedMap)">headers</A></B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;map)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#language(java.lang.String)">language</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;language)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#match(javax.ws.rs.core.EntityTag, boolean)">match</A></B>(javax.ws.rs.core.EntityTag&nbsp;tag,
+      boolean&nbsp;ifNot)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#matrix(java.lang.String, java.lang.Object...)">matrix</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name,
+       <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>...&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates the current URI matrix parameters</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#modified(java.util.Date, boolean)">modified</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</A>&nbsp;date,
+         boolean&nbsp;ifNot)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#path(java.lang.Object)">path</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;path)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates the current URI path</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#path(java.lang.String, java.lang.Object...)">path</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path,
+     <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>...&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates the current URI path with path segment which may contain template variables</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#query(java.lang.String, java.lang.Object...)">query</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name,
+      <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>...&nbsp;values)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Updates the current URI query parameters</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#replaceHeader(java.lang.String, java.lang.String)">replaceHeader</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;headerName,
+              <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replaces the header value with the new values.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#replacePath(java.lang.String)">replacePath</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replaces the current path with the new value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#replaceQuery(java.lang.String)">replaceQuery</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;queryString)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replaces the current query with the new value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#replaceQueryParam(java.lang.String, java.lang.Object...)">replaceQueryParam</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;queryParam,
+                  <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>...&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replaces the current query with the new value.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#reset()">reset</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#resetQuery()">resetQuery</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Resets the current query</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#to(java.lang.String, boolean)">to</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;newAddress,
+   boolean&nbsp;forward)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Moves WebClient to a new baseURI or forwards to new currentURI</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#type(javax.ws.rs.core.MediaType)">type</A></B>(javax.ws.rs.core.MediaType&nbsp;ct)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></CODE></FONT></TD>
+<TD><CODE><B>WebClient.</B><B><A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html#type(java.lang.String)">type</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.rs.security.oauth.client"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A> in <A HREF="../../../../../../org/apache/cxf/rs/security/oauth/client/package-summary.html">org.apache.cxf.rs.security.oauth.client</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/rs/security/oauth/client/package-summary.html">org.apache.cxf.rs.security.oauth.client</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/rs/security/oauth/client/OAuthClientUtils.Token.html" title="class in org.apache.cxf.rs.security.oauth.client">OAuthClientUtils.Token</A></CODE></FONT></TD>
+<TD><CODE><B>OAuthClientUtils.</B><B><A HREF="../../../../../../org/apache/cxf/rs/security/oauth/client/OAuthClientUtils.html#getAccessToken(org.apache.cxf.jaxrs.client.WebClient, org.apache.cxf.rs.security.oauth.client.OAuthClientUtils.Consumer, org.apache.cxf.rs.security.oauth.client.OAuthClientUtils.Token, java.lang.String)">getAccessToken</A></B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A>&nbsp;accessTokenService,
+               <A HREF="../../../../../../org/apache/cxf/rs/security/oauth/client/OAuthClientUtils.Consumer.html" title="class in org.apache.cxf.rs.security.oauth.client">OAuthClientUtils.Consumer</A>&nbsp;consumer,
+               <A HREF="../../../../../../org/apache/cxf/rs/security/oauth/client/OAuthClientUtils.Token.html" title="class in org.apache.cxf.rs.security.oauth.client">OAuthClientUtils.Token</A>&nbsp;requestToken,
+               <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;verifier)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a simple representation of the Access token</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/rs/security/oauth/client/OAuthClientUtils.Token.html" title="class in org.apache.cxf.rs.security.oauth.client">OAuthClientUtils.Token</A></CODE></FONT></TD>
+<TD><CODE><B>OAuthClientUtils.</B><B><A HREF="../../../../../../org/apache/cxf/rs/security/oauth/client/OAuthClientUtils.html#getRequestToken(org.apache.cxf.jaxrs.client.WebClient, org.apache.cxf.rs.security.oauth.client.OAuthClientUtils.Consumer, java.net.URI, java.util.Map)">getRequestToken</A></B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A>&nbsp;requestTokenService,
+                <A HREF="../../../../../../org/apache/cxf/rs/security/oauth/client/OAuthClientUtils.Consumer.html" title="class in org.apache.cxf.rs.security.oauth.client">OAuthClientUtils.Consumer</A>&nbsp;consumer,
+                <A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</A>&nbsp;callback,
+                <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;extraParams)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a simple representation of the Request token</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.rs.security.oauth2.client"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A> in <A HREF="../../../../../../org/apache/cxf/rs/security/oauth2/client/package-summary.html">org.apache.cxf.rs.security.oauth2.client</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/rs/security/oauth2/client/package-summary.html">org.apache.cxf.rs.security.oauth2.client</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/rs/security/oauth2/common/ClientAccessToken.html" title="class in org.apache.cxf.rs.security.oauth2.common">ClientAccessToken</A></CODE></FONT></TD>
+<TD><CODE><B>OAuthClientUtils.</B><B><A HREF="../../../../../../org/apache/cxf/rs/security/oauth2/client/OAuthClientUtils.html#getAccessToken(org.apache.cxf.jaxrs.client.WebClient, org.apache.cxf.rs.security.oauth2.client.OAuthClientUtils.Consumer, org.apache.cxf.rs.security.oauth2.common.AccessTokenGrant)">getAccessToken</A></B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A>&nbsp;accessTokenService,
+               <A HREF="../../../../../../org/apache/cxf/rs/security/oauth2/client/OAuthClientUtils.Consumer.html" title="class in org.apache.cxf.rs.security.oauth2.client">OAuthClientUtils.Consumer</A>&nbsp;consumer,
+               <A HREF="../../../../../../org/apache/cxf/rs/security/oauth2/common/AccessTokenGrant.html" title="interface in org.apache.cxf.rs.security.oauth2.common">AccessTokenGrant</A>&nbsp;grant)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtains the access token from OAuth AccessToken Service 
+ using the initialized web client</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/rs/security/oauth2/common/ClientAccessToken.html" title="class in org.apache.cxf.rs.security.oauth2.common">ClientAccessToken</A></CODE></FONT></TD>
+<TD><CODE><B>OAuthClientUtils.</B><B><A HREF="../../../../../../org/apache/cxf/rs/security/oauth2/client/OAuthClientUtils.html#getAccessToken(org.apache.cxf.jaxrs.client.WebClient, org.apache.cxf.rs.security.oauth2.client.OAuthClientUtils.Consumer, org.apache.cxf.rs.security.oauth2.common.AccessTokenGrant, boolean)">getAccessToken</A></B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A>&nbsp;accessTokenService,
+               <A HREF="../../../../../../org/apache/cxf/rs/security/oauth2/client/OAuthClientUtils.Consumer.html" title="class in org.apache.cxf.rs.security.oauth2.client">OAuthClientUtils.Consumer</A>&nbsp;consumer,
+               <A HREF="../../../../../../org/apache/cxf/rs/security/oauth2/common/AccessTokenGrant.html" title="interface in org.apache.cxf.rs.security.oauth2.common">AccessTokenGrant</A>&nbsp;grant,
+               boolean&nbsp;setAuthorizationHeader)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtains the access token from OAuth AccessToken Service 
+ using the initialized web client</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../org/apache/cxf/rs/security/oauth2/client/package-summary.html">org.apache.cxf.rs.security.oauth2.client</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/rs/security/oauth2/client/HttpRequestProperties.html#HttpRequestProperties(org.apache.cxf.jaxrs.client.WebClient, java.lang.String)">HttpRequestProperties</A></B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A>&nbsp;wc,
+                      <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;httpMethod)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.rs.security.oauth2.filters"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A> in <A HREF="../../../../../../org/apache/cxf/rs/security/oauth2/filters/package-summary.html">org.apache.cxf.rs.security.oauth2.filters</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/rs/security/oauth2/filters/package-summary.html">org.apache.cxf.rs.security.oauth2.filters</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AccessTokenValidatorClient.</B><B><A HREF="../../../../../../org/apache/cxf/rs/security/oauth2/filters/AccessTokenValidatorClient.html#setTokenValidatorClient(org.apache.cxf.jaxrs.client.WebClient)">setTokenValidatorClient</A></B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client">WebClient</A>&nbsp;tokenValidatorClient)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/cxf/jaxrs/client/WebClient.html" title="class in org.apache.cxf.jaxrs.client"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/jaxrs/client//class-useWebClient.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="WebClient.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

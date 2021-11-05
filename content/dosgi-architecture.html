@@ -1,0 +1,259 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - DOSGi Architecture">
+
+
+
+
+    <title>
+Apache CXF -- DOSGi Architecture
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="distributed-osgi.html">Distributed OSGi</a>&nbsp;&gt;&nbsp;<a href="dosgi-architecture.html">DOSGi Architecture</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><h2 id="DOSGiArchitecture-DOSGiintheOSGispec">DOSGi in the OSGi spec</h2>
+
+<p>Distributed OSGi is described in the <a shape="rect" class="external-link" href="http://www.osgi.org/Download/File?url=/download/r4v43/osgi.core-4.3.0.pdf" rel="nofollow">OSGi core spec</a> in chapter 6 (Remote Services) and in the <a shape="rect" class="external-link" href="http://www.osgi.org/Download/File?url=/download/r4v43/osgi.cmpn-4.3.0.pdf" rel="nofollow">OSGi compendium spec </a>in chapter 122 (Remote Service Admin Service).</p>
+
+
+<p>The Remote Services spec describes a module named Distribution Provider that makes OSGi services available across container boundaries. The idea is to use special service properties to mark services that are to be exported remotely. The Distribution provider will create Endpoints for these services that are available outside the container. On the consumer side the Distribution Provider can create local OSGi services that act as proxies for the remote services and allow service consumers to use them to call the remote service.</p>
+
+    
+
+
+
+
+<span class="gliffy-container" id="gliffy-container-30965906-4696" data-fullwidth="900" data-size="" data-ceoid="30739778" data-edit="${diagramEditLink.getLinkUrl()}" data-full="${diagramZoomLink.getLinkUrl()}" data-filename="remote-services-spec">
+
+    <map id="gliffy-map-30965906-5630" name="gliffy-map-30965906-5630"></map>
+
+    <img class="gliffy-image" id="gliffy-image-30965906-4696" width="900" height="480" data-full-width="900" data-full-height="480" src="https://cwiki.apache.org/confluence/download/attachments/30739778/remote-services-spec.png?version=4&amp;modificationDate=1362365433000&amp;api=v2" alt="remote-services-spec" usemap="#gliffy-map-30965906-5630">
+
+    <map class="gliffy-dynamic" id="gliffy-dynamic-map-30965906-4696" name="gliffy-dynamic-map-30965906-4696"></map>
+</span>
+
+
+
+<p>The Remote Service Admin spec then splits the Distribution provider into separate modules that communicate through defined interfaces. This allows to change or enhance parts of an existing DOSGi implementation without having to reimplement the whole Distribution provider.</p>
+    
+
+
+
+
+<span class="gliffy-container" id="gliffy-container-30965903-5934" data-fullwidth="897" data-size="" data-ceoid="30739778" data-edit="${diagramEditLink.getLinkUrl()}" data-full="${diagramZoomLink.getLinkUrl()}" data-filename="remote-service-admin-spec">
+
+    <map id="gliffy-map-30965903-8877" name="gliffy-map-30965903-8877"></map>
+
+    <img class="gliffy-image" id="gliffy-image-30965903-5934" width="897" height="600" data-full-width="897" data-full-height="600" src="https://cwiki.apache.org/confluence/download/attachments/30739778/remote-service-admin-spec.png?version=2&amp;modificationDate=1362365400000&amp;api=v2" alt="remote-service-admin-spec" usemap="#gliffy-map-30965903-8877">
+
+    <map class="gliffy-dynamic" id="gliffy-dynamic-map-30965903-5934" name="gliffy-dynamic-map-30965903-5934"></map>
+</span>
+
+
+<p>Modular Distribution Provider described in the Remote Service Admin Service spec.</p>
+
+<h3 id="DOSGiArchitecture-ModulesandtheirRoles">Modules and their Roles</h3>
+
+<ul><li><strong>Discovery:</strong> Detects available Remote Endpoints and notifies EndpointListeners</li><li><strong>Topology Manager:</strong> Monitors available and requested local OSGi Services. Monitors remote OSGi services using an EndpointListener. Delegates creation of Endpoints and Proxies to RemoteServiceAdmin.</li><li><strong>Remote Service Admin:</strong> Creates and Destroys Endpoints and Proxys and notifies RemoteServiceAdminListeners. Only reacts to commands sent over the Remote Service Admin interface.</li></ul>
+
+
+<p>Notes:</p>
+<ul><li>There can be more than one Discovery Impl and Topology Manager Impl at the same time</li><li>For one service the Remote Service Admin can create more than one endpoint (e.g SOAP and Rest)</li></ul>
+
+
+
+
+<h2 id="DOSGiArchitecture-CXFDOSGi">CXF DOSGi</h2>
+
+<div class="table-wrap"><table class="confluenceTable"><tbody><tr><th colspan="1" rowspan="1" class="confluenceTh"><p> Spec Module<br clear="none" class="atl-forced-newline"> </p></th><th colspan="1" rowspan="1" class="confluenceTh"><p> CXF Module<br clear="none" class="atl-forced-newline"> </p></th><th colspan="1" rowspan="1" class="confluenceTh"><p> Description<br clear="none" class="atl-forced-newline"> </p></th></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p> Discovery<br clear="none" class="atl-forced-newline"> </p></td><td colspan="1" rowspan="1" class="confluenceTd"><p> cxf-dosgi-ri-discovery-local </p></td><td colspan="1" rowspan="1" class="confluenceTd"><p> Describes Remote Endpoints using local configuration<br clear="none" class="atl-forced-newline"> </p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>&#160;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p> cxf-dosgi-ri-discovery-distributed </p></td><td colspan="1" rowspan="1" class="confluenceTd"><p> Discovers and Announces Endpoints using a Zookeeper Server<br clear="none" class="atl-forced-newline"> </p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p> Topology Manager<br clear="none" class="atl-forced-newline"> </p></td><td colspan="1" rowspan="1" class="confluenceTd"><p> cxf-dosgi-ri-topology-manager </p></td><td colspan="1" rowspan="1" class="confluenceTd"><p> Basic Topology Manager Implementation<br clear="none" class="atl-forced-newline"> </p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p> Remote Service Admin <br clear="none" class="atl-forced-newline"> </p></td><td colspan="1" rowspan="1" class="confluenceTd"><p> cxf-dosgi-ri-dsw-cxf </p></td><td colspan="1" rowspan="1" class="confluenceTd"><p> Creates Endpoints and Proxies using the CXF Framework<br clear="none" class="atl-forced-newline"> </p></td></tr></tbody></table></div>
+
+
+<p>Shows how the CXF DOSGi modules map to the spec. In the next chapters we look into each of these modules.</p>
+
+<h3 id="DOSGiArchitecture-TopologyManager">Topology Manager</h3>
+
+    
+
+
+
+
+<span class="gliffy-container" id="gliffy-container-30965962-2725" data-fullwidth="1217" data-size="" data-ceoid="30739778" data-edit="${diagramEditLink.getLinkUrl()}" data-full="${diagramZoomLink.getLinkUrl()}" data-filename="cxf-dosgi-topology-manager">
+
+    <map id="gliffy-map-30965962-8901" name="gliffy-map-30965962-8901"></map>
+
+    <img class="gliffy-image" id="gliffy-image-30965962-2725" width="1217" height="773" data-full-width="1217" data-full-height="773" src="https://cwiki.apache.org/confluence/download/attachments/30739778/cxf-dosgi-topology-manager.png?version=4&amp;modificationDate=1368712288000&amp;api=v2" alt="cxf-dosgi-topology-manager" usemap="#gliffy-map-30965962-8901">
+
+    <map class="gliffy-dynamic" id="gliffy-dynamic-map-30965962-2725" name="gliffy-dynamic-map-30965962-2725"></map>
+</span>
+
+
+
+<h3 id="DOSGiArchitecture-DiscoveryDitributedwithZookeeper">Discovery Ditributed with Zookeeper</h3>
+
+    
+
+
+
+
+<span class="gliffy-container" id="gliffy-container-30966000-7008" data-fullwidth="1191" data-size="" data-ceoid="30739778" data-edit="${diagramEditLink.getLinkUrl()}" data-full="${diagramZoomLink.getLinkUrl()}" data-filename="cxf-dosgi-discovery-distributed">
+
+    <map id="gliffy-map-30966000-6810" name="gliffy-map-30966000-6810"></map>
+
+    <img class="gliffy-image" id="gliffy-image-30966000-7008" width="1191" height="1229" data-full-width="1191" data-full-height="1229" src="https://cwiki.apache.org/confluence/download/attachments/30739778/cxf-dosgi-discovery-distributed.png?version=3&amp;modificationDate=1362365313000&amp;api=v2" alt="cxf-dosgi-discovery-distributed" usemap="#gliffy-map-30966000-6810">
+
+    <map class="gliffy-dynamic" id="gliffy-dynamic-map-30966000-7008" name="gliffy-dynamic-map-30966000-7008"></map>
+</span>
+
+
+
+<h3 id="DOSGiArchitecture-RemoteServiceAdmin">Remote Service Admin</h3>
+
+    
+
+
+
+
+<span class="gliffy-container" id="gliffy-container-30966005-7525" data-fullwidth="200" data-size="" data-ceoid="30739778" data-edit="${diagramEditLink.getLinkUrl()}" data-full="${diagramZoomLink.getLinkUrl()}" data-filename="cxf-dosgi-remote-service-admin">
+
+    <map id="gliffy-map-30966005-3677" name="gliffy-map-30966005-3677"></map>
+
+    <img class="gliffy-image" id="gliffy-image-30966005-7525" width="200" height="200" data-full-width="200" data-full-height="200" src="https://cwiki.apache.org/confluence/download/attachments/30739778/cxf-dosgi-remote-service-admin.png?version=2&amp;modificationDate=1362364251000&amp;api=v2" alt="cxf-dosgi-remote-service-admin" usemap="#gliffy-map-30966005-3677">
+
+    <map class="gliffy-dynamic" id="gliffy-dynamic-map-30966005-7525" name="gliffy-dynamic-map-30966005-7525"></map>
+</span>
+</div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=30739778">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=30739778&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

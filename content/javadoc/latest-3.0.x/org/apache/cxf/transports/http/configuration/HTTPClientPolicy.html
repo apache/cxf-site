@@ -1,0 +1,2673 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+HTTPClientPolicy (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="HTTPClientPolicy (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/HTTPClientPolicy.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/transports/http/configuration/ConnectionType.html" title="enum in org.apache.cxf.transports.http.configuration"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPServerPolicy.html" title="class in org.apache.cxf.transports.http.configuration"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="HTTPClientPolicy.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.transports.http.configuration</FONT>
+<BR>
+Class HTTPClientPolicy</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.transports.http.configuration.HTTPClientPolicy</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>HTTPClientPolicy</B><DT>extends <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+Properties used to configure a client-side HTTP port
+ 
+ <p>Java class for HTTPClientPolicy complex type.
+ 
+ <p>The following schema fragment specifies the expected content contained within this class.
+ 
+ <pre>
+ &lt;complexType name="HTTPClientPolicy">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+       &lt;/sequence>
+       &lt;attribute name="ConnectionTimeout" type="{http://cxf.apache.org/configuration/parameterized-types}ParameterizedUInt" default="30000" />
+       &lt;attribute name="ReceiveTimeout" type="{http://cxf.apache.org/configuration/parameterized-types}ParameterizedUInt" default="60000" />
+       &lt;attribute name="AsyncExecuteTimeout" type="{http://cxf.apache.org/configuration/parameterized-types}ParameterizedUInt" default="5000" />
+       &lt;attribute name="AsyncExecuteTimeoutRejection" type="{http://cxf.apache.org/configuration/parameterized-types}ParameterizedBoolean" default="false" />
+       &lt;attribute name="AutoRedirect" type="{http://cxf.apache.org/configuration/parameterized-types}ParameterizedBoolean" default="false" />
+       &lt;attribute name="MaxRetransmits" type="{http://cxf.apache.org/configuration/parameterized-types}ParameterizedInt" default="-1" />
+       &lt;attribute name="AllowChunking" type="{http://cxf.apache.org/configuration/parameterized-types}ParameterizedBoolean" default="true" />
+       &lt;attribute name="ChunkingThreshold" type="{http://cxf.apache.org/configuration/parameterized-types}ParameterizedInt" default="4096" />
+       &lt;attribute name="ChunkLength" type="{http://cxf.apache.org/configuration/parameterized-types}ParameterizedInt" default="-1" />
+       &lt;attribute name="Accept" type="{http://www.w3.org/2001/XMLSchema}string" />
+       &lt;attribute name="AcceptLanguage" type="{http://www.w3.org/2001/XMLSchema}string" />
+       &lt;attribute name="AcceptEncoding" type="{http://www.w3.org/2001/XMLSchema}string" />
+       &lt;attribute name="ContentType" type="{http://www.w3.org/2001/XMLSchema}string" />
+       &lt;attribute name="Host" type="{http://www.w3.org/2001/XMLSchema}string" />
+       &lt;attribute name="Connection" type="{http://cxf.apache.org/transports/http/configuration}connectionType" default="Keep-Alive" />
+       &lt;attribute name="CacheControl" type="{http://www.w3.org/2001/XMLSchema}string" />
+       &lt;attribute name="Cookie" type="{http://www.w3.org/2001/XMLSchema}string" />
+       &lt;attribute name="BrowserType" type="{http://www.w3.org/2001/XMLSchema}string" />
+       &lt;attribute name="Referer" type="{http://www.w3.org/2001/XMLSchema}string" />
+       &lt;attribute name="DecoupledEndpoint" type="{http://www.w3.org/2001/XMLSchema}string" />
+       &lt;attribute name="ProxyServer" type="{http://www.w3.org/2001/XMLSchema}string" />
+       &lt;attribute name="ProxyServerPort" type="{http://cxf.apache.org/configuration/parameterized-types}ParameterizedInt" />
+       &lt;attribute name="NonProxyHosts" type="{http://www.w3.org/2001/XMLSchema}string" />
+       &lt;attribute name="ProxyServerType" type="{http://cxf.apache.org/transports/http/configuration}proxyServerType" default="HTTP" />
+       &lt;anyAttribute namespace='http://schemas.xmlsoap.org/wsdl/'/>
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#accept">accept</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the MIME types the client is prepared to handle (e.g., HTML, JPEG, GIF, etc.)</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#acceptEncoding">acceptEncoding</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the encoding the client is prepared to handle (e.g., gzip)</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#acceptLanguage">acceptLanguage</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the language the client desires (e.g., English, French, etc.)</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#allowChunking">allowChunking</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If true, the client is free to use chunking streams if it wants, but it is not 
+                 required to use chunking streams.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#asyncExecuteTimeout">asyncExecuteTimeout</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the amount of time, in milliseconds, that a conduit will try and enqueue the response on the workqueue.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#asyncExecuteTimeoutRejection">asyncExecuteTimeoutRejection</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies whether the conduit should throw and exception if it fails to enqueue the async response handling onto the workqueue.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#autoRedirect">autoRedirect</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies if the consumer will automatically follow a server issued redirection.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#browserType">browserType</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;aka User-Agent
+                 Specifies the type of browser is sending the request.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#cacheControl">cacheControl</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Most commonly used to specify no-cache, however the standard supports a 
+                 dozen or so caching related directives for requests</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#chunkingThreshold">chunkingThreshold</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If AllowChunking is true, this sets the threshold at which messages start
+                 getting chunked.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#chunkLength">chunkLength</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the chunk length for a HttpURLConnection.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/cxf/transports/http/configuration/ConnectionType.html" title="enum in org.apache.cxf.transports.http.configuration">ConnectionType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#connection">connection</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The connection disposition.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#connectionTimeout">connectionTimeout</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the amount of time, in milliseconds, that the consumer will attempt to establish a connection before it times out.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#contentType">contentType</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the content type of the stream being sent in a post request.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#cookie">cookie</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies a cookie to send to the server.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#decoupledEndpoint">decoupledEndpoint</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the URL of a decoupled endpoint for the receipt of responses over a separate provider->consumer connection.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#host">host</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the Internet host and port number of the resource on which the request is being invoked.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#maxRetransmits">maxRetransmits</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the maximum amount of retransmits that are allowed for redirects.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#nonProxyHosts">nonProxyHosts</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the list of hostnames that will not use the proxy configuration.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyChangeSupport.html?is-external=true" title="class or interface in java.beans">PropertyChangeSupport</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#propertyListener">propertyListener</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#proxyServer">proxyServer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the address of proxy server if one is used.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#proxyServerPort">proxyServerPort</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the port number used by the proxy server.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/cxf/transports/http/configuration/ProxyServerType.html" title="enum in org.apache.cxf.transports.http.configuration">ProxyServerType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#proxyServerType">proxyServerType</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the type of the proxy server.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#receiveTimeout">receiveTimeout</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the amount of time, in milliseconds, that the consumer will wait for a response before it times out.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#referer">referer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Specifies the URL that referred us to this URL.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#HTTPClientPolicy()">HTTPClientPolicy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#addPropertyChangeListener(java.beans.PropertyChangeListener)">addPropertyChangeListener</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyChangeListener.html?is-external=true" title="class or interface in java.beans">PropertyChangeListener</A>&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getAccept()">getAccept</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the accept property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getAcceptEncoding()">getAcceptEncoding</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the acceptEncoding property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getAcceptLanguage()">getAcceptLanguage</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the acceptLanguage property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getAsyncExecuteTimeout()">getAsyncExecuteTimeout</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the asyncExecuteTimeout property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getBrowserType()">getBrowserType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the browserType property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getCacheControl()">getCacheControl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the cacheControl property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getChunkingThreshold()">getChunkingThreshold</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the chunkingThreshold property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getChunkLength()">getChunkLength</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the chunkLength property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/transports/http/configuration/ConnectionType.html" title="enum in org.apache.cxf.transports.http.configuration">ConnectionType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getConnection()">getConnection</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the connection property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getConnectionTimeout()">getConnectionTimeout</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the connectionTimeout property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getContentType()">getContentType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the contentType property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getCookie()">getCookie</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the cookie property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getDecoupledEndpoint()">getDecoupledEndpoint</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the decoupledEndpoint property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getHost()">getHost</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the host property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getMaxRetransmits()">getMaxRetransmits</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the maxRetransmits property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getNonProxyHosts()">getNonProxyHosts</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the nonProxyHosts property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getOtherAttributes()">getOtherAttributes</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets a map that contains attributes that aren't bound to any typed property on this class.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getProxyServer()">getProxyServer</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the proxyServer property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getProxyServerPort()">getProxyServerPort</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the proxyServerPort property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/transports/http/configuration/ProxyServerType.html" title="enum in org.apache.cxf.transports.http.configuration">ProxyServerType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getProxyServerType()">getProxyServerType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the proxyServerType property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getReceiveTimeout()">getReceiveTimeout</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the receiveTimeout property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getReferer()">getReferer</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the referer property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isAllowChunking()">isAllowChunking</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the allowChunking property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isAsyncExecuteTimeoutRejection()">isAsyncExecuteTimeoutRejection</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the asyncExecuteTimeoutRejection property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isAutoRedirect()">isAutoRedirect</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the autoRedirect property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetAccept()">isSetAccept</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetAcceptEncoding()">isSetAcceptEncoding</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetAcceptLanguage()">isSetAcceptLanguage</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetAllowChunking()">isSetAllowChunking</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetAsyncExecuteTimeout()">isSetAsyncExecuteTimeout</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetAsyncExecuteTimeoutRejection()">isSetAsyncExecuteTimeoutRejection</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetAutoRedirect()">isSetAutoRedirect</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetBrowserType()">isSetBrowserType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetCacheControl()">isSetCacheControl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetChunkingThreshold()">isSetChunkingThreshold</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetChunkLength()">isSetChunkLength</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetConnection()">isSetConnection</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetConnectionTimeout()">isSetConnectionTimeout</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetContentType()">isSetContentType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetCookie()">isSetCookie</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetDecoupledEndpoint()">isSetDecoupledEndpoint</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetHost()">isSetHost</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetMaxRetransmits()">isSetMaxRetransmits</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetNonProxyHosts()">isSetNonProxyHosts</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetProxyServer()">isSetProxyServer</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetProxyServerPort()">isSetProxyServerPort</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetProxyServerType()">isSetProxyServerType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetReceiveTimeout()">isSetReceiveTimeout</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isSetReferer()">isSetReferer</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#removePropertyChangeListener(java.beans.PropertyChangeListener)">removePropertyChangeListener</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyChangeListener.html?is-external=true" title="class or interface in java.beans">PropertyChangeListener</A>&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setAccept(java.lang.String)">setAccept</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the accept property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setAcceptEncoding(java.lang.String)">setAcceptEncoding</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the acceptEncoding property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setAcceptLanguage(java.lang.String)">setAcceptLanguage</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the acceptLanguage property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setAllowChunking(boolean)">setAllowChunking</A></B>(boolean&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the allowChunking property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setAsyncExecuteTimeout(long)">setAsyncExecuteTimeout</A></B>(long&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the asyncExecuteTimeout property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setAsyncExecuteTimeoutRejection(boolean)">setAsyncExecuteTimeoutRejection</A></B>(boolean&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the asyncExecuteTimeoutRejection property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setAutoRedirect(boolean)">setAutoRedirect</A></B>(boolean&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the autoRedirect property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setBrowserType(java.lang.String)">setBrowserType</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the browserType property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setCacheControl(java.lang.String)">setCacheControl</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the cacheControl property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setChunkingThreshold(int)">setChunkingThreshold</A></B>(int&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the chunkingThreshold property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setChunkLength(int)">setChunkLength</A></B>(int&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the chunkLength property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setConnection(org.apache.cxf.transports.http.configuration.ConnectionType)">setConnection</A></B>(<A HREF="../../../../../../org/apache/cxf/transports/http/configuration/ConnectionType.html" title="enum in org.apache.cxf.transports.http.configuration">ConnectionType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the connection property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setConnectionTimeout(long)">setConnectionTimeout</A></B>(long&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the connectionTimeout property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setContentType(java.lang.String)">setContentType</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the contentType property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setCookie(java.lang.String)">setCookie</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the cookie property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setDecoupledEndpoint(java.lang.String)">setDecoupledEndpoint</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the decoupledEndpoint property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setHost(java.lang.String)">setHost</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the host property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setMaxRetransmits(int)">setMaxRetransmits</A></B>(int&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the maxRetransmits property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setNonProxyHosts(java.lang.String)">setNonProxyHosts</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the nonProxyHosts property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setProxyServer(java.lang.String)">setProxyServer</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the proxyServer property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setProxyServerPort(int)">setProxyServerPort</A></B>(int&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the proxyServerPort property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setProxyServerType(org.apache.cxf.transports.http.configuration.ProxyServerType)">setProxyServerType</A></B>(<A HREF="../../../../../../org/apache/cxf/transports/http/configuration/ProxyServerType.html" title="enum in org.apache.cxf.transports.http.configuration">ProxyServerType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the proxyServerType property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setReceiveTimeout(long)">setReceiveTimeout</A></B>(long&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the receiveTimeout property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#setReferer(java.lang.String)">setReferer</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the referer property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#unsetAllowChunking()">unsetAllowChunking</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#unsetAsyncExecuteTimeout()">unsetAsyncExecuteTimeout</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#unsetAsyncExecuteTimeoutRejection()">unsetAsyncExecuteTimeoutRejection</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#unsetAutoRedirect()">unsetAutoRedirect</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#unsetChunkingThreshold()">unsetChunkingThreshold</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#unsetChunkLength()">unsetChunkLength</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#unsetConnectionTimeout()">unsetConnectionTimeout</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#unsetMaxRetransmits()">unsetMaxRetransmits</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#unsetProxyServerPort()">unsetProxyServerPort</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#unsetReceiveTimeout()">unsetReceiveTimeout</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="connectionTimeout"><!-- --></A><H3>
+connectionTimeout</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</A> <B>connectionTimeout</B></PRE>
+<DL>
+<DD>Specifies the amount of time, in milliseconds, that the consumer will attempt to establish a connection before it times out. 0 is infinite.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="receiveTimeout"><!-- --></A><H3>
+receiveTimeout</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</A> <B>receiveTimeout</B></PRE>
+<DL>
+<DD>Specifies the amount of time, in milliseconds, that the consumer will wait for a response before it times out. 0 is infinite.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="asyncExecuteTimeout"><!-- --></A><H3>
+asyncExecuteTimeout</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</A> <B>asyncExecuteTimeout</B></PRE>
+<DL>
+<DD>Specifies the amount of time, in milliseconds, that a conduit will try and enqueue the response on the workqueue.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="asyncExecuteTimeoutRejection"><!-- --></A><H3>
+asyncExecuteTimeoutRejection</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A> <B>asyncExecuteTimeoutRejection</B></PRE>
+<DL>
+<DD>Specifies whether the conduit should throw and exception if it fails to enqueue the async response handling onto the workqueue. 
+                 By default, if the conduit fails to enqueue the response handling on the workqueue, it will process the response on the current thread.  Set this to true to raise and exception instead.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="autoRedirect"><!-- --></A><H3>
+autoRedirect</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A> <B>autoRedirect</B></PRE>
+<DL>
+<DD>Specifies if the consumer will automatically follow a server issued redirection.
+                 (name is not part of standard)
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="maxRetransmits"><!-- --></A><H3>
+maxRetransmits</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</A> <B>maxRetransmits</B></PRE>
+<DL>
+<DD>Specifies the maximum amount of retransmits that are allowed for redirects. Retransmits for 
+                 authorization is included in the retransmit count. Each redirect may cause another 
+                 retransmit for a UNAUTHORIZED response code, ie. 401. 
+                 Any negative number indicates unlimited retransmits,
+                 although, loop protection is provided. 
+                 The default is unlimited. 
+                 (name is not part of standard)
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="allowChunking"><!-- --></A><H3>
+allowChunking</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Boolean.html?is-external=true" title="class or interface in java.lang">Boolean</A> <B>allowChunking</B></PRE>
+<DL>
+<DD>If true, the client is free to use chunking streams if it wants, but it is not 
+                 required to use chunking streams. If false, the client 
+                 must use regular, non-chunked requests in all cases.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="chunkingThreshold"><!-- --></A><H3>
+chunkingThreshold</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</A> <B>chunkingThreshold</B></PRE>
+<DL>
+<DD>If AllowChunking is true, this sets the threshold at which messages start
+                 getting chunked. Messages under this limit do not get chunked.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="chunkLength"><!-- --></A><H3>
+chunkLength</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</A> <B>chunkLength</B></PRE>
+<DL>
+<DD>Specifies the chunk length for a HttpURLConnection. This value is used in java.net.HttpURLConnection.setChunkedStreamingMode(int chunklen). chunklen indicates the number of bytes to write in each chunk. If chunklen is less than or equal to zero, a default value will be used.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="accept"><!-- --></A><H3>
+accept</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>accept</B></PRE>
+<DL>
+<DD>Specifies the MIME types the client is prepared to handle (e.g., HTML, JPEG, GIF, etc.)
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="acceptLanguage"><!-- --></A><H3>
+acceptLanguage</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>acceptLanguage</B></PRE>
+<DL>
+<DD>Specifies the language the client desires (e.g., English, French, etc.)
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="acceptEncoding"><!-- --></A><H3>
+acceptEncoding</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>acceptEncoding</B></PRE>
+<DL>
+<DD>Specifies the encoding the client is prepared to handle (e.g., gzip)
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="contentType"><!-- --></A><H3>
+contentType</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>contentType</B></PRE>
+<DL>
+<DD>Specifies the content type of the stream being sent in a post request. 
+                 (this should be text/xml for web services, or can be set to 
+                 application/x-www-form-urlencoded if the client is sending form data).
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="host"><!-- --></A><H3>
+host</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>host</B></PRE>
+<DL>
+<DD>Specifies the Internet host and port number of the resource on which the request is being invoked.
+                 This is sent by default based upon the URL. Certain DNS scenarios or
+                 application designs may request you to set this, but typically it is
+                 not required.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="connection"><!-- --></A><H3>
+connection</H3>
+<PRE>
+protected <A HREF="../../../../../../org/apache/cxf/transports/http/configuration/ConnectionType.html" title="enum in org.apache.cxf.transports.http.configuration">ConnectionType</A> <B>connection</B></PRE>
+<DL>
+<DD>The connection disposition. If close the connection to the server is closed 
+                 after each request/response dialog. If Keep-Alive the client requests the server 
+                 to keep the connection open, and if the server honors the keep alive request, 
+                 the connection is reused. Many servers and proxies do not honor keep-alive requests.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="cacheControl"><!-- --></A><H3>
+cacheControl</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>cacheControl</B></PRE>
+<DL>
+<DD>Most commonly used to specify no-cache, however the standard supports a 
+                 dozen or so caching related directives for requests
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="cookie"><!-- --></A><H3>
+cookie</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>cookie</B></PRE>
+<DL>
+<DD>Specifies a cookie to send to the server. Some stateful session designs will use cookies to identify a session.
+                 If the cookie is static, you can supply it here. If it is dynamic,
+                 it will need to be set by the server on first access, and can be handled
+                 automatically by the runtime.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="browserType"><!-- --></A><H3>
+browserType</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>browserType</B></PRE>
+<DL>
+<DD>aka User-Agent
+                 Specifies the type of browser is sending the request. This is usually only 
+                 needed when sites have HTML customized to Netscape vs IE, etc, but can
+                 also be used to optimize for different SOAP stacks.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="referer"><!-- --></A><H3>
+referer</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>referer</B></PRE>
+<DL>
+<DD>Specifies the URL that referred us to this URL. This is 
+                 sent automatically with auto redirect.
+ 
+                 May allow the server to optimize processing based upon
+                 previous task flow.  However, typically not used in 
+                 web services applications.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="decoupledEndpoint"><!-- --></A><H3>
+decoupledEndpoint</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>decoupledEndpoint</B></PRE>
+<DL>
+<DD>Specifies the URL of a decoupled endpoint for the receipt of responses over a separate provider->consumer connection.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="proxyServer"><!-- --></A><H3>
+proxyServer</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>proxyServer</B></PRE>
+<DL>
+<DD>Specifies the address of proxy server if one is used.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="proxyServerPort"><!-- --></A><H3>
+proxyServerPort</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</A> <B>proxyServerPort</B></PRE>
+<DL>
+<DD>Specifies the port number used by the proxy server.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="nonProxyHosts"><!-- --></A><H3>
+nonProxyHosts</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>nonProxyHosts</B></PRE>
+<DL>
+<DD>Specifies the list of hostnames that will not use the proxy configuration.
+                 Examples of value:
+                   * "localhost" -> A single hostname
+                   * "localhost|www.google.com" -> 2 hostnames that will not use the proxy configuration
+                   * "localhost|www.google.*|*.apache.org" -> It's also possible to use a pattern-like value
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="proxyServerType"><!-- --></A><H3>
+proxyServerType</H3>
+<PRE>
+protected <A HREF="../../../../../../org/apache/cxf/transports/http/configuration/ProxyServerType.html" title="enum in org.apache.cxf.transports.http.configuration">ProxyServerType</A> <B>proxyServerType</B></PRE>
+<DL>
+<DD>Specifies the type of the proxy server. Can be either HTTP or SOCKS.
+<P>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="propertyListener"><!-- --></A><H3>
+propertyListener</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyChangeSupport.html?is-external=true" title="class or interface in java.beans">PropertyChangeSupport</A> <B>propertyListener</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="HTTPClientPolicy()"><!-- --></A><H3>
+HTTPClientPolicy</H3>
+<PRE>
+public <B>HTTPClientPolicy</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getAccept()"><!-- --></A><H3>
+getAccept</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getAccept</B>()</PRE>
+<DL>
+<DD>Gets the value of the accept property.
+ <p>
+ Specifies the MIME types the client is prepared to handle (e.g., HTML, JPEG, GIF, etc.)
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAccept(java.lang.String)"><!-- --></A><H3>
+setAccept</H3>
+<PRE>
+public void <B>setAccept</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the accept property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getAccept()"><CODE>getAccept()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetAccept()"><!-- --></A><H3>
+isSetAccept</H3>
+<PRE>
+public boolean <B>isSetAccept</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAcceptLanguage()"><!-- --></A><H3>
+getAcceptLanguage</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getAcceptLanguage</B>()</PRE>
+<DL>
+<DD>Gets the value of the acceptLanguage property.
+ <p>
+ Specifies the language the client desires (e.g., English, French, etc.)
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAcceptLanguage(java.lang.String)"><!-- --></A><H3>
+setAcceptLanguage</H3>
+<PRE>
+public void <B>setAcceptLanguage</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the acceptLanguage property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getAcceptLanguage()"><CODE>getAcceptLanguage()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetAcceptLanguage()"><!-- --></A><H3>
+isSetAcceptLanguage</H3>
+<PRE>
+public boolean <B>isSetAcceptLanguage</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAcceptEncoding()"><!-- --></A><H3>
+getAcceptEncoding</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getAcceptEncoding</B>()</PRE>
+<DL>
+<DD>Gets the value of the acceptEncoding property.
+ <p>
+ Specifies the encoding the client is prepared to handle (e.g., gzip)
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAcceptEncoding(java.lang.String)"><!-- --></A><H3>
+setAcceptEncoding</H3>
+<PRE>
+public void <B>setAcceptEncoding</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the acceptEncoding property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getAcceptEncoding()"><CODE>getAcceptEncoding()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetAcceptEncoding()"><!-- --></A><H3>
+isSetAcceptEncoding</H3>
+<PRE>
+public boolean <B>isSetAcceptEncoding</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getContentType()"><!-- --></A><H3>
+getContentType</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getContentType</B>()</PRE>
+<DL>
+<DD>Gets the value of the contentType property.
+ <p>
+ Specifies the content type of the stream being sent in a post request. 
+                 (this should be text/xml for web services, or can be set to 
+                 application/x-www-form-urlencoded if the client is sending form data).
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setContentType(java.lang.String)"><!-- --></A><H3>
+setContentType</H3>
+<PRE>
+public void <B>setContentType</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the contentType property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getContentType()"><CODE>getContentType()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetContentType()"><!-- --></A><H3>
+isSetContentType</H3>
+<PRE>
+public boolean <B>isSetContentType</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getHost()"><!-- --></A><H3>
+getHost</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getHost</B>()</PRE>
+<DL>
+<DD>Gets the value of the host property.
+ <p>
+ Specifies the Internet host and port number of the resource on which the request is being invoked.
+                 This is sent by default based upon the URL. Certain DNS scenarios or
+                 application designs may request you to set this, but typically it is
+                 not required.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setHost(java.lang.String)"><!-- --></A><H3>
+setHost</H3>
+<PRE>
+public void <B>setHost</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the host property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getHost()"><CODE>getHost()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetHost()"><!-- --></A><H3>
+isSetHost</H3>
+<PRE>
+public boolean <B>isSetHost</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setConnection(org.apache.cxf.transports.http.configuration.ConnectionType)"><!-- --></A><H3>
+setConnection</H3>
+<PRE>
+public void <B>setConnection</B>(<A HREF="../../../../../../org/apache/cxf/transports/http/configuration/ConnectionType.html" title="enum in org.apache.cxf.transports.http.configuration">ConnectionType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the connection property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="../../../../../../org/apache/cxf/transports/http/configuration/ConnectionType.html" title="enum in org.apache.cxf.transports.http.configuration"><CODE>ConnectionType</CODE></A><DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getConnection()"><CODE>getConnection()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetConnection()"><!-- --></A><H3>
+isSetConnection</H3>
+<PRE>
+public boolean <B>isSetConnection</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCacheControl()"><!-- --></A><H3>
+getCacheControl</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getCacheControl</B>()</PRE>
+<DL>
+<DD>Gets the value of the cacheControl property.
+ <p>
+ Most commonly used to specify no-cache, however the standard supports a 
+                 dozen or so caching related directives for requests
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setCacheControl(java.lang.String)"><!-- --></A><H3>
+setCacheControl</H3>
+<PRE>
+public void <B>setCacheControl</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the cacheControl property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getCacheControl()"><CODE>getCacheControl()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetCacheControl()"><!-- --></A><H3>
+isSetCacheControl</H3>
+<PRE>
+public boolean <B>isSetCacheControl</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCookie()"><!-- --></A><H3>
+getCookie</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getCookie</B>()</PRE>
+<DL>
+<DD>Gets the value of the cookie property.
+ <p>
+ Specifies a cookie to send to the server. Some stateful session designs will use cookies to identify a session.
+                 If the cookie is static, you can supply it here. If it is dynamic,
+                 it will need to be set by the server on first access, and can be handled
+                 automatically by the runtime.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setCookie(java.lang.String)"><!-- --></A><H3>
+setCookie</H3>
+<PRE>
+public void <B>setCookie</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the cookie property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getCookie()"><CODE>getCookie()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetCookie()"><!-- --></A><H3>
+isSetCookie</H3>
+<PRE>
+public boolean <B>isSetCookie</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBrowserType()"><!-- --></A><H3>
+getBrowserType</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getBrowserType</B>()</PRE>
+<DL>
+<DD>Gets the value of the browserType property.
+ <p>
+ aka User-Agent
+                 Specifies the type of browser is sending the request. This is usually only 
+                 needed when sites have HTML customized to Netscape vs IE, etc, but can
+                 also be used to optimize for different SOAP stacks.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setBrowserType(java.lang.String)"><!-- --></A><H3>
+setBrowserType</H3>
+<PRE>
+public void <B>setBrowserType</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the browserType property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getBrowserType()"><CODE>getBrowserType()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetBrowserType()"><!-- --></A><H3>
+isSetBrowserType</H3>
+<PRE>
+public boolean <B>isSetBrowserType</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getReferer()"><!-- --></A><H3>
+getReferer</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getReferer</B>()</PRE>
+<DL>
+<DD>Gets the value of the referer property.
+ <p>
+ Specifies the URL that referred us to this URL. This is 
+                 sent automatically with auto redirect.
+ 
+                 May allow the server to optimize processing based upon
+                 previous task flow.  However, typically not used in 
+                 web services applications.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setReferer(java.lang.String)"><!-- --></A><H3>
+setReferer</H3>
+<PRE>
+public void <B>setReferer</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the referer property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getReferer()"><CODE>getReferer()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetReferer()"><!-- --></A><H3>
+isSetReferer</H3>
+<PRE>
+public boolean <B>isSetReferer</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDecoupledEndpoint()"><!-- --></A><H3>
+getDecoupledEndpoint</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getDecoupledEndpoint</B>()</PRE>
+<DL>
+<DD>Gets the value of the decoupledEndpoint property.
+ <p>
+ Specifies the URL of a decoupled endpoint for the receipt of responses over a separate provider->consumer connection.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setDecoupledEndpoint(java.lang.String)"><!-- --></A><H3>
+setDecoupledEndpoint</H3>
+<PRE>
+public void <B>setDecoupledEndpoint</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the decoupledEndpoint property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getDecoupledEndpoint()"><CODE>getDecoupledEndpoint()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetDecoupledEndpoint()"><!-- --></A><H3>
+isSetDecoupledEndpoint</H3>
+<PRE>
+public boolean <B>isSetDecoupledEndpoint</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getProxyServer()"><!-- --></A><H3>
+getProxyServer</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getProxyServer</B>()</PRE>
+<DL>
+<DD>Gets the value of the proxyServer property.
+ <p>
+ Specifies the address of proxy server if one is used.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setProxyServer(java.lang.String)"><!-- --></A><H3>
+setProxyServer</H3>
+<PRE>
+public void <B>setProxyServer</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the proxyServer property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getProxyServer()"><CODE>getProxyServer()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetProxyServer()"><!-- --></A><H3>
+isSetProxyServer</H3>
+<PRE>
+public boolean <B>isSetProxyServer</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getNonProxyHosts()"><!-- --></A><H3>
+getNonProxyHosts</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getNonProxyHosts</B>()</PRE>
+<DL>
+<DD>Gets the value of the nonProxyHosts property.
+ <p>
+ Specifies the list of hostnames that will not use the proxy configuration.
+                 Examples of value:
+                   * "localhost" -> A single hostname
+                   * "localhost|www.google.com" -> 2 hostnames that will not use the proxy configuration
+                   * "localhost|www.google.*|*.apache.org" -> It's also possible to use a pattern-like value
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setNonProxyHosts(java.lang.String)"><!-- --></A><H3>
+setNonProxyHosts</H3>
+<PRE>
+public void <B>setNonProxyHosts</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the nonProxyHosts property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A><DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getNonProxyHosts()"><CODE>getNonProxyHosts()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetNonProxyHosts()"><!-- --></A><H3>
+isSetNonProxyHosts</H3>
+<PRE>
+public boolean <B>isSetNonProxyHosts</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setProxyServerType(org.apache.cxf.transports.http.configuration.ProxyServerType)"><!-- --></A><H3>
+setProxyServerType</H3>
+<PRE>
+public void <B>setProxyServerType</B>(<A HREF="../../../../../../org/apache/cxf/transports/http/configuration/ProxyServerType.html" title="enum in org.apache.cxf.transports.http.configuration">ProxyServerType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the proxyServerType property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="../../../../../../org/apache/cxf/transports/http/configuration/ProxyServerType.html" title="enum in org.apache.cxf.transports.http.configuration"><CODE>ProxyServerType</CODE></A><DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getProxyServerType()"><CODE>getProxyServerType()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetProxyServerType()"><!-- --></A><H3>
+isSetProxyServerType</H3>
+<PRE>
+public boolean <B>isSetProxyServerType</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getOtherAttributes()"><!-- --></A><H3>
+getOtherAttributes</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>getOtherAttributes</B>()</PRE>
+<DL>
+<DD>Gets a map that contains attributes that aren't bound to any typed property on this class.
+ 
+ <p>
+ the map is keyed by the name of the attribute and 
+ the value is the string value of the attribute.
+ 
+ the map returned by this method is live, and you can add new attribute
+ by updating the map directly. Because of this design, there's no setter.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>always non-null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setConnectionTimeout(long)"><!-- --></A><H3>
+setConnectionTimeout</H3>
+<PRE>
+public void <B>setConnectionTimeout</B>(long&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the connectionTimeout property.
+<P>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getConnectionTimeout()"><CODE>getConnectionTimeout()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unsetConnectionTimeout()"><!-- --></A><H3>
+unsetConnectionTimeout</H3>
+<PRE>
+public void <B>unsetConnectionTimeout</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetConnectionTimeout()"><!-- --></A><H3>
+isSetConnectionTimeout</H3>
+<PRE>
+public boolean <B>isSetConnectionTimeout</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getConnectionTimeout()"><!-- --></A><H3>
+getConnectionTimeout</H3>
+<PRE>
+public long <B>getConnectionTimeout</B>()</PRE>
+<DL>
+<DD>Gets the value of the connectionTimeout property.
+ <p>
+ Specifies the amount of time, in milliseconds, that the consumer will attempt to establish a connection before it times out. 0 is infinite.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setReceiveTimeout(long)"><!-- --></A><H3>
+setReceiveTimeout</H3>
+<PRE>
+public void <B>setReceiveTimeout</B>(long&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the receiveTimeout property.
+<P>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getReceiveTimeout()"><CODE>getReceiveTimeout()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unsetReceiveTimeout()"><!-- --></A><H3>
+unsetReceiveTimeout</H3>
+<PRE>
+public void <B>unsetReceiveTimeout</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetReceiveTimeout()"><!-- --></A><H3>
+isSetReceiveTimeout</H3>
+<PRE>
+public boolean <B>isSetReceiveTimeout</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getReceiveTimeout()"><!-- --></A><H3>
+getReceiveTimeout</H3>
+<PRE>
+public long <B>getReceiveTimeout</B>()</PRE>
+<DL>
+<DD>Gets the value of the receiveTimeout property.
+ <p>
+ Specifies the amount of time, in milliseconds, that the consumer will wait for a response before it times out. 0 is infinite.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAsyncExecuteTimeout(long)"><!-- --></A><H3>
+setAsyncExecuteTimeout</H3>
+<PRE>
+public void <B>setAsyncExecuteTimeout</B>(long&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the asyncExecuteTimeout property.
+<P>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getAsyncExecuteTimeout()"><CODE>getAsyncExecuteTimeout()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unsetAsyncExecuteTimeout()"><!-- --></A><H3>
+unsetAsyncExecuteTimeout</H3>
+<PRE>
+public void <B>unsetAsyncExecuteTimeout</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetAsyncExecuteTimeout()"><!-- --></A><H3>
+isSetAsyncExecuteTimeout</H3>
+<PRE>
+public boolean <B>isSetAsyncExecuteTimeout</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAsyncExecuteTimeout()"><!-- --></A><H3>
+getAsyncExecuteTimeout</H3>
+<PRE>
+public long <B>getAsyncExecuteTimeout</B>()</PRE>
+<DL>
+<DD>Gets the value of the asyncExecuteTimeout property.
+ <p>
+ Specifies the amount of time, in milliseconds, that a conduit will try and enqueue the response on the workqueue.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAsyncExecuteTimeoutRejection(boolean)"><!-- --></A><H3>
+setAsyncExecuteTimeoutRejection</H3>
+<PRE>
+public void <B>setAsyncExecuteTimeoutRejection</B>(boolean&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the asyncExecuteTimeoutRejection property.
+<P>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isAsyncExecuteTimeoutRejection()"><CODE>isAsyncExecuteTimeoutRejection()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unsetAsyncExecuteTimeoutRejection()"><!-- --></A><H3>
+unsetAsyncExecuteTimeoutRejection</H3>
+<PRE>
+public void <B>unsetAsyncExecuteTimeoutRejection</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetAsyncExecuteTimeoutRejection()"><!-- --></A><H3>
+isSetAsyncExecuteTimeoutRejection</H3>
+<PRE>
+public boolean <B>isSetAsyncExecuteTimeoutRejection</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isAsyncExecuteTimeoutRejection()"><!-- --></A><H3>
+isAsyncExecuteTimeoutRejection</H3>
+<PRE>
+public boolean <B>isAsyncExecuteTimeoutRejection</B>()</PRE>
+<DL>
+<DD>Gets the value of the asyncExecuteTimeoutRejection property.
+ <p>
+ Specifies whether the conduit should throw and exception if it fails to enqueue the async response handling onto the workqueue. 
+                 By default, if the conduit fails to enqueue the response handling on the workqueue, it will process the response on the current thread.  Set this to true to raise and exception instead.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAutoRedirect(boolean)"><!-- --></A><H3>
+setAutoRedirect</H3>
+<PRE>
+public void <B>setAutoRedirect</B>(boolean&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the autoRedirect property.
+<P>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isAutoRedirect()"><CODE>isAutoRedirect()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unsetAutoRedirect()"><!-- --></A><H3>
+unsetAutoRedirect</H3>
+<PRE>
+public void <B>unsetAutoRedirect</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetAutoRedirect()"><!-- --></A><H3>
+isSetAutoRedirect</H3>
+<PRE>
+public boolean <B>isSetAutoRedirect</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isAutoRedirect()"><!-- --></A><H3>
+isAutoRedirect</H3>
+<PRE>
+public boolean <B>isAutoRedirect</B>()</PRE>
+<DL>
+<DD>Gets the value of the autoRedirect property.
+ <p>
+ Specifies if the consumer will automatically follow a server issued redirection.
+                 (name is not part of standard)
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMaxRetransmits(int)"><!-- --></A><H3>
+setMaxRetransmits</H3>
+<PRE>
+public void <B>setMaxRetransmits</B>(int&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the maxRetransmits property.
+<P>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getMaxRetransmits()"><CODE>getMaxRetransmits()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unsetMaxRetransmits()"><!-- --></A><H3>
+unsetMaxRetransmits</H3>
+<PRE>
+public void <B>unsetMaxRetransmits</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetMaxRetransmits()"><!-- --></A><H3>
+isSetMaxRetransmits</H3>
+<PRE>
+public boolean <B>isSetMaxRetransmits</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMaxRetransmits()"><!-- --></A><H3>
+getMaxRetransmits</H3>
+<PRE>
+public int <B>getMaxRetransmits</B>()</PRE>
+<DL>
+<DD>Gets the value of the maxRetransmits property.
+ <p>
+ Specifies the maximum amount of retransmits that are allowed for redirects. Retransmits for 
+                 authorization is included in the retransmit count. Each redirect may cause another 
+                 retransmit for a UNAUTHORIZED response code, ie. 401. 
+                 Any negative number indicates unlimited retransmits,
+                 although, loop protection is provided. 
+                 The default is unlimited. 
+                 (name is not part of standard)
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAllowChunking(boolean)"><!-- --></A><H3>
+setAllowChunking</H3>
+<PRE>
+public void <B>setAllowChunking</B>(boolean&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the allowChunking property.
+<P>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#isAllowChunking()"><CODE>isAllowChunking()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unsetAllowChunking()"><!-- --></A><H3>
+unsetAllowChunking</H3>
+<PRE>
+public void <B>unsetAllowChunking</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetAllowChunking()"><!-- --></A><H3>
+isSetAllowChunking</H3>
+<PRE>
+public boolean <B>isSetAllowChunking</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isAllowChunking()"><!-- --></A><H3>
+isAllowChunking</H3>
+<PRE>
+public boolean <B>isAllowChunking</B>()</PRE>
+<DL>
+<DD>Gets the value of the allowChunking property.
+ <p>
+ If true, the client is free to use chunking streams if it wants, but it is not 
+                 required to use chunking streams. If false, the client 
+                 must use regular, non-chunked requests in all cases.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setChunkingThreshold(int)"><!-- --></A><H3>
+setChunkingThreshold</H3>
+<PRE>
+public void <B>setChunkingThreshold</B>(int&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the chunkingThreshold property.
+<P>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getChunkingThreshold()"><CODE>getChunkingThreshold()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unsetChunkingThreshold()"><!-- --></A><H3>
+unsetChunkingThreshold</H3>
+<PRE>
+public void <B>unsetChunkingThreshold</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetChunkingThreshold()"><!-- --></A><H3>
+isSetChunkingThreshold</H3>
+<PRE>
+public boolean <B>isSetChunkingThreshold</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getChunkingThreshold()"><!-- --></A><H3>
+getChunkingThreshold</H3>
+<PRE>
+public int <B>getChunkingThreshold</B>()</PRE>
+<DL>
+<DD>Gets the value of the chunkingThreshold property.
+ <p>
+ If AllowChunking is true, this sets the threshold at which messages start
+                 getting chunked. Messages under this limit do not get chunked.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setChunkLength(int)"><!-- --></A><H3>
+setChunkLength</H3>
+<PRE>
+public void <B>setChunkLength</B>(int&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the chunkLength property.
+<P>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getChunkLength()"><CODE>getChunkLength()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unsetChunkLength()"><!-- --></A><H3>
+unsetChunkLength</H3>
+<PRE>
+public void <B>unsetChunkLength</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetChunkLength()"><!-- --></A><H3>
+isSetChunkLength</H3>
+<PRE>
+public boolean <B>isSetChunkLength</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getChunkLength()"><!-- --></A><H3>
+getChunkLength</H3>
+<PRE>
+public int <B>getChunkLength</B>()</PRE>
+<DL>
+<DD>Gets the value of the chunkLength property.
+ <p>
+ Specifies the chunk length for a HttpURLConnection. This value is used in java.net.HttpURLConnection.setChunkedStreamingMode(int chunklen). chunklen indicates the number of bytes to write in each chunk. If chunklen is less than or equal to zero, a default value will be used.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getConnection()"><!-- --></A><H3>
+getConnection</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/transports/http/configuration/ConnectionType.html" title="enum in org.apache.cxf.transports.http.configuration">ConnectionType</A> <B>getConnection</B>()</PRE>
+<DL>
+<DD>Gets the value of the connection property.
+ <p>
+ The connection disposition. If close the connection to the server is closed 
+                 after each request/response dialog. If Keep-Alive the client requests the server 
+                 to keep the connection open, and if the server honors the keep alive request, 
+                 the connection is reused. Many servers and proxies do not honor keep-alive requests.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setProxyServerPort(int)"><!-- --></A><H3>
+setProxyServerPort</H3>
+<PRE>
+public void <B>setProxyServerPort</B>(int&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the proxyServerPort property.
+<P>
+<DD><DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html#getProxyServerPort()"><CODE>getProxyServerPort()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unsetProxyServerPort()"><!-- --></A><H3>
+unsetProxyServerPort</H3>
+<PRE>
+public void <B>unsetProxyServerPort</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSetProxyServerPort()"><!-- --></A><H3>
+isSetProxyServerPort</H3>
+<PRE>
+public boolean <B>isSetProxyServerPort</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getProxyServerPort()"><!-- --></A><H3>
+getProxyServerPort</H3>
+<PRE>
+public int <B>getProxyServerPort</B>()</PRE>
+<DL>
+<DD>Gets the value of the proxyServerPort property.
+ <p>
+ Specifies the port number used by the proxy server.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getProxyServerType()"><!-- --></A><H3>
+getProxyServerType</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/transports/http/configuration/ProxyServerType.html" title="enum in org.apache.cxf.transports.http.configuration">ProxyServerType</A> <B>getProxyServerType</B>()</PRE>
+<DL>
+<DD>Gets the value of the proxyServerType property.
+ <p>
+ Specifies the type of the proxy server. Can be either HTTP or SOCKS.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addPropertyChangeListener(java.beans.PropertyChangeListener)"><!-- --></A><H3>
+addPropertyChangeListener</H3>
+<PRE>
+public void <B>addPropertyChangeListener</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyChangeListener.html?is-external=true" title="class or interface in java.beans">PropertyChangeListener</A>&nbsp;listener)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removePropertyChangeListener(java.beans.PropertyChangeListener)"><!-- --></A><H3>
+removePropertyChangeListener</H3>
+<PRE>
+public void <B>removePropertyChangeListener</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyChangeListener.html?is-external=true" title="class or interface in java.beans">PropertyChangeListener</A>&nbsp;listener)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/HTTPClientPolicy.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/transports/http/configuration/ConnectionType.html" title="enum in org.apache.cxf.transports.http.configuration"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/transports/http/configuration/HTTPServerPolicy.html" title="class in org.apache.cxf.transports.http.configuration"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="HTTPClientPolicy.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

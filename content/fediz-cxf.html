@@ -1,0 +1,242 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - Fediz CXF">
+
+
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shCoreCXF.css">
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shThemeCXF.css">
+
+<script src='/resources/highlighter/scripts/shCore.js'></script>
+<script src='/resources/highlighter/scripts/shBrushBash.js'></script>
+<script src='/resources/highlighter/scripts/shBrushXml.js'></script>
+<script src='/resources/highlighter/scripts/shBrushJava.js'></script>
+<script>
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+
+    <title>
+Apache CXF -- Fediz CXF
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="fediz.html">Fediz</a>&nbsp;&gt;&nbsp;<a href="fediz-cxf.html">Fediz CXF</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><h1 id="FedizCXF-CXFPlugin">CXF Plugin</h1><p>The Apache CXF Fediz plugin for an Apache CXF web service contains two separate pieces of functionality. The first is a CallbackHandler that allows the SAML Token of the Web SSO session to be used by the CXF Web Services Stack, i.e. for delegation (available since 1.1). The second is a full WS-Federation/SAML SSO RP plugin based solely on Apache CXF JAX-RS, which is container independent (available since 1.2.0).</p><h2 id="FedizCXF-CXFPluginsupportforWS-Federation">CXF Plugin support for WS-Federation</h2><p>The new CXF plugin for WS-Federation available from Fediz 1.2.0 means that it is now possible to add support for WS-Federation to your JAX-RS CXF service without having to specify a container-specific plugin. Also note that from the 1.4.5 release, the Apache CXF Fediz plugin also supports SAML SSO. Here is an example Spring based configuration:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>CXF spring configuration</b></div><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">&lt;bean id="serviceBean" class="org.apache.cxf.fediz.example.Service"&gt;
+&lt;/bean&gt;
+   
+&lt;bean id="fedizFilter" class="org.apache.cxf.fediz.cxf.plugin.FedizRedirectBindingFilter"&gt;
+    &lt;property name="configFile" value="fediz_config.xml"/&gt;
+&lt;/bean&gt;
+   
+&lt;bean id="authorizationInterceptor"
+      class="org.apache.cxf.interceptor.security.SecureAnnotationsInterceptor"&gt;
+   &lt;property name="securedObject" ref="serviceBean" /&gt;
+&lt;/bean&gt;
+
+&lt;jaxrs:server address="/"&gt;
+    &lt;jaxrs:serviceBeans&gt;
+        &lt;ref bean="serviceBean"/&gt;
+    &lt;/jaxrs:serviceBeans&gt;
+    &lt;jaxrs:providers&gt;
+        &lt;ref bean="fedizFilter"/&gt;
+        &lt;ref bean="exceptionMapper"/&gt;
+    &lt;/jaxrs:providers&gt;
+    &lt;jaxrs:inInterceptors&gt;
+        &lt;ref bean="authorizationInterceptor"/&gt;
+    &lt;/jaxrs:inInterceptors&gt;
+&lt;/jaxrs:server&gt;</pre>
+</div></div><p>Here we have a JAX-RS service which is secured via the SecureAnnotationsInterceptor. For example:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;"><b>CXF Service Bean</b></div><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">@Path("/secure/")
+@Produces("text/html")
+public class Service {
+    @Context
+    private MessageContext messageContext;
+    @Path("/admin/fedservlet")
+    @RolesAllowed("Admin")
+    @GET
+    public String doGetAdmin(@Context UriInfo uriInfo) throws Exception {
+        return doGet(uriInfo);
+    }
+    
+    ...
+}</pre>
+</div></div><p>The FedizRedirectBindingFilter is instantiated with a link to the Fediz plugin configuration and is added as a JAX-RS provider.</p><h2 id="FedizCXF-DelegationScenario">Delegation Scenario</h2><p>The subproject Fediz purpose is to provide Single Sign On for Web Applications which is independent of an underlying Web Services framework like Apache CXF. The Fediz plugins for Tomcat, Jetty, etc. are independent of Apache CXF, whereas the Fediz IDP leverages the capabilities of the CXF STS to issue SAML tokens with Claims information to build applications which use Claims Based Authorization with all the benefits.</p><p>If the Fediz protected web application integrates with another application using Web Services you need to bundle a Web Services framework like Apache CXF with your web application. If it is required to support impersonation to call the Web Service, the security context of the application server must be delegated to the Web Services stack thus it can make the Web Service call on behalf of the browser user.</p><p>In release 1.1, the Fediz CXF plugin supports delegating the application server security context (SAML token) to the STS client of CXF. CXF is then able to request a security token for the target Web Service from the STS on behalf of the browser user. Prior to release 1.1, this Java code had to be developed by the application developer.</p><p>It is required that one of the other Fediz plugins are deployed to WS-Federation enable the application. After this step, the Fediz CXF plugin can be installed to integrate the Web SSO layer with the Web Services stack of Apache CXF.</p><h3 id="FedizCXF-Installation">Installation</h3><p>It's recommended to use Maven to resolve the dependencies as illustrated in the the example <code>wsclientWebapp</code>.</p><div class="code panel pdl" style="border-style: solid;border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;border-bottom-style: solid;"><b>pom.xml</b></div><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">    &lt;dependency&gt;
+        &lt;groupId&gt;org.apache.cxf.fediz&lt;/groupId&gt;
+        &lt;artifactId&gt;fediz-cxf&lt;/artifactId&gt;
+        &lt;version&gt;1.4.5&lt;/version&gt;
+    &lt;/dependency&gt;
+</pre>
+</div></div><p>The example contains a README with instructions for building and deployment.</p><h3 id="FedizCXF-Configuration">Configuration</h3><p>Two configurations are required in <code>web.xml</code> to enable the <code>FederationFilter</code> to cache the security context in the thread local storage and in the spring configuration file <code>applicationContext.xml</code> to configure a callback handler to provide the STS client the security context stored in the thread local storage.</p><div class="code panel pdl" style="border-style: solid;border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;border-bottom-style: solid;"><b>web.xml</b></div><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">    &lt;filter&gt;
+        &lt;filter-name&gt;FederationFilter&lt;/filter-name&gt;
+        &lt;filter-class&gt;org.apache.cxf.fediz.core.servlet.FederationFilter&lt;/filter-class&gt;
+    &lt;/filter&gt;
+
+    &lt;filter-mapping&gt;
+        &lt;filter-name&gt;FederationFilter&lt;/filter-name&gt;
+        &lt;url-pattern&gt;/secure/*&lt;/url-pattern&gt;
+    &lt;/filter-mapping&gt;
+</pre>
+</div></div><p>The <code>FederationFilter</code> is part of the library <code>fediz-core</code>.</p><div class="code panel pdl" style="border-style: solid;border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;border-bottom-style: solid;"><b>applicationContext.xml</b></div><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">    &lt;bean id="delegationCallbackHandler"
+        class="org.apache.cxf.fediz.cxf.web.ThreadLocalCallbackHandler" /&gt;
+
+    &lt;jaxws:client id="HelloServiceClient" serviceName="svc:GreeterService"
+        ...
+        wsdlLocation="WEB-INF/wsdl/hello_world.wsdl"&gt;
+        &lt;jaxws:properties&gt;
+            &lt;entry key="ws-security.sts.client"&gt;
+                &lt;bean class="org.apache.cxf.ws.security.trust.STSClient"&gt;
+                    ...
+                    &lt;property name="onBehalfOf" ref="delegationCallbackHandler" /&gt;
+                    ...
+                 &lt;/bean&gt;
+            &lt;/entry&gt;
+            &lt;entry key="ws-security.cache.issued.token.in.endpoint" value="false" /&gt;
+        &lt;/jaxws:properties&gt;
+    &lt;/jaxws:client&gt;
+
+</pre>
+</div></div><p>The <code>ThreadLocalCallbackHandler</code> is part of the library <code>fediz-cxf</code>.</p><p>If you have set the property <code>ws-security.cache.issued.token.in.endpoint</code> to false, CXF will cache the issued token per security context dependent on the returned lifetime element of the STS. When the cached token for the target web services is expired, CXF will request a new token from the STS on-behalf-of the cached Fediz security context.</p><p>There is no special Java code required to get this functionality as illustrated in the following code snippet:</p><div class="code panel pdl" style="border-style: solid;border-width: 1px;"><div class="codeHeader panelHeader pdl" style="border-bottom-width: 1px;border-bottom-style: solid;"><b>FederationServlet.java</b></div><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">    Greeter service = (Greeter)ApplicationContextProvider.getContext().getBean("HelloServiceClient");
+    String reply = service.greetMe();
+</pre>
+</div></div></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=34018940">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=34018940&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

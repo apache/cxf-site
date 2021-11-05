@@ -1,0 +1,1596 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>FiqlSearchConditionBuilder.Builder (Apache CXF JavaDoc 3.1.0 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="FiqlSearchConditionBuilder.Builder (Apache CXF JavaDoc 3.1.0 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/FiqlSearchConditionBuilder.Builder.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.html" title="class in org.apache.cxf.jaxrs.ext.search.client"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html" target="_top">Frames</a></li>
+<li><a href="FiqlSearchConditionBuilder.Builder.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.cxf.jaxrs.ext.search.client</div>
+<h2 title="Class FiqlSearchConditionBuilder.Builder" class="title">Class FiqlSearchConditionBuilder.Builder</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.cxf.jaxrs.ext.search.client.FiqlSearchConditionBuilder.Builder</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>, <a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">PartialCondition</a>, <a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></dd>
+</dl>
+<dl>
+<dt>Enclosing class:</dt>
+<dd><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.html" title="class in org.apache.cxf.jaxrs.ext.search.client">FiqlSearchConditionBuilder</a></dd>
+</dl>
+<hr>
+<br>
+<pre>protected static class <span class="strong">FiqlSearchConditionBuilder.Builder</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a>, <a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>, <a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">PartialCondition</a></pre>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#currentCompositeOp">currentCompositeOp</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/text/DateFormat.html?is-external=true" title="class or interface in java.text">DateFormat</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#df">df</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html" title="class in org.apache.cxf.jaxrs.ext.search.client">FiqlSearchConditionBuilder.Builder</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#parent">parent</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#result">result</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#timeZoneSupported">timeZoneSupported</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#FiqlSearchConditionBuilder.Builder(org.apache.cxf.jaxrs.ext.search.client.FiqlSearchConditionBuilder.Builder)">FiqlSearchConditionBuilder.Builder</a></strong>(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html" title="class in org.apache.cxf.jaxrs.ext.search.client">FiqlSearchConditionBuilder.Builder</a>&nbsp;parent)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#FiqlSearchConditionBuilder.Builder(java.util.Map)">FiqlSearchConditionBuilder.Builder</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;properties)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#after(java.util.Date)">after</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date)</code>
+<div class="block">Is date property after (greater than) given date?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#after(javax.xml.datatype.Duration)">after</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</a>&nbsp;distanceFromNow)</code>
+<div class="block">Is date property after (greater than) date distant from now by given period of time?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">PartialCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#and()">and</a></strong>()</code>
+<div class="block">Conjunct current expression with another</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#and(org.apache.cxf.jaxrs.ext.search.client.CompleteCondition,%20org.apache.cxf.jaxrs.ext.search.client.CompleteCondition,%20org.apache.cxf.jaxrs.ext.search.client.CompleteCondition...)">and</a></strong>(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;c1,
+   <a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;c2,
+   <a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>...&nbsp;cn)</code>
+<div class="block">Conjunct multiple expressions</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#and(java.util.List)">and</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&gt;&nbsp;conditions)</code>
+<div class="block">Conjunct multiple expressions</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#and(java.lang.String)">and</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
+<div class="block">shortcut for and().is()</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#before(java.util.Date)">before</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date)</code>
+<div class="block">Is date property before (less than) given date?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#before(javax.xml.datatype.Duration)">before</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</a>&nbsp;distanceFromNow)</code>
+<div class="block">Is date property before (less than) date distant from now by given period of time?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#buildPartial(org.apache.cxf.jaxrs.ext.search.client.FiqlSearchConditionBuilder.Builder)">buildPartial</a></strong>(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html" title="class in org.apache.cxf.jaxrs.ext.search.client">FiqlSearchConditionBuilder.Builder</a>&nbsp;exclude)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20java.util.Date)">comparesTo</a></strong>(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</a>&nbsp;type,
+          <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;value)</code>
+<div class="block">Generic</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20java.lang.Double)">comparesTo</a></strong>(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</a>&nbsp;type,
+          <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</code>
+<div class="block">Generic</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20javax.xml.datatype.Duration)">comparesTo</a></strong>(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</a>&nbsp;type,
+          <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</a>&nbsp;value)</code>
+<div class="block">Generic</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20java.lang.Integer)">comparesTo</a></strong>(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</a>&nbsp;type,
+          <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;value)</code>
+<div class="block">Generic</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20java.lang.Long)">comparesTo</a></strong>(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</a>&nbsp;type,
+          <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;value)</code>
+<div class="block">Generic</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20java.lang.String)">comparesTo</a></strong>(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</a>&nbsp;type,
+          <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</code>
+<div class="block">Generic</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#condition(java.lang.String,%20java.lang.Object,%20java.lang.Object...)">condition</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;operator,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;moreValues)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#conditionsList(java.lang.String,%20java.util.List)">conditionsList</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;op,
+              <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&gt;&nbsp;conditions)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#equalTo(java.util.Date,%20java.util.Date...)">equalTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date,
+       <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>...&nbsp;moreValues)</code>
+<div class="block">Is date property same as given date?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#equalTo(java.lang.Double,%20java.lang.Double...)">equalTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;number,
+       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>...&nbsp;moreValues)</code>
+<div class="block">Is numeric property equal to given double number?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#equalTo(javax.xml.datatype.Duration,%20javax.xml.datatype.Duration...)">equalTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</a>&nbsp;distanceFromNow,
+       <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</a>...&nbsp;moreValues)</code>
+<div class="block">Is date property same as date distant from now by given period of time?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#equalTo(java.lang.Integer,%20java.lang.Integer...)">equalTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;number,
+       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>...&nbsp;moreValues)</code>
+<div class="block">Is numeric property equal to given long number?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#equalTo(java.lang.Long,%20java.lang.Long...)">equalTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;number,
+       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>...&nbsp;moreValues)</code>
+<div class="block">Is numeric property equal to given long number?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#equalTo(java.lang.String,%20java.lang.String...)">equalTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value,
+       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>...&nbsp;moreValues)</code>
+<div class="block">Is textual property equal to given literal or matching given pattern?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/text/DateFormat.html?is-external=true" title="class or interface in java.text">DateFormat</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#getDateFormat()">getDateFormat</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#greaterOrEqualTo(java.lang.Double)">greaterOrEqualTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;number)</code>
+<div class="block">Is numeric property greater or equal to given number?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#greaterOrEqualTo(java.lang.Integer)">greaterOrEqualTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;number)</code>
+<div class="block">Is numeric property greater or equal to given number?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#greaterOrEqualTo(java.lang.Long)">greaterOrEqualTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;number)</code>
+<div class="block">Is numeric property greater or equal to given number?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#greaterThan(java.lang.Double)">greaterThan</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;number)</code>
+<div class="block">Is numeric property greater than given number?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#greaterThan(java.lang.Integer)">greaterThan</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;number)</code>
+<div class="block">Is numeric property greater than given number?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#greaterThan(java.lang.Long)">greaterThan</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;number)</code>
+<div class="block">Is numeric property greater than given number?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#is(java.lang.String)">is</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;property)</code>
+<div class="block">Get property of inspected entity type</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#isTimeZoneSupported()">isTimeZoneSupported</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#lessOrEqualTo(java.lang.Double)">lessOrEqualTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;number)</code>
+<div class="block">Is numeric property less or equal to given number?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#lessOrEqualTo(java.lang.Integer)">lessOrEqualTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;number)</code>
+<div class="block">Is numeric property less or equal to given number?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#lessOrEqualTo(java.lang.Long)">lessOrEqualTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;number)</code>
+<div class="block">Is numeric property less or equal to given number?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#lessThan(java.lang.Double)">lessThan</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;number)</code>
+<div class="block">Is numeric property less than given number?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#lessThan(java.lang.Integer)">lessThan</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;number)</code>
+<div class="block">Is numeric property less than given number?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#lessThan(java.lang.Long)">lessThan</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;number)</code>
+<div class="block">Is numeric property less than given number?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#lexicalAfter(java.lang.String)">lexicalAfter</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;literal)</code>
+<div class="block">Is textual property lexically after (greater than) given literal?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#lexicalBefore(java.lang.String)">lexicalBefore</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;literal)</code>
+<div class="block">Is textual property lexically before (less than) given literal?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#lexicalNotAfter(java.lang.String)">lexicalNotAfter</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;literal)</code>
+<div class="block">Is textual property lexically not after (less or equal to) given literal?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#lexicalNotBefore(java.lang.String)">lexicalNotBefore</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;literal)</code>
+<div class="block">Is textual property lexically not before (greater or equal to) given literal?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#notAfter(java.util.Date)">notAfter</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date)</code>
+<div class="block">Is date property not after (less or equal to) given date?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#notAfter(javax.xml.datatype.Duration)">notAfter</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</a>&nbsp;distanceFromNow)</code>
+<div class="block">Is date property not after (less or equal to) date distant from now by given period of time?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#notBefore(java.util.Date)">notBefore</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date)</code>
+<div class="block">Is date property not before (greater or equal to) given date?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#notBefore(javax.xml.datatype.Duration)">notBefore</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</a>&nbsp;distanceFromNow)</code>
+<div class="block">Is date property not before (greater or equal to) date distant from now by given period of time?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#notEqualTo(java.util.Date)">notEqualTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date)</code>
+<div class="block">Is date property different than given date?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#notEqualTo(java.lang.Double)">notEqualTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;number)</code>
+<div class="block">Is numeric property different than given double number?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#notEqualTo(javax.xml.datatype.Duration)">notEqualTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</a>&nbsp;distanceFromNow)</code>
+<div class="block">Is date property different than date distant from now by given period of time?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#notEqualTo(java.lang.Integer)">notEqualTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;number)</code>
+<div class="block">Is numeric property different than given int number?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#notEqualTo(java.lang.Long)">notEqualTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;number)</code>
+<div class="block">Is numeric property different than given long number?</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#notEqualTo(java.lang.String)">notEqualTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;literalOrPattern)</code>
+<div class="block">Is textual property different than given literal or not matching given pattern?</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">PartialCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#or()">or</a></strong>()</code>
+<div class="block">Disjunct current expression with another</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#or(org.apache.cxf.jaxrs.ext.search.client.CompleteCondition,%20org.apache.cxf.jaxrs.ext.search.client.CompleteCondition,%20org.apache.cxf.jaxrs.ext.search.client.CompleteCondition...)">or</a></strong>(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;c1,
+  <a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;c2,
+  <a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>...&nbsp;cn)</code>
+<div class="block">Disjunct multiple expressions</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#or(java.util.List)">or</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&gt;&nbsp;conditions)</code>
+<div class="block">Disjunct multiple expressions</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#or(java.lang.String)">or</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>
+<div class="block">shortcut for or().is()</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#query()">query</a></strong>()</code>
+<div class="block">Finalize condition construction and build search condition query.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#toFiqlPrimitiveCondition(org.apache.cxf.jaxrs.ext.search.ConditionType)">toFiqlPrimitiveCondition</a></strong>(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</a>&nbsp;type)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#toString(java.lang.Object)">toString</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html#wrap()">wrap</a></strong>()</code>
+<div class="block">Wraps the current expression in ()</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="result">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>result</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> result</pre>
+</li>
+</ul>
+<a name="parent">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>parent</h4>
+<pre>protected&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html" title="class in org.apache.cxf.jaxrs.ext.search.client">FiqlSearchConditionBuilder.Builder</a> parent</pre>
+</li>
+</ul>
+<a name="df">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>df</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/DateFormat.html?is-external=true" title="class or interface in java.text">DateFormat</a> df</pre>
+</li>
+</ul>
+<a name="timeZoneSupported">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>timeZoneSupported</h4>
+<pre>protected&nbsp;boolean timeZoneSupported</pre>
+</li>
+</ul>
+<a name="currentCompositeOp">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>currentCompositeOp</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> currentCompositeOp</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="FiqlSearchConditionBuilder.Builder(java.util.Map)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FiqlSearchConditionBuilder.Builder</h4>
+<pre>public&nbsp;FiqlSearchConditionBuilder.Builder(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;properties)</pre>
+</li>
+</ul>
+<a name="FiqlSearchConditionBuilder.Builder(org.apache.cxf.jaxrs.ext.search.client.FiqlSearchConditionBuilder.Builder)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>FiqlSearchConditionBuilder.Builder</h4>
+<pre>public&nbsp;FiqlSearchConditionBuilder.Builder(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html" title="class in org.apache.cxf.jaxrs.ext.search.client">FiqlSearchConditionBuilder.Builder</a>&nbsp;parent)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="query()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>query</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;query()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html#query()">CompleteCondition</a></code></strong></div>
+<div class="block">Finalize condition construction and build search condition query.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html#query()">query</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getDateFormat()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDateFormat</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/text/DateFormat.html?is-external=true" title="class or interface in java.text">DateFormat</a>&nbsp;getDateFormat()</pre>
+</li>
+</ul>
+<a name="isTimeZoneSupported()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isTimeZoneSupported</h4>
+<pre>protected&nbsp;boolean&nbsp;isTimeZoneSupported()</pre>
+</li>
+</ul>
+<a name="buildPartial(org.apache.cxf.jaxrs.ext.search.client.FiqlSearchConditionBuilder.Builder)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>buildPartial</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;buildPartial(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html" title="class in org.apache.cxf.jaxrs.ext.search.client">FiqlSearchConditionBuilder.Builder</a>&nbsp;exclude)</pre>
+</li>
+</ul>
+<a name="after(java.util.Date)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>after</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;after(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#after(java.util.Date)">Property</a></code></strong></div>
+<div class="block">Is date property after (greater than) given date?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#after(java.util.Date)">after</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="before(java.util.Date)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>before</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;before(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#before(java.util.Date)">Property</a></code></strong></div>
+<div class="block">Is date property before (less than) given date?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#before(java.util.Date)">before</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>comparesTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;comparesTo(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</a>&nbsp;type,
+                           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20java.lang.String)">Property</a></code></strong></div>
+<div class="block">Generic</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20java.lang.String)">comparesTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType, java.lang.Double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>comparesTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;comparesTo(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</a>&nbsp;type,
+                           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;value)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20java.lang.Double)">Property</a></code></strong></div>
+<div class="block">Generic</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20java.lang.Double)">comparesTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType, java.lang.Integer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>comparesTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;comparesTo(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</a>&nbsp;type,
+                           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;value)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20java.lang.Integer)">Property</a></code></strong></div>
+<div class="block">Generic</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20java.lang.Integer)">comparesTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType, java.lang.Long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>comparesTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;comparesTo(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</a>&nbsp;type,
+                           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;value)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20java.lang.Long)">Property</a></code></strong></div>
+<div class="block">Generic</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20java.lang.Long)">comparesTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType, java.util.Date)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>comparesTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;comparesTo(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</a>&nbsp;type,
+                           <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;value)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20java.util.Date)">Property</a></code></strong></div>
+<div class="block">Generic</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20java.util.Date)">comparesTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType, javax.xml.datatype.Duration)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>comparesTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;comparesTo(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</a>&nbsp;type,
+                           <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</a>&nbsp;value)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20javax.xml.datatype.Duration)">Property</a></code></strong></div>
+<div class="block">Generic</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#comparesTo(org.apache.cxf.jaxrs.ext.search.ConditionType,%20javax.xml.datatype.Duration)">comparesTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="equalTo(java.lang.String, java.lang.String...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equalTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;equalTo(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;value,
+                        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>...&nbsp;moreValues)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#equalTo(java.lang.String,%20java.lang.String...)">Property</a></code></strong></div>
+<div class="block">Is textual property equal to given literal or matching given pattern?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#equalTo(java.lang.String,%20java.lang.String...)">equalTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="equalTo(java.lang.Double, java.lang.Double...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equalTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;equalTo(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;number,
+                        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>...&nbsp;moreValues)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#equalTo(java.lang.Double,%20java.lang.Double...)">Property</a></code></strong></div>
+<div class="block">Is numeric property equal to given double number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#equalTo(java.lang.Double,%20java.lang.Double...)">equalTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="equalTo(java.lang.Long, java.lang.Long...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equalTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;equalTo(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;number,
+                        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>...&nbsp;moreValues)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#equalTo(java.lang.Long,%20java.lang.Long...)">Property</a></code></strong></div>
+<div class="block">Is numeric property equal to given long number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#equalTo(java.lang.Long,%20java.lang.Long...)">equalTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="equalTo(java.lang.Integer, java.lang.Integer...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equalTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;equalTo(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;number,
+                        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>...&nbsp;moreValues)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#equalTo(java.lang.Integer,%20java.lang.Integer...)">Property</a></code></strong></div>
+<div class="block">Is numeric property equal to given long number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#equalTo(java.lang.Integer,%20java.lang.Integer...)">equalTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="equalTo(java.util.Date, java.util.Date...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equalTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;equalTo(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date,
+                        <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>...&nbsp;moreValues)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#equalTo(java.util.Date,%20java.util.Date...)">Property</a></code></strong></div>
+<div class="block">Is date property same as given date?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#equalTo(java.util.Date,%20java.util.Date...)">equalTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="equalTo(javax.xml.datatype.Duration, javax.xml.datatype.Duration...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>equalTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;equalTo(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</a>&nbsp;distanceFromNow,
+                        <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</a>...&nbsp;moreValues)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#equalTo(javax.xml.datatype.Duration,%20javax.xml.datatype.Duration...)">Property</a></code></strong></div>
+<div class="block">Is date property same as date distant from now by given period of time?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#equalTo(javax.xml.datatype.Duration,%20javax.xml.datatype.Duration...)">equalTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="greaterOrEqualTo(java.lang.Double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>greaterOrEqualTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;greaterOrEqualTo(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;number)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#greaterOrEqualTo(java.lang.Double)">Property</a></code></strong></div>
+<div class="block">Is numeric property greater or equal to given number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#greaterOrEqualTo(java.lang.Double)">greaterOrEqualTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="greaterOrEqualTo(java.lang.Long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>greaterOrEqualTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;greaterOrEqualTo(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;number)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#greaterOrEqualTo(java.lang.Long)">Property</a></code></strong></div>
+<div class="block">Is numeric property greater or equal to given number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#greaterOrEqualTo(java.lang.Long)">greaterOrEqualTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="greaterOrEqualTo(java.lang.Integer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>greaterOrEqualTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;greaterOrEqualTo(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;number)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#greaterOrEqualTo(java.lang.Integer)">Property</a></code></strong></div>
+<div class="block">Is numeric property greater or equal to given number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#greaterOrEqualTo(java.lang.Integer)">greaterOrEqualTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="greaterThan(java.lang.Double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>greaterThan</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;greaterThan(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;number)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#greaterThan(java.lang.Double)">Property</a></code></strong></div>
+<div class="block">Is numeric property greater than given number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#greaterThan(java.lang.Double)">greaterThan</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="greaterThan(java.lang.Long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>greaterThan</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;greaterThan(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;number)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#greaterThan(java.lang.Long)">Property</a></code></strong></div>
+<div class="block">Is numeric property greater than given number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#greaterThan(java.lang.Long)">greaterThan</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="greaterThan(java.lang.Integer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>greaterThan</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;greaterThan(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;number)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#greaterThan(java.lang.Integer)">Property</a></code></strong></div>
+<div class="block">Is numeric property greater than given number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#greaterThan(java.lang.Integer)">greaterThan</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="lessOrEqualTo(java.lang.Double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lessOrEqualTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;lessOrEqualTo(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;number)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lessOrEqualTo(java.lang.Double)">Property</a></code></strong></div>
+<div class="block">Is numeric property less or equal to given number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lessOrEqualTo(java.lang.Double)">lessOrEqualTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="lessOrEqualTo(java.lang.Long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lessOrEqualTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;lessOrEqualTo(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;number)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lessOrEqualTo(java.lang.Long)">Property</a></code></strong></div>
+<div class="block">Is numeric property less or equal to given number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lessOrEqualTo(java.lang.Long)">lessOrEqualTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="lessOrEqualTo(java.lang.Integer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lessOrEqualTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;lessOrEqualTo(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;number)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lessOrEqualTo(java.lang.Integer)">Property</a></code></strong></div>
+<div class="block">Is numeric property less or equal to given number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lessOrEqualTo(java.lang.Integer)">lessOrEqualTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="lessThan(java.lang.Double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lessThan</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;lessThan(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;number)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lessThan(java.lang.Double)">Property</a></code></strong></div>
+<div class="block">Is numeric property less than given number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lessThan(java.lang.Double)">lessThan</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="lessThan(java.lang.Long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lessThan</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;lessThan(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;number)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lessThan(java.lang.Long)">Property</a></code></strong></div>
+<div class="block">Is numeric property less than given number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lessThan(java.lang.Long)">lessThan</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="lessThan(java.lang.Integer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lessThan</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;lessThan(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;number)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lessThan(java.lang.Integer)">Property</a></code></strong></div>
+<div class="block">Is numeric property less than given number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lessThan(java.lang.Integer)">lessThan</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="lexicalAfter(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lexicalAfter</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;lexicalAfter(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;literal)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lexicalAfter(java.lang.String)">Property</a></code></strong></div>
+<div class="block">Is textual property lexically after (greater than) given literal?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lexicalAfter(java.lang.String)">lexicalAfter</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="lexicalBefore(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lexicalBefore</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;lexicalBefore(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;literal)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lexicalBefore(java.lang.String)">Property</a></code></strong></div>
+<div class="block">Is textual property lexically before (less than) given literal?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lexicalBefore(java.lang.String)">lexicalBefore</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="lexicalNotAfter(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lexicalNotAfter</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;lexicalNotAfter(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;literal)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lexicalNotAfter(java.lang.String)">Property</a></code></strong></div>
+<div class="block">Is textual property lexically not after (less or equal to) given literal?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lexicalNotAfter(java.lang.String)">lexicalNotAfter</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="lexicalNotBefore(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lexicalNotBefore</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;lexicalNotBefore(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;literal)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lexicalNotBefore(java.lang.String)">Property</a></code></strong></div>
+<div class="block">Is textual property lexically not before (greater or equal to) given literal?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#lexicalNotBefore(java.lang.String)">lexicalNotBefore</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="notAfter(java.util.Date)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notAfter</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;notAfter(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notAfter(java.util.Date)">Property</a></code></strong></div>
+<div class="block">Is date property not after (less or equal to) given date?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notAfter(java.util.Date)">notAfter</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="notBefore(java.util.Date)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notBefore</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;notBefore(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notBefore(java.util.Date)">Property</a></code></strong></div>
+<div class="block">Is date property not before (greater or equal to) given date?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notBefore(java.util.Date)">notBefore</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="notEqualTo(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notEqualTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;notEqualTo(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;literalOrPattern)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notEqualTo(java.lang.String)">Property</a></code></strong></div>
+<div class="block">Is textual property different than given literal or not matching given pattern?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notEqualTo(java.lang.String)">notEqualTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="notEqualTo(java.lang.Double)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notEqualTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;notEqualTo(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Double.html?is-external=true" title="class or interface in java.lang">Double</a>&nbsp;number)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notEqualTo(java.lang.Double)">Property</a></code></strong></div>
+<div class="block">Is numeric property different than given double number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notEqualTo(java.lang.Double)">notEqualTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="notEqualTo(java.lang.Long)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notEqualTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;notEqualTo(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Long.html?is-external=true" title="class or interface in java.lang">Long</a>&nbsp;number)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notEqualTo(java.lang.Long)">Property</a></code></strong></div>
+<div class="block">Is numeric property different than given long number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notEqualTo(java.lang.Long)">notEqualTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="notEqualTo(java.lang.Integer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notEqualTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;notEqualTo(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;number)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notEqualTo(java.lang.Integer)">Property</a></code></strong></div>
+<div class="block">Is numeric property different than given int number?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notEqualTo(java.lang.Integer)">notEqualTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="notEqualTo(java.util.Date)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notEqualTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;notEqualTo(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;date)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notEqualTo(java.util.Date)">Property</a></code></strong></div>
+<div class="block">Is date property different than given date?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notEqualTo(java.util.Date)">notEqualTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="after(javax.xml.datatype.Duration)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>after</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;after(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</a>&nbsp;distanceFromNow)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#after(javax.xml.datatype.Duration)">Property</a></code></strong></div>
+<div class="block">Is date property after (greater than) date distant from now by given period of time?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#after(javax.xml.datatype.Duration)">after</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="before(javax.xml.datatype.Duration)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>before</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;before(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</a>&nbsp;distanceFromNow)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#before(javax.xml.datatype.Duration)">Property</a></code></strong></div>
+<div class="block">Is date property before (less than) date distant from now by given period of time?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#before(javax.xml.datatype.Duration)">before</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="notAfter(javax.xml.datatype.Duration)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notAfter</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;notAfter(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</a>&nbsp;distanceFromNow)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notAfter(javax.xml.datatype.Duration)">Property</a></code></strong></div>
+<div class="block">Is date property not after (less or equal to) date distant from now by given period of time?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notAfter(javax.xml.datatype.Duration)">notAfter</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="notBefore(javax.xml.datatype.Duration)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notBefore</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;notBefore(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</a>&nbsp;distanceFromNow)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notBefore(javax.xml.datatype.Duration)">Property</a></code></strong></div>
+<div class="block">Is date property not before (greater or equal to) date distant from now by given period of time?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notBefore(javax.xml.datatype.Duration)">notBefore</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="notEqualTo(javax.xml.datatype.Duration)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>notEqualTo</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;notEqualTo(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</a>&nbsp;distanceFromNow)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notEqualTo(javax.xml.datatype.Duration)">Property</a></code></strong></div>
+<div class="block">Is date property different than date distant from now by given period of time?</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html#notEqualTo(javax.xml.datatype.Duration)">notEqualTo</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="condition(java.lang.String, java.lang.Object, java.lang.Object...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>condition</h4>
+<pre>protected&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;condition(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;operator,
+                          <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value,
+                          <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>...&nbsp;moreValues)</pre>
+</li>
+</ul>
+<a name="and()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>and</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">PartialCondition</a>&nbsp;and()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html#and()">CompleteCondition</a></code></strong></div>
+<div class="block">Conjunct current expression with another</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html#and()">and</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="and(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>and</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a>&nbsp;and(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html#and(java.lang.String)">CompleteCondition</a></code></strong></div>
+<div class="block">shortcut for and().is()</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html#and(java.lang.String)">and</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="or()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>or</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">PartialCondition</a>&nbsp;or()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html#or()">CompleteCondition</a></code></strong></div>
+<div class="block">Disjunct current expression with another</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html#or()">or</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="or(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>or</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a>&nbsp;or(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html#or(java.lang.String)">CompleteCondition</a></code></strong></div>
+<div class="block">shortcut for or().is()</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html#or(java.lang.String)">or</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="wrap()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>wrap</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;wrap()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html#wrap()">CompleteCondition</a></code></strong></div>
+<div class="block">Wraps the current expression in ()</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html#wrap()">wrap</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="and(org.apache.cxf.jaxrs.ext.search.client.CompleteCondition, org.apache.cxf.jaxrs.ext.search.client.CompleteCondition, org.apache.cxf.jaxrs.ext.search.client.CompleteCondition...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>and</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;and(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;c1,
+                    <a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;c2,
+                    <a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>...&nbsp;cn)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html#and(org.apache.cxf.jaxrs.ext.search.client.CompleteCondition,%20org.apache.cxf.jaxrs.ext.search.client.CompleteCondition,%20org.apache.cxf.jaxrs.ext.search.client.CompleteCondition...)">PartialCondition</a></code></strong></div>
+<div class="block">Conjunct multiple expressions</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html#and(org.apache.cxf.jaxrs.ext.search.client.CompleteCondition,%20org.apache.cxf.jaxrs.ext.search.client.CompleteCondition,%20org.apache.cxf.jaxrs.ext.search.client.CompleteCondition...)">and</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">PartialCondition</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="or(org.apache.cxf.jaxrs.ext.search.client.CompleteCondition, org.apache.cxf.jaxrs.ext.search.client.CompleteCondition, org.apache.cxf.jaxrs.ext.search.client.CompleteCondition...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>or</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;or(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;c1,
+                   <a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;c2,
+                   <a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>...&nbsp;cn)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html#or(org.apache.cxf.jaxrs.ext.search.client.CompleteCondition,%20org.apache.cxf.jaxrs.ext.search.client.CompleteCondition,%20org.apache.cxf.jaxrs.ext.search.client.CompleteCondition...)">PartialCondition</a></code></strong></div>
+<div class="block">Disjunct multiple expressions</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html#or(org.apache.cxf.jaxrs.ext.search.client.CompleteCondition,%20org.apache.cxf.jaxrs.ext.search.client.CompleteCondition,%20org.apache.cxf.jaxrs.ext.search.client.CompleteCondition...)">or</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">PartialCondition</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="and(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>and</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;and(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&gt;&nbsp;conditions)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html#and(java.util.List)">PartialCondition</a></code></strong></div>
+<div class="block">Conjunct multiple expressions</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html#and(java.util.List)">and</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">PartialCondition</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="or(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>or</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;or(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&gt;&nbsp;conditions)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html#or(java.util.List)">PartialCondition</a></code></strong></div>
+<div class="block">Disjunct multiple expressions</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html#or(java.util.List)">or</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">PartialCondition</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="conditionsList(java.lang.String, java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>conditionsList</h4>
+<pre>protected&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&nbsp;conditionsList(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;op,
+                               <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/CompleteCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">CompleteCondition</a>&gt;&nbsp;conditions)</pre>
+</li>
+</ul>
+<a name="is(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>is</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/Property.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">Property</a>&nbsp;is(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;property)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html#is(java.lang.String)">PartialCondition</a></code></strong></div>
+<div class="block">Get property of inspected entity type</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html#is(java.lang.String)">is</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client">PartialCondition</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="toString(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>toString</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toString(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
+</li>
+</ul>
+<a name="toFiqlPrimitiveCondition(org.apache.cxf.jaxrs.ext.search.ConditionType)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>toFiqlPrimitiveCondition</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;toFiqlPrimitiveCondition(<a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</a>&nbsp;type)</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/FiqlSearchConditionBuilder.Builder.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.html" title="class in org.apache.cxf.jaxrs.ext.search.client"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../../org/apache/cxf/jaxrs/ext/search/client/PartialCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search.client"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/apache/cxf/jaxrs/ext/search/client/FiqlSearchConditionBuilder.Builder.html" target="_top">Frames</a></li>
+<li><a href="FiqlSearchConditionBuilder.Builder.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Apache CXF</small></p>
+</body>
+</html>

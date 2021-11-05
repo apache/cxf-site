@@ -1,0 +1,357 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+IssuedTokenInterceptorProvider (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="IssuedTokenInterceptorProvider (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/IssuedTokenInterceptorProvider.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/policy/interceptors/HttpsTokenInterceptorProvider.html" title="class in org.apache.cxf.ws.security.policy.interceptors"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/policy/interceptors/KerberosTokenInterceptorProvider.html" title="class in org.apache.cxf.ws.security.policy.interceptors"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/ws/security/policy/interceptors/IssuedTokenInterceptorProvider.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="IssuedTokenInterceptorProvider.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_java.util.AbstractMap">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.ws.security.policy.interceptors</FONT>
+<BR>
+Class IssuedTokenInterceptorProvider</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/AbstractMap.html?is-external=true" title="class or interface in java.util">java.util.AbstractMap</A>&lt;K,V&gt;
+      <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true" title="class or interface in java.util.concurrent">java.util.concurrent.ConcurrentHashMap</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;
+          <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html" title="class in org.apache.cxf.interceptor">org.apache.cxf.interceptor.AbstractAttributedInterceptorProvider</A>
+              <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../../org/apache/cxf/ws/policy/AbstractPolicyInterceptorProvider.html" title="class in org.apache.cxf.ws.policy">org.apache.cxf.ws.policy.AbstractPolicyInterceptorProvider</A>
+                  <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.ws.security.policy.interceptors.IssuedTokenInterceptorProvider</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentMap.html?is-external=true" title="class or interface in java.util.concurrent">ConcurrentMap</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;, <A HREF="../../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html" title="interface in org.apache.cxf.interceptor">InterceptorProvider</A>, <A HREF="../../../../../../../org/apache/cxf/ws/policy/PolicyInterceptorProvider.html" title="interface in org.apache.cxf.ws.policy">PolicyInterceptorProvider</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>IssuedTokenInterceptorProvider</B><DT>extends <A HREF="../../../../../../../org/apache/cxf/ws/policy/AbstractPolicyInterceptorProvider.html" title="class in org.apache.cxf.ws.policy">AbstractPolicyInterceptorProvider</A></DL>
+</PRE>
+
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../../serialized-form.html#org.apache.cxf.ws.security.policy.interceptors.IssuedTokenInterceptorProvider">Serialized Form</A></DL>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_java.util.AbstractMap"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class java.util.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/AbstractMap.html?is-external=true" title="class or interface in java.util">AbstractMap</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/AbstractMap.SimpleEntry.html?is-external=true" title="class or interface in java.util">AbstractMap.SimpleEntry</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/AbstractMap.SimpleEntry.html?is-external=true" title="class or interface in java.util">K</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/AbstractMap.SimpleEntry.html?is-external=true" title="class or interface in java.util">V</A>&gt;, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/AbstractMap.SimpleImmutableEntry.html?is-external=true" title="class or interface in java.util">AbstractMap.SimpleImmutableEntry</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/AbstractMap.SimpleImmutableEntry.html?is-external=true" title="class or interface in java.util">K</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/AbstractMap.SimpleImmutableEntry.html?is-external=true" title="class or interface in java.util">V</A>&gt;</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<A NAME="nested_classes_inherited_from_class_java.util.Map"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from interface java.util.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util">Map.Entry</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util">K</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.Entry.html?is-external=true" title="class or interface in java.util">V</A>&gt;</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/security/policy/interceptors/IssuedTokenInterceptorProvider.html#IssuedTokenInterceptorProvider()">IssuedTokenInterceptorProvider</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/security/policy/interceptors/IssuedTokenInterceptorProvider.html#assertIssuedToken(org.apache.wss4j.policy.model.IssuedToken, org.apache.cxf.ws.policy.AssertionInfoMap)">assertIssuedToken</A></B>(org.apache.wss4j.policy.model.IssuedToken&nbsp;issuedToken,
+                  <A HREF="../../../../../../../org/apache/cxf/ws/policy/AssertionInfoMap.html" title="class in org.apache.cxf.ws.policy">AssertionInfoMap</A>&nbsp;aim)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/security/policy/interceptors/IssuedTokenInterceptorProvider.html#assertPolicy(javax.xml.namespace.QName, org.apache.cxf.ws.policy.AssertionInfoMap)">assertPolicy</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;n,
+             <A HREF="../../../../../../../org/apache/cxf/ws/policy/AssertionInfoMap.html" title="class in org.apache.cxf.ws.policy">AssertionInfoMap</A>&nbsp;aim)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.ws.policy.AbstractPolicyInterceptorProvider"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.ws.policy.<A HREF="../../../../../../../org/apache/cxf/ws/policy/AbstractPolicyInterceptorProvider.html" title="class in org.apache.cxf.ws.policy">AbstractPolicyInterceptorProvider</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/ws/policy/AbstractPolicyInterceptorProvider.html#configurationPresent(org.apache.cxf.message.Message, org.apache.neethi.Assertion)">configurationPresent</A>, <A HREF="../../../../../../../org/apache/cxf/ws/policy/AbstractPolicyInterceptorProvider.html#getAssertionTypes()">getAssertionTypes</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.interceptor.AbstractAttributedInterceptorProvider"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.interceptor.<A HREF="../../../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html" title="class in org.apache.cxf.interceptor">AbstractAttributedInterceptorProvider</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#equals(java.lang.Object)">equals</A>, <A HREF="../../../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#getInFaultInterceptors()">getInFaultInterceptors</A>, <A HREF="../../../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#getInInterceptors()">getInInterceptors</A>, <A HREF="../../../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#getOutFaultInterceptors()">getOutFaultInterceptors</A>, <A HREF="../../../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#getOutInterceptors()">getOutInterceptors</A>, <A HREF="../../../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#hashCode()">hashCode</A>, <A HREF="../../../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#put(java.lang.String, java.lang.Object)">put</A>, <A HREF="../../../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#setInFaultInterceptors(java.util.List)">setInFaultInterceptors</A>, <A HREF="../../../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#setInInterceptors(java.util.List)">setInInterceptors</A>, <A HREF="../../../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#setOutFaultInterceptors(java.util.List)">setOutFaultInterceptors</A>, <A HREF="../../../../../../../org/apache/cxf/interceptor/AbstractAttributedInterceptorProvider.html#setOutInterceptors(java.util.List)">setOutInterceptors</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.util.concurrent.ConcurrentHashMap"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.util.concurrent.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true" title="class or interface in java.util.concurrent">ConcurrentHashMap</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#clear()" title="class or interface in java.util.concurrent">clear</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#contains(java.lang.Object)" title="class or interface in java.util.concurrent">contains</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#containsKey(java.lang.Object)" title="class or interface in java.util.concurrent">containsKey</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#containsValue(java.lang.Object)" title="class or interface in java.util.concurrent">containsValue</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#elements()" title="class or interface in java.util.concurrent">elements</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#entrySet()" title="class or interface in java.util.concurrent">entrySet</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#get(java.lang.Object)" title="class or interface in java.util.concurrent">get</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#isEmpty()" title="class or interface in java.util.concurrent">isEmpty</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#keys()" title="class or interface in java.util.concurrent">keys</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#keySet()" title="class or interface in java.util.concurrent">keySet</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#putAll(java.util.Map)" title="class or interface in java.util.concurrent">putAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#putIfAbsent(K, V)" title="class or interface in java.util.concurrent">putIfAbsent</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#remove(java.lang.Object)" title="class or interface in java.util.concurrent">remove</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#remove(java.lang.Object, java.lang.Object)" title="class or interface in java.util.concurrent">remove</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#replace(K, V)" title="class or interface in java.util.concurrent">replace</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#replace(K, V, V)" title="class or interface in java.util.concurrent">replace</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#size()" title="class or interface in java.util.concurrent">size</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true#values()" title="class or interface in java.util.concurrent">values</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.util.AbstractMap"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.util.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/AbstractMap.html?is-external=true" title="class or interface in java.util">AbstractMap</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/AbstractMap.html?is-external=true#clone()" title="class or interface in java.util">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/AbstractMap.html?is-external=true#toString()" title="class or interface in java.util">toString</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.interceptor.InterceptorProvider"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface org.apache.cxf.interceptor.<A HREF="../../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html" title="interface in org.apache.cxf.interceptor">InterceptorProvider</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html#getInFaultInterceptors()">getInFaultInterceptors</A>, <A HREF="../../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html#getInInterceptors()">getInInterceptors</A>, <A HREF="../../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html#getOutFaultInterceptors()">getOutFaultInterceptors</A>, <A HREF="../../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html#getOutInterceptors()">getOutInterceptors</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="IssuedTokenInterceptorProvider()"><!-- --></A><H3>
+IssuedTokenInterceptorProvider</H3>
+<PRE>
+public <B>IssuedTokenInterceptorProvider</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="assertIssuedToken(org.apache.wss4j.policy.model.IssuedToken, org.apache.cxf.ws.policy.AssertionInfoMap)"><!-- --></A><H3>
+assertIssuedToken</H3>
+<PRE>
+protected static void <B>assertIssuedToken</B>(org.apache.wss4j.policy.model.IssuedToken&nbsp;issuedToken,
+                                        <A HREF="../../../../../../../org/apache/cxf/ws/policy/AssertionInfoMap.html" title="class in org.apache.cxf.ws.policy">AssertionInfoMap</A>&nbsp;aim)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="assertPolicy(javax.xml.namespace.QName, org.apache.cxf.ws.policy.AssertionInfoMap)"><!-- --></A><H3>
+assertPolicy</H3>
+<PRE>
+protected static void <B>assertPolicy</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;n,
+                                   <A HREF="../../../../../../../org/apache/cxf/ws/policy/AssertionInfoMap.html" title="class in org.apache.cxf.ws.policy">AssertionInfoMap</A>&nbsp;aim)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/IssuedTokenInterceptorProvider.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/policy/interceptors/HttpsTokenInterceptorProvider.html" title="class in org.apache.cxf.ws.security.policy.interceptors"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/policy/interceptors/KerberosTokenInterceptorProvider.html" title="class in org.apache.cxf.ws.security.policy.interceptors"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/ws/security/policy/interceptors/IssuedTokenInterceptorProvider.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="IssuedTokenInterceptorProvider.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_java.util.AbstractMap">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

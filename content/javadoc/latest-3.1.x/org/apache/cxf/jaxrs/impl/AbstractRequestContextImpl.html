@@ -1,0 +1,478 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>AbstractRequestContextImpl (Apache CXF JavaDoc 3.1.0 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AbstractRequestContextImpl (Apache CXF JavaDoc 3.1.0 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AbstractRequestContextImpl.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractPropertiesImpl.html" title="class in org.apache.cxf.jaxrs.impl"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractResponseContextImpl.html" title="class in org.apache.cxf.jaxrs.impl"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.html" target="_top">Frames</a></li>
+<li><a href="AbstractRequestContextImpl.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.cxf.jaxrs.impl</div>
+<h2 title="Class AbstractRequestContextImpl" class="title">Class AbstractRequestContextImpl</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractPropertiesImpl.html" title="class in org.apache.cxf.jaxrs.impl">org.apache.cxf.jaxrs.impl.AbstractPropertiesImpl</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.cxf.jaxrs.impl.AbstractRequestContextImpl</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../../org/apache/cxf/jaxrs/client/spec/ClientRequestContextImpl.html" title="class in org.apache.cxf.jaxrs.client.spec">ClientRequestContextImpl</a>, <a href="../../../../../org/apache/cxf/jaxrs/impl/ContainerRequestContextImpl.html" title="class in org.apache.cxf.jaxrs.impl">ContainerRequestContextImpl</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public abstract class <span class="strong">AbstractRequestContextImpl</span>
+extends <a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractPropertiesImpl.html" title="class in org.apache.cxf.jaxrs.impl">AbstractPropertiesImpl</a></pre>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected javax.ws.rs.core.HttpHeaders</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.html#h">h</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.apache.cxf.jaxrs.impl.AbstractPropertiesImpl">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.apache.cxf.jaxrs.impl.<a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractPropertiesImpl.html" title="class in org.apache.cxf.jaxrs.impl">AbstractPropertiesImpl</a></h3>
+<code><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractPropertiesImpl.html#m">m</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.html#AbstractRequestContextImpl(org.apache.cxf.message.Message,%20boolean)">AbstractRequestContextImpl</a></strong>(<a href="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&nbsp;message,
+                          boolean&nbsp;responseContext)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.html#abortWith(javax.ws.rs.core.Response)">abortWith</a></strong>(javax.ws.rs.core.Response&nbsp;response)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.html#checkContext()">checkContext</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.html#getAcceptableLanguages()">getAcceptableLanguages</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;javax.ws.rs.core.MediaType&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.html#getAcceptableMediaTypes()">getAcceptableMediaTypes</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,javax.ws.rs.core.Cookie&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.html#getCookies()">getCookies</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.html#getDate()">getDate</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.html#getHeaderString(java.lang.String)">getHeaderString</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected javax.ws.rs.core.HttpHeaders</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.html#getHttpHeaders()">getHttpHeaders</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.html#getLanguage()">getLanguage</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.html#getLength()">getLength</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javax.ws.rs.core.MediaType</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.html#getMediaType()">getMediaType</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.html#getMethod()">getMethod</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.html#setMethod(java.lang.String)">setMethod</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.cxf.jaxrs.impl.AbstractPropertiesImpl">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.apache.cxf.jaxrs.impl.<a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractPropertiesImpl.html" title="class in org.apache.cxf.jaxrs.impl">AbstractPropertiesImpl</a></h3>
+<code><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractPropertiesImpl.html#getProperty(java.lang.String)">getProperty</a>, <a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractPropertiesImpl.html#getPropertyNames()">getPropertyNames</a>, <a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractPropertiesImpl.html#removeProperty(java.lang.String)">removeProperty</a>, <a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractPropertiesImpl.html#setProperty(java.lang.String,%20java.lang.Object)">setProperty</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="h">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>h</h4>
+<pre>protected&nbsp;javax.ws.rs.core.HttpHeaders h</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="AbstractRequestContextImpl(org.apache.cxf.message.Message, boolean)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>AbstractRequestContextImpl</h4>
+<pre>public&nbsp;AbstractRequestContextImpl(<a href="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&nbsp;message,
+                          boolean&nbsp;responseContext)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="abortWith(javax.ws.rs.core.Response)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>abortWith</h4>
+<pre>public&nbsp;void&nbsp;abortWith(javax.ws.rs.core.Response&nbsp;response)</pre>
+</li>
+</ul>
+<a name="getAcceptableLanguages()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAcceptableLanguages</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&gt;&nbsp;getAcceptableLanguages()</pre>
+</li>
+</ul>
+<a name="getAcceptableMediaTypes()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAcceptableMediaTypes</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;javax.ws.rs.core.MediaType&gt;&nbsp;getAcceptableMediaTypes()</pre>
+</li>
+</ul>
+<a name="getCookies()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCookies</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,javax.ws.rs.core.Cookie&gt;&nbsp;getCookies()</pre>
+</li>
+</ul>
+<a name="getDate()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDate</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Date.html?is-external=true" title="class or interface in java.util">Date</a>&nbsp;getDate()</pre>
+</li>
+</ul>
+<a name="getHeaderString(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHeaderString</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getHeaderString(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name)</pre>
+</li>
+</ul>
+<a name="getLanguage()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLanguage</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Locale.html?is-external=true" title="class or interface in java.util">Locale</a>&nbsp;getLanguage()</pre>
+</li>
+</ul>
+<a name="getLength()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLength</h4>
+<pre>public&nbsp;int&nbsp;getLength()</pre>
+</li>
+</ul>
+<a name="getMediaType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMediaType</h4>
+<pre>public&nbsp;javax.ws.rs.core.MediaType&nbsp;getMediaType()</pre>
+</li>
+</ul>
+<a name="getMethod()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMethod</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getMethod()</pre>
+</li>
+</ul>
+<a name="setMethod(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMethod</h4>
+<pre>public&nbsp;void&nbsp;setMethod(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;method)
+               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalStateException.html?is-external=true" title="class or interface in java.lang">IllegalStateException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getHttpHeaders()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHttpHeaders</h4>
+<pre>protected&nbsp;javax.ws.rs.core.HttpHeaders&nbsp;getHttpHeaders()</pre>
+</li>
+</ul>
+<a name="checkContext()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>checkContext</h4>
+<pre>protected&nbsp;void&nbsp;checkContext()</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AbstractRequestContextImpl.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractPropertiesImpl.html" title="class in org.apache.cxf.jaxrs.impl"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/cxf/jaxrs/impl/AbstractResponseContextImpl.html" title="class in org.apache.cxf.jaxrs.impl"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/cxf/jaxrs/impl/AbstractRequestContextImpl.html" target="_top">Frames</a></li>
+<li><a href="AbstractRequestContextImpl.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Apache CXF</small></p>
+</body>
+</html>

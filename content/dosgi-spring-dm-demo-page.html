@@ -1,0 +1,277 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - DOSGi Spring-DM Demo page">
+
+
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shCoreCXF.css">
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shThemeCXF.css">
+
+<script src='/resources/highlighter/scripts/shCore.js'></script>
+<script src='/resources/highlighter/scripts/shBrushBash.js'></script>
+<script src='/resources/highlighter/scripts/shBrushXml.js'></script>
+<script src='/resources/highlighter/scripts/shBrushJava.js'></script>
+<script>
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+
+    <title>
+Apache CXF -- DOSGi Spring-DM Demo page
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="distributed-osgi.html">Distributed OSGi</a>&nbsp;&gt;&nbsp;<a href="dosgi-demos.html">DOSGi Demos</a>&nbsp;&gt;&nbsp;<a href="dosgi-spring-dm-demo-page.html">DOSGi Spring-DM Demo page</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><p>This page describes the CXF Distributed OSGi with Spring-DM demo.</p>
+
+<p>The Spring-DM demo uses Spring-DM to create a remoted OSGi service from a Spring Bean. The consumer side uses Spring-DM to create a consumer to a remote OSGi service. By using Spring-DM you don't need to write code to interact with the OSGi Service Registry. That's all handled through injection which hugely simplifies the code. Besides, you can use all the features of Spring together with OSGi.</p>
+
+<p>It uses the CXF/DOSGi multi bundle distribution since that provides Spring-DM as a dependency. By installing the multi bundle distribution, you have all the prerequisites to run this demo. See <a shape="rect" href="dosgi-multi-bundle-distribution.html">here for instructions on installing the multi bundle distribution</a>.</p>
+<h2 id="DOSGiSpringDMDemopage-Demodesign">Demo design</h2>
+<p>From a high level the demo is very similar to the greeter demo. It comprises of 3 bundles:</p>
+<ul><li>The demo interface bundle providing the Dinner Service interface.</li><li>The Dinner Service implementation bundle.</li><li>The Dinner Service consumer bundle.</li></ul>
+
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="dosgi-spring-dm-demo-page.data/dosgi_cxf_springdm.png"></span></p>
+
+<p>The <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/spring_dm/interface/src/main/java/org/apache/cxf/dosgi/samples/springdm/DinnerService.java">Dinner Service interface</a> is as follows:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">public interface DinnerService {
+    List&lt;Restaurant&gt; findRestaurants(String searchQuery);
+}</pre>
+</div></div>
+
+<h2 id="DOSGiSpringDMDemopage-TheDinnerServiceProvider">The Dinner Service Provider</h2>
+
+<p>The service implementation provides a <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/spring_dm/impl/src/main/java/org/apache/cxf/dosgi/samples/springdm/impl/DinnerServiceImpl.java">simplistic implementation of the DinnerService interface</a> which is instantiated via Spring as a bean. </p>
+
+<p>The interesting bit is in the <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/spring_dm/impl/src/main/resources/META-INF/spring/spring.xml"><code>META-INF/spring/spring.xml</code></a> file. This file creates the DinnerServiceImpl bean and registers it with the OSGi Service Registry. It also sets the <code>osgi.remote.interfaces</code> property on the service to mark is as suitable for remoting. Here are the important parts of the <code>spring.xml</code> file:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+&lt;beans xmlns:osgi="..."&gt;
+  &lt;osgi:service interface="org.apache.cxf.dosgi.samples.springdm.DinnerService"&gt;
+    &lt;osgi:service-properties&gt;
+      &lt;entry key="service.exported.interfaces" value="*" /&gt;
+    &lt;/osgi:service-properties&gt;
+    
+    &lt;bean class="org.apache.cxf.dosgi.samples.springdm.impl.DinnerServiceImpl" /&gt;
+  &lt;/osgi:service&gt;                     
+&lt;/beans&gt;
+</pre>
+</div></div>
+<p>Unlike in the Greeter demo <code>osgi.remote.configuration...</code> properties are not set in the configuration, this means that the service is exposed on the default location of <code><a shape="rect" class="external-link" href="http://localhost:9000/org/apache/cxf/dosgi/samples/springdm/DinnerService" rel="nofollow">http://localhost:9000/org/apache/cxf/dosgi/samples/springdm/DinnerService</a></code>. The default location is based on the interface name of the service being remoted.</p>
+
+<p>In this example, the bundles are installed in Felix.</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">-&gt; start http://repo2.maven.org/maven2/org/apache/cxf/dosgi/samples/cxf-dosgi-ri-samples-spring-dm-interface/1.2/cxf-dosgi-ri-samples-spring-dm-interface-1.2.jar
+-&gt; start http://repo2.maven.org/maven2/org/apache/cxf/dosgi/samples/cxf-dosgi-ri-samples-spring-dm-impl/1.2/cxf-dosgi-ri-samples-spring-dm-impl-1.2.jar
+... log messages may appear ...
+-&gt; ps
+START LEVEL 32
+   ID   State         Level  Name
+[   0] [Active     ] [    0] System Bundle (1.8.0)
+... bundles ...
+[  35] [Active     ] [    1] CXF Distributed OSGi Spring-DM Sample Interface Bundle
+[  36] [Active     ] [    1] CXF Distributed OSGi Spring-DM Sample Implementation Bundle
+</pre>
+</div></div>
+<p>At this point the service should be available. You can check this by obtaining the WSDL:</p>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="dosgi-spring-dm-demo-page.data/spring-dm-wsdl.jpeg"></span></p>
+
+<h2 id="DOSGiSpringDMDemopage-TheDinnerServiceConsumer">The Dinner Service Consumer</h2>
+<p>As on the remote service provider side, the service consumer is also created using spring. Spring creates a <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/spring_dm/client/src/main/java/org/apache/cxf/dosgi/samples/springdm/client/DinnerServiceConsumer.java">DinnerServiceConsumer</a> bean which is injected with the a proxy to the remote DinnerService. The injection is all done by Spring, which makes the code extremely simple. When Spring is done injecting, it calls the <code>start()</code> method where the remote service is used. </p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">public class DinnerServiceConsumer {
+    DinnerService dinnerService;
+    
+    public void setDinnerService(DinnerService ds) {
+        dinnerService = ds;
+    }
+    
+    public void start() {
+        System.out.println("Found the following restaurants:");
+        for (Restaurant r : dinnerService.findRestaurants("nice and not too expensive!")) {
+            System.out.format("  %s (%s) Rating: %d\n", r.getName(), r.getAddress(), r.getRating());
+        }
+    }
+}
+</pre>
+</div></div>
+
+<p>The client side <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/spring_dm/client/src/main/resources/META-INF/spring/client-spring.xml"><code>META-INF/spring/spring.xml</code></a> file is also really simple. It simply declares a dependency on the OSGi DinnerService, which is injected into the DinnerServiceConsumer bean. </p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+&lt;beans&gt;
+  &lt;osgi:reference id="dinnerServiceRef" interface="org.apache.cxf.dosgi.samples.springdm.DinnerService"/&gt;
+  
+  &lt;bean class="org.apache.cxf.dosgi.samples.springdm.client.DinnerServiceConsumer"
+        init-method="start"&gt;
+    &lt;property name="dinnerService" ref="dinnerServiceRef"/&gt;
+  &lt;/bean&gt;
+&lt;/beans&gt;
+</pre>
+</div></div>
+<p>Like in the Greeter demo, the client side needs to be configured to know where the remote service actually is. When using a Discovery system this configuration is provided dynamically via Discovery, see the <a shape="rect" href="dosgi-discovery-demo-page.html">DOSGi Discovery Demo page</a>. In this demo this information is provided statically in a <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/spring_dm/client/src/main/resources/OSGI-INF/remote-service/remote-services.xml"><code>OSGI-INF/remote-service/remote-services.xml</code></a> file. </p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">&lt;endpoint-descriptions xmlns="http://www.osgi.org/xmlns/rsa/v1.0.0"&gt;
+  &lt;endpoint-description&gt;
+    &lt;property name="objectClass"&gt;
+      &lt;array&gt;
+        &lt;value&gt;org.apache.cxf.dosgi.samples.springdm.DinnerService&lt;/value&gt;
+      &lt;/array&gt;
+    &lt;/property&gt;
+    &lt;property name="endpoint.id"&gt;http://localhost:9000/org/apache/cxf/dosgi/samples/springdm/DinnerService&lt;/property&gt;
+    &lt;property name="service.imported.configs"&gt;org.apache.cxf.ws&lt;/property&gt;
+  &lt;/endpoint-description&gt;
+&lt;/endpoint-descriptions&gt;</pre>
+</div></div>
+<p>Install and run the consumer side of the demo in a separate Felix instance:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">-&gt; start http://repo2.maven.org/maven2/org/apache/cxf/dosgi/samples/cxf-dosgi-ri-samples-spring-dm-interface/1.2/cxf-dosgi-ri-samples-spring-dm-interface-1.2.jar
+-&gt; start http://repo2.maven.org/maven2/org/apache/cxf/dosgi/samples/cxf-dosgi-ri-samples-spring-dm-client/1.2/cxf-dosgi-ri-samples-spring-dm-client-1.2.jar
+... log messages may appear, at some point the consumer will make an invocation on the remote service, you will see:
+Found the following restaurants:
+  Jojo's (1 food way) Rating: 3
+  Boohaa's (95 forage ave) Rating: 1
+  MicMac (Plastic Plaza) Rating: 1</pre>
+</div></div>
+<p>And on the service provider side, you can see that it has been invoked as the following message appears: </p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">-&gt; Hey! Someone's using the Dinner Service! Query: nice and not too expensive!</pre>
+</div></div></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=119322">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=119322&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

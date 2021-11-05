@@ -1,0 +1,469 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+RMStore (Apache CXF Bundle Jar 2.6.3 API)
+</TITLE>
+
+<META NAME="keywords" CONTENT="org.apache.cxf.ws.rm.persistence.RMStore interface">
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="RMStore (Apache CXF Bundle Jar 2.6.3 API)";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RMStore.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMMessage.html" title="class in org.apache.cxf.ws.rm.persistence"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMStoreException.html" title="class in org.apache.cxf.ws.rm.persistence"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/ws/rm/persistence/RMStore.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RMStore.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.ws.rm.persistence</FONT>
+<BR>
+Interface RMStore</H2>
+<DL>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/jdbc/RMTxStore.html" title="class in org.apache.cxf.ws.rm.persistence.jdbc">RMTxStore</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public interface <B>RMStore</B></DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMStore.html#createDestinationSequence(org.apache.cxf.ws.rm.DestinationSequence)">createDestinationSequence</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/DestinationSequence.html" title="class in org.apache.cxf.ws.rm">DestinationSequence</A>&nbsp;seq)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a destination sequence in the persistent store, with the sequence attributes as specified in the
+ <code>RMSDestinationSequence</code> object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMStore.html#createSourceSequence(org.apache.cxf.ws.rm.SourceSequence)">createSourceSequence</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/SourceSequence.html" title="class in org.apache.cxf.ws.rm">SourceSequence</A>&nbsp;seq)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a source sequence in the persistent store, with the sequence attributes as specified in the
+ <code>RMSourceSequence</code> object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/rm/DestinationSequence.html" title="class in org.apache.cxf.ws.rm">DestinationSequence</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMStore.html#getDestinationSequence(org.apache.cxf.ws.rm.v200702.Identifier)">getDestinationSequence</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/v200702/Identifier.html" title="class in org.apache.cxf.ws.rm.v200702">Identifier</A>&nbsp;seq)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieve the destination sequence with the specified identifier from persistent store.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/cxf/ws/rm/DestinationSequence.html" title="class in org.apache.cxf.ws.rm">DestinationSequence</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMStore.html#getDestinationSequences(java.lang.String)">getDestinationSequences</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;endpointIdentifier)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves all sequences managed by the identified RM destination endpoint 
+ from persistent store.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMMessage.html" title="class in org.apache.cxf.ws.rm.persistence">RMMessage</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMStore.html#getMessages(org.apache.cxf.ws.rm.v200702.Identifier, boolean)">getMessages</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/v200702/Identifier.html" title="class in org.apache.cxf.ws.rm.v200702">Identifier</A>&nbsp;sid,
+            boolean&nbsp;outbound)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves the outbound/inbound messages stored for the source/destination sequence with 
+ the given identifier.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/rm/SourceSequence.html" title="class in org.apache.cxf.ws.rm">SourceSequence</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMStore.html#getSourceSequence(org.apache.cxf.ws.rm.v200702.Identifier)">getSourceSequence</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/v200702/Identifier.html" title="class in org.apache.cxf.ws.rm.v200702">Identifier</A>&nbsp;seq)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieve the source sequence with the specified identifier from persistent store.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/cxf/ws/rm/SourceSequence.html" title="class in org.apache.cxf.ws.rm">SourceSequence</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMStore.html#getSourceSequences(java.lang.String)">getSourceSequences</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;endpointIdentifier)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Retrieves all sequences managed by the identified RM source endpoint 
+ from persistent store.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMStore.html#persistIncoming(org.apache.cxf.ws.rm.DestinationSequence, org.apache.cxf.ws.rm.persistence.RMMessage)">persistIncoming</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/DestinationSequence.html" title="class in org.apache.cxf.ws.rm">DestinationSequence</A>&nbsp;seq,
+                <A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMMessage.html" title="class in org.apache.cxf.ws.rm.persistence">RMMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called by an RM source upon processing an outbound message.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMStore.html#persistOutgoing(org.apache.cxf.ws.rm.SourceSequence, org.apache.cxf.ws.rm.persistence.RMMessage)">persistOutgoing</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/SourceSequence.html" title="class in org.apache.cxf.ws.rm">SourceSequence</A>&nbsp;seq,
+                <A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMMessage.html" title="class in org.apache.cxf.ws.rm.persistence">RMMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called by an RM source upon processing an outbound message.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMStore.html#removeDestinationSequence(org.apache.cxf.ws.rm.v200702.Identifier)">removeDestinationSequence</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/v200702/Identifier.html" title="class in org.apache.cxf.ws.rm.v200702">Identifier</A>&nbsp;seq)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remove the destination sequence with the specified identifier from persistent store.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMStore.html#removeMessages(org.apache.cxf.ws.rm.v200702.Identifier, java.util.Collection, boolean)">removeMessages</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/v200702/Identifier.html" title="class in org.apache.cxf.ws.rm.v200702">Identifier</A>&nbsp;sid,
+               <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html" title="class or interface in java.lang">Long</A>&gt;&nbsp;messageNrs,
+               boolean&nbsp;outbound)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Removes the messages with the given message numbers and identifiers from the store of
+ outbound/inbound messages.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMStore.html#removeSourceSequence(org.apache.cxf.ws.rm.v200702.Identifier)">removeSourceSequence</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/v200702/Identifier.html" title="class in org.apache.cxf.ws.rm.v200702">Identifier</A>&nbsp;seq)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Remove the source sequence with the specified identifier from persistent store.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="createSourceSequence(org.apache.cxf.ws.rm.SourceSequence)"><!-- --></A><H3>
+createSourceSequence</H3>
+<PRE>
+void <B>createSourceSequence</B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/SourceSequence.html" title="class in org.apache.cxf.ws.rm">SourceSequence</A>&nbsp;seq)</PRE>
+<DL>
+<DD>Create a source sequence in the persistent store, with the sequence attributes as specified in the
+ <code>RMSourceSequence</code> object.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>seq</CODE> - the sequence</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createDestinationSequence(org.apache.cxf.ws.rm.DestinationSequence)"><!-- --></A><H3>
+createDestinationSequence</H3>
+<PRE>
+void <B>createDestinationSequence</B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/DestinationSequence.html" title="class in org.apache.cxf.ws.rm">DestinationSequence</A>&nbsp;seq)</PRE>
+<DL>
+<DD>Create a destination sequence in the persistent store, with the sequence attributes as specified in the
+ <code>RMSDestinationSequence</code> object.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>seq</CODE> - the sequence</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSourceSequence(org.apache.cxf.ws.rm.v200702.Identifier)"><!-- --></A><H3>
+getSourceSequence</H3>
+<PRE>
+<A HREF="../../../../../../org/apache/cxf/ws/rm/SourceSequence.html" title="class in org.apache.cxf.ws.rm">SourceSequence</A> <B>getSourceSequence</B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/v200702/Identifier.html" title="class in org.apache.cxf.ws.rm.v200702">Identifier</A>&nbsp;seq)</PRE>
+<DL>
+<DD>Retrieve the source sequence with the specified identifier from persistent store.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>seq</CODE> - the sequence
+<DT><B>Returns:</B><DD>the sequence if present; otherwise null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDestinationSequence(org.apache.cxf.ws.rm.v200702.Identifier)"><!-- --></A><H3>
+getDestinationSequence</H3>
+<PRE>
+<A HREF="../../../../../../org/apache/cxf/ws/rm/DestinationSequence.html" title="class in org.apache.cxf.ws.rm">DestinationSequence</A> <B>getDestinationSequence</B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/v200702/Identifier.html" title="class in org.apache.cxf.ws.rm.v200702">Identifier</A>&nbsp;seq)</PRE>
+<DL>
+<DD>Retrieve the destination sequence with the specified identifier from persistent store.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>seq</CODE> - the sequence
+<DT><B>Returns:</B><DD>the sequence if present; otherwise null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeSourceSequence(org.apache.cxf.ws.rm.v200702.Identifier)"><!-- --></A><H3>
+removeSourceSequence</H3>
+<PRE>
+void <B>removeSourceSequence</B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/v200702/Identifier.html" title="class in org.apache.cxf.ws.rm.v200702">Identifier</A>&nbsp;seq)</PRE>
+<DL>
+<DD>Remove the source sequence with the specified identifier from persistent store.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>seq</CODE> - the sequence</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeDestinationSequence(org.apache.cxf.ws.rm.v200702.Identifier)"><!-- --></A><H3>
+removeDestinationSequence</H3>
+<PRE>
+void <B>removeDestinationSequence</B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/v200702/Identifier.html" title="class in org.apache.cxf.ws.rm.v200702">Identifier</A>&nbsp;seq)</PRE>
+<DL>
+<DD>Remove the destination sequence with the specified identifier from persistent store.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>seq</CODE> - the sequence</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSourceSequences(java.lang.String)"><!-- --></A><H3>
+getSourceSequences</H3>
+<PRE>
+<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/cxf/ws/rm/SourceSequence.html" title="class in org.apache.cxf.ws.rm">SourceSequence</A>&gt; <B>getSourceSequences</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;endpointIdentifier)</PRE>
+<DL>
+<DD>Retrieves all sequences managed by the identified RM source endpoint 
+ from persistent store.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>endpointIdentifier</CODE> - the identifier for the source
+<DT><B>Returns:</B><DD>the collection of sequences</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDestinationSequences(java.lang.String)"><!-- --></A><H3>
+getDestinationSequences</H3>
+<PRE>
+<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/cxf/ws/rm/DestinationSequence.html" title="class in org.apache.cxf.ws.rm">DestinationSequence</A>&gt; <B>getDestinationSequences</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;endpointIdentifier)</PRE>
+<DL>
+<DD>Retrieves all sequences managed by the identified RM destination endpoint 
+ from persistent store.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>endpointIdentifier</CODE> - the identifier for the destination
+<DT><B>Returns:</B><DD>the collection of sequences</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMessages(org.apache.cxf.ws.rm.v200702.Identifier, boolean)"><!-- --></A><H3>
+getMessages</H3>
+<PRE>
+<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMMessage.html" title="class in org.apache.cxf.ws.rm.persistence">RMMessage</A>&gt; <B>getMessages</B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/v200702/Identifier.html" title="class in org.apache.cxf.ws.rm.v200702">Identifier</A>&nbsp;sid,
+                                  boolean&nbsp;outbound)</PRE>
+<DL>
+<DD>Retrieves the outbound/inbound messages stored for the source/destination sequence with 
+ the given identifier.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sid</CODE> - the source sequence identifier<DD><CODE>outbound</CODE> - true if the message is outbound
+<DT><B>Returns:</B><DD>the collection of messages
+ *</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="persistOutgoing(org.apache.cxf.ws.rm.SourceSequence, org.apache.cxf.ws.rm.persistence.RMMessage)"><!-- --></A><H3>
+persistOutgoing</H3>
+<PRE>
+void <B>persistOutgoing</B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/SourceSequence.html" title="class in org.apache.cxf.ws.rm">SourceSequence</A>&nbsp;seq,
+                     <A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMMessage.html" title="class in org.apache.cxf.ws.rm.persistence">RMMessage</A>&nbsp;msg)</PRE>
+<DL>
+<DD>Called by an RM source upon processing an outbound message. The <code>RMMessage</code>
+ parameter is null for non application (RM protocol) messages.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>seq</CODE> - the source sequence<DD><CODE>msg</CODE> - the outgoing message</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="persistIncoming(org.apache.cxf.ws.rm.DestinationSequence, org.apache.cxf.ws.rm.persistence.RMMessage)"><!-- --></A><H3>
+persistIncoming</H3>
+<PRE>
+void <B>persistIncoming</B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/DestinationSequence.html" title="class in org.apache.cxf.ws.rm">DestinationSequence</A>&nbsp;seq,
+                     <A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMMessage.html" title="class in org.apache.cxf.ws.rm.persistence">RMMessage</A>&nbsp;msg)</PRE>
+<DL>
+<DD>Called by an RM source upon processing an outbound message. The <code>RMMessage</code>
+ parameter is null for non application (RM protocol) messages.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>seq</CODE> - the destination sequence<DD><CODE>msg</CODE> - the incoming message</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeMessages(org.apache.cxf.ws.rm.v200702.Identifier, java.util.Collection, boolean)"><!-- --></A><H3>
+removeMessages</H3>
+<PRE>
+void <B>removeMessages</B>(<A HREF="../../../../../../org/apache/cxf/ws/rm/v200702/Identifier.html" title="class in org.apache.cxf.ws.rm.v200702">Identifier</A>&nbsp;sid,
+                    <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html" title="class or interface in java.lang">Long</A>&gt;&nbsp;messageNrs,
+                    boolean&nbsp;outbound)</PRE>
+<DL>
+<DD>Removes the messages with the given message numbers and identifiers from the store of
+ outbound/inbound messages.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>sid</CODE> - the identifier of the source sequence<DD><CODE>messageNrs</CODE> - the collection of message numbers<DD><CODE>outbound</CODE> - true if the message is outbound</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RMStore.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMMessage.html" title="class in org.apache.cxf.ws.rm.persistence"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/rm/persistence/RMStoreException.html" title="class in org.apache.cxf.ws.rm.persistence"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/ws/rm/persistence/RMStore.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RMStore.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

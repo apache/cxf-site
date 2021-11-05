@@ -1,0 +1,496 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+WSDiscoveryServiceImpl (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="WSDiscoveryServiceImpl (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/WSDiscoveryServiceImpl.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/ws/discovery/internal/WSDiscoveryServiceImpl.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="WSDiscoveryServiceImpl.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.ws.discovery.internal</FONT>
+<BR>
+Class WSDiscoveryServiceImpl</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.ws.discovery.internal.WSDiscoveryServiceImpl</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryService.html" title="interface in org.apache.cxf.ws.discovery">WSDiscoveryService</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>WSDiscoveryServiceImpl</B><DT>extends <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryService.html" title="interface in org.apache.cxf.ws.discovery">WSDiscoveryService</A></DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/discovery/internal/WSDiscoveryServiceImpl.html#WSDiscoveryServiceImpl()">WSDiscoveryServiceImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/discovery/internal/WSDiscoveryServiceImpl.html#WSDiscoveryServiceImpl(org.apache.cxf.Bus)">WSDiscoveryServiceImpl</A></B>(<A HREF="../../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/discovery/internal/WSDiscoveryServiceImpl.html#WSDiscoveryServiceImpl(org.apache.cxf.Bus, java.util.Map)">WSDiscoveryServiceImpl</A></B>(<A HREF="../../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b,
+                       <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;&nbsp;props)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryClient.html" title="class in org.apache.cxf.ws.discovery">WSDiscoveryClient</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/discovery/internal/WSDiscoveryServiceImpl.html#getClient()">getClient</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The service requires a WSDiscoveryClient in order to interact with a DiscoveryProxy, send Hello/Bye/etc..</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/discovery/wsdl/ProbeMatchesType.html" title="class in org.apache.cxf.ws.discovery.wsdl">ProbeMatchesType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/discovery/internal/WSDiscoveryServiceImpl.html#handleProbe(org.apache.cxf.ws.discovery.wsdl.ProbeType)">handleProbe</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/discovery/wsdl/ProbeType.html" title="class in org.apache.cxf.ws.discovery.wsdl">ProbeType</A>&nbsp;pt)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/discovery/wsdl/HelloType.html" title="class in org.apache.cxf.ws.discovery.wsdl">HelloType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/discovery/internal/WSDiscoveryServiceImpl.html#register(javax.xml.ws.EndpointReference)">register</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/EndpointReference.html?is-external=true" title="class or interface in javax.xml.ws">EndpointReference</A>&nbsp;ref)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registers the given EndpointReference with the service.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/discovery/internal/WSDiscoveryServiceImpl.html#register(org.apache.cxf.ws.discovery.wsdl.HelloType)">register</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/discovery/wsdl/HelloType.html" title="class in org.apache.cxf.ws.discovery.wsdl">HelloType</A>&nbsp;ht)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/discovery/internal/WSDiscoveryServiceImpl.html#serverStarted(org.apache.cxf.endpoint.Server)">serverStarted</A></B>(<A HREF="../../../../../../org/apache/cxf/endpoint/Server.html" title="interface in org.apache.cxf.endpoint">Server</A>&nbsp;server)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Utility methods to aid in calling the register/unregister for the appropriate CXF server</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/discovery/internal/WSDiscoveryServiceImpl.html#serverStopped(org.apache.cxf.endpoint.Server)">serverStopped</A></B>(<A HREF="../../../../../../org/apache/cxf/endpoint/Server.html" title="interface in org.apache.cxf.endpoint">Server</A>&nbsp;server)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/discovery/internal/WSDiscoveryServiceImpl.html#startup()">startup</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/discovery/internal/WSDiscoveryServiceImpl.html#startup(boolean)">startup</A></B>(boolean&nbsp;optional)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/discovery/internal/WSDiscoveryServiceImpl.html#unregister(org.apache.cxf.ws.discovery.wsdl.HelloType)">unregister</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/discovery/wsdl/HelloType.html" title="class in org.apache.cxf.ws.discovery.wsdl">HelloType</A>&nbsp;ht)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/discovery/internal/WSDiscoveryServiceImpl.html#update(java.util.Map)">update</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;&nbsp;props)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="WSDiscoveryServiceImpl(org.apache.cxf.Bus)"><!-- --></A><H3>
+WSDiscoveryServiceImpl</H3>
+<PRE>
+public <B>WSDiscoveryServiceImpl</B>(<A HREF="../../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b)</PRE>
+<DL>
+</DL>
+<HR>
+
+<A NAME="WSDiscoveryServiceImpl()"><!-- --></A><H3>
+WSDiscoveryServiceImpl</H3>
+<PRE>
+public <B>WSDiscoveryServiceImpl</B>()</PRE>
+<DL>
+</DL>
+<HR>
+
+<A NAME="WSDiscoveryServiceImpl(org.apache.cxf.Bus, java.util.Map)"><!-- --></A><H3>
+WSDiscoveryServiceImpl</H3>
+<PRE>
+public <B>WSDiscoveryServiceImpl</B>(<A HREF="../../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b,
+                              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;&nbsp;props)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="update(java.util.Map)"><!-- --></A><H3>
+update</H3>
+<PRE>
+public final void <B>update</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;&nbsp;props)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getClient()"><!-- --></A><H3>
+getClient</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryClient.html" title="class in org.apache.cxf.ws.discovery">WSDiscoveryClient</A> <B>getClient</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryService.html#getClient()">WSDiscoveryService</A></CODE></B></DD>
+<DD>The service requires a WSDiscoveryClient in order to interact with a DiscoveryProxy, send Hello/Bye/etc..
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryService.html#getClient()">getClient</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryService.html" title="interface in org.apache.cxf.ws.discovery">WSDiscoveryService</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the client being used</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="register(javax.xml.ws.EndpointReference)"><!-- --></A><H3>
+register</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/ws/discovery/wsdl/HelloType.html" title="class in org.apache.cxf.ws.discovery.wsdl">HelloType</A> <B>register</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/EndpointReference.html?is-external=true" title="class or interface in javax.xml.ws">EndpointReference</A>&nbsp;ref)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryService.html#register(javax.xml.ws.EndpointReference)">WSDiscoveryService</A></CODE></B></DD>
+<DD>Registers the given EndpointReference with the service.  Also sends the UDP "Hello"
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryService.html#register(javax.xml.ws.EndpointReference)">register</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryService.html" title="interface in org.apache.cxf.ws.discovery">WSDiscoveryService</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the HelloType that was sent so it can be used to call unregister</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="register(org.apache.cxf.ws.discovery.wsdl.HelloType)"><!-- --></A><H3>
+register</H3>
+<PRE>
+public void <B>register</B>(<A HREF="../../../../../../org/apache/cxf/ws/discovery/wsdl/HelloType.html" title="class in org.apache.cxf.ws.discovery.wsdl">HelloType</A>&nbsp;ht)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryService.html#register(org.apache.cxf.ws.discovery.wsdl.HelloType)">register</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryService.html" title="interface in org.apache.cxf.ws.discovery">WSDiscoveryService</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="serverStarted(org.apache.cxf.endpoint.Server)"><!-- --></A><H3>
+serverStarted</H3>
+<PRE>
+public void <B>serverStarted</B>(<A HREF="../../../../../../org/apache/cxf/endpoint/Server.html" title="interface in org.apache.cxf.endpoint">Server</A>&nbsp;server)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryService.html#serverStarted(org.apache.cxf.endpoint.Server)">WSDiscoveryService</A></CODE></B></DD>
+<DD>Utility methods to aid in calling the register/unregister for the appropriate CXF server
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryService.html#serverStarted(org.apache.cxf.endpoint.Server)">serverStarted</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryService.html" title="interface in org.apache.cxf.ws.discovery">WSDiscoveryService</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="serverStopped(org.apache.cxf.endpoint.Server)"><!-- --></A><H3>
+serverStopped</H3>
+<PRE>
+public void <B>serverStopped</B>(<A HREF="../../../../../../org/apache/cxf/endpoint/Server.html" title="interface in org.apache.cxf.endpoint">Server</A>&nbsp;server)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryService.html#serverStopped(org.apache.cxf.endpoint.Server)">serverStopped</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryService.html" title="interface in org.apache.cxf.ws.discovery">WSDiscoveryService</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unregister(org.apache.cxf.ws.discovery.wsdl.HelloType)"><!-- --></A><H3>
+unregister</H3>
+<PRE>
+public void <B>unregister</B>(<A HREF="../../../../../../org/apache/cxf/ws/discovery/wsdl/HelloType.html" title="class in org.apache.cxf.ws.discovery.wsdl">HelloType</A>&nbsp;ht)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryService.html#unregister(org.apache.cxf.ws.discovery.wsdl.HelloType)">unregister</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/ws/discovery/WSDiscoveryService.html" title="interface in org.apache.cxf.ws.discovery">WSDiscoveryService</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="startup()"><!-- --></A><H3>
+startup</H3>
+<PRE>
+public void <B>startup</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="startup(boolean)"><!-- --></A><H3>
+startup</H3>
+<PRE>
+public boolean <B>startup</B>(boolean&nbsp;optional)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="handleProbe(org.apache.cxf.ws.discovery.wsdl.ProbeType)"><!-- --></A><H3>
+handleProbe</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/ws/discovery/wsdl/ProbeMatchesType.html" title="class in org.apache.cxf.ws.discovery.wsdl">ProbeMatchesType</A> <B>handleProbe</B>(<A HREF="../../../../../../org/apache/cxf/ws/discovery/wsdl/ProbeType.html" title="class in org.apache.cxf.ws.discovery.wsdl">ProbeType</A>&nbsp;pt)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/WSDiscoveryServiceImpl.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/ws/discovery/internal/WSDiscoveryServiceImpl.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="WSDiscoveryServiceImpl.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

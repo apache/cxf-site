@@ -1,0 +1,310 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - DOSGi DS Demo page">
+
+
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shCoreCXF.css">
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shThemeCXF.css">
+
+<script src='/resources/highlighter/scripts/shCore.js'></script>
+<script src='/resources/highlighter/scripts/shBrushBash.js'></script>
+<script src='/resources/highlighter/scripts/shBrushXml.js'></script>
+<script src='/resources/highlighter/scripts/shBrushJava.js'></script>
+<script>
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+
+    <title>
+Apache CXF -- DOSGi DS Demo page
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="distributed-osgi.html">Distributed OSGi</a>&nbsp;&gt;&nbsp;<a href="dosgi-demos.html">DOSGi Demos</a>&nbsp;&gt;&nbsp;<a href="dosgi-ds-demo-page.html">DOSGi DS Demo page</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><p>This page describes the CXF Distributed OSGi with Declarative Services demo.</p>
+
+<p>The Declarative Services demo uses a DS implementation to create a remoted OSGi service from a DS component. The consumer side uses DS to create a component that consumes the remote OSGi service. By using Declarative Services, you don't need to write code to interact with the OSGi Service Registry. That's all handled through injection which hugely simpliefies the code.<br clear="none">
+Declarative Services is similar to Spring-DM/OSGi Blueprint in that service dependencies are satisfied through injection. There are a few differences as well. DS is lighter weight than Spring-DM but also has less features. Declarative Services have been part of the OSGi specifications since version 4.0.</p>
+
+<p>This demo can be used with any DOSGi distribution, in this document the single-bundle distribution is used with the Equinox implementation of DS.</p>
+
+<h2 id="DOSGiDSDemopage-Demodesign">Demo design</h2>
+
+<p>This demo is quite similar to the Spring-DM demo and the Greeter demo in structure. It consists of 3 bundles:</p>
+<ul><li>An interface bundle defining the Adder Service interface.</li><li>An Adder Service implementation bundle.</li><li>An Adder Service consumer bundle.</li></ul>
+
+
+<p>The service implementation and consumer bundle are built using DS.<br clear="none">
+<span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="dosgi-ds-demo-page.data/dosgi_cxf_ds.png"></span><br clear="none">
+The <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/ds/interface/src/main/java/org/apache/cxf/dosgi/samples/ds/AdderService.java">Adder Service interface</a> is as follows:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">public interface AdderService {
+    int add(int a, int b);
+}</pre>
+</div></div>
+
+<h2 id="DOSGiDSDemopage-TheAdderServiceImplementation">The Adder Service Implementation</h2>
+
+<p>The service implementation providers a <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/ds/impl/src/main/java/org/apache/cxf/dosgi/samples/ds/impl/AdderServiceImpl.java">simplistic implementation of the AdderService interface</a>, which is instantiated as a DS component.</p>
+
+<p>In the <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/ds/impl/src/main/resources/OSGI-INF/component.xml"><code>OSGI-INF/component.xml</code></a> file the AdderServiceImpl is instantiated and registered with the OSGi service registry with the distribution properties. These properties instruct. Distributed OSGi into making the service available on <a shape="rect" class="external-link" href="http://localhost:9090/adder" rel="nofollow">http://localhost:9090/adder</a>.</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">&lt;scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" name="DS Service Sample"&gt;
+  &lt;implementation class="org.apache.cxf.dosgi.samples.ds.impl.AdderServiceImpl"/&gt;
+
+  &lt;property name="service.exported.interfaces" value="*" /&gt;
+  &lt;property name="service.exported.configs" value="org.apache.cxf.ws" /&gt;
+  &lt;property name="org.apache.cxf.ws.address" value="http://localhost:9090/adder" /&gt;
+
+  &lt;service&gt;
+    &lt;provide interface="org.apache.cxf.dosgi.samples.ds.AdderService"/&gt;
+  &lt;/service&gt;
+&lt;/scr:component&gt;</pre>
+</div></div>
+<p>Note that the <code>META-INF/MANIFEST.MF</code> file needs to contain a special DS header that tells the system where to find this file. In case of this demo, this header is added by the Maven build system. The header used by the demo is:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">  Service-Component: OSGI-INF/component.xml</pre>
+</div></div>
+
+<p>So let's install the server side in Equinox, together with the Equinox DS implementation. You can do this from the Equinox command line, but in this document I'll launch Equinox from within Eclipse (last tried with Eclipse 3.6).<br clear="none">
+I'm starting off by importing the Single Bundle Distribution as a binary project in Eclipse by going <em>File -&gt; Import | Plug-ins and Fragments</em> and then select the directory that contains the single bundle distribution JAR file. My workspace now looks like this:<br clear="none">
+<span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="dosgi-ds-demo-page.data/start.JPG"></span><br clear="none">
+Next I'll create an OSGi Framework launch configuration that includes DS. To do this</p>
+<ol><li><em>deselect</em> the 'Target Platform' tickbox in the Eclipse Launch configuration screen</li><li>select org.eclipse.equinox.ds</li><li>hit the 'Add Required Bundles' button</li></ol>
+
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="dosgi-ds-demo-page.data/launch.JPG"></span></p>
+
+<p>Now run the OSGi container, you will get a setup like this:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">osgi&gt; ss
+
+Framework is launched.
+
+id	State       Bundle
+0	ACTIVE      org.eclipse.osgi_3.5.0.v20090520
+1	ACTIVE      org.eclipse.equinox.util_1.0.100.v20090520-1800
+2	ACTIVE      org.eclipse.osgi.services_3.2.0.v20090520-1800
+3	ACTIVE      cxf-dosgi-ri-singlebundle-distribution
+4	ACTIVE      org.eclipse.equinox.ds_1.1.0.v20090520-1800</pre>
+</div></div>
+<p>Now I can install the DOSGi DS bundles in the OSGi container directly from the maven repository.</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">osgi&gt; install http://repo1.maven.org/maven2/org/apache/cxf/dosgi/samples/cxf-dosgi-ri-samples-ds-interface/1.2/cxf-dosgi-ri-samples-ds-interface-1.2.jar
+Bundle id is 5
+
+osgi&gt; install http://repo1.maven.org/maven2/org/apache/cxf/dosgi/samples/cxf-dosgi-ri-samples-ds-impl/1.2/cxf-dosgi-ri-samples-ds-impl-1.2.jar
+Bundle id is 6
+
+osgi&gt; start 6
+... log messages may appear ...</pre>
+</div></div>
+<div class="confluence-information-macro confluence-information-macro-tip"><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>You can also import the maven projects of the DS demo into Eclipse, this would save you from installing it with a URL as above. To do this, check out the CXF/DOSGi source from SVN (<a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk">http://svn.apache.org/repos/asf/cxf/dosgi/trunk</a>), run <code>mvn eclipse:eclipse</code> and import all Eclipse projects under the <code>samples/ds</code> directory in Eclipse with <em>File -&gt; Import | Existing Projects into Workspace</em>.</p></div></div>
+<p>At this point, the service should be available remotely, you can check this by obtaining the WSDL:<br clear="none">
+<span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="dosgi-ds-demo-page.data/wsdl.JPG"></span></p>
+
+<h2 id="DOSGiDSDemopage-TheAdderServiceConsumer">The Adder Service Consumer</h2>
+
+<p>The service consumer is also created using DS. DS creates an AdderConsumer component which is injected with a reference to the remote AdderService. Like in Spring, the injection is done by DS, which makes the code nice and simple. When the injection is done, the start() method is called.</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">public class AdderConsumer {
+    private AdderService adder;
+
+    public void bindAdder(AdderService a) {
+        adder = a;
+    }
+
+    public void unbindAdder(AdderService a) {
+        adder = null;
+    }
+
+    public void start(ComponentContext cc) {
+        System.out.println("Using adder service: 1 + 1 = " + adder.add(1, 1));
+    }
+}</pre>
+</div></div>
+<p>The client side bundle contains an <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/ds/client/src/main/resources/OSGI-INF/component.xml"><code>OSGI-INF/component.xml</code></a> which drives the component creation and injection:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">&lt;scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0" activate="start"&gt;
+   &lt;implementation class="org.apache.cxf.dosgi.samples.ds.consumer.AdderConsumer"/&gt;
+   &lt;reference interface="org.apache.cxf.dosgi.samples.ds.AdderService" name="AdderService" cardinality="1..1" policy="dynamic" bind="bindAdder" unbind="unbindAdder"/&gt;
+&lt;/scr:component&gt;</pre>
+</div></div>
+<p>As on the service provider side, the client side bundle needs to contain the DS header in the <code>META-INF/MANIFEST.MF</code>:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">  Service-Component: OSGI-INF/component.xml</pre>
+</div></div>
+<p>As in the Greeter demo, the client side needs to be configured to know where the remote service actually is. This is one in the <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/ds/client/src/main/resources/OSGI-INF/remote-service/remote-services.xml"><code>OSGI-INF/remote-service/remote-services.xml</code></a> file:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">&lt;endpoint-descriptions xmlns="http://www.osgi.org/xmlns/rsa/v1.0.0"&gt;
+  &lt;endpoint-description&gt;
+    &lt;property name="objectClass"&gt;
+      &lt;array&gt;
+        &lt;value&gt;org.apache.cxf.dosgi.samples.ds.AdderService&lt;/value&gt;
+      &lt;/array&gt;
+    &lt;/property&gt;
+    &lt;property name="endpoint.id"&gt;http://localhost:9090/adder&lt;/property&gt;
+    &lt;property name="service.imported.configs"&gt;org.apache.cxf.ws&lt;/property&gt;
+  &lt;/endpoint-description&gt;
+&lt;/endpoint-descriptions&gt;</pre>
+</div></div>
+<p>Install and run the consumer side of the demo in a separate Equinox instance (tip: you can duplicate the launch configuration used for the server side in the 'Run Configurations' dialog):</p>
+
+
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">osgi&gt; install http://repo1.maven.org/maven2/org/apache/cxf/dosgi/samples/cxf-dosgi-ri-samples-ds-interface/1.2/cxf-dosgi-ri-samples-ds-interface-1.2.jar
+Bundle id is 5
+
+osgi&gt; install http://repo1.maven.org/maven2/org/apache/cxf/dosgi/samples/cxf-dosgi-ri-samples-ds-client/1.2/cxf-dosgi-ri-samples-ds-client-1.2.jar
+Bundle id is 6
+
+osgi&gt; start 6
+... log messages may appear, after a little while the following message appears:
+Using adder service: 1 + 1 = 2</pre>
+</div></div>
+<p>The remote adder service has now been invoked. You will see the following line on the server side Equinox window:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">Adder service invoked: 1 + 1 = 2</pre>
+</div></div>
+
+<h3 id="DOSGiDSDemopage-ConsumerNote">Consumer Note</h3>
+
+<p>Some OSGi Declarative Services implementations don't explicitly register interest in the requested services with the OSGi Framework. They rather user a generic Service Tracker or Service Listener to track all available services. This doesn't provide the CXF-DOSGi implementation with the information about what services the consumer is looking for through the ListenerHook and hence it can't register the remote service on-the-fly. A simple workaround to this problem is to add an Activator to a bundle in the client-side framework (this activator could be in any bundle) which registers an explicit ServiceTracker for the remote service the DS component wants to be injected with. An example of such an <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/ds/client/src/main/java/org/apache/cxf/dosgi/samples/ds/consumer/Activator.java">Activator can be found here</a>.</p>
+
+<p>In the future a more elegant solution to this problem will hopefully be provided.</p></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=119430">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=119430&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

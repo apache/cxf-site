@@ -1,0 +1,782 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+EncryptedType (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="EncryptedType (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/EncryptedType.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedKeyType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/xkms/model/xmlenc/EncryptedType.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="EncryptedType.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.xkms.model.xmlenc</FONT>
+<BR>
+Class EncryptedType</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.xkms.model.xmlenc.EncryptedType</B>
+</PRE>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptedDataType</A>, <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedKeyType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptedKeyType</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>EncryptedType</B><DT>extends <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+<p>Java class for EncryptedType complex type.
+ 
+ <p>The following schema fragment specifies the expected content contained within this class.
+ 
+ <pre>
+ &lt;complexType name="EncryptedType">
+   &lt;complexContent>
+     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
+       &lt;sequence>
+         &lt;element name="EncryptionMethod" type="{http://www.w3.org/2001/04/xmlenc#}EncryptionMethodType" minOccurs="0"/>
+         &lt;element ref="{http://www.w3.org/2000/09/xmldsig#}KeyInfo" minOccurs="0"/>
+         &lt;element ref="{http://www.w3.org/2001/04/xmlenc#}CipherData"/>
+         &lt;element ref="{http://www.w3.org/2001/04/xmlenc#}EncryptionProperties" minOccurs="0"/>
+       &lt;/sequence>
+       &lt;attribute name="Id" type="{http://www.w3.org/2001/XMLSchema}ID" />
+       &lt;attribute name="Type" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
+       &lt;attribute name="MimeType" type="{http://www.w3.org/2001/XMLSchema}string" />
+       &lt;attribute name="Encoding" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
+     &lt;/restriction>
+   &lt;/complexContent>
+ &lt;/complexType>
+ </pre>
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherDataType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#cipherData">cipherData</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#encoding">encoding</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionMethodType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#encryptionMethod">encryptionMethod</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertiesType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#encryptionProperties">encryptionProperties</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#id">id</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig">KeyInfoType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#keyInfo">keyInfo</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#mimeType">mimeType</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#type">type</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#EncryptedType()">EncryptedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherDataType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#getCipherData()">getCipherData</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the cipherData property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#getEncoding()">getEncoding</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the encoding property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionMethodType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#getEncryptionMethod()">getEncryptionMethod</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the encryptionMethod property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertiesType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#getEncryptionProperties()">getEncryptionProperties</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the encryptionProperties property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#getId()">getId</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the id property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig">KeyInfoType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#getKeyInfo()">getKeyInfo</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the keyInfo property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#getMimeType()">getMimeType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the mimeType property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#getType()">getType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gets the value of the type property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#setCipherData(org.apache.cxf.xkms.model.xmlenc.CipherDataType)">setCipherData</A></B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherDataType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the cipherData property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#setEncoding(java.lang.String)">setEncoding</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the encoding property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#setEncryptionMethod(org.apache.cxf.xkms.model.xmlenc.EncryptionMethodType)">setEncryptionMethod</A></B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionMethodType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the encryptionMethod property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#setEncryptionProperties(org.apache.cxf.xkms.model.xmlenc.EncryptionPropertiesType)">setEncryptionProperties</A></B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertiesType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the encryptionProperties property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#setId(java.lang.String)">setId</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the id property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#setKeyInfo(org.apache.cxf.xkms.model.xmldsig.KeyInfoType)">setKeyInfo</A></B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig">KeyInfoType</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the keyInfo property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#setMimeType(java.lang.String)">setMimeType</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the mimeType property.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedType.html#setType(java.lang.String)">setType</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets the value of the type property.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="encryptionMethod"><!-- --></A><H3>
+encryptionMethod</H3>
+<PRE>
+protected <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionMethodType</A> <B>encryptionMethod</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="keyInfo"><!-- --></A><H3>
+keyInfo</H3>
+<PRE>
+protected <A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig">KeyInfoType</A> <B>keyInfo</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="cipherData"><!-- --></A><H3>
+cipherData</H3>
+<PRE>
+protected <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherDataType</A> <B>cipherData</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="encryptionProperties"><!-- --></A><H3>
+encryptionProperties</H3>
+<PRE>
+protected <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertiesType</A> <B>encryptionProperties</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="id"><!-- --></A><H3>
+id</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>id</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="type"><!-- --></A><H3>
+type</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>type</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="mimeType"><!-- --></A><H3>
+mimeType</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>mimeType</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="encoding"><!-- --></A><H3>
+encoding</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>encoding</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="EncryptedType()"><!-- --></A><H3>
+EncryptedType</H3>
+<PRE>
+public <B>EncryptedType</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getEncryptionMethod()"><!-- --></A><H3>
+getEncryptionMethod</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionMethodType</A> <B>getEncryptionMethod</B>()</PRE>
+<DL>
+<DD>Gets the value of the encryptionMethod property.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptionMethodType</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEncryptionMethod(org.apache.cxf.xkms.model.xmlenc.EncryptionMethodType)"><!-- --></A><H3>
+setEncryptionMethod</H3>
+<PRE>
+public void <B>setEncryptionMethod</B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionMethodType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the encryptionMethod property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptionMethodType</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getKeyInfo()"><!-- --></A><H3>
+getKeyInfo</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig">KeyInfoType</A> <B>getKeyInfo</B>()</PRE>
+<DL>
+<DD>Gets the value of the keyInfo property.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig"><CODE>KeyInfoType</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setKeyInfo(org.apache.cxf.xkms.model.xmldsig.KeyInfoType)"><!-- --></A><H3>
+setKeyInfo</H3>
+<PRE>
+public void <B>setKeyInfo</B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig">KeyInfoType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the keyInfo property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="../../../../../../org/apache/cxf/xkms/model/xmldsig/KeyInfoType.html" title="class in org.apache.cxf.xkms.model.xmldsig"><CODE>KeyInfoType</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCipherData()"><!-- --></A><H3>
+getCipherData</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherDataType</A> <B>getCipherData</B>()</PRE>
+<DL>
+<DD>Gets the value of the cipherData property.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>CipherDataType</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setCipherData(org.apache.cxf.xkms.model.xmlenc.CipherDataType)"><!-- --></A><H3>
+setCipherData</H3>
+<PRE>
+public void <B>setCipherData</B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc">CipherDataType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the cipherData property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/CipherDataType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>CipherDataType</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEncryptionProperties()"><!-- --></A><H3>
+getEncryptionProperties</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertiesType</A> <B>getEncryptionProperties</B>()</PRE>
+<DL>
+<DD>Gets the value of the encryptionProperties property.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptionPropertiesType</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEncryptionProperties(org.apache.cxf.xkms.model.xmlenc.EncryptionPropertiesType)"><!-- --></A><H3>
+setEncryptionProperties</H3>
+<PRE>
+public void <B>setEncryptionProperties</B>(<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc">EncryptionPropertiesType</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the encryptionProperties property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionPropertiesType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><CODE>EncryptionPropertiesType</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getId()"><!-- --></A><H3>
+getId</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getId</B>()</PRE>
+<DL>
+<DD>Gets the value of the id property.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setId(java.lang.String)"><!-- --></A><H3>
+setId</H3>
+<PRE>
+public void <B>setId</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the id property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getType()"><!-- --></A><H3>
+getType</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getType</B>()</PRE>
+<DL>
+<DD>Gets the value of the type property.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setType(java.lang.String)"><!-- --></A><H3>
+setType</H3>
+<PRE>
+public void <B>setType</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the type property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMimeType()"><!-- --></A><H3>
+getMimeType</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getMimeType</B>()</PRE>
+<DL>
+<DD>Gets the value of the mimeType property.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMimeType(java.lang.String)"><!-- --></A><H3>
+setMimeType</H3>
+<PRE>
+public void <B>setMimeType</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the mimeType property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEncoding()"><!-- --></A><H3>
+getEncoding</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getEncoding</B>()</PRE>
+<DL>
+<DD>Gets the value of the encoding property.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>possible object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEncoding(java.lang.String)"><!-- --></A><H3>
+setEncoding</H3>
+<PRE>
+public void <B>setEncoding</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD>Sets the value of the encoding property.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>value</CODE> - allowed object is
+     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang"><CODE>String</CODE></A></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/EncryptedType.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptedKeyType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/xkms/model/xmlenc/EncryptionMethodType.html" title="class in org.apache.cxf.xkms.model.xmlenc"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/xkms/model/xmlenc/EncryptedType.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="EncryptedType.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

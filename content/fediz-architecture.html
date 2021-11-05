@@ -1,0 +1,149 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - Fediz Architecture">
+
+
+
+
+    <title>
+Apache CXF -- Fediz Architecture
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="fediz.html">Fediz</a>&nbsp;&gt;&nbsp;<a href="fediz-architecture.html">Fediz Architecture</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><h1 id="FedizArchitecture-FedizArchitecture">Fediz Architecture</h1><p>This page describes the security architecture for WS-Federation and the message flow between the components in detail.<br clear="none"> The scope of Fediz is illustrated in the next section.</p><h3 id="FedizArchitecture-WS-FederationDesign">WS-Federation Design</h3><p>The following picture illustrates the main components of a Web Single Sign On (SSO) solution based on <a shape="rect" class="external-link" href="http://docs.oasis-open.org/wsfed/federation/v1.2/os/ws-federation-1.2-spec-os.html" rel="nofollow">WS-Federation</a> (<a shape="rect" class="external-link" href="http://docs.oasis-open.org/wsfed/federation/v1.2/os/ws-federation-1.2-spec-os.html#_Toc223175002" rel="nofollow">Passive Requestor Profile</a>). The Web Application is part of the Relying Party (RP) side whereas the Identity Provider (IDP/STS) is the central security server that is responsible to authenticate clients and issue security tokens based on the requirements by the RP.<br clear="none"> The IDP component leverages the STS capabilities to issue all sorts of security tokens.<br clear="none"> An browser first access the Web Application (RP) which redirects the browser to the IDP as the requestor is not authenticated. The IDP authenticates the user and requests a security token based on the requirements by the RP. The security token is "redirected" to the RP which validates the token and creates a session in the RP.</p><p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" src="fediz-architecture.data/Fediz_Highlevel.png"></span></p><p>Fediz provides the following components to implement Web SSO based on WS-Federation (red background):</p><ul><li><strong>Federation Plugin for RP</strong><br clear="none"> The plugin consists of two Fediz libraries. The core processing logic is within a container independent library. In addition, a library is provided for each container to adapt the core library to the container specific security API.</li></ul><ul><li><strong>IDP / STS</strong><br clear="none"> The IDP / STS leverages the Apache CXF STS. Fediz ships a fully configured STS where users/claims are managed in files. The STS can be configured to integrate an LDAP directory.</li></ul><ul><li><strong>Examples</strong><br clear="none"> Fediz ships examples to illustrate how to protect a web application.</li></ul><h3 id="FedizArchitecture-WS-FederationMessageflow">WS-Federation Message flow</h3><p>This section describes and illustrates the message flow between the browser and the application and IDP in more detail.</p><p><span class="confluence-embedded-file-wrapper image-center-wrapper"><img class="confluence-embedded-image image-center" src="fediz-architecture.data/Fediz_Detailed.png"></span></p><p>The browser accesses the web application (1). It is then redirected to IDP/STS if no token or cookie is supplied in the request (2). This redirection process may require prompting the user (3) to authenticate himself (4). The IDP/STS issues a signed SAML 2.0 security token (WS-Federation doesn&#8217;t mandate <a shape="rect" class="external-link" href="http://saml.xml.org/saml-specifications" rel="nofollow">SAML</a>). The IDP "redirects" (5/6) the user to the application server including the SAML token. The application server verifies the signature of the SAML token. There is a trust relationship between the application server and the IDP/STS which doesn't require network connectivity between the application server and the IDP/STS (Cloud!). After successful validation, a session is created and the corresponding cookie is set on the browser (7). Finally, the request is dispatched to the application.</p><p>As an extension to the description above, step 2 might contain specific claims requested by the application such as role, username, full name, email address, sales organization, etc. which are gathered by the STS.</p><p>Requirements of the Web Application are described in the <a shape="rect" class="external-link" href="http://docs.oasis-open.org/wsfed/federation/v1.2/os/ws-federation-1.2-spec-os.html#_Toc223174943" rel="nofollow">WS-Federation Metadata</a> document.</p><h3 id="FedizArchitecture-Components">Components</h3><h5 id="FedizArchitecture-WS-TrustSecurityTokenService(STS)">WS-Trust Security Token Service (STS)</h5><p>The <a shape="rect" class="external-link" href="http://docs.oasis-open.org/ws-sx/ws-trust/v1.4/os/ws-trust-1.4-spec-os.html" rel="nofollow">WS-Trust OASIS standard</a> specifies a runtime component called Security Token Service. A service consumer requests a security token from the STS which is sent to the service provider. Either the service provider can validate the security token on its own or sends a request to the STS for validation. This pattern is based on an indirect trust relationship between the service provider and the STS instead of a direct trust between the service provider and service consumer. As long as the service consumer is in the possession of a security token issued by a trusted STS, the service provider accepts this security token.</p><p>A key benefit of the STS is the reduced complexity for applications. A web service consumer doesn't have to know how to create the various types of security tokens its service providers require. Instead, it sends a request to the STS containing the requirements of the client and the service provider and attaches the returned security token to the outgoing SOAP message to the service provider.<br clear="none"> One service provider could require a SAML 1.1 token, another SAML 2.0 token and another custom binary security token. The service consumer doesn't have to understand SAML 1.1, SAML 2.0 or the custom binary security token. All he has to do is grab the returned token from the STS and attach it to the message. Thus, you can reduce the complexity in your application and move it to a centralized component.<br clear="none"> A web service consumer requests tokens from an STS if the service provider defines an IssuedToken assertion in its security policy. This policy can contain some additional information like the address of the STS, token type, claims, etc.</p><h5 id="FedizArchitecture-Identityprovider(IDP)">Identity provider (IDP)</h5><p>The security model of the STS builds on the foundation established by WS-Security and WS-Trust. The primary issue for Web browsers is that there is no easy way to directly send web service (SOAP) requests. Consequently, the processing must be performed within the confines of the base HTTP 1.1 functionality (GET, POST, redirects, and cookies) and conform as closely as possible to the WS-Trust protocols for token acquisition.<br clear="none"> The IDP is in charge of transforming the SignIn request of the browser to a SOAP request for the STS and the response of the STS to the SignInResponse for the browser. Further the browser user must authenticate himself with the IDP. At the time of initial authentication an artifact/cookie may be created for the browser so that every request for a resource doesn't require user interaction.</p><h3 id="FedizArchitecture-ClaimsbasedAccessControl">Claims based Access Control</h3><p>A claim is a statement made about a client. The concept of claim is described in the WS-Trust specification. Claims information of an authenticated subject can be carried in a Attribute Statement of a SAML token even WS-Trust doesn't mandate the usage of SAML token to carry this information.<br clear="none"> Role based Access Control (RBAC) is a subet of Claims based Access Control. The roles of a user/subject is just a claim statement.</p><p><br clear="none"></p></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=27849062">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=27849062&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

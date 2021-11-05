@@ -1,0 +1,802 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+FailoverTargetSelector (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="FailoverTargetSelector (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/FailoverTargetSelector.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../org/apache/cxf/clustering/FailoverStrategy.html" title="interface in org.apache.cxf.clustering"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationContext.html" title="class in org.apache.cxf.clustering"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?org/apache/cxf/clustering/FailoverTargetSelector.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="FailoverTargetSelector.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.clustering</FONT>
+<BR>
+Class FailoverTargetSelector</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html" title="class in org.apache.cxf.endpoint">org.apache.cxf.endpoint.AbstractConduitSelector</A>
+      <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.clustering.FailoverTargetSelector</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</A>, <A HREF="../../../../org/apache/cxf/endpoint/ConduitSelector.html" title="interface in org.apache.cxf.endpoint">ConduitSelector</A></DD>
+</DL>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../org/apache/cxf/clustering/LoadDistributorTargetSelector.html" title="class in org.apache.cxf.clustering">LoadDistributorTargetSelector</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>FailoverTargetSelector</B><DT>extends <A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html" title="class in org.apache.cxf.endpoint">AbstractConduitSelector</A></DL>
+</PRE>
+
+<P>
+Implements a target selection strategy based on failover to an 
+ alternate target endpoint when a transport level failure is 
+ encountered.
+ Note that this feature changes the conduit on the fly and thus makes
+ the Client not thread safe.
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationContext.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationContext</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Records the context of an invocation.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationKey.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationKey</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used to wrap an Exchange for usage as a Map key.</TD>
+</TR>
+</TABLE>
+&nbsp;<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../org/apache/cxf/clustering/FailoverStrategy.html" title="interface in org.apache.cxf.clustering">FailoverStrategy</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#failoverStrategy">failoverStrategy</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true" title="class or interface in java.util.concurrent">ConcurrentHashMap</A>&lt;<A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationKey.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationKey</A>,<A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationContext.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationContext</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#inProgress">inProgress</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.endpoint.AbstractConduitSelector"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.endpoint.<A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html" title="class in org.apache.cxf.endpoint">AbstractConduitSelector</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html#CONDUIT_COMPARE_FULL_URL">CONDUIT_COMPARE_FULL_URL</A>, <A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html#conduits">conduits</A>, <A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html#endpoint">endpoint</A>, <A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html#KEEP_CONDUIT_ALIVE">KEEP_CONDUIT_ALIVE</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#FailoverTargetSelector()">FailoverTargetSelector</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Normal constructor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#FailoverTargetSelector(org.apache.cxf.transport.Conduit)">FailoverTargetSelector</A></B>(<A HREF="../../../../org/apache/cxf/transport/Conduit.html" title="interface in org.apache.cxf.transport">Conduit</A>&nbsp;c)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructor, allowing a specific conduit to override normal selection.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#complete(org.apache.cxf.message.Exchange)">complete</A></B>(<A HREF="../../../../org/apache/cxf/message/Exchange.html" title="interface in org.apache.cxf.message">Exchange</A>&nbsp;exchange)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called on completion of the MEP for which the Conduit was required.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#doComplete(org.apache.cxf.message.Exchange)">doComplete</A></B>(<A HREF="../../../../org/apache/cxf/message/Exchange.html" title="interface in org.apache.cxf.message">Exchange</A>&nbsp;exchange)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;long</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#getDelayBetweenRetries()">getDelayBetweenRetries</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns delay (in milliseconds) between retries</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../org/apache/cxf/endpoint/Endpoint.html" title="interface in org.apache.cxf.endpoint">Endpoint</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#getFailoverTarget(org.apache.cxf.message.Exchange, org.apache.cxf.clustering.FailoverTargetSelector.InvocationContext)">getFailoverTarget</A></B>(<A HREF="../../../../org/apache/cxf/message/Exchange.html" title="interface in org.apache.cxf.message">Exchange</A>&nbsp;exchange,
+                  <A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationContext.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationContext</A>&nbsp;invocation)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the failover target endpoint, if a suitable one is available.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationContext.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationContext</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#getInvocationContext(org.apache.cxf.clustering.FailoverTargetSelector.InvocationKey)">getInvocationContext</A></B>(<A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationKey.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationKey</A>&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html?is-external=true" title="class or interface in java.util.logging">Logger</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#getLogger()">getLogger</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../org/apache/cxf/clustering/FailoverStrategy.html" title="interface in org.apache.cxf.clustering">FailoverStrategy</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#getStrategy()">getStrategy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#isSupportNotAvailableErrorsOnly()">isSupportNotAvailableErrorsOnly</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#onFailure(org.apache.cxf.clustering.FailoverTargetSelector.InvocationContext)">onFailure</A></B>(<A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationContext.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationContext</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#onSuccess(org.apache.cxf.clustering.FailoverTargetSelector.InvocationContext)">onSuccess</A></B>(<A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationContext.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationContext</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#overrideAddressProperty(java.util.Map)">overrideAddressProperty</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Override the ENDPOINT_ADDRESS property in the request context</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#overrideAddressProperty(java.util.Map, java.lang.String)">overrideAddressProperty</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;&nbsp;context,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;address)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#performFailover(org.apache.cxf.message.Exchange, org.apache.cxf.clustering.FailoverTargetSelector.InvocationContext)">performFailover</A></B>(<A HREF="../../../../org/apache/cxf/message/Exchange.html" title="interface in org.apache.cxf.message">Exchange</A>&nbsp;exchange,
+                <A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationContext.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationContext</A>&nbsp;invocation)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#prepare(org.apache.cxf.message.Message)">prepare</A></B>(<A HREF="../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called prior to the interceptor chain being traversed.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#replaceEndpointAddressPropertyIfNeeded(org.apache.cxf.message.Message, java.lang.String, org.apache.cxf.transport.Conduit)">replaceEndpointAddressPropertyIfNeeded</A></B>(<A HREF="../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+                                       <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;endpointAddress,
+                                       <A HREF="../../../../org/apache/cxf/transport/Conduit.html" title="interface in org.apache.cxf.transport">Conduit</A>&nbsp;cond)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#requiresFailover(org.apache.cxf.message.Exchange)">requiresFailover</A></B>(<A HREF="../../../../org/apache/cxf/message/Exchange.html" title="interface in org.apache.cxf.message">Exchange</A>&nbsp;exchange)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Check if the exchange is suitable for a failover.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../org/apache/cxf/transport/Conduit.html" title="interface in org.apache.cxf.transport">Conduit</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#selectConduit(org.apache.cxf.message.Message)">selectConduit</A></B>(<A HREF="../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called when a Conduit is actually required.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#setOriginalEndpoint(org.apache.cxf.clustering.FailoverTargetSelector.InvocationContext)">setOriginalEndpoint</A></B>(<A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationContext.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationContext</A>&nbsp;invocation)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#setStrategy(org.apache.cxf.clustering.FailoverStrategy)">setStrategy</A></B>(<A HREF="../../../../org/apache/cxf/clustering/FailoverStrategy.html" title="interface in org.apache.cxf.clustering">FailoverStrategy</A>&nbsp;strategy)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#setSupportNotAvailableErrorsOnly(boolean)">setSupportNotAvailableErrorsOnly</A></B>(boolean&nbsp;support)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.html#setupExchangeExceptionProperties(org.apache.cxf.message.Exchange)">setupExchangeExceptionProperties</A></B>(<A HREF="../../../../org/apache/cxf/message/Exchange.html" title="interface in org.apache.cxf.message">Exchange</A>&nbsp;ex)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.endpoint.AbstractConduitSelector"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.endpoint.<A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html" title="class in org.apache.cxf.endpoint">AbstractConduitSelector</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html#close()">close</A>, <A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html#createConduit(org.apache.cxf.message.Message, org.apache.cxf.message.Exchange, org.apache.cxf.transport.ConduitInitiator)">createConduit</A>, <A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html#findCompatibleConduit(org.apache.cxf.message.Message)">findCompatibleConduit</A>, <A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html#getEndpoint()">getEndpoint</A>, <A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html#getSelectedConduit(org.apache.cxf.message.Message)">getSelectedConduit</A>, <A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html#removeConduit(org.apache.cxf.transport.Conduit)">removeConduit</A>, <A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html#setEndpoint(org.apache.cxf.endpoint.Endpoint)">setEndpoint</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="inProgress"><!-- --></A><H3>
+inProgress</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/ConcurrentHashMap.html?is-external=true" title="class or interface in java.util.concurrent">ConcurrentHashMap</A>&lt;<A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationKey.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationKey</A>,<A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationContext.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationContext</A>&gt; <B>inProgress</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="failoverStrategy"><!-- --></A><H3>
+failoverStrategy</H3>
+<PRE>
+protected <A HREF="../../../../org/apache/cxf/clustering/FailoverStrategy.html" title="interface in org.apache.cxf.clustering">FailoverStrategy</A> <B>failoverStrategy</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="FailoverTargetSelector()"><!-- --></A><H3>
+FailoverTargetSelector</H3>
+<PRE>
+public <B>FailoverTargetSelector</B>()</PRE>
+<DL>
+<DD>Normal constructor.
+<P>
+</DL>
+<HR>
+
+<A NAME="FailoverTargetSelector(org.apache.cxf.transport.Conduit)"><!-- --></A><H3>
+FailoverTargetSelector</H3>
+<PRE>
+public <B>FailoverTargetSelector</B>(<A HREF="../../../../org/apache/cxf/transport/Conduit.html" title="interface in org.apache.cxf.transport">Conduit</A>&nbsp;c)</PRE>
+<DL>
+<DD>Constructor, allowing a specific conduit to override normal selection.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>c</CODE> - specific conduit</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="prepare(org.apache.cxf.message.Message)"><!-- --></A><H3>
+prepare</H3>
+<PRE>
+public void <B>prepare</B>(<A HREF="../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</PRE>
+<DL>
+<DD>Called prior to the interceptor chain being traversed.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>message</CODE> - the current Message</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setupExchangeExceptionProperties(org.apache.cxf.message.Exchange)"><!-- --></A><H3>
+setupExchangeExceptionProperties</H3>
+<PRE>
+protected void <B>setupExchangeExceptionProperties</B>(<A HREF="../../../../org/apache/cxf/message/Exchange.html" title="interface in org.apache.cxf.message">Exchange</A>&nbsp;ex)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="selectConduit(org.apache.cxf.message.Message)"><!-- --></A><H3>
+selectConduit</H3>
+<PRE>
+public <A HREF="../../../../org/apache/cxf/transport/Conduit.html" title="interface in org.apache.cxf.transport">Conduit</A> <B>selectConduit</B>(<A HREF="../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</PRE>
+<DL>
+<DD>Called when a Conduit is actually required.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>message</CODE> - 
+<DT><B>Returns:</B><DD>the Conduit to use for mediation of the message</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInvocationContext(org.apache.cxf.clustering.FailoverTargetSelector.InvocationKey)"><!-- --></A><H3>
+getInvocationContext</H3>
+<PRE>
+protected <A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationContext.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationContext</A> <B>getInvocationContext</B>(<A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationKey.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationKey</A>&nbsp;key)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="complete(org.apache.cxf.message.Exchange)"><!-- --></A><H3>
+complete</H3>
+<PRE>
+public void <B>complete</B>(<A HREF="../../../../org/apache/cxf/message/Exchange.html" title="interface in org.apache.cxf.message">Exchange</A>&nbsp;exchange)</PRE>
+<DL>
+<DD>Called on completion of the MEP for which the Conduit was required.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../org/apache/cxf/endpoint/ConduitSelector.html#complete(org.apache.cxf.message.Exchange)">complete</A></CODE> in interface <CODE><A HREF="../../../../org/apache/cxf/endpoint/ConduitSelector.html" title="interface in org.apache.cxf.endpoint">ConduitSelector</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html#complete(org.apache.cxf.message.Exchange)">complete</A></CODE> in class <CODE><A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html" title="class in org.apache.cxf.endpoint">AbstractConduitSelector</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>exchange</CODE> - represents the completed MEP</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="doComplete(org.apache.cxf.message.Exchange)"><!-- --></A><H3>
+doComplete</H3>
+<PRE>
+protected void <B>doComplete</B>(<A HREF="../../../../org/apache/cxf/message/Exchange.html" title="interface in org.apache.cxf.message">Exchange</A>&nbsp;exchange)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setOriginalEndpoint(org.apache.cxf.clustering.FailoverTargetSelector.InvocationContext)"><!-- --></A><H3>
+setOriginalEndpoint</H3>
+<PRE>
+protected void <B>setOriginalEndpoint</B>(<A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationContext.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationContext</A>&nbsp;invocation)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="performFailover(org.apache.cxf.message.Exchange, org.apache.cxf.clustering.FailoverTargetSelector.InvocationContext)"><!-- --></A><H3>
+performFailover</H3>
+<PRE>
+protected boolean <B>performFailover</B>(<A HREF="../../../../org/apache/cxf/message/Exchange.html" title="interface in org.apache.cxf.message">Exchange</A>&nbsp;exchange,
+                                  <A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationContext.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationContext</A>&nbsp;invocation)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onSuccess(org.apache.cxf.clustering.FailoverTargetSelector.InvocationContext)"><!-- --></A><H3>
+onSuccess</H3>
+<PRE>
+protected void <B>onSuccess</B>(<A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationContext.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationContext</A>&nbsp;context)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="onFailure(org.apache.cxf.clustering.FailoverTargetSelector.InvocationContext)"><!-- --></A><H3>
+onFailure</H3>
+<PRE>
+protected void <B>onFailure</B>(<A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationContext.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationContext</A>&nbsp;context)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setStrategy(org.apache.cxf.clustering.FailoverStrategy)"><!-- --></A><H3>
+setStrategy</H3>
+<PRE>
+public void <B>setStrategy</B>(<A HREF="../../../../org/apache/cxf/clustering/FailoverStrategy.html" title="interface in org.apache.cxf.clustering">FailoverStrategy</A>&nbsp;strategy)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>strategy</CODE> - the FailoverStrategy to use</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStrategy()"><!-- --></A><H3>
+getStrategy</H3>
+<PRE>
+public <A HREF="../../../../org/apache/cxf/clustering/FailoverStrategy.html" title="interface in org.apache.cxf.clustering">FailoverStrategy</A> <B>getStrategy</B>()</PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>strategy the FailoverStrategy to use</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getLogger()"><!-- --></A><H3>
+getLogger</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html?is-external=true" title="class or interface in java.util.logging">Logger</A> <B>getLogger</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html#getLogger()">getLogger</A></CODE> in class <CODE><A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html" title="class in org.apache.cxf.endpoint">AbstractConduitSelector</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the logger to use</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDelayBetweenRetries()"><!-- --></A><H3>
+getDelayBetweenRetries</H3>
+<PRE>
+protected long <B>getDelayBetweenRetries</B>()</PRE>
+<DL>
+<DD>Returns delay (in milliseconds) between retries
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>delay, 0 means no delay</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="requiresFailover(org.apache.cxf.message.Exchange)"><!-- --></A><H3>
+requiresFailover</H3>
+<PRE>
+protected boolean <B>requiresFailover</B>(<A HREF="../../../../org/apache/cxf/message/Exchange.html" title="interface in org.apache.cxf.message">Exchange</A>&nbsp;exchange)</PRE>
+<DL>
+<DD>Check if the exchange is suitable for a failover.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>exchange</CODE> - the current Exchange
+<DT><B>Returns:</B><DD>boolean true if a failover should be attempted</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFailoverTarget(org.apache.cxf.message.Exchange, org.apache.cxf.clustering.FailoverTargetSelector.InvocationContext)"><!-- --></A><H3>
+getFailoverTarget</H3>
+<PRE>
+protected <A HREF="../../../../org/apache/cxf/endpoint/Endpoint.html" title="interface in org.apache.cxf.endpoint">Endpoint</A> <B>getFailoverTarget</B>(<A HREF="../../../../org/apache/cxf/message/Exchange.html" title="interface in org.apache.cxf.message">Exchange</A>&nbsp;exchange,
+                                     <A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationContext.html" title="class in org.apache.cxf.clustering">FailoverTargetSelector.InvocationContext</A>&nbsp;invocation)</PRE>
+<DL>
+<DD>Get the failover target endpoint, if a suitable one is available.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>exchange</CODE> - the current Exchange<DD><CODE>invocation</CODE> - the current InvocationContext
+<DT><B>Returns:</B><DD>a failover endpoint if one is available</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="overrideAddressProperty(java.util.Map)"><!-- --></A><H3>
+overrideAddressProperty</H3>
+<PRE>
+protected void <B>overrideAddressProperty</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;&nbsp;context)</PRE>
+<DL>
+<DD>Override the ENDPOINT_ADDRESS property in the request context
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>context</CODE> - the request context</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="overrideAddressProperty(java.util.Map, java.lang.String)"><!-- --></A><H3>
+overrideAddressProperty</H3>
+<PRE>
+protected void <B>overrideAddressProperty</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;&nbsp;context,
+                                       <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;address)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="replaceEndpointAddressPropertyIfNeeded(org.apache.cxf.message.Message, java.lang.String, org.apache.cxf.transport.Conduit)"><!-- --></A><H3>
+replaceEndpointAddressPropertyIfNeeded</H3>
+<PRE>
+protected boolean <B>replaceEndpointAddressPropertyIfNeeded</B>(<A HREF="../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+                                                         <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;endpointAddress,
+                                                         <A HREF="../../../../org/apache/cxf/transport/Conduit.html" title="interface in org.apache.cxf.transport">Conduit</A>&nbsp;cond)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html#replaceEndpointAddressPropertyIfNeeded(org.apache.cxf.message.Message, java.lang.String, org.apache.cxf.transport.Conduit)">replaceEndpointAddressPropertyIfNeeded</A></CODE> in class <CODE><A HREF="../../../../org/apache/cxf/endpoint/AbstractConduitSelector.html" title="class in org.apache.cxf.endpoint">AbstractConduitSelector</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSupportNotAvailableErrorsOnly()"><!-- --></A><H3>
+isSupportNotAvailableErrorsOnly</H3>
+<PRE>
+public boolean <B>isSupportNotAvailableErrorsOnly</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSupportNotAvailableErrorsOnly(boolean)"><!-- --></A><H3>
+setSupportNotAvailableErrorsOnly</H3>
+<PRE>
+public void <B>setSupportNotAvailableErrorsOnly</B>(boolean&nbsp;support)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/FailoverTargetSelector.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../org/apache/cxf/clustering/FailoverStrategy.html" title="interface in org.apache.cxf.clustering"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../org/apache/cxf/clustering/FailoverTargetSelector.InvocationContext.html" title="class in org.apache.cxf.clustering"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?org/apache/cxf/clustering/FailoverTargetSelector.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="FailoverTargetSelector.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

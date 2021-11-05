@@ -1,0 +1,464 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+RedirectionBasedGrantService (Apache CXF Bundle Jar 2.6.3 API)
+</TITLE>
+
+<META NAME="keywords" CONTENT="org.apache.cxf.rs.security.oauth2.services.RedirectionBasedGrantService class">
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="RedirectionBasedGrantService (Apache CXF Bundle Jar 2.6.3 API)";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RedirectionBasedGrantService.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/ImplicitGrantService.html" title="class in org.apache.cxf.rs.security.oauth2.services"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/rs/security/oauth2/services/RedirectionBasedGrantService.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RedirectionBasedGrantService.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.rs.security.oauth2.services</FONT>
+<BR>
+Class RedirectionBasedGrantService</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/AbstractOAuthService.html" title="class in org.apache.cxf.rs.security.oauth2.services">org.apache.cxf.rs.security.oauth2.services.AbstractOAuthService</A>
+      <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.rs.security.oauth2.services.RedirectionBasedGrantService</B>
+</PRE>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/AuthorizationCodeGrantService.html" title="class in org.apache.cxf.rs.security.oauth2.services">AuthorizationCodeGrantService</A>, <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/ImplicitGrantService.html" title="class in org.apache.cxf.rs.security.oauth2.services">ImplicitGrantService</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>RedirectionBasedGrantService</B><DT>extends <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/AbstractOAuthService.html" title="class in org.apache.cxf.rs.security.oauth2.services">AbstractOAuthService</A></DL>
+</PRE>
+
+<P>
+The Base Redirection-Based Grant Service
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/RedirectionBasedGrantService.html#RedirectionBasedGrantService(java.lang.String, java.lang.String, boolean)">RedirectionBasedGrantService</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;supportedResponseType,
+                             <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;supportedGrantType,
+                             boolean&nbsp;isConfidential)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.ws.rs.core.Response</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/RedirectionBasedGrantService.html#authorize()">authorize</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Handles the initial authorization request by preparing 
+ the authorization challenge data and returning it to the user.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.ws.rs.core.Response</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/RedirectionBasedGrantService.html#authorizeDecision()">authorizeDecision</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Processes the end user decision</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.ws.rs.core.Response</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/RedirectionBasedGrantService.html#authorizeDecisionForm(javax.ws.rs.core.MultivaluedMap)">authorizeDecisionForm</A></B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;params)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Processes the end user decision</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;javax.ws.rs.core.Response</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/RedirectionBasedGrantService.html#completeAuthorization(javax.ws.rs.core.MultivaluedMap)">completeAuthorization</A></B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;params)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Completes the authorization process</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/common/OAuthAuthorizationData.html" title="class in org.apache.cxf.rs.security.oauth2.common">OAuthAuthorizationData</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/RedirectionBasedGrantService.html#createAuthorizationData(org.apache.cxf.rs.security.oauth2.common.Client, javax.ws.rs.core.MultivaluedMap, java.util.List)">createAuthorizationData</A></B>(<A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/common/Client.html" title="class in org.apache.cxf.rs.security.oauth2.common">Client</A>&nbsp;client,
+                        javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;params,
+                        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/common/OAuthPermission.html" title="class in org.apache.cxf.rs.security.oauth2.common">OAuthPermission</A>&gt;&nbsp;perms)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create the authorization challenge data</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected abstract &nbsp;javax.ws.rs.core.Response</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/RedirectionBasedGrantService.html#createErrorResponse(javax.ws.rs.core.MultivaluedMap, java.lang.String, java.lang.String)">createErrorResponse</A></B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;params,
+                    <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;redirectUri,
+                    <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;error)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected abstract &nbsp;javax.ws.rs.core.Response</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/RedirectionBasedGrantService.html#createGrant(javax.ws.rs.core.MultivaluedMap, org.apache.cxf.rs.security.oauth2.common.Client, java.lang.String, java.util.List, java.util.List, org.apache.cxf.rs.security.oauth2.common.UserSubject, org.apache.cxf.rs.security.oauth2.common.ServerAccessToken)">createGrant</A></B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;params,
+            <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/common/Client.html" title="class in org.apache.cxf.rs.security.oauth2.common">Client</A>&nbsp;client,
+            <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;redirectUri,
+            <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;requestedScope,
+            <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;approvedScope,
+            <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/common/UserSubject.html" title="class in org.apache.cxf.rs.security.oauth2.common">UserSubject</A>&nbsp;userSubject,
+            <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/common/ServerAccessToken.html" title="class in org.apache.cxf.rs.security.oauth2.common">ServerAccessToken</A>&nbsp;preAuthorizedToken)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;javax.ws.rs.core.Response</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/RedirectionBasedGrantService.html#startAuthorization(javax.ws.rs.core.MultivaluedMap)">startAuthorization</A></B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;params)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Starts the authorization process</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/RedirectionBasedGrantService.html#validateRedirectUri(org.apache.cxf.rs.security.oauth2.common.Client, java.lang.String)">validateRedirectUri</A></B>(<A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/common/Client.html" title="class in org.apache.cxf.rs.security.oauth2.common">Client</A>&nbsp;client,
+                    <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;redirectUri)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.rs.security.oauth2.services.AbstractOAuthService"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.rs.security.oauth2.services.<A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/AbstractOAuthService.html" title="class in org.apache.cxf.rs.security.oauth2.services">AbstractOAuthService</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/AbstractOAuthService.html#checkTransportSecurity()">checkTransportSecurity</A>, <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/AbstractOAuthService.html#getClient(javax.ws.rs.core.MultivaluedMap)">getClient</A>, <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/AbstractOAuthService.html#getClient(java.lang.String)">getClient</A>, <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/AbstractOAuthService.html#getDataProvider()">getDataProvider</A>, <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/AbstractOAuthService.html#getMessageContext()">getMessageContext</A>, <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/AbstractOAuthService.html#getQueryParameters()">getQueryParameters</A>, <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/AbstractOAuthService.html#reportInvalidRequestError(java.lang.String)">reportInvalidRequestError</A>, <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/AbstractOAuthService.html#setBlockUnsecureRequests(boolean)">setBlockUnsecureRequests</A>, <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/AbstractOAuthService.html#setDataProvider(org.apache.cxf.rs.security.oauth2.provider.OAuthDataProvider)">setDataProvider</A>, <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/AbstractOAuthService.html#setMessageContext(org.apache.cxf.jaxrs.ext.MessageContext)">setMessageContext</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="RedirectionBasedGrantService(java.lang.String, java.lang.String, boolean)"><!-- --></A><H3>
+RedirectionBasedGrantService</H3>
+<PRE>
+protected <B>RedirectionBasedGrantService</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;supportedResponseType,
+                                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;supportedGrantType,
+                                       boolean&nbsp;isConfidential)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="authorize()"><!-- --></A><H3>
+authorize</H3>
+<PRE>
+public javax.ws.rs.core.Response <B>authorize</B>()</PRE>
+<DL>
+<DD>Handles the initial authorization request by preparing 
+ the authorization challenge data and returning it to the user.
+ Typically the data are expected to be presented in the HTML form
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the authorization data</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="authorizeDecision()"><!-- --></A><H3>
+authorizeDecision</H3>
+<PRE>
+public javax.ws.rs.core.Response <B>authorizeDecision</B>()</PRE>
+<DL>
+<DD>Processes the end user decision
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The grant value, authorization code or the token</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="authorizeDecisionForm(javax.ws.rs.core.MultivaluedMap)"><!-- --></A><H3>
+authorizeDecisionForm</H3>
+<PRE>
+public javax.ws.rs.core.Response <B>authorizeDecisionForm</B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;params)</PRE>
+<DL>
+<DD>Processes the end user decision
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>The grant value, authorization code or the token</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="startAuthorization(javax.ws.rs.core.MultivaluedMap)"><!-- --></A><H3>
+startAuthorization</H3>
+<PRE>
+protected javax.ws.rs.core.Response <B>startAuthorization</B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;params)</PRE>
+<DL>
+<DD>Starts the authorization process
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createAuthorizationData(org.apache.cxf.rs.security.oauth2.common.Client, javax.ws.rs.core.MultivaluedMap, java.util.List)"><!-- --></A><H3>
+createAuthorizationData</H3>
+<PRE>
+protected <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/common/OAuthAuthorizationData.html" title="class in org.apache.cxf.rs.security.oauth2.common">OAuthAuthorizationData</A> <B>createAuthorizationData</B>(<A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/common/Client.html" title="class in org.apache.cxf.rs.security.oauth2.common">Client</A>&nbsp;client,
+                                                         javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;params,
+                                                         <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/common/OAuthPermission.html" title="class in org.apache.cxf.rs.security.oauth2.common">OAuthPermission</A>&gt;&nbsp;perms)</PRE>
+<DL>
+<DD>Create the authorization challenge data
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="completeAuthorization(javax.ws.rs.core.MultivaluedMap)"><!-- --></A><H3>
+completeAuthorization</H3>
+<PRE>
+protected javax.ws.rs.core.Response <B>completeAuthorization</B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;params)</PRE>
+<DL>
+<DD>Completes the authorization process
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createErrorResponse(javax.ws.rs.core.MultivaluedMap, java.lang.String, java.lang.String)"><!-- --></A><H3>
+createErrorResponse</H3>
+<PRE>
+protected abstract javax.ws.rs.core.Response <B>createErrorResponse</B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;params,
+                                                                 <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;redirectUri,
+                                                                 <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;error)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createGrant(javax.ws.rs.core.MultivaluedMap, org.apache.cxf.rs.security.oauth2.common.Client, java.lang.String, java.util.List, java.util.List, org.apache.cxf.rs.security.oauth2.common.UserSubject, org.apache.cxf.rs.security.oauth2.common.ServerAccessToken)"><!-- --></A><H3>
+createGrant</H3>
+<PRE>
+protected abstract javax.ws.rs.core.Response <B>createGrant</B>(javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;params,
+                                                         <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/common/Client.html" title="class in org.apache.cxf.rs.security.oauth2.common">Client</A>&nbsp;client,
+                                                         <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;redirectUri,
+                                                         <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;requestedScope,
+                                                         <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;approvedScope,
+                                                         <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/common/UserSubject.html" title="class in org.apache.cxf.rs.security.oauth2.common">UserSubject</A>&nbsp;userSubject,
+                                                         <A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/common/ServerAccessToken.html" title="class in org.apache.cxf.rs.security.oauth2.common">ServerAccessToken</A>&nbsp;preAuthorizedToken)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="validateRedirectUri(org.apache.cxf.rs.security.oauth2.common.Client, java.lang.String)"><!-- --></A><H3>
+validateRedirectUri</H3>
+<PRE>
+protected <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A> <B>validateRedirectUri</B>(<A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/common/Client.html" title="class in org.apache.cxf.rs.security.oauth2.common">Client</A>&nbsp;client,
+                                     <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;redirectUri)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/RedirectionBasedGrantService.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/rs/security/oauth2/services/ImplicitGrantService.html" title="class in org.apache.cxf.rs.security.oauth2.services"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/rs/security/oauth2/services/RedirectionBasedGrantService.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="RedirectionBasedGrantService.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

@@ -1,0 +1,178 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - Release Management">
+
+
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shCoreCXF.css">
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shThemeCXF.css">
+
+<script src='/resources/highlighter/scripts/shCore.js'></script>
+<script src='/resources/highlighter/scripts/shBrushBash.js'></script>
+<script src='/resources/highlighter/scripts/shBrushJava.js'></script>
+<script>
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+
+    <title>
+Apache CXF -- Release Management
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="release-management.html">Release Management</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><h2 id="ReleaseManagement-Deployingsnapshots">Deploying snapshots</h2><p>Snapshots are automatically deployed every night to the Nexus snapshot repository at <a shape="rect" class="external-link" href="https://repository.apache.org/content/groups/snapshots-group/">https://repository.apache.org/content/groups/snapshots-group/</a> . There is no need to manually deploy snapshots anymore.</p><h2 id="ReleaseManagement-Maintainingafixesbranch">Maintaining a fixes branch</h2><p>dkulp: I'm adding this section to document what worked for ME when maintaining the 2.7.x-fixes branch for the 2.7.x releases. Each Release Manager may have their own style or tools or whatever. This is not a "set in stone" type thing.</p><p>Basically, almost all development and fixes and such are usually done by the various developers right on master. Thus, the main job of the fixes branch maintainer is to triage the commits on master and merge pure fixes to the fixes branches, resolve conflicts, run the tests, and periodically deploy snapshots. For the most part, when things go well, it doesn't take too much time or effort. An hour or two every couple days is about it.</p><p>To set up, you'll want to:</p><ol><li>use git branch to make a branch.</li><li>On the branch, create a .gitmergeinfo file with a single line of "origin/master" to say the branch will be merging from there.</li></ol><p><span style="background-color: transparent;line-height: 1.4285715;">In trunk/bin, there is a DoMerges.java program that assists in the merging. If the branch is setup with .gitmergeinfo, if you run it from the root directory of the checkout, it will prompt for every commit on master to see if you want to "Merge" it, "Block" it, or "Ignore" it. It displays the commit log first so you can see what was involved. You can also check the </span> <a shape="rect" class="external-link" href="https://lists.apache.org/list.html?commits@cxf.apache.org">cxf-commits</a> <span style="background-color: transparent;line-height: 1.4285715;"> archive to see the full details of the commit to help decide what action to take. If you select "Merge", it will merge the change and then prompt before committing. That will allow you to look at the merge and resolve any conflicts. (or even revert it if you didn't mean to hit Merge)</span></p><h2 id="ReleaseManagement-Performingarelease">Performing a release</h2><p>The first step is to update the release_notes.txt in the distribution/src/main/release. This file's JIRA list of solved Bugs, Improvements, etc. can be obtained from the <a shape="rect" class="external-link" href="https://issues.apache.org/jira/browse/CXF#selectedTab=com.atlassian.jira.plugin.system.project%3Aroadmap-panel">"Road Map" JIRA tab</a>, selecting the desired version's Release Notes, and then the Configure Release Notes button (choose Text output).</p><div class="confluence-information-macro confluence-information-macro-note"><span class="aui-icon aui-icon-small aui-iconfont-warning confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Don't manually update the POM versions from X.Y.Z-SNAPSHOT to X.Y.Z, the Maven Release Plugin commands below will automatically take care of that. Also, prior to performing the release you'll need to have your Apache LDAP information configured in your Maven settings.xml file:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">...
+&lt;server&gt;                                                                
+   &lt;id&gt;apache.releases.https&lt;/id&gt;
+   &lt;username&gt;apacheID&lt;/username&gt;
+   &lt;password&gt;yourLDAPPassword&lt;/password&gt;
+&lt;/server&gt;
+...
+</pre>
+</div></div></div></div><p>Then, to actually perform the release, run the below commands.</p><div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>mvn release:prepare -Peverything
+mvn release:perform -Peverything
+</pre>
+</div></div><div class="confluence-information-macro confluence-information-macro-warning"><span class="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>If you are performing the release on a Mac, it is advisable to add -DpushChanges=false to the "release:prepare" step above. The version of git that Apple ships with some versions of OSX has problems pushing the changes in quick succession from the release plugin and can become corrupt. Having the release plugin NOT push the changes and then running "git push -tags origin master" works around that problem.</p></div></div><div class="confluence-information-macro confluence-information-macro-warning"><span class="aui-icon aui-icon-small aui-iconfont-error confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>It is recommended to name the local maintenance branches the same as the remote ones ("2.7.x-fixes", "3.0.x-fixes", ...) to avoid issue with the branch names when running the release plugin.</p></div></div><p>&#160;</p><p>The above commands tag the release, update the poms versions, etc., then build it (off the tag), gpg sign and deploy everything (including source jars and javadoc jars) to the <a shape="rect" class="external-link" href="https://repository.apache.org">Nexus repository location</a>. When the build is done staging, you next need to login to the Nexus repository and "close" the staging area (click on Staging Repositories in the left-side menu, select the repo you just uploaded and then select the close button.) Closing is very important. After the staging area is closed, note the URL for the staging area as you will need that for the vote.</p><p>At this point, everything "pre-vote" is done. Call the vote.</p><h2 id="ReleaseManagement-Releasingtheartifacts">Releasing the artifacts</h2><ul><li>Maven artifacts - After the vote passes, you'll need to promote that staging repository to the main location. Login to <a shape="rect" class="external-link" href="https://repository.apache.org">Nexus repository location</a> to do that as well, find the staging repository and click the Release button.</li></ul><ul><li><p>Distributions - You will need to commit the distributions into the special svn distribution area: <a shape="rect" class="external-link" href="https://dist.apache.org/repos/dist/release/cxf">https://dist.apache.org/repos/dist/release/cxf</a> <br clear="none"> after you commit they will be live on dist.apache.org fairly quickly, but it will still take time for the mirrors to get copies. It's likely easier to make the directory via an svn command, check out just that directory, and then add the files. The dist area is rather large (400MB or so) so checking out the entire thing may be slow.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">svn mkdir https://dist.apache.org/repos/dist/release/cxf/2.6.3
+svn checkout https://dist.apache.org/repos/dist/release/cxf/2.6.3
+....  add files to 2.6.3 .....
+svn commit
+</pre>
+</div></div></li></ul><p>The <a shape="rect" href="http://cxf.apache.org/download.html">download page</a> of a currently released version will tell you the precise files you need to upload. Basically, the -src.tar.gz, -src.zip, tar.gz, .zip files, and the .md5, .sha1, and .asc signature files of each of those. For greatest accuracy, it's best to download the files from Nexus and use those. (For example, for CXF 2.6.2, you would check <a shape="rect" class="external-link" href="https://repository.apache.org/content/repositories/releases/org/apache/cxf/apache-cxf/2.6.2/">this folder</a>).</p><ul><li>Update the download page - around 24 hours after committing the distributions, update the download page, release notes, etc. to point at the new versions. At that stage you'll want to delete (svn rm) the previous version of each branch you uploaded to <a shape="rect" class="external-link" href="https://dist.apache.org">https://dist.apache.org</a>, so if you added <a shape="rect" class="external-link" href="https://dist.apache.org/repos/dist/release/cxf/2.6.3">https://dist.apache.org/repos/dist/release/cxf/2.6.3</a> and <a shape="rect" class="external-link" href="https://dist.apache.org/repos/dist/release/cxf/2.5.6">https://dist.apache.org/repos/dist/release/cxf/2.5.6</a>, you'll want to remove <a shape="rect" class="external-link" href="https://dist.apache.org/repos/dist/release/cxf/2.6.2">https://dist.apache.org/repos/dist/release/cxf/2.6.2</a> and <a shape="rect" class="external-link" href="https://dist.apache.org/repos/dist/release/cxf/2.5.5">https://dist.apache.org/repos/dist/release/cxf/2.5.5</a>. (Older versions will still be available at <a shape="rect" class="external-link" href="http://archive.apache.org/dist/cxf/">http://archive.apache.org/dist/cxf/</a> and are referenced from there on the CXF download page.)</li></ul><ul><li>Unpack the javadocs from the appropriate cxf-bundle-VERSION-javadocs.jar into the appropriate directory in an svn checkout of <a shape="rect" class="external-link" href="https://svn-master.apache.org/repos/infra/websites/production/cxf/content/javadoc">https://svn-master.apache.org/repos/infra/websites/production/cxf/content/javadoc</a> and commit the new version. Make sure any new files are added.</li></ul><ul><li>Unpack the schemas directory from the appropriate cxf-bundle-VERSION.jar and check if any of the schemas in <a shape="rect" class="external-link" href="https://svn-master.apache.org/repos/infra/websites/production/cxf/content/schemas">https://svn-master.apache.org/repos/infra/websites/production/cxf/content/schemas</a> need updating.</li></ul><h2 id="ReleaseManagement-UpdatingJIRA">Updating JIRA</h2><p>JIRA will need to be updated:</p><ul><li>Add new versions that JIRA items can be created against, and mark the version(s) you just released as "released":</li></ul><ol><li>Go to the <a shape="rect" class="external-link" href="https://issues.apache.org/jira/browse/CXF">CXF JIRA Home Page</a> and select the "Versions" left menu item, then select "Manage Versions".</li><li>Select the tools icon (far right side) for the version(s) you've just released and select "Release".</li><li>Also on this screen type in new release versions for the branch(es) you've released and plan on releasing more versions from.</li></ol><ul><li>Close the JIRA items that were marked resolved for each release:</li></ul><ol><li>From the previous screen, select "Exit Administration".</li><li>From the CXF JIRA home page, select Versions from the left-side menu, and for each version you just released:<ol><li>Select version, then issues left-side menu item, then select the "Resolved" list.</li><li>From the tools icon, select Bulk Change -&gt; select all items -&gt; Transition Issues -&gt; Close Issues -&gt; Confirm.</li></ol></li></ol></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=70605">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=70605&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

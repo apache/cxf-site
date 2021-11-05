@@ -1,0 +1,551 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+NettyHttpConduit (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="NettyHttpConduit (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/NettyHttpConduit.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpClientRequest.html" title="class in org.apache.cxf.transport.http.netty.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpConduit.NettyWrappedOutputStream.html" title="class in org.apache.cxf.transport.http.netty.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/transport/http/netty/client/NettyHttpConduit.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="NettyHttpConduit.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.transport.http.netty.client</FONT>
+<BR>
+Class NettyHttpConduit</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../../org/apache/cxf/transport/AbstractObservable.html" title="class in org.apache.cxf.transport">org.apache.cxf.transport.AbstractObservable</A>
+      <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../../org/apache/cxf/transport/AbstractConduit.html" title="class in org.apache.cxf.transport">org.apache.cxf.transport.AbstractConduit</A>
+          <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html" title="class in org.apache.cxf.transport.http">org.apache.cxf.transport.http.HTTPConduit</A>
+              <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../../org/apache/cxf/transport/http/URLConnectionHTTPConduit.html" title="class in org.apache.cxf.transport.http">org.apache.cxf.transport.http.URLConnectionHTTPConduit</A>
+                  <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.transport.http.netty.client.NettyHttpConduit</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://docs.oracle.com/javase/6/docs/api/java/beans/PropertyChangeListener.html?is-external=true" title="class or interface in java.beans">PropertyChangeListener</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/EventListener.html?is-external=true" title="class or interface in java.util">EventListener</A>, <A HREF="../../../../../../../org/apache/cxf/buslifecycle/BusLifeCycleListener.html" title="interface in org.apache.cxf.buslifecycle">BusLifeCycleListener</A>, <A HREF="../../../../../../../org/apache/cxf/configuration/Configurable.html" title="interface in org.apache.cxf.configuration">Configurable</A>, <A HREF="../../../../../../../org/apache/cxf/transport/Assertor.html" title="interface in org.apache.cxf.transport">Assertor</A>, <A HREF="../../../../../../../org/apache/cxf/transport/Conduit.html" title="interface in org.apache.cxf.transport">Conduit</A>, <A HREF="../../../../../../../org/apache/cxf/transport/Observable.html" title="interface in org.apache.cxf.transport">Observable</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>NettyHttpConduit</B><DT>extends <A HREF="../../../../../../../org/apache/cxf/transport/http/URLConnectionHTTPConduit.html" title="class in org.apache.cxf.transport.http">URLConnectionHTTPConduit</A><DT>implements <A HREF="../../../../../../../org/apache/cxf/buslifecycle/BusLifeCycleListener.html" title="interface in org.apache.cxf.buslifecycle">BusLifeCycleListener</A></DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpConduit.NettyWrappedOutputStream.html" title="class in org.apache.cxf.transport.http.netty.client">NettyHttpConduit.NettyWrappedOutputStream</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_org.apache.cxf.transport.http.HTTPConduit"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class org.apache.cxf.transport.http.<A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html" title="class in org.apache.cxf.transport.http">HTTPConduit</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.InterposedMessageObserver.html" title="class in org.apache.cxf.transport.http">HTTPConduit.InterposedMessageObserver</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpConduit.html#USE_ASYNC">USE_ASYNC</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.transport.http.URLConnectionHTTPConduit"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.transport.http.<A HREF="../../../../../../../org/apache/cxf/transport/http/URLConnectionHTTPConduit.html" title="class in org.apache.cxf.transport.http">URLConnectionHTTPConduit</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/transport/http/URLConnectionHTTPConduit.html#connectionFactory">connectionFactory</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.transport.http.HTTPConduit"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.transport.http.<A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html" title="class in org.apache.cxf.transport.http">HTTPConduit</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#authorizationPolicy">authorizationPolicy</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#authSupplier">authSupplier</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#bus">bus</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#certConstraints">certConstraints</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#clientSidePolicy">clientSidePolicy</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#cookies">cookies</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#defaultEndpointURI">defaultEndpointURI</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#defaultEndpointURIString">defaultEndpointURIString</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#endpointInfo">endpointInfo</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#fromEndpointReferenceType">fromEndpointReferenceType</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#KEY_HTTP_CONNECTION">KEY_HTTP_CONNECTION</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#LOG">LOG</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#proxyAuthorizationPolicy">proxyAuthorizationPolicy</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#proxyAuthSupplier">proxyAuthSupplier</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#proxyFactory">proxyFactory</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#tlsClientParameters">tlsClientParameters</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#trustDecider">trustDecider</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.transport.AbstractConduit"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.transport.<A HREF="../../../../../../../org/apache/cxf/transport/AbstractConduit.html" title="class in org.apache.cxf.transport">AbstractConduit</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/transport/AbstractConduit.html#target">target</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.transport.AbstractObservable"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.transport.<A HREF="../../../../../../../org/apache/cxf/transport/AbstractObservable.html" title="class in org.apache.cxf.transport">AbstractObservable</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/transport/AbstractObservable.html#incomingObserver">incomingObserver</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpConduit.html#NettyHttpConduit(org.apache.cxf.Bus, org.apache.cxf.service.model.EndpointInfo, org.apache.cxf.ws.addressing.EndpointReferenceType, org.apache.cxf.transport.http.netty.client.NettyHttpConduitFactory)">NettyHttpConduit</A></B>(<A HREF="../../../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b,
+                 <A HREF="../../../../../../../org/apache/cxf/service/model/EndpointInfo.html" title="class in org.apache.cxf.service.model">EndpointInfo</A>&nbsp;ei,
+                 <A HREF="../../../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing">EndpointReferenceType</A>&nbsp;t,
+                 <A HREF="../../../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpConduitFactory.html" title="class in org.apache.cxf.transport.http.netty.client">NettyHttpConduitFactory</A>&nbsp;conduitFactory)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpConduit.html#createOutputStream(org.apache.cxf.message.Message, boolean, boolean, int)">createOutputStream</A></B>(<A HREF="../../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+                   boolean&nbsp;needToCacheRequest,
+                   boolean&nbsp;isChunking,
+                   int&nbsp;chunkThreshold)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpConduitFactory.html" title="class in org.apache.cxf.transport.http.netty.client">NettyHttpConduitFactory</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpConduit.html#getNettyHttpConduitFactory()">getNettyHttpConduitFactory</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpConduit.html#initComplete()">initComplete</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoked when the <code>Bus</code> has been initialized.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpConduit.html#postShutdown()">postShutdown</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoked after the <code>Bus</code> is shutdown.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpConduit.html#preShutdown()">preShutdown</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoked before the <code>Bus</code> is shutdown.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpConduit.html#setupConnection(org.apache.cxf.message.Message, java.net.URI, org.apache.cxf.transports.http.configuration.HTTPClientPolicy)">setupConnection</A></B>(<A HREF="../../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</A>&nbsp;uri,
+                <A HREF="../../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html" title="class in org.apache.cxf.transports.http.configuration">HTTPClientPolicy</A>&nbsp;csPolicy)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.transport.http.URLConnectionHTTPConduit"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.transport.http.<A HREF="../../../../../../../org/apache/cxf/transport/http/URLConnectionHTTPConduit.html" title="class in org.apache.cxf.transport.http">URLConnectionHTTPConduit</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/transport/http/URLConnectionHTTPConduit.html#close()">close</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.transport.http.HTTPConduit"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.transport.http.<A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html" title="class in org.apache.cxf.transport.http">HTTPConduit</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#assertMessage(org.apache.cxf.message.Message)">assertMessage</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#canAssert(javax.xml.namespace.QName)">canAssert</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#close(org.apache.cxf.message.Message)">close</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#determineConnectionTimeout(org.apache.cxf.message.Message, org.apache.cxf.transports.http.configuration.HTTPClientPolicy)">determineConnectionTimeout</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#determineReceiveTimeout(org.apache.cxf.message.Message, org.apache.cxf.transports.http.configuration.HTTPClientPolicy)">determineReceiveTimeout</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#extractLocation(java.util.Map)">extractLocation</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#finalizeConfig()">finalizeConfig</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#getAddress()">getAddress</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#getAuthorization()">getAuthorization</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#getAuthSupplier()">getAuthSupplier</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#getBeanName()">getBeanName</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#getClient()">getClient</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#getClient(org.apache.cxf.message.Message)">getClient</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#getConduitName()">getConduitName</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#getCookies()">getCookies</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#getEffectiveAuthPolicy(org.apache.cxf.message.Message)">getEffectiveAuthPolicy</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#getLogger()">getLogger</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#getProxyAuthorization()">getProxyAuthorization</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#getProxyAuthSupplier()">getProxyAuthSupplier</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#getTlsClientParameters()">getTlsClientParameters</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#getTrustDecider()">getTrustDecider</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#getURI()">getURI</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#getURI(boolean)">getURI</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#isChunkingSupported(org.apache.cxf.message.Message, java.lang.String)">isChunkingSupported</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#prepare(org.apache.cxf.message.Message)">prepare</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#propertyChange(java.beans.PropertyChangeEvent)">propertyChange</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#setAuthorization(org.apache.cxf.configuration.security.AuthorizationPolicy)">setAuthorization</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#setAuthSupplier(org.apache.cxf.transport.http.auth.HttpAuthSupplier)">setAuthSupplier</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#setClient(org.apache.cxf.transports.http.configuration.HTTPClientPolicy)">setClient</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#setHeadersByAuthorizationPolicy(org.apache.cxf.message.Message, java.net.URI)">setHeadersByAuthorizationPolicy</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#setProxyAuthorization(org.apache.cxf.configuration.security.ProxyAuthorizationPolicy)">setProxyAuthorization</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#setProxyAuthSupplier(org.apache.cxf.transport.http.auth.HttpAuthSupplier)">setProxyAuthSupplier</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#setTlsClientParameters(org.apache.cxf.configuration.jsse.TLSClientParameters)">setTlsClientParameters</A>, <A HREF="../../../../../../../org/apache/cxf/transport/http/HTTPConduit.html#setTrustDecider(org.apache.cxf.transport.http.MessageTrustDecider)">setTrustDecider</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.transport.AbstractConduit"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.transport.<A HREF="../../../../../../../org/apache/cxf/transport/AbstractConduit.html" title="class in org.apache.cxf.transport">AbstractConduit</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/transport/AbstractConduit.html#getTarget()">getTarget</A>, <A HREF="../../../../../../../org/apache/cxf/transport/AbstractConduit.html#toString()">toString</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.transport.AbstractObservable"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.transport.<A HREF="../../../../../../../org/apache/cxf/transport/AbstractObservable.html" title="class in org.apache.cxf.transport">AbstractObservable</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/transport/AbstractObservable.html#activate()">activate</A>, <A HREF="../../../../../../../org/apache/cxf/transport/AbstractObservable.html#deactivate()">deactivate</A>, <A HREF="../../../../../../../org/apache/cxf/transport/AbstractObservable.html#getMessageObserver()">getMessageObserver</A>, <A HREF="../../../../../../../org/apache/cxf/transport/AbstractObservable.html#getTargetReference(org.apache.cxf.service.model.EndpointInfo, org.apache.cxf.Bus)">getTargetReference</A>, <A HREF="../../../../../../../org/apache/cxf/transport/AbstractObservable.html#getTargetReference(org.apache.cxf.service.model.EndpointInfo, org.apache.cxf.ws.addressing.EndpointReferenceType, org.apache.cxf.Bus)">getTargetReference</A>, <A HREF="../../../../../../../org/apache/cxf/transport/AbstractObservable.html#setMessageObserver(org.apache.cxf.transport.MessageObserver)">setMessageObserver</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.transport.Observable"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface org.apache.cxf.transport.<A HREF="../../../../../../../org/apache/cxf/transport/Observable.html" title="interface in org.apache.cxf.transport">Observable</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/transport/Observable.html#getMessageObserver()">getMessageObserver</A>, <A HREF="../../../../../../../org/apache/cxf/transport/Observable.html#setMessageObserver(org.apache.cxf.transport.MessageObserver)">setMessageObserver</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="USE_ASYNC"><!-- --></A><H3>
+USE_ASYNC</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>USE_ASYNC</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../../constant-values.html#org.apache.cxf.transport.http.netty.client.NettyHttpConduit.USE_ASYNC">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="NettyHttpConduit(org.apache.cxf.Bus, org.apache.cxf.service.model.EndpointInfo, org.apache.cxf.ws.addressing.EndpointReferenceType, org.apache.cxf.transport.http.netty.client.NettyHttpConduitFactory)"><!-- --></A><H3>
+NettyHttpConduit</H3>
+<PRE>
+public <B>NettyHttpConduit</B>(<A HREF="../../../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b,
+                        <A HREF="../../../../../../../org/apache/cxf/service/model/EndpointInfo.html" title="class in org.apache.cxf.service.model">EndpointInfo</A>&nbsp;ei,
+                        <A HREF="../../../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing">EndpointReferenceType</A>&nbsp;t,
+                        <A HREF="../../../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpConduitFactory.html" title="class in org.apache.cxf.transport.http.netty.client">NettyHttpConduitFactory</A>&nbsp;conduitFactory)
+                 throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getNettyHttpConduitFactory()"><!-- --></A><H3>
+getNettyHttpConduitFactory</H3>
+<PRE>
+public <A HREF="../../../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpConduitFactory.html" title="class in org.apache.cxf.transport.http.netty.client">NettyHttpConduitFactory</A> <B>getNettyHttpConduitFactory</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setupConnection(org.apache.cxf.message.Message, java.net.URI, org.apache.cxf.transports.http.configuration.HTTPClientPolicy)"><!-- --></A><H3>
+setupConnection</H3>
+<PRE>
+protected void <B>setupConnection</B>(<A HREF="../../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+                               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</A>&nbsp;uri,
+                               <A HREF="../../../../../../../org/apache/cxf/transports/http/configuration/HTTPClientPolicy.html" title="class in org.apache.cxf.transports.http.configuration">HTTPClientPolicy</A>&nbsp;csPolicy)
+                        throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/transport/http/URLConnectionHTTPConduit.html#setupConnection(org.apache.cxf.message.Message, java.net.URI, org.apache.cxf.transports.http.configuration.HTTPClientPolicy)">setupConnection</A></CODE> in class <CODE><A HREF="../../../../../../../org/apache/cxf/transport/http/URLConnectionHTTPConduit.html" title="class in org.apache.cxf.transport.http">URLConnectionHTTPConduit</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createOutputStream(org.apache.cxf.message.Message, boolean, boolean, int)"><!-- --></A><H3>
+createOutputStream</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A> <B>createOutputStream</B>(<A HREF="../../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+                                          boolean&nbsp;needToCacheRequest,
+                                          boolean&nbsp;isChunking,
+                                          int&nbsp;chunkThreshold)
+                                   throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/transport/http/URLConnectionHTTPConduit.html#createOutputStream(org.apache.cxf.message.Message, boolean, boolean, int)">createOutputStream</A></CODE> in class <CODE><A HREF="../../../../../../../org/apache/cxf/transport/http/URLConnectionHTTPConduit.html" title="class in org.apache.cxf.transport.http">URLConnectionHTTPConduit</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="initComplete()"><!-- --></A><H3>
+initComplete</H3>
+<PRE>
+public void <B>initComplete</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../../org/apache/cxf/buslifecycle/BusLifeCycleListener.html#initComplete()">BusLifeCycleListener</A></CODE></B></DD>
+<DD>Invoked when the <code>Bus</code> has been initialized.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/buslifecycle/BusLifeCycleListener.html#initComplete()">initComplete</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/buslifecycle/BusLifeCycleListener.html" title="interface in org.apache.cxf.buslifecycle">BusLifeCycleListener</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="postShutdown()"><!-- --></A><H3>
+postShutdown</H3>
+<PRE>
+public void <B>postShutdown</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../../org/apache/cxf/buslifecycle/BusLifeCycleListener.html#postShutdown()">BusLifeCycleListener</A></CODE></B></DD>
+<DD>Invoked after the <code>Bus</code> is shutdown.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/buslifecycle/BusLifeCycleListener.html#postShutdown()">postShutdown</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/buslifecycle/BusLifeCycleListener.html" title="interface in org.apache.cxf.buslifecycle">BusLifeCycleListener</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="preShutdown()"><!-- --></A><H3>
+preShutdown</H3>
+<PRE>
+public void <B>preShutdown</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../../org/apache/cxf/buslifecycle/BusLifeCycleListener.html#preShutdown()">BusLifeCycleListener</A></CODE></B></DD>
+<DD>Invoked before the <code>Bus</code> is shutdown.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/buslifecycle/BusLifeCycleListener.html#preShutdown()">preShutdown</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/buslifecycle/BusLifeCycleListener.html" title="interface in org.apache.cxf.buslifecycle">BusLifeCycleListener</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/NettyHttpConduit.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpClientRequest.html" title="class in org.apache.cxf.transport.http.netty.client"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpConduit.NettyWrappedOutputStream.html" title="class in org.apache.cxf.transport.http.netty.client"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/transport/http/netty/client/NettyHttpConduit.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="NettyHttpConduit.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

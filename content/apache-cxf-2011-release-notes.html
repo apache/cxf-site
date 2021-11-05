@@ -1,0 +1,840 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - Apache CXF 2.0.11 Release Notes">
+
+
+
+
+    <title>
+Apache CXF -- Apache CXF 2.0.11 Release Notes
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="download.html">Download</a>&nbsp;&gt;&nbsp;<a href="apache-cxf-2011-release-notes.html">Apache CXF 2.0.11 Release Notes</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><h1 id="ApacheCXF2.0.11ReleaseNotes-ApacheCXF2.0.11ReleaseNotes">Apache CXF 2.0.11 Release Notes</h1>
+
+<h2 id="ApacheCXF2.0.11ReleaseNotes-Overview">Overview</h2>
+
+<p>Apache CXF 2.0.11 delivers the latest set of patches and bug fixes for Apache CXF 2.0.x. This release fixes 36 JIRA issues that have been reported by users. </p>
+
+
+<h2 id="ApacheCXF2.0.11ReleaseNotes-Download">Download</h2>
+
+<div class="table-wrap"><table class="confluenceTable"><tbody><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>Description</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>File</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>MD5</p></th></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>Source distribution</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.apache.org/dyn/closer.cgi?path=/cxf/2.0.11/apache-cxf-2.0.11-src.tar.gz">apache-cxf-2.0.11-src.tar.gz</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.apache.org/dist/cxf/2.0.11/apache-cxf-2.0.11-src.tar.gz.md5">apache-cxf-2.0.11-src.tar.gz.md5</a></p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>&#160;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.apache.org/dyn/closer.cgi?path=/cxf/2.0.11/apache-cxf-2.0.11-src.zip">apache-cxf-2.0.11-src.zip</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.apache.org/dist/cxf/2.0.11/apache-cxf-2.0.11-src.zip.md5">apache-cxf-2.0.11-src.zip.md5</a></p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>Binary distribution</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.apache.org/dyn/closer.cgi?path=/cxf/2.0.11/apache-cxf-2.0.11.tar.gz">apache-cxf-2.0.11.tar.gz</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.apache.org/dist/cxf/2.0.11/apache-cxf-2.0.11.tar.gz.md5">apache-cxf-2.0.11.tar.gz.md5</a></p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>&#160;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.apache.org/dyn/closer.cgi?path=/cxf/2.0.11/apache-cxf-2.0.11.zip">apache-cxf-2.0.11.zip</a></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><a shape="rect" class="external-link" href="http://www.apache.org/dist/cxf/2.0.11/apache-cxf-2.0.11.zip.md5">apache-cxf-2.0.11.zip.md5</a></p></td></tr></tbody></table></div>
+
+
+<h2 id="ApacheCXF2.0.11ReleaseNotes-InstallationPrerequisites">Installation Prerequisites </h2>
+
+<p>Before installing Apache CXF, make sure the following products,<br clear="none">
+with the specified versions, are installed on your system:</p>
+
+<ul><li>Java 5 Development Kit</li><li>Apache ant 1.6</li></ul>
+
+
+<h3 id="ApacheCXF2.0.11ReleaseNotes-Java5DevelopmentKit">Java 5 Development Kit</h3>
+
+<p>You must install the J2SE Development Kit (JDK) 5.0, which can be downloaded<br clear="none">
+from:</p>
+
+<p>    <a shape="rect" class="external-link" href="http://java.sun.com/j2se/1.5.0/download.jsp" rel="nofollow">http://java.sun.com/j2se/1.5.0/download.jsp</a></p>
+
+<p>After installing the JDK, set or modify the following environment variables:</p>
+
+<ul><li>JAVA_HOME &#8211; set this environment variable<br clear="none">
+      to point at the root directory of the JDK 5.0 installation.</li></ul>
+
+
+<ul><li>PATH &#8211; make sure that your PATH includes:<br clear="none">
+      %JAVA_HOME%\bin  (Windows) <br clear="none">
+      $JAVA_HOME/bin   (UNIX)</li></ul>
+
+
+<h3 id="ApacheCXF2.0.11ReleaseNotes-ApacheAnt1.6.5(ornewer,1.7.0shouldworkaswell)">Apache Ant 1.6.5 (or newer, 1.7.0 should work as well)</h3>
+
+<p>To run samples included in the binary distribution of Apache CXF,<br clear="none">
+you must install the Apache Ant 1.6.5 build utility, which can be downloaded<br clear="none">
+from:</p>
+
+<p>    <a shape="rect" class="external-link" href="http://ant.apache.org/bindownload.cgi">http://ant.apache.org/bindownload.cgi</a></p>
+
+<p>After installing Apache Ant, add the &lt;AntInstallDir&gt;/bin directory to your PATH.</p>
+
+<p>For more details, see the Installation Guide.</p>
+
+<h3 id="ApacheCXF2.0.11ReleaseNotes-BouncyCastle/JCEandXalanrequirementforWS-Security">Bouncy Castle/JCE and Xalan requirement for WS-Security</h3>
+
+<p>To use the WS-Security features of CXF, you need to obtain a JCE crypto provider<br clear="none">
+that implements the algorithms that you plan to use. One option is to download <br clear="none">
+the Bouncy Castle jar from:
+<a shape="rect" class="external-link" href="http://bouncycastle.org/download/bcprov-jdk14-136.jar" rel="nofollow">http://bouncycastle.org/download/bcprov-jdk14-136.jar</a> <br clear="none">
+and add that to the lib directory or classpath. </p>
+
+
+<h2 id="ApacheCXF2.0.11ReleaseNotes-BuildingtheSamples">Building the Samples</h2>
+
+<p>Building the samples included in the binary distribution is easy. Change to<br clear="none">
+the samples directory and follow the build instructions in the README.txt file <br clear="none">
+included with each sample.</p>
+
+<h2 id="ApacheCXF2.0.11ReleaseNotes-Errata">Errata</h2>
+
+<h3 id="ApacheCXF2.0.11ReleaseNotes-WS-Security">WS-Security</h3>
+<p>The WS-Security configuration mechanisms may change between this release and <br clear="none">
+the next one as we add in support for WS-SecurityPolicy and WS-Trust.</p>
+
+<h2 id="ApacheCXF2.0.11ReleaseNotes-ReportingProblems">Reporting Problems</h2>
+
+<p>If you have any problems or want to send feedback of any kind, please e-mail the<br clear="none">
+cxf dev list, dev@cxf.apache.org.  You can also file issues in JIRA at:</p>
+
+<p><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">http://issues.apache.org/jira/browse/CXF</a></p>
+
+<h2 id="ApacheCXF2.0.11ReleaseNotes-ChangeLog">ChangeLog</h2>
+<p>For a more detailed view of new features and bug fixes, see the <br clear="none">
+<a shape="rect" class="external-link" href="https://issues.apache.org/jira/secure/ReleaseNote.jspa?version=12313634&amp;styleName=Html&amp;projectId=12310511&amp;Create=Create">release notes</a></p>
+
+
+
+
+
+
+
+<style type="text/css">
+    #refresh-module--983602323 .icon {
+        background-position: left center;
+        background-repeat: no-repeat;
+        display: inline-block;
+        font-size: 0;
+        max-height: 16px;
+        text-align: left;
+        text-indent: -9999em;
+        vertical-align: text-bottom;
+    }
+</style>
+<div class="refresh-module-id jira-table" id="refresh-module--983602323">
+<p>
+    
+        
+    
+        
+    </p><div class="jira-issues" id="jira-issues--983602323" style="width: 100%;  overflow: auto;">
+        <table class="aui" style="padding:5px !important;vertical-align: top;"><tbody><tr><td></td></tr><tr><th colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport jira-tablesorter-header" style="text-align: left; padding:5px !important;">
+                                    <span class="jim-table-header-content">T</span>
+                                </th><th colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport jira-tablesorter-header" style="text-align: left; padding:5px !important;">
+                                    <span class="jim-table-header-content">Key</span>
+                                </th><th colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport jira-tablesorter-header" style="text-align: left; padding:5px !important;">
+                                    <span class="jim-table-header-content">Summary</span>
+                                </th><th colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport jira-tablesorter-header" style="text-align: left; padding:5px !important;">
+                                    <span class="jim-table-header-content">Assignee</span>
+                                </th><th colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport jira-tablesorter-header" style="text-align: left; padding:5px !important;">
+                                    <span class="jim-table-header-content">Reporter</span>
+                                </th><th colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport jira-tablesorter-header" style="text-align: left; padding:5px !important;">
+                                    <span class="jim-table-header-content">P</span>
+                                </th><th colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport jira-tablesorter-header" style="text-align: left; padding:5px !important;">
+                                    <span class="jim-table-header-content">Status</span>
+                                </th><th colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport jira-tablesorter-header" style="text-align: left; padding:5px !important;">
+                                    <span class="jim-table-header-content">Resolution</span>
+                                </th><th colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport jira-tablesorter-header" style="text-align: left; padding:5px !important;">
+                                    <span class="jim-table-header-content">Created</span>
+                                </th><th colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport jira-tablesorter-header" style="text-align: left; padding:5px !important;">
+                                    <span class="jim-table-header-content">Updated</span>
+                                </th><th colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport jira-tablesorter-header" style="text-align: left; padding:5px !important;">
+                                    <span class="jim-table-header-content">Due</span>
+                                </th></tr><tr class="rowNormal"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2181?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21140&amp;avatarType=issuetype" alt="Improvement"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2181?src=confmacro">CXF-2181</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2181?src=confmacro">
+                                            Dynamic Dispatch classes should cache MessageFactory instances
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Daniel Kulp
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Kevin Conaway
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 21, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowAlternate"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2172?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21133&amp;avatarType=issuetype" alt="Bug"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2172?src=confmacro">CXF-2172</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2172?src=confmacro">
+                                            RPC/Lit types with both XmlType and XmlRootElement are ending up as element parts, not type parts
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Daniel Kulp
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Daniel Kulp
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 14, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowNormal"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2169?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21140&amp;avatarType=issuetype" alt="Improvement"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2169?src=confmacro">CXF-2169</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2169?src=confmacro">
+                                            JBIConduitOutputStream need save JBI MessageExchange in response message for later possible use
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Freeman Yue Fang
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Freeman Yue Fang
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 13, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowAlternate"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2163?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21133&amp;avatarType=issuetype" alt="Bug"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2163?src=confmacro">CXF-2163</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2163?src=confmacro">
+                                            org.apache.cxf.resource.URIResolver on Websphere 6.1 doesn't resolve from "wsjar:" base URI's
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Daniel Kulp
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Jan Ypma
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 08, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowNormal"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2161?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21133&amp;avatarType=issuetype" alt="Bug"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2161?src=confmacro">CXF-2161</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2161?src=confmacro">
+                                            WSA handler class MAPCodec is not decoding From header
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Eoghan Glynn
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Andrew Dinn
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 07, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowAlternate"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2152?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21133&amp;avatarType=issuetype" alt="Bug"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2152?src=confmacro">CXF-2152</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2152?src=confmacro">
+                                            Certain Spring AOP proxies cannot be used any more as service bean since CXF 2.1.4 because the real (non-proxy) target class is not found correctly by SpringAopClassHelper
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Daniel Kulp
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Gyorgy Orban
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 03, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowNormal"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2149?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21133&amp;avatarType=issuetype" alt="Bug"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2149?src=confmacro">CXF-2149</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2149?src=confmacro">
+                                            java.lang.ArrayStoreException getting headers in handler
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Daniel Kulp
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Jose Antonio
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 02, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowAlternate"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2145?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21133&amp;avatarType=issuetype" alt="Bug"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2145?src=confmacro">CXF-2145</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2145?src=confmacro">
+                                            Proxy in JCA connector throws exception due to concurrency issues
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Daniel Kulp
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Seumas Soltysik
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Mar 31, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowNormal"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2141?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21140&amp;avatarType=issuetype" alt="Improvement"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2141?src=confmacro">CXF-2141</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2141?src=confmacro">
+                                            Expose faults count in ResponseTimeCounter in addition to existing invocations count
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Daniel Kulp
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Cyrille Le Clerc
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Mar 29, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowAlternate"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2140?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21140&amp;avatarType=issuetype" alt="Improvement"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2140?src=confmacro">CXF-2140</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2140?src=confmacro">
+                                            Allow injection of an existing MBeanServer into the InstrumentationManagerImpl
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Daniel Kulp
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Cyrille Le Clerc
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Mar 29, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowNormal"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2115?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21133&amp;avatarType=issuetype" alt="Bug"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2115?src=confmacro">CXF-2115</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2115?src=confmacro">
+                                            refactor JBIConduitOutputStream exception handle
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Freeman Yue Fang
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Freeman Yue Fang
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Mar 16, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowAlternate"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2114?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21146&amp;avatarType=issuetype" alt="Sub-task"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2114?src=confmacro">CXF-2114</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2114?src=confmacro">
+                                            java2ws generates invalid import statement when using member classes
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Alessio Soldano
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Alessio Soldano
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Mar 13, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowNormal"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2110?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21146&amp;avatarType=issuetype" alt="Sub-task"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2110?src=confmacro">CXF-2110</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2110?src=confmacro">
+                                            Missing parameterOrder attribute in java2wsdl generated RPC wsdls
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Alessio Soldano
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Alessio Soldano
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Mar 12, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowAlternate"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2106?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21133&amp;avatarType=issuetype" alt="Bug"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2106?src=confmacro">CXF-2106</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2106?src=confmacro">
+                                            Temp files created for data over 64kb are never deleted
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Daniel Kulp
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Martin Murphy
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Mar 11, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowNormal"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2105?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21133&amp;avatarType=issuetype" alt="Bug"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2105?src=confmacro">CXF-2105</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2105?src=confmacro">
+                                            The CxfBusLifeCycleManager can cause ConcurrentModificationExceptions to be thrown
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Daniel Kulp
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Eamonn Dwyer
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Mar 11, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowAlternate"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2104?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21133&amp;avatarType=issuetype" alt="Bug"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2104?src=confmacro">CXF-2104</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2104?src=confmacro">
+                                            Caller application hangs in case it uses the polling (Response) method with JAX-WS async mapping and an http error occurs during sending. In case of callback style (AsyncHandler), the client application has no way of getting the exception.
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Daniel Kulp
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Gyorgy Orban
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Mar 11, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowNormal"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2087?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21133&amp;avatarType=issuetype" alt="Bug"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2087?src=confmacro">CXF-2087</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2087?src=confmacro">
+                                            CXFServlet / URIResolver tries to load file "" (empty file name)
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Daniel Kulp
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Greg Vanore
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/minor.svg" alt="Minor">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Mar 04, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowAlternate"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2084?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21133&amp;avatarType=issuetype" alt="Bug"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2084?src=confmacro">CXF-2084</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2084?src=confmacro">
+                                            AbstractMessageResponseTimeInterceptor has protected methods, but default (package) scope constructor
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Daniel Kulp
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Web Development Guys
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Mar 04, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowNormal"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2082?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21133&amp;avatarType=issuetype" alt="Bug"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2082?src=confmacro">CXF-2082</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2082?src=confmacro">
+                                            client using decoupled ws-addressing with async handler hang from time to time
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Freeman Yue Fang
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Freeman Yue Fang
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/major.svg" alt="Major">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Mar 04, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr class="rowAlternate"><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2081?src=confmacro"><img class="icon" src="https://issues.apache.org/jira/secure/viewavatar?size=xsmall&amp;avatarId=21140&amp;avatarType=issuetype" alt="Improvement"></a>
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2081?src=confmacro">CXF-2081</a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            <a shape="rect" href="https://issues.apache.org/jira/browse/CXF-2081?src=confmacro">
+                                            Allow specifying a Java heap size when wsdl2java -compile invokes Java compiler
+                                        </a>
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Daniel Kulp
+                                                                    </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Torsten Mielke
+                                                                    </td><td colspan="1" nowrap>
+                                                                            <img class="icon" src="https://issues.apache.org/jira/images/icons/priorities/minor.svg" alt="Minor">
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                                    <span class="aui-lozenge aui-lozenge-subtle aui-lozenge-success">
+                                                Closed
+                                            </span>
+                                                                                                            </td><td colspan="1" rowspan="1" class="jira-macro-table-underline-pdfexport" style="padding:5px !important;vertical-align: top;">
+                                                                            Fixed
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Mar 03, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            Apr 24, 2009
+                                                                    </td><td colspan="1" nowrap>
+                                                                            
+                                                                    </td></tr><tr><td colspan="11" rowspan="1">
+                        <div class="jira-oauth-message-marker">
+                            <div class="aui-message-container">
+                                <div class="aui-message aui-message-info info">
+                                    <span><a shape="rect" class="static-oauth-init" href="https://cwiki.apache.org/confluence/plugins/servlet/applinks/oauth/login-dance/authorize?applicationLinkID=5aa69414-a9e9-3523-82ec-879b028fb15b">Authenticate</a> to retrieve your issues</span>
+                                </div>
+                            </div>
+                        </div>
+                    </td></tr></tbody></table>
+    </div>
+            <div class="refresh-issues-bottom">
+                            <span class="total-issues-count" id="total-issues-count">
+                                                                        <span>Showing 20 out of</span>
+                                                <a shape="rect" title="View all matching issues in Jira." href="https://issues.apache.org/jira/secure/IssueNavigator.jspa?reset=true&amp;&amp;pid=12310511&amp;fixfor=12313634&amp;sorter/field=issuekey&amp;sorter/order=DESC&amp;tempMax=1000&amp;src=confmacro">
+                                                            36 issues
+                                                    </a>
+                                        </span>
+                                </div>
+        
+
+    
+</div>
+</div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=115780">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=115780&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

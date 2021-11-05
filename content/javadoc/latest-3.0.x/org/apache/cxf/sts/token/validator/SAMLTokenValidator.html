@@ -1,0 +1,486 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+SAMLTokenValidator (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SAMLTokenValidator (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SAMLTokenValidator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLRoleParser.html" title="interface in org.apache.cxf.sts.token.validator"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/token/validator/SCTValidator.html" title="class in org.apache.cxf.sts.token.validator"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/sts/token/validator/SAMLTokenValidator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SAMLTokenValidator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.sts.token.validator</FONT>
+<BR>
+Class SAMLTokenValidator</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.sts.token.validator.SAMLTokenValidator</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidator.html" title="interface in org.apache.cxf.sts.token.validator">TokenValidator</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>SAMLTokenValidator</B><DT>extends <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidator.html" title="interface in org.apache.cxf.sts.token.validator">TokenValidator</A></DL>
+</PRE>
+
+<P>
+Validate a SAML Assertion. It is valid if it was issued and signed by this STS.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLTokenValidator.html#SAMLTokenValidator()">SAMLTokenValidator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLTokenValidator.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenValidator implementation is capable of validating the
+ ReceivedToken argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLTokenValidator.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken, java.lang.String)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;realm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenValidator implementation is capable of validating the
+ ReceivedToken argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLRoleParser.html" title="interface in org.apache.cxf.sts.token.validator">SAMLRoleParser</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLTokenValidator.html#getSamlRoleParser()">getSamlRoleParser</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLTokenValidator.html#setSamlRealmCodec(org.apache.cxf.sts.token.realm.SAMLRealmCodec)">setSamlRealmCodec</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/token/realm/SAMLRealmCodec.html" title="interface in org.apache.cxf.sts.token.realm">SAMLRealmCodec</A>&nbsp;samlRealmCodec)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the SAMLRealmCodec instance to use to return a realm from a validated token</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLTokenValidator.html#setSamlRoleParser(org.apache.cxf.sts.token.validator.SAMLRoleParser)">setSamlRoleParser</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLRoleParser.html" title="interface in org.apache.cxf.sts.token.validator">SAMLRoleParser</A>&nbsp;samlRoleParser)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLTokenValidator.html#setSubjectConstraints(java.util.List)">setSubjectConstraints</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;subjectConstraints)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set a list of Strings corresponding to regular expression constraints on the subject DN
+ of a certificate that was used to sign a received Assertion</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLTokenValidator.html#setValidator(org.apache.wss4j.dom.validate.Validator)">setValidator</A></B>(org.apache.wss4j.dom.validate.Validator&nbsp;validator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the WSS4J Validator instance to use to validate the token.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLTokenValidator.html#validateAssertion(org.apache.wss4j.common.saml.SamlAssertionWrapper)">validateAssertion</A></B>(org.apache.wss4j.common.saml.SamlAssertionWrapper&nbsp;assertion)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Validate the assertion against schemas/profiles</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLTokenValidator.html#validateConditions(org.apache.wss4j.common.saml.SamlAssertionWrapper, org.apache.cxf.sts.request.ReceivedToken)">validateConditions</A></B>(org.apache.wss4j.common.saml.SamlAssertionWrapper&nbsp;assertion,
+                   <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidatorResponse.html" title="class in org.apache.cxf.sts.token.validator">TokenValidatorResponse</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLTokenValidator.html#validateToken(org.apache.cxf.sts.token.validator.TokenValidatorParameters)">validateToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidatorParameters.html" title="class in org.apache.cxf.sts.token.validator">TokenValidatorParameters</A>&nbsp;tokenParameters)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Validate a Token using the given TokenValidatorParameters.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="SAMLTokenValidator()"><!-- --></A><H3>
+SAMLTokenValidator</H3>
+<PRE>
+public <B>SAMLTokenValidator</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="setSubjectConstraints(java.util.List)"><!-- --></A><H3>
+setSubjectConstraints</H3>
+<PRE>
+public void <B>setSubjectConstraints</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;subjectConstraints)</PRE>
+<DL>
+<DD>Set a list of Strings corresponding to regular expression constraints on the subject DN
+ of a certificate that was used to sign a received Assertion
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setValidator(org.apache.wss4j.dom.validate.Validator)"><!-- --></A><H3>
+setValidator</H3>
+<PRE>
+public void <B>setValidator</B>(org.apache.wss4j.dom.validate.Validator&nbsp;validator)</PRE>
+<DL>
+<DD>Set the WSS4J Validator instance to use to validate the token.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>validator</CODE> - the WSS4J Validator instance to use to validate the token</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSamlRealmCodec(org.apache.cxf.sts.token.realm.SAMLRealmCodec)"><!-- --></A><H3>
+setSamlRealmCodec</H3>
+<PRE>
+public void <B>setSamlRealmCodec</B>(<A HREF="../../../../../../org/apache/cxf/sts/token/realm/SAMLRealmCodec.html" title="interface in org.apache.cxf.sts.token.realm">SAMLRealmCodec</A>&nbsp;samlRealmCodec)</PRE>
+<DL>
+<DD>Set the SAMLRealmCodec instance to use to return a realm from a validated token
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>samlRealmCodec</CODE> - the SAMLRealmCodec instance to use to return a realm from a validated token</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="canHandleToken(org.apache.cxf.sts.request.ReceivedToken)"><!-- --></A><H3>
+canHandleToken</H3>
+<PRE>
+public boolean <B>canHandleToken</B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget)</PRE>
+<DL>
+<DD>Return true if this TokenValidator implementation is capable of validating the
+ ReceivedToken argument.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidator.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken)">canHandleToken</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidator.html" title="interface in org.apache.cxf.sts.token.validator">TokenValidator</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="canHandleToken(org.apache.cxf.sts.request.ReceivedToken, java.lang.String)"><!-- --></A><H3>
+canHandleToken</H3>
+<PRE>
+public boolean <B>canHandleToken</B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget,
+                              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;realm)</PRE>
+<DL>
+<DD>Return true if this TokenValidator implementation is capable of validating the
+ ReceivedToken argument. The realm is ignored in this Validator.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidator.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken, java.lang.String)">canHandleToken</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidator.html" title="interface in org.apache.cxf.sts.token.validator">TokenValidator</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="validateToken(org.apache.cxf.sts.token.validator.TokenValidatorParameters)"><!-- --></A><H3>
+validateToken</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidatorResponse.html" title="class in org.apache.cxf.sts.token.validator">TokenValidatorResponse</A> <B>validateToken</B>(<A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidatorParameters.html" title="class in org.apache.cxf.sts.token.validator">TokenValidatorParameters</A>&nbsp;tokenParameters)</PRE>
+<DL>
+<DD>Validate a Token using the given TokenValidatorParameters.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidator.html#validateToken(org.apache.cxf.sts.token.validator.TokenValidatorParameters)">validateToken</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidator.html" title="interface in org.apache.cxf.sts.token.validator">TokenValidator</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="validateAssertion(org.apache.wss4j.common.saml.SamlAssertionWrapper)"><!-- --></A><H3>
+validateAssertion</H3>
+<PRE>
+protected void <B>validateAssertion</B>(org.apache.wss4j.common.saml.SamlAssertionWrapper&nbsp;assertion)
+                          throws org.apache.wss4j.common.ext.WSSecurityException</PRE>
+<DL>
+<DD>Validate the assertion against schemas/profiles
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>org.apache.wss4j.common.ext.WSSecurityException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="validateConditions(org.apache.wss4j.common.saml.SamlAssertionWrapper, org.apache.cxf.sts.request.ReceivedToken)"><!-- --></A><H3>
+validateConditions</H3>
+<PRE>
+protected boolean <B>validateConditions</B>(org.apache.wss4j.common.saml.SamlAssertionWrapper&nbsp;assertion,
+                                     <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSamlRoleParser()"><!-- --></A><H3>
+getSamlRoleParser</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLRoleParser.html" title="interface in org.apache.cxf.sts.token.validator">SAMLRoleParser</A> <B>getSamlRoleParser</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSamlRoleParser(org.apache.cxf.sts.token.validator.SAMLRoleParser)"><!-- --></A><H3>
+setSamlRoleParser</H3>
+<PRE>
+public void <B>setSamlRoleParser</B>(<A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLRoleParser.html" title="interface in org.apache.cxf.sts.token.validator">SAMLRoleParser</A>&nbsp;samlRoleParser)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SAMLTokenValidator.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLRoleParser.html" title="interface in org.apache.cxf.sts.token.validator"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/token/validator/SCTValidator.html" title="class in org.apache.cxf.sts.token.validator"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/sts/token/validator/SAMLTokenValidator.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SAMLTokenValidator.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

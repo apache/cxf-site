@@ -1,0 +1,550 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+SimpleSearchCondition (Apache CXF Bundle Jar 2.7.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SimpleSearchCondition (Apache CXF Bundle Jar 2.7.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SimpleSearchCondition.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchUtils.html" title="class in org.apache.cxf.jaxrs.ext.search"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SimpleSearchCondition.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.jaxrs.ext.search</FONT>
+<BR>
+Class SimpleSearchCondition&lt;T&gt;</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.jaxrs.ext.search.SimpleSearchCondition&lt;T&gt;</B>
+</PRE>
+<DL>
+<DT><DT><B>Type Parameters:</B><DD><CODE>T</CODE> - type of search condition.</DL>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search">SearchCondition</A>&lt;T&gt;</DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>SimpleSearchCondition&lt;T&gt;</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search">SearchCondition</A>&lt;T&gt;</DL>
+</PRE>
+
+<P>
+Simple search condition comparing primitive objects or complex object by its getters. For details see
+ <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#isMet(T)"><CODE>isMet(Object)</CODE></A> description.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#SimpleSearchCondition(org.apache.cxf.jaxrs.ext.search.ConditionType, T)">SimpleSearchCondition</A></B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</A>&nbsp;cType,
+                      <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&nbsp;condition)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates search condition with same operator (equality, inequality) applied in all comparison; see
+ <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#isMet(T)"><CODE>isMet(Object)</CODE></A> for details of comparison.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#SimpleSearchCondition(java.util.Map, T)">SimpleSearchCondition</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</A>&gt;&nbsp;getters2operators,
+                      <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&nbsp;condition)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creates search condition with different operators (equality, inequality etc) specified for each getter;
+ see <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#isMet(T)"><CODE>isMet(Object)</CODE></A> for details of comparison.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#accept(org.apache.cxf.jaxrs.ext.search.SearchConditionVisitor)">accept</A></B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchConditionVisitor.html" title="interface in org.apache.cxf.jaxrs.ext.search">SearchConditionVisitor</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&gt;&nbsp;visitor)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides a visitor which will convert this SearchCondition into
+ a custom expression, for example, into the SQL statement, etc</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#findAll(java.util.Collection)">findAll</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&gt;&nbsp;pojos)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a list of pojos matching the condition</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#getCondition()">getCondition</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some SearchConditions may use instance of T to capture the actual search criteria
+ thus making it simpler to implement isMet(T).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#getConditionType()">getConditionType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the type of the condition this SearchCondition represents</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search">SearchCondition</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#getSearchConditions()">getSearchConditions</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;List of conditions this SearchCondition may represent.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/PrimitiveStatement.html" title="class in org.apache.cxf.jaxrs.ext.search">PrimitiveStatement</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#getStatement()">getStatement</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Primitive statement such a > b, i < 5, etc
+ this condition may represent.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#isMet(T)">isMet</A></B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&nbsp;pojo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compares given object against template condition object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#toSQL(java.lang.String, java.lang.String...)">toSQL</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;table,
+      <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>...&nbsp;columns)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="SimpleSearchCondition(org.apache.cxf.jaxrs.ext.search.ConditionType,java.lang.Object)"><!-- --></A><A NAME="SimpleSearchCondition(org.apache.cxf.jaxrs.ext.search.ConditionType, T)"><!-- --></A><H3>
+SimpleSearchCondition</H3>
+<PRE>
+public <B>SimpleSearchCondition</B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</A>&nbsp;cType,
+                             <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&nbsp;condition)</PRE>
+<DL>
+<DD>Creates search condition with same operator (equality, inequality) applied in all comparison; see
+ <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#isMet(T)"><CODE>isMet(Object)</CODE></A> for details of comparison.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>cType</CODE> - shared condition type<DD><CODE>condition</CODE> - template object</DL>
+</DL>
+<HR>
+
+<A NAME="SimpleSearchCondition(java.util.Map,java.lang.Object)"><!-- --></A><A NAME="SimpleSearchCondition(java.util.Map, T)"><!-- --></A><H3>
+SimpleSearchCondition</H3>
+<PRE>
+public <B>SimpleSearchCondition</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</A>&gt;&nbsp;getters2operators,
+                             <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&nbsp;condition)</PRE>
+<DL>
+<DD>Creates search condition with different operators (equality, inequality etc) specified for each getter;
+ see <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#isMet(T)"><CODE>isMet(Object)</CODE></A> for details of comparison. Cannot be used for primitive T type due to
+ per-getter comparison strategy.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>getters2operators</CODE> - getters names and operators to be used with them during comparison<DD><CODE>condition</CODE> - template object</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getCondition()"><!-- --></A><H3>
+getCondition</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A> <B>getCondition</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#getCondition()">SearchCondition</A></CODE></B></DD>
+<DD>Some SearchConditions may use instance of T to capture the actual search criteria
+ thus making it simpler to implement isMet(T). In some cases, the code which is given
+ SearchCondition may find it more efficient to directly deal with the captured state
+ for a more efficient lookup of matching data/records as opposed to calling
+ SearchCondition.isMet for every instance of T it knows about.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#getCondition()">getCondition</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search">SearchCondition</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>T the captured search criteria, can be null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getConditionType()"><!-- --></A><H3>
+getConditionType</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</A> <B>getConditionType</B>()</PRE>
+<DL>
+<DD>Returns the type of the condition this SearchCondition represents
+ <p>
+ When constructor with map is used it returns null.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#getConditionType()">getConditionType</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search">SearchCondition</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>condition type</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSearchConditions()"><!-- --></A><H3>
+getSearchConditions</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search">SearchCondition</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&gt;&gt; <B>getSearchConditions</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#getSearchConditions()">SearchCondition</A></CODE></B></DD>
+<DD>List of conditions this SearchCondition may represent.
+ Composite SearchConditions will return a list of conditions they are
+ composed from, primitive ones will return null
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#getSearchConditions()">getSearchConditions</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search">SearchCondition</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>list of conditions, can be null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isMet(java.lang.Object)"><!-- --></A><A NAME="isMet(T)"><!-- --></A><H3>
+isMet</H3>
+<PRE>
+public boolean <B>isMet</B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&nbsp;pojo)</PRE>
+<DL>
+<DD>Compares given object against template condition object.
+ <p>
+ For built-in type T like String, Number (precisely, from type T located in subpackage of "java.lang.*")
+ given object is directly compared with template object. Comparison for <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html#EQUALS"><CODE>ConditionType.EQUALS</CODE></A>
+ requires correct implementation of <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang"><CODE>Object.equals(Object)</CODE></A>, using inequalities requires type T
+ implementing <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang"><CODE>Comparable</CODE></A>.
+ <p>
+ For other types the comparison of given object against template object is done using its
+ <b>getters</b>; Value returned by <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#isMet(T)">isMet(Object)</A> operation is <b>conjunction ('and'
+ operator)</b> of comparisons of each getter accessible in object of type T. Getters of template object
+ that return null or throw exception are not used in comparison. Finally, if all getters
+ return nulls (are excluded) it is interpreted as no filter (match every pojo).
+ <p>
+ If <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#SimpleSearchCondition(org.apache.cxf.jaxrs.ext.search.ConditionType, T)"><CODE>constructor with shared operator</CODE></A> was used,
+ then getters are compared using the same operator. If <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html#SimpleSearchCondition(java.util.Map, T)"><CODE>constructor with map of operators</CODE></A> was used then for every getter specified operator is used (getters
+ for missing mapping are ignored). The way that comparison per-getter is done depending on operator type
+ per getter - comparison for <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html#EQUALS"><CODE>ConditionType.EQUALS</CODE></A> requires correct implementation of
+ <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang"><CODE>Object.equals(Object)</CODE></A>, using inequalities requires that getter type implements
+ <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Comparable.html?is-external=true" title="class or interface in java.lang"><CODE>Comparable</CODE></A>.
+ <p>
+ For equality comparison and String type in template object (either being built-in or getter from client
+ provided type) it is allowed to used asterisk at the beginning or at the end of text as wild card (zero
+ or more of any characters) e.g. "foo*", "*foo" or "*foo*". Inner asterisks are not interpreted as wild
+ cards.
+ <p>
+ <b>Example:</b>
+ 
+ <pre>
+ SimpleSearchCondition&lt;Integer&gt; ssc = new SimpleSearchCondition&lt;Integer&gt;(
+   ConditionType.GREATER_THAN, 10);    
+ ssc.isMet(20);
+ // true since 20&gt;10 
+ 
+ class Entity {
+   public String getName() {...
+   public int getLevel() {...
+   public String getMessage() {...
+ }
+ 
+ Entity template = new Entity("bbb", 10, null);
+ ssc = new SimpleSearchCondition&lt;Entity&gt;(
+   ConditionType.GREATER_THAN, template);    
+ 
+ ssc.isMet(new Entity("aaa", 20, "some mesage")); 
+ // false: is not met, expression '"aaa"&gt;"bbb" and 20&gt;10' is not true  
+ // since "aaa" is not greater than "bbb"; not that message is null in template hence ingored
+ 
+ ssc.isMet(new Entity("ccc", 30, "other message"));
+ // true: is met, expression '"ccc"&gt;"bbb" and 30&gt;10' is true
+ 
+ Map&lt;String,ConditionType&gt; map;
+ map.put("name", ConditionType.EQUALS);
+ map.put("level", ConditionType.GREATER_THAN);
+ ssc = new SimpleSearchCondition&lt;Entity&gt;(
+   ConditionType.GREATER_THAN, template);
+   
+ ssc.isMet(new Entity("ccc", 30, "other message"));
+ // false due to expression '"aaa"=="ccc" and 30&gt;10"' (note different operators)
+ 
+ </pre>
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#isMet(T)">isMet</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search">SearchCondition</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pojo</CODE> - the object which will be checked
+<DT><B>Returns:</B><DD>true if the pojo meets this search condition, false - otherwise
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/IllegalAccessException.html?is-external=true" title="class or interface in java.lang">IllegalAccessException</A></CODE> - when security manager disallows reflective call of getters.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="findAll(java.util.Collection)"><!-- --></A><H3>
+findAll</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&gt; <B>findAll</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&gt;&nbsp;pojos)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#findAll(java.util.Collection)">SearchCondition</A></CODE></B></DD>
+<DD>Returns a list of pojos matching the condition
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#findAll(java.util.Collection)">findAll</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search">SearchCondition</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pojos</CODE> - list of pojos
+<DT><B>Returns:</B><DD>list of the matching pojos or null if none have been found</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="toSQL(java.lang.String, java.lang.String...)"><!-- --></A><H3>
+toSQL</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>toSQL</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;table,
+                    <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>...&nbsp;columns)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStatement()"><!-- --></A><H3>
+getStatement</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/PrimitiveStatement.html" title="class in org.apache.cxf.jaxrs.ext.search">PrimitiveStatement</A> <B>getStatement</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#getStatement()">SearchCondition</A></CODE></B></DD>
+<DD>Primitive statement such a > b, i < 5, etc
+ this condition may represent. Complex conditions will return null.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#getStatement()">getStatement</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search">SearchCondition</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>primitive search statement, can be null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="accept(org.apache.cxf.jaxrs.ext.search.SearchConditionVisitor)"><!-- --></A><H3>
+accept</H3>
+<PRE>
+public void <B>accept</B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchConditionVisitor.html" title="interface in org.apache.cxf.jaxrs.ext.search">SearchConditionVisitor</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&gt;&nbsp;visitor)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#accept(org.apache.cxf.jaxrs.ext.search.SearchConditionVisitor)">SearchCondition</A></CODE></B></DD>
+<DD>Provides a visitor which will convert this SearchCondition into
+ a custom expression, for example, into the SQL statement, etc
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#accept(org.apache.cxf.jaxrs.ext.search.SearchConditionVisitor)">accept</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search">SearchCondition</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="type parameter in SimpleSearchCondition">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SimpleSearchCondition.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchUtils.html" title="class in org.apache.cxf.jaxrs.ext.search"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SimpleSearchCondition.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

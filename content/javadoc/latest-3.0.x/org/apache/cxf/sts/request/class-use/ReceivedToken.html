@@ -1,0 +1,740 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Class org.apache.cxf.sts.request.ReceivedToken (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Class org.apache.cxf.sts.request.ReceivedToken (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/sts/request//class-useReceivedToken.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ReceivedToken.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Class<br>org.apache.cxf.sts.request.ReceivedToken</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.sts.operation"><B>org.apache.cxf.sts.operation</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.sts.request"><B>org.apache.cxf.sts.request</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.sts.token.canceller"><B>org.apache.cxf.sts.token.canceller</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.sts.token.delegation"><B>org.apache.cxf.sts.token.delegation</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.sts.token.renewer"><B>org.apache.cxf.sts.token.renewer</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.sts.token.validator"><B>org.apache.cxf.sts.token.validator</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.sts.operation"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A> in <A HREF="../../../../../../org/apache/cxf/sts/operation/package-summary.html">org.apache.cxf.sts.operation</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/sts/operation/package-summary.html">org.apache.cxf.sts.operation</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractOperation.</B><B><A HREF="../../../../../../org/apache/cxf/sts/operation/AbstractOperation.html#performDelegationHandling(org.apache.cxf.sts.request.RequestParser, javax.xml.ws.WebServiceContext, org.apache.cxf.sts.request.ReceivedToken, java.security.Principal, java.util.Set)">performDelegationHandling</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/RequestParser.html" title="class in org.apache.cxf.sts.request">RequestParser</A>&nbsp;requestParser,
+                          <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/WebServiceContext.html?is-external=true" title="class or interface in javax.xml.ws">WebServiceContext</A>&nbsp;context,
+                          <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;token,
+                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Principal.html?is-external=true" title="class or interface in java.security">Principal</A>&nbsp;tokenPrincipal,
+                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/security/Principal.html?is-external=true" title="class or interface in java.security">Principal</A>&gt;&nbsp;tokenRoles)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractOperation.</B><B><A HREF="../../../../../../org/apache/cxf/sts/operation/AbstractOperation.html#processValidToken(org.apache.cxf.sts.token.provider.TokenProviderParameters, org.apache.cxf.sts.request.ReceivedToken, org.apache.cxf.sts.token.validator.TokenValidatorResponse)">processValidToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/token/provider/TokenProviderParameters.html" title="class in org.apache.cxf.sts.token.provider">TokenProviderParameters</A>&nbsp;providerParameters,
+                  <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validatedToken,
+                  <A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidatorResponse.html" title="class in org.apache.cxf.sts.token.validator">TokenValidatorResponse</A>&nbsp;tokenResponse)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidatorResponse.html" title="class in org.apache.cxf.sts.token.validator">TokenValidatorResponse</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractOperation.</B><B><A HREF="../../../../../../org/apache/cxf/sts/operation/AbstractOperation.html#validateReceivedToken(javax.xml.ws.WebServiceContext, java.lang.String, org.apache.cxf.sts.request.TokenRequirements, org.apache.cxf.sts.request.ReceivedToken)">validateReceivedToken</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/WebServiceContext.html?is-external=true" title="class or interface in javax.xml.ws">WebServiceContext</A>&nbsp;context,
+                      <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;realm,
+                      <A HREF="../../../../../../org/apache/cxf/sts/request/TokenRequirements.html" title="class in org.apache.cxf.sts.request">TokenRequirements</A>&nbsp;tokenRequirements,
+                      <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;token)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.sts.request"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A> in <A HREF="../../../../../../org/apache/cxf/sts/request/package-summary.html">org.apache.cxf.sts.request</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/sts/request/package-summary.html">org.apache.cxf.sts.request</A> that return <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></CODE></FONT></TD>
+<TD><CODE><B>TokenRequirements.</B><B><A HREF="../../../../../../org/apache/cxf/sts/request/TokenRequirements.html#getActAs()">getActAs</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></CODE></FONT></TD>
+<TD><CODE><B>TokenRequirements.</B><B><A HREF="../../../../../../org/apache/cxf/sts/request/TokenRequirements.html#getCancelTarget()">getCancelTarget</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></CODE></FONT></TD>
+<TD><CODE><B>TokenRequirements.</B><B><A HREF="../../../../../../org/apache/cxf/sts/request/TokenRequirements.html#getOnBehalfOf()">getOnBehalfOf</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></CODE></FONT></TD>
+<TD><CODE><B>TokenRequirements.</B><B><A HREF="../../../../../../org/apache/cxf/sts/request/TokenRequirements.html#getRenewTarget()">getRenewTarget</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></CODE></FONT></TD>
+<TD><CODE><B>TokenRequirements.</B><B><A HREF="../../../../../../org/apache/cxf/sts/request/TokenRequirements.html#getValidateTarget()">getValidateTarget</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/sts/request/package-summary.html">org.apache.cxf.sts.request</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TokenRequirements.</B><B><A HREF="../../../../../../org/apache/cxf/sts/request/TokenRequirements.html#setActAs(org.apache.cxf.sts.request.ReceivedToken)">setActAs</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;actAs)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TokenRequirements.</B><B><A HREF="../../../../../../org/apache/cxf/sts/request/TokenRequirements.html#setCancelTarget(org.apache.cxf.sts.request.ReceivedToken)">setCancelTarget</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;cancelTarget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TokenRequirements.</B><B><A HREF="../../../../../../org/apache/cxf/sts/request/TokenRequirements.html#setOnBehalfOf(org.apache.cxf.sts.request.ReceivedToken)">setOnBehalfOf</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;onBehalfOf)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TokenRequirements.</B><B><A HREF="../../../../../../org/apache/cxf/sts/request/TokenRequirements.html#setRenewTarget(org.apache.cxf.sts.request.ReceivedToken)">setRenewTarget</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;renewTarget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TokenRequirements.</B><B><A HREF="../../../../../../org/apache/cxf/sts/request/TokenRequirements.html#setValidateTarget(org.apache.cxf.sts.request.ReceivedToken)">setValidateTarget</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.sts.token.canceller"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A> in <A HREF="../../../../../../org/apache/cxf/sts/token/canceller/package-summary.html">org.apache.cxf.sts.token.canceller</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/sts/token/canceller/package-summary.html">org.apache.cxf.sts.token.canceller</A> that return <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></CODE></FONT></TD>
+<TD><CODE><B>TokenCancellerParameters.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/canceller/TokenCancellerParameters.html#getToken()">getToken</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></CODE></FONT></TD>
+<TD><CODE><B>TokenCancellerResponse.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/canceller/TokenCancellerResponse.html#getToken()">getToken</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/sts/token/canceller/package-summary.html">org.apache.cxf.sts.token.canceller</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>SCTCanceller.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/canceller/SCTCanceller.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;targetToken)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenCanceller implementation is capable of cancelling the
+ ReceivedToken argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>TokenCanceller.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/canceller/TokenCanceller.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;cancelTarget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenCanceller implementation is able to cancel a token
+ that corresponds to the given token.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TokenCancellerParameters.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/canceller/TokenCancellerParameters.html#setToken(org.apache.cxf.sts.request.ReceivedToken)">setToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;token)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TokenCancellerResponse.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/canceller/TokenCancellerResponse.html#setToken(org.apache.cxf.sts.request.ReceivedToken)">setToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;token)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.sts.token.delegation"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A> in <A HREF="../../../../../../org/apache/cxf/sts/token/delegation/package-summary.html">org.apache.cxf.sts.token.delegation</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/sts/token/delegation/package-summary.html">org.apache.cxf.sts.token.delegation</A> that return <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></CODE></FONT></TD>
+<TD><CODE><B>TokenDelegationParameters.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/delegation/TokenDelegationParameters.html#getToken()">getToken</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></CODE></FONT></TD>
+<TD><CODE><B>TokenDelegationResponse.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/delegation/TokenDelegationResponse.html#getToken()">getToken</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/sts/token/delegation/package-summary.html">org.apache.cxf.sts.token.delegation</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>SAMLDelegationHandler.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/delegation/SAMLDelegationHandler.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;delegateTarget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>TokenDelegationHandler.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/delegation/TokenDelegationHandler.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;delegateTarget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenDelegationHandler implementation is capable of handling the
+ ReceivedToken argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>UsernameTokenDelegationHandler.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/delegation/UsernameTokenDelegationHandler.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;delegateTarget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>HOKDelegationHandler.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/delegation/HOKDelegationHandler.html#isDelegationAllowed(org.apache.cxf.sts.request.ReceivedToken, java.lang.String)">isDelegationAllowed</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;receivedToken,
+                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;appliesToAddress)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is Delegation allowed for a particular token</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>SAMLDelegationHandler.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/delegation/SAMLDelegationHandler.html#isDelegationAllowed(org.apache.cxf.sts.request.ReceivedToken, java.lang.String)">isDelegationAllowed</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;receivedToken,
+                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;appliesToAddress)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is Delegation allowed for a particular token</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TokenDelegationParameters.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/delegation/TokenDelegationParameters.html#setToken(org.apache.cxf.sts.request.ReceivedToken)">setToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;token)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TokenDelegationResponse.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/delegation/TokenDelegationResponse.html#setToken(org.apache.cxf.sts.request.ReceivedToken)">setToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;token)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.sts.token.renewer"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A> in <A HREF="../../../../../../org/apache/cxf/sts/token/renewer/package-summary.html">org.apache.cxf.sts.token.renewer</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/sts/token/renewer/package-summary.html">org.apache.cxf.sts.token.renewer</A> that return <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></CODE></FONT></TD>
+<TD><CODE><B>TokenRenewerParameters.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/renewer/TokenRenewerParameters.html#getToken()">getToken</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/sts/token/renewer/package-summary.html">org.apache.cxf.sts.token.renewer</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>SAMLTokenRenewer.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/renewer/SAMLTokenRenewer.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;renewTarget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenRenewer implementation is able to renew a token.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>TokenRenewer.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/renewer/TokenRenewer.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;renewTarget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenRenewer implementation is able to renew a token.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>SAMLTokenRenewer.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/renewer/SAMLTokenRenewer.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken, java.lang.String)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;renewTarget,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;realm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenRenewer implementation is able to renew a token in the given realm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>TokenRenewer.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/renewer/TokenRenewer.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken, java.lang.String)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;renewTarget,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;realm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenRenewer implementation is able to renew a token in the given realm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TokenRenewerParameters.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/renewer/TokenRenewerParameters.html#setToken(org.apache.cxf.sts.request.ReceivedToken)">setToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;token)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.sts.token.validator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A> in <A HREF="../../../../../../org/apache/cxf/sts/token/validator/package-summary.html">org.apache.cxf.sts.token.validator</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/sts/token/validator/package-summary.html">org.apache.cxf.sts.token.validator</A> that return <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></CODE></FONT></TD>
+<TD><CODE><B>TokenValidatorParameters.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidatorParameters.html#getToken()">getToken</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></CODE></FONT></TD>
+<TD><CODE><B>TokenValidatorResponse.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidatorResponse.html#getToken()">getToken</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/sts/token/validator/package-summary.html">org.apache.cxf.sts.token.validator</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>SAMLTokenValidator.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLTokenValidator.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenValidator implementation is capable of validating the
+ ReceivedToken argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>SCTValidator.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/SCTValidator.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenValidator implementation is capable of validating the
+ ReceivedToken argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>TokenValidator.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidator.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenValidator implementation is capable of validating the
+ ReceivedToken argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>UsernameTokenValidator.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/UsernameTokenValidator.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenValidator implementation is capable of validating the
+ ReceivedToken argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>X509TokenValidator.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/X509TokenValidator.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenValidator implementation is capable of validating the
+ ReceivedToken argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>SAMLTokenValidator.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLTokenValidator.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken, java.lang.String)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;realm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenValidator implementation is capable of validating the
+ ReceivedToken argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>SCTValidator.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/SCTValidator.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken, java.lang.String)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;realm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenValidator implementation is capable of validating the
+ ReceivedToken argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>TokenValidator.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidator.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken, java.lang.String)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;realm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenValidator implementation is capable of validating the
+ ReceivedToken argument in the given realm.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>UsernameTokenValidator.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/UsernameTokenValidator.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken, java.lang.String)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;realm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenValidator implementation is capable of validating the
+ ReceivedToken argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>X509TokenValidator.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/X509TokenValidator.html#canHandleToken(org.apache.cxf.sts.request.ReceivedToken, java.lang.String)">canHandleToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;realm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return true if this TokenValidator implementation is capable of validating the
+ ReceivedToken argument.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TokenValidatorParameters.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidatorParameters.html#setToken(org.apache.cxf.sts.request.ReceivedToken)">setToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;token)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TokenValidatorResponse.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/TokenValidatorResponse.html#setToken(org.apache.cxf.sts.request.ReceivedToken)">setToken</A></B>(<A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;token)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>SAMLTokenValidator.</B><B><A HREF="../../../../../../org/apache/cxf/sts/token/validator/SAMLTokenValidator.html#validateConditions(org.apache.wss4j.common.saml.SamlAssertionWrapper, org.apache.cxf.sts.request.ReceivedToken)">validateConditions</A></B>(org.apache.wss4j.common.saml.SamlAssertionWrapper&nbsp;assertion,
+                   <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request">ReceivedToken</A>&nbsp;validateTarget)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/cxf/sts/request/ReceivedToken.html" title="class in org.apache.cxf.sts.request"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/sts/request//class-useReceivedToken.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ReceivedToken.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

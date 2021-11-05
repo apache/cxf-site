@@ -1,0 +1,598 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+IDLToWSDLProcessor (Apache CXF Bundle Jar 2.6.3 API)
+</TITLE>
+
+<META NAME="keywords" CONTENT="org.apache.cxf.tools.corba.processors.idl.IDLToWSDLProcessor class">
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="IDLToWSDLProcessor (Apache CXF Bundle Jar 2.6.3 API)";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/IDLToWSDLProcessor.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLTokenTypes.html" title="interface in org.apache.cxf.tools.corba.processors.idl"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/ModuleToNSMapper.html" title="class in org.apache.cxf.tools.corba.processors.idl"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="IDLToWSDLProcessor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.cxf.tools.corba.processors.idl.IDLProcessor">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.tools.corba.processors.idl</FONT>
+<BR>
+Class IDLToWSDLProcessor</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLProcessor.html" title="class in org.apache.cxf.tools.corba.processors.idl">org.apache.cxf.tools.corba.processors.idl.IDLProcessor</A>
+      <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.tools.corba.processors.idl.IDLToWSDLProcessor</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../../org/apache/cxf/tools/corba/common/Processor.html" title="interface in org.apache.cxf.tools.corba.common">Processor</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>IDLToWSDLProcessor</B><DT>extends <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLProcessor.html" title="class in org.apache.cxf.tools.corba.processors.idl">IDLProcessor</A></DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.tools.corba.processors.idl.IDLProcessor"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.tools.corba.processors.idl.<A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLProcessor.html" title="class in org.apache.cxf.tools.corba.processors.idl">IDLProcessor</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLProcessor.html#env">env</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLProcessor.html#preprocessor">preprocessor</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html#IDLToWSDLProcessor()">IDLToWSDLProcessor</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html#addTypeMapSchemaImports(javax.wsdl.Definition, org.apache.cxf.tools.corba.processors.idl.WSDLASTVisitor)">addTypeMapSchemaImports</A></B>(javax.wsdl.Definition&nbsp;def,
+                        <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/WSDLASTVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">WSDLASTVisitor</A>&nbsp;visitor)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html#cleanUpTypeMap(org.apache.cxf.binding.corba.wsdl.TypeMappingType)">cleanUpTypeMap</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/wsdl/TypeMappingType.html" title="class in org.apache.cxf.binding.corba.wsdl">TypeMappingType</A>&nbsp;typeMap)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html#generateCORBAService(javax.wsdl.Definition, javax.wsdl.Binding[], boolean)">generateCORBAService</A></B>(javax.wsdl.Definition&nbsp;def,
+                     javax.wsdl.Binding[]&nbsp;bindings,
+                     boolean&nbsp;isDefaultMapping)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html#getBaseFilename(java.lang.String)">getBaseFilename</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;ifile)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html" title="class or interface in java.io">Writer</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html#getOutputWriter(java.io.File)">getOutputWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/File.html" title="class or interface in java.io">File</A>&nbsp;file)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html" title="class or interface in java.io">Writer</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html#getOutputWriter(java.lang.String, java.lang.String)">getOutputWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;filename,
+                <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;outputDirectory)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html#parseIDL(antlr.collections.AST)">parseIDL</A></B>(antlr.collections.AST&nbsp;idlTree)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html#process()">process</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html#process(antlr.collections.AST)">process</A></B>(antlr.collections.AST&nbsp;idlTree)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html#setIgnoreImports(boolean)">setIgnoreImports</A></B>(boolean&nbsp;flag)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html#setImportDefinitionWriters(java.util.Map)">setImportDefinitionWriters</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Map.html" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/File.html" title="class or interface in java.io">File</A>&gt;&nbsp;writers)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Used only for test cases to set writers for imports when using
+ the -mns option</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html#setImportSchemaWriters(java.util.Map)">setImportSchemaWriters</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Map.html" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/File.html" title="class or interface in java.io">File</A>&gt;&nbsp;writers)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html#setLogicalOutputWriter(java.io.Writer)">setLogicalOutputWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html" title="class or interface in java.io">Writer</A>&nbsp;writer)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html#setOutputWriter(java.io.Writer)">setOutputWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html" title="class or interface in java.io">Writer</A>&nbsp;writer)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html#setPhysicalOutputWriter(java.io.Writer)">setPhysicalOutputWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html" title="class or interface in java.io">Writer</A>&nbsp;writer)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html#setSchemaOutputWriter(java.io.Writer)">setSchemaOutputWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html" title="class or interface in java.io">Writer</A>&nbsp;writer)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.tools.corba.processors.idl.IDLProcessor"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.tools.corba.processors.idl.<A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLProcessor.html" title="class in org.apache.cxf.tools.corba.processors.idl">IDLProcessor</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLProcessor.html#getIDLTree()">getIDLTree</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLProcessor.html#setEnvironment(org.apache.cxf.tools.corba.common.ProcessorEnvironment)">setEnvironment</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="IDLToWSDLProcessor()"><!-- --></A><H3>
+IDLToWSDLProcessor</H3>
+<PRE>
+public <B>IDLToWSDLProcessor</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="process()"><!-- --></A><H3>
+process</H3>
+<PRE>
+public void <B>process</B>()
+             throws <A HREF="../../../../../../../org/apache/cxf/tools/common/ToolException.html" title="class in org.apache.cxf.tools.common">ToolException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/tools/corba/common/Processor.html#process()">process</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/tools/corba/common/Processor.html" title="interface in org.apache.cxf.tools.corba.common">Processor</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLProcessor.html#process()">process</A></CODE> in class <CODE><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLProcessor.html" title="class in org.apache.cxf.tools.corba.processors.idl">IDLProcessor</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/cxf/tools/common/ToolException.html" title="class in org.apache.cxf.tools.common">ToolException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="process(antlr.collections.AST)"><!-- --></A><H3>
+process</H3>
+<PRE>
+public void <B>process</B>(antlr.collections.AST&nbsp;idlTree)
+             throws <A HREF="../../../../../../../org/apache/cxf/tools/common/ToolException.html" title="class in org.apache.cxf.tools.common">ToolException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../org/apache/cxf/tools/common/ToolException.html" title="class in org.apache.cxf.tools.common">ToolException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setOutputWriter(java.io.Writer)"><!-- --></A><H3>
+setOutputWriter</H3>
+<PRE>
+public void <B>setOutputWriter</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html" title="class or interface in java.io">Writer</A>&nbsp;writer)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSchemaOutputWriter(java.io.Writer)"><!-- --></A><H3>
+setSchemaOutputWriter</H3>
+<PRE>
+public void <B>setSchemaOutputWriter</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html" title="class or interface in java.io">Writer</A>&nbsp;writer)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setLogicalOutputWriter(java.io.Writer)"><!-- --></A><H3>
+setLogicalOutputWriter</H3>
+<PRE>
+public void <B>setLogicalOutputWriter</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html" title="class or interface in java.io">Writer</A>&nbsp;writer)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPhysicalOutputWriter(java.io.Writer)"><!-- --></A><H3>
+setPhysicalOutputWriter</H3>
+<PRE>
+public void <B>setPhysicalOutputWriter</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html" title="class or interface in java.io">Writer</A>&nbsp;writer)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setImportDefinitionWriters(java.util.Map)"><!-- --></A><H3>
+setImportDefinitionWriters</H3>
+<PRE>
+protected void <B>setImportDefinitionWriters</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Map.html" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/File.html" title="class or interface in java.io">File</A>&gt;&nbsp;writers)</PRE>
+<DL>
+<DD>Used only for test cases to set writers for imports when using
+ the -mns option
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setImportSchemaWriters(java.util.Map)"><!-- --></A><H3>
+setImportSchemaWriters</H3>
+<PRE>
+protected void <B>setImportSchemaWriters</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Map.html" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/File.html" title="class or interface in java.io">File</A>&gt;&nbsp;writers)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setIgnoreImports(boolean)"><!-- --></A><H3>
+setIgnoreImports</H3>
+<PRE>
+protected void <B>setIgnoreImports</B>(boolean&nbsp;flag)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="parseIDL(antlr.collections.AST)"><!-- --></A><H3>
+parseIDL</H3>
+<PRE>
+public void <B>parseIDL</B>(antlr.collections.AST&nbsp;idlTree)
+              throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getOutputWriter(java.lang.String, java.lang.String)"><!-- --></A><H3>
+getOutputWriter</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html" title="class or interface in java.io">Writer</A> <B>getOutputWriter</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;filename,
+                              <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;outputDirectory)
+                       throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getOutputWriter(java.io.File)"><!-- --></A><H3>
+getOutputWriter</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/Writer.html" title="class or interface in java.io">Writer</A> <B>getOutputWriter</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/File.html" title="class or interface in java.io">File</A>&nbsp;file)
+                       throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBaseFilename(java.lang.String)"><!-- --></A><H3>
+getBaseFilename</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A> <B>getBaseFilename</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;ifile)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="generateCORBAService(javax.wsdl.Definition, javax.wsdl.Binding[], boolean)"><!-- --></A><H3>
+generateCORBAService</H3>
+<PRE>
+public void <B>generateCORBAService</B>(javax.wsdl.Definition&nbsp;def,
+                                 javax.wsdl.Binding[]&nbsp;bindings,
+                                 boolean&nbsp;isDefaultMapping)
+                          throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="cleanUpTypeMap(org.apache.cxf.binding.corba.wsdl.TypeMappingType)"><!-- --></A><H3>
+cleanUpTypeMap</H3>
+<PRE>
+public void <B>cleanUpTypeMap</B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/wsdl/TypeMappingType.html" title="class in org.apache.cxf.binding.corba.wsdl">TypeMappingType</A>&nbsp;typeMap)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addTypeMapSchemaImports(javax.wsdl.Definition, org.apache.cxf.tools.corba.processors.idl.WSDLASTVisitor)"><!-- --></A><H3>
+addTypeMapSchemaImports</H3>
+<PRE>
+public void <B>addTypeMapSchemaImports</B>(javax.wsdl.Definition&nbsp;def,
+                                    <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/WSDLASTVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">WSDLASTVisitor</A>&nbsp;visitor)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/IDLToWSDLProcessor.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/IDLTokenTypes.html" title="interface in org.apache.cxf.tools.corba.processors.idl"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/ModuleToNSMapper.html" title="class in org.apache.cxf.tools.corba.processors.idl"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/tools/corba/processors/idl/IDLToWSDLProcessor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="IDLToWSDLProcessor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.cxf.tools.corba.processors.idl.IDLProcessor">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

@@ -1,0 +1,473 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+STSClient (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="STSClient (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/STSClient.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/security/trust/DefaultSymmetricBinding.html" title="class in org.apache.cxf.ws.security.trust"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/security/trust/STSSamlAssertionValidator.html" title="class in org.apache.cxf.ws.security.trust"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/ws/security/trust/STSClient.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="STSClient.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_org.apache.cxf.ws.security.trust.AbstractSTSClient">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.cxf.ws.security.trust.AbstractSTSClient">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.ws.security.trust</FONT>
+<BR>
+Class STSClient</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html" title="class in org.apache.cxf.ws.security.trust">org.apache.cxf.ws.security.trust.AbstractSTSClient</A>
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.ws.security.trust.STSClient</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../org/apache/cxf/configuration/Configurable.html" title="interface in org.apache.cxf.configuration">Configurable</A>, <A HREF="../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html" title="interface in org.apache.cxf.interceptor">InterceptorProvider</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>STSClient</B><DT>extends <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html" title="class in org.apache.cxf.ws.security.trust">AbstractSTSClient</A></DL>
+</PRE>
+
+<P>
+A extension of AbstractSTSClient to communicate with an STS and return a SecurityToken
+ to the client.
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_org.apache.cxf.ws.security.trust.AbstractSTSClient"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class org.apache.cxf.ws.security.trust.<A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html" title="class in org.apache.cxf.ws.security.trust">AbstractSTSClient</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.STSResponse.html" title="class in org.apache.cxf.ws.security.trust">AbstractSTSClient.STSResponse</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.ws.security.trust.AbstractSTSClient"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.ws.security.trust.<A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html" title="class in org.apache.cxf.ws.security.trust">AbstractSTSClient</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#actAs">actAs</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#addressingNamespace">addressingNamespace</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#algorithmSuite">algorithmSuite</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#allowRenewing">allowRenewing</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#allowRenewingAfterExpiry">allowRenewingAfterExpiry</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#bus">bus</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#claims">claims</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#claimsCallbackHandler">claimsCallbackHandler</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#client">client</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#context">context</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#ctx">ctx</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#enableAppliesTo">enableAppliesTo</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#enableLifetime">enableLifetime</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#endpointName">endpointName</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#features">features</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#in">in</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#inFault">inFault</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isSecureConv">isSecureConv</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isSpnego">isSpnego</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#keySize">keySize</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#keyType">keyType</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#location">location</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#message">message</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#name">name</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#namespace">namespace</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#onBehalfOf">onBehalfOf</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#out">out</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#outFault">outFault</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#policy">policy</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#requiresEntropy">requiresEntropy</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#sendKeyType">sendKeyType</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#sendRenewing">sendRenewing</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#serviceName">serviceName</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#soapVersion">soapVersion</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#template">template</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#tokenType">tokenType</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#ttl">ttl</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#useCertificateForConfirmationKeyInfo">useCertificateForConfirmationKeyInfo</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#useKeyCertificate">useKeyCertificate</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#wsdlLocation">wsdlLocation</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#wspNamespace">wspNamespace</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/trust/STSClient.html#STSClient(org.apache.cxf.Bus)">STSClient</A></B>(<A HREF="../../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/trust/STSClient.html#cancelSecurityToken(org.apache.cxf.ws.security.tokenstore.SecurityToken)">cancelSecurityToken</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A>&nbsp;token)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/trust/STSClient.html#renewSecurityToken(org.apache.cxf.ws.security.tokenstore.SecurityToken)">renewSecurityToken</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A>&nbsp;tok)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/trust/STSClient.html#requestSecurityToken()">requestSecurityToken</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/trust/STSClient.html#requestSecurityToken(java.lang.String)">requestSecurityToken</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;appliesTo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/trust/STSClient.html#requestSecurityToken(java.lang.String, java.lang.String)">requestSecurityToken</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;appliesTo,
+                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;binaryExchange)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/trust/STSClient.html#requestSecurityToken(java.lang.String, java.lang.String, java.lang.String, java.lang.String)">requestSecurityToken</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;appliesTo,
+                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;action,
+                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;requestType,
+                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;binaryExchange)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/trust/STSClient.html#validateSecurityToken(org.apache.cxf.ws.security.tokenstore.SecurityToken)">validateSecurityToken</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A>&nbsp;tok)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/trust/STSClient.html#validateSecurityToken(org.apache.cxf.ws.security.tokenstore.SecurityToken, java.lang.String)">validateSecurityToken</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A>&nbsp;tok,
+                      <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;tokentype)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.ws.security.trust.AbstractSTSClient"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.ws.security.trust.<A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html" title="class in org.apache.cxf.ws.security.trust">AbstractSTSClient</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#addAppliesTo(javax.xml.stream.XMLStreamWriter, java.lang.String)">addAppliesTo</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#addBinaryExchange(java.lang.String, org.apache.cxf.staxutils.W3CDOMStreamWriter)">addBinaryExchange</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#addClaims(javax.xml.stream.XMLStreamWriter)">addClaims</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#addKeySize(int, org.apache.cxf.staxutils.W3CDOMStreamWriter)">addKeySize</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#addLifetime(javax.xml.stream.XMLStreamWriter)">addLifetime</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#addRequestType(java.lang.String, org.apache.cxf.staxutils.W3CDOMStreamWriter)">addRequestType</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#addTokenType(javax.xml.stream.XMLStreamWriter)">addTokenType</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#cancel(org.apache.cxf.ws.security.tokenstore.SecurityToken)">cancel</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#configureViaEPR(org.apache.cxf.ws.addressing.EndpointReferenceType, boolean)">configureViaEPR</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#createClient()">createClient</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#createCrypto(boolean)">createCrypto</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#createHandler()">createHandler</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#createSecurityToken(org.w3c.dom.Element, byte[])">createSecurityToken</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#decryptKey(org.w3c.dom.Element)">decryptKey</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#findID(org.w3c.dom.Element, org.w3c.dom.Element, org.w3c.dom.Element)">findID</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#findMEXLocation(org.w3c.dom.Element)">findMEXLocation</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#findMEXLocation(org.apache.cxf.ws.addressing.EndpointReferenceType, boolean)">findMEXLocation</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#findOperation(java.lang.String)">findOperation</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getActAsToken()">getActAsToken</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getAddressingAssertion()">getAddressingAssertion</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getBeanName()">getBeanName</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getCert(org.apache.wss4j.common.crypto.Crypto)">getCert</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getClaimsCallbackHandler()">getClaimsCallbackHandler</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getClient()">getClient</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getContext()">getContext</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getDelegationSecurityToken(java.lang.Object)">getDelegationSecurityToken</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getDocumentElement(javax.xml.transform.dom.DOMSource)">getDocumentElement</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getEndpointQName()">getEndpointQName</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getFeatures()">getFeatures</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getIDFromSTR(org.w3c.dom.Element)">getIDFromSTR</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getInFaultInterceptors()">getInFaultInterceptors</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getInInterceptors()">getInInterceptors</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getKeySize()">getKeySize</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getLocation()">getLocation</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getOnBehalfOfToken()">getOnBehalfOfToken</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getOutFaultInterceptors()">getOutFaultInterceptors</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getOutInterceptors()">getOutInterceptors</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getProperties()">getProperties</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getProperty(java.lang.String)">getProperty</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getRequestContext()">getRequestContext</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getServiceQName()">getServiceQName</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getTokenType()">getTokenType</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getUseKeyCertificate()">getUseKeyCertificate</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getWsdlLocation()">getWsdlLocation</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getWspNamespace()">getWspNamespace</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isAllowRenewing()">isAllowRenewing</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isAllowRenewingAfterExpiry()">isAllowRenewingAfterExpiry</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isEnableAppliesTo()">isEnableAppliesTo</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isRequiresEntropy()">isRequiresEntropy</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isSecureConv()">isSecureConv</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isSpnego()">isSpnego</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#issue(java.lang.String, java.lang.String, java.lang.String, java.lang.String)">issue</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isUseCertificateForConfirmationKeyInfo()">isUseCertificateForConfirmationKeyInfo</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#renew(org.apache.cxf.ws.security.tokenstore.SecurityToken)">renew</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setActAs(java.lang.Object)">setActAs</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setAddressingNamespace(java.lang.String)">setAddressingNamespace</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setAlgorithmSuite(org.apache.wss4j.policy.model.AlgorithmSuite)">setAlgorithmSuite</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setAllowRenewing(boolean)">setAllowRenewing</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setAllowRenewingAfterExpiry(boolean)">setAllowRenewingAfterExpiry</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setBeanName(java.lang.String)">setBeanName</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setClaims(java.lang.Object)">setClaims</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setClaimsCallbackHandler(javax.security.auth.callback.CallbackHandler)">setClaimsCallbackHandler</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setContext(java.lang.String)">setContext</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setEnableAppliesTo(boolean)">setEnableAppliesTo</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setEnableLifetime(boolean)">setEnableLifetime</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setEndpointName(java.lang.String)">setEndpointName</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setEndpointQName(javax.xml.namespace.QName)">setEndpointQName</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setFeatures(java.util.List)">setFeatures</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setInFaultInterceptors(java.util.List)">setInFaultInterceptors</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setInInterceptors(java.util.List)">setInInterceptors</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setKeySize(int)">setKeySize</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setKeyType(java.lang.String)">setKeyType</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setLocation(java.lang.String)">setLocation</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setMessage(org.apache.cxf.message.Message)">setMessage</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setNamespace(java.lang.String)">setNamespace</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setOnBehalfOf(java.lang.Object)">setOnBehalfOf</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setOnBehalfOfElement(org.w3c.dom.Element)">setOnBehalfOfElement</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setOutFaultInterceptors(java.util.List)">setOutFaultInterceptors</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setOutInterceptors(java.util.List)">setOutInterceptors</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setPolicy(java.lang.Object)">setPolicy</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setPolicyInternal(org.w3c.dom.Element)">setPolicyInternal</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setPolicyInternal(org.apache.neethi.Policy)">setPolicyInternal</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setPolicyInternal(java.lang.String)">setPolicyInternal</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setProperties(java.util.Map)">setProperties</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setRequiresEntropy(boolean)">setRequiresEntropy</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setSecureConv(boolean)">setSecureConv</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setSendKeyType(boolean)">setSendKeyType</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setSendRenewing(boolean)">setSendRenewing</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setServiceName(java.lang.String)">setServiceName</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setServiceQName(javax.xml.namespace.QName)">setServiceQName</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setSoap11()">setSoap11</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setSoap11(boolean)">setSoap11</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setSoap12()">setSoap12</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setSpnego(boolean)">setSpnego</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setTemplate(org.w3c.dom.Element)">setTemplate</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setTokenType(java.lang.String)">setTokenType</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setTrust(org.apache.wss4j.policy.model.Trust10)">setTrust</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setTtl(int)">setTtl</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setUseCertificateForConfirmationKeyInfo(boolean)">setUseCertificateForConfirmationKeyInfo</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setUseKeyCertificate(java.security.cert.X509Certificate)">setUseKeyCertificate</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setWsdlLocation(java.lang.String)">setWsdlLocation</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setWspNamespace(java.lang.String)">setWspNamespace</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#useSecondaryParameters()">useSecondaryParameters</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#validate(org.apache.cxf.ws.security.tokenstore.SecurityToken, java.lang.String)">validate</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#writeElementsForRSTPublicKey(org.apache.cxf.staxutils.W3CDOMStreamWriter, java.security.cert.X509Certificate)">writeElementsForRSTPublicKey</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#writeElementsForRSTSymmetricKey(org.apache.cxf.staxutils.W3CDOMStreamWriter, boolean)">writeElementsForRSTSymmetricKey</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#writeKeyType(org.apache.cxf.staxutils.W3CDOMStreamWriter, java.lang.String)">writeKeyType</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="STSClient(org.apache.cxf.Bus)"><!-- --></A><H3>
+STSClient</H3>
+<PRE>
+public <B>STSClient</B>(<A HREF="../../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="requestSecurityToken()"><!-- --></A><H3>
+requestSecurityToken</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A> <B>requestSecurityToken</B>()
+                                   throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="requestSecurityToken(java.lang.String)"><!-- --></A><H3>
+requestSecurityToken</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A> <B>requestSecurityToken</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;appliesTo)
+                                   throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="requestSecurityToken(java.lang.String, java.lang.String)"><!-- --></A><H3>
+requestSecurityToken</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A> <B>requestSecurityToken</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;appliesTo,
+                                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;binaryExchange)
+                                   throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="requestSecurityToken(java.lang.String, java.lang.String, java.lang.String, java.lang.String)"><!-- --></A><H3>
+requestSecurityToken</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A> <B>requestSecurityToken</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;appliesTo,
+                                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;action,
+                                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;requestType,
+                                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;binaryExchange)
+                                   throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="renewSecurityToken(org.apache.cxf.ws.security.tokenstore.SecurityToken)"><!-- --></A><H3>
+renewSecurityToken</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A> <B>renewSecurityToken</B>(<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A>&nbsp;tok)
+                                 throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="validateSecurityToken(org.apache.cxf.ws.security.tokenstore.SecurityToken)"><!-- --></A><H3>
+validateSecurityToken</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A>&gt; <B>validateSecurityToken</B>(<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A>&nbsp;tok)
+                                          throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="validateSecurityToken(org.apache.cxf.ws.security.tokenstore.SecurityToken, java.lang.String)"><!-- --></A><H3>
+validateSecurityToken</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A>&gt; <B>validateSecurityToken</B>(<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A>&nbsp;tok,
+                                                    <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;tokentype)
+                                             throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="cancelSecurityToken(org.apache.cxf.ws.security.tokenstore.SecurityToken)"><!-- --></A><H3>
+cancelSecurityToken</H3>
+<PRE>
+public boolean <B>cancelSecurityToken</B>(<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A>&nbsp;token)
+                            throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/STSClient.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/security/trust/DefaultSymmetricBinding.html" title="class in org.apache.cxf.ws.security.trust"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/security/trust/STSSamlAssertionValidator.html" title="class in org.apache.cxf.ws.security.trust"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/ws/security/trust/STSClient.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="STSClient.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_org.apache.cxf.ws.security.trust.AbstractSTSClient">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.cxf.ws.security.trust.AbstractSTSClient">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

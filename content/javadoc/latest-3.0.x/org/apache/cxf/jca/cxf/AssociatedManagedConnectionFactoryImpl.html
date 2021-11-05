@@ -1,0 +1,506 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+AssociatedManagedConnectionFactoryImpl (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AssociatedManagedConnectionFactoryImpl (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AssociatedManagedConnectionFactoryImpl.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/jca/cxf/ConnectionFactoryImpl.html" title="class in org.apache.cxf.jca.cxf"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/jca/cxf/AssociatedManagedConnectionFactoryImpl.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AssociatedManagedConnectionFactoryImpl.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.cxf.jca.cxf.ManagedConnectionFactoryImpl">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.jca.cxf</FONT>
+<BR>
+Class AssociatedManagedConnectionFactoryImpl</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/ResourceBean.html" title="class in org.apache.cxf.jca.core.resourceadapter">org.apache.cxf.jca.core.resourceadapter.ResourceBean</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/AbstractManagedConnectionFactoryImpl.html" title="class in org.apache.cxf.jca.core.resourceadapter">org.apache.cxf.jca.core.resourceadapter.AbstractManagedConnectionFactoryImpl</A>
+          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html" title="class in org.apache.cxf.jca.cxf">org.apache.cxf.jca.cxf.ManagedConnectionFactoryImpl</A>
+              <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.jca.cxf.AssociatedManagedConnectionFactoryImpl</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/Serializable.html?is-external=true" title="class or interface in java.io">Serializable</A>, javax.resource.spi.ManagedConnectionFactory, javax.resource.spi.ResourceAdapterAssociation, <A HREF="../../../../../org/apache/cxf/jca/cxf/CXFManagedConnectionFactory.html" title="interface in org.apache.cxf.jca.cxf">CXFManagedConnectionFactory</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>AssociatedManagedConnectionFactoryImpl</B><DT>extends <A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html" title="class in org.apache.cxf.jca.cxf">ManagedConnectionFactoryImpl</A><DT>implements javax.resource.spi.ResourceAdapterAssociation</DL>
+</PRE>
+
+<P>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../serialized-form.html#org.apache.cxf.jca.cxf.AssociatedManagedConnectionFactoryImpl">Serialized Form</A></DL>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.jca.cxf.ManagedConnectionFactoryImpl"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.jca.cxf.<A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html" title="class in org.apache.cxf.jca.cxf">ManagedConnectionFactoryImpl</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#jcaBusFactory">jcaBusFactory</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.jca.core.resourceadapter.ResourceBean"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.jca.core.resourceadapter.<A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/ResourceBean.html" title="class in org.apache.cxf.jca.core.resourceadapter">ResourceBean</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/ResourceBean.html#DEFAULT_MONITOR_POLL_INTERVAL">DEFAULT_MONITOR_POLL_INTERVAL</A>, <A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/ResourceBean.html#DEFAULT_VALUE_STRING">DEFAULT_VALUE_STRING</A>, <A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/ResourceBean.html#EJB_SERVANT_BASE_URL">EJB_SERVANT_BASE_URL</A>, <A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/ResourceBean.html#EJB_SERVICE_PROPERTIES_URL">EJB_SERVICE_PROPERTIES_URL</A>, <A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/ResourceBean.html#LOG_LEVEL">LOG_LEVEL</A>, <A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/ResourceBean.html#MONITOR_EJB_SERVICE_PROPERTIES">MONITOR_EJB_SERVICE_PROPERTIES</A>, <A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/ResourceBean.html#MONITOR_POLL_INTERVAL">MONITOR_POLL_INTERVAL</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jca/cxf/AssociatedManagedConnectionFactoryImpl.html#AssociatedManagedConnectionFactoryImpl()">AssociatedManagedConnectionFactoryImpl</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jca/cxf/AssociatedManagedConnectionFactoryImpl.html#AssociatedManagedConnectionFactoryImpl(java.util.Properties)">AssociatedManagedConnectionFactoryImpl</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util">Properties</A>&nbsp;props)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jca/cxf/AssociatedManagedConnectionFactoryImpl.html#createConnectionFactory(javax.resource.spi.ConnectionManager)">createConnectionFactory</A></B>(javax.resource.spi.ConnectionManager&nbsp;connMgr)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jca/cxf/AssociatedManagedConnectionFactoryImpl.html#equals(java.lang.Object)">equals</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;o)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jca/cxf/AssociatedManagedConnectionFactoryImpl.html#getBootstrapContext()">getBootstrapContext</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.resource.spi.ResourceAdapter</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jca/cxf/AssociatedManagedConnectionFactoryImpl.html#getResourceAdapter()">getResourceAdapter</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jca/cxf/AssociatedManagedConnectionFactoryImpl.html#hashCode()">hashCode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jca/cxf/AssociatedManagedConnectionFactoryImpl.html#mergeResourceAdapterProps()">mergeResourceAdapterProps</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If outbound-resourceAdapter and the resourceAdapter has same property,
+ the outbound-resourceAdapter property's value would take precedence.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jca/cxf/AssociatedManagedConnectionFactoryImpl.html#registerBus()">registerBus</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jca/cxf/AssociatedManagedConnectionFactoryImpl.html#setResourceAdapter(javax.resource.spi.ResourceAdapter)">setResourceAdapter</A></B>(javax.resource.spi.ResourceAdapter&nbsp;aRA)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.jca.cxf.ManagedConnectionFactoryImpl"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.jca.cxf.<A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html" title="class in org.apache.cxf.jca.cxf">ManagedConnectionFactoryImpl</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#close()">close</A>, <A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#createConnectionFactory()">createConnectionFactory</A>, <A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#createManagedConnection(javax.security.auth.Subject, javax.resource.spi.ConnectionRequestInfo)">createManagedConnection</A>, <A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#getBus()">getBus</A>, <A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#getEJBServantBaseURL()">getEJBServantBaseURL</A>, <A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#getEJBServicePropertiesPollInterval()">getEJBServicePropertiesPollInterval</A>, <A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#getEJBServicePropertiesURL()">getEJBServicePropertiesURL</A>, <A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#getEJBServicePropertiesURLInstance()">getEJBServicePropertiesURLInstance</A>, <A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#getLogLevel()">getLogLevel</A>, <A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#getMonitorEJBServiceProperties()">getMonitorEJBServiceProperties</A>, <A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#init(java.lang.ClassLoader)">init</A>, <A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#setEJBServantBaseURL(java.lang.String)">setEJBServantBaseURL</A>, <A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#setEJBServicePropertiesPollInterval(java.lang.Integer)">setEJBServicePropertiesPollInterval</A>, <A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#setEJBServicePropertiesURL(java.lang.String)">setEJBServicePropertiesURL</A>, <A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#setLogLevel(java.lang.String)">setLogLevel</A>, <A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#setMonitorEJBServiceProperties(java.lang.Boolean)">setMonitorEJBServiceProperties</A>, <A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#validateReference(org.apache.cxf.jca.core.resourceadapter.AbstractManagedConnectionImpl, javax.security.auth.Subject)">validateReference</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.jca.core.resourceadapter.AbstractManagedConnectionFactoryImpl"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.jca.core.resourceadapter.<A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/AbstractManagedConnectionFactoryImpl.html" title="class in org.apache.cxf.jca.core.resourceadapter">AbstractManagedConnectionFactoryImpl</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/AbstractManagedConnectionFactoryImpl.html#getLogWriter()">getLogWriter</A>, <A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/AbstractManagedConnectionFactoryImpl.html#matchManagedConnections(java.util.Set, javax.security.auth.Subject, javax.resource.spi.ConnectionRequestInfo)">matchManagedConnections</A>, <A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/AbstractManagedConnectionFactoryImpl.html#setLogWriter(java.io.PrintWriter)">setLogWriter</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.jca.core.resourceadapter.ResourceBean"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.jca.core.resourceadapter.<A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/ResourceBean.html" title="class in org.apache.cxf.jca.core.resourceadapter">ResourceBean</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/ResourceBean.html#createURL(java.lang.String, java.lang.String)">createURL</A>, <A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/ResourceBean.html#getPluginProps()">getPluginProps</A>, <A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/ResourceBean.html#getPropsURL(java.lang.String)">getPropsURL</A>, <A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/ResourceBean.html#setDisableConsoleLogging(boolean)">setDisableConsoleLogging</A>, <A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/ResourceBean.html#setProperty(java.lang.String, java.lang.String)">setProperty</A>, <A HREF="../../../../../org/apache/cxf/jca/core/resourceadapter/ResourceBean.html#validateURLString(java.lang.String, java.lang.String)">validateURLString</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_javax.resource.spi.ManagedConnectionFactory"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface javax.resource.spi.ManagedConnectionFactory</B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE>getLogWriter, matchManagedConnections, setLogWriter</CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="AssociatedManagedConnectionFactoryImpl()"><!-- --></A><H3>
+AssociatedManagedConnectionFactoryImpl</H3>
+<PRE>
+public <B>AssociatedManagedConnectionFactoryImpl</B>()</PRE>
+<DL>
+</DL>
+<HR>
+
+<A NAME="AssociatedManagedConnectionFactoryImpl(java.util.Properties)"><!-- --></A><H3>
+AssociatedManagedConnectionFactoryImpl</H3>
+<PRE>
+public <B>AssociatedManagedConnectionFactoryImpl</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Properties.html?is-external=true" title="class or interface in java.util">Properties</A>&nbsp;props)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="createConnectionFactory(javax.resource.spi.ConnectionManager)"><!-- --></A><H3>
+createConnectionFactory</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A> <B>createConnectionFactory</B>(javax.resource.spi.ConnectionManager&nbsp;connMgr)
+                               throws javax.resource.ResourceException</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>createConnectionFactory</CODE> in interface <CODE>javax.resource.spi.ManagedConnectionFactory</CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#createConnectionFactory(javax.resource.spi.ConnectionManager)">createConnectionFactory</A></CODE> in class <CODE><A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html" title="class in org.apache.cxf.jca.cxf">ManagedConnectionFactoryImpl</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>javax.resource.ResourceException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setResourceAdapter(javax.resource.spi.ResourceAdapter)"><!-- --></A><H3>
+setResourceAdapter</H3>
+<PRE>
+public void <B>setResourceAdapter</B>(javax.resource.spi.ResourceAdapter&nbsp;aRA)
+                        throws javax.resource.ResourceException</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>setResourceAdapter</CODE> in interface <CODE>javax.resource.spi.ResourceAdapterAssociation</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>javax.resource.ResourceException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getResourceAdapter()"><!-- --></A><H3>
+getResourceAdapter</H3>
+<PRE>
+public javax.resource.spi.ResourceAdapter <B>getResourceAdapter</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>getResourceAdapter</CODE> in interface <CODE>javax.resource.spi.ResourceAdapterAssociation</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="mergeResourceAdapterProps()"><!-- --></A><H3>
+mergeResourceAdapterProps</H3>
+<PRE>
+protected void <B>mergeResourceAdapterProps</B>()</PRE>
+<DL>
+<DD>If outbound-resourceAdapter and the resourceAdapter has same property,
+ the outbound-resourceAdapter property's value would take precedence.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="registerBus()"><!-- --></A><H3>
+registerBus</H3>
+<PRE>
+protected void <B>registerBus</B>()
+                    throws javax.resource.ResourceException</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>javax.resource.ResourceException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBootstrapContext()"><!-- --></A><H3>
+getBootstrapContext</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A> <B>getBootstrapContext</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html#getBootstrapContext()">getBootstrapContext</A></CODE> in class <CODE><A HREF="../../../../../org/apache/cxf/jca/cxf/ManagedConnectionFactoryImpl.html" title="class in org.apache.cxf.jca.cxf">ManagedConnectionFactoryImpl</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="hashCode()"><!-- --></A><H3>
+hashCode</H3>
+<PRE>
+public int <B>hashCode</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>hashCode</CODE> in interface <CODE>javax.resource.spi.ManagedConnectionFactory</CODE><DT><B>Overrides:</B><DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A></CODE> in class <CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="equals(java.lang.Object)"><!-- --></A><H3>
+equals</H3>
+<PRE>
+public boolean <B>equals</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;o)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE>equals</CODE> in interface <CODE>javax.resource.spi.ManagedConnectionFactory</CODE><DT><B>Overrides:</B><DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A></CODE> in class <CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AssociatedManagedConnectionFactoryImpl.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/jca/cxf/ConnectionFactoryImpl.html" title="class in org.apache.cxf.jca.cxf"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/jca/cxf/AssociatedManagedConnectionFactoryImpl.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AssociatedManagedConnectionFactoryImpl.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.cxf.jca.cxf.ManagedConnectionFactoryImpl">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

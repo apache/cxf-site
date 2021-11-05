@@ -25,12 +25,12 @@ import java.util.Set;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
+import org.junit.Assert;
+import org.junit.Test;
 import org.w3c.dom.Document;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
 
-@Test
+
 public class PageTest {
 
     @Test

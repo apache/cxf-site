@@ -1,0 +1,1028 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+AbstractWSS4JStaxInterceptor (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AbstractWSS4JStaxInterceptor (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractWSS4JStaxInterceptor.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JInterceptor.html" title="class in org.apache.cxf.ws.security.wss4j"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AlgorithmSuiteTranslater.html" title="class in org.apache.cxf.ws.security.wss4j"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractWSS4JStaxInterceptor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.ws.security.wss4j</FONT>
+<BR>
+Class AbstractWSS4JStaxInterceptor</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.ws.security.wss4j.AbstractWSS4JStaxInterceptor</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/SoapInterceptor.html" title="interface in org.apache.cxf.binding.soap.interceptor">SoapInterceptor</A>, <A HREF="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&gt;, <A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html" title="interface in org.apache.cxf.phase">PhaseInterceptor</A>&lt;<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&gt;</DD>
+</DL>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JStaxInInterceptor.html" title="class in org.apache.cxf.ws.security.wss4j">WSS4JStaxInInterceptor</A>, <A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JStaxOutInterceptor.html" title="class in org.apache.cxf.ws.security.wss4j">WSS4JStaxOutInterceptor</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>AbstractWSS4JStaxInterceptor</B><DT>extends <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/SoapInterceptor.html" title="interface in org.apache.cxf.binding.soap.interceptor">SoapInterceptor</A>, <A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html" title="interface in org.apache.cxf.phase">PhaseInterceptor</A>&lt;<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&gt;</DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#AbstractWSS4JStaxInterceptor()">AbstractWSS4JStaxInterceptor</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#AbstractWSS4JStaxInterceptor(java.util.Map)">AbstractWSS4JStaxInterceptor</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;&nbsp;properties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#AbstractWSS4JStaxInterceptor(org.apache.wss4j.stax.ext.WSSSecurityProperties)">AbstractWSS4JStaxInterceptor</A></B>(org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#configureCallbackHandler(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">configureCallbackHandler</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage,
+                         org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.stax.ext.WSSSecurityProperties</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#createSecurityProperties()">createSecurityProperties</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html" title="interface in org.apache.cxf.phase">PhaseInterceptor</A>&lt;? extends <A HREF="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getAdditionalInterceptors()">getAdditionalInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a collection of Interceptors that should be added to the chain 
+ whenever this interceptor is added.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getAfter()">getAfter</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a set containing the IDs of the interceptors that should be 
+ executed before this interceptor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getBefore()">getBefore</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a set containing the IDs of the interceptors that should be 
+ executed after this interceptor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.common.crypto.Crypto</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getEncryptionCrypto(java.lang.Object, org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">getEncryptionCrypto</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;e,
+                    <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+                    org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/cxf/ws/policy/AssertionInfo.html" title="class in org.apache.cxf.ws.policy">AssertionInfo</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getFirstAssertionByLocalname(org.apache.cxf.ws.policy.AssertionInfoMap, java.lang.String)">getFirstAssertionByLocalname</A></B>(<A HREF="../../../../../../org/apache/cxf/ws/policy/AssertionInfoMap.html" title="class in org.apache.cxf.ws.policy">AssertionInfoMap</A>&nbsp;aim,
+                             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;localname)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getId()">getId</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the ID of this interceptor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getOption(java.lang.String)">getOption</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getPassword(java.lang.Object)">getPassword</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;msgContext)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.common.crypto.PasswordEncryptor</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getPasswordEncryptor(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">getPasswordEncryptor</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage,
+                     org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getPhase()">getPhase</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the phase in which this interceptor is excecuted.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getProperties()">getProperties</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getProperty(java.lang.Object, java.lang.String)">getProperty</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;msgContext,
+            <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;key)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getRoles()">getRoles</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.common.crypto.Crypto</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getSignatureCrypto(java.lang.Object, org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">getSignatureCrypto</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;s,
+                   <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+                   org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getUnderstoodHeaders()">getUnderstoodHeaders</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#handleFault(org.apache.cxf.binding.soap.SoapMessage)">handleFault</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Called for all interceptors (in reverse order) on which handleMessage
+ had been successfully invoked, when normal execution of the chain was
+ aborted for some reason.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#isRequestor(org.apache.cxf.binding.soap.SoapMessage)">isRequestor</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.common.crypto.Crypto</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#loadCrypto(org.apache.cxf.binding.soap.SoapMessage, java.lang.String, java.lang.String, org.apache.wss4j.stax.ext.WSSSecurityProperties)">loadCrypto</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage,
+           <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;cryptoPropertyFile,
+           <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;cryptoPropertyRefId,
+           org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Load a Crypto instance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.common.crypto.Crypto</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#loadCryptoFromPropertiesFile(org.apache.cxf.binding.soap.SoapMessage, java.lang.String, org.apache.wss4j.stax.ext.WSSSecurityProperties)">loadCryptoFromPropertiesFile</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage,
+                             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;propFilename,
+                             org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#postHandleMessage(org.apache.cxf.binding.soap.SoapMessage)">postHandleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#setAfter(java.util.Set)">setAfter</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;after)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#setBefore(java.util.Set)">setBefore</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;before)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#setId(java.lang.String)">setId</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;id)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#setPassword(java.lang.Object, java.lang.String)">setPassword</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;msgContext,
+            <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;password)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#setPhase(java.lang.String)">setPhase</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;phase)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#setProperty(java.lang.Object, java.lang.String, java.lang.Object)">setProperty</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;msgContext,
+            <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;key,
+            <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#setProperty(java.lang.String, java.lang.String)">setProperty</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;key,
+            <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#translateProperties(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">translateProperties</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                    org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.interceptor.Interceptor"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface org.apache.cxf.interceptor.<A HREF="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/cxf/interceptor/Interceptor.html#handleMessage(T)">handleMessage</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="AbstractWSS4JStaxInterceptor(org.apache.wss4j.stax.ext.WSSSecurityProperties)"><!-- --></A><H3>
+AbstractWSS4JStaxInterceptor</H3>
+<PRE>
+public <B>AbstractWSS4JStaxInterceptor</B>(org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</PRE>
+<DL>
+</DL>
+<HR>
+
+<A NAME="AbstractWSS4JStaxInterceptor(java.util.Map)"><!-- --></A><H3>
+AbstractWSS4JStaxInterceptor</H3>
+<PRE>
+public <B>AbstractWSS4JStaxInterceptor</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;&nbsp;properties)</PRE>
+<DL>
+</DL>
+<HR>
+
+<A NAME="AbstractWSS4JStaxInterceptor()"><!-- --></A><H3>
+AbstractWSS4JStaxInterceptor</H3>
+<PRE>
+public <B>AbstractWSS4JStaxInterceptor</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="createSecurityProperties()"><!-- --></A><H3>
+createSecurityProperties</H3>
+<PRE>
+protected org.apache.wss4j.stax.ext.WSSSecurityProperties <B>createSecurityProperties</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="translateProperties(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)"><!-- --></A><H3>
+translateProperties</H3>
+<PRE>
+protected void <B>translateProperties</B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                                   org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="configureCallbackHandler(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)"><!-- --></A><H3>
+configureCallbackHandler</H3>
+<PRE>
+protected void <B>configureCallbackHandler</B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage,
+                                        org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)
+                                 throws org.apache.wss4j.common.ext.WSSecurityException</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>org.apache.wss4j.common.ext.WSSecurityException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRoles()"><!-- --></A><H3>
+getRoles</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</A>&gt; <B>getRoles</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/SoapInterceptor.html#getRoles()">getRoles</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/SoapInterceptor.html" title="interface in org.apache.cxf.binding.soap.interceptor">SoapInterceptor</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="handleFault(org.apache.cxf.binding.soap.SoapMessage)"><!-- --></A><H3>
+handleFault</H3>
+<PRE>
+public void <B>handleFault</B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../org/apache/cxf/interceptor/Interceptor.html#handleFault(T)">Interceptor</A></CODE></B></DD>
+<DD>Called for all interceptors (in reverse order) on which handleMessage
+ had been successfully invoked, when normal execution of the chain was
+ aborted for some reason.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/interceptor/Interceptor.html#handleFault(T)">handleFault</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="postHandleMessage(org.apache.cxf.binding.soap.SoapMessage)"><!-- --></A><H3>
+postHandleMessage</H3>
+<PRE>
+public void <B>postHandleMessage</B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)
+                       throws <A HREF="../../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAdditionalInterceptors()"><!-- --></A><H3>
+getAdditionalInterceptors</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html" title="interface in org.apache.cxf.phase">PhaseInterceptor</A>&lt;? extends <A HREF="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt; <B>getAdditionalInterceptors</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html#getAdditionalInterceptors()">PhaseInterceptor</A></CODE></B></DD>
+<DD>Returns a collection of Interceptors that should be added to the chain 
+ whenever this interceptor is added.   May return null.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html#getAdditionalInterceptors()">getAdditionalInterceptors</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html" title="interface in org.apache.cxf.phase">PhaseInterceptor</A>&lt;<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the collection of interceptors</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPhase()"><!-- --></A><H3>
+getPhase</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getPhase</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html#getPhase()">PhaseInterceptor</A></CODE></B></DD>
+<DD>Returns the phase in which this interceptor is excecuted.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html#getPhase()">getPhase</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html" title="interface in org.apache.cxf.phase">PhaseInterceptor</A>&lt;<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the phase</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPhase(java.lang.String)"><!-- --></A><H3>
+setPhase</H3>
+<PRE>
+public void <B>setPhase</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;phase)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getOption(java.lang.String)"><!-- --></A><H3>
+getOption</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A> <B>getOption</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;key)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setProperty(java.lang.String, java.lang.String)"><!-- --></A><H3>
+setProperty</H3>
+<PRE>
+public void <B>setProperty</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;key,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPassword(java.lang.Object)"><!-- --></A><H3>
+getPassword</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getPassword</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;msgContext)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getProperty(java.lang.Object, java.lang.String)"><!-- --></A><H3>
+getProperty</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A> <B>getProperty</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;msgContext,
+                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;key)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setPassword(java.lang.Object, java.lang.String)"><!-- --></A><H3>
+setPassword</H3>
+<PRE>
+public void <B>setPassword</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;msgContext,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;password)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setProperty(java.lang.Object, java.lang.String, java.lang.Object)"><!-- --></A><H3>
+setProperty</H3>
+<PRE>
+public void <B>setProperty</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;msgContext,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;key,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;value)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getId()"><!-- --></A><H3>
+getId</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getId</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html#getId()">PhaseInterceptor</A></CODE></B></DD>
+<DD>Returns the ID of this interceptor.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html#getId()">getId</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html" title="interface in org.apache.cxf.phase">PhaseInterceptor</A>&lt;<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the ID</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setId(java.lang.String)"><!-- --></A><H3>
+setId</H3>
+<PRE>
+public void <B>setId</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;id)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getUnderstoodHeaders()"><!-- --></A><H3>
+getUnderstoodHeaders</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&gt; <B>getUnderstoodHeaders</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/SoapInterceptor.html#getUnderstoodHeaders()">getUnderstoodHeaders</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/SoapInterceptor.html" title="interface in org.apache.cxf.binding.soap.interceptor">SoapInterceptor</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getProperties()"><!-- --></A><H3>
+getProperties</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt; <B>getProperties</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAfter()"><!-- --></A><H3>
+getAfter</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>getAfter</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html#getAfter()">PhaseInterceptor</A></CODE></B></DD>
+<DD>Returns a set containing the IDs of the interceptors that should be 
+ executed before this interceptor. This interceptor will be placed 
+ in the chain after the interceptors in the set.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html#getAfter()">getAfter</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html" title="interface in org.apache.cxf.phase">PhaseInterceptor</A>&lt;<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the IDs of the interceptors</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAfter(java.util.Set)"><!-- --></A><H3>
+setAfter</H3>
+<PRE>
+public void <B>setAfter</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;after)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBefore()"><!-- --></A><H3>
+getBefore</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt; <B>getBefore</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html#getBefore()">PhaseInterceptor</A></CODE></B></DD>
+<DD>Returns a set containing the IDs of the interceptors that should be 
+ executed after this interceptor. This interceptor will be placed in 
+ the inteceptor chain before the interceptors in the set.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html#getBefore()">getBefore</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/phase/PhaseInterceptor.html" title="interface in org.apache.cxf.phase">PhaseInterceptor</A>&lt;<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the ids of the interceptors</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setBefore(java.util.Set)"><!-- --></A><H3>
+setBefore</H3>
+<PRE>
+public void <B>setBefore</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;before)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isRequestor(org.apache.cxf.binding.soap.SoapMessage)"><!-- --></A><H3>
+isRequestor</H3>
+<PRE>
+protected boolean <B>isRequestor</B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="loadCrypto(org.apache.cxf.binding.soap.SoapMessage, java.lang.String, java.lang.String, org.apache.wss4j.stax.ext.WSSSecurityProperties)"><!-- --></A><H3>
+loadCrypto</H3>
+<PRE>
+protected org.apache.wss4j.common.crypto.Crypto <B>loadCrypto</B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage,
+                                                           <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;cryptoPropertyFile,
+                                                           <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;cryptoPropertyRefId,
+                                                           org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)
+                                                    throws org.apache.wss4j.common.ext.WSSecurityException</PRE>
+<DL>
+<DD>Load a Crypto instance. Firstly, it tries to use the cryptoPropertyRefId tag to retrieve
+ a Crypto object via a custom reference Id. Failing this, it tries to load the crypto 
+ instance via the cryptoPropertyFile tag.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>org.apache.wss4j.common.ext.WSSecurityException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="loadCryptoFromPropertiesFile(org.apache.cxf.binding.soap.SoapMessage, java.lang.String, org.apache.wss4j.stax.ext.WSSSecurityProperties)"><!-- --></A><H3>
+loadCryptoFromPropertiesFile</H3>
+<PRE>
+protected org.apache.wss4j.common.crypto.Crypto <B>loadCryptoFromPropertiesFile</B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage,
+                                                                             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;propFilename,
+                                                                             org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)
+                                                                      throws org.apache.wss4j.common.ext.WSSecurityException</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>org.apache.wss4j.common.ext.WSSecurityException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPasswordEncryptor(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)"><!-- --></A><H3>
+getPasswordEncryptor</H3>
+<PRE>
+protected org.apache.wss4j.common.crypto.PasswordEncryptor <B>getPasswordEncryptor</B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage,
+                                                                                org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFirstAssertionByLocalname(org.apache.cxf.ws.policy.AssertionInfoMap, java.lang.String)"><!-- --></A><H3>
+getFirstAssertionByLocalname</H3>
+<PRE>
+protected <A HREF="../../../../../../org/apache/cxf/ws/policy/AssertionInfo.html" title="class in org.apache.cxf.ws.policy">AssertionInfo</A> <B>getFirstAssertionByLocalname</B>(<A HREF="../../../../../../org/apache/cxf/ws/policy/AssertionInfoMap.html" title="class in org.apache.cxf.ws.policy">AssertionInfoMap</A>&nbsp;aim,
+                                                     <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;localname)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEncryptionCrypto(java.lang.Object, org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)"><!-- --></A><H3>
+getEncryptionCrypto</H3>
+<PRE>
+protected org.apache.wss4j.common.crypto.Crypto <B>getEncryptionCrypto</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;e,
+                                                                    <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+                                                                    org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)
+                                                             throws org.apache.wss4j.common.ext.WSSecurityException</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>org.apache.wss4j.common.ext.WSSecurityException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSignatureCrypto(java.lang.Object, org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)"><!-- --></A><H3>
+getSignatureCrypto</H3>
+<PRE>
+protected org.apache.wss4j.common.crypto.Crypto <B>getSignatureCrypto</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;s,
+                                                                   <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+                                                                   org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)
+                                                            throws org.apache.wss4j.common.ext.WSSecurityException</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE>org.apache.wss4j.common.ext.WSSecurityException</CODE></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractWSS4JStaxInterceptor.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JInterceptor.html" title="class in org.apache.cxf.ws.security.wss4j"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AlgorithmSuiteTranslater.html" title="class in org.apache.cxf.ws.security.wss4j"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractWSS4JStaxInterceptor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

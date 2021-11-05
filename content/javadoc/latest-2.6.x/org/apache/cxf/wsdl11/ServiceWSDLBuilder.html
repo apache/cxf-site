@@ -1,0 +1,759 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+ServiceWSDLBuilder (Apache CXF Bundle Jar 2.6.3 API)
+</TITLE>
+
+<META NAME="keywords" CONTENT="org.apache.cxf.wsdl11.ServiceWSDLBuilder class">
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="ServiceWSDLBuilder (Apache CXF Bundle Jar 2.6.3 API)";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ServiceWSDLBuilder.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../org/apache/cxf/wsdl11/SchemaUtil.html" title="class in org.apache.cxf.wsdl11"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../org/apache/cxf/wsdl11/WSDLDefinitionBuilder.html" title="class in org.apache.cxf.wsdl11"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?org/apache/cxf/wsdl11/ServiceWSDLBuilder.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ServiceWSDLBuilder.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.wsdl11</FONT>
+<BR>
+Class ServiceWSDLBuilder</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.wsdl11.ServiceWSDLBuilder</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>ServiceWSDLBuilder</B><DT>extends <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+Consume a set of service definitions and produce a WSDL model. The ServiceInfo objects
+ contain the bindings, operations, and ports, plus XMLSchema schemas. 
+ 
+ Each wsdl:definition has to have a single target namespace. The first service in the list
+ defines the TNS of the overall WSDL. If a subsequent service has a divergent TNS, then
+ the code creates a new definition element (i.e., Definition object), and imports it into
+ the top-level object.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#ServiceWSDLBuilder(org.apache.cxf.Bus, java.util.List)">ServiceWSDLBuilder</A></B>(<A HREF="../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b,
+                   <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&gt;&nbsp;services)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets up the builder on a bus with a list of services.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#ServiceWSDLBuilder(org.apache.cxf.Bus, org.apache.cxf.service.model.ServiceInfo...)">ServiceWSDLBuilder</A></B>(<A HREF="../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b,
+                   <A HREF="../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>...&nbsp;services)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For callers who prefer varargs, an inline list of ServiceInfo objects instead of 
+ a List.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#addDocumentation(javax.wsdl.WSDLElement, java.lang.String)">addDocumentation</A></B>(javax.wsdl.WSDLElement&nbsp;wsdlel,
+                 <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;text)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#addExtensibilityElements(javax.wsdl.extensions.ElementExtensible, java.util.List)">addExtensibilityElements</A></B>(javax.wsdl.extensions.ElementExtensible&nbsp;elementExtensible,
+                         <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;javax.wsdl.extensions.ExtensibilityElement&gt;&nbsp;extensibilityElements)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#addNamespace(java.lang.String)">addNamespace</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;namespaceURI)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#addNamespace(java.lang.String, javax.wsdl.Definition)">addNamespace</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;namespaceURI,
+             javax.wsdl.Definition&nbsp;def)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#addNamespace(java.lang.String, java.lang.String)">addNamespace</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;prefix,
+             <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;namespaceURI)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#addNamespace(java.lang.String, java.lang.String, javax.wsdl.Definition)">addNamespace</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;prefix,
+             <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;namespaceURI,
+             javax.wsdl.Definition&nbsp;def)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.wsdl.Definition</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#build()">build</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create the WSDL Definition object and return it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;javax.wsdl.Definition</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#build(java.util.Map)">build</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Map.html" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="../../../../org/apache/cxf/service/model/SchemaInfo.html" title="class in org.apache.cxf.service.model">SchemaInfo</A>&gt;&nbsp;imports)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create the WSDL Definition object and return it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#buildBinding(java.util.Collection, java.util.Collection)">buildBinding</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../org/apache/cxf/service/model/BindingInfo.html" title="class in org.apache.cxf.service.model">BindingInfo</A>&gt;&nbsp;bindingInfos,
+             <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;javax.wsdl.PortType&gt;&nbsp;portTypes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#buildBindingFault(javax.wsdl.Definition, javax.wsdl.BindingOperation, java.util.Collection)">buildBindingFault</A></B>(javax.wsdl.Definition&nbsp;def,
+                  javax.wsdl.BindingOperation&nbsp;bindingOperation,
+                  <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../org/apache/cxf/service/model/BindingFaultInfo.html" title="class in org.apache.cxf.service.model">BindingFaultInfo</A>&gt;&nbsp;bindingFaultInfos)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#buildBindingInput(javax.wsdl.Definition, javax.wsdl.BindingOperation, org.apache.cxf.service.model.BindingMessageInfo)">buildBindingInput</A></B>(javax.wsdl.Definition&nbsp;def,
+                  javax.wsdl.BindingOperation&nbsp;bindingOperation,
+                  <A HREF="../../../../org/apache/cxf/service/model/BindingMessageInfo.html" title="class in org.apache.cxf.service.model">BindingMessageInfo</A>&nbsp;bindingMessageInfo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#buildBindingOperation(javax.wsdl.Definition, javax.wsdl.Binding, java.util.Collection)">buildBindingOperation</A></B>(javax.wsdl.Definition&nbsp;def,
+                      javax.wsdl.Binding&nbsp;binding,
+                      <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../org/apache/cxf/service/model/BindingOperationInfo.html" title="class in org.apache.cxf.service.model">BindingOperationInfo</A>&gt;&nbsp;bindingOperationInfos)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#buildBindingOutput(javax.wsdl.Definition, javax.wsdl.BindingOperation, org.apache.cxf.service.model.BindingMessageInfo)">buildBindingOutput</A></B>(javax.wsdl.Definition&nbsp;def,
+                   javax.wsdl.BindingOperation&nbsp;bindingOperation,
+                   <A HREF="../../../../org/apache/cxf/service/model/BindingMessageInfo.html" title="class in org.apache.cxf.service.model">BindingMessageInfo</A>&nbsp;bindingMessageInfo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#buildMessage(javax.wsdl.Message, org.apache.cxf.service.model.AbstractMessageContainer, javax.wsdl.Definition)">buildMessage</A></B>(javax.wsdl.Message&nbsp;message,
+             <A HREF="../../../../org/apache/cxf/service/model/AbstractMessageContainer.html" title="class in org.apache.cxf.service.model">AbstractMessageContainer</A>&nbsp;messageContainer,
+             javax.wsdl.Definition&nbsp;def)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;javax.wsdl.PortType</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#buildPortType(org.apache.cxf.service.model.InterfaceInfo, javax.wsdl.Definition)">buildPortType</A></B>(<A HREF="../../../../org/apache/cxf/service/model/InterfaceInfo.html" title="class in org.apache.cxf.service.model">InterfaceInfo</A>&nbsp;intf,
+              javax.wsdl.Definition&nbsp;def)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#buildPortTypeOperation(javax.wsdl.PortType, java.util.Collection, javax.wsdl.Definition)">buildPortTypeOperation</A></B>(javax.wsdl.PortType&nbsp;portType,
+                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../org/apache/cxf/service/model/OperationInfo.html" title="class in org.apache.cxf.service.model">OperationInfo</A>&gt;&nbsp;operationInfos,
+                       javax.wsdl.Definition&nbsp;def)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#buildService(org.apache.cxf.service.model.ServiceInfo)">buildService</A></B>(<A HREF="../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;serviceInfo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#buildTypes(java.util.Collection, java.util.Map, javax.wsdl.Definition)">buildTypes</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../org/apache/cxf/service/model/SchemaInfo.html" title="class in org.apache.cxf.service.model">SchemaInfo</A>&gt;&nbsp;schemas,
+           <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Map.html" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="../../../../org/apache/cxf/service/model/SchemaInfo.html" title="class in org.apache.cxf.service.model">SchemaInfo</A>&gt;&nbsp;imports,
+           javax.wsdl.Definition&nbsp;def)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#buildTypesWithSchemaImports(java.util.Collection, java.util.Map, javax.wsdl.Definition)">buildTypesWithSchemaImports</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../org/apache/cxf/service/model/SchemaInfo.html" title="class in org.apache.cxf.service.model">SchemaInfo</A>&gt;&nbsp;schemas,
+                            <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Map.html" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="../../../../org/apache/cxf/service/model/SchemaInfo.html" title="class in org.apache.cxf.service.model">SchemaInfo</A>&gt;&nbsp;imports,
+                            javax.wsdl.Definition&nbsp;def)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;javax.wsdl.extensions.ExtensibilityElement&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#getWSDL11Extensors(org.apache.cxf.service.model.AbstractPropertiesHolder)">getWSDL11Extensors</A></B>(<A HREF="../../../../org/apache/cxf/service/model/AbstractPropertiesHolder.html" title="class in org.apache.cxf.service.model">AbstractPropertiesHolder</A>&nbsp;holder)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return a list of ExtensibilityElements for a particular component, such as a BindingFaultInfo.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#setBaseFileName(java.lang.String)">setBaseFileName</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;s)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Base filename for imported files.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#setUseSchemaImports(boolean)">setUseSchemaImports</A></B>(boolean&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set whether to emit references to imported schema files.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ServiceWSDLBuilder(org.apache.cxf.Bus, java.util.List)"><!-- --></A><H3>
+ServiceWSDLBuilder</H3>
+<PRE>
+public <B>ServiceWSDLBuilder</B>(<A HREF="../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b,
+                          <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&gt;&nbsp;services)</PRE>
+<DL>
+<DD>Sets up the builder on a bus with a list of services.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>b</CODE> - the bus.<DD><CODE>services</CODE> - the services.</DL>
+</DL>
+<HR>
+
+<A NAME="ServiceWSDLBuilder(org.apache.cxf.Bus, org.apache.cxf.service.model.ServiceInfo...)"><!-- --></A><H3>
+ServiceWSDLBuilder</H3>
+<PRE>
+public <B>ServiceWSDLBuilder</B>(<A HREF="../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b,
+                          <A HREF="../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>...&nbsp;services)</PRE>
+<DL>
+<DD>For callers who prefer varargs, an inline list of ServiceInfo objects instead of 
+ a List. Primarily used for tests or other callers with only one service in hand.
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>b</CODE> - the bus.<DD><CODE>services</CODE> - the services.</DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="setUseSchemaImports(boolean)"><!-- --></A><H3>
+setUseSchemaImports</H3>
+<PRE>
+public void <B>setUseSchemaImports</B>(boolean&nbsp;b)</PRE>
+<DL>
+<DD>Set whether to emit references to imported schema files.
+ This is only effective for <A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#build(java.util.Map)"><CODE>build(Map)</CODE></A>, which is passed additional schemas for 
+ import. <A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#build()"><CODE>build()</CODE></A> resets this flag to false.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>b</CODE> - true to use imports.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setBaseFileName(java.lang.String)"><!-- --></A><H3>
+setBaseFileName</H3>
+<PRE>
+public void <B>setBaseFileName</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;s)</PRE>
+<DL>
+<DD>Base filename for imported files.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>s</CODE> - pathname.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="build()"><!-- --></A><H3>
+build</H3>
+<PRE>
+public javax.wsdl.Definition <B>build</B>()
+                            throws javax.wsdl.WSDLException</PRE>
+<DL>
+<DD>Create the WSDL Definition object and return it. This function will never create
+ imports to schemas.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the WSDL definition.
+<DT><B>Throws:</B>
+<DD><CODE>javax.wsdl.WSDLException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="build(java.util.Map)"><!-- --></A><H3>
+build</H3>
+<PRE>
+public javax.wsdl.Definition <B>build</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Map.html" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="../../../../org/apache/cxf/service/model/SchemaInfo.html" title="class in org.apache.cxf.service.model">SchemaInfo</A>&gt;&nbsp;imports)
+                            throws javax.wsdl.WSDLException</PRE>
+<DL>
+<DD>Create the WSDL Definition object and return it. This function respects the 
+ setting of <A HREF="../../../../org/apache/cxf/wsdl11/ServiceWSDLBuilder.html#setUseSchemaImports(boolean)"><CODE>setUseSchemaImports(boolean)</CODE></A>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>imports</CODE> - A set of schema imports to either reference as imports or read and 
+ then inline.
+<DT><B>Returns:</B><DD>the WSDL definition
+<DT><B>Throws:</B>
+<DD><CODE>javax.wsdl.WSDLException</CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getWSDL11Extensors(org.apache.cxf.service.model.AbstractPropertiesHolder)"><!-- --></A><H3>
+getWSDL11Extensors</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;javax.wsdl.extensions.ExtensibilityElement&gt; <B>getWSDL11Extensors</B>(<A HREF="../../../../org/apache/cxf/service/model/AbstractPropertiesHolder.html" title="class in org.apache.cxf.service.model">AbstractPropertiesHolder</A>&nbsp;holder)</PRE>
+<DL>
+<DD>Return a list of ExtensibilityElements for a particular component, such as a BindingFaultInfo.
+ This perhaps should be protected.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>holder</CODE> - The item containing the extensibility elements.
+<DT><B>Returns:</B><DD>the extensibility elements.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addDocumentation(javax.wsdl.WSDLElement, java.lang.String)"><!-- --></A><H3>
+addDocumentation</H3>
+<PRE>
+protected void <B>addDocumentation</B>(javax.wsdl.WSDLElement&nbsp;wsdlel,
+                                <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;text)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addExtensibilityElements(javax.wsdl.extensions.ElementExtensible, java.util.List)"><!-- --></A><H3>
+addExtensibilityElements</H3>
+<PRE>
+protected void <B>addExtensibilityElements</B>(javax.wsdl.extensions.ElementExtensible&nbsp;elementExtensible,
+                                        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;javax.wsdl.extensions.ExtensibilityElement&gt;&nbsp;extensibilityElements)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="buildTypes(java.util.Collection, java.util.Map, javax.wsdl.Definition)"><!-- --></A><H3>
+buildTypes</H3>
+<PRE>
+protected void <B>buildTypes</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../org/apache/cxf/service/model/SchemaInfo.html" title="class in org.apache.cxf.service.model">SchemaInfo</A>&gt;&nbsp;schemas,
+                          <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Map.html" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="../../../../org/apache/cxf/service/model/SchemaInfo.html" title="class in org.apache.cxf.service.model">SchemaInfo</A>&gt;&nbsp;imports,
+                          javax.wsdl.Definition&nbsp;def)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="buildTypesWithSchemaImports(java.util.Collection, java.util.Map, javax.wsdl.Definition)"><!-- --></A><H3>
+buildTypesWithSchemaImports</H3>
+<PRE>
+protected void <B>buildTypesWithSchemaImports</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../org/apache/cxf/service/model/SchemaInfo.html" title="class in org.apache.cxf.service.model">SchemaInfo</A>&gt;&nbsp;schemas,
+                                           <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Map.html" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="../../../../org/apache/cxf/service/model/SchemaInfo.html" title="class in org.apache.cxf.service.model">SchemaInfo</A>&gt;&nbsp;imports,
+                                           javax.wsdl.Definition&nbsp;def)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>schemas</CODE> - <DD><CODE>imports</CODE> - <DD><CODE>def</CODE> - </DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="buildBinding(java.util.Collection, java.util.Collection)"><!-- --></A><H3>
+buildBinding</H3>
+<PRE>
+protected void <B>buildBinding</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../org/apache/cxf/service/model/BindingInfo.html" title="class in org.apache.cxf.service.model">BindingInfo</A>&gt;&nbsp;bindingInfos,
+                            <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;javax.wsdl.PortType&gt;&nbsp;portTypes)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="buildBindingOperation(javax.wsdl.Definition, javax.wsdl.Binding, java.util.Collection)"><!-- --></A><H3>
+buildBindingOperation</H3>
+<PRE>
+protected void <B>buildBindingOperation</B>(javax.wsdl.Definition&nbsp;def,
+                                     javax.wsdl.Binding&nbsp;binding,
+                                     <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../org/apache/cxf/service/model/BindingOperationInfo.html" title="class in org.apache.cxf.service.model">BindingOperationInfo</A>&gt;&nbsp;bindingOperationInfos)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="buildBindingFault(javax.wsdl.Definition, javax.wsdl.BindingOperation, java.util.Collection)"><!-- --></A><H3>
+buildBindingFault</H3>
+<PRE>
+protected void <B>buildBindingFault</B>(javax.wsdl.Definition&nbsp;def,
+                                 javax.wsdl.BindingOperation&nbsp;bindingOperation,
+                                 <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../org/apache/cxf/service/model/BindingFaultInfo.html" title="class in org.apache.cxf.service.model">BindingFaultInfo</A>&gt;&nbsp;bindingFaultInfos)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="buildBindingInput(javax.wsdl.Definition, javax.wsdl.BindingOperation, org.apache.cxf.service.model.BindingMessageInfo)"><!-- --></A><H3>
+buildBindingInput</H3>
+<PRE>
+protected void <B>buildBindingInput</B>(javax.wsdl.Definition&nbsp;def,
+                                 javax.wsdl.BindingOperation&nbsp;bindingOperation,
+                                 <A HREF="../../../../org/apache/cxf/service/model/BindingMessageInfo.html" title="class in org.apache.cxf.service.model">BindingMessageInfo</A>&nbsp;bindingMessageInfo)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="buildBindingOutput(javax.wsdl.Definition, javax.wsdl.BindingOperation, org.apache.cxf.service.model.BindingMessageInfo)"><!-- --></A><H3>
+buildBindingOutput</H3>
+<PRE>
+protected void <B>buildBindingOutput</B>(javax.wsdl.Definition&nbsp;def,
+                                  javax.wsdl.BindingOperation&nbsp;bindingOperation,
+                                  <A HREF="../../../../org/apache/cxf/service/model/BindingMessageInfo.html" title="class in org.apache.cxf.service.model">BindingMessageInfo</A>&nbsp;bindingMessageInfo)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="buildService(org.apache.cxf.service.model.ServiceInfo)"><!-- --></A><H3>
+buildService</H3>
+<PRE>
+protected void <B>buildService</B>(<A HREF="../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;serviceInfo)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="buildPortType(org.apache.cxf.service.model.InterfaceInfo, javax.wsdl.Definition)"><!-- --></A><H3>
+buildPortType</H3>
+<PRE>
+protected javax.wsdl.PortType <B>buildPortType</B>(<A HREF="../../../../org/apache/cxf/service/model/InterfaceInfo.html" title="class in org.apache.cxf.service.model">InterfaceInfo</A>&nbsp;intf,
+                                            javax.wsdl.Definition&nbsp;def)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addNamespace(java.lang.String, javax.wsdl.Definition)"><!-- --></A><H3>
+addNamespace</H3>
+<PRE>
+protected void <B>addNamespace</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;namespaceURI,
+                            javax.wsdl.Definition&nbsp;def)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addNamespace(java.lang.String)"><!-- --></A><H3>
+addNamespace</H3>
+<PRE>
+protected void <B>addNamespace</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;namespaceURI)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addNamespace(java.lang.String, java.lang.String)"><!-- --></A><H3>
+addNamespace</H3>
+<PRE>
+protected void <B>addNamespace</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;prefix,
+                            <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;namespaceURI)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addNamespace(java.lang.String, java.lang.String, javax.wsdl.Definition)"><!-- --></A><H3>
+addNamespace</H3>
+<PRE>
+protected void <B>addNamespace</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;prefix,
+                            <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;namespaceURI,
+                            javax.wsdl.Definition&nbsp;def)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="buildPortTypeOperation(javax.wsdl.PortType, java.util.Collection, javax.wsdl.Definition)"><!-- --></A><H3>
+buildPortTypeOperation</H3>
+<PRE>
+protected void <B>buildPortTypeOperation</B>(javax.wsdl.PortType&nbsp;portType,
+                                      <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../org/apache/cxf/service/model/OperationInfo.html" title="class in org.apache.cxf.service.model">OperationInfo</A>&gt;&nbsp;operationInfos,
+                                      javax.wsdl.Definition&nbsp;def)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="buildMessage(javax.wsdl.Message, org.apache.cxf.service.model.AbstractMessageContainer, javax.wsdl.Definition)"><!-- --></A><H3>
+buildMessage</H3>
+<PRE>
+protected void <B>buildMessage</B>(javax.wsdl.Message&nbsp;message,
+                            <A HREF="../../../../org/apache/cxf/service/model/AbstractMessageContainer.html" title="class in org.apache.cxf.service.model">AbstractMessageContainer</A>&nbsp;messageContainer,
+                            javax.wsdl.Definition&nbsp;def)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ServiceWSDLBuilder.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../org/apache/cxf/wsdl11/SchemaUtil.html" title="class in org.apache.cxf.wsdl11"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../org/apache/cxf/wsdl11/WSDLDefinitionBuilder.html" title="class in org.apache.cxf.wsdl11"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?org/apache/cxf/wsdl11/ServiceWSDLBuilder.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ServiceWSDLBuilder.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

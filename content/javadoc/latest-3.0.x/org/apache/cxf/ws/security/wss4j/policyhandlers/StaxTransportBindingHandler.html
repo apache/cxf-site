@@ -1,0 +1,323 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+StaxTransportBindingHandler (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="StaxTransportBindingHandler (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/StaxTransportBindingHandler.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/StaxSymmetricBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/SymmetricBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/ws/security/wss4j/policyhandlers/StaxTransportBindingHandler.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="StaxTransportBindingHandler.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractStaxBindingHandler">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractStaxBindingHandler">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.ws.security.wss4j.policyhandlers</FONT>
+<BR>
+Class StaxTransportBindingHandler</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers">org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractCommonBindingHandler</A>
+      <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers">org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractStaxBindingHandler</A>
+          <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.ws.security.wss4j.policyhandlers.StaxTransportBindingHandler</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>StaxTransportBindingHandler</B><DT>extends <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers">AbstractStaxBindingHandler</A></DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractStaxBindingHandler"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class org.apache.cxf.ws.security.wss4j.policyhandlers.<A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers">AbstractStaxBindingHandler</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.TokenStoreCallbackHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers">AbstractStaxBindingHandler.TokenStoreCallbackHandler</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractStaxBindingHandler"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.ws.security.wss4j.policyhandlers.<A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers">AbstractStaxBindingHandler</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#encryptedTokensList">encryptedTokensList</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#endEncSuppTokMap">endEncSuppTokMap</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#endSuppTokMap">endSuppTokMap</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#outboundSecurityContext">outboundSecurityContext</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#sgndEndEncSuppTokMap">sgndEndEncSuppTokMap</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#sgndEndSuppTokMap">sgndEndSuppTokMap</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#signatureConfirmationAdded">signatureConfirmationAdded</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#timestampAdded">timestampAdded</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractCommonBindingHandler"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.ws.security.wss4j.policyhandlers.<A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers">AbstractCommonBindingHandler</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#message">message</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/StaxTransportBindingHandler.html#StaxTransportBindingHandler(org.apache.wss4j.stax.ext.WSSSecurityProperties, org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.policy.model.TransportBinding, org.apache.xml.security.stax.ext.OutboundSecurityContext)">StaxTransportBindingHandler</A></B>(org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;properties,
+                            <A HREF="../../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                            org.apache.wss4j.policy.model.TransportBinding&nbsp;tbinding,
+                            org.apache.xml.security.stax.ext.OutboundSecurityContext&nbsp;outboundSecurityContext)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/StaxTransportBindingHandler.html#handleBinding()">handleBinding</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractStaxBindingHandler"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.ws.security.wss4j.policyhandlers.<A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers">AbstractStaxBindingHandler</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#addIssuedToken(org.apache.wss4j.policy.model.AbstractToken, org.apache.cxf.ws.security.tokenstore.SecurityToken, boolean, boolean)">addIssuedToken</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#addKerberosToken(org.apache.wss4j.policy.model.KerberosToken, boolean, boolean, boolean)">addKerberosToken</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#addSamlToken(org.apache.wss4j.policy.model.SamlToken, boolean, boolean)">addSamlToken</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#addSignatureConfirmation(java.util.List)">addSignatureConfirmation</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#addSignatureParts(java.util.Map)">addSignatureParts</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#addSupportingTokens()">addSupportingTokens</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#addUsernameToken(org.apache.wss4j.policy.model.UsernameToken)">addUsernameToken</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#configureLayout(org.apache.cxf.ws.policy.AssertionInfoMap)">configureLayout</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#configureSignature(org.apache.wss4j.policy.model.AbstractTokenWrapper, org.apache.wss4j.policy.model.AbstractToken, boolean)">configureSignature</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#configureTimestamp(org.apache.cxf.ws.policy.AssertionInfoMap)">configureTimestamp</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#enforceEncryptBeforeSigningWithSignedSAML()">enforceEncryptBeforeSigningWithSignedSAML</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#findInboundSecurityToken(org.apache.xml.security.stax.securityEvent.SecurityEventConstants.Event)">findInboundSecurityToken</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#getEncryptedParts()">getEncryptedParts</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#getKeyIdentifierType(org.apache.wss4j.policy.model.AbstractTokenWrapper, org.apache.wss4j.policy.model.AbstractToken)">getKeyIdentifierType</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#getProperties()">getProperties</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#getSignedParts()">getSignedParts</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#handleSupportingTokens(java.util.Collection, boolean, boolean)">handleSupportingTokens</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#handleSupportingTokens(org.apache.wss4j.policy.model.SupportingTokens, boolean, boolean)">handleSupportingTokens</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#handleSupportingTokens(org.apache.wss4j.policy.model.SupportingTokens, boolean, boolean, java.util.Map)">handleSupportingTokens</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#handleUsernameTokenSupportingToken(org.apache.wss4j.policy.model.UsernameToken, boolean, boolean, java.util.Map)">handleUsernameTokenSupportingToken</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#prependSignatureToSC()">prependSignatureToSC</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#putCustomTokenAfterSignature()">putCustomTokenAfterSignature</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#removeSignatureIfSignedSAML()">removeSignatureIfSignedSAML</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#storeSecurityToken(org.apache.wss4j.policy.model.AbstractToken, org.apache.cxf.ws.security.tokenstore.SecurityToken)">storeSecurityToken</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractCommonBindingHandler"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.ws.security.wss4j.policyhandlers.<A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers">AbstractCommonBindingHandler</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#assertAlgorithmSuite(org.apache.wss4j.policy.model.AlgorithmSuite)">assertAlgorithmSuite</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#assertPolicy(org.apache.neethi.Assertion)">assertPolicy</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#assertPolicy(javax.xml.namespace.QName)">assertPolicy</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#assertToken(org.apache.wss4j.policy.model.AbstractToken)">assertToken</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#assertTokenWrapper(org.apache.wss4j.policy.model.AbstractTokenWrapper)">assertTokenWrapper</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#assertTrustProperties(java.lang.String)">assertTrustProperties</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#assertWSSProperties(java.lang.String)">assertWSSProperties</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#getAllAssertionsByLocalname(org.apache.cxf.ws.policy.AssertionInfoMap, java.lang.String)">getAllAssertionsByLocalname</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#getAllAssertionsByLocalname(java.lang.String)">getAllAssertionsByLocalname</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#getFirstAssertionByLocalname(org.apache.cxf.ws.policy.AssertionInfoMap, java.lang.String)">getFirstAssertionByLocalname</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#getMessage()">getMessage</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#getSecurityToken()">getSecurityToken</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#getSHA1(byte[])">getSHA1</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#getWss10()">getWss10</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#isRequestor()">isRequestor</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#isTokenRequired(org.apache.wss4j.policy.SPConstants.IncludeTokenType)">isTokenRequired</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#policyNotAsserted(org.apache.neethi.Assertion, java.lang.Exception)">policyNotAsserted</A>, <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#policyNotAsserted(org.apache.neethi.Assertion, java.lang.String)">policyNotAsserted</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="StaxTransportBindingHandler(org.apache.wss4j.stax.ext.WSSSecurityProperties, org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.policy.model.TransportBinding, org.apache.xml.security.stax.ext.OutboundSecurityContext)"><!-- --></A><H3>
+StaxTransportBindingHandler</H3>
+<PRE>
+public <B>StaxTransportBindingHandler</B>(org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;properties,
+                                   <A HREF="../../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                                   org.apache.wss4j.policy.model.TransportBinding&nbsp;tbinding,
+                                   org.apache.xml.security.stax.ext.OutboundSecurityContext&nbsp;outboundSecurityContext)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="handleBinding()"><!-- --></A><H3>
+handleBinding</H3>
+<PRE>
+public void <B>handleBinding</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/StaxTransportBindingHandler.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/StaxSymmetricBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/SymmetricBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/ws/security/wss4j/policyhandlers/StaxTransportBindingHandler.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="StaxTransportBindingHandler.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractStaxBindingHandler">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractStaxBindingHandler">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

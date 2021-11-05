@@ -1,0 +1,591 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>ClientImpl (Apache CXF JavaDoc 3.1.0 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="ClientImpl (Apache CXF JavaDoc 3.1.0 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ClientImpl.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientConfigurableImpl.html" title="class in org.apache.cxf.jaxrs.client.spec"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.WebTargetImpl.html" title="class in org.apache.cxf.jaxrs.client.spec"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/apache/cxf/jaxrs/client/spec/ClientImpl.html" target="_top">Frames</a></li>
+<li><a href="ClientImpl.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.cxf.jaxrs.client.spec</div>
+<h2 title="Class ClientImpl" class="title">Class ClientImpl</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.cxf.jaxrs.client.spec.ClientImpl</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd>javax.ws.rs.client.Client, javax.ws.rs.core.Configurable&lt;javax.ws.rs.client.Client&gt;</dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">ClientImpl</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements javax.ws.rs.client.Client</pre>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested_class_summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.WebTargetImpl.html" title="class in org.apache.cxf.jaxrs.client.spec">ClientImpl.WebTargetImpl</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#ClientImpl(javax.ws.rs.core.Configuration,%20org.apache.cxf.jaxrs.client.spec.TLSConfiguration)">ClientImpl</a></strong>(javax.ws.rs.core.Configuration&nbsp;config,
+          <a href="../../../../../../org/apache/cxf/jaxrs/client/spec/TLSConfiguration.html" title="class in org.apache.cxf.jaxrs.client.spec">TLSConfiguration</a>&nbsp;secConfig)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#close()">close</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javax.ws.rs.core.Configuration</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#getConfiguration()">getConfiguration</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/net/ssl/HostnameVerifier.html?is-external=true" title="class or interface in javax.net.ssl">HostnameVerifier</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#getHostnameVerifier()">getHostnameVerifier</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/net/ssl/SSLContext.html?is-external=true" title="class or interface in javax.net.ssl">SSLContext</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#getSslContext()">getSslContext</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javax.ws.rs.client.Invocation.Builder</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#invocation(javax.ws.rs.core.Link)">invocation</a></strong>(javax.ws.rs.core.Link&nbsp;link)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javax.ws.rs.client.Client</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#property(java.lang.String,%20java.lang.Object)">property</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javax.ws.rs.client.Client</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#register(java.lang.Class)">register</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;cls)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javax.ws.rs.client.Client</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#register(java.lang.Class,%20java.lang.Class...)">register</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;cls,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;...&nbsp;contracts)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javax.ws.rs.client.Client</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#register(java.lang.Class,%20int)">register</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;cls,
+        int&nbsp;index)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javax.ws.rs.client.Client</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#register(java.lang.Class,%20java.util.Map)">register</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;cls,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;map)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javax.ws.rs.client.Client</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#register(java.lang.Object)">register</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javax.ws.rs.client.Client</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#register(java.lang.Object,%20java.lang.Class...)">register</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;...&nbsp;contracts)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javax.ws.rs.client.Client</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#register(java.lang.Object,%20int)">register</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object,
+        int&nbsp;index)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javax.ws.rs.client.Client</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#register(java.lang.Object,%20java.util.Map)">register</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;map)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javax.ws.rs.client.WebTarget</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#target(javax.ws.rs.core.Link)">target</a></strong>(javax.ws.rs.core.Link&nbsp;link)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javax.ws.rs.client.WebTarget</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#target(java.lang.String)">target</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;address)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>javax.ws.rs.client.WebTarget</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#target(java.net.URI)">target</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;uri)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>javax.ws.rs.client.WebTarget</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.html#target(javax.ws.rs.core.UriBuilder)">target</a></strong>(javax.ws.rs.core.UriBuilder&nbsp;builder)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="ClientImpl(javax.ws.rs.core.Configuration, org.apache.cxf.jaxrs.client.spec.TLSConfiguration)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ClientImpl</h4>
+<pre>public&nbsp;ClientImpl(javax.ws.rs.core.Configuration&nbsp;config,
+          <a href="../../../../../../org/apache/cxf/jaxrs/client/spec/TLSConfiguration.html" title="class in org.apache.cxf.jaxrs.client.spec">TLSConfiguration</a>&nbsp;secConfig)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="close()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>close</h4>
+<pre>public&nbsp;void&nbsp;close()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>close</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.client.Client</code></dd>
+</dl>
+</li>
+</ul>
+<a name="invocation(javax.ws.rs.core.Link)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>invocation</h4>
+<pre>public&nbsp;javax.ws.rs.client.Invocation.Builder&nbsp;invocation(javax.ws.rs.core.Link&nbsp;link)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>invocation</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.client.Client</code></dd>
+</dl>
+</li>
+</ul>
+<a name="target(javax.ws.rs.core.UriBuilder)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>target</h4>
+<pre>public&nbsp;javax.ws.rs.client.WebTarget&nbsp;target(javax.ws.rs.core.UriBuilder&nbsp;builder)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>target</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.client.Client</code></dd>
+</dl>
+</li>
+</ul>
+<a name="target(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>target</h4>
+<pre>public&nbsp;javax.ws.rs.client.WebTarget&nbsp;target(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;address)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>target</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.client.Client</code></dd>
+</dl>
+</li>
+</ul>
+<a name="target(javax.ws.rs.core.Link)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>target</h4>
+<pre>public&nbsp;javax.ws.rs.client.WebTarget&nbsp;target(javax.ws.rs.core.Link&nbsp;link)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>target</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.client.Client</code></dd>
+</dl>
+</li>
+</ul>
+<a name="target(java.net.URI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>target</h4>
+<pre>public&nbsp;javax.ws.rs.client.WebTarget&nbsp;target(<a href="http://docs.oracle.com/javase/7/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;uri)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>target</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.client.Client</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getHostnameVerifier()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHostnameVerifier</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/net/ssl/HostnameVerifier.html?is-external=true" title="class or interface in javax.net.ssl">HostnameVerifier</a>&nbsp;getHostnameVerifier()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>getHostnameVerifier</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.client.Client</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getSslContext()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSslContext</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/net/ssl/SSLContext.html?is-external=true" title="class or interface in javax.net.ssl">SSLContext</a>&nbsp;getSslContext()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>getSslContext</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.client.Client</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getConfiguration()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConfiguration</h4>
+<pre>public&nbsp;javax.ws.rs.core.Configuration&nbsp;getConfiguration()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>getConfiguration</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.core.Configurable&lt;javax.ws.rs.client.Client&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="property(java.lang.String, java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>property</h4>
+<pre>public&nbsp;javax.ws.rs.client.Client&nbsp;property(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;name,
+                                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;value)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>property</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.core.Configurable&lt;javax.ws.rs.client.Client&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="register(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>register</h4>
+<pre>public&nbsp;javax.ws.rs.client.Client&nbsp;register(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;cls)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>register</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.core.Configurable&lt;javax.ws.rs.client.Client&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="register(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>register</h4>
+<pre>public&nbsp;javax.ws.rs.client.Client&nbsp;register(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>register</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.core.Configurable&lt;javax.ws.rs.client.Client&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="register(java.lang.Class, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>register</h4>
+<pre>public&nbsp;javax.ws.rs.client.Client&nbsp;register(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;cls,
+                                 int&nbsp;index)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>register</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.core.Configurable&lt;javax.ws.rs.client.Client&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="register(java.lang.Class, java.lang.Class...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>register</h4>
+<pre>public&nbsp;javax.ws.rs.client.Client&nbsp;register(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;cls,
+                                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;...&nbsp;contracts)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>register</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.core.Configurable&lt;javax.ws.rs.client.Client&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="register(java.lang.Class, java.util.Map)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>register</h4>
+<pre>public&nbsp;javax.ws.rs.client.Client&nbsp;register(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;cls,
+                                 <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;map)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>register</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.core.Configurable&lt;javax.ws.rs.client.Client&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="register(java.lang.Object, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>register</h4>
+<pre>public&nbsp;javax.ws.rs.client.Client&nbsp;register(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object,
+                                 int&nbsp;index)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>register</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.core.Configurable&lt;javax.ws.rs.client.Client&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="register(java.lang.Object, java.lang.Class...)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>register</h4>
+<pre>public&nbsp;javax.ws.rs.client.Client&nbsp;register(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object,
+                                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;...&nbsp;contracts)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>register</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.core.Configurable&lt;javax.ws.rs.client.Client&gt;</code></dd>
+</dl>
+</li>
+</ul>
+<a name="register(java.lang.Object, java.util.Map)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>register</h4>
+<pre>public&nbsp;javax.ws.rs.client.Client&nbsp;register(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;object,
+                                 <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;&nbsp;map)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>register</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.core.Configurable&lt;javax.ws.rs.client.Client&gt;</code></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/ClientImpl.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientConfigurableImpl.html" title="class in org.apache.cxf.jaxrs.client.spec"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/apache/cxf/jaxrs/client/spec/ClientImpl.WebTargetImpl.html" title="class in org.apache.cxf.jaxrs.client.spec"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/apache/cxf/jaxrs/client/spec/ClientImpl.html" target="_top">Frames</a></li>
+<li><a href="ClientImpl.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Apache CXF</small></p>
+</body>
+</html>

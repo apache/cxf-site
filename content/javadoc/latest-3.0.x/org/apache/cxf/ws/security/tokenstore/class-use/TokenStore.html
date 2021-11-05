@@ -1,0 +1,727 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Interface org.apache.cxf.ws.security.tokenstore.TokenStore (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Interface org.apache.cxf.ws.security.tokenstore.TokenStore (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/ws/security/tokenstore//class-useTokenStore.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="TokenStore.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Interface<br>org.apache.cxf.ws.security.tokenstore.TokenStore</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.sts.cache"><B>org.apache.cxf.sts.cache</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.sts.claims"><B>org.apache.cxf.sts.claims</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.sts.operation"><B>org.apache.cxf.sts.operation</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.sts.provider"><B>org.apache.cxf.sts.provider</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.sts.token.canceller"><B>org.apache.cxf.sts.token.canceller</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.sts.token.delegation"><B>org.apache.cxf.sts.token.delegation</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.sts.token.provider"><B>org.apache.cxf.sts.token.provider</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.sts.token.renewer"><B>org.apache.cxf.sts.token.renewer</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.sts.token.validator"><B>org.apache.cxf.sts.token.validator</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.security.tokenstore"><B>org.apache.cxf.ws.security.tokenstore</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.security.wss4j"><B>org.apache.cxf.ws.security.wss4j</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.security.wss4j.policyhandlers"><B>org.apache.cxf.ws.security.wss4j.policyhandlers</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.sts.cache"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A> in <A HREF="../../../../../../../org/apache/cxf/sts/cache/package-summary.html">org.apache.cxf.sts.cache</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../../../org/apache/cxf/sts/cache/package-summary.html">org.apache.cxf.sts.cache</A> that implement <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/sts/cache/DefaultInMemoryTokenStore.html" title="class in org.apache.cxf.sts.cache">DefaultInMemoryTokenStore</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/sts/cache/HazelCastTokenStore.html" title="class in org.apache.cxf.sts.cache">HazelCastTokenStore</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/sts/cache/package-summary.html">org.apache.cxf.sts.cache</A> with parameters of type <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CacheUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/sts/cache/CacheUtils.html#storeTokenInCache(org.apache.cxf.ws.security.tokenstore.SecurityToken, org.apache.cxf.ws.security.tokenstore.TokenStore, byte[])">storeTokenInCache</A></B>(<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</A>&nbsp;securityToken,
+                  <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A>&nbsp;cache,
+                  byte[]&nbsp;signatureValue)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.sts.claims"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A> in <A HREF="../../../../../../../org/apache/cxf/sts/claims/package-summary.html">org.apache.cxf.sts.claims</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/sts/claims/package-summary.html">org.apache.cxf.sts.claims</A> that return <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></CODE></FONT></TD>
+<TD><CODE><B>ClaimsParameters.</B><B><A HREF="../../../../../../../org/apache/cxf/sts/claims/ClaimsParameters.html#getTokenStore()">getTokenStore</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/sts/claims/package-summary.html">org.apache.cxf.sts.claims</A> with parameters of type <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ClaimsParameters.</B><B><A HREF="../../../../../../../org/apache/cxf/sts/claims/ClaimsParameters.html#setTokenStore(org.apache.cxf.ws.security.tokenstore.TokenStore)">setTokenStore</A></B>(<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A>&nbsp;tokenStore)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.sts.operation"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A> in <A HREF="../../../../../../../org/apache/cxf/sts/operation/package-summary.html">org.apache.cxf.sts.operation</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Fields in <A HREF="../../../../../../../org/apache/cxf/sts/operation/package-summary.html">org.apache.cxf.sts.operation</A> declared as <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractOperation.</B><B><A HREF="../../../../../../../org/apache/cxf/sts/operation/AbstractOperation.html#tokenStore">tokenStore</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/sts/operation/package-summary.html">org.apache.cxf.sts.operation</A> that return <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractOperation.</B><B><A HREF="../../../../../../../org/apache/cxf/sts/operation/AbstractOperation.html#getTokenStore()">getTokenStore</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/sts/operation/package-summary.html">org.apache.cxf.sts.operation</A> with parameters of type <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractOperation.</B><B><A HREF="../../../../../../../org/apache/cxf/sts/operation/AbstractOperation.html#setTokenStore(org.apache.cxf.ws.security.tokenstore.TokenStore)">setTokenStore</A></B>(<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A>&nbsp;tokenStore)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.sts.provider"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A> in <A HREF="../../../../../../../org/apache/cxf/sts/provider/package-summary.html">org.apache.cxf.sts.provider</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/sts/provider/package-summary.html">org.apache.cxf.sts.provider</A> with parameters of type <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>DefaultSecurityTokenServiceProvider.</B><B><A HREF="../../../../../../../org/apache/cxf/sts/provider/DefaultSecurityTokenServiceProvider.html#setTokenStore(org.apache.cxf.ws.security.tokenstore.TokenStore)">setTokenStore</A></B>(<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A>&nbsp;tokenStore)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.sts.token.canceller"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A> in <A HREF="../../../../../../../org/apache/cxf/sts/token/canceller/package-summary.html">org.apache.cxf.sts.token.canceller</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/sts/token/canceller/package-summary.html">org.apache.cxf.sts.token.canceller</A> that return <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></CODE></FONT></TD>
+<TD><CODE><B>TokenCancellerParameters.</B><B><A HREF="../../../../../../../org/apache/cxf/sts/token/canceller/TokenCancellerParameters.html#getTokenStore()">getTokenStore</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/sts/token/canceller/package-summary.html">org.apache.cxf.sts.token.canceller</A> with parameters of type <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TokenCancellerParameters.</B><B><A HREF="../../../../../../../org/apache/cxf/sts/token/canceller/TokenCancellerParameters.html#setTokenStore(org.apache.cxf.ws.security.tokenstore.TokenStore)">setTokenStore</A></B>(<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A>&nbsp;tokenStore)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.sts.token.delegation"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A> in <A HREF="../../../../../../../org/apache/cxf/sts/token/delegation/package-summary.html">org.apache.cxf.sts.token.delegation</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/sts/token/delegation/package-summary.html">org.apache.cxf.sts.token.delegation</A> that return <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></CODE></FONT></TD>
+<TD><CODE><B>TokenDelegationParameters.</B><B><A HREF="../../../../../../../org/apache/cxf/sts/token/delegation/TokenDelegationParameters.html#getTokenStore()">getTokenStore</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/sts/token/delegation/package-summary.html">org.apache.cxf.sts.token.delegation</A> with parameters of type <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TokenDelegationParameters.</B><B><A HREF="../../../../../../../org/apache/cxf/sts/token/delegation/TokenDelegationParameters.html#setTokenStore(org.apache.cxf.ws.security.tokenstore.TokenStore)">setTokenStore</A></B>(<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A>&nbsp;tokenStore)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.sts.token.provider"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A> in <A HREF="../../../../../../../org/apache/cxf/sts/token/provider/package-summary.html">org.apache.cxf.sts.token.provider</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/sts/token/provider/package-summary.html">org.apache.cxf.sts.token.provider</A> that return <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></CODE></FONT></TD>
+<TD><CODE><B>TokenProviderParameters.</B><B><A HREF="../../../../../../../org/apache/cxf/sts/token/provider/TokenProviderParameters.html#getTokenStore()">getTokenStore</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/sts/token/provider/package-summary.html">org.apache.cxf.sts.token.provider</A> with parameters of type <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TokenProviderParameters.</B><B><A HREF="../../../../../../../org/apache/cxf/sts/token/provider/TokenProviderParameters.html#setTokenStore(org.apache.cxf.ws.security.tokenstore.TokenStore)">setTokenStore</A></B>(<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A>&nbsp;tokenStore)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.sts.token.renewer"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A> in <A HREF="../../../../../../../org/apache/cxf/sts/token/renewer/package-summary.html">org.apache.cxf.sts.token.renewer</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/sts/token/renewer/package-summary.html">org.apache.cxf.sts.token.renewer</A> that return <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></CODE></FONT></TD>
+<TD><CODE><B>TokenRenewerParameters.</B><B><A HREF="../../../../../../../org/apache/cxf/sts/token/renewer/TokenRenewerParameters.html#getTokenStore()">getTokenStore</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/sts/token/renewer/package-summary.html">org.apache.cxf.sts.token.renewer</A> with parameters of type <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TokenRenewerParameters.</B><B><A HREF="../../../../../../../org/apache/cxf/sts/token/renewer/TokenRenewerParameters.html#setTokenStore(org.apache.cxf.ws.security.tokenstore.TokenStore)">setTokenStore</A></B>(<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A>&nbsp;tokenStore)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.sts.token.validator"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A> in <A HREF="../../../../../../../org/apache/cxf/sts/token/validator/package-summary.html">org.apache.cxf.sts.token.validator</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/sts/token/validator/package-summary.html">org.apache.cxf.sts.token.validator</A> that return <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></CODE></FONT></TD>
+<TD><CODE><B>TokenValidatorParameters.</B><B><A HREF="../../../../../../../org/apache/cxf/sts/token/validator/TokenValidatorParameters.html#getTokenStore()">getTokenStore</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/sts/token/validator/package-summary.html">org.apache.cxf.sts.token.validator</A> with parameters of type <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TokenValidatorParameters.</B><B><A HREF="../../../../../../../org/apache/cxf/sts/token/validator/TokenValidatorParameters.html#setTokenStore(org.apache.cxf.ws.security.tokenstore.TokenStore)">setTokenStore</A></B>(<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A>&nbsp;tokenStore)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.security.tokenstore"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A> in <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/package-summary.html">org.apache.cxf.ws.security.tokenstore</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/package-summary.html">org.apache.cxf.ws.security.tokenstore</A> that implement <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/EHCacheTokenStore.html" title="class in org.apache.cxf.ws.security.tokenstore">EHCacheTokenStore</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;An in-memory EHCache implementation of the TokenStore interface.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/MemoryTokenStore.html" title="class in org.apache.cxf.ws.security.tokenstore">MemoryTokenStore</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A simple HashMap-based TokenStore.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/package-summary.html">org.apache.cxf.ws.security.tokenstore</A> that return <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></CODE></FONT></TD>
+<TD><CODE><B>EHCacheTokenStoreFactory.</B><B><A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/EHCacheTokenStoreFactory.html#newTokenStore(java.lang.String, org.apache.cxf.message.Message)">newTokenStore</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;key,
+              <A HREF="../../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></CODE></FONT></TD>
+<TD><CODE><B>MemoryTokenStoreFactory.</B><B><A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/MemoryTokenStoreFactory.html#newTokenStore(java.lang.String, org.apache.cxf.message.Message)">newTokenStore</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;key,
+              <A HREF="../../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></CODE></FONT></TD>
+<TD><CODE><B>TokenStoreFactory.</B><B><A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStoreFactory.html#newTokenStore(java.lang.String, org.apache.cxf.message.Message)">newTokenStore</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;key,
+              <A HREF="../../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.security.wss4j"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A> in <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/package-summary.html">org.apache.cxf.ws.security.wss4j</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/package-summary.html">org.apache.cxf.ws.security.wss4j</A> that return <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></CODE></FONT></TD>
+<TD><CODE><B>WSS4JUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JUtils.html#getTokenStore(org.apache.cxf.message.Message)">getTokenStore</A></B>(<A HREF="../../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></CODE></FONT></TD>
+<TD><CODE><B>WSS4JUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JUtils.html#getTokenStore(org.apache.cxf.message.Message, boolean)">getTokenStore</A></B>(<A HREF="../../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+              boolean&nbsp;create)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractTokenInterceptor.</B><B><A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/AbstractTokenInterceptor.html#getTokenStore(org.apache.cxf.binding.soap.SoapMessage)">getTokenStore</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.security.wss4j.policyhandlers"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A> in <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/package-summary.html">org.apache.cxf.ws.security.wss4j.policyhandlers</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/package-summary.html">org.apache.cxf.ws.security.wss4j.policyhandlers</A> that return <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractBindingBuilder.</B><B><A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#getTokenStore()">getTokenStore</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/package-summary.html">org.apache.cxf.ws.security.wss4j.policyhandlers</A> with parameters of type <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.TokenStoreCallbackHandler.html#AbstractStaxBindingHandler.TokenStoreCallbackHandler(javax.security.auth.callback.CallbackHandler, org.apache.cxf.ws.security.tokenstore.TokenStore)">AbstractStaxBindingHandler.TokenStoreCallbackHandler</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/CallbackHandler.html?is-external=true" title="class or interface in javax.security.auth.callback">CallbackHandler</A>&nbsp;in,
+                                                     <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A>&nbsp;st)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/ws/security/tokenstore//class-useTokenStore.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="TokenStore.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

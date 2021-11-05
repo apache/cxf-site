@@ -1,0 +1,284 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Visitor (Apache CXF Bundle Jar 2.7.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Visitor (Apache CXF Bundle Jar 2.7.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Visitor.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/UnionVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/VisitorBase.html" title="class in org.apache.cxf.tools.corba.processors.idl"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/tools/corba/processors/idl/Visitor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Visitor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.tools.corba.processors.idl</FONT>
+<BR>
+Interface Visitor</H2>
+<DL>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/ArrayVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">ArrayVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/AttributeVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">AttributeVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/ConstrTypeSpecVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">ConstrTypeSpecVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/ConstVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">ConstVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/DeclaratorVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">DeclaratorVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/DefinitionVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">DefinitionVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/EnumVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">EnumVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/ExceptionVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">ExceptionVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/FixedPtConstVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">FixedPtConstVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/FixedVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">FixedVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/ModuleVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">ModuleVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/ObjectReferenceVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">ObjectReferenceVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/OperationVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">OperationVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/ParamDclVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">ParamDclVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/ParamTypeSpecVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">ParamTypeSpecVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/PortTypeVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">PortTypeVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/PrimitiveTypesVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">PrimitiveTypesVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/ScopedNameVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">ScopedNameVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/SequenceVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">SequenceVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/SimpleTypeSpecVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">SimpleTypeSpecVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/StringVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">StringVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/StructVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">StructVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/TemplateTypeSpecVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">TemplateTypeSpecVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/TypeDclVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">TypeDclVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/TypedefVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">TypedefVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/TypesVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">TypesVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/UnionVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl">UnionVisitor</A>, <A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/VisitorBase.html" title="class in org.apache.cxf.tools.corba.processors.idl">VisitorBase</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public interface <B>Visitor</B></DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/wsdl/CorbaTypeImpl.html" title="class in org.apache.cxf.binding.corba.wsdl">CorbaTypeImpl</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/Visitor.html#getCorbaType()">getCorbaType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/Scope.html" title="class in org.apache.cxf.tools.corba.processors.idl">Scope</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/Visitor.html#getFullyQualifiedName()">getFullyQualifiedName</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;org.apache.ws.commons.schema.XmlSchemaType</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/Visitor.html#getSchemaType()">getSchemaType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/Scope.html" title="class in org.apache.cxf.tools.corba.processors.idl">Scope</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/Visitor.html#getScope()">getScope</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/Visitor.html#visit(antlr.collections.AST)">visit</A></B>(antlr.collections.AST&nbsp;node)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="visit(antlr.collections.AST)"><!-- --></A><H3>
+visit</H3>
+<PRE>
+void <B>visit</B>(antlr.collections.AST&nbsp;node)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSchemaType()"><!-- --></A><H3>
+getSchemaType</H3>
+<PRE>
+org.apache.ws.commons.schema.XmlSchemaType <B>getSchemaType</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCorbaType()"><!-- --></A><H3>
+getCorbaType</H3>
+<PRE>
+<A HREF="../../../../../../../org/apache/cxf/binding/corba/wsdl/CorbaTypeImpl.html" title="class in org.apache.cxf.binding.corba.wsdl">CorbaTypeImpl</A> <B>getCorbaType</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getScope()"><!-- --></A><H3>
+getScope</H3>
+<PRE>
+<A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/Scope.html" title="class in org.apache.cxf.tools.corba.processors.idl">Scope</A> <B>getScope</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getFullyQualifiedName()"><!-- --></A><H3>
+getFullyQualifiedName</H3>
+<PRE>
+<A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/Scope.html" title="class in org.apache.cxf.tools.corba.processors.idl">Scope</A> <B>getFullyQualifiedName</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/Visitor.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/UnionVisitor.html" title="class in org.apache.cxf.tools.corba.processors.idl"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/tools/corba/processors/idl/VisitorBase.html" title="class in org.apache.cxf.tools.corba.processors.idl"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/tools/corba/processors/idl/Visitor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Visitor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

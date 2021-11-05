@@ -1,0 +1,216 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - GraalVM Support">
+
+
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shCoreCXF.css">
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shThemeCXF.css">
+
+<script src='/resources/highlighter/scripts/shCore.js'></script>
+<script src='/resources/highlighter/scripts/shBrushBash.js'></script>
+<script src='/resources/highlighter/scripts/shBrushJava.js'></script>
+<script>
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+
+    <title>
+Apache CXF -- GraalVM Support
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Sofware Foundation"><img border="0" alt="ASF Logo" src="http://cxf.apache.org/images/asf-logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="graalvm-support.html">GraalVM Support</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="http://cxf.apache.org/download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><ul class="alternate"><li><a shape="rect" href="overview.html">Overview</a></li><li><a shape="rect" href="how-tos.html">How-Tos</a></li><li><a shape="rect" href="frontends.html">Frontends</a></li><li><a shape="rect" href="databindings.html">DataBindings</a></li><li><a shape="rect" href="transports.html">Transports</a></li><li><a shape="rect" href="configuration.html">Configuration</a></li><li><a shape="rect" href="debugging-and-logging.html">Debugging and Logging</a></li><li><a shape="rect" href="tools.html">Tools</a></li><li><a shape="rect" href="restful-services.html">RESTful Services</a></li><li><a shape="rect" href="wsdl-bindings.html">WSDL Bindings</a></li><li><a shape="rect" href="service-routing.html">Service Routing</a></li><li><a shape="rect" href="dynamic-languages.html">Dynamic Languages</a></li><li><a shape="rect" href="ws-support.html">WS-* Support</a></li><li><a shape="rect" href="advanced-integration.html">Advanced Integration</a></li><li><a shape="rect" href="deployment.html">Deployment</a></li><li><a shape="rect" href="schemas-and-namespaces.html">Use of Schemas and Namespaces</a></li></ul><hr><ul class="alternate"><li><p>Search</p></li></ul><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse">
+  <div>
+    <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4">
+    <input type="hidden" name="ie" value="UTF-8">
+    <input type="text" name="q" size="21">
+    <input type="submit" name="sa" value="Search">
+  </div>
+</form>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script><hr><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/javadoc/latest/">API 3.2.x (Javadoc)</a></li><li><a shape="rect" href="http://cxf.apache.org/javadoc/latest-3.1.x/">API 3.1.x (Javadoc)</a></li><li><a shape="rect" href="http://cxf.apache.org/">CXF Website</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><p><a shape="rect" class="external-link" href="https://www.graalvm.org/" rel="nofollow"></a><style type="text/css">/*<![CDATA[*/
+div.rbtoc1636141686759 {padding: 0px;}
+div.rbtoc1636141686759 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1636141686759 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p><div class="toc-macro rbtoc1636141686759">
+<ul class="toc-indentation"><li><a shape="rect" href="#GraalVMSupport-JAX-RSSupport">JAX-RS Support</a>
+<ul class="toc-indentation"><li><a shape="rect" href="#GraalVMSupport-Samples">Samples</a></li></ul>
+</li><li><a shape="rect" href="#GraalVMSupport-JAX-WSSupport">JAX-WS Support</a>
+<ul class="toc-indentation"><li><a shape="rect" href="#GraalVMSupport-DynamicServers/Clients">Dynamic Servers / Clients</a></li><li><a shape="rect" href="#GraalVMSupport-Samples.1">Samples</a></li></ul>
+</li></ul>
+</div><p><a shape="rect" class="external-link" href="https://www.graalvm.org/" rel="nofollow">GraalVM</a> is becoming an increasingly popular target to deploy Apache CXF services. The most challenging deployments are the ones which bundle Apache CXF services and applications as <a shape="rect" class="external-link" href="https://www.graalvm.org/reference-manual/native-image/" rel="nofollow">native images</a>. There are <a shape="rect" class="external-link" href="https://www.graalvm.org/reference-manual/native-image/#ahead-of-time-compilation-limitations" rel="nofollow">some limitations</a> with that and there are certain improvements incorporated into Apache CXF recently to provide the way to overcome those.</p><h2 id="GraalVMSupport-JAX-RSSupport">JAX-RS Support</h2><p>The Apache CXF's JAX-RS implementation does not rely on code generation and dynamic class loading at runtime. In many cases, producing <a shape="rect" class="external-link" href="https://www.graalvm.org/" rel="nofollow">GraalVM</a>'s native images is straightforward, assuming the benefits of the <a shape="rect" class="external-link" href="https://www.graalvm.org/reference-manual/native-image/BuildConfiguration/#assisted-configuration-of-native-image-builds" rel="nofollow">assisted configuration of native image builds</a> could be taken of.</p><p class="auto-cursor-target">You may run into dynamic class generation and/or loading in a few cases:</p><ul><li class="auto-cursor-target">when CDI (or other kinds of runtime instrumentation) is involved</li></ul><h3 id="GraalVMSupport-Samples">Samples</h3><ul><li><a shape="rect" class="external-link" href="https://github.com/apache/cxf/tree/master/distribution/src/main/release/samples/jax_rs/graalvm_basic" rel="nofollow">https://github.com/apache/cxf/tree/master/distribution/src/main/release/samples/jax_rs/graalvm_basic</a></li></ul><h2 id="GraalVMSupport-JAX-WSSupport">JAX-WS Support</h2><p>For many JAX-WS services which rely on Apache CXF and use its code-generation capabilities, producing <a shape="rect" class="external-link" href="https://www.graalvm.org/" rel="nofollow">GraalVM</a>'s native images is straightforward, assuming the benefits of the <a shape="rect" class="external-link" href="https://www.graalvm.org/reference-manual/native-image/BuildConfiguration/#assisted-configuration-of-native-image-builds" rel="nofollow">assisted configuration of native image builds</a> could be taken of.</p><h3 id="GraalVMSupport-DynamicServers/Clients">Dynamic Servers / Clients</h3><p>In certain scenarios Apache CXF does aggressive code generation and dynamic class loading at runtime. This violates one of the <a shape="rect" class="external-link" href="https://www.graalvm.org/" rel="nofollow">GraalVM</a>'s ahead-of-time compilation limitations which states that <strong>"... all classes and all bytecodes that are reachable at run time must be known at build time"</strong>. Since <strong>3.3.9 / 3.4.2 / 3.5.x</strong> there is a way to capture all dynamically generated classes in order to include them into the native image at build time and then use class loading (instead of class generation) at runtime. It eliminates the need for dynamic class generation and loading. The capturing capability is provided by <a shape="rect" class="external-link" href="https://github.com/apache/cxf/blob/master/core/src/main/java/org/apache/cxf/common/spi/GeneratedClassClassLoaderCapture.java" rel="nofollow">GeneratedClassClassLoaderCapture</a> extension (shown below).</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">public interface GeneratedClassClassLoaderCapture {
+    void capture(String className, byte[] bytes);
+}</pre>
+</div></div><p>The example of capturing class loader service may look like this:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">public class DumpingClassLoaderCapturer implements GeneratedClassClassLoaderCapture {
+    private final Map&lt;String, byte[]&gt; classes = new ConcurrentHashMap&lt;&gt;();
+    
+    public void dumpTo(File file) throws IOException {
+        if (!file.exists() || !file.isDirectory()) {
+            throw new IllegalArgumentException("The dump location does not exist or is not a directory: " + file);
+        }
+        
+        for (Map.Entry&lt;String, byte[]&gt; entry: classes.entrySet()) {
+            final Path path = file.toPath().resolve(StringUtils.periodToSlashes(entry.getKey()) + ".class");
+            Files.createDirectories(path.getParent());
+            
+            try (OutputStream out = Files.newOutputStream(path, StandardOpenOption.CREATE)) {
+                out.write(entry.getValue());
+            }
+        }
+    }
+
+    @Override
+    public void capture(String className, byte[] bytes) {
+        classes.putIfAbsent(className, bytes);
+    }
+}
+
+</pre>
+</div></div><p>The stored generated classes should be injected at build time, whereas the following extensions replace dynamic class generation with class loading of the captured (generated) classes at runtime:</p><ul style="list-style-type: square;"><li><a shape="rect" class="external-link" href="https://github.com/apache/cxf/blob/master/rt/databinding/jaxb/src/main/java/org/apache/cxf/jaxb/WrapperHelperClassLoader.java" rel="nofollow">WrapperHelperClassLoader</a></li><li><a shape="rect" class="external-link" href="https://github.com/apache/cxf/blob/master/rt/wsdl/src/main/java/org/apache/cxf/wsdl/ExtensionClassLoader.java" rel="nofollow">ExtensionClassLoader</a></li><li><a shape="rect" class="external-link" href="https://github.com/apache/cxf/blob/master/rt/frontend/simple/src/main/java/org/apache/cxf/endpoint/dynamic/ExceptionClassLoader.java" rel="nofollow">ExceptionClassLoader</a></li><li><a shape="rect" class="external-link" href="https://github.com/apache/cxf/blob/master/rt/frontend/jaxws/src/main/java/org/apache/cxf/jaxws/spi/WrapperClassLoader.java" rel="nofollow">WrapperClassLoader</a></li><li><a shape="rect" class="external-link" href="https://github.com/apache/cxf/blob/master/rt/databinding/jaxb/src/main/java/org/apache/cxf/jaxb/FactoryClassLoader.java" rel="nofollow">FactoryClassLoader</a></li><li><a shape="rect" class="external-link" href="https://github.com/apache/cxf/blob/master/core/src/main/java/org/apache/cxf/common/spi/GeneratedNamespaceClassLoader.java" rel="nofollow">GeneratedNamespaceClassLoader</a></li></ul><p>Here is the programmatic way to configure these extensions:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default"> final Bus bus = ...; /* Bus instance */
+ bus.setExtension(new WrapperHelperClassLoader(bus), WrapperHelperCreator.class);
+ bus.setExtension(new ExtensionClassLoader(bus), ExtensionClassCreator.class);
+ bus.setExtension(new ExceptionClassLoader(bus), ExceptionClassCreator.class);
+ bus.setExtension(new WrapperClassLoader(bus), WrapperClassCreator.class);
+ bus.setExtension(new FactoryClassLoader(bus), FactoryClassCreator.class);
+ bus.setExtension(new GeneratedNamespaceClassLoader(bus), NamespaceClassCreator.class);</pre>
+</div></div><p class="auto-cursor-target">You may run into dynamic class generation and/or loading in a few cases:</p><ul style="list-style-type: square;"><li class="auto-cursor-target">when using <a shape="rect" href="dynamic-clients.html">JaxWsDynamicClientFactory</a> (fully dynamic clients)</li><li class="auto-cursor-target">when using request / response wrappers and fault exception wrappers (which may not generated at build time)</li><li class="auto-cursor-target">when CDI (or other kinds of runtime instrumentation) is involved</li></ul><h3 id="GraalVMSupport-Samples.1">Samples</h3><ul style="list-style-type: square;"><li><a shape="rect" class="external-link" href="https://github.com/apache/cxf/tree/master/distribution/src/main/release/samples/jaxws_graalvm" rel="nofollow">https://github.com/apache/cxf/tree/master/distribution/src/main/release/samples/jaxws_graalvm</a></li><li><a shape="rect" class="external-link" href="https://github.com/apache/cxf/tree/master/distribution/src/main/release/samples/jaxws_graalvm_dynamic" rel="nofollow">https://github.com/apache/cxf/tree/master/distribution/src/main/release/samples/jaxws_graalvm_dynamic</a></li></ul><p><br clear="none"></p></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=170266671">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=170266671&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

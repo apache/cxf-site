@@ -1,0 +1,1918 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Class org.apache.cxf.binding.soap.SoapMessage (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Class org.apache.cxf.binding.soap.SoapMessage (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/binding/soap//class-useSoapMessage.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SoapMessage.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Class<br>org.apache.cxf.binding.soap.SoapMessage</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.binding.soap"><B>org.apache.cxf.binding.soap</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.binding.soap.interceptor"><B>org.apache.cxf.binding.soap.interceptor</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.binding.soap.jms.interceptor"><B>org.apache.cxf.binding.soap.jms.interceptor</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.binding.soap.saaj"><B>org.apache.cxf.binding.soap.saaj</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.jaxws.handler.soap"><B>org.apache.cxf.jaxws.handler.soap</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.jaxws.interceptors"><B>org.apache.cxf.jaxws.interceptors</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.sts.interceptor"><B>org.apache.cxf.sts.interceptor</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.addressing.soap"><B>org.apache.cxf.ws.addressing.soap</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.eventing.backend.notification"><B>org.apache.cxf.ws.eventing.backend.notification</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.rm.soap"><B>org.apache.cxf.ws.rm.soap</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.security.policy.interceptors"><B>org.apache.cxf.ws.security.policy.interceptors</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.security.wss4j"><B>org.apache.cxf.ws.security.wss4j</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.security.wss4j.policyhandlers"><B>org.apache.cxf.ws.security.wss4j.policyhandlers</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.binding.soap"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A> in <A HREF="../../../../../../org/apache/cxf/binding/soap/package-summary.html">org.apache.cxf.binding.soap</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/binding/soap/package-summary.html">org.apache.cxf.binding.soap</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>HeaderUtil.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/HeaderUtil.html#getHeaderQNameInOperationParam(org.apache.cxf.binding.soap.SoapMessage)">getHeaderQNameInOperationParam</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.binding.soap.interceptor"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A> in <A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/package-summary.html">org.apache.cxf.binding.soap.interceptor</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/package-summary.html">org.apache.cxf.binding.soap.interceptor</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapActionInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/SoapActionInInterceptor.html#getAndSetOperation(org.apache.cxf.binding.soap.SoapMessage, java.lang.String)">getAndSetOperation</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+                   <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;action)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MustUnderstandInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/MustUnderstandInterceptor.html#handleFault(org.apache.cxf.binding.soap.SoapMessage)">handleFault</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CheckFaultInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/CheckFaultInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MustUnderstandInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/MustUnderstandInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MustUnderstandInterceptor.MustUnderstandEndingInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/MustUnderstandInterceptor.MustUnderstandEndingInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ReadHeadersInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/ReadHeadersInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ReadHeadersInterceptor.CheckClosingTagsInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/ReadHeadersInterceptor.CheckClosingTagsInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intercepts a message.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Soap11FaultInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/Soap11FaultInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Soap11FaultOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/Soap11FaultOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Soap12FaultInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/Soap12FaultInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Soap12FaultOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/Soap12FaultOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapActionInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/SoapActionInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapActionInInterceptor.SoapActionInAttemptTwoInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/SoapActionInInterceptor.SoapActionInAttemptTwoInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapHeaderOutFilterInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/SoapHeaderOutFilterInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/SoapOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapOutInterceptor.SoapOutEndingInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/SoapOutInterceptor.SoapOutEndingInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapPreProtocolOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/SoapPreProtocolOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mediate a message dispatch.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>StartBodyInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/StartBodyInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intercepts a message.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TibcoSoapActionInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/TibcoSoapActionInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractSoapInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/AbstractSoapInterceptor.html#prepareStackTrace(org.apache.cxf.binding.soap.SoapMessage, org.apache.cxf.binding.soap.SoapFault)">prepareStackTrace</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+                  <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapFault.html" title="class in org.apache.cxf.binding.soap">SoapFault</A>&nbsp;fault)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapVersion.html" title="interface in org.apache.cxf.binding.soap">SoapVersion</A></CODE></FONT></TD>
+<TD><CODE><B>ReadHeadersInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/ReadHeadersInterceptor.html#readVersion(javax.xml.stream.XMLStreamReader, org.apache.cxf.binding.soap.SoapMessage)">readVersion</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</A>&nbsp;xmlReader,
+            <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapFault.html" title="class in org.apache.cxf.binding.soap">SoapFault</A></CODE></FONT></TD>
+<TD><CODE><B>Soap11FaultInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/Soap11FaultInInterceptor.html#unmarshalFault(org.apache.cxf.binding.soap.SoapMessage, javax.xml.stream.XMLStreamReader)">unmarshalFault</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</A>&nbsp;reader)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapFault.html" title="class in org.apache.cxf.binding.soap">SoapFault</A></CODE></FONT></TD>
+<TD><CODE><B>Soap12FaultInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/interceptor/Soap12FaultInInterceptor.html#unmarshalFault(org.apache.cxf.binding.soap.SoapMessage, javax.xml.stream.XMLStreamReader)">unmarshalFault</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/stream/XMLStreamReader.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamReader</A>&nbsp;reader)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.binding.soap.jms.interceptor"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A> in <A HREF="../../../../../../org/apache/cxf/binding/soap/jms/interceptor/package-summary.html">org.apache.cxf.binding.soap.jms.interceptor</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/binding/soap/jms/interceptor/package-summary.html">org.apache.cxf.binding.soap.jms.interceptor</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapJMSInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/jms/interceptor/SoapJMSInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.binding.soap.saaj"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A> in <A HREF="../../../../../../org/apache/cxf/binding/soap/saaj/package-summary.html">org.apache.cxf.binding.soap.saaj</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/binding/soap/saaj/package-summary.html">org.apache.cxf.binding.soap.saaj</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/MessageFactory.html?is-external=true" title="class or interface in javax.xml.soap">MessageFactory</A></CODE></FONT></TD>
+<TD><CODE><B>SAAJInInterceptor.SAAJPreInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/saaj/SAAJInInterceptor.SAAJPreInInterceptor.html#getFactory(org.apache.cxf.binding.soap.SoapMessage)">getFactory</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/MessageFactory.html?is-external=true" title="class or interface in javax.xml.soap">MessageFactory</A></CODE></FONT></TD>
+<TD><CODE><B>SAAJOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/saaj/SAAJOutInterceptor.html#getFactory(org.apache.cxf.binding.soap.SoapMessage)">getFactory</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SAAJOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/saaj/SAAJOutInterceptor.html#handleFault(org.apache.cxf.binding.soap.SoapMessage)">handleFault</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SAAJInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/saaj/SAAJInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SAAJInInterceptor.SAAJPreInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/saaj/SAAJInInterceptor.SAAJPreInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SAAJOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/saaj/SAAJOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SAAJOutInterceptor.SAAJOutEndingInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/saaj/SAAJOutInterceptor.SAAJOutEndingInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SAAJInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/binding/soap/saaj/SAAJInInterceptor.html#replaceHeaders(javax.xml.soap.SOAPMessage, org.apache.cxf.binding.soap.SoapMessage)">replaceHeaders</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html?is-external=true" title="class or interface in javax.xml.soap">SOAPMessage</A>&nbsp;soapMessage,
+               <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.jaxws.handler.soap"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A> in <A HREF="../../../../../../org/apache/cxf/jaxws/handler/soap/package-summary.html">org.apache.cxf.jaxws.handler.soap</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/jaxws/handler/soap/package-summary.html">org.apache.cxf.jaxws.handler.soap</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/handler/MessageContext.html?is-external=true" title="class or interface in javax.xml.ws.handler">MessageContext</A></CODE></FONT></TD>
+<TD><CODE><B>SOAPHandlerFaultInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/jaxws/handler/soap/SOAPHandlerFaultInInterceptor.html#createProtocolMessageContext(org.apache.cxf.binding.soap.SoapMessage)">createProtocolMessageContext</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/handler/MessageContext.html?is-external=true" title="class or interface in javax.xml.ws.handler">MessageContext</A></CODE></FONT></TD>
+<TD><CODE><B>SOAPHandlerFaultOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/jaxws/handler/soap/SOAPHandlerFaultOutInterceptor.html#createProtocolMessageContext(org.apache.cxf.binding.soap.SoapMessage)">createProtocolMessageContext</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/handler/MessageContext.html?is-external=true" title="class or interface in javax.xml.ws.handler">MessageContext</A></CODE></FONT></TD>
+<TD><CODE><B>SOAPHandlerInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/jaxws/handler/soap/SOAPHandlerInterceptor.html#createProtocolMessageContext(org.apache.cxf.binding.soap.SoapMessage)">createProtocolMessageContext</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SOAPHandlerFaultInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/jaxws/handler/soap/SOAPHandlerFaultInInterceptor.html#handleFault(org.apache.cxf.binding.soap.SoapMessage)">handleFault</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SOAPHandlerFaultOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/jaxws/handler/soap/SOAPHandlerFaultOutInterceptor.html#handleFault(org.apache.cxf.binding.soap.SoapMessage)">handleFault</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SOAPHandlerInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/jaxws/handler/soap/SOAPHandlerInterceptor.html#handleFault(org.apache.cxf.binding.soap.SoapMessage)">handleFault</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SOAPHandlerFaultInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/jaxws/handler/soap/SOAPHandlerFaultInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SOAPHandlerFaultOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/jaxws/handler/soap/SOAPHandlerFaultOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SOAPHandlerInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/jaxws/handler/soap/SOAPHandlerInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.jaxws.interceptors"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A> in <A HREF="../../../../../../org/apache/cxf/jaxws/interceptors/package-summary.html">org.apache.cxf.jaxws.interceptors</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/jaxws/interceptors/package-summary.html">org.apache.cxf.jaxws.interceptors</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SwAInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/jaxws/interceptors/SwAInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SwAOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/jaxws/interceptors/SwAOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SwAOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/jaxws/interceptors/SwAOutInterceptor.html#processAttachments(org.apache.cxf.binding.soap.SoapMessage, org.apache.cxf.binding.soap.model.SoapBodyInfo)">processAttachments</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+                   <A HREF="../../../../../../org/apache/cxf/binding/soap/model/SoapBodyInfo.html" title="class in org.apache.cxf.binding.soap.model">SoapBodyInfo</A>&nbsp;sbi)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.sts.interceptor"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A> in <A HREF="../../../../../../org/apache/cxf/sts/interceptor/package-summary.html">org.apache.cxf.sts.interceptor</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/sts/interceptor/package-summary.html">org.apache.cxf.sts.interceptor</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SCTInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/sts/interceptor/SCTInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SCTOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/sts/interceptor/SCTOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.addressing.soap"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A> in <A HREF="../../../../../../org/apache/cxf/ws/addressing/soap/package-summary.html">org.apache.cxf.ws.addressing.soap</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/ws/addressing/soap/package-summary.html">org.apache.cxf.ws.addressing.soap</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T&gt; void</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>VersionTransformer.</B><B><A HREF="../../../../../../org/apache/cxf/ws/addressing/soap/VersionTransformer.html#encodeAsExposed(org.apache.cxf.binding.soap.SoapMessage, java.lang.String, T, java.lang.String, java.lang.Class, javax.xml.bind.JAXBContext, boolean)">encodeAsExposed</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;exposeAs,
+                T&nbsp;value,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;localName,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;T&gt;&nbsp;clz,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBContext.html?is-external=true" title="class or interface in javax.xml.bind">JAXBContext</A>&nbsp;marshaller,
+                boolean&nbsp;mustUnderstand)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Encode message in exposed version.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected 
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="0" SUMMARY="">
+<TR ALIGN="right" VALIGN="">
+<TD NOWRAP><FONT SIZE="-1">
+<CODE>&lt;T&gt; void</CODE></FONT></TD>
+</TR>
+</TABLE>
+</CODE></FONT></TD>
+<TD><CODE><B>MAPCodec.</B><B><A HREF="../../../../../../org/apache/cxf/ws/addressing/soap/MAPCodec.html#encodeMAP(org.apache.cxf.binding.soap.SoapMessage, T, javax.xml.namespace.QName, java.lang.Class, javax.xml.bind.JAXBContext, boolean)">encodeMAP</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+          T&nbsp;value,
+          <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;qname,
+          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</A>&lt;T&gt;&nbsp;clz,
+          <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/bind/JAXBContext.html?is-external=true" title="class or interface in javax.xml.bind">JAXBContext</A>&nbsp;ctx,
+          boolean&nbsp;mustUnderstand)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Encodes an MAP as a SOAP header.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>DecoupledFaultHandler.</B><B><A HREF="../../../../../../org/apache/cxf/ws/addressing/soap/DecoupledFaultHandler.html#handleFault(org.apache.cxf.binding.soap.SoapMessage)">handleFault</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MAPCodec.</B><B><A HREF="../../../../../../org/apache/cxf/ws/addressing/soap/MAPCodec.html#handleFault(org.apache.cxf.binding.soap.SoapMessage)">handleFault</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoked when unwinding normal interceptor chain when a fault occurred.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>DecoupledFaultHandler.</B><B><A HREF="../../../../../../org/apache/cxf/ws/addressing/soap/DecoupledFaultHandler.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MAPCodec.</B><B><A HREF="../../../../../../org/apache/cxf/ws/addressing/soap/MAPCodec.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invoked for normal processing of inbound and outbound messages.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/addressing/AddressingProperties.html" title="class in org.apache.cxf.ws.addressing">AddressingProperties</A></CODE></FONT></TD>
+<TD><CODE><B>MAPCodec.</B><B><A HREF="../../../../../../org/apache/cxf/ws/addressing/soap/MAPCodec.html#unmarshalMAPs(org.apache.cxf.binding.soap.SoapMessage)">unmarshalMAPs</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Decode the MAPs from protocol-specific headers.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.eventing.backend.notification"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A> in <A HREF="../../../../../../org/apache/cxf/ws/eventing/backend/notification/package-summary.html">org.apache.cxf.ws.eventing.backend.notification</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/ws/eventing/backend/notification/package-summary.html">org.apache.cxf.ws.eventing.backend.notification</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>FilteringInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/eventing/backend/notification/FilteringInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.rm.soap"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A> in <A HREF="../../../../../../org/apache/cxf/ws/rm/soap/package-summary.html">org.apache.cxf.ws.rm.soap</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/ws/rm/soap/package-summary.html">org.apache.cxf.ws.rm.soap</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/cxf/transport/Conduit.html" title="interface in org.apache.cxf.transport">Conduit</A></CODE></FONT></TD>
+<TD><CODE><B>RetransmissionQueueImpl.</B><B><A HREF="../../../../../../org/apache/cxf/ws/rm/soap/RetransmissionQueueImpl.html#buildConduit(org.apache.cxf.binding.soap.SoapMessage, org.apache.cxf.endpoint.Endpoint, org.apache.cxf.ws.addressing.AttributedURIType)">buildConduit</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+             <A HREF="../../../../../../org/apache/cxf/endpoint/Endpoint.html" title="interface in org.apache.cxf.endpoint">Endpoint</A>&nbsp;endpoint,
+             <A HREF="../../../../../../org/apache/cxf/ws/addressing/AttributedURIType.html" title="class in org.apache.cxf.ws.addressing">AttributedURIType</A>&nbsp;to)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/cxf/ws/rm/soap/RetransmissionQueueImpl.ResendCandidate.html" title="class in org.apache.cxf.ws.rm.soap">RetransmissionQueueImpl.ResendCandidate</A></CODE></FONT></TD>
+<TD><CODE><B>RetransmissionQueueImpl.</B><B><A HREF="../../../../../../org/apache/cxf/ws/rm/soap/RetransmissionQueueImpl.html#createResendCandidate(org.apache.cxf.binding.soap.SoapMessage)">createResendCandidate</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>RMSoapInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/rm/soap/RMSoapInInterceptor.html#decodeHeaders(org.apache.cxf.binding.soap.SoapMessage, java.util.List, org.apache.cxf.ws.rm.RMProperties)">decodeHeaders</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+              <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../org/apache/cxf/headers/Header.html" title="class in org.apache.cxf.headers">Header</A>&gt;&nbsp;headers,
+              <A HREF="../../../../../../org/apache/cxf/ws/rm/RMProperties.html" title="class in org.apache.cxf.ws.rm">RMProperties</A>&nbsp;rmps)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>RMSoapOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/rm/soap/RMSoapOutInterceptor.html#encode(org.apache.cxf.binding.soap.SoapMessage, org.apache.cxf.ws.rm.RMProperties)">encode</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+       <A HREF="../../../../../../org/apache/cxf/ws/rm/RMProperties.html" title="class in org.apache.cxf.ws.rm">RMProperties</A>&nbsp;rmps)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Encode the current RM properties in protocol-specific headers.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>RMSoapOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/rm/soap/RMSoapOutInterceptor.html#encodeFault(org.apache.cxf.binding.soap.SoapMessage, org.apache.cxf.ws.rm.SequenceFault)">encodeFault</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+            <A HREF="../../../../../../org/apache/cxf/ws/rm/SequenceFault.html" title="class in org.apache.cxf.ws.rm">SequenceFault</A>&nbsp;sf)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Encode the SequenceFault in protocol-specific header.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>RMSoapInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/rm/soap/RMSoapInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>RMSoapOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/rm/soap/RMSoapOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/ws/rm/RMProperties.html" title="class in org.apache.cxf.ws.rm">RMProperties</A></CODE></FONT></TD>
+<TD><CODE><B>RMSoapInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/rm/soap/RMSoapInInterceptor.html#unmarshalRMProperties(org.apache.cxf.binding.soap.SoapMessage)">unmarshalRMProperties</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Decode the RM properties from protocol-specific headers.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.security.policy.interceptors"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A> in <A HREF="../../../../../../org/apache/cxf/ws/security/policy/interceptors/package-summary.html">org.apache.cxf.ws.security.policy.interceptors</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/ws/security/policy/interceptors/package-summary.html">org.apache.cxf.ws.security.policy.interceptors</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SecurityVerificationOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/policy/interceptors/SecurityVerificationOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checks if some security assertions are specified without binding assertion and cannot be fulfilled.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.security.wss4j"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A> in <A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/package-summary.html">org.apache.cxf.ws.security.wss4j</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/package-summary.html">org.apache.cxf.ws.security.wss4j</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected abstract &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractTokenInterceptor.html#addToken(org.apache.cxf.binding.soap.SoapMessage)">addToken</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>BinarySecurityTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/BinarySecurityTokenInterceptor.html#addToken(org.apache.cxf.binding.soap.SoapMessage)">addToken</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SamlTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/SamlTokenInterceptor.html#addToken(org.apache.cxf.binding.soap.SoapMessage)">addToken</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>UsernameTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/UsernameTokenInterceptor.html#addToken(org.apache.cxf.binding.soap.SoapMessage)">addToken</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.dom.message.WSSecUsernameToken</CODE></FONT></TD>
+<TD><CODE><B>UsernameTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/UsernameTokenInterceptor.html#addUsernameToken(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.policy.model.UsernameToken)">addUsernameToken</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+                 org.apache.wss4j.policy.model.UsernameToken&nbsp;token)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JInInterceptor.html#advanceBody(org.apache.cxf.binding.soap.SoapMessage, org.w3c.dom.Node)">advanceBody</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+            <A HREF="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html?is-external=true" title="class or interface in org.w3c.dom">Node</A>&nbsp;body)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected abstract &nbsp;org.apache.wss4j.policy.model.AbstractToken</CODE></FONT></TD>
+<TD><CODE><B>AbstractTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractTokenInterceptor.html#assertTokens(org.apache.cxf.binding.soap.SoapMessage)">assertTokens</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.policy.model.AbstractToken</CODE></FONT></TD>
+<TD><CODE><B>BinarySecurityTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/BinarySecurityTokenInterceptor.html#assertTokens(org.apache.cxf.binding.soap.SoapMessage)">assertTokens</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.policy.model.AbstractToken</CODE></FONT></TD>
+<TD><CODE><B>KerberosTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/KerberosTokenInterceptor.html#assertTokens(org.apache.cxf.binding.soap.SoapMessage)">assertTokens</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.policy.model.AbstractToken</CODE></FONT></TD>
+<TD><CODE><B>SamlTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/SamlTokenInterceptor.html#assertTokens(org.apache.cxf.binding.soap.SoapMessage)">assertTokens</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.policy.model.UsernameToken</CODE></FONT></TD>
+<TD><CODE><B>UsernameTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/UsernameTokenInterceptor.html#assertTokens(org.apache.cxf.binding.soap.SoapMessage)">assertTokens</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.policy.model.AbstractToken</CODE></FONT></TD>
+<TD><CODE><B>AbstractTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractTokenInterceptor.html#assertTokens(org.apache.cxf.binding.soap.SoapMessage, java.lang.String, boolean)">assertTokens</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;localname,
+             boolean&nbsp;signed)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JInInterceptor.html#computeAction(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.dom.handler.RequestData)">computeAction</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+              org.apache.wss4j.dom.handler.RequestData&nbsp;data)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JInInterceptor.html#computeAction(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.dom.handler.RequestData)">computeAction</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+              org.apache.wss4j.dom.handler.RequestData&nbsp;reqData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Do whatever is necessary to determine the action for the incoming message and 
+ do whatever other setup work is necessary.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractWSS4JStaxInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#configureCallbackHandler(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">configureCallbackHandler</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage,
+                         org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JStaxOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JStaxOutInterceptor.html#configureProperties(org.apache.cxf.binding.soap.SoapMessage, org.apache.xml.security.stax.ext.OutboundSecurityContext, org.apache.wss4j.stax.ext.WSSSecurityProperties)">configureProperties</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                    org.apache.xml.security.stax.ext.OutboundSecurityContext&nbsp;outboundSecurityContext,
+                    org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSS4JStaxOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JStaxOutInterceptor.html#configureProperties(org.apache.cxf.binding.soap.SoapMessage, org.apache.xml.security.stax.ext.OutboundSecurityContext, org.apache.wss4j.stax.ext.WSSSecurityProperties)">configureProperties</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                    org.apache.xml.security.stax.ext.OutboundSecurityContext&nbsp;outboundSecurityContext,
+                    org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JStaxInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JStaxInInterceptor.html#configureProperties(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">configureProperties</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                    org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSS4JStaxInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JStaxInInterceptor.html#configureProperties(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">configureProperties</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                    org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JInInterceptor.html#configureReplayCaches(org.apache.wss4j.dom.handler.RequestData, java.util.List, org.apache.cxf.binding.soap.SoapMessage)">configureReplayCaches</A></B>(org.apache.wss4j.dom.handler.RequestData&nbsp;reqData,
+                      <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</A>&gt;&nbsp;actions,
+                      <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.xml.security.stax.securityEvent.SecurityEventListener</CODE></FONT></TD>
+<TD><CODE><B>WSS4JStaxOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JStaxOutInterceptor.html#configureSecurityEventListener(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">configureSecurityEventListener</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                               org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;org.apache.xml.security.stax.securityEvent.SecurityEventListener&gt;</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JStaxInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JStaxInInterceptor.html#configureSecurityEventListeners(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">configureSecurityEventListeners</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                                org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;org.apache.xml.security.stax.securityEvent.SecurityEventListener&gt;</CODE></FONT></TD>
+<TD><CODE><B>WSS4JStaxInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JStaxInInterceptor.html#configureSecurityEventListeners(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">configureSecurityEventListeners</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                                org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JInInterceptor.html#doResults(org.apache.cxf.binding.soap.SoapMessage, java.lang.String, org.w3c.dom.Element, org.w3c.dom.Element, java.util.List)">doResults</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;actor,
+          <A HREF="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</A>&nbsp;soapHeader,
+          <A HREF="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</A>&nbsp;soapBody,
+          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;org.apache.wss4j.dom.WSSecurityEngineResult&gt;&nbsp;wsResult)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JInInterceptor.html#doResults(org.apache.cxf.binding.soap.SoapMessage, java.lang.String, org.w3c.dom.Element, org.w3c.dom.Element, java.util.List, boolean)">doResults</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;actor,
+          <A HREF="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</A>&nbsp;soapHeader,
+          <A HREF="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</A>&nbsp;soapBody,
+          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;org.apache.wss4j.dom.WSSecurityEngineResult&gt;&nbsp;results,
+          boolean&nbsp;utWithCallbacks)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JInInterceptor.html#doResults(org.apache.cxf.binding.soap.SoapMessage, java.lang.String, org.w3c.dom.Element, org.w3c.dom.Element, java.util.List, boolean)">doResults</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;actor,
+          <A HREF="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</A>&nbsp;soapHeader,
+          <A HREF="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</A>&nbsp;soapBody,
+          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;org.apache.wss4j.dom.WSSecurityEngineResult&gt;&nbsp;wsResult,
+          boolean&nbsp;utWithCallbacks)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/cxf/headers/Header.html" title="class in org.apache.cxf.headers">Header</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractTokenInterceptor.html#findSecurityHeader(org.apache.cxf.binding.soap.SoapMessage, boolean)">findSecurityHeader</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+                   boolean&nbsp;create)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/CallbackHandler.html?is-external=true" title="class or interface in javax.security.auth.callback">CallbackHandler</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractTokenInterceptor.html#getCallback(org.apache.cxf.binding.soap.SoapMessage)">getCallback</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.common.crypto.Crypto</CODE></FONT></TD>
+<TD><CODE><B>AbstractWSS4JStaxInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getEncryptionCrypto(java.lang.Object, org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">getEncryptionCrypto</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;e,
+                    <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+                    org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractTokenInterceptor.html#getPassword(java.lang.String, org.apache.wss4j.policy.model.AbstractToken, int, org.apache.cxf.binding.soap.SoapMessage)">getPassword</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;userName,
+            org.apache.wss4j.policy.model.AbstractToken&nbsp;info,
+            int&nbsp;usage,
+            <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.common.crypto.PasswordEncryptor</CODE></FONT></TD>
+<TD><CODE><B>AbstractWSS4JStaxInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getPasswordEncryptor(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">getPasswordEncryptor</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage,
+                     org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.common.principal.UsernameTokenPrincipal</CODE></FONT></TD>
+<TD><CODE><B>UsernameTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/UsernameTokenInterceptor.html#getPrincipal(org.w3c.dom.Element, org.apache.cxf.binding.soap.SoapMessage)">getPrincipal</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</A>&nbsp;tokenElement,
+             <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<B>Deprecated.</B>&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.common.cache.ReplayCache</CODE></FONT></TD>
+<TD><CODE><B>WSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JInInterceptor.html#getReplayCache(org.apache.cxf.binding.soap.SoapMessage, java.lang.String, java.lang.String)">getReplayCache</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;booleanKey,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;instanceKey)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a ReplayCache instance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;org.apache.wss4j.common.cache.ReplayCache</CODE></FONT></TD>
+<TD><CODE><B>WSS4JUtils.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JUtils.html#getReplayCache(org.apache.cxf.binding.soap.SoapMessage, java.lang.String, java.lang.String)">getReplayCache</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;booleanKey,
+               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;instanceKey)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get a ReplayCache instance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.common.crypto.Crypto</CODE></FONT></TD>
+<TD><CODE><B>AbstractWSS4JStaxInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#getSignatureCrypto(java.lang.Object, org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">getSignatureCrypto</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&nbsp;s,
+                   <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+                   org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractTokenInterceptor.html#getTokenStore(org.apache.cxf.binding.soap.SoapMessage)">getTokenStore</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractWSS4JInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JInterceptor.html#handleFault(org.apache.cxf.binding.soap.SoapMessage)">handleFault</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractWSS4JStaxInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#handleFault(org.apache.cxf.binding.soap.SoapMessage)">handleFault</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JOutInterceptor.html#handleFault(org.apache.cxf.binding.soap.SoapMessage)">handleFault</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JOutInterceptor.PolicyBasedWSS4JOutInterceptorInternal.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JOutInterceptor.PolicyBasedWSS4JOutInterceptorInternal.html#handleFault(org.apache.cxf.binding.soap.SoapMessage)">handleFault</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSS4JOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JOutInterceptor.html#handleFault(org.apache.cxf.binding.soap.SoapMessage)">handleFault</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractTokenInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractUsernameTokenAuthenticatingInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractUsernameTokenAuthenticatingInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CryptoCoverageChecker.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/CryptoCoverageChecker.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checks that the WSS4J results refer to the required signed/encrypted
+ elements as defined by the XPath expressions in <A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/CryptoCoverageChecker.html#xPaths"><CODE>CryptoCoverageChecker.xPaths</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;mc)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JOutInterceptor.PolicyBasedWSS4JOutInterceptorInternal.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JOutInterceptor.PolicyBasedWSS4JOutInterceptorInternal.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JStaxInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JStaxInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JStaxOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JStaxOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PolicyStaxActionInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyStaxActionInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>StaxActionInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/StaxActionInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>StaxCryptoCoverageChecker.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/StaxCryptoCoverageChecker.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>StaxSecurityContextInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/StaxSecurityContextInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSS4JOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;mc)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSS4JStaxInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JStaxInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSS4JStaxOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JStaxOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;mc)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSS4JOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JOutInterceptor.html#handleSecureMTOM(org.apache.cxf.binding.soap.SoapMessage, java.util.List)">handleSecureMTOM</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;mc,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;org.apache.wss4j.dom.handler.HandlerAction&gt;&nbsp;actions)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSS4JStaxOutInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JStaxOutInterceptor.html#handleSecureMTOM(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">handleSecureMTOM</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;mc,
+                 org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;secProps)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>WSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JInInterceptor.html#isGET(org.apache.cxf.binding.soap.SoapMessage)">isGET</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>WSS4JStaxInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JStaxInInterceptor.html#isGET(org.apache.cxf.binding.soap.SoapMessage)">isGET</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JInInterceptor.html#isNonceCacheRequired(java.util.List, org.apache.cxf.binding.soap.SoapMessage)">isNonceCacheRequired</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</A>&gt;&nbsp;actions,
+                     <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is a Nonce Cache required, i.e.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>WSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JInInterceptor.html#isNonceCacheRequired(java.util.List, org.apache.cxf.binding.soap.SoapMessage)">isNonceCacheRequired</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</A>&gt;&nbsp;actions,
+                     <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is a Nonce Cache required, i.e.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JStaxInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JStaxInInterceptor.html#isNonceCacheRequired(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">isNonceCacheRequired</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                     org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is a Nonce Cache required, i.e.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>WSS4JStaxInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JStaxInInterceptor.html#isNonceCacheRequired(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">isNonceCacheRequired</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                     org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is a Nonce Cache required, i.e.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>AbstractWSS4JInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JInterceptor.html#isRequestor(org.apache.cxf.binding.soap.SoapMessage)">isRequestor</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>AbstractWSS4JStaxInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#isRequestor(org.apache.cxf.binding.soap.SoapMessage)">isRequestor</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JInInterceptor.html#isSamlCacheRequired(java.util.List, org.apache.cxf.binding.soap.SoapMessage)">isSamlCacheRequired</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</A>&gt;&nbsp;actions,
+                    <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is a SAML Cache required, i.e.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>WSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JInInterceptor.html#isSamlCacheRequired(java.util.List, org.apache.cxf.binding.soap.SoapMessage)">isSamlCacheRequired</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</A>&gt;&nbsp;actions,
+                    <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is a SAML Cache required, i.e.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JStaxInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JStaxInInterceptor.html#isSamlCacheRequired(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">isSamlCacheRequired</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                    org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is a SAML Cache required, i.e.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>WSS4JStaxInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JStaxInInterceptor.html#isSamlCacheRequired(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">isSamlCacheRequired</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                    org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is a SAML Cache required, i.e.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JInInterceptor.html#isTimestampCacheRequired(java.util.List, org.apache.cxf.binding.soap.SoapMessage)">isTimestampCacheRequired</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</A>&gt;&nbsp;actions,
+                         <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is a Timestamp cache required, i.e.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>WSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JInInterceptor.html#isTimestampCacheRequired(java.util.List, org.apache.cxf.binding.soap.SoapMessage)">isTimestampCacheRequired</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</A>&gt;&nbsp;actions,
+                         <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is a Timestamp cache required, i.e.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JStaxInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JStaxInInterceptor.html#isTimestampCacheRequired(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">isTimestampCacheRequired</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                         org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is a Timestamp cache required, i.e.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>WSS4JStaxInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JStaxInInterceptor.html#isTimestampCacheRequired(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">isTimestampCacheRequired</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                         org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Is a Timestamp cache required, i.e.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>AbstractTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractTokenInterceptor.html#isTLSInUse(org.apache.cxf.binding.soap.SoapMessage)">isTLSInUse</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>UsernameTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/UsernameTokenInterceptor.html#isWsiBSPCompliant(org.apache.cxf.binding.soap.SoapMessage)">isWsiBSPCompliant</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.common.crypto.Crypto</CODE></FONT></TD>
+<TD><CODE><B>AbstractWSS4JStaxInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#loadCrypto(org.apache.cxf.binding.soap.SoapMessage, java.lang.String, java.lang.String, org.apache.wss4j.stax.ext.WSSSecurityProperties)">loadCrypto</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage,
+           <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;cryptoPropertyFile,
+           <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;cryptoPropertyRefId,
+           org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Load a Crypto instance.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.common.crypto.Crypto</CODE></FONT></TD>
+<TD><CODE><B>AbstractWSS4JStaxInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#loadCryptoFromPropertiesFile(org.apache.cxf.binding.soap.SoapMessage, java.lang.String, org.apache.wss4j.stax.ext.WSSSecurityProperties)">loadCryptoFromPropertiesFile</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage,
+                             <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;propFilename,
+                             org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractTokenInterceptor.html#policyNotAsserted(org.apache.wss4j.policy.model.AbstractToken, java.lang.Exception, org.apache.cxf.binding.soap.SoapMessage)">policyNotAsserted</A></B>(org.apache.wss4j.policy.model.AbstractToken&nbsp;assertion,
+                  <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A>&nbsp;reason,
+                  <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractTokenInterceptor.html#policyNotAsserted(org.apache.wss4j.policy.model.AbstractToken, java.lang.String, org.apache.cxf.binding.soap.SoapMessage)">policyNotAsserted</A></B>(org.apache.wss4j.policy.model.AbstractToken&nbsp;assertion,
+                  <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;reason,
+                  <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractWSS4JInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JInterceptor.html#postHandleMessage(org.apache.cxf.binding.soap.SoapMessage)">postHandleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractWSS4JStaxInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#postHandleMessage(org.apache.cxf.binding.soap.SoapMessage)">postHandleMessage</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected abstract &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractTokenInterceptor.html#processToken(org.apache.cxf.binding.soap.SoapMessage)">processToken</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>BinarySecurityTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/BinarySecurityTokenInterceptor.html#processToken(org.apache.cxf.binding.soap.SoapMessage)">processToken</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SamlTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/SamlTokenInterceptor.html#processToken(org.apache.cxf.binding.soap.SoapMessage)">processToken</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>UsernameTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/UsernameTokenInterceptor.html#processToken(org.apache.cxf.binding.soap.SoapMessage)">processToken</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JInInterceptor.html#setAlgorithmSuites(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.dom.handler.RequestData)">setAlgorithmSuites</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+                   org.apache.wss4j.dom.handler.RequestData&nbsp;data)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set a WSS4J AlgorithmSuite object on the RequestData context, to restrict the
+ algorithms that are allowed for encryption, signature, etc.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSS4JInInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/WSS4JInInterceptor.html#setAlgorithmSuites(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.dom.handler.RequestData)">setAlgorithmSuites</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message,
+                   org.apache.wss4j.dom.handler.RequestData&nbsp;data)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set a WSS4J AlgorithmSuite object on the RequestData context, to restrict the
+ algorithms that are allowed for encryption, signature, etc.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractWSS4JInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JInterceptor.html#translateProperties(org.apache.cxf.binding.soap.SoapMessage)">translateProperties</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractWSS4JStaxInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JStaxInterceptor.html#translateProperties(org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.stax.ext.WSSSecurityProperties)">translateProperties</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                    org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;securityProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.wss4j.dom.WSSecurityEngineResult</CODE></FONT></TD>
+<TD><CODE><B>UsernameTokenInterceptor.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/UsernameTokenInterceptor.html#validateToken(org.w3c.dom.Element, org.apache.cxf.binding.soap.SoapMessage)">validateToken</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</A>&nbsp;tokenElement,
+              <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/package-summary.html">org.apache.cxf.ws.security.wss4j</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/AttachmentCallbackHandler.html#AttachmentCallbackHandler(org.apache.cxf.binding.soap.SoapMessage)">AttachmentCallbackHandler</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.security.wss4j.policyhandlers"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A> in <A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/package-summary.html">org.apache.cxf.ws.security.wss4j.policyhandlers</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Fields in <A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/package-summary.html">org.apache.cxf.ws.security.wss4j.policyhandlers</A> declared as <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractCommonBindingHandler.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#message">message</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/package-summary.html">org.apache.cxf.ws.security.wss4j.policyhandlers</A> that return <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractCommonBindingHandler.</B><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#getMessage()">getMessage</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/package-summary.html">org.apache.cxf.ws.security.wss4j.policyhandlers</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#AbstractBindingBuilder(org.apache.wss4j.dom.WSSConfig, org.apache.wss4j.policy.model.AbstractBinding, javax.xml.soap.SOAPMessage, org.apache.wss4j.dom.message.WSSecHeader, org.apache.cxf.ws.policy.AssertionInfoMap, org.apache.cxf.binding.soap.SoapMessage)">AbstractBindingBuilder</A></B>(org.apache.wss4j.dom.WSSConfig&nbsp;config,
+                       org.apache.wss4j.policy.model.AbstractBinding&nbsp;binding,
+                       <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html?is-external=true" title="class or interface in javax.xml.soap">SOAPMessage</A>&nbsp;saaj,
+                       org.apache.wss4j.dom.message.WSSecHeader&nbsp;secHeader,
+                       <A HREF="../../../../../../org/apache/cxf/ws/policy/AssertionInfoMap.html" title="class in org.apache.cxf.ws.policy">AssertionInfoMap</A>&nbsp;aim,
+                       <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#AbstractCommonBindingHandler(org.apache.cxf.binding.soap.SoapMessage)">AbstractCommonBindingHandler</A></B>(<A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractStaxBindingHandler.html#AbstractStaxBindingHandler(org.apache.wss4j.stax.ext.WSSSecurityProperties, org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.policy.model.AbstractBinding, org.apache.xml.security.stax.ext.OutboundSecurityContext)">AbstractStaxBindingHandler</A></B>(org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;properties,
+                           <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                           org.apache.wss4j.policy.model.AbstractBinding&nbsp;binding,
+                           org.apache.xml.security.stax.ext.OutboundSecurityContext&nbsp;outboundSecurityContext)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AsymmetricBindingHandler.html#AsymmetricBindingHandler(org.apache.wss4j.dom.WSSConfig, org.apache.wss4j.policy.model.AsymmetricBinding, javax.xml.soap.SOAPMessage, org.apache.wss4j.dom.message.WSSecHeader, org.apache.cxf.ws.policy.AssertionInfoMap, org.apache.cxf.binding.soap.SoapMessage)">AsymmetricBindingHandler</A></B>(org.apache.wss4j.dom.WSSConfig&nbsp;config,
+                         org.apache.wss4j.policy.model.AsymmetricBinding&nbsp;binding,
+                         <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html?is-external=true" title="class or interface in javax.xml.soap">SOAPMessage</A>&nbsp;saaj,
+                         org.apache.wss4j.dom.message.WSSecHeader&nbsp;secHeader,
+                         <A HREF="../../../../../../org/apache/cxf/ws/policy/AssertionInfoMap.html" title="class in org.apache.cxf.ws.policy">AssertionInfoMap</A>&nbsp;aim,
+                         <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/StaxAsymmetricBindingHandler.html#StaxAsymmetricBindingHandler(org.apache.wss4j.stax.ext.WSSSecurityProperties, org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.policy.model.AsymmetricBinding, org.apache.xml.security.stax.ext.OutboundSecurityContext)">StaxAsymmetricBindingHandler</A></B>(org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;properties,
+                             <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                             org.apache.wss4j.policy.model.AsymmetricBinding&nbsp;abinding,
+                             org.apache.xml.security.stax.ext.OutboundSecurityContext&nbsp;outboundSecurityContext)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/StaxSymmetricBindingHandler.html#StaxSymmetricBindingHandler(org.apache.wss4j.stax.ext.WSSSecurityProperties, org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.policy.model.SymmetricBinding, org.apache.xml.security.stax.ext.OutboundSecurityContext)">StaxSymmetricBindingHandler</A></B>(org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;properties,
+                            <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                            org.apache.wss4j.policy.model.SymmetricBinding&nbsp;sbinding,
+                            org.apache.xml.security.stax.ext.OutboundSecurityContext&nbsp;outboundSecurityContext)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/StaxTransportBindingHandler.html#StaxTransportBindingHandler(org.apache.wss4j.stax.ext.WSSSecurityProperties, org.apache.cxf.binding.soap.SoapMessage, org.apache.wss4j.policy.model.TransportBinding, org.apache.xml.security.stax.ext.OutboundSecurityContext)">StaxTransportBindingHandler</A></B>(org.apache.wss4j.stax.ext.WSSSecurityProperties&nbsp;properties,
+                            <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg,
+                            org.apache.wss4j.policy.model.TransportBinding&nbsp;tbinding,
+                            org.apache.xml.security.stax.ext.OutboundSecurityContext&nbsp;outboundSecurityContext)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/SymmetricBindingHandler.html#SymmetricBindingHandler(org.apache.wss4j.dom.WSSConfig, org.apache.wss4j.policy.model.SymmetricBinding, javax.xml.soap.SOAPMessage, org.apache.wss4j.dom.message.WSSecHeader, org.apache.cxf.ws.policy.AssertionInfoMap, org.apache.cxf.binding.soap.SoapMessage)">SymmetricBindingHandler</A></B>(org.apache.wss4j.dom.WSSConfig&nbsp;config,
+                        org.apache.wss4j.policy.model.SymmetricBinding&nbsp;binding,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html?is-external=true" title="class or interface in javax.xml.soap">SOAPMessage</A>&nbsp;saaj,
+                        org.apache.wss4j.dom.message.WSSecHeader&nbsp;secHeader,
+                        <A HREF="../../../../../../org/apache/cxf/ws/policy/AssertionInfoMap.html" title="class in org.apache.cxf.ws.policy">AssertionInfoMap</A>&nbsp;aim,
+                        <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/TransportBindingHandler.html#TransportBindingHandler(org.apache.wss4j.dom.WSSConfig, org.apache.wss4j.policy.model.TransportBinding, javax.xml.soap.SOAPMessage, org.apache.wss4j.dom.message.WSSecHeader, org.apache.cxf.ws.policy.AssertionInfoMap, org.apache.cxf.binding.soap.SoapMessage)">TransportBindingHandler</A></B>(org.apache.wss4j.dom.WSSConfig&nbsp;config,
+                        org.apache.wss4j.policy.model.TransportBinding&nbsp;binding,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/soap/SOAPMessage.html?is-external=true" title="class or interface in javax.xml.soap">SOAPMessage</A>&nbsp;saaj,
+                        org.apache.wss4j.dom.message.WSSecHeader&nbsp;secHeader,
+                        <A HREF="../../../../../../org/apache/cxf/ws/policy/AssertionInfoMap.html" title="class in org.apache.cxf.ws.policy">AssertionInfoMap</A>&nbsp;aim,
+                        <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/binding/soap//class-useSoapMessage.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SoapMessage.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

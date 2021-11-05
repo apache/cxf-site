@@ -1,0 +1,761 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+SubscriptionManagerImpl (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SubscriptionManagerImpl (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SubscriptionManagerImpl.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManager.html" title="interface in org.apache.cxf.ws.eventing.backend.manager"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForEventSources.html" title="interface in org.apache.cxf.ws.eventing.backend.manager"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SubscriptionManagerImpl.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.ws.eventing.backend.manager</FONT>
+<BR>
+Class SubscriptionManagerImpl</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.ws.eventing.backend.manager.SubscriptionManagerImpl</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManager.html" title="interface in org.apache.cxf.ws.eventing.backend.manager">SubscriptionManager</A>, <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForEventSources.html" title="interface in org.apache.cxf.ws.eventing.backend.manager">SubscriptionManagerInterfaceForEventSources</A>, <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForManagers.html" title="interface in org.apache.cxf.ws.eventing.backend.manager">SubscriptionManagerInterfaceForManagers</A>, <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForNotificators.html" title="interface in org.apache.cxf.ws.eventing.backend.manager">SubscriptionManagerInterfaceForNotificators</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>SubscriptionManagerImpl</B><DT>extends <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManager.html" title="interface in org.apache.cxf.ws.eventing.backend.manager">SubscriptionManager</A></DL>
+</PRE>
+
+<P>
+The core class representing WS-Eventing backend. It holds an instance of a database and
+ acts as a layer for communicating with it.
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionDatabase.html" title="interface in org.apache.cxf.ws.eventing.backend.database">SubscriptionDatabase</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#database">database</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html?is-external=true" title="class or interface in java.util.logging">Logger</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#LOG">LOG</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#SubscriptionManagerImpl(java.lang.String)">SubscriptionManagerImpl</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;url)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#SubscriptionManagerImpl(java.lang.String, java.lang.String, java.lang.String)">SubscriptionManagerImpl</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;url,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;namespace,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;elementName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionTicket.html" title="class in org.apache.cxf.ws.eventing.backend.database">SubscriptionTicket</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#findTicket(java.util.UUID)">findTicket</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</A>&nbsp;uuid)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionDatabase.html" title="interface in org.apache.cxf.ws.eventing.backend.database">SubscriptionDatabase</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#getDatabase()">getDatabase</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/addressing/AttributedURIType.html" title="class in org.apache.cxf.ws.addressing">AttributedURIType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#getSubscriptionManagerAddress()">getSubscriptionManagerAddress</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionTicket.html" title="class in org.apache.cxf.ws.eventing.backend.database">SubscriptionTicket</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#getTickets()">getTickets</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;READ ONLY.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/XMLGregorianCalendar.html?is-external=true" title="class or interface in javax.xml.datatype">XMLGregorianCalendar</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#grantExpiration()">grantExpiration</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Decide what expiration time to grant to the subscription, if
+ the client did not specify any particular wish for subscription length.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/XMLGregorianCalendar.html?is-external=true" title="class or interface in javax.xml.datatype">XMLGregorianCalendar</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#grantExpirationFor(javax.xml.datatype.Duration)">grantExpirationFor</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</A>&nbsp;requested)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Decide what expiration time to grant to the subscription, if
+ the client specified a duration in the request and did specify BestEffort=true.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/XMLGregorianCalendar.html?is-external=true" title="class or interface in javax.xml.datatype">XMLGregorianCalendar</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#grantExpirationFor(javax.xml.datatype.XMLGregorianCalendar)">grantExpirationFor</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/XMLGregorianCalendar.html?is-external=true" title="class or interface in javax.xml.datatype">XMLGregorianCalendar</A>&nbsp;requested)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Decide what expiration time to grant to the subscription, if
+ the client specified a calendar time in the request and did specify BestEffort=true.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#grantSubscriptionManagerReference(org.apache.cxf.ws.eventing.backend.database.SubscriptionTicket, org.apache.cxf.ws.eventing.backend.manager.SubscriptionTicketGrantingResponse)">grantSubscriptionManagerReference</A></B>(<A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionTicket.html" title="class in org.apache.cxf.ws.eventing.backend.database">SubscriptionTicket</A>&nbsp;ticket,
+                                  <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionTicketGrantingResponse.html" title="class in org.apache.cxf.ws.eventing.backend.manager">SubscriptionTicketGrantingResponse</A>&nbsp;response)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#processDelivery(org.apache.cxf.ws.eventing.DeliveryType, org.apache.cxf.ws.eventing.backend.database.SubscriptionTicket, org.apache.cxf.ws.eventing.backend.manager.SubscriptionTicketGrantingResponse)">processDelivery</A></B>(<A HREF="../../../../../../../org/apache/cxf/ws/eventing/DeliveryType.html" title="class in org.apache.cxf.ws.eventing">DeliveryType</A>&nbsp;request,
+                <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionTicket.html" title="class in org.apache.cxf.ws.eventing.backend.database">SubscriptionTicket</A>&nbsp;ticket,
+                <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionTicketGrantingResponse.html" title="class in org.apache.cxf.ws.eventing.backend.manager">SubscriptionTicketGrantingResponse</A>&nbsp;response)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#processEndTo(org.apache.cxf.ws.addressing.EndpointReferenceType, org.apache.cxf.ws.eventing.backend.database.SubscriptionTicket, org.apache.cxf.ws.eventing.backend.manager.SubscriptionTicketGrantingResponse)">processEndTo</A></B>(<A HREF="../../../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing">EndpointReferenceType</A>&nbsp;request,
+             <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionTicket.html" title="class in org.apache.cxf.ws.eventing.backend.database">SubscriptionTicket</A>&nbsp;ticket,
+             <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionTicketGrantingResponse.html" title="class in org.apache.cxf.ws.eventing.backend.manager">SubscriptionTicketGrantingResponse</A>&nbsp;response)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#processExpiration(org.apache.cxf.ws.eventing.ExpirationType, org.apache.cxf.ws.eventing.backend.database.SubscriptionTicket, org.apache.cxf.ws.eventing.backend.manager.SubscriptionTicketGrantingResponse)">processExpiration</A></B>(<A HREF="../../../../../../../org/apache/cxf/ws/eventing/ExpirationType.html" title="class in org.apache.cxf.ws.eventing">ExpirationType</A>&nbsp;request,
+                  <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionTicket.html" title="class in org.apache.cxf.ws.eventing.backend.database">SubscriptionTicket</A>&nbsp;ticket,
+                  <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionTicketGrantingResponse.html" title="class in org.apache.cxf.ws.eventing.backend.manager">SubscriptionTicketGrantingResponse</A>&nbsp;response)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;process the stuff concerning expiration request (wse:Expires)</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#processFilters(org.apache.cxf.ws.eventing.FilterType, org.apache.cxf.ws.eventing.backend.database.SubscriptionTicket, org.apache.cxf.ws.eventing.backend.manager.SubscriptionTicketGrantingResponse)">processFilters</A></B>(<A HREF="../../../../../../../org/apache/cxf/ws/eventing/FilterType.html" title="class in org.apache.cxf.ws.eventing">FilterType</A>&nbsp;request,
+               <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionTicket.html" title="class in org.apache.cxf.ws.eventing.backend.database">SubscriptionTicket</A>&nbsp;ticket,
+               <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionTicketGrantingResponse.html" title="class in org.apache.cxf.ws.eventing.backend.manager">SubscriptionTicketGrantingResponse</A>&nbsp;response)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#processFormat(org.apache.cxf.ws.eventing.FormatType, org.apache.cxf.ws.eventing.backend.database.SubscriptionTicket, org.apache.cxf.ws.eventing.backend.manager.SubscriptionTicketGrantingResponse)">processFormat</A></B>(<A HREF="../../../../../../../org/apache/cxf/ws/eventing/FormatType.html" title="class in org.apache.cxf.ws.eventing">FormatType</A>&nbsp;format,
+              <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionTicket.html" title="class in org.apache.cxf.ws.eventing.backend.database">SubscriptionTicket</A>&nbsp;ticket,
+              <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionTicketGrantingResponse.html" title="class in org.apache.cxf.ws.eventing.backend.manager">SubscriptionTicketGrantingResponse</A>&nbsp;response)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#registerNotificator(org.apache.cxf.ws.eventing.backend.notification.NotificatorService)">registerNotificator</A></B>(<A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/notification/NotificatorService.html" title="class in org.apache.cxf.ws.eventing.backend.notification">NotificatorService</A>&nbsp;service)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/eventing/ExpirationType.html" title="class in org.apache.cxf.ws.eventing">ExpirationType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#renew(java.util.UUID, org.apache.cxf.ws.eventing.ExpirationType)">renew</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</A>&nbsp;uuid,
+      <A HREF="../../../../../../../org/apache/cxf/ws/eventing/ExpirationType.html" title="class in org.apache.cxf.ws.eventing">ExpirationType</A>&nbsp;requestedExpiration)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionTicketGrantingResponse.html" title="class in org.apache.cxf.ws.eventing.backend.manager">SubscriptionTicketGrantingResponse</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#subscribe(org.apache.cxf.ws.eventing.DeliveryType, org.apache.cxf.ws.addressing.EndpointReferenceType, org.apache.cxf.ws.eventing.ExpirationType, org.apache.cxf.ws.eventing.FilterType, org.apache.cxf.ws.eventing.FormatType)">subscribe</A></B>(<A HREF="../../../../../../../org/apache/cxf/ws/eventing/DeliveryType.html" title="class in org.apache.cxf.ws.eventing">DeliveryType</A>&nbsp;delivery,
+          <A HREF="../../../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing">EndpointReferenceType</A>&nbsp;endTo,
+          <A HREF="../../../../../../../org/apache/cxf/ws/eventing/ExpirationType.html" title="class in org.apache.cxf.ws.eventing">ExpirationType</A>&nbsp;expires,
+          <A HREF="../../../../../../../org/apache/cxf/ws/eventing/FilterType.html" title="class in org.apache.cxf.ws.eventing">FilterType</A>&nbsp;filter,
+          <A HREF="../../../../../../../org/apache/cxf/ws/eventing/FormatType.html" title="class in org.apache.cxf.ws.eventing">FormatType</A>&nbsp;format)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#subscriptionEnd(java.util.UUID, java.lang.String, org.apache.cxf.ws.eventing.backend.notification.SubscriptionEndStatus)">subscriptionEnd</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</A>&nbsp;subscriptionId,
+                <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;reason,
+                <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/notification/SubscriptionEndStatus.html" title="enum in org.apache.cxf.ws.eventing.backend.notification">SubscriptionEndStatus</A>&nbsp;status)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html#unsubscribeTicket(java.util.UUID)">unsubscribeTicket</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</A>&nbsp;uuid)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="LOG"><!-- --></A><H3>
+LOG</H3>
+<PRE>
+protected static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/logging/Logger.html?is-external=true" title="class or interface in java.util.logging">Logger</A> <B>LOG</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="database"><!-- --></A><H3>
+database</H3>
+<PRE>
+protected final <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionDatabase.html" title="interface in org.apache.cxf.ws.eventing.backend.database">SubscriptionDatabase</A> <B>database</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="SubscriptionManagerImpl(java.lang.String)"><!-- --></A><H3>
+SubscriptionManagerImpl</H3>
+<PRE>
+public <B>SubscriptionManagerImpl</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;url)</PRE>
+<DL>
+</DL>
+<HR>
+
+<A NAME="SubscriptionManagerImpl(java.lang.String, java.lang.String, java.lang.String)"><!-- --></A><H3>
+SubscriptionManagerImpl</H3>
+<PRE>
+public <B>SubscriptionManagerImpl</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;url,
+                               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;namespace,
+                               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;elementName)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="subscribe(org.apache.cxf.ws.eventing.DeliveryType, org.apache.cxf.ws.addressing.EndpointReferenceType, org.apache.cxf.ws.eventing.ExpirationType, org.apache.cxf.ws.eventing.FilterType, org.apache.cxf.ws.eventing.FormatType)"><!-- --></A><H3>
+subscribe</H3>
+<PRE>
+public <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionTicketGrantingResponse.html" title="class in org.apache.cxf.ws.eventing.backend.manager">SubscriptionTicketGrantingResponse</A> <B>subscribe</B>(<A HREF="../../../../../../../org/apache/cxf/ws/eventing/DeliveryType.html" title="class in org.apache.cxf.ws.eventing">DeliveryType</A>&nbsp;delivery,
+                                                    <A HREF="../../../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing">EndpointReferenceType</A>&nbsp;endTo,
+                                                    <A HREF="../../../../../../../org/apache/cxf/ws/eventing/ExpirationType.html" title="class in org.apache.cxf.ws.eventing">ExpirationType</A>&nbsp;expires,
+                                                    <A HREF="../../../../../../../org/apache/cxf/ws/eventing/FilterType.html" title="class in org.apache.cxf.ws.eventing">FilterType</A>&nbsp;filter,
+                                                    <A HREF="../../../../../../../org/apache/cxf/ws/eventing/FormatType.html" title="class in org.apache.cxf.ws.eventing">FormatType</A>&nbsp;format)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForEventSources.html#subscribe(org.apache.cxf.ws.eventing.DeliveryType, org.apache.cxf.ws.addressing.EndpointReferenceType, org.apache.cxf.ws.eventing.ExpirationType, org.apache.cxf.ws.eventing.FilterType, org.apache.cxf.ws.eventing.FormatType)">subscribe</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForEventSources.html" title="interface in org.apache.cxf.ws.eventing.backend.manager">SubscriptionManagerInterfaceForEventSources</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTickets()"><!-- --></A><H3>
+getTickets</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionTicket.html" title="class in org.apache.cxf.ws.eventing.backend.database">SubscriptionTicket</A>&gt; <B>getTickets</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForEventSources.html#getTickets()">SubscriptionManagerInterfaceForEventSources</A></CODE></B></DD>
+<DD>READ ONLY. Returns an unmodifiable list of the subscriptions in database.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForEventSources.html#getTickets()">getTickets</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForEventSources.html" title="interface in org.apache.cxf.ws.eventing.backend.manager">SubscriptionManagerInterfaceForEventSources</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForNotificators.html#getTickets()">getTickets</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForNotificators.html" title="interface in org.apache.cxf.ws.eventing.backend.manager">SubscriptionManagerInterfaceForNotificators</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getDatabase()"><!-- --></A><H3>
+getDatabase</H3>
+<PRE>
+protected <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionDatabase.html" title="interface in org.apache.cxf.ws.eventing.backend.database">SubscriptionDatabase</A> <B>getDatabase</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="processFormat(org.apache.cxf.ws.eventing.FormatType, org.apache.cxf.ws.eventing.backend.database.SubscriptionTicket, org.apache.cxf.ws.eventing.backend.manager.SubscriptionTicketGrantingResponse)"><!-- --></A><H3>
+processFormat</H3>
+<PRE>
+protected void <B>processFormat</B>(<A HREF="../../../../../../../org/apache/cxf/ws/eventing/FormatType.html" title="class in org.apache.cxf.ws.eventing">FormatType</A>&nbsp;format,
+                             <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionTicket.html" title="class in org.apache.cxf.ws.eventing.backend.database">SubscriptionTicket</A>&nbsp;ticket,
+                             <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionTicketGrantingResponse.html" title="class in org.apache.cxf.ws.eventing.backend.manager">SubscriptionTicketGrantingResponse</A>&nbsp;response)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="processFilters(org.apache.cxf.ws.eventing.FilterType, org.apache.cxf.ws.eventing.backend.database.SubscriptionTicket, org.apache.cxf.ws.eventing.backend.manager.SubscriptionTicketGrantingResponse)"><!-- --></A><H3>
+processFilters</H3>
+<PRE>
+protected void <B>processFilters</B>(<A HREF="../../../../../../../org/apache/cxf/ws/eventing/FilterType.html" title="class in org.apache.cxf.ws.eventing">FilterType</A>&nbsp;request,
+                              <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionTicket.html" title="class in org.apache.cxf.ws.eventing.backend.database">SubscriptionTicket</A>&nbsp;ticket,
+                              <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionTicketGrantingResponse.html" title="class in org.apache.cxf.ws.eventing.backend.manager">SubscriptionTicketGrantingResponse</A>&nbsp;response)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="processExpiration(org.apache.cxf.ws.eventing.ExpirationType, org.apache.cxf.ws.eventing.backend.database.SubscriptionTicket, org.apache.cxf.ws.eventing.backend.manager.SubscriptionTicketGrantingResponse)"><!-- --></A><H3>
+processExpiration</H3>
+<PRE>
+protected void <B>processExpiration</B>(<A HREF="../../../../../../../org/apache/cxf/ws/eventing/ExpirationType.html" title="class in org.apache.cxf.ws.eventing">ExpirationType</A>&nbsp;request,
+                                 <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionTicket.html" title="class in org.apache.cxf.ws.eventing.backend.database">SubscriptionTicket</A>&nbsp;ticket,
+                                 <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionTicketGrantingResponse.html" title="class in org.apache.cxf.ws.eventing.backend.manager">SubscriptionTicketGrantingResponse</A>&nbsp;response)</PRE>
+<DL>
+<DD>process the stuff concerning expiration request (wse:Expires)
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="processEndTo(org.apache.cxf.ws.addressing.EndpointReferenceType, org.apache.cxf.ws.eventing.backend.database.SubscriptionTicket, org.apache.cxf.ws.eventing.backend.manager.SubscriptionTicketGrantingResponse)"><!-- --></A><H3>
+processEndTo</H3>
+<PRE>
+protected void <B>processEndTo</B>(<A HREF="../../../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing">EndpointReferenceType</A>&nbsp;request,
+                            <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionTicket.html" title="class in org.apache.cxf.ws.eventing.backend.database">SubscriptionTicket</A>&nbsp;ticket,
+                            <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionTicketGrantingResponse.html" title="class in org.apache.cxf.ws.eventing.backend.manager">SubscriptionTicketGrantingResponse</A>&nbsp;response)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="processDelivery(org.apache.cxf.ws.eventing.DeliveryType, org.apache.cxf.ws.eventing.backend.database.SubscriptionTicket, org.apache.cxf.ws.eventing.backend.manager.SubscriptionTicketGrantingResponse)"><!-- --></A><H3>
+processDelivery</H3>
+<PRE>
+protected void <B>processDelivery</B>(<A HREF="../../../../../../../org/apache/cxf/ws/eventing/DeliveryType.html" title="class in org.apache.cxf.ws.eventing">DeliveryType</A>&nbsp;request,
+                               <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionTicket.html" title="class in org.apache.cxf.ws.eventing.backend.database">SubscriptionTicket</A>&nbsp;ticket,
+                               <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionTicketGrantingResponse.html" title="class in org.apache.cxf.ws.eventing.backend.manager">SubscriptionTicketGrantingResponse</A>&nbsp;response)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="grantSubscriptionManagerReference(org.apache.cxf.ws.eventing.backend.database.SubscriptionTicket, org.apache.cxf.ws.eventing.backend.manager.SubscriptionTicketGrantingResponse)"><!-- --></A><H3>
+grantSubscriptionManagerReference</H3>
+<PRE>
+protected void <B>grantSubscriptionManagerReference</B>(<A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionTicket.html" title="class in org.apache.cxf.ws.eventing.backend.database">SubscriptionTicket</A>&nbsp;ticket,
+                                                 <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionTicketGrantingResponse.html" title="class in org.apache.cxf.ws.eventing.backend.manager">SubscriptionTicketGrantingResponse</A>&nbsp;response)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="grantExpirationFor(javax.xml.datatype.XMLGregorianCalendar)"><!-- --></A><H3>
+grantExpirationFor</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/XMLGregorianCalendar.html?is-external=true" title="class or interface in javax.xml.datatype">XMLGregorianCalendar</A> <B>grantExpirationFor</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/XMLGregorianCalendar.html?is-external=true" title="class or interface in javax.xml.datatype">XMLGregorianCalendar</A>&nbsp;requested)</PRE>
+<DL>
+<DD>Decide what expiration time to grant to the subscription, if
+ the client specified a calendar time in the request and did specify BestEffort=true.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="grantExpirationFor(javax.xml.datatype.Duration)"><!-- --></A><H3>
+grantExpirationFor</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/XMLGregorianCalendar.html?is-external=true" title="class or interface in javax.xml.datatype">XMLGregorianCalendar</A> <B>grantExpirationFor</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/Duration.html?is-external=true" title="class or interface in javax.xml.datatype">Duration</A>&nbsp;requested)</PRE>
+<DL>
+<DD>Decide what expiration time to grant to the subscription, if
+ the client specified a duration in the request and did specify BestEffort=true.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="grantExpiration()"><!-- --></A><H3>
+grantExpiration</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/datatype/XMLGregorianCalendar.html?is-external=true" title="class or interface in javax.xml.datatype">XMLGregorianCalendar</A> <B>grantExpiration</B>()</PRE>
+<DL>
+<DD>Decide what expiration time to grant to the subscription, if
+ the client did not specify any particular wish for subscription length.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSubscriptionManagerAddress()"><!-- --></A><H3>
+getSubscriptionManagerAddress</H3>
+<PRE>
+public <A HREF="../../../../../../../org/apache/cxf/ws/addressing/AttributedURIType.html" title="class in org.apache.cxf.ws.addressing">AttributedURIType</A> <B>getSubscriptionManagerAddress</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unsubscribeTicket(java.util.UUID)"><!-- --></A><H3>
+unsubscribeTicket</H3>
+<PRE>
+public void <B>unsubscribeTicket</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</A>&nbsp;uuid)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForManagers.html#unsubscribeTicket(java.util.UUID)">unsubscribeTicket</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForManagers.html" title="interface in org.apache.cxf.ws.eventing.backend.manager">SubscriptionManagerInterfaceForManagers</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="findTicket(java.util.UUID)"><!-- --></A><H3>
+findTicket</H3>
+<PRE>
+public <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/database/SubscriptionTicket.html" title="class in org.apache.cxf.ws.eventing.backend.database">SubscriptionTicket</A> <B>findTicket</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</A>&nbsp;uuid)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForManagers.html#findTicket(java.util.UUID)">findTicket</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForManagers.html" title="interface in org.apache.cxf.ws.eventing.backend.manager">SubscriptionManagerInterfaceForManagers</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="renew(java.util.UUID, org.apache.cxf.ws.eventing.ExpirationType)"><!-- --></A><H3>
+renew</H3>
+<PRE>
+public <A HREF="../../../../../../../org/apache/cxf/ws/eventing/ExpirationType.html" title="class in org.apache.cxf.ws.eventing">ExpirationType</A> <B>renew</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</A>&nbsp;uuid,
+                            <A HREF="../../../../../../../org/apache/cxf/ws/eventing/ExpirationType.html" title="class in org.apache.cxf.ws.eventing">ExpirationType</A>&nbsp;requestedExpiration)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForManagers.html#renew(java.util.UUID, org.apache.cxf.ws.eventing.ExpirationType)">renew</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForManagers.html" title="interface in org.apache.cxf.ws.eventing.backend.manager">SubscriptionManagerInterfaceForManagers</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="subscriptionEnd(java.util.UUID, java.lang.String, org.apache.cxf.ws.eventing.backend.notification.SubscriptionEndStatus)"><!-- --></A><H3>
+subscriptionEnd</H3>
+<PRE>
+public void <B>subscriptionEnd</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/UUID.html?is-external=true" title="class or interface in java.util">UUID</A>&nbsp;subscriptionId,
+                            <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;reason,
+                            <A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/notification/SubscriptionEndStatus.html" title="enum in org.apache.cxf.ws.eventing.backend.notification">SubscriptionEndStatus</A>&nbsp;status)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManager.html#subscriptionEnd(java.util.UUID, java.lang.String, org.apache.cxf.ws.eventing.backend.notification.SubscriptionEndStatus)">subscriptionEnd</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManager.html" title="interface in org.apache.cxf.ws.eventing.backend.manager">SubscriptionManager</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="registerNotificator(org.apache.cxf.ws.eventing.backend.notification.NotificatorService)"><!-- --></A><H3>
+registerNotificator</H3>
+<PRE>
+public void <B>registerNotificator</B>(<A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/notification/NotificatorService.html" title="class in org.apache.cxf.ws.eventing.backend.notification">NotificatorService</A>&nbsp;service)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForNotificators.html#registerNotificator(org.apache.cxf.ws.eventing.backend.notification.NotificatorService)">registerNotificator</A></CODE> in interface <CODE><A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForNotificators.html" title="interface in org.apache.cxf.ws.eventing.backend.manager">SubscriptionManagerInterfaceForNotificators</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SubscriptionManagerImpl.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManager.html" title="interface in org.apache.cxf.ws.eventing.backend.manager"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerInterfaceForEventSources.html" title="interface in org.apache.cxf.ws.eventing.backend.manager"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/ws/eventing/backend/manager/SubscriptionManagerImpl.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SubscriptionManagerImpl.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

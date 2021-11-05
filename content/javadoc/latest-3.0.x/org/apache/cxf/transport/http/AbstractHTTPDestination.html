@@ -1,0 +1,1587 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+AbstractHTTPDestination (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AbstractHTTPDestination (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractHTTPDestination.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.BackChannelConduit.html" title="class in org.apache.cxf.transport.http"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/transport/http/AbstractHTTPDestination.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractHTTPDestination.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.transport.http</FONT>
+<BR>
+Class AbstractHTTPDestination</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/cxf/transport/AbstractObservable.html" title="class in org.apache.cxf.transport">org.apache.cxf.transport.AbstractObservable</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/cxf/transport/AbstractDestination.html" title="class in org.apache.cxf.transport">org.apache.cxf.transport.AbstractDestination</A>
+          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/cxf/transport/AbstractMultiplexDestination.html" title="class in org.apache.cxf.transport">org.apache.cxf.transport.AbstractMultiplexDestination</A>
+              <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.transport.http.AbstractHTTPDestination</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../org/apache/cxf/configuration/Configurable.html" title="interface in org.apache.cxf.configuration">Configurable</A>, <A HREF="../../../../../org/apache/cxf/transport/Assertor.html" title="interface in org.apache.cxf.transport">Assertor</A>, <A HREF="../../../../../org/apache/cxf/transport/Destination.html" title="interface in org.apache.cxf.transport">Destination</A>, <A HREF="../../../../../org/apache/cxf/transport/DestinationWithEndpoint.html" title="interface in org.apache.cxf.transport">DestinationWithEndpoint</A>, <A HREF="../../../../../org/apache/cxf/transport/MultiplexDestination.html" title="interface in org.apache.cxf.transport">MultiplexDestination</A>, <A HREF="../../../../../org/apache/cxf/transport/Observable.html" title="interface in org.apache.cxf.transport">Observable</A></DD>
+</DL>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../org/apache/cxf/transport/http_jetty/JettyHTTPDestination.html" title="class in org.apache.cxf.transport.http_jetty">JettyHTTPDestination</A>, <A HREF="../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpDestination.html" title="class in org.apache.cxf.transport.http.netty.server">NettyHttpDestination</A>, <A HREF="../../../../../org/apache/cxf/transport/servlet/ServletDestination.html" title="class in org.apache.cxf.transport.servlet">ServletDestination</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public abstract class <B>AbstractHTTPDestination</B><DT>extends <A HREF="../../../../../org/apache/cxf/transport/AbstractMultiplexDestination.html" title="class in org.apache.cxf.transport">AbstractMultiplexDestination</A><DT>implements <A HREF="../../../../../org/apache/cxf/configuration/Configurable.html" title="interface in org.apache.cxf.configuration">Configurable</A>, <A HREF="../../../../../org/apache/cxf/transport/Assertor.html" title="interface in org.apache.cxf.transport">Assertor</A></DL>
+</PRE>
+
+<P>
+Common base for HTTP Destination implementations.
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.BackChannelConduit.html" title="class in org.apache.cxf.transport.http">AbstractHTTPDestination.BackChannelConduit</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Backchannel conduit.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.PrincipalAuthorizationPolicy.html" title="class in org.apache.cxf.transport.http">AbstractHTTPDestination.PrincipalAuthorizationPolicy</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_org.apache.cxf.transport.AbstractDestination"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class org.apache.cxf.transport.<A HREF="../../../../../org/apache/cxf/transport/AbstractDestination.html" title="class in org.apache.cxf.transport">AbstractDestination</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractDestination.AbstractBackChannelConduit.html" title="class in org.apache.cxf.transport">AbstractDestination.AbstractBackChannelConduit</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#bus">bus</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/cxf/transport/https/CertConstraints.html" title="class in org.apache.cxf.transport.https">CertConstraints</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#certConstraints">certConstraints</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#contextMatchStrategy">contextMatchStrategy</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/cxf/transport/http/ContinuationProviderFactory.html" title="interface in org.apache.cxf.transport.http">ContinuationProviderFactory</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#cproviderFactory">cproviderFactory</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#CXF_ASYNC_CONTEXT">CXF_ASYNC_CONTEXT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#CXF_CONTINUATION_MESSAGE">CXF_CONTINUATION_MESSAGE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#enableWebSocket">enableWebSocket</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#fixedParameterOrder">fixedParameterOrder</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#HTTP_CONFIG">HTTP_CONFIG</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#HTTP_CONTEXT">HTTP_CONTEXT</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#HTTP_CONTEXT_MATCH_STRATEGY">HTTP_CONTEXT_MATCH_STRATEGY</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#HTTP_REQUEST">HTTP_REQUEST</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#HTTP_RESPONSE">HTTP_RESPONSE</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#isServlet3">isServlet3</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#multiplexWithAddress">multiplexWithAddress</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#path">path</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/cxf/transport/http/DestinationRegistry.html" title="interface in org.apache.cxf.transport.http">DestinationRegistry</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#registry">registry</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#REQUEST_REDIRECTED">REQUEST_REDIRECTED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#RESPONSE_COMMITED">RESPONSE_COMMITED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#RESPONSE_HEADERS_COPIED">RESPONSE_HEADERS_COPIED</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/cxf/transports/http/configuration/HTTPServerPolicy.html" title="class in org.apache.cxf.transports.http.configuration">HTTPServerPolicy</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#serverPolicy">serverPolicy</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#SERVICE_REDIRECTION">SERVICE_REDIRECTION</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.transport.AbstractDestination"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.transport.<A HREF="../../../../../org/apache/cxf/transport/AbstractDestination.html" title="class in org.apache.cxf.transport">AbstractDestination</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractDestination.html#endpointInfo">endpointInfo</A>, <A HREF="../../../../../org/apache/cxf/transport/AbstractDestination.html#reference">reference</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.transport.AbstractObservable"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.transport.<A HREF="../../../../../org/apache/cxf/transport/AbstractObservable.html" title="class in org.apache.cxf.transport">AbstractObservable</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractObservable.html#incomingObserver">incomingObserver</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#AbstractHTTPDestination(org.apache.cxf.Bus, org.apache.cxf.transport.http.DestinationRegistry, org.apache.cxf.service.model.EndpointInfo, java.lang.String, boolean)">AbstractHTTPDestination</A></B>(<A HREF="../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b,
+                        <A HREF="../../../../../org/apache/cxf/transport/http/DestinationRegistry.html" title="interface in org.apache.cxf.transport.http">DestinationRegistry</A>&nbsp;registry,
+                        <A HREF="../../../../../org/apache/cxf/service/model/EndpointInfo.html" title="class in org.apache.cxf.service.model">EndpointInfo</A>&nbsp;ei,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path,
+                        boolean&nbsp;dp)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Constructor</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#activate()">activate</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Activate messages flow.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#assertMessage(org.apache.cxf.message.Message)">assertMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#canAssert(javax.xml.namespace.QName)">canAssert</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#contextMatchOnExact()">contextMatchOnExact</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#deactivate()">deactivate</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deactivate messages flow.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#finalizeConfig()">finalizeConfig</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#flushHeaders(org.apache.cxf.message.Message)">flushHeaders</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;outMessage)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#flushHeaders(org.apache.cxf.message.Message, boolean)">flushHeaders</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;outMessage,
+             boolean&nbsp;getStream)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;<A HREF="../../../../../org/apache/cxf/service/model/EndpointInfo.html" title="class in org.apache.cxf.service.model">EndpointInfo</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#getAddressValue(org.apache.cxf.service.model.EndpointInfo)">getAddressValue</A></B>(<A HREF="../../../../../org/apache/cxf/service/model/EndpointInfo.html" title="class in org.apache.cxf.service.model">EndpointInfo</A>&nbsp;ei)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected static&nbsp;<A HREF="../../../../../org/apache/cxf/service/model/EndpointInfo.html" title="class in org.apache.cxf.service.model">EndpointInfo</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#getAddressValue(org.apache.cxf.service.model.EndpointInfo, boolean)">getAddressValue</A></B>(<A HREF="../../../../../org/apache/cxf/service/model/EndpointInfo.html" title="class in org.apache.cxf.service.model">EndpointInfo</A>&nbsp;ei,
+                boolean&nbsp;dp)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing">EndpointReferenceType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#getAddressWithId(java.lang.String)">getAddressWithId</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;id)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Builds an new endpoint reference using the current target reference as a template.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#getBasePath(java.lang.String)">getBasePath</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;contextPath)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#getBeanName()">getBeanName</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the configurable object's Bean name</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#getBus()">getBus</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#getContextMatchStrategy()">getContextMatchStrategy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#getId(java.util.Map)">getId</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Obtain id from reference parameters of the ws-a to address
+ Requires the existance of ws-a interceptors on dispatch path to provide access 
+ to the ws-a headers</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/cxf/transport/Conduit.html" title="interface in org.apache.cxf.transport">Conduit</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#getInbuiltBackChannel(org.apache.cxf.message.Message)">getInbuiltBackChannel</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;inMessage)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#getPath()">getPath</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/transports/http/configuration/HTTPServerPolicy.html" title="class in org.apache.cxf.transports.http.configuration">HTTPServerPolicy</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#getServer()">getServer</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#invoke(javax.servlet.ServletConfig, javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)">invoke</A></B>(javax.servlet.ServletConfig&nbsp;config,
+       javax.servlet.ServletContext&nbsp;context,
+       javax.servlet.http.HttpServletRequest&nbsp;req,
+       javax.servlet.http.HttpServletResponse&nbsp;resp)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#invokeComplete(javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.cxf.message.Message)">invokeComplete</A></B>(javax.servlet.ServletContext&nbsp;context,
+               javax.servlet.http.HttpServletRequest&nbsp;req,
+               javax.servlet.http.HttpServletResponse&nbsp;resp,
+               <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#isFixedParameterOrder()">isFixedParameterOrder</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#isMultiplexWithAddress()">isMultiplexWithAddress</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#isOneWay(org.apache.cxf.message.Message)">isOneWay</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#releaseRegistry()">releaseRegistry</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#retrieveFromContinuation(javax.servlet.http.HttpServletRequest)">retrieveFromContinuation</A></B>(javax.servlet.http.HttpServletRequest&nbsp;req)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#retrieveFromServlet3Async(javax.servlet.http.HttpServletRequest)">retrieveFromServlet3Async</A></B>(javax.servlet.http.HttpServletRequest&nbsp;req)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#setContextMatchStrategy(java.lang.String)">setContextMatchStrategy</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;contextMatchStrategy)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#setFixedParameterOrder(boolean)">setFixedParameterOrder</A></B>(boolean&nbsp;fixedParameterOrder)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#setMultiplexWithAddress(boolean)">setMultiplexWithAddress</A></B>(boolean&nbsp;multiplexWithAddress)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#setServer(org.apache.cxf.transports.http.configuration.HTTPServerPolicy)">setServer</A></B>(<A HREF="../../../../../org/apache/cxf/transports/http/configuration/HTTPServerPolicy.html" title="class in org.apache.cxf.transports.http.configuration">HTTPServerPolicy</A>&nbsp;server)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#setupContinuation(org.apache.cxf.message.Message, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)">setupContinuation</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;inMessage,
+                  javax.servlet.http.HttpServletRequest&nbsp;req,
+                  javax.servlet.http.HttpServletResponse&nbsp;resp)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#setupMessage(org.apache.cxf.message.Message, javax.servlet.ServletConfig, javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)">setupMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;inMessage,
+             javax.servlet.ServletConfig&nbsp;config,
+             javax.servlet.ServletContext&nbsp;context,
+             javax.servlet.http.HttpServletRequest&nbsp;req,
+             javax.servlet.http.HttpServletResponse&nbsp;resp)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.html#shutdown()">shutdown</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Shutdown the Destination, i.e.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.transport.AbstractDestination"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.transport.<A HREF="../../../../../org/apache/cxf/transport/AbstractDestination.html" title="class in org.apache.cxf.transport">AbstractDestination</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractDestination.html#getAddress()">getAddress</A>, <A HREF="../../../../../org/apache/cxf/transport/AbstractDestination.html#getBackChannel(org.apache.cxf.message.Message)">getBackChannel</A>, <A HREF="../../../../../org/apache/cxf/transport/AbstractDestination.html#getEndpointInfo()">getEndpointInfo</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.transport.AbstractObservable"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.transport.<A HREF="../../../../../org/apache/cxf/transport/AbstractObservable.html" title="class in org.apache.cxf.transport">AbstractObservable</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractObservable.html#getLogger()">getLogger</A>, <A HREF="../../../../../org/apache/cxf/transport/AbstractObservable.html#getMessageObserver()">getMessageObserver</A>, <A HREF="../../../../../org/apache/cxf/transport/AbstractObservable.html#getTargetReference(org.apache.cxf.service.model.EndpointInfo, org.apache.cxf.Bus)">getTargetReference</A>, <A HREF="../../../../../org/apache/cxf/transport/AbstractObservable.html#getTargetReference(org.apache.cxf.service.model.EndpointInfo, org.apache.cxf.ws.addressing.EndpointReferenceType, org.apache.cxf.Bus)">getTargetReference</A>, <A HREF="../../../../../org/apache/cxf/transport/AbstractObservable.html#setMessageObserver(org.apache.cxf.transport.MessageObserver)">setMessageObserver</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.transport.Destination"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface org.apache.cxf.transport.<A HREF="../../../../../org/apache/cxf/transport/Destination.html" title="interface in org.apache.cxf.transport">Destination</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/transport/Destination.html#getAddress()">getAddress</A>, <A HREF="../../../../../org/apache/cxf/transport/Destination.html#getBackChannel(org.apache.cxf.message.Message)">getBackChannel</A>, <A HREF="../../../../../org/apache/cxf/transport/Destination.html#getMessageObserver()">getMessageObserver</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.transport.Observable"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface org.apache.cxf.transport.<A HREF="../../../../../org/apache/cxf/transport/Observable.html" title="interface in org.apache.cxf.transport">Observable</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/transport/Observable.html#setMessageObserver(org.apache.cxf.transport.MessageObserver)">setMessageObserver</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="HTTP_REQUEST"><!-- --></A><H3>
+HTTP_REQUEST</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>HTTP_REQUEST</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.transport.http.AbstractHTTPDestination.HTTP_REQUEST">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="HTTP_RESPONSE"><!-- --></A><H3>
+HTTP_RESPONSE</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>HTTP_RESPONSE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.transport.http.AbstractHTTPDestination.HTTP_RESPONSE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="HTTP_CONTEXT"><!-- --></A><H3>
+HTTP_CONTEXT</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>HTTP_CONTEXT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.transport.http.AbstractHTTPDestination.HTTP_CONTEXT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="HTTP_CONFIG"><!-- --></A><H3>
+HTTP_CONFIG</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>HTTP_CONFIG</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.transport.http.AbstractHTTPDestination.HTTP_CONFIG">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="HTTP_CONTEXT_MATCH_STRATEGY"><!-- --></A><H3>
+HTTP_CONTEXT_MATCH_STRATEGY</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>HTTP_CONTEXT_MATCH_STRATEGY</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.transport.http.AbstractHTTPDestination.HTTP_CONTEXT_MATCH_STRATEGY">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="RESPONSE_HEADERS_COPIED"><!-- --></A><H3>
+RESPONSE_HEADERS_COPIED</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>RESPONSE_HEADERS_COPIED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.transport.http.AbstractHTTPDestination.RESPONSE_HEADERS_COPIED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="RESPONSE_COMMITED"><!-- --></A><H3>
+RESPONSE_COMMITED</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>RESPONSE_COMMITED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.transport.http.AbstractHTTPDestination.RESPONSE_COMMITED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="REQUEST_REDIRECTED"><!-- --></A><H3>
+REQUEST_REDIRECTED</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>REQUEST_REDIRECTED</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.transport.http.AbstractHTTPDestination.REQUEST_REDIRECTED">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CXF_CONTINUATION_MESSAGE"><!-- --></A><H3>
+CXF_CONTINUATION_MESSAGE</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>CXF_CONTINUATION_MESSAGE</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.transport.http.AbstractHTTPDestination.CXF_CONTINUATION_MESSAGE">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="CXF_ASYNC_CONTEXT"><!-- --></A><H3>
+CXF_ASYNC_CONTEXT</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>CXF_ASYNC_CONTEXT</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.transport.http.AbstractHTTPDestination.CXF_ASYNC_CONTEXT">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="SERVICE_REDIRECTION"><!-- --></A><H3>
+SERVICE_REDIRECTION</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>SERVICE_REDIRECTION</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.transport.http.AbstractHTTPDestination.SERVICE_REDIRECTION">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="bus"><!-- --></A><H3>
+bus</H3>
+<PRE>
+protected final <A HREF="../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A> <B>bus</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="registry"><!-- --></A><H3>
+registry</H3>
+<PRE>
+protected <A HREF="../../../../../org/apache/cxf/transport/http/DestinationRegistry.html" title="interface in org.apache.cxf.transport.http">DestinationRegistry</A> <B>registry</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="path"><!-- --></A><H3>
+path</H3>
+<PRE>
+protected final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>path</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="serverPolicy"><!-- --></A><H3>
+serverPolicy</H3>
+<PRE>
+protected <A HREF="../../../../../org/apache/cxf/transports/http/configuration/HTTPServerPolicy.html" title="class in org.apache.cxf.transports.http.configuration">HTTPServerPolicy</A> <B>serverPolicy</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="contextMatchStrategy"><!-- --></A><H3>
+contextMatchStrategy</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>contextMatchStrategy</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="fixedParameterOrder"><!-- --></A><H3>
+fixedParameterOrder</H3>
+<PRE>
+protected boolean <B>fixedParameterOrder</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="multiplexWithAddress"><!-- --></A><H3>
+multiplexWithAddress</H3>
+<PRE>
+protected boolean <B>multiplexWithAddress</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="certConstraints"><!-- --></A><H3>
+certConstraints</H3>
+<PRE>
+protected <A HREF="../../../../../org/apache/cxf/transport/https/CertConstraints.html" title="class in org.apache.cxf.transport.https">CertConstraints</A> <B>certConstraints</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="isServlet3"><!-- --></A><H3>
+isServlet3</H3>
+<PRE>
+protected boolean <B>isServlet3</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="cproviderFactory"><!-- --></A><H3>
+cproviderFactory</H3>
+<PRE>
+protected <A HREF="../../../../../org/apache/cxf/transport/http/ContinuationProviderFactory.html" title="interface in org.apache.cxf.transport.http">ContinuationProviderFactory</A> <B>cproviderFactory</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+<HR>
+
+<A NAME="enableWebSocket"><!-- --></A><H3>
+enableWebSocket</H3>
+<PRE>
+protected boolean <B>enableWebSocket</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="AbstractHTTPDestination(org.apache.cxf.Bus, org.apache.cxf.transport.http.DestinationRegistry, org.apache.cxf.service.model.EndpointInfo, java.lang.String, boolean)"><!-- --></A><H3>
+AbstractHTTPDestination</H3>
+<PRE>
+public <B>AbstractHTTPDestination</B>(<A HREF="../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b,
+                               <A HREF="../../../../../org/apache/cxf/transport/http/DestinationRegistry.html" title="interface in org.apache.cxf.transport.http">DestinationRegistry</A>&nbsp;registry,
+                               <A HREF="../../../../../org/apache/cxf/service/model/EndpointInfo.html" title="class in org.apache.cxf.service.model">EndpointInfo</A>&nbsp;ei,
+                               <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;path,
+                               boolean&nbsp;dp)
+                        throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD>Constructor
+<P>
+<DL>
+<DT><B>Parameters:</B><DD><CODE>b</CODE> - the associated Bus<DD><CODE>ci</CODE> - the associated conduit initiator<DD><CODE>ei</CODE> - the endpoint info of the destination<DD><CODE>dp</CODE> - true for adding the default port if it is missing
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getBus()"><!-- --></A><H3>
+getBus</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A> <B>getBus</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isOneWay(org.apache.cxf.message.Message)"><!-- --></A><H3>
+isOneWay</H3>
+<PRE>
+protected final boolean <B>isOneWay</B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>message</CODE> - the message under consideration
+<DT><B>Returns:</B><DD>true iff the message has been marked as oneway</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="invoke(javax.servlet.ServletConfig, javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)"><!-- --></A><H3>
+invoke</H3>
+<PRE>
+public void <B>invoke</B>(javax.servlet.ServletConfig&nbsp;config,
+                   javax.servlet.ServletContext&nbsp;context,
+                   javax.servlet.http.HttpServletRequest&nbsp;req,
+                   javax.servlet.http.HttpServletResponse&nbsp;resp)
+            throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="invokeComplete(javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse, org.apache.cxf.message.Message)"><!-- --></A><H3>
+invokeComplete</H3>
+<PRE>
+protected void <B>invokeComplete</B>(javax.servlet.ServletContext&nbsp;context,
+                              javax.servlet.http.HttpServletRequest&nbsp;req,
+                              javax.servlet.http.HttpServletResponse&nbsp;resp,
+                              <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m)
+                       throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setupMessage(org.apache.cxf.message.Message, javax.servlet.ServletConfig, javax.servlet.ServletContext, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)"><!-- --></A><H3>
+setupMessage</H3>
+<PRE>
+protected void <B>setupMessage</B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;inMessage,
+                            javax.servlet.ServletConfig&nbsp;config,
+                            javax.servlet.ServletContext&nbsp;context,
+                            javax.servlet.http.HttpServletRequest&nbsp;req,
+                            javax.servlet.http.HttpServletResponse&nbsp;resp)
+                     throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="retrieveFromContinuation(javax.servlet.http.HttpServletRequest)"><!-- --></A><H3>
+retrieveFromContinuation</H3>
+<PRE>
+protected <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A> <B>retrieveFromContinuation</B>(javax.servlet.http.HttpServletRequest&nbsp;req)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="retrieveFromServlet3Async(javax.servlet.http.HttpServletRequest)"><!-- --></A><H3>
+retrieveFromServlet3Async</H3>
+<PRE>
+protected <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A> <B>retrieveFromServlet3Async</B>(javax.servlet.http.HttpServletRequest&nbsp;req)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setupContinuation(org.apache.cxf.message.Message, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)"><!-- --></A><H3>
+setupContinuation</H3>
+<PRE>
+protected void <B>setupContinuation</B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;inMessage,
+                                 javax.servlet.http.HttpServletRequest&nbsp;req,
+                                 javax.servlet.http.HttpServletResponse&nbsp;resp)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBasePath(java.lang.String)"><!-- --></A><H3>
+getBasePath</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getBasePath</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;contextPath)
+                      throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAddressValue(org.apache.cxf.service.model.EndpointInfo)"><!-- --></A><H3>
+getAddressValue</H3>
+<PRE>
+protected static <A HREF="../../../../../org/apache/cxf/service/model/EndpointInfo.html" title="class in org.apache.cxf.service.model">EndpointInfo</A> <B>getAddressValue</B>(<A HREF="../../../../../org/apache/cxf/service/model/EndpointInfo.html" title="class in org.apache.cxf.service.model">EndpointInfo</A>&nbsp;ei)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAddressValue(org.apache.cxf.service.model.EndpointInfo, boolean)"><!-- --></A><H3>
+getAddressValue</H3>
+<PRE>
+protected static <A HREF="../../../../../org/apache/cxf/service/model/EndpointInfo.html" title="class in org.apache.cxf.service.model">EndpointInfo</A> <B>getAddressValue</B>(<A HREF="../../../../../org/apache/cxf/service/model/EndpointInfo.html" title="class in org.apache.cxf.service.model">EndpointInfo</A>&nbsp;ei,
+                                              boolean&nbsp;dp)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInbuiltBackChannel(org.apache.cxf.message.Message)"><!-- --></A><H3>
+getInbuiltBackChannel</H3>
+<PRE>
+protected <A HREF="../../../../../org/apache/cxf/transport/Conduit.html" title="interface in org.apache.cxf.transport">Conduit</A> <B>getInbuiltBackChannel</B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;inMessage)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractDestination.html#getInbuiltBackChannel(org.apache.cxf.message.Message)">getInbuiltBackChannel</A></CODE> in class <CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractDestination.html" title="class in org.apache.cxf.transport">AbstractDestination</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>inMessage</CODE> - the incoming message
+<DT><B>Returns:</B><DD>the inbuilt backchannel</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="flushHeaders(org.apache.cxf.message.Message)"><!-- --></A><H3>
+flushHeaders</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A> <B>flushHeaders</B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;outMessage)
+                             throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="flushHeaders(org.apache.cxf.message.Message, boolean)"><!-- --></A><H3>
+flushHeaders</H3>
+<PRE>
+protected <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">OutputStream</A> <B>flushHeaders</B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;outMessage,
+                                    boolean&nbsp;getStream)
+                             throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="contextMatchOnExact()"><!-- --></A><H3>
+contextMatchOnExact</H3>
+<PRE>
+protected boolean <B>contextMatchOnExact</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="finalizeConfig()"><!-- --></A><H3>
+finalizeConfig</H3>
+<PRE>
+public void <B>finalizeConfig</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBeanName()"><!-- --></A><H3>
+getBeanName</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getBeanName</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/configuration/Configurable.html#getBeanName()">Configurable</A></CODE></B></DD>
+<DD>Get the configurable object's Bean name
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/configuration/Configurable.html#getBeanName()">getBeanName</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/configuration/Configurable.html" title="interface in org.apache.cxf.configuration">Configurable</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the bean name</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAddressWithId(java.lang.String)"><!-- --></A><H3>
+getAddressWithId</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing">EndpointReferenceType</A> <B>getAddressWithId</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;id)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractMultiplexDestination.html#getAddressWithId(java.lang.String)">AbstractMultiplexDestination</A></CODE></B></DD>
+<DD>Builds an new endpoint reference using the current target reference as a template. 
+ The supplied id is endcoded using a reference parameter.
+ This requires the ws-a interceptors to propagate the reference parameters
+ on subsequent invokes using the returned reference.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/transport/MultiplexDestination.html#getAddressWithId(java.lang.String)">getAddressWithId</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/transport/MultiplexDestination.html" title="interface in org.apache.cxf.transport">MultiplexDestination</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractMultiplexDestination.html#getAddressWithId(java.lang.String)">getAddressWithId</A></CODE> in class <CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractMultiplexDestination.html" title="class in org.apache.cxf.transport">AbstractMultiplexDestination</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>id</CODE> - the id to encode in the new reference
+<DT><B>Returns:</B><DD>the new reference with the id encoded as a reference parameter<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/cxf/transport/MultiplexDestination.html#getAddressWithId(java.lang.String)"><CODE>MultiplexDestination.getAddressWithId(java.lang.String)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getId(java.util.Map)"><!-- --></A><H3>
+getId</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getId</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;&nbsp;context)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractMultiplexDestination.html#getId(java.util.Map)">AbstractMultiplexDestination</A></CODE></B></DD>
+<DD>Obtain id from reference parameters of the ws-a to address
+ Requires the existance of ws-a interceptors on dispatch path to provide access 
+ to the ws-a headers
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/transport/MultiplexDestination.html#getId(java.util.Map)">getId</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/transport/MultiplexDestination.html" title="interface in org.apache.cxf.transport">MultiplexDestination</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractMultiplexDestination.html#getId(java.util.Map)">getId</A></CODE> in class <CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractMultiplexDestination.html" title="class in org.apache.cxf.transport">AbstractMultiplexDestination</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>context</CODE> - the current invocation or message context
+<DT><B>Returns:</B><DD>the id from the reference parameters of the  ws-a-to address or null if not found<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/cxf/transport/MultiplexDestination.html#getId(java.util.Map)"><CODE>MultiplexDestination.getId(java.util.Map)</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getContextMatchStrategy()"><!-- --></A><H3>
+getContextMatchStrategy</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getContextMatchStrategy</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setContextMatchStrategy(java.lang.String)"><!-- --></A><H3>
+setContextMatchStrategy</H3>
+<PRE>
+public void <B>setContextMatchStrategy</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;contextMatchStrategy)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isFixedParameterOrder()"><!-- --></A><H3>
+isFixedParameterOrder</H3>
+<PRE>
+public boolean <B>isFixedParameterOrder</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setFixedParameterOrder(boolean)"><!-- --></A><H3>
+setFixedParameterOrder</H3>
+<PRE>
+public void <B>setFixedParameterOrder</B>(boolean&nbsp;fixedParameterOrder)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isMultiplexWithAddress()"><!-- --></A><H3>
+isMultiplexWithAddress</H3>
+<PRE>
+public boolean <B>isMultiplexWithAddress</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMultiplexWithAddress(boolean)"><!-- --></A><H3>
+setMultiplexWithAddress</H3>
+<PRE>
+public void <B>setMultiplexWithAddress</B>(boolean&nbsp;multiplexWithAddress)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getServer()"><!-- --></A><H3>
+getServer</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/transports/http/configuration/HTTPServerPolicy.html" title="class in org.apache.cxf.transports.http.configuration">HTTPServerPolicy</A> <B>getServer</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setServer(org.apache.cxf.transports.http.configuration.HTTPServerPolicy)"><!-- --></A><H3>
+setServer</H3>
+<PRE>
+public void <B>setServer</B>(<A HREF="../../../../../org/apache/cxf/transports/http/configuration/HTTPServerPolicy.html" title="class in org.apache.cxf.transports.http.configuration">HTTPServerPolicy</A>&nbsp;server)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="assertMessage(org.apache.cxf.message.Message)"><!-- --></A><H3>
+assertMessage</H3>
+<PRE>
+public void <B>assertMessage</B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/transport/Assertor.html#assertMessage(org.apache.cxf.message.Message)">assertMessage</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/transport/Assertor.html" title="interface in org.apache.cxf.transport">Assertor</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="canAssert(javax.xml.namespace.QName)"><!-- --></A><H3>
+canAssert</H3>
+<PRE>
+public boolean <B>canAssert</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;type)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/transport/Assertor.html#canAssert(javax.xml.namespace.QName)">canAssert</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/transport/Assertor.html" title="interface in org.apache.cxf.transport">Assertor</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="releaseRegistry()"><!-- --></A><H3>
+releaseRegistry</H3>
+<PRE>
+public void <B>releaseRegistry</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPath()"><!-- --></A><H3>
+getPath</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getPath</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="activate()"><!-- --></A><H3>
+activate</H3>
+<PRE>
+protected void <B>activate</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractObservable.html#activate()">AbstractObservable</A></CODE></B></DD>
+<DD>Activate messages flow.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractObservable.html#activate()">activate</A></CODE> in class <CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractObservable.html" title="class in org.apache.cxf.transport">AbstractObservable</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="deactivate()"><!-- --></A><H3>
+deactivate</H3>
+<PRE>
+protected void <B>deactivate</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractObservable.html#deactivate()">AbstractObservable</A></CODE></B></DD>
+<DD>Deactivate messages flow.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractObservable.html#deactivate()">deactivate</A></CODE> in class <CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractObservable.html" title="class in org.apache.cxf.transport">AbstractObservable</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="shutdown()"><!-- --></A><H3>
+shutdown</H3>
+<PRE>
+public void <B>shutdown</B>()</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractDestination.html#shutdown()">AbstractDestination</A></CODE></B></DD>
+<DD>Shutdown the Destination, i.e. stop accepting incoming messages.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/transport/Destination.html#shutdown()">shutdown</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/transport/Destination.html" title="interface in org.apache.cxf.transport">Destination</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractDestination.html#shutdown()">shutdown</A></CODE> in class <CODE><A HREF="../../../../../org/apache/cxf/transport/AbstractDestination.html" title="class in org.apache.cxf.transport">AbstractDestination</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AbstractHTTPDestination.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/transport/http/AbstractHTTPDestination.BackChannelConduit.html" title="class in org.apache.cxf.transport.http"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/transport/http/AbstractHTTPDestination.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AbstractHTTPDestination.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

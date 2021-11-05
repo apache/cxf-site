@@ -1,0 +1,259 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - Custom CXF Transport">
+
+
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shCoreCXF.css">
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shThemeCXF.css">
+
+<script src='/resources/highlighter/scripts/shCore.js'></script>
+<script src='/resources/highlighter/scripts/shBrushBash.js'></script>
+<script src='/resources/highlighter/scripts/shBrushXml.js'></script>
+<script src='/resources/highlighter/scripts/shBrushJava.js'></script>
+<script>
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+
+    <title>
+Apache CXF -- Custom CXF Transport
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="resources-and-articles.html">Resources and Articles</a>&nbsp;&gt;&nbsp;<a href="custom-cxf-transport.html">Custom CXF Transport</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><p>This page summarizes an experience of implementing a new CXF transport.</p>
+
+
+<h2 id="CustomCXFTransport-UseCases">Use Cases</h2>
+<p>Normally implementing a custom transport is required when providing a new physical protocol not yet supported by CXF (udp or ftp, for example). New CXF transports can be also a solution to support legacy ESB participants that have to be interoperable with JAX-WS services and clients.  Presently the CXF 2.3.x distribution provides a transport implementation for the following protocols: HTTP(S), JBI, JMS and Local(inside one JVM). Camel additionally implements CXF transport for Camel exchanges.</p>
+
+<h2 id="CustomCXFTransport-ArchitectureandDesign">Architecture and Design</h2>
+<p>The transport functionality is based on two fundamental definitions: conduit and destination. Conduits are responsible for sending a message to recipients and destinations for receiving a message from the sender. In order to send a response, a destination needs its own back-channel conduit (in case of request-response communication). Conduits and destinations are created by a TransportFactory. CXF selects the correct TransportFactory based on the transport URL. SOAP is also considered a high level transport and has its own conduit and destination in CXF.<br clear="none">
+To send a message into a physical channel, the conduit should access the message context. Normal practice in this case is to use a subclass of OutputStream extending CachedOutputStream. The custom stream will be fed the message and provides a possibility to access context in streaming or buffered form depending on the transport requirements. CachedOutputStream is configured to keep message in memory only up to a predefined size. If this size is exceeded, the message is swapped to disk.</p>
+
+<p>A class diagram of TransportFactory, Conduit, Destination and OutputStream is shown below:<br clear="none">
+<span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="custom-cxf-transport.data/cxf-transport-class-diagram.jpg"></span></p>
+
+
+<h2 id="CustomCXFTransport-HowitWorks">How it Works</h2>
+<p>Interaction between JAX-WS client and service using CXF transport is represented in the following figure:<br clear="none">
+<span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="custom-cxf-transport.data/cxf-transport-view.jpg"></span></p>
+
+<h3 id="CustomCXFTransport-SimplifiedClientWorkflow:">Simplified Client Workflow:</h3>
+<ul><li>Step1: JAX-WS client invokes a service, in this manner for example:
+<div class="code panel pdl" style="border-style: solid;border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+        URL wsdlURL = this.getClass().getResource("/HelloWorld.wsdl");
+        HelloWorldService service = new HelloWorldService(wsdlURL, SERVICE_NAME);        
+        HelloWorld hw = service.getHelloWorldPort();       
+        String result = hw.sayHi(TEST_REQUEST); }}
+</pre>
+</div></div></li><li>Step2: CXF runtime selects the correct TransportFactory based on some criteria (described below)</li><li>Step3: CXF runtime calls <em>TransportFactory.getConduit()</em> method to obtain the conduit</li><li>Step4: CXF runtime invokes <em>Conduit.prepare()</em> and passes outgoing message as argument</li><li>Step5: Conduit sets own OutputStream (normally extended CachedOutputStream) as outgoing message content</li><li>Step6: CXF runtime processes outgoing message, calls the interceptor chain and invokes Conduit.close(Message) method for the outgoing message.</li><li>Step7: Finally, <em>OutputStream.doClose()</em> for the outgoing message is invoked</li><li>Step8: In the <em>doClose()</em> method, the OutputStream class has access to the marshalled outgoing message and exchange and will send this message to the service using the corresponding transport protocol</li><li>Step9: In case of one-way communication exchange will be closed. Skip to Step 14</li><li>Step10: In case of request-response communication, the conduit will wait for the service response in synchronous or asynchronous manner</li><li>Step11: When response is received, the conduit creates a new message, sets its context and puts it as In-Message in the exchange as an incoming message</li><li>Step12: When fault is received, Conduit creates a new Message, sets its context and puts it as fault message in exchange as in-fault message</li><li>Step13: Conduit notifies incomingObserver (that is ClientImpl object) about the response using <em>incomingObserver.onMessage()</em> call</li><li>Step14: <em>Conduit.close(Message)</em> method is invoked for incoming message. Normally the conduit implementation decreases the reference count with the service, potentially closing the network connection if the count is zero.</li><li>Step15: JAX-WS client code receives the response in sync or async style</li></ul>
+
+
+<h3 id="CustomCXFTransport-SimplifiedServiceWorkflow:">Simplified Service Workflow:</h3>
+<ul><li>Step1: JAX-WS service is registered for example in this way:
+<div class="code panel pdl" style="border-style: solid;border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+	HelloWorldImpl serverImpl = new HelloWorldImpl();
+	Endpoint.publish("udp://localhost:9000/hello", serverImpl);
+</pre>
+</div></div></li><li>Step2: CXF runtime selects correct TransportFactory based on some criteria (described below)</li><li>Step3: CXF runtime calls <em>TransportFactory.getDestination()</em> method to obtain the destination</li><li>Step4: As soon as CXF runtime activates endpoint (adds listener, etc) <em>Destination.activate()</em> method is automatically invoked</li><li>Step5: Implementation of <em>Destination.activate()</em> normally opens network transport connections and listens to incoming requests</li><li>Step6: When a request comes, the destination creates a message, sets the content and notifies message observer (that is ChainInitializationObserver object) via <em>incomingObserver.onMessage()</em> about request. Normally an incoming connection is saved in a correlation map to be extracted for the appropriate response.</li><li>Step7: The business service implementation will be called with the request message. In case of one-way communication the exchange is now finished. In case of request-response, the business implementation either returns a response or throws a fault exception.</li><li>Step8: The CXF Runtime requests a back-channel conduit from the destination via <em>Destination.getInbuiltBackChannel()</em></li><li>Step9: The Back-channel conduit's <em>prepare()</em> method will be called with a response message as argument</li><li>Step10: Back-channel conduit sets its own OutputStream as a message context</li><li>Step11: CXF runtime processes the response message, calls the interceptor chain and invokes <em>Conduit.close(Message)</em> for the response message.</li><li>Step12. Finally <em>OutputStream.doClose()</em> method for the response message is invoked</li><li>Step13: In <em>doClose()</em> method the OutputStream class has access to the marshalled response message and will send this message through the network as a response to the client. Appropriate incoming connection normally is extracted from correlation map.</li></ul>
+
+
+<h2 id="CustomCXFTransport-RegistrationofTransportFactory">Registration of Transport Factory</h2>
+<p>There are two ways to register transport factory: programmatically or via Spring configuration.<br clear="none">
+To register transport factory programmatically it is necessary to execute the following code:</p>
+<div class="code panel pdl" style="border-style: solid;border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+     Bus bus = BusFactory.getThreadDefaultBus();
+     DestinationFactoryManagerImpl dfm = bus.getExtension(DestinationFactoryManagerImpl.class);
+     CustomTransportFactory customTransport = new CustomTransportFactory();
+     dfm.registerDestinationFactory("http://cxf.apache.org/transports/TRANSPORT_PREFIX", customTransport);
+     dfm.registerDestinationFactory("http://cxf.apache.org/transports/TRANSPORT_PREFIX/configuration", customTransport);
+
+     ConduitInitiatorManager extension = bus.getExtension(ConduitInitiatorManager.class);
+     extension.registerConduitInitiator("http://cxf.apache.org/transports/TRANSPORT_PREFIX", customTransport);
+     extension.registerConduitInitiator("http://cxf.apache.org/transports/TRANSPORT_PREFIX/configuration", customTransport);
+</pre>
+</div></div>
+<p>Where TRANSPORT_PREFIX is the protocol of the new transport (http, https, jms, udp).</p>
+
+<p>For Spring configuration, the following could be used instead:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+	&lt;bean class="org.company.cxf.transport.CustomTransportFactory"
+		lazy-init="false"&gt;
+		&lt;property name="transportIds"&gt;
+			&lt;list&gt;
+			&lt;value&gt;http http://cxf.apache.org/transports/TRANSPORT_PREFIX&lt;/value&gt;
+                	&lt;value&gt;http://cxf.apache.org/transports/TRANSPORT_PREFIX/configuration&lt;/value&gt;
+			&lt;/list&gt;
+		&lt;/property&gt;
+	&lt;/bean&gt;
+</pre>
+</div></div>
+<p>To define a new transport endpoint in the WSDL document follow these two steps:<br clear="none">
+a) Set the soap:binding transport attribute to the transport URL value (<a shape="rect" href="http://cxf.apache.org/transports/TRANSPORT_PREFIX">http://cxf.apache.org/transports/TRANSPORT_PREFIX</a>)<br clear="none">
+b) The Port address element should be bound to namespace equals to transport URL in WSDL XML</p>
+
+<p>Sample:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+&lt;wsdl:definitions 
+    xmlns:transport="http://cxf.apache.org/transports/TRANSPORT_PREFIX" &#8230;&gt; &#8230;
+&#8230;
+&lt;wsdl:binding name="GreeterPortBinding" type="tns: GreeterPortType"&gt;
+        &lt;soap:binding style="document" transport="http://cxf.apache.org/transports/TRANSPORT_PREFIX"/&gt;
+&#8230;
+&lt;wsdl:service name="GreeterService"&gt;
+       &lt;wsdl:port binding="tns:GreeterPortBinding" name="GreeterPort"&gt;
+           &lt;transport:address location="LOCATION_URL"&gt;
+&#8230;
+</pre>
+</div></div>
+
+<h2 id="CustomCXFTransport-ConduitandDestinationLifecycle">Conduit and Destination Lifecycle</h2>
+<p>The conduit and destination lifecycle can be started by the TransportFactory during every client or service creation. The TransportFactory can either create a conduit and destination for each request or cache them based on service endpoint information.</p>
+
+<h2 id="CustomCXFTransport-ConcurrencyAspects">Concurrency Aspects</h2>
+<p>Conduit and destination objects can by concurrently accessed by multiple threads. Implementations should care about concurrent correlations maps and/or synchronization primitives.</p>
+
+<h2 id="CustomCXFTransport-References">References</h2>
+<ol><li>CXF transport implementations: package <em>org.apache.cxf.transport.*</em></li><li>CXF Local Transport: <a shape="rect" href="http://cxf.apache.org/docs/local-transport.html">http://cxf.apache.org/docs/local-transport.html</a></li></ol></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=25200212">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=25200212&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

@@ -1,0 +1,363 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+SearchCondition (Apache CXF Bundle Jar 2.7.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="SearchCondition (Apache CXF Bundle Jar 2.7.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SearchCondition.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchBean.html" title="class in org.apache.cxf.jaxrs.ext.search"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchConditionParser.html" title="interface in org.apache.cxf.jaxrs.ext.search"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/jaxrs/ext/search/SearchCondition.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SearchCondition.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.jaxrs.ext.search</FONT>
+<BR>
+Interface SearchCondition&lt;T&gt;</H2>
+<DL>
+<DT><DT><B>Type Parameters:</B><DD><CODE>T</CODE> - Type of the object which will be checked by SearchCondition instance</DL>
+<DL>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/AbstractComplexCondition.html" title="class in org.apache.cxf.jaxrs.ext.search">AbstractComplexCondition</A>, <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/AndSearchCondition.html" title="class in org.apache.cxf.jaxrs.ext.search">AndSearchCondition</A>, <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/OrSearchCondition.html" title="class in org.apache.cxf.jaxrs.ext.search">OrSearchCondition</A>, <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/PrimitiveSearchCondition.html" title="class in org.apache.cxf.jaxrs.ext.search">PrimitiveSearchCondition</A>, <A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SimpleSearchCondition.html" title="class in org.apache.cxf.jaxrs.ext.search">SimpleSearchCondition</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public interface <B>SearchCondition&lt;T&gt;</B></DL>
+</PRE>
+
+<P>
+Can be used to build plain or complex/composite search conditions.
+ <p>
+ Google Collections <a href="http://google-collections.googlecode.com/svn/trunk/javadoc/com/google/common/base/Predicate.html">Predicate</a>
+ might've been used instead, but it is a too generic and its apply method is not quite needed here
+ </p>
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#accept(org.apache.cxf.jaxrs.ext.search.SearchConditionVisitor)">accept</A></B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchConditionVisitor.html" title="interface in org.apache.cxf.jaxrs.ext.search">SearchConditionVisitor</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="type parameter in SearchCondition">T</A>&gt;&nbsp;visitor)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Provides a visitor which will convert this SearchCondition into
+ a custom expression, for example, into the SQL statement, etc</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="type parameter in SearchCondition">T</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#findAll(java.util.Collection)">findAll</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="type parameter in SearchCondition">T</A>&gt;&nbsp;pojos)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a list of pojos matching the condition</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="type parameter in SearchCondition">T</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#getCondition()">getCondition</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Some SearchConditions may use instance of T to capture the actual search criteria
+ thus making it simpler to implement isMet(T).</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#getConditionType()">getConditionType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the type of the condition this SearchCondition represents</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search">SearchCondition</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="type parameter in SearchCondition">T</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#getSearchConditions()">getSearchConditions</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;List of conditions this SearchCondition may represent.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/PrimitiveStatement.html" title="class in org.apache.cxf.jaxrs.ext.search">PrimitiveStatement</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#getStatement()">getStatement</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Primitive statement such a > b, i < 5, etc
+ this condition may represent.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html#isMet(T)">isMet</A></B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="type parameter in SearchCondition">T</A>&nbsp;pojo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checks if the given pojo instance meets this search condition</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="isMet(java.lang.Object)"><!-- --></A><A NAME="isMet(T)"><!-- --></A><H3>
+isMet</H3>
+<PRE>
+boolean <B>isMet</B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="type parameter in SearchCondition">T</A>&nbsp;pojo)</PRE>
+<DL>
+<DD>Checks if the given pojo instance meets this search condition
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pojo</CODE> - the object which will be checked
+<DT><B>Returns:</B><DD>true if the pojo meets this search condition, false - otherwise</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="findAll(java.util.Collection)"><!-- --></A><H3>
+findAll</H3>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="type parameter in SearchCondition">T</A>&gt; <B>findAll</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Collection.html?is-external=true" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="type parameter in SearchCondition">T</A>&gt;&nbsp;pojos)</PRE>
+<DL>
+<DD>Returns a list of pojos matching the condition
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>pojos</CODE> - list of pojos
+<DT><B>Returns:</B><DD>list of the matching pojos or null if none have been found</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCondition()"><!-- --></A><H3>
+getCondition</H3>
+<PRE>
+<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="type parameter in SearchCondition">T</A> <B>getCondition</B>()</PRE>
+<DL>
+<DD>Some SearchConditions may use instance of T to capture the actual search criteria
+ thus making it simpler to implement isMet(T). In some cases, the code which is given
+ SearchCondition may find it more efficient to directly deal with the captured state
+ for a more efficient lookup of matching data/records as opposed to calling
+ SearchCondition.isMet for every instance of T it knows about.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>T the captured search criteria, can be null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStatement()"><!-- --></A><H3>
+getStatement</H3>
+<PRE>
+<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/PrimitiveStatement.html" title="class in org.apache.cxf.jaxrs.ext.search">PrimitiveStatement</A> <B>getStatement</B>()</PRE>
+<DL>
+<DD>Primitive statement such a > b, i < 5, etc
+ this condition may represent. Complex conditions will return null.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>primitive search statement, can be null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSearchConditions()"><!-- --></A><H3>
+getSearchConditions</H3>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="interface in org.apache.cxf.jaxrs.ext.search">SearchCondition</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="type parameter in SearchCondition">T</A>&gt;&gt; <B>getSearchConditions</B>()</PRE>
+<DL>
+<DD>List of conditions this SearchCondition may represent.
+ Composite SearchConditions will return a list of conditions they are
+ composed from, primitive ones will return null
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>list of conditions, can be null</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getConditionType()"><!-- --></A><H3>
+getConditionType</H3>
+<PRE>
+<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/ConditionType.html" title="enum in org.apache.cxf.jaxrs.ext.search">ConditionType</A> <B>getConditionType</B>()</PRE>
+<DL>
+<DD>Returns the type of the condition this SearchCondition represents
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>condition type</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="accept(org.apache.cxf.jaxrs.ext.search.SearchConditionVisitor)"><!-- --></A><H3>
+accept</H3>
+<PRE>
+void <B>accept</B>(<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchConditionVisitor.html" title="interface in org.apache.cxf.jaxrs.ext.search">SearchConditionVisitor</A>&lt;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchCondition.html" title="type parameter in SearchCondition">T</A>&gt;&nbsp;visitor)</PRE>
+<DL>
+<DD>Provides a visitor which will convert this SearchCondition into
+ a custom expression, for example, into the SQL statement, etc
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>visitor</CODE> - </DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/SearchCondition.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchBean.html" title="class in org.apache.cxf.jaxrs.ext.search"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/jaxrs/ext/search/SearchConditionParser.html" title="interface in org.apache.cxf.jaxrs.ext.search"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/jaxrs/ext/search/SearchCondition.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="SearchCondition.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

@@ -1,0 +1,430 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+DefaultSecurityTokenServiceProvider (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="DefaultSecurityTokenServiceProvider (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/DefaultSecurityTokenServiceProvider.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/sts/provider/DefaultSecurityTokenServiceProvider.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="DefaultSecurityTokenServiceProvider.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.cxf.ws.security.sts.provider.SecurityTokenServiceProvider">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.sts.provider</FONT>
+<BR>
+Class DefaultSecurityTokenServiceProvider</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html" title="class in org.apache.cxf.ws.security.sts.provider">org.apache.cxf.ws.security.sts.provider.SecurityTokenServiceProvider</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.sts.provider.DefaultSecurityTokenServiceProvider</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/Provider.html?is-external=true" title="class or interface in javax.xml.ws">Provider</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/Source.html?is-external=true" title="class or interface in javax.xml.transform">Source</A>&gt;</DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>DefaultSecurityTokenServiceProvider</B><DT>extends <A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html" title="class in org.apache.cxf.ws.security.sts.provider">SecurityTokenServiceProvider</A></DL>
+</PRE>
+
+<P>
+A "default" SecurityTokenServiceProvider implementation that defines the Issue and Validate
+ Operations of the STS and adds support for issuing and validating SAML Assertions, and
+ validating UsernameTokens and X.509 Tokens. It also defines the Renew Operation for SAML
+ tokens.
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.ws.security.sts.provider.SecurityTokenServiceProvider"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.ws.security.sts.provider.<A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html" title="class in org.apache.cxf.ws.security.sts.provider">SecurityTokenServiceProvider</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html#jaxbContext">jaxbContext</A>, <A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html#jaxbContextClasses">jaxbContextClasses</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/sts/provider/DefaultSecurityTokenServiceProvider.html#DefaultSecurityTokenServiceProvider()">DefaultSecurityTokenServiceProvider</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/Source.html?is-external=true" title="class or interface in javax.xml.transform">Source</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/sts/provider/DefaultSecurityTokenServiceProvider.html#invoke(javax.xml.transform.Source)">invoke</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/Source.html?is-external=true" title="class or interface in javax.xml.transform">Source</A>&nbsp;request)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/sts/provider/DefaultSecurityTokenServiceProvider.html#setClaimsManager(org.apache.cxf.sts.claims.ClaimsManager)">setClaimsManager</A></B>(<A HREF="../../../../../org/apache/cxf/sts/claims/ClaimsManager.html" title="class in org.apache.cxf.sts.claims">ClaimsManager</A>&nbsp;claimsManager)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/sts/provider/DefaultSecurityTokenServiceProvider.html#setEncryptIssuedToken(boolean)">setEncryptIssuedToken</A></B>(boolean&nbsp;encryptIssuedToken)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/sts/provider/DefaultSecurityTokenServiceProvider.html#setEventListener(org.apache.cxf.sts.event.STSEventListener)">setEventListener</A></B>(<A HREF="../../../../../org/apache/cxf/sts/event/STSEventListener.html" title="interface in org.apache.cxf.sts.event">STSEventListener</A>&nbsp;listener)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/sts/provider/DefaultSecurityTokenServiceProvider.html#setReturnReferences(boolean)">setReturnReferences</A></B>(boolean&nbsp;returnReferences)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/sts/provider/DefaultSecurityTokenServiceProvider.html#setServices(java.util.List)">setServices</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/sts/service/ServiceMBean.html" title="interface in org.apache.cxf.sts.service">ServiceMBean</A>&gt;&nbsp;services)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/sts/provider/DefaultSecurityTokenServiceProvider.html#setStsProperties(org.apache.cxf.sts.STSPropertiesMBean)">setStsProperties</A></B>(<A HREF="../../../../../org/apache/cxf/sts/STSPropertiesMBean.html" title="interface in org.apache.cxf.sts">STSPropertiesMBean</A>&nbsp;stsProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/sts/provider/DefaultSecurityTokenServiceProvider.html#setTokenStore(org.apache.cxf.ws.security.tokenstore.TokenStore)">setTokenStore</A></B>(<A HREF="../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A>&nbsp;tokenStore)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.ws.security.sts.provider.SecurityTokenServiceProvider"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.ws.security.sts.provider.<A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html" title="class in org.apache.cxf.ws.security.sts.provider">SecurityTokenServiceProvider</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html#getCancelOperation()">getCancelOperation</A>, <A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html#getIssueOperation()">getIssueOperation</A>, <A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html#getIssueSingleOperation()">getIssueSingleOperation</A>, <A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html#getKeyExchangeTokenOperation()">getKeyExchangeTokenOperation</A>, <A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html#getRenewOperation()">getRenewOperation</A>, <A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html#getRequestCollectionOperation()">getRequestCollectionOperation</A>, <A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html#getValidateOperation()">getValidateOperation</A>, <A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html#setCancelOperation(org.apache.cxf.ws.security.sts.provider.operation.CancelOperation)">setCancelOperation</A>, <A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html#setIssueOperation(org.apache.cxf.ws.security.sts.provider.operation.IssueOperation)">setIssueOperation</A>, <A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html#setIssueSingleOperation(org.apache.cxf.ws.security.sts.provider.operation.IssueSingleOperation)">setIssueSingleOperation</A>, <A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html#setKeyExchangeTokenOperation(org.apache.cxf.ws.security.sts.provider.operation.KeyExchangeTokenOperation)">setKeyExchangeTokenOperation</A>, <A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html#setRenewOperation(org.apache.cxf.ws.security.sts.provider.operation.RenewOperation)">setRenewOperation</A>, <A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html#setRequestCollectionOperation(org.apache.cxf.ws.security.sts.provider.operation.RequestCollectionOperation)">setRequestCollectionOperation</A>, <A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html#setValidateOperation(org.apache.cxf.ws.security.sts.provider.operation.ValidateOperation)">setValidateOperation</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="DefaultSecurityTokenServiceProvider()"><!-- --></A><H3>
+DefaultSecurityTokenServiceProvider</H3>
+<PRE>
+public <B>DefaultSecurityTokenServiceProvider</B>()
+                                    throws <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="setReturnReferences(boolean)"><!-- --></A><H3>
+setReturnReferences</H3>
+<PRE>
+public void <B>setReturnReferences</B>(boolean&nbsp;returnReferences)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setTokenStore(org.apache.cxf.ws.security.tokenstore.TokenStore)"><!-- --></A><H3>
+setTokenStore</H3>
+<PRE>
+public void <B>setTokenStore</B>(<A HREF="../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</A>&nbsp;tokenStore)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setStsProperties(org.apache.cxf.sts.STSPropertiesMBean)"><!-- --></A><H3>
+setStsProperties</H3>
+<PRE>
+public void <B>setStsProperties</B>(<A HREF="../../../../../org/apache/cxf/sts/STSPropertiesMBean.html" title="interface in org.apache.cxf.sts">STSPropertiesMBean</A>&nbsp;stsProperties)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEncryptIssuedToken(boolean)"><!-- --></A><H3>
+setEncryptIssuedToken</H3>
+<PRE>
+public void <B>setEncryptIssuedToken</B>(boolean&nbsp;encryptIssuedToken)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setServices(java.util.List)"><!-- --></A><H3>
+setServices</H3>
+<PRE>
+public void <B>setServices</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../org/apache/cxf/sts/service/ServiceMBean.html" title="interface in org.apache.cxf.sts.service">ServiceMBean</A>&gt;&nbsp;services)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setClaimsManager(org.apache.cxf.sts.claims.ClaimsManager)"><!-- --></A><H3>
+setClaimsManager</H3>
+<PRE>
+public void <B>setClaimsManager</B>(<A HREF="../../../../../org/apache/cxf/sts/claims/ClaimsManager.html" title="class in org.apache.cxf.sts.claims">ClaimsManager</A>&nbsp;claimsManager)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEventListener(org.apache.cxf.sts.event.STSEventListener)"><!-- --></A><H3>
+setEventListener</H3>
+<PRE>
+public void <B>setEventListener</B>(<A HREF="../../../../../org/apache/cxf/sts/event/STSEventListener.html" title="interface in org.apache.cxf.sts.event">STSEventListener</A>&nbsp;listener)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="invoke(javax.xml.transform.Source)"><!-- --></A><H3>
+invoke</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/Source.html?is-external=true" title="class or interface in javax.xml.transform">Source</A> <B>invoke</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/Source.html?is-external=true" title="class or interface in javax.xml.transform">Source</A>&nbsp;request)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/Provider.html?is-external=true#invoke(T)" title="class or interface in javax.xml.ws">invoke</A></CODE> in interface <CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/ws/Provider.html?is-external=true" title="class or interface in javax.xml.ws">Provider</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/transform/Source.html?is-external=true" title="class or interface in javax.xml.transform">Source</A>&gt;</CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html#invoke(javax.xml.transform.Source)">invoke</A></CODE> in class <CODE><A HREF="../../../../../org/apache/cxf/ws/security/sts/provider/SecurityTokenServiceProvider.html" title="class in org.apache.cxf.ws.security.sts.provider">SecurityTokenServiceProvider</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/DefaultSecurityTokenServiceProvider.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/sts/provider/DefaultSecurityTokenServiceProvider.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="DefaultSecurityTokenServiceProvider.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.cxf.ws.security.sts.provider.SecurityTokenServiceProvider">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

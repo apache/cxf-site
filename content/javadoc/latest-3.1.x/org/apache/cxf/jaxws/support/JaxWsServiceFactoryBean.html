@@ -1,0 +1,710 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>JaxWsServiceFactoryBean (Apache CXF JavaDoc 3.1.0 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="JaxWsServiceFactoryBean (Apache CXF JavaDoc 3.1.0 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/JaxWsServiceFactoryBean.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceConfiguration.html" title="class in org.apache.cxf.jaxws.support"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/cxf/jaxws/support/ServiceDelegateAccessor.html" title="class in org.apache.cxf.jaxws.support"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html" target="_top">Frames</a></li>
+<li><a href="JaxWsServiceFactoryBean.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.cxf.jaxws.support</div>
+<h2 title="Class JaxWsServiceFactoryBean" class="title">Class JaxWsServiceFactoryBean</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../org/apache/cxf/service/factory/AbstractServiceFactoryBean.html" title="class in org.apache.cxf.service.factory">org.apache.cxf.service.factory.AbstractServiceFactoryBean</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.cxf.jaxws.support.JaxWsServiceFactoryBean</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<hr>
+<br>
+<pre>public class <span class="strong">JaxWsServiceFactoryBean</span>
+extends <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></pre>
+<div class="block">Constructs a service model from JAX-WS service endpoint classes. Works
+ with both @@WebServiceProvider and @@WebService annotated classes.</div>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/cxf/jaxws/JaxWsServerFactoryBean.html" title="class in org.apache.cxf.jaxws"><code>JaxWsServerFactoryBean</code></a></dd></dl>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#WS_FEATURES">WS_FEATURES</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.apache.cxf.wsdl.service.factory.<a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></h3>
+<code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#ELEMENT_NAME">ELEMENT_NAME</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#ENDPOINT_CLASS">ENDPOINT_CLASS</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#EXTRA_CLASS">EXTRA_CLASS</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#FORCE_TYPES">FORCE_TYPES</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#GENERIC_TYPE">GENERIC_TYPE</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#HEADER">HEADER</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#HOLDER">HOLDER</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#METHOD">METHOD</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#METHOD_ANNOTATIONS">METHOD_ANNOTATIONS</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#METHOD_PARAM_ANNOTATIONS">METHOD_PARAM_ANNOTATIONS</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#MODE_INOUT">MODE_INOUT</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#MODE_OUT">MODE_OUT</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#PARAM_ANNOTATION">PARAM_ANNOTATION</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#parameterizedTypes">parameterizedTypes</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#RAW_CLASS">RAW_CLASS</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#schemaLocationMapping">schemaLocationMapping</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#serviceClass">serviceClass</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#serviceType">serviceType</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#WRAPPERGEN_NEEDED">WRAPPERGEN_NEEDED</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#wsdlURL">wsdlURL</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.apache.cxf.service.factory.AbstractServiceFactoryBean">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.apache.cxf.service.factory.<a href="../../../../../org/apache/cxf/service/factory/AbstractServiceFactoryBean.html" title="class in org.apache.cxf.service.factory">AbstractServiceFactoryBean</a></h3>
+<code><a href="../../../../../org/apache/cxf/service/factory/AbstractServiceFactoryBean.html#dataBindingSet">dataBindingSet</a>, <a href="../../../../../org/apache/cxf/service/factory/AbstractServiceFactoryBean.html#schemaLocations">schemaLocations</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#JaxWsServiceFactoryBean()">JaxWsServiceFactoryBean</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#JaxWsServiceFactoryBean(org.apache.cxf.jaxws.support.JaxWsImplementorInfo)">JaxWsServiceFactoryBean</a></strong>(<a href="../../../../../org/apache/cxf/jaxws/support/JaxWsImplementorInfo.html" title="class in org.apache.cxf.jaxws.support">JaxWsImplementorInfo</a>&nbsp;implInfo)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#bindOperation(org.apache.cxf.service.model.OperationInfo,%20java.lang.reflect.Method)">bindOperation</a></strong>(<a href="../../../../../org/apache/cxf/service/model/OperationInfo.html" title="class in org.apache.cxf.service.model">OperationInfo</a>&nbsp;op,
+             <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Method.html?is-external=true" title="class or interface in java.lang.reflect">Method</a>&nbsp;method)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#buildServiceFromClass()">buildServiceFromClass</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#checkServiceClassAnnotations(java.lang.Class)">checkServiceClassAnnotations</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;sc)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/cxf/service/Service.html" title="interface in org.apache.cxf.service">Service</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#create()">create</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/cxf/endpoint/Endpoint.html" title="interface in org.apache.cxf.endpoint">Endpoint</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#createEndpoint(org.apache.cxf.service.model.EndpointInfo)">createEndpoint</a></strong>(<a href="../../../../../org/apache/cxf/service/model/EndpointInfo.html" title="class in org.apache.cxf.service.model">EndpointInfo</a>&nbsp;ei)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../org/apache/cxf/service/invoker/Invoker.html" title="interface in org.apache.cxf.service.invoker">Invoker</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#createInvoker()">createInvoker</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../org/apache/cxf/service/model/OperationInfo.html" title="class in org.apache.cxf.service.model">OperationInfo</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#createOperation(org.apache.cxf.service.model.ServiceInfo,%20org.apache.cxf.service.model.InterfaceInfo,%20java.lang.reflect.Method)">createOperation</a></strong>(<a href="../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</a>&nbsp;serviceInfo,
+               <a href="../../../../../org/apache/cxf/service/model/InterfaceInfo.html" title="class in org.apache.cxf.service.model">InterfaceInfo</a>&nbsp;intf,
+               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Method.html?is-external=true" title="class or interface in java.lang.reflect">Method</a>&nbsp;m)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#getBeanClass(java.lang.Class)">getBeanClass</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;exClass)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#getExtraClass()">getExtraClass</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsImplementorInfo.html" title="class in org.apache.cxf.jaxws.support">JaxWsImplementorInfo</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#getJaxWsImplementorInfo()">getJaxWsImplementorInfo</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#getProviderParameterType(java.lang.Class)">getProviderParameterType</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;cls)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/ws/WebServiceFeature.html?is-external=true" title="class or interface in javax.xml.ws">WebServiceFeature</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#getWsFeatures()">getWsFeatures</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#initConfiguration(org.apache.cxf.jaxws.support.JaxWsImplementorInfo)">initConfiguration</a></strong>(<a href="../../../../../org/apache/cxf/jaxws/support/JaxWsImplementorInfo.html" title="class in org.apache.cxf.jaxws.support">JaxWsImplementorInfo</a>&nbsp;ii)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#initializeFaultInterceptors()">initializeFaultInterceptors</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#initializeParameter(org.apache.cxf.service.model.MessagePartInfo,%20java.lang.Class,%20java.lang.reflect.Type)">initializeParameter</a></strong>(<a href="../../../../../org/apache/cxf/service/model/MessagePartInfo.html" title="class in org.apache.cxf.service.model">MessagePartInfo</a>&nbsp;part,
+                   <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;rawClass,
+                   <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#initializeWSDLOperation(org.apache.cxf.service.model.InterfaceInfo,%20org.apache.cxf.service.model.OperationInfo,%20java.lang.reflect.Method)">initializeWSDLOperation</a></strong>(<a href="../../../../../org/apache/cxf/service/model/InterfaceInfo.html" title="class in org.apache.cxf.service.model">InterfaceInfo</a>&nbsp;intf,
+                       <a href="../../../../../org/apache/cxf/service/model/OperationInfo.html" title="class in org.apache.cxf.service.model">OperationInfo</a>&nbsp;o,
+                       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Method.html?is-external=true" title="class or interface in java.lang.reflect">Method</a>&nbsp;method)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#initializeWSDLOperations()">initializeWSDLOperations</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#initializeWSDLOperationsForProvider()">initializeWSDLOperationsForProvider</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#reset()">reset</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#setJaxWsConfiguration(org.apache.cxf.jaxws.support.JaxWsServiceConfiguration)">setJaxWsConfiguration</a></strong>(<a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceConfiguration.html" title="class in org.apache.cxf.jaxws.support">JaxWsServiceConfiguration</a>&nbsp;jaxWsConfiguration)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#setJaxWsImplementorInfo(org.apache.cxf.jaxws.support.JaxWsImplementorInfo)">setJaxWsImplementorInfo</a></strong>(<a href="../../../../../org/apache/cxf/jaxws/support/JaxWsImplementorInfo.html" title="class in org.apache.cxf.jaxws.support">JaxWsImplementorInfo</a>&nbsp;jaxWsImplementorInfo)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#setServiceClass(java.lang.Class)">setServiceClass</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;serviceClass)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html#setWsFeatures(java.util.List)">setWsFeatures</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/ws/WebServiceFeature.html?is-external=true" title="class or interface in javax.xml.ws">WebServiceFeature</a>&gt;&nbsp;swsFeatures)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.cxf.wsdl.service.factory.ReflectionServiceFactoryBean">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.apache.cxf.wsdl.service.factory.<a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></h3>
+<code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#addFault(org.apache.cxf.service.model.InterfaceInfo,%20org.apache.cxf.service.model.OperationInfo,%20java.lang.Class)">addFault</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#buildServiceFromWSDL(java.lang.String)">buildServiceFromWSDL</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#checkForElement(org.apache.cxf.service.model.ServiceInfo,%20org.apache.cxf.service.model.MessagePartInfo)">checkForElement</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#createBareMessage(org.apache.cxf.service.model.ServiceInfo,%20org.apache.cxf.service.model.OperationInfo,%20boolean)">createBareMessage</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#createDefaultDataBinding()">createDefaultDataBinding</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#createEndpoints()">createEndpoints</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#createFaultForException(java.lang.Class,%20org.apache.cxf.service.model.FaultInfo)">createFaultForException</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#createInputWrappedMessageParts(org.apache.cxf.service.model.OperationInfo,%20java.lang.reflect.Method,%20org.apache.cxf.service.model.MessageInfo)">createInputWrappedMessageParts</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#createInterface(org.apache.cxf.service.model.ServiceInfo)">createInterface</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#createMessageParts(org.apache.cxf.service.model.InterfaceInfo,%20org.apache.cxf.service.model.OperationInfo,%20java.lang.reflect.Method)">createMessageParts</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#createOutputMessageName(org.apache.cxf.service.model.OperationInfo,%20java.lang.reflect.Method)">createOutputMessageName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#createOutputWrappedMessageParts(org.apache.cxf.service.model.OperationInfo,%20java.lang.reflect.Method,%20org.apache.cxf.service.model.MessageInfo)">createOutputWrappedMessageParts</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#createServiceInfo(org.apache.cxf.service.model.InterfaceInfo)">createServiceInfo</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#createWrappedSchema(org.apache.cxf.service.model.ServiceInfo,%20org.apache.cxf.service.model.AbstractMessageContainer,%20org.apache.cxf.service.model.AbstractMessageContainer,%20javax.xml.namespace.QName)">createWrappedSchema</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getAction(org.apache.cxf.service.model.OperationInfo,%20java.lang.reflect.Method)">getAction</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getAnonymousWrapperTypes()">getAnonymousWrapperTypes</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getConfigurations()">getConfigurations</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getEndpointInfo()">getEndpointInfo</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getEndpointName()">getEndpointName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getEndpointName(boolean)">getEndpointName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getExecutor()">getExecutor</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getFaultName(org.apache.cxf.service.model.InterfaceInfo,%20org.apache.cxf.service.model.OperationInfo,%20java.lang.Class,%20java.lang.Class)">getFaultName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getFeatures()">getFeatures</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getHolderType(java.lang.Class,%20java.lang.reflect.Type)">getHolderType</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getIgnoredClasses()">getIgnoredClasses</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getIgnoredMethods()">getIgnoredMethods</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getInParameterName(org.apache.cxf.service.model.OperationInfo,%20java.lang.reflect.Method,%20int)">getInParameterName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getInPartName(org.apache.cxf.service.model.OperationInfo,%20java.lang.reflect.Method,%20int)">getInPartName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getInputMessageName(org.apache.cxf.service.model.OperationInfo,%20java.lang.reflect.Method)">getInputMessageName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getInterfaceInfo()">getInterfaceInfo</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getInterfaceName()">getInterfaceName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getInvoker()">getInvoker</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getMethodDispatcher()">getMethodDispatcher</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getOperationName(org.apache.cxf.service.model.InterfaceInfo,%20java.lang.reflect.Method)">getOperationName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getOutParameterName(org.apache.cxf.service.model.OperationInfo,%20java.lang.reflect.Method,%20int)">getOutParameterName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getOutPartName(org.apache.cxf.service.model.OperationInfo,%20java.lang.reflect.Method,%20int)">getOutPartName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getProperties()">getProperties</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getQualifyWrapperSchema()">getQualifyWrapperSchema</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getRequestWrapper(java.lang.reflect.Method)">getRequestWrapper</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getRequestWrapperClassName(java.lang.reflect.Method)">getRequestWrapperClassName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getResponseWrapper(java.lang.reflect.Method)">getResponseWrapper</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getResponseWrapperClassName(java.lang.reflect.Method)">getResponseWrapperClassName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getServiceClass()">getServiceClass</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getServiceConfigurations()">getServiceConfigurations</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getServiceName()">getServiceName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getServiceNamespace()">getServiceNamespace</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getServiceQName()">getServiceQName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getServiceQName(boolean)">getServiceQName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getStyle()">getStyle</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getWrapped()">getWrapped</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getWrapperPartMaxOccurs(org.apache.cxf.service.model.MessagePartInfo)">getWrapperPartMaxOccurs</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getWrapperPartMinOccurs(org.apache.cxf.service.model.MessagePartInfo)">getWrapperPartMinOccurs</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getWsdlURL()">getWsdlURL</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#hasOutMessage(java.lang.reflect.Method)">hasOutMessage</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#hasWrappedMethods(org.apache.cxf.service.model.InterfaceInfo)">hasWrappedMethods</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#initializeClassInfo(org.apache.cxf.service.model.OperationInfo,%20java.lang.reflect.Method,%20java.util.List)">initializeClassInfo</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#initializeDefaultInterceptors()">initializeDefaultInterceptors</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#initializeFaults(org.apache.cxf.service.model.InterfaceInfo,%20org.apache.cxf.service.model.OperationInfo,%20java.lang.reflect.Method)">initializeFaults</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#initializeServiceConfigurations()">initializeServiceConfigurations</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#initializeServiceModel()">initializeServiceModel</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#initializeWrappedSchema(org.apache.cxf.service.model.ServiceInfo)">initializeWrappedSchema</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#isAnonymousWrapperTypes()">isAnonymousWrapperTypes</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#isAsync(java.lang.reflect.Method)">isAsync</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#isFromWsdl()">isFromWsdl</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#isHeader(java.lang.reflect.Method,%20int)">isHeader</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#isHolder(java.lang.Class,%20java.lang.reflect.Type)">isHolder</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#isInParam(java.lang.reflect.Method,%20int)">isInParam</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#isMatchOperation(java.lang.String,%20java.lang.String)">isMatchOperation</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#isOutParam(java.lang.reflect.Method,%20int)">isOutParam</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#isPopulateFromClass()">isPopulateFromClass</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#isQualifyWrapperSchema()">isQualifyWrapperSchema</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#isRPC(java.lang.reflect.Method)">isRPC</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#isValidMethod(java.lang.reflect.Method)">isValidMethod</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#isWrapped()">isWrapped</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#isWrapped(java.lang.reflect.Method)">isWrapped</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#isWrapperPartNillable(org.apache.cxf.service.model.MessagePartInfo)">isWrapperPartNillable</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#isWrapperPartQualified(org.apache.cxf.service.model.MessagePartInfo)">isWrapperPartQualified</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#processTypes(java.lang.Class,%20java.lang.reflect.Type)">processTypes</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setAnonymousWrapperTypes(boolean)">setAnonymousWrapperTypes</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setConfigurations(java.util.List)">setConfigurations</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setEndpointName(javax.xml.namespace.QName)">setEndpointName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setExecutor(java.util.concurrent.Executor)">setExecutor</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setFeatures(java.util.List)">setFeatures</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setIgnoredClasses(java.util.List)">setIgnoredClasses</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setIgnoredMethods(java.util.List)">setIgnoredMethods</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setInvoker(org.apache.cxf.service.invoker.Invoker)">setInvoker</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setMethodDispatcher(org.apache.cxf.service.invoker.MethodDispatcher)">setMethodDispatcher</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setPopulateFromClass(boolean)">setPopulateFromClass</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setProperties(java.util.Map)">setProperties</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setQualifyWrapperSchema(boolean)">setQualifyWrapperSchema</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setSchemaLocations(java.util.List)">setSchemaLocations</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setServiceConfigurations(java.util.List)">setServiceConfigurations</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setServiceName(javax.xml.namespace.QName)">setServiceName</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setServiceProperties()">setServiceProperties</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setServiceType(java.lang.reflect.ParameterizedType)">setServiceType</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setValidate(boolean)">setValidate</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setWrapped(boolean)">setWrapped</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setWsdlURL(java.lang.String)">setWsdlURL</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setWsdlURL(java.net.URL)">setWsdlURL</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#updateBindingOperation(org.apache.cxf.service.model.BindingOperationInfo)">updateBindingOperation</a>, <a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#validateServiceModel()">validateServiceModel</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.cxf.service.factory.AbstractServiceFactoryBean">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.apache.cxf.service.factory.<a href="../../../../../org/apache/cxf/service/factory/AbstractServiceFactoryBean.html" title="class in org.apache.cxf.service.factory">AbstractServiceFactoryBean</a></h3>
+<code><a href="../../../../../org/apache/cxf/service/factory/AbstractServiceFactoryBean.html#getBus()">getBus</a>, <a href="../../../../../org/apache/cxf/service/factory/AbstractServiceFactoryBean.html#getDataBinding()">getDataBinding</a>, <a href="../../../../../org/apache/cxf/service/factory/AbstractServiceFactoryBean.html#getDataBinding(boolean)">getDataBinding</a>, <a href="../../../../../org/apache/cxf/service/factory/AbstractServiceFactoryBean.html#getService()">getService</a>, <a href="../../../../../org/apache/cxf/service/factory/AbstractServiceFactoryBean.html#getSessionState()">getSessionState</a>, <a href="../../../../../org/apache/cxf/service/factory/AbstractServiceFactoryBean.html#initializeDataBindings()">initializeDataBindings</a>, <a href="../../../../../org/apache/cxf/service/factory/AbstractServiceFactoryBean.html#sendEvent(org.apache.cxf.service.factory.FactoryBeanListener.Event,%20java.lang.Object...)">sendEvent</a>, <a href="../../../../../org/apache/cxf/service/factory/AbstractServiceFactoryBean.html#setBus(org.apache.cxf.Bus)">setBus</a>, <a href="../../../../../org/apache/cxf/service/factory/AbstractServiceFactoryBean.html#setDataBinding(org.apache.cxf.databinding.DataBinding)">setDataBinding</a>, <a href="../../../../../org/apache/cxf/service/factory/AbstractServiceFactoryBean.html#setService(org.apache.cxf.service.Service)">setService</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="WS_FEATURES">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>WS_FEATURES</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> WS_FEATURES</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../constant-values.html#org.apache.cxf.jaxws.support.JaxWsServiceFactoryBean.WS_FEATURES">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="JaxWsServiceFactoryBean()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>JaxWsServiceFactoryBean</h4>
+<pre>public&nbsp;JaxWsServiceFactoryBean()</pre>
+</li>
+</ul>
+<a name="JaxWsServiceFactoryBean(org.apache.cxf.jaxws.support.JaxWsImplementorInfo)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>JaxWsServiceFactoryBean</h4>
+<pre>public&nbsp;JaxWsServiceFactoryBean(<a href="../../../../../org/apache/cxf/jaxws/support/JaxWsImplementorInfo.html" title="class in org.apache.cxf.jaxws.support">JaxWsImplementorInfo</a>&nbsp;implInfo)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="reset()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reset</h4>
+<pre>public&nbsp;void&nbsp;reset()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#reset()">reset</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="create()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>create</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/cxf/service/Service.html" title="interface in org.apache.cxf.service">Service</a>&nbsp;create()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#create()">create</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setServiceClass(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setServiceClass</h4>
+<pre>public&nbsp;void&nbsp;setServiceClass(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;serviceClass)</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#setServiceClass(java.lang.Class)">setServiceClass</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkServiceClassAnnotations(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkServiceClassAnnotations</h4>
+<pre>protected&nbsp;void&nbsp;checkServiceClassAnnotations(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;sc)</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#checkServiceClassAnnotations(java.lang.Class)">checkServiceClassAnnotations</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="initializeFaultInterceptors()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>initializeFaultInterceptors</h4>
+<pre>protected&nbsp;void&nbsp;initializeFaultInterceptors()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#initializeFaultInterceptors()">initializeFaultInterceptors</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="createEndpoint(org.apache.cxf.service.model.EndpointInfo)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createEndpoint</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/cxf/endpoint/Endpoint.html" title="interface in org.apache.cxf.endpoint">Endpoint</a>&nbsp;createEndpoint(<a href="../../../../../org/apache/cxf/service/model/EndpointInfo.html" title="class in org.apache.cxf.service.model">EndpointInfo</a>&nbsp;ei)
+                        throws <a href="../../../../../org/apache/cxf/endpoint/EndpointException.html" title="class in org.apache.cxf.endpoint">EndpointException</a></pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#createEndpoint(org.apache.cxf.service.model.EndpointInfo)">createEndpoint</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../org/apache/cxf/endpoint/EndpointException.html" title="class in org.apache.cxf.endpoint">EndpointException</a></code></dd></dl>
+</li>
+</ul>
+<a name="initializeWSDLOperation(org.apache.cxf.service.model.InterfaceInfo, org.apache.cxf.service.model.OperationInfo, java.lang.reflect.Method)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>initializeWSDLOperation</h4>
+<pre>protected&nbsp;void&nbsp;initializeWSDLOperation(<a href="../../../../../org/apache/cxf/service/model/InterfaceInfo.html" title="class in org.apache.cxf.service.model">InterfaceInfo</a>&nbsp;intf,
+                           <a href="../../../../../org/apache/cxf/service/model/OperationInfo.html" title="class in org.apache.cxf.service.model">OperationInfo</a>&nbsp;o,
+                           <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Method.html?is-external=true" title="class or interface in java.lang.reflect">Method</a>&nbsp;method)</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#initializeWSDLOperation(org.apache.cxf.service.model.InterfaceInfo,%20org.apache.cxf.service.model.OperationInfo,%20java.lang.reflect.Method)">initializeWSDLOperation</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="bindOperation(org.apache.cxf.service.model.OperationInfo, java.lang.reflect.Method)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>bindOperation</h4>
+<pre>protected&nbsp;void&nbsp;bindOperation(<a href="../../../../../org/apache/cxf/service/model/OperationInfo.html" title="class in org.apache.cxf.service.model">OperationInfo</a>&nbsp;op,
+                 <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Method.html?is-external=true" title="class or interface in java.lang.reflect">Method</a>&nbsp;method)</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#bindOperation(org.apache.cxf.service.model.OperationInfo,%20java.lang.reflect.Method)">bindOperation</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="initializeWSDLOperations()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>initializeWSDLOperations</h4>
+<pre>protected&nbsp;void&nbsp;initializeWSDLOperations()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#initializeWSDLOperations()">initializeWSDLOperations</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="initializeWSDLOperationsForProvider()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>initializeWSDLOperationsForProvider</h4>
+<pre>protected&nbsp;void&nbsp;initializeWSDLOperationsForProvider()</pre>
+</li>
+</ul>
+<a name="getProviderParameterType(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProviderParameterType</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;getProviderParameterType(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;cls)</pre>
+</li>
+</ul>
+<a name="getBeanClass(java.lang.Class)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBeanClass</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;getBeanClass(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;exClass)</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getBeanClass(java.lang.Class)">getBeanClass</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setJaxWsConfiguration(org.apache.cxf.jaxws.support.JaxWsServiceConfiguration)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setJaxWsConfiguration</h4>
+<pre>public&nbsp;void&nbsp;setJaxWsConfiguration(<a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceConfiguration.html" title="class in org.apache.cxf.jaxws.support">JaxWsServiceConfiguration</a>&nbsp;jaxWsConfiguration)</pre>
+</li>
+</ul>
+<a name="getJaxWsImplementorInfo()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getJaxWsImplementorInfo</h4>
+<pre>public&nbsp;<a href="../../../../../org/apache/cxf/jaxws/support/JaxWsImplementorInfo.html" title="class in org.apache.cxf.jaxws.support">JaxWsImplementorInfo</a>&nbsp;getJaxWsImplementorInfo()</pre>
+</li>
+</ul>
+<a name="setJaxWsImplementorInfo(org.apache.cxf.jaxws.support.JaxWsImplementorInfo)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setJaxWsImplementorInfo</h4>
+<pre>public&nbsp;void&nbsp;setJaxWsImplementorInfo(<a href="../../../../../org/apache/cxf/jaxws/support/JaxWsImplementorInfo.html" title="class in org.apache.cxf.jaxws.support">JaxWsImplementorInfo</a>&nbsp;jaxWsImplementorInfo)</pre>
+</li>
+</ul>
+<a name="initConfiguration(org.apache.cxf.jaxws.support.JaxWsImplementorInfo)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>initConfiguration</h4>
+<pre>protected final&nbsp;void&nbsp;initConfiguration(<a href="../../../../../org/apache/cxf/jaxws/support/JaxWsImplementorInfo.html" title="class in org.apache.cxf.jaxws.support">JaxWsImplementorInfo</a>&nbsp;ii)</pre>
+</li>
+</ul>
+<a name="getWsFeatures()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWsFeatures</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/ws/WebServiceFeature.html?is-external=true" title="class or interface in javax.xml.ws">WebServiceFeature</a>&gt;&nbsp;getWsFeatures()</pre>
+</li>
+</ul>
+<a name="setWsFeatures(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setWsFeatures</h4>
+<pre>public&nbsp;void&nbsp;setWsFeatures(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/ws/WebServiceFeature.html?is-external=true" title="class or interface in javax.xml.ws">WebServiceFeature</a>&gt;&nbsp;swsFeatures)</pre>
+</li>
+</ul>
+<a name="createOperation(org.apache.cxf.service.model.ServiceInfo, org.apache.cxf.service.model.InterfaceInfo, java.lang.reflect.Method)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createOperation</h4>
+<pre>protected&nbsp;<a href="../../../../../org/apache/cxf/service/model/OperationInfo.html" title="class in org.apache.cxf.service.model">OperationInfo</a>&nbsp;createOperation(<a href="../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</a>&nbsp;serviceInfo,
+                            <a href="../../../../../org/apache/cxf/service/model/InterfaceInfo.html" title="class in org.apache.cxf.service.model">InterfaceInfo</a>&nbsp;intf,
+                            <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Method.html?is-external=true" title="class or interface in java.lang.reflect">Method</a>&nbsp;m)</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#createOperation(org.apache.cxf.service.model.ServiceInfo,%20org.apache.cxf.service.model.InterfaceInfo,%20java.lang.reflect.Method)">createOperation</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getExtraClass()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExtraClass</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&gt;&nbsp;getExtraClass()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#getExtraClass()">getExtraClass</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="buildServiceFromClass()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>buildServiceFromClass</h4>
+<pre>protected&nbsp;void&nbsp;buildServiceFromClass()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#buildServiceFromClass()">buildServiceFromClass</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="initializeParameter(org.apache.cxf.service.model.MessagePartInfo, java.lang.Class, java.lang.reflect.Type)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>initializeParameter</h4>
+<pre>protected&nbsp;void&nbsp;initializeParameter(<a href="../../../../../org/apache/cxf/service/model/MessagePartInfo.html" title="class in org.apache.cxf.service.model">MessagePartInfo</a>&nbsp;part,
+                       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Class.html?is-external=true" title="class or interface in java.lang">Class</a>&lt;?&gt;&nbsp;rawClass,
+                       <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</a>&nbsp;type)</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#initializeParameter(org.apache.cxf.service.model.MessagePartInfo,%20java.lang.Class,%20java.lang.reflect.Type)">initializeParameter</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="createInvoker()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>createInvoker</h4>
+<pre>protected&nbsp;<a href="../../../../../org/apache/cxf/service/invoker/Invoker.html" title="interface in org.apache.cxf.service.invoker">Invoker</a>&nbsp;createInvoker()</pre>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html#createInvoker()">createInvoker</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/wsdl/service/factory/ReflectionServiceFactoryBean.html" title="class in org.apache.cxf.wsdl.service.factory">ReflectionServiceFactoryBean</a></code></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/JaxWsServiceFactoryBean.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/cxf/jaxws/support/JaxWsServiceConfiguration.html" title="class in org.apache.cxf.jaxws.support"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/cxf/jaxws/support/ServiceDelegateAccessor.html" title="class in org.apache.cxf.jaxws.support"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/cxf/jaxws/support/JaxWsServiceFactoryBean.html" target="_top">Frames</a></li>
+<li><a href="JaxWsServiceFactoryBean.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Apache CXF</small></p>
+</body>
+</html>

@@ -1,0 +1,500 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>Uses of Class org.apache.cxf.configuration.spring.AbstractBeanDefinitionParser (Apache CXF JavaDoc 3.1.0 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Class org.apache.cxf.configuration.spring.AbstractBeanDefinitionParser (Apache CXF JavaDoc 3.1.0 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../../../../../../overview-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/apache/cxf/configuration/spring/class-use/AbstractBeanDefinitionParser.html" target="_top">Frames</a></li>
+<li><a href="AbstractBeanDefinitionParser.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<div class="header">
+<h2 title="Uses of Class org.apache.cxf.configuration.spring.AbstractBeanDefinitionParser" class="title">Uses of Class<br>org.apache.cxf.configuration.spring.AbstractBeanDefinitionParser</h2>
+</div>
+<div class="classUseContainer">
+<ul class="blockList">
+<li class="blockList">
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing packages, and an explanation">
+<caption><span>Packages that use <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Package</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.cxf.binding.soap.spring">org.apache.cxf.binding.soap.spring</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.cxf.bus.spring">org.apache.cxf.bus.spring</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.cxf.clustering.spring">org.apache.cxf.clustering.spring</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.cxf.configuration.spring">org.apache.cxf.configuration.spring</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.cxf.frontend.spring">org.apache.cxf.frontend.spring</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.cxf.jaxrs.client.spring">org.apache.cxf.jaxrs.client.spring</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.cxf.jaxrs.spring">org.apache.cxf.jaxrs.spring</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.cxf.jaxws.spring">org.apache.cxf.jaxws.spring</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.cxf.transport.http_jetty.spring">org.apache.cxf.transport.http_jetty.spring</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.cxf.transport.http.netty.server.spring">org.apache.cxf.transport.http.netty.server.spring</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.cxf.transport.http.spring">org.apache.cxf.transport.http.spring</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.cxf.ws.addressing.spring">org.apache.cxf.ws.addressing.spring</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="#org.apache.cxf.ws.policy.spring">org.apache.cxf.ws.policy.spring</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#org.apache.cxf.ws.rm.spring">org.apache.cxf.ws.rm.spring</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<ul class="blockList">
+<li class="blockList"><a name="org.apache.cxf.binding.soap.spring">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/binding/soap/spring/package-summary.html">org.apache.cxf.binding.soap.spring</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/binding/soap/spring/package-summary.html">org.apache.cxf.binding.soap.spring</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/binding/soap/spring/SoapBindingInfoConfigBeanDefinitionParser.html" title="class in org.apache.cxf.binding.soap.spring">SoapBindingInfoConfigBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.bus.spring">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/bus/spring/package-summary.html">org.apache.cxf.bus.spring</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/bus/spring/package-summary.html">org.apache.cxf.bus.spring</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/bus/spring/BusDefinitionParser.html" title="class in org.apache.cxf.bus.spring">BusDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.clustering.spring">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/clustering/spring/package-summary.html">org.apache.cxf.clustering.spring</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/clustering/spring/package-summary.html">org.apache.cxf.clustering.spring</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/clustering/spring/FailoverBeanDefinitionParser.html" title="class in org.apache.cxf.clustering.spring">FailoverBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/clustering/spring/LoadDistributorBeanDefinitionParser.html" title="class in org.apache.cxf.clustering.spring">LoadDistributorBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.configuration.spring">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/configuration/spring/package-summary.html">org.apache.cxf.configuration.spring</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/configuration/spring/package-summary.html">org.apache.cxf.configuration.spring</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/configuration/spring/AbstractFactoryBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractFactoryBeanDefinitionParser</a></strong></code>
+<div class="block">This class makes it easy to create two simultaneous beans - a factory bean and the bean
+ that the factory produces.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/configuration/spring/SimpleBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">SimpleBeanDefinitionParser</a></strong></code>
+<div class="block">This bean parser will map all the attributes to properties on the bean.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.frontend.spring">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/frontend/spring/package-summary.html">org.apache.cxf.frontend.spring</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/frontend/spring/package-summary.html">org.apache.cxf.frontend.spring</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/frontend/spring/ClientProxyFactoryBeanDefinitionParser.html" title="class in org.apache.cxf.frontend.spring">ClientProxyFactoryBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/frontend/spring/ServerFactoryBeanDefinitionParser.html" title="class in org.apache.cxf.frontend.spring">ServerFactoryBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.jaxrs.client.spring">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/jaxrs/client/spring/package-summary.html">org.apache.cxf.jaxrs.client.spring</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/jaxrs/client/spring/package-summary.html">org.apache.cxf.jaxrs.client.spring</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/client/spring/JAXRSClientFactoryBeanDefinitionParser.html" title="class in org.apache.cxf.jaxrs.client.spring">JAXRSClientFactoryBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.jaxrs.spring">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/jaxrs/spring/package-summary.html">org.apache.cxf.jaxrs.spring</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/jaxrs/spring/package-summary.html">org.apache.cxf.jaxrs.spring</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxrs/spring/JAXRSServerFactoryBeanDefinitionParser.html" title="class in org.apache.cxf.jaxrs.spring">JAXRSServerFactoryBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.jaxws.spring">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/jaxws/spring/package-summary.html">org.apache.cxf.jaxws.spring</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/jaxws/spring/package-summary.html">org.apache.cxf.jaxws.spring</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxws/spring/EndpointDefinitionParser.html" title="class in org.apache.cxf.jaxws.spring">EndpointDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/jaxws/spring/JaxWsProxyFactoryBeanDefinitionParser.html" title="class in org.apache.cxf.jaxws.spring">JaxWsProxyFactoryBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.transport.http_jetty.spring">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/transport/http_jetty/spring/package-summary.html">org.apache.cxf.transport.http_jetty.spring</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/transport/http_jetty/spring/package-summary.html">org.apache.cxf.transport.http_jetty.spring</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/transport/http_jetty/spring/JettyHTTPServerEngineBeanDefinitionParser.html" title="class in org.apache.cxf.transport.http_jetty.spring">JettyHTTPServerEngineBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/transport/http_jetty/spring/JettyHTTPServerEngineFactoryBeanDefinitionParser.html" title="class in org.apache.cxf.transport.http_jetty.spring">JettyHTTPServerEngineFactoryBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.transport.http.netty.server.spring">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/transport/http/netty/server/spring/package-summary.html">org.apache.cxf.transport.http.netty.server.spring</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/transport/http/netty/server/spring/package-summary.html">org.apache.cxf.transport.http.netty.server.spring</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/transport/http/netty/server/spring/NettyHttpServerEngineBeanDefinitionParser.html" title="class in org.apache.cxf.transport.http.netty.server.spring">NettyHttpServerEngineBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/transport/http/netty/server/spring/NettyHttpServerEngineFactoryBeanDefinitionParser.html" title="class in org.apache.cxf.transport.http.netty.server.spring">NettyHttpServerEngineFactoryBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.transport.http.spring">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/transport/http/spring/package-summary.html">org.apache.cxf.transport.http.spring</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/transport/http/spring/package-summary.html">org.apache.cxf.transport.http.spring</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/transport/http/spring/HttpAuthSupplierBeanDefinitionParser.html" title="class in org.apache.cxf.transport.http.spring">HttpAuthSupplierBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/transport/http/spring/HttpConduitBeanDefinitionParser.html" title="class in org.apache.cxf.transport.http.spring">HttpConduitBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/transport/http/spring/HttpDestinationBeanDefinitionParser.html" title="class in org.apache.cxf.transport.http.spring">HttpDestinationBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/transport/http/spring/MessageTrustDeciderBeanDefinitionParser.html" title="class in org.apache.cxf.transport.http.spring">MessageTrustDeciderBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.ws.addressing.spring">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/ws/addressing/spring/package-summary.html">org.apache.cxf.ws.addressing.spring</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/ws/addressing/spring/package-summary.html">org.apache.cxf.ws.addressing.spring</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/addressing/spring/AddressingBeanDefinitionParser.html" title="class in org.apache.cxf.ws.addressing.spring">AddressingBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.ws.policy.spring">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/ws/policy/spring/package-summary.html">org.apache.cxf.ws.policy.spring</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/ws/policy/spring/package-summary.html">org.apache.cxf.ws.policy.spring</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/policy/spring/ExternalAttachmentProviderBeanDefinitionParser.html" title="class in org.apache.cxf.ws.policy.spring">ExternalAttachmentProviderBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/policy/spring/PolicyEngineBeanDefinitionParser.html" title="class in org.apache.cxf.ws.policy.spring">PolicyEngineBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/policy/spring/PolicyFeatureBeanDefinitionParser.html" title="class in org.apache.cxf.ws.policy.spring">PolicyFeatureBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="org.apache.cxf.ws.rm.spring">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/ws/rm/spring/package-summary.html">org.apache.cxf.ws.rm.spring</a></h3>
+<table border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subclasses, and an explanation">
+<caption><span>Subclasses of <a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">AbstractBeanDefinitionParser</a> in <a href="../../../../../../org/apache/cxf/ws/rm/spring/package-summary.html">org.apache.cxf.ws.rm.spring</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/rm/spring/RMFeatureBeanDefinitionParser.html" title="class in org.apache.cxf.ws.rm.spring">RMFeatureBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/rm/spring/RMManagerBeanDefinitionParser.html" title="class in org.apache.cxf.ws.rm.spring">RMManagerBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/rm/spring/RMTxStoreBeanDefinitionParser.html" title="class in org.apache.cxf.ws.rm.spring">RMTxStoreBeanDefinitionParser</a></strong></code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="../package-summary.html">Package</a></li>
+<li><a href="../../../../../../org/apache/cxf/configuration/spring/AbstractBeanDefinitionParser.html" title="class in org.apache.cxf.configuration.spring">Class</a></li>
+<li class="navBarCell1Rev">Use</li>
+<li><a href="../../../../../../overview-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev</li>
+<li>Next</li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/apache/cxf/configuration/spring/class-use/AbstractBeanDefinitionParser.html" target="_top">Frames</a></li>
+<li><a href="AbstractBeanDefinitionParser.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Apache CXF</small></p>
+</body>
+</html>

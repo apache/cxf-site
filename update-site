@@ -1,4 +1,7 @@
-#!/bin/sh
-mvn -Pconfluence,nochecks -e package exec:java -Dsite.output=content $@
+#!/bin/bash
+export DIR=`pwd`
+DIR="${DIR}/content"
+echo "Outputting to $DIR"
+mvn -Pconfluence,nochecks -e package exec:java -Dsite.output="$DIR" $@
 [ $? -eq 0 ] || exit -1
 

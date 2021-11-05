@@ -1,0 +1,378 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+ParameterProcessor (Apache CXF Bundle Jar 2.6.3 API)
+</TITLE>
+
+<META NAME="keywords" CONTENT="org.apache.cxf.tools.wsdlto.frontend.jaxws.processor.internal.ParameterProcessor class">
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="ParameterProcessor (Apache CXF Bundle Jar 2.6.3 API)";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ParameterProcessor.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../../../org/apache/cxf/tools/wsdlto/frontend/jaxws/processor/internal/OperationProcessor.html" title="class in org.apache.cxf.tools.wsdlto.frontend.jaxws.processor.internal"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../../../org/apache/cxf/tools/wsdlto/frontend/jaxws/processor/internal/PortTypeProcessor.html" title="class in org.apache.cxf.tools.wsdlto.frontend.jaxws.processor.internal"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../../../index.html?org/apache/cxf/tools/wsdlto/frontend/jaxws/processor/internal/ParameterProcessor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ParameterProcessor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.tools.wsdlto.frontend.jaxws.processor.internal</FONT>
+<BR>
+Class ParameterProcessor</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../../../../org/apache/cxf/tools/wsdlto/frontend/jaxws/processor/internal/AbstractProcessor.html" title="class in org.apache.cxf.tools.wsdlto.frontend.jaxws.processor.internal">org.apache.cxf.tools.wsdlto.frontend.jaxws.processor.internal.AbstractProcessor</A>
+      <IMG SRC="../../../../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.tools.wsdlto.frontend.jaxws.processor.internal.ParameterProcessor</B>
+</PRE>
+<HR>
+<DL>
+<DT><PRE>public class <B>ParameterProcessor</B><DT>extends <A HREF="../../../../../../../../../org/apache/cxf/tools/wsdlto/frontend/jaxws/processor/internal/AbstractProcessor.html" title="class in org.apache.cxf.tools.wsdlto.frontend.jaxws.processor.internal">AbstractProcessor</A></DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../../org/apache/cxf/tools/wsdlto/frontend/jaxws/processor/internal/ParameterProcessor.html#HEADER">HEADER</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../../org/apache/cxf/tools/wsdlto/frontend/jaxws/processor/internal/ParameterProcessor.html#OUT_OF_BAND_HEADER">OUT_OF_BAND_HEADER</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.tools.wsdlto.frontend.jaxws.processor.internal.AbstractProcessor"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.tools.wsdlto.frontend.jaxws.processor.internal.<A HREF="../../../../../../../../../org/apache/cxf/tools/wsdlto/frontend/jaxws/processor/internal/AbstractProcessor.html" title="class in org.apache.cxf.tools.wsdlto.frontend.jaxws.processor.internal">AbstractProcessor</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../../../../org/apache/cxf/tools/wsdlto/frontend/jaxws/processor/internal/AbstractProcessor.html#context">context</A>, <A HREF="../../../../../../../../../org/apache/cxf/tools/wsdlto/frontend/jaxws/processor/internal/AbstractProcessor.html#LOG">LOG</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../../../org/apache/cxf/tools/wsdlto/frontend/jaxws/processor/internal/ParameterProcessor.html#ParameterProcessor(org.apache.cxf.tools.common.ToolContext)">ParameterProcessor</A></B>(<A HREF="../../../../../../../../../org/apache/cxf/tools/common/ToolContext.html" title="class in org.apache.cxf.tools.common">ToolContext</A>&nbsp;penv)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../../../org/apache/cxf/tools/common/model/JavaParameter.html" title="class in org.apache.cxf.tools.common.model">JavaParameter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../../org/apache/cxf/tools/wsdlto/frontend/jaxws/processor/internal/ParameterProcessor.html#addParameter(org.apache.cxf.service.model.MessagePartInfo, org.apache.cxf.tools.common.model.JavaMethod, org.apache.cxf.tools.common.model.JavaParameter)">addParameter</A></B>(<A HREF="../../../../../../../../../org/apache/cxf/service/model/MessagePartInfo.html" title="class in org.apache.cxf.service.model">MessagePartInfo</A>&nbsp;mpart,
+             <A HREF="../../../../../../../../../org/apache/cxf/tools/common/model/JavaMethod.html" title="class in org.apache.cxf.tools.common.model">JavaMethod</A>&nbsp;method,
+             <A HREF="../../../../../../../../../org/apache/cxf/tools/common/model/JavaParameter.html" title="class in org.apache.cxf.tools.common.model">JavaParameter</A>&nbsp;parameter)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../../../org/apache/cxf/tools/common/model/JavaParameter.html" title="class in org.apache.cxf.tools.common.model">JavaParameter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../../org/apache/cxf/tools/wsdlto/frontend/jaxws/processor/internal/ParameterProcessor.html#addParameterFromBinding(org.apache.cxf.tools.common.model.JavaMethod, org.apache.cxf.service.model.MessagePartInfo, org.apache.cxf.tools.common.model.JavaType.Style)">addParameterFromBinding</A></B>(<A HREF="../../../../../../../../../org/apache/cxf/tools/common/model/JavaMethod.html" title="class in org.apache.cxf.tools.common.model">JavaMethod</A>&nbsp;method,
+                        <A HREF="../../../../../../../../../org/apache/cxf/service/model/MessagePartInfo.html" title="class in org.apache.cxf.service.model">MessagePartInfo</A>&nbsp;part,
+                        <A HREF="../../../../../../../../../org/apache/cxf/tools/common/model/JavaType.Style.html" title="enum in org.apache.cxf.tools.common.model">JavaType.Style</A>&nbsp;style)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This method will be used by binding processor to change existing
+ generated java method of porttype</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../../../org/apache/cxf/tools/wsdlto/frontend/jaxws/processor/internal/ParameterProcessor.html#process(org.apache.cxf.tools.common.model.JavaMethod, org.apache.cxf.service.model.MessageInfo, org.apache.cxf.service.model.MessageInfo, java.util.List)">process</A></B>(<A HREF="../../../../../../../../../org/apache/cxf/tools/common/model/JavaMethod.html" title="class in org.apache.cxf.tools.common.model">JavaMethod</A>&nbsp;method,
+        <A HREF="../../../../../../../../../org/apache/cxf/service/model/MessageInfo.html" title="class in org.apache.cxf.service.model">MessageInfo</A>&nbsp;inputMessage,
+        <A HREF="../../../../../../../../../org/apache/cxf/service/model/MessageInfo.html" title="class in org.apache.cxf.service.model">MessageInfo</A>&nbsp;outputMessage,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;parameterOrder)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="HEADER"><!-- --></A><H3>
+HEADER</H3>
+<PRE>
+public static final <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A> <B>HEADER</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../../../../constant-values.html#org.apache.cxf.tools.wsdlto.frontend.jaxws.processor.internal.ParameterProcessor.HEADER">Constant Field Values</A></DL>
+</DL>
+<HR>
+
+<A NAME="OUT_OF_BAND_HEADER"><!-- --></A><H3>
+OUT_OF_BAND_HEADER</H3>
+<PRE>
+public static final <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A> <B>OUT_OF_BAND_HEADER</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../../../../../constant-values.html#org.apache.cxf.tools.wsdlto.frontend.jaxws.processor.internal.ParameterProcessor.OUT_OF_BAND_HEADER">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="ParameterProcessor(org.apache.cxf.tools.common.ToolContext)"><!-- --></A><H3>
+ParameterProcessor</H3>
+<PRE>
+public <B>ParameterProcessor</B>(<A HREF="../../../../../../../../../org/apache/cxf/tools/common/ToolContext.html" title="class in org.apache.cxf.tools.common">ToolContext</A>&nbsp;penv)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="process(org.apache.cxf.tools.common.model.JavaMethod, org.apache.cxf.service.model.MessageInfo, org.apache.cxf.service.model.MessageInfo, java.util.List)"><!-- --></A><H3>
+process</H3>
+<PRE>
+public void <B>process</B>(<A HREF="../../../../../../../../../org/apache/cxf/tools/common/model/JavaMethod.html" title="class in org.apache.cxf.tools.common.model">JavaMethod</A>&nbsp;method,
+                    <A HREF="../../../../../../../../../org/apache/cxf/service/model/MessageInfo.html" title="class in org.apache.cxf.service.model">MessageInfo</A>&nbsp;inputMessage,
+                    <A HREF="../../../../../../../../../org/apache/cxf/service/model/MessageInfo.html" title="class in org.apache.cxf.service.model">MessageInfo</A>&nbsp;outputMessage,
+                    <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;parameterOrder)
+             throws <A HREF="../../../../../../../../../org/apache/cxf/tools/common/ToolException.html" title="class in org.apache.cxf.tools.common">ToolException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../../../org/apache/cxf/tools/common/ToolException.html" title="class in org.apache.cxf.tools.common">ToolException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addParameterFromBinding(org.apache.cxf.tools.common.model.JavaMethod, org.apache.cxf.service.model.MessagePartInfo, org.apache.cxf.tools.common.model.JavaType.Style)"><!-- --></A><H3>
+addParameterFromBinding</H3>
+<PRE>
+public <A HREF="../../../../../../../../../org/apache/cxf/tools/common/model/JavaParameter.html" title="class in org.apache.cxf.tools.common.model">JavaParameter</A> <B>addParameterFromBinding</B>(<A HREF="../../../../../../../../../org/apache/cxf/tools/common/model/JavaMethod.html" title="class in org.apache.cxf.tools.common.model">JavaMethod</A>&nbsp;method,
+                                             <A HREF="../../../../../../../../../org/apache/cxf/service/model/MessagePartInfo.html" title="class in org.apache.cxf.service.model">MessagePartInfo</A>&nbsp;part,
+                                             <A HREF="../../../../../../../../../org/apache/cxf/tools/common/model/JavaType.Style.html" title="enum in org.apache.cxf.tools.common.model">JavaType.Style</A>&nbsp;style)
+                                      throws <A HREF="../../../../../../../../../org/apache/cxf/tools/common/ToolException.html" title="class in org.apache.cxf.tools.common">ToolException</A></PRE>
+<DL>
+<DD>This method will be used by binding processor to change existing
+ generated java method of porttype
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>method</CODE> - <DD><CODE>part</CODE> - <DD><CODE>style</CODE> - 
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../../../org/apache/cxf/tools/common/ToolException.html" title="class in org.apache.cxf.tools.common">ToolException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addParameter(org.apache.cxf.service.model.MessagePartInfo, org.apache.cxf.tools.common.model.JavaMethod, org.apache.cxf.tools.common.model.JavaParameter)"><!-- --></A><H3>
+addParameter</H3>
+<PRE>
+protected <A HREF="../../../../../../../../../org/apache/cxf/tools/common/model/JavaParameter.html" title="class in org.apache.cxf.tools.common.model">JavaParameter</A> <B>addParameter</B>(<A HREF="../../../../../../../../../org/apache/cxf/service/model/MessagePartInfo.html" title="class in org.apache.cxf.service.model">MessagePartInfo</A>&nbsp;mpart,
+                                     <A HREF="../../../../../../../../../org/apache/cxf/tools/common/model/JavaMethod.html" title="class in org.apache.cxf.tools.common.model">JavaMethod</A>&nbsp;method,
+                                     <A HREF="../../../../../../../../../org/apache/cxf/tools/common/model/JavaParameter.html" title="class in org.apache.cxf.tools.common.model">JavaParameter</A>&nbsp;parameter)
+                              throws <A HREF="../../../../../../../../../org/apache/cxf/tools/common/ToolException.html" title="class in org.apache.cxf.tools.common">ToolException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../../../../../../org/apache/cxf/tools/common/ToolException.html" title="class in org.apache.cxf.tools.common">ToolException</A></CODE></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/ParameterProcessor.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../../../../org/apache/cxf/tools/wsdlto/frontend/jaxws/processor/internal/OperationProcessor.html" title="class in org.apache.cxf.tools.wsdlto.frontend.jaxws.processor.internal"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../../../../org/apache/cxf/tools/wsdlto/frontend/jaxws/processor/internal/PortTypeProcessor.html" title="class in org.apache.cxf.tools.wsdlto.frontend.jaxws.processor.internal"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../../../index.html?org/apache/cxf/tools/wsdlto/frontend/jaxws/processor/internal/ParameterProcessor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="ParameterProcessor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

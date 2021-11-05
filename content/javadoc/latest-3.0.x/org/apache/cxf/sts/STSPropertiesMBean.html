@@ -1,0 +1,806 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+STSPropertiesMBean (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="STSPropertiesMBean (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/STSPropertiesMBean.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../org/apache/cxf/sts/STSConstants.html" title="class in org.apache.cxf.sts"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?org/apache/cxf/sts/STSPropertiesMBean.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="STSPropertiesMBean.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.sts</FONT>
+<BR>
+Interface STSPropertiesMBean</H2>
+<DL>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../org/apache/cxf/sts/StaticSTSProperties.html" title="class in org.apache.cxf.sts">StaticSTSProperties</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public interface <B>STSPropertiesMBean</B></DL>
+</PRE>
+
+<P>
+This MBean represents the properties associated with the STS. It contains a single operation
+ "configureProperties()" which allows subclasses to perform any custom loading/processing of the 
+ properties.
+<P>
+
+<P>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#configureProperties()">configureProperties</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Load/process the CallbackHandler, Crypto objects, etc.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/CallbackHandler.html?is-external=true" title="class or interface in javax.security.auth.callback">CallbackHandler</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#getCallbackHandler()">getCallbackHandler</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the CallbackHandler object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;org.apache.wss4j.common.crypto.Crypto</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#getEncryptionCrypto()">getEncryptionCrypto</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the encryption Crypto object</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../org/apache/cxf/sts/service/EncryptionProperties.html" title="class in org.apache.cxf.sts.service">EncryptionProperties</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#getEncryptionProperties()">getEncryptionProperties</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the EncryptionProperties to use.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#getEncryptionUsername()">getEncryptionUsername</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the username/alias to use to encrypt any issued tokens.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../org/apache/cxf/sts/IdentityMapper.html" title="interface in org.apache.cxf.sts">IdentityMapper</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#getIdentityMapper()">getIdentityMapper</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the IdentityMapper object to use.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#getIssuer()">getIssuer</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the STS issuer name</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../org/apache/cxf/sts/RealmParser.html" title="interface in org.apache.cxf.sts">RealmParser</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#getRealmParser()">getRealmParser</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the RealmParser object to use.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../org/apache/cxf/sts/token/realm/RelationshipResolver.html" title="class in org.apache.cxf.sts.token.realm">RelationshipResolver</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#getRelationshipResolver()">getRelationshipResolver</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the RelationshipResolver objects to use.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../org/apache/cxf/sts/token/realm/Relationship.html" title="class in org.apache.cxf.sts.token.realm">Relationship</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#getRelationships()">getRelationships</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the list of Relationship objects to use.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../org/apache/cxf/sts/token/realm/SAMLRealmCodec.html" title="interface in org.apache.cxf.sts.token.realm">SAMLRealmCodec</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#getSamlRealmCodec()">getSamlRealmCodec</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the SAML Realm Codec object to use.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;org.apache.wss4j.common.crypto.Crypto</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#getSignatureCrypto()">getSignatureCrypto</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the signature Crypto object</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../org/apache/cxf/sts/SignatureProperties.html" title="class in org.apache.cxf.sts">SignatureProperties</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#getSignatureProperties()">getSignatureProperties</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the SignatureProperties to use.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#getSignatureUsername()">getSignatureUsername</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get the username/alias to use to sign any issued tokens</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#isValidateUseKey()">isValidateUseKey</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Get whether to validate a client Public Key or Certificate presented as part of a 
+ UseKey element.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#setCallbackHandler(javax.security.auth.callback.CallbackHandler)">setCallbackHandler</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/CallbackHandler.html?is-external=true" title="class or interface in javax.security.auth.callback">CallbackHandler</A>&nbsp;callbackHandler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the CallbackHandler object.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#setEncryptionCrypto(org.apache.wss4j.common.crypto.Crypto)">setEncryptionCrypto</A></B>(org.apache.wss4j.common.crypto.Crypto&nbsp;encryptionCrypto)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the encryption Crypto object</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#setEncryptionProperties(org.apache.cxf.sts.service.EncryptionProperties)">setEncryptionProperties</A></B>(<A HREF="../../../../org/apache/cxf/sts/service/EncryptionProperties.html" title="class in org.apache.cxf.sts.service">EncryptionProperties</A>&nbsp;encryptionProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the EncryptionProperties to use.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#setEncryptionUsername(java.lang.String)">setEncryptionUsername</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encryptionUsername)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the username/alias to use to encrypt any issued tokens.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#setIdentityMapper(org.apache.cxf.sts.IdentityMapper)">setIdentityMapper</A></B>(<A HREF="../../../../org/apache/cxf/sts/IdentityMapper.html" title="interface in org.apache.cxf.sts">IdentityMapper</A>&nbsp;identityMapper)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the IdentityMapper object to use.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#setIssuer(java.lang.String)">setIssuer</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;issuer)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the STS issuer name</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#setRealmParser(org.apache.cxf.sts.RealmParser)">setRealmParser</A></B>(<A HREF="../../../../org/apache/cxf/sts/RealmParser.html" title="interface in org.apache.cxf.sts">RealmParser</A>&nbsp;realmParser)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the RealmParser object to use.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#setRelationships(java.util.List)">setRelationships</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../org/apache/cxf/sts/token/realm/Relationship.html" title="class in org.apache.cxf.sts.token.realm">Relationship</A>&gt;&nbsp;relationships)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the list of Relationship objects to use.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#setSamlRealmCodec(org.apache.cxf.sts.token.realm.SAMLRealmCodec)">setSamlRealmCodec</A></B>(<A HREF="../../../../org/apache/cxf/sts/token/realm/SAMLRealmCodec.html" title="interface in org.apache.cxf.sts.token.realm">SAMLRealmCodec</A>&nbsp;samlRealmCodec)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the SAML Realm Codec object to use.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#setSignatureCrypto(org.apache.wss4j.common.crypto.Crypto)">setSignatureCrypto</A></B>(org.apache.wss4j.common.crypto.Crypto&nbsp;signatureCrypto)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the signature Crypto object</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#setSignatureProperties(org.apache.cxf.sts.SignatureProperties)">setSignatureProperties</A></B>(<A HREF="../../../../org/apache/cxf/sts/SignatureProperties.html" title="class in org.apache.cxf.sts">SignatureProperties</A>&nbsp;signatureProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the SignatureProperties to use.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#setSignatureUsername(java.lang.String)">setSignatureUsername</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;signatureUsername)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the username/alias to use to sign any issued tokens</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/sts/STSPropertiesMBean.html#setValidateUseKey(boolean)">setValidateUseKey</A></B>(boolean&nbsp;validateUseKey)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set whether to validate a client Public Key or Certificate presented as part of a 
+ UseKey element.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="configureProperties()"><!-- --></A><H3>
+configureProperties</H3>
+<PRE>
+void <B>configureProperties</B>()
+                         throws <A HREF="../../../../org/apache/cxf/ws/security/sts/provider/STSException.html" title="class in org.apache.cxf.ws.security.sts.provider">STSException</A></PRE>
+<DL>
+<DD>Load/process the CallbackHandler, Crypto objects, etc.
+<P>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="../../../../org/apache/cxf/ws/security/sts/provider/STSException.html" title="class in org.apache.cxf.ws.security.sts.provider">STSException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setCallbackHandler(javax.security.auth.callback.CallbackHandler)"><!-- --></A><H3>
+setCallbackHandler</H3>
+<PRE>
+void <B>setCallbackHandler</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/CallbackHandler.html?is-external=true" title="class or interface in javax.security.auth.callback">CallbackHandler</A>&nbsp;callbackHandler)</PRE>
+<DL>
+<DD>Set the CallbackHandler object.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>callbackHandler</CODE> - the CallbackHandler object.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCallbackHandler()"><!-- --></A><H3>
+getCallbackHandler</H3>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/security/auth/callback/CallbackHandler.html?is-external=true" title="class or interface in javax.security.auth.callback">CallbackHandler</A> <B>getCallbackHandler</B>()</PRE>
+<DL>
+<DD>Get the CallbackHandler object.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the CallbackHandler object.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSignatureCrypto(org.apache.wss4j.common.crypto.Crypto)"><!-- --></A><H3>
+setSignatureCrypto</H3>
+<PRE>
+void <B>setSignatureCrypto</B>(org.apache.wss4j.common.crypto.Crypto&nbsp;signatureCrypto)</PRE>
+<DL>
+<DD>Set the signature Crypto object
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>signatureCrypto</CODE> - the signature Crypto object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSignatureCrypto()"><!-- --></A><H3>
+getSignatureCrypto</H3>
+<PRE>
+org.apache.wss4j.common.crypto.Crypto <B>getSignatureCrypto</B>()</PRE>
+<DL>
+<DD>Get the signature Crypto object
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the signature Crypto object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSignatureUsername(java.lang.String)"><!-- --></A><H3>
+setSignatureUsername</H3>
+<PRE>
+void <B>setSignatureUsername</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;signatureUsername)</PRE>
+<DL>
+<DD>Set the username/alias to use to sign any issued tokens
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>signatureUsername</CODE> - the username/alias to use to sign any issued tokens</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSignatureUsername()"><!-- --></A><H3>
+getSignatureUsername</H3>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getSignatureUsername</B>()</PRE>
+<DL>
+<DD>Get the username/alias to use to sign any issued tokens
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the username/alias to use to sign any issued tokens</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEncryptionCrypto(org.apache.wss4j.common.crypto.Crypto)"><!-- --></A><H3>
+setEncryptionCrypto</H3>
+<PRE>
+void <B>setEncryptionCrypto</B>(org.apache.wss4j.common.crypto.Crypto&nbsp;encryptionCrypto)</PRE>
+<DL>
+<DD>Set the encryption Crypto object
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>encryptionCrypto</CODE> - the encryption Crypto object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEncryptionCrypto()"><!-- --></A><H3>
+getEncryptionCrypto</H3>
+<PRE>
+org.apache.wss4j.common.crypto.Crypto <B>getEncryptionCrypto</B>()</PRE>
+<DL>
+<DD>Get the encryption Crypto object
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the encryption Crypto object</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEncryptionUsername(java.lang.String)"><!-- --></A><H3>
+setEncryptionUsername</H3>
+<PRE>
+void <B>setEncryptionUsername</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;encryptionUsername)</PRE>
+<DL>
+<DD>Set the username/alias to use to encrypt any issued tokens. This is a default value - it
+ can be configured per Service in the ServiceMBean.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>encryptionUsername</CODE> - the username/alias to use to encrypt any issued tokens</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEncryptionUsername()"><!-- --></A><H3>
+getEncryptionUsername</H3>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getEncryptionUsername</B>()</PRE>
+<DL>
+<DD>Get the username/alias to use to encrypt any issued tokens. This is a default value - it
+ can be configured per Service in the ServiceMBean
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the username/alias to use to encrypt any issued tokens</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEncryptionProperties(org.apache.cxf.sts.service.EncryptionProperties)"><!-- --></A><H3>
+setEncryptionProperties</H3>
+<PRE>
+void <B>setEncryptionProperties</B>(<A HREF="../../../../org/apache/cxf/sts/service/EncryptionProperties.html" title="class in org.apache.cxf.sts.service">EncryptionProperties</A>&nbsp;encryptionProperties)</PRE>
+<DL>
+<DD>Set the EncryptionProperties to use.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>encryptionProperties</CODE> - the EncryptionProperties to use.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getEncryptionProperties()"><!-- --></A><H3>
+getEncryptionProperties</H3>
+<PRE>
+<A HREF="../../../../org/apache/cxf/sts/service/EncryptionProperties.html" title="class in org.apache.cxf.sts.service">EncryptionProperties</A> <B>getEncryptionProperties</B>()</PRE>
+<DL>
+<DD>Get the EncryptionProperties to use.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the EncryptionProperties to use.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setIssuer(java.lang.String)"><!-- --></A><H3>
+setIssuer</H3>
+<PRE>
+void <B>setIssuer</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;issuer)</PRE>
+<DL>
+<DD>Set the STS issuer name
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>issuer</CODE> - the STS issuer name</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getIssuer()"><!-- --></A><H3>
+getIssuer</H3>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getIssuer</B>()</PRE>
+<DL>
+<DD>Get the STS issuer name
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the STS issuer name</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSignatureProperties(org.apache.cxf.sts.SignatureProperties)"><!-- --></A><H3>
+setSignatureProperties</H3>
+<PRE>
+void <B>setSignatureProperties</B>(<A HREF="../../../../org/apache/cxf/sts/SignatureProperties.html" title="class in org.apache.cxf.sts">SignatureProperties</A>&nbsp;signatureProperties)</PRE>
+<DL>
+<DD>Set the SignatureProperties to use.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>signatureProperties</CODE> - the SignatureProperties to use.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSignatureProperties()"><!-- --></A><H3>
+getSignatureProperties</H3>
+<PRE>
+<A HREF="../../../../org/apache/cxf/sts/SignatureProperties.html" title="class in org.apache.cxf.sts">SignatureProperties</A> <B>getSignatureProperties</B>()</PRE>
+<DL>
+<DD>Get the SignatureProperties to use.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the SignatureProperties to use.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setRealmParser(org.apache.cxf.sts.RealmParser)"><!-- --></A><H3>
+setRealmParser</H3>
+<PRE>
+void <B>setRealmParser</B>(<A HREF="../../../../org/apache/cxf/sts/RealmParser.html" title="interface in org.apache.cxf.sts">RealmParser</A>&nbsp;realmParser)</PRE>
+<DL>
+<DD>Set the RealmParser object to use.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>realmParser</CODE> - the RealmParser object to use.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRealmParser()"><!-- --></A><H3>
+getRealmParser</H3>
+<PRE>
+<A HREF="../../../../org/apache/cxf/sts/RealmParser.html" title="interface in org.apache.cxf.sts">RealmParser</A> <B>getRealmParser</B>()</PRE>
+<DL>
+<DD>Get the RealmParser object to use.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the RealmParser object to use.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setIdentityMapper(org.apache.cxf.sts.IdentityMapper)"><!-- --></A><H3>
+setIdentityMapper</H3>
+<PRE>
+void <B>setIdentityMapper</B>(<A HREF="../../../../org/apache/cxf/sts/IdentityMapper.html" title="interface in org.apache.cxf.sts">IdentityMapper</A>&nbsp;identityMapper)</PRE>
+<DL>
+<DD>Set the IdentityMapper object to use.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>identityMapper</CODE> - the IdentityMapper object to use.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getIdentityMapper()"><!-- --></A><H3>
+getIdentityMapper</H3>
+<PRE>
+<A HREF="../../../../org/apache/cxf/sts/IdentityMapper.html" title="interface in org.apache.cxf.sts">IdentityMapper</A> <B>getIdentityMapper</B>()</PRE>
+<DL>
+<DD>Get the IdentityMapper object to use.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the IdentityMapper object to use.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setRelationships(java.util.List)"><!-- --></A><H3>
+setRelationships</H3>
+<PRE>
+void <B>setRelationships</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../org/apache/cxf/sts/token/realm/Relationship.html" title="class in org.apache.cxf.sts.token.realm">Relationship</A>&gt;&nbsp;relationships)</PRE>
+<DL>
+<DD>Set the list of Relationship objects to use.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>relationships</CODE> - the List<Relationship> object to use.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRelationships()"><!-- --></A><H3>
+getRelationships</H3>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../org/apache/cxf/sts/token/realm/Relationship.html" title="class in org.apache.cxf.sts.token.realm">Relationship</A>&gt; <B>getRelationships</B>()</PRE>
+<DL>
+<DD>Get the list of Relationship objects to use.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the List<Relationship> object to use.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getRelationshipResolver()"><!-- --></A><H3>
+getRelationshipResolver</H3>
+<PRE>
+<A HREF="../../../../org/apache/cxf/sts/token/realm/RelationshipResolver.html" title="class in org.apache.cxf.sts.token.realm">RelationshipResolver</A> <B>getRelationshipResolver</B>()</PRE>
+<DL>
+<DD>Get the RelationshipResolver objects to use.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the RelationshipResolver object to use.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getSamlRealmCodec()"><!-- --></A><H3>
+getSamlRealmCodec</H3>
+<PRE>
+<A HREF="../../../../org/apache/cxf/sts/token/realm/SAMLRealmCodec.html" title="interface in org.apache.cxf.sts.token.realm">SAMLRealmCodec</A> <B>getSamlRealmCodec</B>()</PRE>
+<DL>
+<DD>Get the SAML Realm Codec object to use.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the SAMLRealmCodec object to use.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSamlRealmCodec(org.apache.cxf.sts.token.realm.SAMLRealmCodec)"><!-- --></A><H3>
+setSamlRealmCodec</H3>
+<PRE>
+void <B>setSamlRealmCodec</B>(<A HREF="../../../../org/apache/cxf/sts/token/realm/SAMLRealmCodec.html" title="interface in org.apache.cxf.sts.token.realm">SAMLRealmCodec</A>&nbsp;samlRealmCodec)</PRE>
+<DL>
+<DD>Set the SAML Realm Codec object to use.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>samlRealmCodec</CODE> - the SAMLRealmCodec object to use.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isValidateUseKey()"><!-- --></A><H3>
+isValidateUseKey</H3>
+<PRE>
+boolean <B>isValidateUseKey</B>()</PRE>
+<DL>
+<DD>Get whether to validate a client Public Key or Certificate presented as part of a 
+ UseKey element. This is true by default.
+<P>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setValidateUseKey(boolean)"><!-- --></A><H3>
+setValidateUseKey</H3>
+<PRE>
+void <B>setValidateUseKey</B>(boolean&nbsp;validateUseKey)</PRE>
+<DL>
+<DD>Set whether to validate a client Public Key or Certificate presented as part of a 
+ UseKey element. If this is set to true (the default), the public key must be trusted
+ by the Signature Crypto of the STS.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>validateUseKey</CODE> - whether to validate a client UseKey or not.</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/STSPropertiesMBean.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../org/apache/cxf/sts/STSConstants.html" title="class in org.apache.cxf.sts"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;NEXT CLASS</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?org/apache/cxf/sts/STSPropertiesMBean.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="STSPropertiesMBean.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

@@ -1,0 +1,629 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>NettyHttpServerEngine (Apache CXF JavaDoc 3.1.0 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="NettyHttpServerEngine (Apache CXF JavaDoc 3.1.0 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/NettyHttpServerEngine.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpHandler.html" title="class in org.apache.cxf.transport.http.netty.server"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngineFactory.html" title="class in org.apache.cxf.transport.http.netty.server"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html" target="_top">Frames</a></li>
+<li><a href="NettyHttpServerEngine.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.cxf.transport.http.netty.server</div>
+<h2 title="Class NettyHttpServerEngine" class="title">Class NettyHttpServerEngine</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.cxf.transport.http.netty.server.NettyHttpServerEngine</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/ServerEngine.html" title="interface in org.apache.cxf.transport.http.netty.server">ServerEngine</a></dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/spring/NettyHttpServerEngineBeanDefinitionParser.SpringNettyHttpServerEngine.html" title="class in org.apache.cxf.transport.http.netty.server.spring">NettyHttpServerEngineBeanDefinitionParser.SpringNettyHttpServerEngine</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public class <span class="strong">NettyHttpServerEngine</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../../../org/apache/cxf/transport/http/netty/server/ServerEngine.html" title="interface in org.apache.cxf.transport.http.netty.server">ServerEngine</a></pre>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#NettyHttpServerEngine()">NettyHttpServerEngine</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#NettyHttpServerEngine(java.lang.String,%20int)">NettyHttpServerEngine</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;host,
+                     int&nbsp;port)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#addServant(java.net.URL,%20org.apache.cxf.transport.http.netty.server.NettyHttpHandler)">addServant</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</a>&nbsp;url,
+          <a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpHandler.html" title="class in org.apache.cxf.transport.http.netty.server">NettyHttpHandler</a>&nbsp;handler)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#checkRegistedContext(java.net.URL)">checkRegistedContext</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</a>&nbsp;url)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#finalizeConfig()">finalizeConfig</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#getHost()">getHost</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#getMaxChunkContentSize()">getMaxChunkContentSize</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#getPort()">getPort</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#getProtocol()">getProtocol</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#getReadIdleTime()">getReadIdleTime</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpHandler.html" title="class in org.apache.cxf.transport.http.netty.server">NettyHttpHandler</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#getServant(java.net.URL)">getServant</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</a>&nbsp;url)</code>
+<div class="block">Get a previously  registered servant.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/ThreadingParameters.html" title="class in org.apache.cxf.transport.http.netty.server">ThreadingParameters</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#getThreadingParameters()">getThreadingParameters</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../../../org/apache/cxf/configuration/jsse/TLSServerParameters.html" title="class in org.apache.cxf.configuration.jsse">TLSServerParameters</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#getTlsServerParameters()">getTlsServerParameters</a></strong>()</code>
+<div class="block">This method returns the programmatically set TLSServerParameters, not
+ the TLSServerParametersType, which is the JAXB generated type used 
+ in SpringConfiguration.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#getWriteIdleTime()">getWriteIdleTime</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#isSessionSupport()">isSessionSupport</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#removeServant(java.net.URL)">removeServant</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</a>&nbsp;url)</code>
+<div class="block">Remove a previously registered servant.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#setHost(java.lang.String)">setHost</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;host)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#setMaxChunkContentSize(int)">setMaxChunkContentSize</a></strong>(int&nbsp;maxChunkContentSize)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#setPort(int)">setPort</a></strong>(int&nbsp;port)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#setProtocol(java.lang.String)">setProtocol</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;protocol)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#setReadIdleTime(int)">setReadIdleTime</a></strong>(int&nbsp;readIdleTime)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#setSessionSupport(boolean)">setSessionSupport</a></strong>(boolean&nbsp;session)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#setThreadingParameters(org.apache.cxf.transport.http.netty.server.ThreadingParameters)">setThreadingParameters</a></strong>(<a href="../../../../../../../org/apache/cxf/transport/http/netty/server/ThreadingParameters.html" title="class in org.apache.cxf.transport.http.netty.server">ThreadingParameters</a>&nbsp;params)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#setTlsServerParameters(org.apache.cxf.configuration.jsse.TLSServerParameters)">setTlsServerParameters</a></strong>(<a href="../../../../../../../org/apache/cxf/configuration/jsse/TLSServerParameters.html" title="class in org.apache.cxf.configuration.jsse">TLSServerParameters</a>&nbsp;params)</code>
+<div class="block">This method is used to programmatically set the TLSServerParameters.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#setWriteIdleTime(int)">setWriteIdleTime</a></strong>(int&nbsp;writeIdleTime)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#shutdown()">shutdown</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected io.netty.channel.Channel</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html#startServer()">startServer</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="NettyHttpServerEngine()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>NettyHttpServerEngine</h4>
+<pre>public&nbsp;NettyHttpServerEngine()</pre>
+</li>
+</ul>
+<a name="NettyHttpServerEngine(java.lang.String, int)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>NettyHttpServerEngine</h4>
+<pre>public&nbsp;NettyHttpServerEngine(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;host,
+                     int&nbsp;port)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getProtocol()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProtocol</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getProtocol()</pre>
+</li>
+</ul>
+<a name="setProtocol(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setProtocol</h4>
+<pre>public&nbsp;void&nbsp;setProtocol(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;protocol)</pre>
+</li>
+</ul>
+<a name="finalizeConfig()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>finalizeConfig</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/PostConstruct.html?is-external=true" title="class or interface in javax.annotation">@PostConstruct</a>
+public&nbsp;void&nbsp;finalizeConfig()</pre>
+</li>
+</ul>
+<a name="setTlsServerParameters(org.apache.cxf.configuration.jsse.TLSServerParameters)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setTlsServerParameters</h4>
+<pre>public&nbsp;void&nbsp;setTlsServerParameters(<a href="../../../../../../../org/apache/cxf/configuration/jsse/TLSServerParameters.html" title="class in org.apache.cxf.configuration.jsse">TLSServerParameters</a>&nbsp;params)</pre>
+<div class="block">This method is used to programmatically set the TLSServerParameters.
+ This method may only be called by the factory.</div>
+</li>
+</ul>
+<a name="getTlsServerParameters()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTlsServerParameters</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/configuration/jsse/TLSServerParameters.html" title="class in org.apache.cxf.configuration.jsse">TLSServerParameters</a>&nbsp;getTlsServerParameters()</pre>
+<div class="block">This method returns the programmatically set TLSServerParameters, not
+ the TLSServerParametersType, which is the JAXB generated type used 
+ in SpringConfiguration.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="setThreadingParameters(org.apache.cxf.transport.http.netty.server.ThreadingParameters)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setThreadingParameters</h4>
+<pre>public&nbsp;void&nbsp;setThreadingParameters(<a href="../../../../../../../org/apache/cxf/transport/http/netty/server/ThreadingParameters.html" title="class in org.apache.cxf.transport.http.netty.server">ThreadingParameters</a>&nbsp;params)</pre>
+</li>
+</ul>
+<a name="getThreadingParameters()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getThreadingParameters</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/transport/http/netty/server/ThreadingParameters.html" title="class in org.apache.cxf.transport.http.netty.server">ThreadingParameters</a>&nbsp;getThreadingParameters()</pre>
+</li>
+</ul>
+<a name="startServer()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>startServer</h4>
+<pre>protected&nbsp;io.netty.channel.Channel&nbsp;startServer()</pre>
+</li>
+</ul>
+<a name="checkRegistedContext(java.net.URL)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkRegistedContext</h4>
+<pre>protected&nbsp;void&nbsp;checkRegistedContext(<a href="http://docs.oracle.com/javase/7/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</a>&nbsp;url)</pre>
+</li>
+</ul>
+<a name="addServant(java.net.URL, org.apache.cxf.transport.http.netty.server.NettyHttpHandler)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addServant</h4>
+<pre>public&nbsp;void&nbsp;addServant(<a href="http://docs.oracle.com/javase/7/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</a>&nbsp;url,
+              <a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpHandler.html" title="class in org.apache.cxf.transport.http.netty.server">NettyHttpHandler</a>&nbsp;handler)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/ServerEngine.html#addServant(java.net.URL,%20org.apache.cxf.transport.http.netty.server.NettyHttpHandler)">addServant</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/ServerEngine.html" title="interface in org.apache.cxf.transport.http.netty.server">ServerEngine</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="removeServant(java.net.URL)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeServant</h4>
+<pre>public&nbsp;void&nbsp;removeServant(<a href="http://docs.oracle.com/javase/7/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</a>&nbsp;url)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/ServerEngine.html#removeServant(java.net.URL)">ServerEngine</a></code></strong></div>
+<div class="block">Remove a previously registered servant.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/ServerEngine.html#removeServant(java.net.URL)">removeServant</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/ServerEngine.html" title="interface in org.apache.cxf.transport.http.netty.server">ServerEngine</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>url</code> - the URL the servant was registered against.</dd></dl>
+</li>
+</ul>
+<a name="getServant(java.net.URL)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getServant</h4>
+<pre>public&nbsp;<a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpHandler.html" title="class in org.apache.cxf.transport.http.netty.server">NettyHttpHandler</a>&nbsp;getServant(<a href="http://docs.oracle.com/javase/7/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</a>&nbsp;url)</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/ServerEngine.html#getServant(java.net.URL)">ServerEngine</a></code></strong></div>
+<div class="block">Get a previously  registered servant.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/ServerEngine.html#getServant(java.net.URL)">getServant</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/ServerEngine.html" title="interface in org.apache.cxf.transport.http.netty.server">ServerEngine</a></code></dd>
+<dt><span class="strong">Parameters:</span></dt><dd><code>url</code> - the associated URL</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the HttpHandler if registered</dd></dl>
+</li>
+</ul>
+<a name="shutdown()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>shutdown</h4>
+<pre>public&nbsp;void&nbsp;shutdown()</pre>
+</li>
+</ul>
+<a name="getReadIdleTime()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getReadIdleTime</h4>
+<pre>public&nbsp;int&nbsp;getReadIdleTime()</pre>
+</li>
+</ul>
+<a name="setReadIdleTime(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setReadIdleTime</h4>
+<pre>public&nbsp;void&nbsp;setReadIdleTime(int&nbsp;readIdleTime)</pre>
+</li>
+</ul>
+<a name="getWriteIdleTime()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWriteIdleTime</h4>
+<pre>public&nbsp;int&nbsp;getWriteIdleTime()</pre>
+</li>
+</ul>
+<a name="setWriteIdleTime(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setWriteIdleTime</h4>
+<pre>public&nbsp;void&nbsp;setWriteIdleTime(int&nbsp;writeIdleTime)</pre>
+</li>
+</ul>
+<a name="isSessionSupport()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isSessionSupport</h4>
+<pre>public&nbsp;boolean&nbsp;isSessionSupport()</pre>
+</li>
+</ul>
+<a name="setSessionSupport(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSessionSupport</h4>
+<pre>public&nbsp;void&nbsp;setSessionSupport(boolean&nbsp;session)</pre>
+</li>
+</ul>
+<a name="getMaxChunkContentSize()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMaxChunkContentSize</h4>
+<pre>public&nbsp;int&nbsp;getMaxChunkContentSize()</pre>
+</li>
+</ul>
+<a name="setMaxChunkContentSize(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMaxChunkContentSize</h4>
+<pre>public&nbsp;void&nbsp;setMaxChunkContentSize(int&nbsp;maxChunkContentSize)</pre>
+</li>
+</ul>
+<a name="getPort()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPort</h4>
+<pre>public&nbsp;int&nbsp;getPort()</pre>
+</li>
+</ul>
+<a name="setPort(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPort</h4>
+<pre>public&nbsp;void&nbsp;setPort(int&nbsp;port)</pre>
+</li>
+</ul>
+<a name="setHost(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setHost</h4>
+<pre>public&nbsp;void&nbsp;setHost(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;host)</pre>
+</li>
+</ul>
+<a name="getHost()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getHost</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getHost()</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/NettyHttpServerEngine.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpHandler.html" title="class in org.apache.cxf.transport.http.netty.server"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../../org/apache/cxf/transport/http/netty/server/NettyHttpServerEngineFactory.html" title="class in org.apache.cxf.transport.http.netty.server"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/apache/cxf/transport/http/netty/server/NettyHttpServerEngine.html" target="_top">Frames</a></li>
+<li><a href="NettyHttpServerEngine.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Apache CXF</small></p>
+</body>
+</html>

@@ -1,0 +1,1284 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>AbstractBindingBuilder (Apache CXF JavaDoc 3.1.0 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AbstractBindingBuilder (Apache CXF JavaDoc 3.1.0 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AbstractBindingBuilder.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html" target="_top">Frames</a></li>
+<li><a href="AbstractBindingBuilder.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.cxf.ws.security.wss4j.policyhandlers</div>
+<h2 title="Class AbstractBindingBuilder" class="title">Class AbstractBindingBuilder</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers">org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractCommonBindingHandler</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractBindingBuilder</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AsymmetricBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers">AsymmetricBindingHandler</a>, <a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/SymmetricBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers">SymmetricBindingHandler</a>, <a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/TransportBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers">TransportBindingHandler</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public abstract class <span class="strong">AbstractBindingBuilder</span>
+extends <a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers">AbstractCommonBindingHandler</a></pre>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../../org/apache/cxf/ws/policy/AssertionInfoMap.html" title="class in org.apache.cxf.ws.policy">AssertionInfoMap</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#aim">aim</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected org.apache.wss4j.policy.model.AbstractBinding</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#binding">binding</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#bottomUpElement">bottomUpElement</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#bstElement">bstElement</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected org.apache.wss4j.dom.message.CallbackLookup</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#callbackLookup">callbackLookup</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#CRYPTO_CACHE">CRYPTO_CACHE</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#encryptedTokensList">encryptedTokensList</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#lastEncryptedKeyElement">lastEncryptedKeyElement</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected static <a href="http://docs.oracle.com/javase/7/docs/api/java/util/logging/Logger.html?is-external=true" title="class or interface in java.util.logging">Logger</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#LOG">LOG</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#mainSigId">mainSigId</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected org.apache.wss4j.policy.model.AbstractSymmetricAsymmetricBinding.ProtectionOrder</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#protectionOrder">protectionOrder</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPMessage.html?is-external=true" title="class or interface in javax.xml.soap">SOAPMessage</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#saaj">saaj</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected org.apache.wss4j.dom.message.WSSecHeader</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#secHeader">secHeader</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#sigConfList">sigConfList</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#signatures">signatures</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected org.apache.wss4j.dom.message.WSSecTimestamp</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#timestampEl">timestampEl</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#topDownElement">topDownElement</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected org.apache.wss4j.dom.WSSConfig</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#wssConfig">wssConfig</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractCommonBindingHandler">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.apache.cxf.ws.security.wss4j.policyhandlers.<a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers">AbstractCommonBindingHandler</a></h3>
+<code><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#message">message</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#AbstractBindingBuilder(org.apache.wss4j.dom.WSSConfig,%20org.apache.wss4j.policy.model.AbstractBinding,%20javax.xml.soap.SOAPMessage,%20org.apache.wss4j.dom.message.WSSecHeader,%20org.apache.cxf.ws.policy.AssertionInfoMap,%20org.apache.cxf.binding.soap.SoapMessage)">AbstractBindingBuilder</a></strong>(org.apache.wss4j.dom.WSSConfig&nbsp;config,
+                      org.apache.wss4j.policy.model.AbstractBinding&nbsp;binding,
+                      <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPMessage.html?is-external=true" title="class or interface in javax.xml.soap">SOAPMessage</a>&nbsp;saaj,
+                      org.apache.wss4j.dom.message.WSSecHeader&nbsp;secHeader,
+                      <a href="../../../../../../../org/apache/cxf/ws/policy/AssertionInfoMap.html" title="class in org.apache.cxf.ws.policy">AssertionInfoMap</a>&nbsp;aim,
+                      <a href="../../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</a>&nbsp;message)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#addDerivedKeyElement(org.w3c.dom.Element)">addDerivedKeyElement</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;el)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected org.apache.wss4j.dom.message.WSSecUsernameToken</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#addDKUsernameToken(org.apache.wss4j.policy.model.UsernameToken,%20boolean)">addDKUsernameToken</a></strong>(org.apache.wss4j.policy.model.UsernameToken&nbsp;token,
+                  boolean&nbsp;useMac)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#addEncryptedKeyElement(org.w3c.dom.Element)">addEncryptedKeyElement</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;el)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected org.apache.wss4j.common.saml.SamlAssertionWrapper</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#addSamlToken(org.apache.wss4j.policy.model.SamlToken)">addSamlToken</a></strong>(org.apache.wss4j.policy.model.SamlToken&nbsp;token)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#addSig(byte[])">addSig</a></strong>(byte[]&nbsp;val)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#addSignatureConfirmation(java.util.List)">addSignatureConfirmation</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;sigParts)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#addSignatureParts(java.util.List,%20java.util.List)">addSignatureParts</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractBindingBuilder.SupportingToken&gt;&nbsp;tokenList,
+                 <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;sigParts)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#addSupportingElement(org.w3c.dom.Element)">addSupportingElement</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;el)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#addSupportingTokens(java.util.List)">addSupportingTokens</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;sigs)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#addTopDownElement(org.w3c.dom.Element)">addTopDownElement</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;el)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected org.apache.wss4j.dom.message.WSSecUsernameToken</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#addUsernameToken(org.apache.wss4j.policy.model.UsernameToken)">addUsernameToken</a></strong>(org.apache.wss4j.policy.model.UsernameToken&nbsp;token)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#addWsuIdToElement(org.w3c.dom.Element)">addWsuIdToElement</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;elem)</code>
+<div class="block">Generates a wsu:Id attribute for the provided <code>Element</code> and returns the attribute value
+ or finds and returns the value of the attribute if it already exists.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#cloneElement(org.w3c.dom.Element)">cloneElement</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;el)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>org.apache.wss4j.common.WSEncryptionPart</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#convertToEncryptionPart(org.w3c.dom.Element)">convertToEncryptionPart</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;element)</code>
+<div class="block">Convert a DOM Element into a WSEncryptionPart, adding a (wsu:)Id if there is not
+ one already.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected org.apache.wss4j.dom.message.WSSecTimestamp</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#createTimestamp()">createTimestamp</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#doEndorse()">doEndorse</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#doEndorsedSignatures(java.util.List,%20boolean,%20boolean)">doEndorsedSignatures</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractBindingBuilder.SupportingToken&gt;&nbsp;tokenList,
+                    boolean&nbsp;isTokenProtection,
+                    boolean&nbsp;isSigProtect)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#findIDFromSamlToken(org.w3c.dom.Element)">findIDFromSamlToken</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;samlToken)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected org.apache.wss4j.common.crypto.Crypto</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#getCrypto(java.lang.String,%20java.lang.String)">getCrypto</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cryptoKey,
+         <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;propKey)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>,org.apache.wss4j.common.crypto.Crypto&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#getCryptoCache()">getCryptoCache</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#getElements(java.lang.String,%20java.util.List,%20java.util.List,%20boolean)">getElements</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;encryptionModifier,
+           <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.policy.model.XPath&gt;&nbsp;xpaths,
+           <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&gt;&nbsp;found,
+           boolean&nbsp;forceId)</code>
+<div class="block">Identifies the portions of the message to be signed/encrypted.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected org.apache.wss4j.dom.message.WSSecEncryptedKey</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#getEncryptedKeyBuilder(org.apache.wss4j.policy.model.AbstractToken)">getEncryptedKeyBuilder</a></strong>(org.apache.wss4j.policy.model.AbstractToken&nbsp;token)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected org.apache.wss4j.dom.WSSecurityEngineResult</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#getEncryptedKeyResult()">getEncryptedKeyResult</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#getEncryptedParts()">getEncryptedParts</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>org.apache.wss4j.common.crypto.Crypto</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#getEncryptionCrypto()">getEncryptionCrypto</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#getParts(boolean,%20boolean,%20java.util.List,%20java.util.List)">getParts</a></strong>(boolean&nbsp;sign,
+        boolean&nbsp;includeBody,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;parts,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&gt;&nbsp;found)</code>
+<div class="block">Identifies the portions of the message to be signed/encrypted.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#getPartsAndElements(boolean,%20boolean,%20java.util.List,%20java.util.List,%20java.util.List)">getPartsAndElements</a></strong>(boolean&nbsp;sign,
+                   boolean&nbsp;includeBody,
+                   <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;parts,
+                   <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.policy.model.XPath&gt;&nbsp;xpaths,
+                   <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.policy.model.XPath&gt;&nbsp;contentXpaths)</code>
+<div class="block">Identifies the portions of the message to be signed/encrypted.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#getPassword(java.lang.String,%20org.apache.neethi.Assertion,%20int)">getPassword</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;userName,
+           org.apache.neethi.Assertion&nbsp;info,
+           int&nbsp;usage)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected org.apache.wss4j.common.crypto.PasswordEncryptor</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#getPasswordEncryptor()">getPasswordEncryptor</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected org.apache.wss4j.dom.message.WSSecSignature</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#getSignatureBuilder(org.apache.wss4j.policy.model.AbstractToken,%20boolean,%20boolean)">getSignatureBuilder</a></strong>(org.apache.wss4j.policy.model.AbstractToken&nbsp;token,
+                   boolean&nbsp;attached,
+                   boolean&nbsp;endorse)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>org.apache.wss4j.common.crypto.Crypto</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#getSignatureCrypto()">getSignatureCrypto</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#getSignedParts(org.apache.wss4j.policy.model.SupportingTokens)">getSignedParts</a></strong>(org.apache.wss4j.policy.model.SupportingTokens&nbsp;supportingToken)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#getTokenStore()">getTokenStore</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#getUsername(java.util.List)">getUsername</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.dom.handler.WSHandlerResult&gt;&nbsp;results)</code>
+<div class="block">Scan through <code>WSHandlerResult<code> list for a Username token and return
+ the username if a Username Token found</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#handleEncryptedSignedHeaders(java.util.List,%20java.util.List)">handleEncryptedSignedHeaders</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;encryptedParts,
+                            <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;signedParts)</code>
+<div class="block">Processes the parts to be signed and reconfigures those parts that have
+ already been encrypted.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected org.apache.wss4j.dom.message.WSSecTimestamp</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#handleLayout(org.apache.wss4j.dom.message.WSSecTimestamp)">handleLayout</a></strong>(org.apache.wss4j.dom.message.WSSecTimestamp&nbsp;timestamp)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractBindingBuilder.SupportingToken&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#handleSupportingTokens(org.apache.wss4j.policy.model.SupportingTokens,%20boolean,%20java.util.List)">handleSupportingTokens</a></strong>(org.apache.wss4j.policy.model.SupportingTokens&nbsp;suppTokens,
+                      boolean&nbsp;endorse,
+                      <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractBindingBuilder.SupportingToken&gt;&nbsp;ret)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#handleUsernameTokenSupportingToken(org.apache.wss4j.policy.model.UsernameToken,%20boolean,%20boolean,%20java.util.List)">handleUsernameTokenSupportingToken</a></strong>(org.apache.wss4j.policy.model.UsernameToken&nbsp;token,
+                                  boolean&nbsp;endorse,
+                                  boolean&nbsp;encryptedToken,
+                                  <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractBindingBuilder.SupportingToken&gt;&nbsp;ret)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#insertAfter(org.w3c.dom.Element,%20org.w3c.dom.Element)">insertAfter</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;child,
+           <a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;sib)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#insertBeforeBottomUp(org.w3c.dom.Element)">insertBeforeBottomUp</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;el)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#reshuffleTimestamp()">reshuffleTimestamp</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#setEncryptionUser(org.apache.wss4j.dom.message.WSSecEncryptedKey,%20org.apache.wss4j.policy.model.AbstractToken,%20boolean,%20org.apache.wss4j.common.crypto.Crypto)">setEncryptionUser</a></strong>(org.apache.wss4j.dom.message.WSSecEncryptedKey&nbsp;encrKeyBuilder,
+                 org.apache.wss4j.policy.model.AbstractToken&nbsp;token,
+                 boolean&nbsp;sign,
+                 org.apache.wss4j.common.crypto.Crypto&nbsp;crypto)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#setKeyIdentifierType(org.apache.wss4j.dom.message.WSSecBase,%20org.apache.wss4j.policy.model.AbstractToken)">setKeyIdentifierType</a></strong>(org.apache.wss4j.dom.message.WSSecBase&nbsp;secBase,
+                    org.apache.wss4j.policy.model.AbstractToken&nbsp;token)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html#storeAssertionAsSecurityToken(org.apache.wss4j.common.saml.SamlAssertionWrapper)">storeAssertionAsSecurityToken</a></strong>(org.apache.wss4j.common.saml.SamlAssertionWrapper&nbsp;assertion)</code>
+<div class="block">Store a SAML Assertion as a SecurityToken</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractCommonBindingHandler">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.apache.cxf.ws.security.wss4j.policyhandlers.<a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers">AbstractCommonBindingHandler</a></h3>
+<code><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#assertAlgorithmSuite(org.apache.wss4j.policy.model.AlgorithmSuite)">assertAlgorithmSuite</a>, <a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#assertPolicy(org.apache.neethi.Assertion)">assertPolicy</a>, <a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#assertPolicy(javax.xml.namespace.QName)">assertPolicy</a>, <a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#assertToken(org.apache.wss4j.policy.model.AbstractToken)">assertToken</a>, <a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#assertTokenWrapper(org.apache.wss4j.policy.model.AbstractTokenWrapper)">assertTokenWrapper</a>, <a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#assertTrustProperties(java.lang.String)">assertTrustProperties</a>, <a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#assertWSSProperties(java.lang.String)">assertWSSProperties</a>, <a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#getAllAssertionsByLocalname(java.lang.String)">getAllAssertionsByLocalname</a>, <a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#getMessage()">getMessage</a>, <a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#getSecurityToken()">getSecurityToken</a>, <a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#getWss10()">getWss10</a>, <a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#isRequestor()">isRequestor</a>, <a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#isTokenRequired(org.apache.wss4j.policy.SPConstants.IncludeTokenType)">isTokenRequired</a>, <a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#unassertPolicy(org.apache.neethi.Assertion,%20java.lang.Exception)">unassertPolicy</a>, <a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html#unassertPolicy(org.apache.neethi.Assertion,%20java.lang.String)">unassertPolicy</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="CRYPTO_CACHE">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CRYPTO_CACHE</h4>
+<pre>public static final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> CRYPTO_CACHE</pre>
+<dl><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../../../constant-values.html#org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractBindingBuilder.CRYPTO_CACHE">Constant Field Values</a></dd></dl>
+</li>
+</ul>
+<a name="LOG">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LOG</h4>
+<pre>protected static final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/logging/Logger.html?is-external=true" title="class or interface in java.util.logging">Logger</a> LOG</pre>
+</li>
+</ul>
+<a name="protectionOrder">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>protectionOrder</h4>
+<pre>protected&nbsp;org.apache.wss4j.policy.model.AbstractSymmetricAsymmetricBinding.ProtectionOrder protectionOrder</pre>
+</li>
+</ul>
+<a name="wssConfig">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>wssConfig</h4>
+<pre>protected final&nbsp;org.apache.wss4j.dom.WSSConfig wssConfig</pre>
+</li>
+</ul>
+<a name="saaj">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>saaj</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPMessage.html?is-external=true" title="class or interface in javax.xml.soap">SOAPMessage</a> saaj</pre>
+</li>
+</ul>
+<a name="secHeader">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>secHeader</h4>
+<pre>protected&nbsp;org.apache.wss4j.dom.message.WSSecHeader secHeader</pre>
+</li>
+</ul>
+<a name="aim">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>aim</h4>
+<pre>protected&nbsp;<a href="../../../../../../../org/apache/cxf/ws/policy/AssertionInfoMap.html" title="class in org.apache.cxf.ws.policy">AssertionInfoMap</a> aim</pre>
+</li>
+</ul>
+<a name="binding">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>binding</h4>
+<pre>protected&nbsp;org.apache.wss4j.policy.model.AbstractBinding binding</pre>
+</li>
+</ul>
+<a name="timestampEl">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>timestampEl</h4>
+<pre>protected&nbsp;org.apache.wss4j.dom.message.WSSecTimestamp timestampEl</pre>
+</li>
+</ul>
+<a name="mainSigId">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>mainSigId</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> mainSigId</pre>
+</li>
+</ul>
+<a name="sigConfList">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sigConfList</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt; sigConfList</pre>
+</li>
+</ul>
+<a name="encryptedTokensList">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>encryptedTokensList</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt; encryptedTokensList</pre>
+</li>
+</ul>
+<a name="signatures">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>signatures</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Set.html?is-external=true" title="class or interface in java.util">Set</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&gt; signatures</pre>
+</li>
+</ul>
+<a name="bottomUpElement">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>bottomUpElement</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a> bottomUpElement</pre>
+</li>
+</ul>
+<a name="topDownElement">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>topDownElement</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a> topDownElement</pre>
+</li>
+</ul>
+<a name="bstElement">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>bstElement</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a> bstElement</pre>
+</li>
+</ul>
+<a name="lastEncryptedKeyElement">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lastEncryptedKeyElement</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a> lastEncryptedKeyElement</pre>
+</li>
+</ul>
+<a name="callbackLookup">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>callbackLookup</h4>
+<pre>protected final&nbsp;org.apache.wss4j.dom.message.CallbackLookup callbackLookup</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="AbstractBindingBuilder(org.apache.wss4j.dom.WSSConfig, org.apache.wss4j.policy.model.AbstractBinding, javax.xml.soap.SOAPMessage, org.apache.wss4j.dom.message.WSSecHeader, org.apache.cxf.ws.policy.AssertionInfoMap, org.apache.cxf.binding.soap.SoapMessage)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>AbstractBindingBuilder</h4>
+<pre>public&nbsp;AbstractBindingBuilder(org.apache.wss4j.dom.WSSConfig&nbsp;config,
+                      org.apache.wss4j.policy.model.AbstractBinding&nbsp;binding,
+                      <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPMessage.html?is-external=true" title="class or interface in javax.xml.soap">SOAPMessage</a>&nbsp;saaj,
+                      org.apache.wss4j.dom.message.WSSecHeader&nbsp;secHeader,
+                      <a href="../../../../../../../org/apache/cxf/ws/policy/AssertionInfoMap.html" title="class in org.apache.cxf.ws.policy">AssertionInfoMap</a>&nbsp;aim,
+                      <a href="../../../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</a>&nbsp;message)
+                       throws <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPException.html?is-external=true" title="class or interface in javax.xml.soap">SOAPException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPException.html?is-external=true" title="class or interface in javax.xml.soap">SOAPException</a></code></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="insertAfter(org.w3c.dom.Element, org.w3c.dom.Element)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>insertAfter</h4>
+<pre>protected&nbsp;void&nbsp;insertAfter(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;child,
+               <a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;sib)</pre>
+</li>
+</ul>
+<a name="addDerivedKeyElement(org.w3c.dom.Element)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addDerivedKeyElement</h4>
+<pre>protected&nbsp;void&nbsp;addDerivedKeyElement(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;el)</pre>
+</li>
+</ul>
+<a name="addEncryptedKeyElement(org.w3c.dom.Element)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addEncryptedKeyElement</h4>
+<pre>protected&nbsp;void&nbsp;addEncryptedKeyElement(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;el)</pre>
+</li>
+</ul>
+<a name="addSupportingElement(org.w3c.dom.Element)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addSupportingElement</h4>
+<pre>protected&nbsp;void&nbsp;addSupportingElement(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;el)</pre>
+</li>
+</ul>
+<a name="insertBeforeBottomUp(org.w3c.dom.Element)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>insertBeforeBottomUp</h4>
+<pre>protected&nbsp;void&nbsp;insertBeforeBottomUp(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;el)</pre>
+</li>
+</ul>
+<a name="addTopDownElement(org.w3c.dom.Element)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addTopDownElement</h4>
+<pre>protected&nbsp;void&nbsp;addTopDownElement(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;el)</pre>
+</li>
+</ul>
+<a name="getCryptoCache()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCryptoCache</h4>
+<pre>protected final&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>,org.apache.wss4j.common.crypto.Crypto&gt;&nbsp;getCryptoCache()</pre>
+</li>
+</ul>
+<a name="getTokenStore()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTokenStore</h4>
+<pre>protected final&nbsp;<a href="../../../../../../../org/apache/cxf/ws/security/tokenstore/TokenStore.html" title="interface in org.apache.cxf.ws.security.tokenstore">TokenStore</a>&nbsp;getTokenStore()</pre>
+</li>
+</ul>
+<a name="createTimestamp()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createTimestamp</h4>
+<pre>protected&nbsp;org.apache.wss4j.dom.message.WSSecTimestamp&nbsp;createTimestamp()</pre>
+</li>
+</ul>
+<a name="handleLayout(org.apache.wss4j.dom.message.WSSecTimestamp)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>handleLayout</h4>
+<pre>protected&nbsp;org.apache.wss4j.dom.message.WSSecTimestamp&nbsp;handleLayout(org.apache.wss4j.dom.message.WSSecTimestamp&nbsp;timestamp)</pre>
+</li>
+</ul>
+<a name="reshuffleTimestamp()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reshuffleTimestamp</h4>
+<pre>protected&nbsp;void&nbsp;reshuffleTimestamp()</pre>
+</li>
+</ul>
+<a name="handleSupportingTokens(org.apache.wss4j.policy.model.SupportingTokens, boolean, java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>handleSupportingTokens</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractBindingBuilder.SupportingToken&gt;&nbsp;handleSupportingTokens(org.apache.wss4j.policy.model.SupportingTokens&nbsp;suppTokens,
+                                                                                                                  boolean&nbsp;endorse,
+                                                                                                                  <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractBindingBuilder.SupportingToken&gt;&nbsp;ret)
+                                                                                                                       throws org.apache.wss4j.common.ext.WSSecurityException,
+                                                                                                                              <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPException.html?is-external=true" title="class or interface in javax.xml.soap">SOAPException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.apache.wss4j.common.ext.WSSecurityException</code></dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPException.html?is-external=true" title="class or interface in javax.xml.soap">SOAPException</a></code></dd></dl>
+</li>
+</ul>
+<a name="handleUsernameTokenSupportingToken(org.apache.wss4j.policy.model.UsernameToken, boolean, boolean, java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>handleUsernameTokenSupportingToken</h4>
+<pre>protected&nbsp;void&nbsp;handleUsernameTokenSupportingToken(org.apache.wss4j.policy.model.UsernameToken&nbsp;token,
+                                      boolean&nbsp;endorse,
+                                      boolean&nbsp;encryptedToken,
+                                      <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractBindingBuilder.SupportingToken&gt;&nbsp;ret)
+                                           throws org.apache.wss4j.common.ext.WSSecurityException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.apache.wss4j.common.ext.WSSecurityException</code></dd></dl>
+</li>
+</ul>
+<a name="cloneElement(org.w3c.dom.Element)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cloneElement</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;cloneElement(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;el)</pre>
+</li>
+</ul>
+<a name="addSignatureParts(java.util.List, java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addSignatureParts</h4>
+<pre>protected&nbsp;void&nbsp;addSignatureParts(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractBindingBuilder.SupportingToken&gt;&nbsp;tokenList,
+                     <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;sigParts)</pre>
+</li>
+</ul>
+<a name="addUsernameToken(org.apache.wss4j.policy.model.UsernameToken)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addUsernameToken</h4>
+<pre>protected&nbsp;org.apache.wss4j.dom.message.WSSecUsernameToken&nbsp;addUsernameToken(org.apache.wss4j.policy.model.UsernameToken&nbsp;token)</pre>
+</li>
+</ul>
+<a name="addDKUsernameToken(org.apache.wss4j.policy.model.UsernameToken, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addDKUsernameToken</h4>
+<pre>protected&nbsp;org.apache.wss4j.dom.message.WSSecUsernameToken&nbsp;addDKUsernameToken(org.apache.wss4j.policy.model.UsernameToken&nbsp;token,
+                                                                 boolean&nbsp;useMac)</pre>
+</li>
+</ul>
+<a name="addSamlToken(org.apache.wss4j.policy.model.SamlToken)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addSamlToken</h4>
+<pre>protected&nbsp;org.apache.wss4j.common.saml.SamlAssertionWrapper&nbsp;addSamlToken(org.apache.wss4j.policy.model.SamlToken&nbsp;token)
+                                                                  throws org.apache.wss4j.common.ext.WSSecurityException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.apache.wss4j.common.ext.WSSecurityException</code></dd></dl>
+</li>
+</ul>
+<a name="storeAssertionAsSecurityToken(org.apache.wss4j.common.saml.SamlAssertionWrapper)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>storeAssertionAsSecurityToken</h4>
+<pre>protected&nbsp;void&nbsp;storeAssertionAsSecurityToken(org.apache.wss4j.common.saml.SamlAssertionWrapper&nbsp;assertion)</pre>
+<div class="block">Store a SAML Assertion as a SecurityToken</div>
+</li>
+</ul>
+<a name="findIDFromSamlToken(org.w3c.dom.Element)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findIDFromSamlToken</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;findIDFromSamlToken(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;samlToken)</pre>
+</li>
+</ul>
+<a name="getPassword(java.lang.String, org.apache.neethi.Assertion, int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPassword</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getPassword(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;userName,
+                 org.apache.neethi.Assertion&nbsp;info,
+                 int&nbsp;usage)</pre>
+</li>
+</ul>
+<a name="addWsuIdToElement(org.w3c.dom.Element)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWsuIdToElement</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;addWsuIdToElement(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;elem)</pre>
+<div class="block">Generates a wsu:Id attribute for the provided <code>Element</code> and returns the attribute value
+ or finds and returns the value of the attribute if it already exists.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>element</code> - the <code>Element</code> to check/create the attribute on</dd>
+<dt><span class="strong">Returns:</span></dt><dd>the generated or discovered wsu:Id attribute value</dd></dl>
+</li>
+</ul>
+<a name="getEncryptedParts()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEncryptedParts</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;getEncryptedParts()
+                                                                 throws <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPException.html?is-external=true" title="class or interface in javax.xml.soap">SOAPException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPException.html?is-external=true" title="class or interface in javax.xml.soap">SOAPException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getSignedParts(org.apache.wss4j.policy.model.SupportingTokens)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSignedParts</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;getSignedParts(org.apache.wss4j.policy.model.SupportingTokens&nbsp;supportingToken)
+                                                              throws <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPException.html?is-external=true" title="class or interface in javax.xml.soap">SOAPException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPException.html?is-external=true" title="class or interface in javax.xml.soap">SOAPException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getPartsAndElements(boolean, boolean, java.util.List, java.util.List, java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPartsAndElements</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;getPartsAndElements(boolean&nbsp;sign,
+                                                                 boolean&nbsp;includeBody,
+                                                                 <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;parts,
+                                                                 <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.policy.model.XPath&gt;&nbsp;xpaths,
+                                                                 <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.policy.model.XPath&gt;&nbsp;contentXpaths)
+                                                                   throws <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPException.html?is-external=true" title="class or interface in javax.xml.soap">SOAPException</a></pre>
+<div class="block">Identifies the portions of the message to be signed/encrypted.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>sign</code> - whether the matches are to be signed or encrypted</dd><dd><code>includeBody</code> - if the body should be included in the signature/encryption</dd><dd><code>parts</code> - any <code>WSEncryptionPart</code>s to match for signature or
+            encryption as specified by WS-SP signed parts or encrypted
+            parts. Parts without a name match all elements with the
+            provided namespace.</dd><dd><code>xpaths</code> - any XPath expressions to sign/encrypt matches</dd><dd><code>contentXpaths</code> - any XPath expressions to content encrypt</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a configured list of <code>WSEncryptionPart</code>s suitable for
+         processing by WSS4J</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPException.html?is-external=true" title="class or interface in javax.xml.soap">SOAPException</a></code> - if there is an error extracting SOAP content from the SAAJ
+             model</dd></dl>
+</li>
+</ul>
+<a name="getParts(boolean, boolean, java.util.List, java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getParts</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;getParts(boolean&nbsp;sign,
+                                                      boolean&nbsp;includeBody,
+                                                      <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;parts,
+                                                      <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&gt;&nbsp;found)
+                                                           throws <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPException.html?is-external=true" title="class or interface in javax.xml.soap">SOAPException</a></pre>
+<div class="block">Identifies the portions of the message to be signed/encrypted.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>sign</code> - whether the matches are to be signed or encrypted</dd><dd><code>includeBody</code> - if the body should be included in the signature/encryption</dd><dd><code>parts</code> - any <code>WSEncryptionPart</code>s to match for signature or
+            encryption as specified by WS-SP signed parts or encrypted
+            parts. Parts without a name match all elements with the
+            provided namespace.</dd><dd><code>found</code> - a list of elements that have previously been tagged for
+            signing/encryption. Populated with additional matches found by
+            this method and used to prevent including the same element
+            twice under the same operation.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a configured list of <code>WSEncryptionPart</code>s suitable for
+         processing by WSS4J</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPException.html?is-external=true" title="class or interface in javax.xml.soap">SOAPException</a></code> - if there is an error extracting SOAP content from the SAAJ
+             model</dd></dl>
+</li>
+</ul>
+<a name="getElements(java.lang.String, java.util.List, java.util.List, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getElements</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;getElements(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;encryptionModifier,
+                                                         <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.policy.model.XPath&gt;&nbsp;xpaths,
+                                                         <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&gt;&nbsp;found,
+                                                         boolean&nbsp;forceId)
+                                                              throws <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPException.html?is-external=true" title="class or interface in javax.xml.soap">SOAPException</a></pre>
+<div class="block">Identifies the portions of the message to be signed/encrypted.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>encryptionModifier</code> - indicates the scope of the crypto operation over matched
+            elements. Either "Content" or "Element".</dd><dd><code>xpaths</code> - any XPath expressions to sign/encrypt matches</dd><dd><code>found</code> - a list of elements that have previously been tagged for
+            signing/encryption. Populated with additional matches found by
+            this method and used to prevent including the same element
+            twice under the same operation.</dd><dd><code>forceId</code> - force adding a wsu:Id onto the elements.  Recommended for signatures.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>a configured list of <code>WSEncryptionPart</code>s suitable for
+         processing by WSS4J</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/xpath/XPathExpressionException.html?is-external=true" title="class or interface in javax.xml.xpath">XPathExpressionException</a></code> - if a provided XPath is invalid</dd>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/soap/SOAPException.html?is-external=true" title="class or interface in javax.xml.soap">SOAPException</a></code> - if there is an error extracting SOAP content from the SAAJ
+             model</dd></dl>
+</li>
+</ul>
+<a name="getEncryptedKeyBuilder(org.apache.wss4j.policy.model.AbstractToken)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEncryptedKeyBuilder</h4>
+<pre>protected&nbsp;org.apache.wss4j.dom.message.WSSecEncryptedKey&nbsp;getEncryptedKeyBuilder(org.apache.wss4j.policy.model.AbstractToken&nbsp;token)
+                                                                         throws org.apache.wss4j.common.ext.WSSecurityException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.apache.wss4j.common.ext.WSSecurityException</code></dd></dl>
+</li>
+</ul>
+<a name="getSignatureCrypto()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSignatureCrypto</h4>
+<pre>public&nbsp;org.apache.wss4j.common.crypto.Crypto&nbsp;getSignatureCrypto()
+                                                         throws org.apache.wss4j.common.ext.WSSecurityException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.apache.wss4j.common.ext.WSSecurityException</code></dd></dl>
+</li>
+</ul>
+<a name="getEncryptionCrypto()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEncryptionCrypto</h4>
+<pre>public&nbsp;org.apache.wss4j.common.crypto.Crypto&nbsp;getEncryptionCrypto()
+                                                          throws org.apache.wss4j.common.ext.WSSecurityException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.apache.wss4j.common.ext.WSSecurityException</code></dd></dl>
+</li>
+</ul>
+<a name="getCrypto(java.lang.String, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCrypto</h4>
+<pre>protected&nbsp;org.apache.wss4j.common.crypto.Crypto&nbsp;getCrypto(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;cryptoKey,
+                                              <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;propKey)
+                                                   throws org.apache.wss4j.common.ext.WSSecurityException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.apache.wss4j.common.ext.WSSecurityException</code></dd></dl>
+</li>
+</ul>
+<a name="getPasswordEncryptor()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPasswordEncryptor</h4>
+<pre>protected&nbsp;org.apache.wss4j.common.crypto.PasswordEncryptor&nbsp;getPasswordEncryptor()</pre>
+</li>
+</ul>
+<a name="setKeyIdentifierType(org.apache.wss4j.dom.message.WSSecBase, org.apache.wss4j.policy.model.AbstractToken)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setKeyIdentifierType</h4>
+<pre>public&nbsp;void&nbsp;setKeyIdentifierType(org.apache.wss4j.dom.message.WSSecBase&nbsp;secBase,
+                        org.apache.wss4j.policy.model.AbstractToken&nbsp;token)</pre>
+</li>
+</ul>
+<a name="setEncryptionUser(org.apache.wss4j.dom.message.WSSecEncryptedKey, org.apache.wss4j.policy.model.AbstractToken, boolean, org.apache.wss4j.common.crypto.Crypto)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEncryptionUser</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;setEncryptionUser(org.apache.wss4j.dom.message.WSSecEncryptedKey&nbsp;encrKeyBuilder,
+                       org.apache.wss4j.policy.model.AbstractToken&nbsp;token,
+                       boolean&nbsp;sign,
+                       org.apache.wss4j.common.crypto.Crypto&nbsp;crypto)</pre>
+</li>
+</ul>
+<a name="getUsername(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUsername</h4>
+<pre>public static&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getUsername(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.dom.handler.WSHandlerResult&gt;&nbsp;results)</pre>
+<div class="block">Scan through <code>WSHandlerResult<code> list for a Username token and return
+ the username if a Username Token found</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>results</code> - </dd>
+<dt><span class="strong">Returns:</span></dt><dd></dd></dl>
+</li>
+</ul>
+<a name="getEncryptedKeyResult()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEncryptedKeyResult</h4>
+<pre>protected&nbsp;org.apache.wss4j.dom.WSSecurityEngineResult&nbsp;getEncryptedKeyResult()</pre>
+</li>
+</ul>
+<a name="getSignatureBuilder(org.apache.wss4j.policy.model.AbstractToken, boolean, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSignatureBuilder</h4>
+<pre>protected&nbsp;org.apache.wss4j.dom.message.WSSecSignature&nbsp;getSignatureBuilder(org.apache.wss4j.policy.model.AbstractToken&nbsp;token,
+                                                              boolean&nbsp;attached,
+                                                              boolean&nbsp;endorse)
+                                                                   throws org.apache.wss4j.common.ext.WSSecurityException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.apache.wss4j.common.ext.WSSecurityException</code></dd></dl>
+</li>
+</ul>
+<a name="doEndorsedSignatures(java.util.List, boolean, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>doEndorsedSignatures</h4>
+<pre>protected&nbsp;void&nbsp;doEndorsedSignatures(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.cxf.ws.security.wss4j.policyhandlers.AbstractBindingBuilder.SupportingToken&gt;&nbsp;tokenList,
+                        boolean&nbsp;isTokenProtection,
+                        boolean&nbsp;isSigProtect)</pre>
+</li>
+</ul>
+<a name="addSupportingTokens(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addSupportingTokens</h4>
+<pre>protected&nbsp;void&nbsp;addSupportingTokens(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;sigs)
+                            throws org.apache.wss4j.common.ext.WSSecurityException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.apache.wss4j.common.ext.WSSecurityException</code></dd></dl>
+</li>
+</ul>
+<a name="doEndorse()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>doEndorse</h4>
+<pre>protected&nbsp;void&nbsp;doEndorse()</pre>
+</li>
+</ul>
+<a name="addSignatureConfirmation(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addSignatureConfirmation</h4>
+<pre>protected&nbsp;void&nbsp;addSignatureConfirmation(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;sigParts)</pre>
+</li>
+</ul>
+<a name="handleEncryptedSignedHeaders(java.util.List, java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>handleEncryptedSignedHeaders</h4>
+<pre>public&nbsp;void&nbsp;handleEncryptedSignedHeaders(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;encryptedParts,
+                                <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;org.apache.wss4j.common.WSEncryptionPart&gt;&nbsp;signedParts)</pre>
+<div class="block">Processes the parts to be signed and reconfigures those parts that have
+ already been encrypted.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>encryptedParts</code> - the parts that have been encrypted</dd><dd><code>signedParts</code> - the parts that are to be signed</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if an element in <code>signedParts</code> contains a <code>WSEncryptionPart</code> with a <code>null</code> <code>id</code> value
+             and the <code>WSEncryptionPart</code> <code>name</code> value is not
+             "Token"</dd></dl>
+</li>
+</ul>
+<a name="convertToEncryptionPart(org.w3c.dom.Element)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>convertToEncryptionPart</h4>
+<pre>public&nbsp;org.apache.wss4j.common.WSEncryptionPart&nbsp;convertToEncryptionPart(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;element)</pre>
+<div class="block">Convert a DOM Element into a WSEncryptionPart, adding a (wsu:)Id if there is not
+ one already.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>element</code> - The DOM Element to convert</dd>
+<dt><span class="strong">Returns:</span></dt><dd>The WSEncryptionPart representing the DOM Element argument</dd></dl>
+</li>
+</ul>
+<a name="addSig(byte[])">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>addSig</h4>
+<pre>protected&nbsp;void&nbsp;addSig(byte[]&nbsp;val)</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AbstractBindingBuilder.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../../org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractCommonBindingHandler.html" title="class in org.apache.cxf.ws.security.wss4j.policyhandlers"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../../index.html?org/apache/cxf/ws/security/wss4j/policyhandlers/AbstractBindingBuilder.html" target="_top">Frames</a></li>
+<li><a href="AbstractBindingBuilder.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Apache CXF</small></p>
+</body>
+</html>

@@ -1,0 +1,516 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>CrossOriginResourceSharingFilter (Apache CXF JavaDoc 3.1.0 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="CrossOriginResourceSharingFilter (Apache CXF JavaDoc 3.1.0 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/CrossOriginResourceSharingFilter.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharing.html" title="annotation in org.apache.cxf.rs.security.cors"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/apache/cxf/rs/security/cors/LocalPreflight.html" title="annotation in org.apache.cxf.rs.security.cors"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html" target="_top">Frames</a></li>
+<li><a href="CrossOriginResourceSharingFilter.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.cxf.rs.security.cors</div>
+<h2 title="Class CrossOriginResourceSharingFilter" class="title">Class CrossOriginResourceSharingFilter</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.cxf.rs.security.cors.CrossOriginResourceSharingFilter</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd>javax.ws.rs.container.ContainerRequestFilter, javax.ws.rs.container.ContainerResponseFilter</dd>
+</dl>
+<hr>
+<br>
+<pre>@PreMatching
+<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Priority.html?is-external=true" title="class or interface in javax.annotation">@Priority</a>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/annotation/Priority.html?is-external=true#value()" title="class or interface in javax.annotation">value</a>=999)
+public class <span class="strong">CrossOriginResourceSharingFilter</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements javax.ws.rs.container.ContainerRequestFilter, javax.ws.rs.container.ContainerResponseFilter</pre>
+<div class="block">A single class that provides both an input and an output filter for CORS, following
+ http://www.w3.org/TR/cors/. The input filter examines the input headers. If the request is valid, it stores the
+ information in the Exchange to allow the response handler to add the appropriate headers to the response.
+ If you need complex or subtle control of the behavior here (e.g. clearing the prefight cache) you might be
+ better off reading the source of this class and implementing this inside your service.
+ 
+ This class will perform preflight processing even if there is a resource method annotated 
+ to handle @OPTIONS,
+ <em>unless</em> that method is annotated as follows:
+ <pre></div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html#CrossOriginResourceSharingFilter()">CrossOriginResourceSharingFilter</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html#filter(javax.ws.rs.container.ContainerRequestContext)">filter</a></strong>(javax.ws.rs.container.ContainerRequestContext&nbsp;context)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html#filter(javax.ws.rs.container.ContainerRequestContext,%20javax.ws.rs.container.ContainerResponseContext)">filter</a></strong>(javax.ws.rs.container.ContainerRequestContext&nbsp;requestContext,
+      javax.ws.rs.container.ContainerResponseContext&nbsp;responseContext)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html#getAllowHeaders()">getAllowHeaders</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html#getAllowOrigins()">getAllowOrigins</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html#getExposeHeaders()">getExposeHeaders</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html#getMaxAge()">getMaxAge</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html#isAllowCredentials()">isAllowCredentials</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html#setAllowCredentials(boolean)">setAllowCredentials</a></strong>(boolean&nbsp;allowCredentials)</code>
+<div class="block">The value for the Access-Control-Allow-Credentials header.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html#setAllowHeaders(java.util.List)">setAllowHeaders</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;allowedHeaders)</code>
+<div class="block">The list of allowed headers for preflight checks.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html#setAllowOrigins(java.util.List)">setAllowOrigins</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;allowedOrigins)</code>
+<div class="block">The origin strings to allow.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html#setBlockCorsIfUnauthorized(boolean)">setBlockCorsIfUnauthorized</a></strong>(boolean&nbsp;blockCorsIfUnauthorized)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html#setDefaultOptionsMethodsHandlePreflight(boolean)">setDefaultOptionsMethodsHandlePreflight</a></strong>(boolean&nbsp;defaultOptionsMethodsHandlePreflight)</code>
+<div class="block">What to do when a preflight request comes along for a resource that has a handler method for
+ \@OPTIONS and there is no <tt>@<code>CrossResourceSharing</code>(localPreflight = val)</tt>
+ annotation on the method.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html#setExposeHeaders(java.util.List)">setExposeHeaders</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;exposeHeaders)</code>
+<div class="block">A list of non-simple headers to be exposed via Access-Control-Expose-Headers.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html#setFindResourceMethod(boolean)">setFindResourceMethod</a></strong>(boolean&nbsp;findResourceMethod)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html#setMaxAge(java.lang.Integer)">setMaxAge</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;maxAge)</code>
+<div class="block">The value for Access-Control-Max-Age.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html#setPreflightErrorStatus(java.lang.Integer)">setPreflightErrorStatus</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;status)</code>
+<div class="block">Preflight error response status, default is 200.</div>
+</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="CrossOriginResourceSharingFilter()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>CrossOriginResourceSharingFilter</h4>
+<pre>public&nbsp;CrossOriginResourceSharingFilter()</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="filter(javax.ws.rs.container.ContainerRequestContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>filter</h4>
+<pre>public&nbsp;void&nbsp;filter(javax.ws.rs.container.ContainerRequestContext&nbsp;context)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>filter</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.container.ContainerRequestFilter</code></dd>
+</dl>
+</li>
+</ul>
+<a name="filter(javax.ws.rs.container.ContainerRequestContext, javax.ws.rs.container.ContainerResponseContext)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>filter</h4>
+<pre>public&nbsp;void&nbsp;filter(javax.ws.rs.container.ContainerRequestContext&nbsp;requestContext,
+          javax.ws.rs.container.ContainerResponseContext&nbsp;responseContext)</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code>filter</code>&nbsp;in interface&nbsp;<code>javax.ws.rs.container.ContainerResponseFilter</code></dd>
+</dl>
+</li>
+</ul>
+<a name="setAllowOrigins(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAllowOrigins</h4>
+<pre>public&nbsp;void&nbsp;setAllowOrigins(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;allowedOrigins)</pre>
+<div class="block">The origin strings to allow. An empty list allows all origins.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>allowedOrigins</code> - a list of case-sensitive origin strings.</dd></dl>
+</li>
+</ul>
+<a name="getAllowOrigins()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAllowOrigins</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getAllowOrigins()</pre>
+<dl><dt><span class="strong">Returns:</span></dt><dd>the list of allowed origins.</dd></dl>
+</li>
+</ul>
+<a name="getAllowHeaders()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAllowHeaders</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getAllowHeaders()</pre>
+</li>
+</ul>
+<a name="setAllowHeaders(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAllowHeaders</h4>
+<pre>public&nbsp;void&nbsp;setAllowHeaders(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;allowedHeaders)</pre>
+<div class="block">The list of allowed headers for preflight checks. Section 5.2.6</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>allowedHeaders</code> - a list of permitted headers.</dd></dl>
+</li>
+</ul>
+<a name="getExposeHeaders()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExposeHeaders</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;getExposeHeaders()</pre>
+</li>
+</ul>
+<a name="getMaxAge()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMaxAge</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;getMaxAge()</pre>
+</li>
+</ul>
+<a name="isAllowCredentials()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAllowCredentials</h4>
+<pre>public&nbsp;boolean&nbsp;isAllowCredentials()</pre>
+</li>
+</ul>
+<a name="setAllowCredentials(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAllowCredentials</h4>
+<pre>public&nbsp;void&nbsp;setAllowCredentials(boolean&nbsp;allowCredentials)</pre>
+<div class="block">The value for the Access-Control-Allow-Credentials header. If false, no header is added. If true, the
+ header is added with the value 'true'.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>allowCredentials</code> - </dd></dl>
+</li>
+</ul>
+<a name="setExposeHeaders(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setExposeHeaders</h4>
+<pre>public&nbsp;void&nbsp;setExposeHeaders(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&gt;&nbsp;exposeHeaders)</pre>
+<div class="block">A list of non-simple headers to be exposed via Access-Control-Expose-Headers.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>exposeHeaders</code> - the list of (case-sensitive) header names.</dd></dl>
+</li>
+</ul>
+<a name="setMaxAge(java.lang.Integer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMaxAge</h4>
+<pre>public&nbsp;void&nbsp;setMaxAge(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;maxAge)</pre>
+<div class="block">The value for Access-Control-Max-Age.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>maxAge</code> - An integer 'delta-seconds' or null. If null, no header is added.</dd></dl>
+</li>
+</ul>
+<a name="setPreflightErrorStatus(java.lang.Integer)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPreflightErrorStatus</h4>
+<pre>public&nbsp;void&nbsp;setPreflightErrorStatus(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Integer.html?is-external=true" title="class or interface in java.lang">Integer</a>&nbsp;status)</pre>
+<div class="block">Preflight error response status, default is 200.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>status</code> - HTTP status code.</dd></dl>
+</li>
+</ul>
+<a name="setDefaultOptionsMethodsHandlePreflight(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDefaultOptionsMethodsHandlePreflight</h4>
+<pre>public&nbsp;void&nbsp;setDefaultOptionsMethodsHandlePreflight(boolean&nbsp;defaultOptionsMethodsHandlePreflight)</pre>
+<div class="block">What to do when a preflight request comes along for a resource that has a handler method for
+ \@OPTIONS and there is no <tt>@<code>CrossResourceSharing</code>(localPreflight = val)</tt>
+ annotation on the method. If this is <tt>true</tt>, then the filter 
+ defers to the resource class method.
+ If this is false, then this filter performs preflight processing.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>defaultOptionsMethodsHandlePreflight</code> - true to defer to resource methods.</dd></dl>
+</li>
+</ul>
+<a name="setFindResourceMethod(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setFindResourceMethod</h4>
+<pre>public&nbsp;void&nbsp;setFindResourceMethod(boolean&nbsp;findResourceMethod)</pre>
+</li>
+</ul>
+<a name="setBlockCorsIfUnauthorized(boolean)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setBlockCorsIfUnauthorized</h4>
+<pre>public&nbsp;void&nbsp;setBlockCorsIfUnauthorized(boolean&nbsp;blockCorsIfUnauthorized)</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/CrossOriginResourceSharingFilter.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../../org/apache/cxf/rs/security/cors/CrossOriginResourceSharing.html" title="annotation in org.apache.cxf.rs.security.cors"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../../org/apache/cxf/rs/security/cors/LocalPreflight.html" title="annotation in org.apache.cxf.rs.security.cors"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/apache/cxf/rs/security/cors/CrossOriginResourceSharingFilter.html" target="_top">Frames</a></li>
+<li><a href="CrossOriginResourceSharingFilter.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Apache CXF</small></p>
+</body>
+</html>

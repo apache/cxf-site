@@ -1,0 +1,2002 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Class org.apache.cxf.interceptor.Fault (Apache CXF Bundle Jar 2.6.3 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="Uses of Class org.apache.cxf.interceptor.Fault (Apache CXF Bundle Jar 2.6.3 API)";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/interceptor/class-use/Fault.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Fault.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Class<br>org.apache.cxf.interceptor.Fault</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.aegis"><B>org.apache.cxf.aegis</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.aegis.databinding"><B>org.apache.cxf.aegis.databinding</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.binding.coloc"><B>org.apache.cxf.binding.coloc</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.binding.corba.interceptors"><B>org.apache.cxf.binding.corba.interceptors</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.binding.object"><B>org.apache.cxf.binding.object</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.binding.soap"><B>org.apache.cxf.binding.soap</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.binding.soap.interceptor"><B>org.apache.cxf.binding.soap.interceptor</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.binding.soap.jms.interceptor"><B>org.apache.cxf.binding.soap.jms.interceptor</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.binding.soap.saaj"><B>org.apache.cxf.binding.soap.saaj</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.binding.xml"><B>org.apache.cxf.binding.xml</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.binding.xml.interceptor"><B>org.apache.cxf.binding.xml.interceptor</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.databinding"><B>org.apache.cxf.databinding</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.databinding.stax"><B>org.apache.cxf.databinding.stax</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.frontend"><B>org.apache.cxf.frontend</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.interceptor"><B>org.apache.cxf.interceptor</B></A></TD>
+<TD>Core interceptor interfaces which form the basis for message processing chains
+in CXF.&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.interceptor.security"><B>org.apache.cxf.interceptor.security</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.jaxb.attachment"><B>org.apache.cxf.jaxb.attachment</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.jaxrs.provider.jsonp"><B>org.apache.cxf.jaxrs.provider.jsonp</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.jaxrs.security"><B>org.apache.cxf.jaxrs.security</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.jaxws"><B>org.apache.cxf.jaxws</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.jaxws.handler.logical"><B>org.apache.cxf.jaxws.handler.logical</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.jaxws.interceptors"><B>org.apache.cxf.jaxws.interceptors</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.management.interceptor"><B>org.apache.cxf.management.interceptor</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.rs.security.saml"><B>org.apache.cxf.rs.security.saml</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.rs.security.saml.authorization"><B>org.apache.cxf.rs.security.saml.authorization</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.rs.security.xml"><B>org.apache.cxf.rs.security.xml</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.service.invoker"><B>org.apache.cxf.service.invoker</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.transport.common.gzip"><B>org.apache.cxf.transport.common.gzip</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.transport.https"><B>org.apache.cxf.transport.https</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.mex"><B>org.apache.cxf.ws.mex</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.policy"><B>org.apache.cxf.ws.policy</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.policy.mtom"><B>org.apache.cxf.ws.policy.mtom</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.rm"><B>org.apache.cxf.ws.rm</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.rm.soap"><B>org.apache.cxf.ws.rm.soap</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.security.policy.interceptors"><B>org.apache.cxf.ws.security.policy.interceptors</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.security.trust"><B>org.apache.cxf.ws.security.trust</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.ws.security.wss4j"><B>org.apache.cxf.ws.security.wss4j</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.aegis"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/aegis/package-summary.html">org.apache.cxf.aegis</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/aegis/package-summary.html">org.apache.cxf.aegis</A> that return <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></CODE></FONT></TD>
+<TD><CODE><B>Context.</B><B><A HREF="../../../../../org/apache/cxf/aegis/Context.html#getFault()">getFault</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/aegis/package-summary.html">org.apache.cxf.aegis</A> with parameters of type <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Context.</B><B><A HREF="../../../../../org/apache/cxf/aegis/Context.html#setFault(org.apache.cxf.interceptor.Fault)">setFault</A></B>(<A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A>&nbsp;fault)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.aegis.databinding"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/aegis/databinding/package-summary.html">org.apache.cxf.aegis.databinding</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/aegis/databinding/package-summary.html">org.apache.cxf.aegis.databinding</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AegisSchemaValidationInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/aegis/databinding/AegisSchemaValidationInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.binding.coloc"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/binding/coloc/package-summary.html">org.apache.cxf.binding.coloc</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/binding/coloc/package-summary.html">org.apache.cxf.binding.coloc</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WebFaultInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/coloc/WebFaultInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ColocInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/coloc/ColocInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ColocOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/coloc/ColocOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.binding.corba.interceptors"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/binding/corba/interceptors/package-summary.html">org.apache.cxf.binding.corba.interceptors</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/binding/corba/interceptors/package-summary.html">org.apache.cxf.binding.corba.interceptors</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaStreamInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/corba/interceptors/CorbaStreamInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.binding.object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/binding/object/package-summary.html">org.apache.cxf.binding.object</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/binding/object/package-summary.html">org.apache.cxf.binding.object</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ObjectDispatchOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/object/ObjectDispatchOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ObjectDispatchInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/object/ObjectDispatchInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.binding.soap"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/binding/soap/package-summary.html">org.apache.cxf.binding.soap</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/binding/soap/package-summary.html">org.apache.cxf.binding.soap</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/binding/soap/SoapFault.html" title="class in org.apache.cxf.binding.soap">SoapFault</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/binding/soap/package-summary.html">org.apache.cxf.binding.soap</A> with parameters of type <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/cxf/binding/soap/SoapFault.html" title="class in org.apache.cxf.binding.soap">SoapFault</A></CODE></FONT></TD>
+<TD><CODE><B>SoapFault.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/SoapFault.html#createFault(org.apache.cxf.interceptor.Fault, org.apache.cxf.binding.soap.SoapVersion)">createFault</A></B>(<A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A>&nbsp;f,
+            <A HREF="../../../../../org/apache/cxf/binding/soap/SoapVersion.html" title="interface in org.apache.cxf.binding.soap">SoapVersion</A>&nbsp;v)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.binding.soap.interceptor"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/binding/soap/interceptor/package-summary.html">org.apache.cxf.binding.soap.interceptor</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/binding/soap/interceptor/package-summary.html">org.apache.cxf.binding.soap.interceptor</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapHeaderInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/interceptor/SoapHeaderInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Soap12FaultOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/interceptor/Soap12FaultOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TibcoSoapActionInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/interceptor/TibcoSoapActionInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;soapMessage)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ReadHeadersInterceptor.CheckClosingTagsInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/interceptor/ReadHeadersInterceptor.CheckClosingTagsInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intercepts a message.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Soap11FaultInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/interceptor/Soap11FaultInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapActionInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/interceptor/SoapActionInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapActionInInterceptor.SoapActionInAttemptTwoInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/interceptor/SoapActionInInterceptor.SoapActionInAttemptTwoInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapHeaderOutFilterInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/interceptor/SoapHeaderOutFilterInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Soap12FaultInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/interceptor/Soap12FaultInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MustUnderstandInterceptor.MustUnderstandEndingInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/interceptor/MustUnderstandInterceptor.MustUnderstandEndingInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Soap11FaultOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/interceptor/Soap11FaultOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapPreProtocolOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/interceptor/SoapPreProtocolOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mediate a message dispatch.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapOutInterceptor.SoapOutEndingInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/interceptor/SoapOutInterceptor.SoapOutEndingInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>StartBodyInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/interceptor/StartBodyInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intercepts a message.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.binding.soap.jms.interceptor"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/binding/soap/jms/interceptor/package-summary.html">org.apache.cxf.binding.soap.jms.interceptor</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/binding/soap/jms/interceptor/package-summary.html">org.apache.cxf.binding.soap.jms.interceptor</A> that return <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></CODE></FONT></TD>
+<TD><CODE><B>SoapFaultFactory.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/jms/interceptor/SoapFaultFactory.html#createFault(org.apache.cxf.binding.soap.jms.interceptor.JMSFault)">createFault</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/jms/interceptor/JMSFault.html" title="class in org.apache.cxf.binding.soap.jms.interceptor">JMSFault</A>&nbsp;jmsFault)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/binding/soap/jms/interceptor/package-summary.html">org.apache.cxf.binding.soap.jms.interceptor</A> with parameters of type <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B>SoapFaultFactory.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/jms/interceptor/SoapFaultFactory.html#toString(org.apache.cxf.interceptor.Fault)">toString</A></B>(<A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A>&nbsp;f)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/binding/soap/jms/interceptor/package-summary.html">org.apache.cxf.binding.soap.jms.interceptor</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapJMSInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/jms/interceptor/SoapJMSInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.binding.soap.saaj"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/binding/soap/saaj/package-summary.html">org.apache.cxf.binding.soap.saaj</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/binding/soap/saaj/package-summary.html">org.apache.cxf.binding.soap.saaj</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SAAJOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/saaj/SAAJOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SAAJOutInterceptor.SAAJOutEndingInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/saaj/SAAJOutInterceptor.SAAJOutEndingInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SAAJInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/saaj/SAAJInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SAAJInInterceptor.SAAJPreInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/soap/saaj/SAAJInInterceptor.SAAJPreInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.binding.xml"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/binding/xml/package-summary.html">org.apache.cxf.binding.xml</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/binding/xml/package-summary.html">org.apache.cxf.binding.xml</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/binding/xml/XMLFault.html" title="class in org.apache.cxf.binding.xml">XMLFault</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/binding/xml/package-summary.html">org.apache.cxf.binding.xml</A> with parameters of type <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/cxf/binding/xml/XMLFault.html" title="class in org.apache.cxf.binding.xml">XMLFault</A></CODE></FONT></TD>
+<TD><CODE><B>XMLFault.</B><B><A HREF="../../../../../org/apache/cxf/binding/xml/XMLFault.html#createFault(org.apache.cxf.interceptor.Fault)">createFault</A></B>(<A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A>&nbsp;f)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.binding.xml.interceptor"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/binding/xml/interceptor/package-summary.html">org.apache.cxf.binding.xml.interceptor</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/binding/xml/interceptor/package-summary.html">org.apache.cxf.binding.xml.interceptor</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>XMLFaultOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/xml/interceptor/XMLFaultOutInterceptor.html#handleFault(org.apache.cxf.message.Message)">handleFault</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>XMLFaultOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/xml/interceptor/XMLFaultOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>XMLMessageInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/xml/interceptor/XMLMessageInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>XMLFaultInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/xml/interceptor/XMLFaultInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>XMLMessageOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/binding/xml/interceptor/XMLMessageOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.databinding"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/databinding/package-summary.html">org.apache.cxf.databinding</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/databinding/package-summary.html">org.apache.cxf.databinding</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractWrapperHelper.</B><B><A HREF="../../../../../org/apache/cxf/databinding/AbstractWrapperHelper.html#createWrapperObject(java.util.List)">createWrapperObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;?&gt;&nbsp;lst)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A></CODE></FONT></TD>
+<TD><CODE><B>WrapperHelper.</B><B><A HREF="../../../../../org/apache/cxf/databinding/WrapperHelper.html#createWrapperObject(java.util.List)">createWrapperObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;?&gt;&nbsp;lst)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractWrapperHelper.</B><B><A HREF="../../../../../org/apache/cxf/databinding/AbstractWrapperHelper.html#getWrapperParts(java.lang.Object)">getWrapperParts</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;o)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>WrapperHelper.</B><B><A HREF="../../../../../org/apache/cxf/databinding/WrapperHelper.html#getWrapperParts(java.lang.Object)">getWrapperParts</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;o)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.databinding.stax"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/databinding/stax/package-summary.html">org.apache.cxf.databinding.stax</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/databinding/stax/package-summary.html">org.apache.cxf.databinding.stax</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>XMLStreamWriterCallback.</B><B><A HREF="../../../../../org/apache/cxf/databinding/stax/XMLStreamWriterCallback.html#write(javax.xml.stream.XMLStreamWriter)">write</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/stream.XMLStreamWriter.html" title="class or interface in javax.xml">javax.xml.stream.XMLStreamWriter</A>&nbsp;writer)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.frontend"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/frontend/package-summary.html">org.apache.cxf.frontend</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/frontend/package-summary.html">org.apache.cxf.frontend</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSDLGetInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/frontend/WSDLGetInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.interceptor"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/interceptor/package-summary.html">org.apache.cxf.interceptor</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/interceptor/package-summary.html">org.apache.cxf.interceptor</A> that return <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></CODE></FONT></TD>
+<TD><CODE><B>Fault.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/Fault.html#setFaultCode(javax.xml.namespace.QName)">setFaultCode</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html" title="class or interface in javax.xml.namespace">QName</A>&nbsp;c)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/interceptor/package-summary.html">org.apache.cxf.interceptor</A> with parameters of type <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ClientFaultConverter.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/ClientFaultConverter.html#processFaultDetail(org.apache.cxf.interceptor.Fault, org.apache.cxf.message.Message)">processFaultDetail</A></B>(<A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A>&nbsp;fault,
+                   <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/interceptor/package-summary.html">org.apache.cxf.interceptor</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/stream.XMLInputFactory.html" title="class or interface in javax.xml">javax.xml.stream.XMLInputFactory</A></CODE></FONT></TD>
+<TD><CODE><B>StaxInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/StaxInInterceptor.html#getXMLInputFactory(org.apache.cxf.message.Message)">getXMLInputFactory</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/stream.XMLOutputFactory.html" title="class or interface in javax.xml">javax.xml.stream.XMLOutputFactory</A></CODE></FONT></TD>
+<TD><CODE><B>StaxOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/StaxOutInterceptor.html#getXMLOutputFactory(org.apache.cxf.message.Message)">getXMLOutputFactory</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;m)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>StaxInEndingInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/StaxInEndingInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>URIMappingInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/URIMappingInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WrappedOutInterceptor.WrappedOutEndingInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/WrappedOutInterceptor.WrappedOutEndingInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>LoggingOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/LoggingOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractEndpointSelectionInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/AbstractEndpointSelectionInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>LoggingInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/LoggingInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>FaultOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/FaultOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>StaxOutEndingInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/StaxOutEndingInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MessageSenderInterceptor.MessageSenderEndingInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/MessageSenderInterceptor.MessageSenderEndingInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>OneWayProcessorInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/OneWayProcessorInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Interceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html#handleMessage(T)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/interceptor/Interceptor.html" title="type parameter in Interceptor">T</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intercepts a message.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>LoggingInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/LoggingInInterceptor.html#logging(java.util.logging.Logger, org.apache.cxf.message.Message)">logging</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/logging/Logger.html" title="class or interface in java.util.logging">Logger</A>&nbsp;logger,
+        <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.interceptor.security"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/interceptor/security/package-summary.html">org.apache.cxf.interceptor.security</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/interceptor/security/package-summary.html">org.apache.cxf.interceptor.security</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>JAASLoginInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/security/JAASLoginInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractAuthorizingInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/security/AbstractAuthorizingInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractSecurityContextInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/interceptor/security/AbstractSecurityContextInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.jaxb.attachment"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/jaxb/attachment/package-summary.html">org.apache.cxf.jaxb.attachment</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/jaxb/attachment/package-summary.html">org.apache.cxf.jaxb.attachment</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>JAXBAttachmentSchemaValidationHack.</B><B><A HREF="../../../../../org/apache/cxf/jaxb/attachment/JAXBAttachmentSchemaValidationHack.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.jaxrs.provider.jsonp"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/jaxrs/provider/jsonp/package-summary.html">org.apache.cxf.jaxrs.provider.jsonp</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/jaxrs/provider/jsonp/package-summary.html">org.apache.cxf.jaxrs.provider.jsonp</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>JsonpPreStreamInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/jsonp/JsonpPreStreamInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>JsonpPostStreamInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/jsonp/JsonpPostStreamInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>JsonpInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/jsonp/JsonpInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractJsonpOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/jsonp/AbstractJsonpOutInterceptor.html#writeValue(org.apache.cxf.message.Message, java.lang.String)">writeValue</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+           <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.jaxrs.security"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/jaxrs/security/package-summary.html">org.apache.cxf.jaxrs.security</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/jaxrs/security/package-summary.html">org.apache.cxf.jaxrs.security</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>KerberosAuthOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/jaxrs/security/KerberosAuthOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.jaxws"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/jaxws/package-summary.html">org.apache.cxf.jaxws</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/jaxws/package-summary.html">org.apache.cxf.jaxws</A> that return <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractJAXWSMethodInvoker.</B><B><A HREF="../../../../../org/apache/cxf/jaxws/AbstractJAXWSMethodInvoker.html#createFault(java.lang.Throwable, java.lang.reflect.Method, java.util.List, boolean)">createFault</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Throwable.html" title="class or interface in java.lang">Throwable</A>&nbsp;ex,
+            <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Method.html" title="class or interface in java.lang.reflect">Method</A>&nbsp;m,
+            <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&gt;&nbsp;params,
+            boolean&nbsp;checked)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.jaxws.handler.logical"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/jaxws/handler/logical/package-summary.html">org.apache.cxf.jaxws.handler.logical</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/jaxws/handler/logical/package-summary.html">org.apache.cxf.jaxws.handler.logical</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>LogicalHandlerFaultOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/jaxws/handler/logical/LogicalHandlerFaultOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>LogicalHandlerOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/jaxws/handler/logical/LogicalHandlerOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.jaxws.interceptors"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/jaxws/interceptors/package-summary.html">org.apache.cxf.jaxws.interceptors</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/jaxws/interceptors/package-summary.html">org.apache.cxf.jaxws.interceptors</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MessageModeInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MessageModeOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/jaxws/interceptors/MessageModeOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WrapperClassOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/jaxws/interceptors/WrapperClassOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>HolderInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/jaxws/interceptors/HolderInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>HolderOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/jaxws/interceptors/HolderOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WebFaultOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/jaxws/interceptors/WebFaultOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WrapperClassInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/jaxws/interceptors/WrapperClassInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SwAInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/jaxws/interceptors/SwAInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SwAOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/jaxws/interceptors/SwAOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.management.interceptor"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/management/interceptor/package-summary.html">org.apache.cxf.management.interceptor</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/management/interceptor/package-summary.html">org.apache.cxf.management.interceptor</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ResponseTimeMessageOutInterceptor.EndingInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/management/interceptor/ResponseTimeMessageOutInterceptor.EndingInterceptor.html#handleFault(org.apache.cxf.message.Message)">handleFault</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PersistOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/management/interceptor/PersistOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PersistInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/management/interceptor/PersistInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ResponseTimeMessageInvokerInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/management/interceptor/ResponseTimeMessageInvokerInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ResponseTimeMessageOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/management/interceptor/ResponseTimeMessageOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ResponseTimeMessageOutInterceptor.EndingInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/management/interceptor/ResponseTimeMessageOutInterceptor.EndingInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ResponseTimeMessageInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/management/interceptor/ResponseTimeMessageInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.rs.security.saml"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/rs/security/saml/package-summary.html">org.apache.cxf.rs.security.saml</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/rs/security/saml/package-summary.html">org.apache.cxf.rs.security.saml</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;org.apache.ws.security.saml.ext.AssertionWrapper</CODE></FONT></TD>
+<TD><CODE><B>SAMLUtils.</B><B><A HREF="../../../../../org/apache/cxf/rs/security/saml/SAMLUtils.html#createAssertion(org.apache.cxf.message.Message)">createAssertion</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.ws.security.saml.ext.AssertionWrapper</CODE></FONT></TD>
+<TD><CODE><B>AbstractSamlOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/rs/security/saml/AbstractSamlOutInterceptor.html#createAssertion(org.apache.cxf.message.Message)">createAssertion</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SamlHeaderOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/rs/security/saml/SamlHeaderOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SamlFormOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/rs/security/saml/SamlFormOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.rs.security.saml.authorization"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/rs/security/saml/authorization/package-summary.html">org.apache.cxf.rs.security.saml.authorization</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/rs/security/saml/authorization/package-summary.html">org.apache.cxf.rs.security.saml.authorization</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ClaimsAuthorizingInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/rs/security/saml/authorization/ClaimsAuthorizingInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.rs.security.xml"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/rs/security/xml/package-summary.html">org.apache.cxf.rs.security.xml</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/rs/security/xml/package-summary.html">org.apache.cxf.rs.security.xml</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractXmlSecOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/rs/security/xml/AbstractXmlSecOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>XmlSigInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/rs/security/xml/XmlSigInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>XmlEncInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/rs/security/xml/XmlEncInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.service.invoker"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/service/invoker/package-summary.html">org.apache.cxf.service.invoker</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/service/invoker/package-summary.html">org.apache.cxf.service.invoker</A> that return <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractInvoker.</B><B><A HREF="../../../../../org/apache/cxf/service/invoker/AbstractInvoker.html#createFault(java.lang.Throwable, java.lang.reflect.Method, java.util.List, boolean)">createFault</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Throwable.html" title="class or interface in java.lang">Throwable</A>&nbsp;ex,
+            <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Method.html" title="class or interface in java.lang.reflect">Method</A>&nbsp;m,
+            <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&gt;&nbsp;params,
+            boolean&nbsp;checked)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.transport.common.gzip"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/transport/common/gzip/package-summary.html">org.apache.cxf.transport.common.gzip</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/transport/common/gzip/package-summary.html">org.apache.cxf.transport.common.gzip</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>GZIPOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/transport/common/gzip/GZIPOutInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>GZIPInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/transport/common/gzip/GZIPInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.transport.https"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/transport/https/package-summary.html">org.apache.cxf.transport.https</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/transport/https/package-summary.html">org.apache.cxf.transport.https</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CertConstraintsInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/transport/https/CertConstraintsInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.mex"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/ws/mex/package-summary.html">org.apache.cxf.ws.mex</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/ws/mex/package-summary.html">org.apache.cxf.ws.mex</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MEXInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/ws/mex/MEXInInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.policy"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/ws/policy/package-summary.html">org.apache.cxf.ws.policy</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/ws/policy/package-summary.html">org.apache.cxf.ws.policy</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractPolicyInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/ws/policy/AbstractPolicyInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.policy.mtom"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/ws/policy/mtom/package-summary.html">org.apache.cxf.ws.policy.mtom</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/ws/policy/mtom/package-summary.html">org.apache.cxf.ws.policy.mtom</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MTOMPolicyInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/ws/policy/mtom/MTOMPolicyInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.rm"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/ws/rm/package-summary.html">org.apache.cxf.ws.rm</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/ws/rm/package-summary.html">org.apache.cxf.ws.rm</A> that return <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></CODE></FONT></TD>
+<TD><CODE><B>BindingFaultFactory.</B><B><A HREF="../../../../../org/apache/cxf/ws/rm/BindingFaultFactory.html#createFault(org.apache.cxf.ws.rm.SequenceFault, org.apache.cxf.message.Message)">createFault</A></B>(<A HREF="../../../../../org/apache/cxf/ws/rm/SequenceFault.html" title="class in org.apache.cxf.ws.rm">SequenceFault</A>&nbsp;sf,
+            <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/ws/rm/package-summary.html">org.apache.cxf.ws.rm</A> with parameters of type <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B>BindingFaultFactory.</B><B><A HREF="../../../../../org/apache/cxf/ws/rm/BindingFaultFactory.html#toString(org.apache.cxf.interceptor.Fault)">toString</A></B>(<A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A>&nbsp;f)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/ws/rm/package-summary.html">org.apache.cxf.ws.rm</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>RetransmissionInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/ws/rm/RetransmissionInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractRMInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/ws/rm/AbstractRMInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.rm.soap"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/ws/rm/soap/package-summary.html">org.apache.cxf.ws.rm.soap</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/ws/rm/soap/package-summary.html">org.apache.cxf.ws.rm.soap</A> that return <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></CODE></FONT></TD>
+<TD><CODE><B>SoapFaultFactory.</B><B><A HREF="../../../../../org/apache/cxf/ws/rm/soap/SoapFaultFactory.html#createFault(org.apache.cxf.ws.rm.SequenceFault, org.apache.cxf.message.Message)">createFault</A></B>(<A HREF="../../../../../org/apache/cxf/ws/rm/SequenceFault.html" title="class in org.apache.cxf.ws.rm">SequenceFault</A>&nbsp;sf,
+            <A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/ws/rm/soap/package-summary.html">org.apache.cxf.ws.rm.soap</A> with parameters of type <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B>SoapFaultFactory.</B><B><A HREF="../../../../../org/apache/cxf/ws/rm/soap/SoapFaultFactory.html#toString(org.apache.cxf.interceptor.Fault)">toString</A></B>(<A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A>&nbsp;f)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/ws/rm/soap/package-summary.html">org.apache.cxf.ws.rm.soap</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>RMSoapInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/ws/rm/soap/RMSoapInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.security.policy.interceptors"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/ws/security/policy/interceptors/package-summary.html">org.apache.cxf.ws.security.policy.interceptors</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/ws/security/policy/interceptors/package-summary.html">org.apache.cxf.ws.security.policy.interceptors</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SecurityVerificationOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/ws/security/policy/interceptors/SecurityVerificationOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checks if some security assertions are specified without binding assertion and cannot be fulfilled.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.security.trust"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/ws/security/trust/package-summary.html">org.apache.cxf.ws.security.trust</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/ws/security/trust/package-summary.html">org.apache.cxf.ws.security.trust</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AuthPolicyValidatingInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/ws/security/trust/AuthPolicyValidatingInterceptor.html#handleMessage(org.apache.cxf.message.Message)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.ws.security.wss4j"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A> in <A HREF="../../../../../org/apache/cxf/ws/security/wss4j/package-summary.html">org.apache.cxf.ws.security.wss4j</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../org/apache/cxf/ws/security/wss4j/package-summary.html">org.apache.cxf.ws.security.wss4j</A> that throw <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor">Fault</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CryptoCoverageChecker.</B><B><A HREF="../../../../../org/apache/cxf/ws/security/wss4j/CryptoCoverageChecker.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Checks that the WSS4J results refer to the required signed/encrypted
+ elements as defined by the XPath expressions in <A HREF="../../../../../org/apache/cxf/ws/security/wss4j/CryptoCoverageChecker.html#xPaths"><CODE>CryptoCoverageChecker.xPaths</CODE></A>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SamlTokenInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/ws/security/wss4j/SamlTokenInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSS4JOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/ws/security/wss4j/WSS4JOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;mc)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>WSS4JInInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/ws/security/wss4j/WSS4JInInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JOutInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JOutInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;mc)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>PolicyBasedWSS4JOutInterceptor.PolicyBasedWSS4JOutInterceptorInternal.</B><B><A HREF="../../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JOutInterceptor.PolicyBasedWSS4JOutInterceptorInternal.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractUsernameTokenAuthenticatingInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/ws/security/wss4j/AbstractUsernameTokenAuthenticatingInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;msg)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>UsernameTokenInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/ws/security/wss4j/UsernameTokenInterceptor.html#handleMessage(org.apache.cxf.binding.soap.SoapMessage)">handleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractWSS4JInterceptor.</B><B><A HREF="../../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JInterceptor.html#postHandleMessage(org.apache.cxf.binding.soap.SoapMessage)">postHandleMessage</A></B>(<A HREF="../../../../../org/apache/cxf/binding/soap/SoapMessage.html" title="class in org.apache.cxf.binding.soap">SoapMessage</A>&nbsp;message)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../org/apache/cxf/interceptor/Fault.html" title="class in org.apache.cxf.interceptor"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/interceptor/class-use/Fault.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="Fault.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

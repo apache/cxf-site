@@ -1,0 +1,999 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+DynamicClientFactory (Apache CXF Bundle Jar 2.7.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="DynamicClientFactory (Apache CXF Bundle Jar 2.7.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/DynamicClientFactory.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.LocationFilterReader.html" title="class in org.apache.cxf.endpoint.dynamic"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="DynamicClientFactory.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.endpoint.dynamic</FONT>
+<BR>
+Class DynamicClientFactory</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.endpoint.dynamic.DynamicClientFactory</B>
+</PRE>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../org/apache/cxf/jaxws/endpoint/dynamic/JaxWsDynamicClientFactory.html" title="class in org.apache.cxf.jaxws.endpoint.dynamic">JaxWsDynamicClientFactory</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>DynamicClientFactory</B><DT>extends <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></DL>
+</PRE>
+
+<P>
+This class reads a WSDL and creates a dynamic client from it.
+ 
+ Use <A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#newInstance(org.apache.cxf.Bus)"><CODE>newInstance(org.apache.cxf.Bus)</CODE></A> to obtain an instance, and then
+ <A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.lang.String)"><CODE>createClient(String)</CODE></A> (or other overloads) to create a client.
+ 
+ It uses the JAXB data binding. It does not set up complex interceptors for 
+ features such as attachments. 
+ See <A HREF="../../../../../org/apache/cxf/jaxws/endpoint/dynamic/JaxWsDynamicClientFactory.html" title="class in org.apache.cxf.jaxws.endpoint.dynamic"><CODE>JaxWsDynamicClientFactory</CODE></A>
+ for an alternative that sets up JAX-WS endpoints.
+
+ This class may be subclassed to allow for other endpoints or behaviors.
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.LocationFilterReader.html" title="class in org.apache.cxf.endpoint.dynamic">DynamicClientFactory.LocationFilterReader</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected </CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#DynamicClientFactory(org.apache.cxf.Bus)">DynamicClientFactory</A></B>(<A HREF="../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;bus)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#allowWrapperOps()">allowWrapperOps</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html?is-external=true" title="class or interface in org.w3c.dom">Node</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#cloneNode(org.w3c.dom.Document, org.w3c.dom.Node, boolean)">cloneNode</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html?is-external=true" title="class or interface in org.w3c.dom">Document</A>&nbsp;document,
+          <A HREF="http://download.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html?is-external=true" title="class or interface in org.w3c.dom">Node</A>&nbsp;node,
+          boolean&nbsp;deep)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#compileJavaSrc(java.lang.String, java.util.List, java.lang.String)">compileJavaSrc</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;classPath,
+               <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</A>&gt;&nbsp;srcList,
+               <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;dest)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.lang.String)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new <code>Client</code> instance using the WSDL to be loaded
+ from the specified URL and using the current classloading context.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.lang.String, java.lang.ClassLoader)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html?is-external=true" title="class or interface in java.lang">ClassLoader</A>&nbsp;classLoader)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new <code>Client</code> instance using the WSDL to be loaded
+ from the specified URL and with the specified <code>ClassLoader</code>
+ as parent.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.lang.String, java.lang.ClassLoader, java.util.List)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html?is-external=true" title="class or interface in java.lang">ClassLoader</A>&nbsp;classLoader,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.lang.String, java.util.List)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.lang.String, javax.xml.namespace.QName)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.lang.String, javax.xml.namespace.QName, java.lang.ClassLoader, javax.xml.namespace.QName)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html?is-external=true" title="class or interface in java.lang">ClassLoader</A>&nbsp;classLoader,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;port)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.lang.String, javax.xml.namespace.QName, java.lang.ClassLoader, javax.xml.namespace.QName, java.util.List)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html?is-external=true" title="class or interface in java.lang">ClassLoader</A>&nbsp;classLoader,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;port,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.lang.String, javax.xml.namespace.QName, java.util.List)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.lang.String, javax.xml.namespace.QName, javax.xml.namespace.QName)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;port)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.lang.String, javax.xml.namespace.QName, javax.xml.namespace.QName, java.util.List)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;port,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.net.URL)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new <code>Client</code> instance using the WSDL to be loaded
+ from the specified URL and using the current classloading context.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.net.URL, java.lang.ClassLoader)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html?is-external=true" title="class or interface in java.lang">ClassLoader</A>&nbsp;classLoader)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new <code>Client</code> instance using the WSDL to be loaded
+ from the specified URL and with the specified <code>ClassLoader</code>
+ as parent.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.net.URL, java.lang.ClassLoader, java.util.List)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html?is-external=true" title="class or interface in java.lang">ClassLoader</A>&nbsp;classLoader,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.net.URL, java.util.List)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.net.URL, javax.xml.namespace.QName)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.net.URL, javax.xml.namespace.QName, java.lang.ClassLoader, javax.xml.namespace.QName)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html?is-external=true" title="class or interface in java.lang">ClassLoader</A>&nbsp;classLoader,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;port)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.net.URL, javax.xml.namespace.QName, java.lang.ClassLoader, javax.xml.namespace.QName, java.util.List)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html?is-external=true" title="class or interface in java.lang">ClassLoader</A>&nbsp;classLoader,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;port,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.net.URL, javax.xml.namespace.QName, java.util.List)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.net.URL, javax.xml.namespace.QName, javax.xml.namespace.QName)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;port)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#createClient(java.net.URL, javax.xml.namespace.QName, javax.xml.namespace.QName, java.util.List)">createClient</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;port,
+             <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/EndpointImplFactory.html" title="interface in org.apache.cxf.endpoint">EndpointImplFactory</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#getEndpointImplFactory()">getEndpointImplFactory</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#getJaxbContextProperties()">getJaxbContextProperties</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Return the map of JAXB context properties used at the time that we create new contexts.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#isSimpleBindingEnabled()">isSimpleBindingEnabled</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html" title="class in org.apache.cxf.endpoint.dynamic">DynamicClientFactory</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#newInstance()">newInstance</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new instance using a default <tt>Bus</tt>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html" title="class in org.apache.cxf.endpoint.dynamic">DynamicClientFactory</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#newInstance(org.apache.cxf.Bus)">newInstance</A></B>(<A HREF="../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a new instance using a specific <tt>Bus</tt>.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#setAllowElementReferences(boolean)">setAllowElementReferences</A></B>(boolean&nbsp;b)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#setJaxbContextProperties(java.util.Map)">setJaxbContextProperties</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;&nbsp;jaxbContextProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set the map of JAXB context properties used at the time that we create new contexts.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#setSimpleBindingEnabled(boolean)">setSimpleBindingEnabled</A></B>(boolean&nbsp;simpleBindingEnabled)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html#setTemporaryDirectory(java.lang.String)">setTemporaryDirectory</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;dir)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="DynamicClientFactory(org.apache.cxf.Bus)"><!-- --></A><H3>
+DynamicClientFactory</H3>
+<PRE>
+protected <B>DynamicClientFactory</B>(<A HREF="../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;bus)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getEndpointImplFactory()"><!-- --></A><H3>
+getEndpointImplFactory</H3>
+<PRE>
+protected <A HREF="../../../../../org/apache/cxf/endpoint/EndpointImplFactory.html" title="interface in org.apache.cxf.endpoint">EndpointImplFactory</A> <B>getEndpointImplFactory</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setTemporaryDirectory(java.lang.String)"><!-- --></A><H3>
+setTemporaryDirectory</H3>
+<PRE>
+public void <B>setTemporaryDirectory</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;dir)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setAllowElementReferences(boolean)"><!-- --></A><H3>
+setAllowElementReferences</H3>
+<PRE>
+public void <B>setAllowElementReferences</B>(boolean&nbsp;b)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newInstance(org.apache.cxf.Bus)"><!-- --></A><H3>
+newInstance</H3>
+<PRE>
+public static <A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html" title="class in org.apache.cxf.endpoint.dynamic">DynamicClientFactory</A> <B>newInstance</B>(<A HREF="../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</A>&nbsp;b)</PRE>
+<DL>
+<DD>Create a new instance using a specific <tt>Bus</tt>.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>b</CODE> - the <tt>Bus</tt> to use in subsequent operations with the
+            instance
+<DT><B>Returns:</B><DD>the new instance</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="newInstance()"><!-- --></A><H3>
+newInstance</H3>
+<PRE>
+public static <A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html" title="class in org.apache.cxf.endpoint.dynamic">DynamicClientFactory</A> <B>newInstance</B>()</PRE>
+<DL>
+<DD>Create a new instance using a default <tt>Bus</tt>.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the new instance<DT><B>See Also:</B><DD><A HREF="../../../../../org/apache/cxf/BusFactory.html#getDefaultBus()"><CODE>BusFactory.getDefaultBus()</CODE></A></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.lang.String)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl)</PRE>
+<DL>
+<DD>Create a new <code>Client</code> instance using the WSDL to be loaded
+ from the specified URL and using the current classloading context.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>wsdlURL</CODE> - the URL to load
+<DT><B>Returns:</B><DD></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.lang.String, java.util.List)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.net.URL)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl)</PRE>
+<DL>
+<DD>Create a new <code>Client</code> instance using the WSDL to be loaded
+ from the specified URL and using the current classloading context.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>wsdlURL</CODE> - the URL to load
+<DT><B>Returns:</B><DD></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.net.URL, java.util.List)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.lang.String, java.lang.ClassLoader)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html?is-external=true" title="class or interface in java.lang">ClassLoader</A>&nbsp;classLoader)</PRE>
+<DL>
+<DD>Create a new <code>Client</code> instance using the WSDL to be loaded
+ from the specified URL and with the specified <code>ClassLoader</code>
+ as parent.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>wsdlUrl</CODE> - <DD><CODE>classLoader</CODE> - 
+<DT><B>Returns:</B><DD></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.lang.String, java.lang.ClassLoader, java.util.List)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html?is-external=true" title="class or interface in java.lang">ClassLoader</A>&nbsp;classLoader,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.lang.String, javax.xml.namespace.QName)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.lang.String, javax.xml.namespace.QName, java.util.List)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.lang.String, javax.xml.namespace.QName, javax.xml.namespace.QName)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;port)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.lang.String, javax.xml.namespace.QName, javax.xml.namespace.QName, java.util.List)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;port,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.lang.String, javax.xml.namespace.QName, java.lang.ClassLoader, javax.xml.namespace.QName)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html?is-external=true" title="class or interface in java.lang">ClassLoader</A>&nbsp;classLoader,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;port)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.net.URL, java.lang.ClassLoader)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html?is-external=true" title="class or interface in java.lang">ClassLoader</A>&nbsp;classLoader)</PRE>
+<DL>
+<DD>Create a new <code>Client</code> instance using the WSDL to be loaded
+ from the specified URL and with the specified <code>ClassLoader</code>
+ as parent.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>wsdlUrl</CODE> - <DD><CODE>classLoader</CODE> - 
+<DT><B>Returns:</B><DD></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.net.URL, java.lang.ClassLoader, java.util.List)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html?is-external=true" title="class or interface in java.lang">ClassLoader</A>&nbsp;classLoader,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.net.URL, javax.xml.namespace.QName)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.net.URL, javax.xml.namespace.QName, java.util.List)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.net.URL, javax.xml.namespace.QName, javax.xml.namespace.QName)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;port)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.net.URL, javax.xml.namespace.QName, javax.xml.namespace.QName, java.util.List)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;port,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.net.URL, javax.xml.namespace.QName, java.lang.ClassLoader, javax.xml.namespace.QName)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html?is-external=true" title="class or interface in java.lang">ClassLoader</A>&nbsp;classLoader,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;port)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.net.URL, javax.xml.namespace.QName, java.lang.ClassLoader, javax.xml.namespace.QName, java.util.List)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URL.html?is-external=true" title="class or interface in java.net">URL</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html?is-external=true" title="class or interface in java.lang">ClassLoader</A>&nbsp;classLoader,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;port,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createClient(java.lang.String, javax.xml.namespace.QName, java.lang.ClassLoader, javax.xml.namespace.QName, java.util.List)"><!-- --></A><H3>
+createClient</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</A> <B>createClient</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;wsdlUrl,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;service,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/ClassLoader.html?is-external=true" title="class or interface in java.lang">ClassLoader</A>&nbsp;classLoader,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;port,
+                           <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&gt;&nbsp;bindingFiles)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="allowWrapperOps()"><!-- --></A><H3>
+allowWrapperOps</H3>
+<PRE>
+protected boolean <B>allowWrapperOps</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isSimpleBindingEnabled()"><!-- --></A><H3>
+isSimpleBindingEnabled</H3>
+<PRE>
+public boolean <B>isSimpleBindingEnabled</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSimpleBindingEnabled(boolean)"><!-- --></A><H3>
+setSimpleBindingEnabled</H3>
+<PRE>
+public void <B>setSimpleBindingEnabled</B>(boolean&nbsp;simpleBindingEnabled)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="compileJavaSrc(java.lang.String, java.util.List, java.lang.String)"><!-- --></A><H3>
+compileJavaSrc</H3>
+<PRE>
+protected boolean <B>compileJavaSrc</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;classPath,
+                                 <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/File.html?is-external=true" title="class or interface in java.io">File</A>&gt;&nbsp;srcList,
+                                 <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;dest)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getJaxbContextProperties()"><!-- --></A><H3>
+getJaxbContextProperties</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt; <B>getJaxbContextProperties</B>()</PRE>
+<DL>
+<DD>Return the map of JAXB context properties used at the time that we create new contexts.
+<P>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the map</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setJaxbContextProperties(java.util.Map)"><!-- --></A><H3>
+setJaxbContextProperties</H3>
+<PRE>
+public void <B>setJaxbContextProperties</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A>&gt;&nbsp;jaxbContextProperties)</PRE>
+<DL>
+<DD>Set the map of JAXB context properties used at the time that we create new contexts.
+<P>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>jaxbContextProperties</CODE> - </DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="cloneNode(org.w3c.dom.Document, org.w3c.dom.Node, boolean)"><!-- --></A><H3>
+cloneNode</H3>
+<PRE>
+public <A HREF="http://download.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html?is-external=true" title="class or interface in org.w3c.dom">Node</A> <B>cloneNode</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/org/w3c/dom/Document.html?is-external=true" title="class or interface in org.w3c.dom">Document</A>&nbsp;document,
+                      <A HREF="http://download.oracle.com/javase/6/docs/api/org/w3c/dom/Node.html?is-external=true" title="class or interface in org.w3c.dom">Node</A>&nbsp;node,
+                      boolean&nbsp;deep)
+               throws <A HREF="http://download.oracle.com/javase/6/docs/api/org/w3c/dom/DOMException.html?is-external=true" title="class or interface in org.w3c.dom">DOMException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/org/w3c/dom/DOMException.html?is-external=true" title="class or interface in org.w3c.dom">DOMException</A></CODE></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/DynamicClientFactory.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV CLASS&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/endpoint/dynamic/DynamicClientFactory.LocationFilterReader.html" title="class in org.apache.cxf.endpoint.dynamic"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/endpoint/dynamic/DynamicClientFactory.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="DynamicClientFactory.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_class_summary">NESTED</A>&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

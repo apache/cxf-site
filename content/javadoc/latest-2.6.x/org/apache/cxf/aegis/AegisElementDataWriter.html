@@ -1,0 +1,372 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+AegisElementDataWriter (Apache CXF Bundle Jar 2.6.3 API)
+</TITLE>
+
+<META NAME="keywords" CONTENT="org.apache.cxf.aegis.AegisElementDataWriter class">
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="AegisElementDataWriter (Apache CXF Bundle Jar 2.6.3 API)";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AegisElementDataWriter.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../org/apache/cxf/aegis/AegisElementDataReader.html" title="class in org.apache.cxf.aegis"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../org/apache/cxf/aegis/AegisIo.html" title="interface in org.apache.cxf.aegis"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?org/apache/cxf/aegis/AegisElementDataWriter.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AegisElementDataWriter.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.aegis</FONT>
+<BR>
+Class AegisElementDataWriter</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../org/apache/cxf/aegis/AbstractAegisIoImpl.html" title="class in org.apache.cxf.aegis">org.apache.cxf.aegis.AbstractAegisIoImpl</A>
+      <IMG SRC="../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.aegis.AegisElementDataWriter</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../org/apache/cxf/aegis/AegisIo.html" title="interface in org.apache.cxf.aegis">AegisIo</A>, <A HREF="../../../../org/apache/cxf/aegis/AegisWriter.html" title="interface in org.apache.cxf.aegis">AegisWriter</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/org/w3c/dom/Element.html" title="class or interface in org.w3c.dom">Element</A>&gt;</DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>AegisElementDataWriter</B><DT>extends <A HREF="../../../../org/apache/cxf/aegis/AbstractAegisIoImpl.html" title="class in org.apache.cxf.aegis">AbstractAegisIoImpl</A><DT>implements <A HREF="../../../../org/apache/cxf/aegis/AegisWriter.html" title="interface in org.apache.cxf.aegis">AegisWriter</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/org/w3c/dom/Element.html" title="class or interface in org.w3c.dom">Element</A>&gt;</DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../org/apache/cxf/aegis/AegisXMLStreamDataWriter.html" title="class in org.apache.cxf.aegis">AegisXMLStreamDataWriter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/aegis/AegisElementDataWriter.html#writer">writer</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.aegis.AbstractAegisIoImpl"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.aegis.<A HREF="../../../../org/apache/cxf/aegis/AbstractAegisIoImpl.html" title="class in org.apache.cxf.aegis">AbstractAegisIoImpl</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../org/apache/cxf/aegis/AbstractAegisIoImpl.html#aegisContext">aegisContext</A>, <A HREF="../../../../org/apache/cxf/aegis/AbstractAegisIoImpl.html#context">context</A>, <A HREF="../../../../org/apache/cxf/aegis/AbstractAegisIoImpl.html#properties">properties</A>, <A HREF="../../../../org/apache/cxf/aegis/AbstractAegisIoImpl.html#schema">schema</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/aegis/AegisElementDataWriter.html#AegisElementDataWriter(org.apache.cxf.aegis.AegisContext)">AegisElementDataWriter</A></B>(<A HREF="../../../../org/apache/cxf/aegis/AegisContext.html" title="class in org.apache.cxf.aegis">AegisContext</A>&nbsp;globalContext)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/aegis/AegisElementDataWriter.html#write(java.lang.Object, javax.xml.namespace.QName, boolean, org.w3c.dom.Element, org.apache.cxf.aegis.type.AegisType)">write</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+      <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html" title="class or interface in javax.xml.namespace">QName</A>&nbsp;elementName,
+      boolean&nbsp;optional,
+      <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/org/w3c/dom/Element.html" title="class or interface in org.w3c.dom">Element</A>&nbsp;output,
+      <A HREF="../../../../org/apache/cxf/aegis/type/AegisType.html" title="class in org.apache.cxf.aegis.type">AegisType</A>&nbsp;aegisType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Write an object to the sink.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/aegis/AegisElementDataWriter.html#write(java.lang.Object, javax.xml.namespace.QName, boolean, org.w3c.dom.Element, java.lang.reflect.Type)">write</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+      <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html" title="class or interface in javax.xml.namespace">QName</A>&nbsp;elementName,
+      boolean&nbsp;optional,
+      <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/org/w3c/dom/Element.html" title="class or interface in org.w3c.dom">Element</A>&nbsp;output,
+      <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect">Type</A>&nbsp;objectType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Write an object to the sink, providing a <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect"><CODE>Type</CODE></A> to specify
+ its type.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.aegis.AbstractAegisIoImpl"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.aegis.<A HREF="../../../../org/apache/cxf/aegis/AbstractAegisIoImpl.html" title="class in org.apache.cxf.aegis">AbstractAegisIoImpl</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../org/apache/cxf/aegis/AbstractAegisIoImpl.html#getContext()">getContext</A>, <A HREF="../../../../org/apache/cxf/aegis/AbstractAegisIoImpl.html#setProperty(java.lang.String, java.lang.Object)">setProperty</A>, <A HREF="../../../../org/apache/cxf/aegis/AbstractAegisIoImpl.html#setSchema(javax.xml.validation.Schema)">setSchema</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.aegis.AegisIo"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface org.apache.cxf.aegis.<A HREF="../../../../org/apache/cxf/aegis/AegisIo.html" title="interface in org.apache.cxf.aegis">AegisIo</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../org/apache/cxf/aegis/AegisIo.html#setProperty(java.lang.String, java.lang.Object)">setProperty</A>, <A HREF="../../../../org/apache/cxf/aegis/AegisIo.html#setSchema(javax.xml.validation.Schema)">setSchema</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="writer"><!-- --></A><H3>
+writer</H3>
+<PRE>
+protected <A HREF="../../../../org/apache/cxf/aegis/AegisXMLStreamDataWriter.html" title="class in org.apache.cxf.aegis">AegisXMLStreamDataWriter</A> <B>writer</B></PRE>
+<DL>
+<DL>
+</DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="AegisElementDataWriter(org.apache.cxf.aegis.AegisContext)"><!-- --></A><H3>
+AegisElementDataWriter</H3>
+<PRE>
+public <B>AegisElementDataWriter</B>(<A HREF="../../../../org/apache/cxf/aegis/AegisContext.html" title="class in org.apache.cxf.aegis">AegisContext</A>&nbsp;globalContext)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="write(java.lang.Object, javax.xml.namespace.QName, boolean, org.w3c.dom.Element, org.apache.cxf.aegis.type.AegisType)"><!-- --></A><H3>
+write</H3>
+<PRE>
+public void <B>write</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+                  <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html" title="class or interface in javax.xml.namespace">QName</A>&nbsp;elementName,
+                  boolean&nbsp;optional,
+                  <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/org/w3c/dom/Element.html" title="class or interface in org.w3c.dom">Element</A>&nbsp;output,
+                  <A HREF="../../../../org/apache/cxf/aegis/type/AegisType.html" title="class in org.apache.cxf.aegis.type">AegisType</A>&nbsp;aegisType)
+           throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../org/apache/cxf/aegis/AegisWriter.html#write(java.lang.Object, javax.xml.namespace.QName, boolean, SinkT, org.apache.cxf.aegis.type.AegisType)">AegisWriter</A></CODE></B></DD>
+<DD>Write an object to the sink.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../org/apache/cxf/aegis/AegisWriter.html#write(java.lang.Object, javax.xml.namespace.QName, boolean, SinkT, org.apache.cxf.aegis.type.AegisType)">write</A></CODE> in interface <CODE><A HREF="../../../../org/apache/cxf/aegis/AegisWriter.html" title="interface in org.apache.cxf.aegis">AegisWriter</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/org/w3c/dom/Element.html" title="class or interface in org.w3c.dom">Element</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>obj</CODE> - The object.<DD><CODE>elementName</CODE> - The element QName.<DD><CODE>optional</CODE> - true to omit for null. (minOccurs=0)<DD><CODE>output</CODE> - The output sink.<DD><CODE>aegisType</CODE> - The aegis type to use. Null is allowed, but only if
+ obj is not null.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="write(java.lang.Object, javax.xml.namespace.QName, boolean, org.w3c.dom.Element, java.lang.reflect.Type)"><!-- --></A><H3>
+write</H3>
+<PRE>
+public void <B>write</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+                  <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html" title="class or interface in javax.xml.namespace">QName</A>&nbsp;elementName,
+                  boolean&nbsp;optional,
+                  <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/org/w3c/dom/Element.html" title="class or interface in org.w3c.dom">Element</A>&nbsp;output,
+                  <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect">Type</A>&nbsp;objectType)
+           throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../org/apache/cxf/aegis/AegisWriter.html#write(java.lang.Object, javax.xml.namespace.QName, boolean, SinkT, java.lang.reflect.Type)">AegisWriter</A></CODE></B></DD>
+<DD>Write an object to the sink, providing a <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect"><CODE>Type</CODE></A> to specify
+ its type.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../org/apache/cxf/aegis/AegisWriter.html#write(java.lang.Object, javax.xml.namespace.QName, boolean, SinkT, java.lang.reflect.Type)">write</A></CODE> in interface <CODE><A HREF="../../../../org/apache/cxf/aegis/AegisWriter.html" title="interface in org.apache.cxf.aegis">AegisWriter</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/org/w3c/dom/Element.html" title="class or interface in org.w3c.dom">Element</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>obj</CODE> - the object<DD><CODE>elementName</CODE> - XML element name<DD><CODE>optional</CODE> - true if null maps to no output at all.<DD><CODE>output</CODE> - where to put it.<DD><CODE>objectType</CODE> - A description of the type of the object.
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AegisElementDataWriter.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../org/apache/cxf/aegis/AegisElementDataReader.html" title="class in org.apache.cxf.aegis"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../org/apache/cxf/aegis/AegisIo.html" title="interface in org.apache.cxf.aegis"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?org/apache/cxf/aegis/AegisElementDataWriter.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AegisElementDataWriter.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

@@ -1,0 +1,994 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+AsyncHTTPConduit.AsyncWrappedOutputStream (Apache CXF Bundle Jar 2.7.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AsyncHTTPConduit.AsyncWrappedOutputStream (Apache CXF Bundle Jar 2.7.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AsyncHTTPConduit.AsyncWrappedOutputStream.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.html" title="class in org.apache.cxf.transport.http.asyncclient"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduitFactory.html" title="class in org.apache.cxf.transport.http.asyncclient"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AsyncHTTPConduit.AsyncWrappedOutputStream.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.cxf.transport.http.HTTPConduit.WrappedOutputStream">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.transport.http.asyncclient</FONT>
+<BR>
+Class AsyncHTTPConduit.AsyncWrappedOutputStream</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">java.io.OutputStream</A>
+      <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html" title="class in org.apache.cxf.io">org.apache.cxf.io.AbstractWrappedOutputStream</A>
+          <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html" title="class in org.apache.cxf.io">org.apache.cxf.io.AbstractThresholdOutputStream</A>
+              <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">org.apache.cxf.transport.http.HTTPConduit.WrappedOutputStream</A>
+                  <IMG SRC="../../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.transport.http.asyncclient.AsyncHTTPConduit.AsyncWrappedOutputStream</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Flushable.html?is-external=true" title="class or interface in java.io">Flushable</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/channels/Channel.html?is-external=true" title="class or interface in java.nio.channels">Channel</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/channels/WritableByteChannel.html?is-external=true" title="class or interface in java.nio.channels">WritableByteChannel</A>, <A HREF="../../../../../../org/apache/cxf/io/CopyingOutputStream.html" title="interface in org.apache.cxf.io">CopyingOutputStream</A></DD>
+</DL>
+<DL>
+<DT><B>Enclosing class:</B><DD><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.html" title="class in org.apache.cxf.transport.http.asyncclient">AsyncHTTPConduit</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>AsyncHTTPConduit.AsyncWrappedOutputStream</B><DT>extends <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A><DT>implements <A HREF="../../../../../../org/apache/cxf/io/CopyingOutputStream.html" title="interface in org.apache.cxf.io">CopyingOutputStream</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/channels/WritableByteChannel.html?is-external=true" title="class or interface in java.nio.channels">WritableByteChannel</A></DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.transport.http.HTTPConduit.WrappedOutputStream"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.transport.http.<A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#cachedStream">cachedStream</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#cachingForRetransmission">cachingForRetransmission</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#chunking">chunking</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#conduitName">conduitName</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#outMessage">outMessage</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#url">url</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.io.AbstractThresholdOutputStream"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.io.<A HREF="../../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html" title="class in org.apache.cxf.io">AbstractThresholdOutputStream</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html#buffer">buffer</A>, <A HREF="../../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html#threshold">threshold</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.io.AbstractWrappedOutputStream"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.io.<A HREF="../../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html" title="class in org.apache.cxf.io">AbstractWrappedOutputStream</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html#allowFlush">allowFlush</A>, <A HREF="../../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html#wrappedStream">wrappedStream</A>, <A HREF="../../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html#written">written</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#AsyncHTTPConduit.AsyncWrappedOutputStream(org.apache.cxf.message.Message, boolean, boolean, int, java.lang.String, java.net.URI)">AsyncHTTPConduit.AsyncWrappedOutputStream</A></B>(<A HREF="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+                                          boolean&nbsp;needToCacheRequest,
+                                          boolean&nbsp;isChunking,
+                                          int&nbsp;chunkThreshold,
+                                          <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;conduitName,
+                                          <A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</A>&nbsp;uri)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#close()">close</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perform any actions required on stream closure (handle response etc.)</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#closeInputStream()">closeInputStream</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#connect(boolean)">connect</A></B>(boolean&nbsp;output)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#copyFrom(java.io.InputStream)">copyFrom</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</A>&nbsp;in)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/io/CachedOutputStream.html" title="class in org.apache.cxf.io">CachedOutputStream</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#getCachedStream()">getCachedStream</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;org.apache.http.HttpResponse</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#getHttpResponse()">getHttpResponse</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../org/apache/cxf/transport/https/HttpsURLConnectionInfo.html" title="class in org.apache.cxf.transport.https">HttpsURLConnectionInfo</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#getHttpsURLConnectionInfo()">getHttpsURLConnectionInfo</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#getInputStream()">getInputStream</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#getPartialResponse()">getPartialResponse</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#getResponseCode()">getResponseCode</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#getResponseMessage()">getResponseMessage</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#handleNoOutput()">handleNoOutput</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#handleResponseAsync()">handleResponseAsync</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#isOpen()">isOpen</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#retransmitable()">retransmitable</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#retransmitStream()">retransmitStream</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#setException(java.lang.Exception)">setException</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A>&nbsp;ex)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#setFixedLengthStreamingMode(int)">setFixedLengthStreamingMode</A></B>(int&nbsp;i)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#setHttpResponse(org.apache.http.HttpResponse)">setHttpResponse</A></B>(org.apache.http.HttpResponse&nbsp;r)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#setProtocolHeaders()">setProtocolHeaders</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#setSSLSession(javax.net.ssl.SSLSession)">setSSLSession</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/javax/net/ssl/SSLSession.html?is-external=true" title="class or interface in javax.net.ssl">SSLSession</A>&nbsp;sslsession)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#setupNewConnection(java.lang.String)">setupNewConnection</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;newURL)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#setupWrappedStream()">setupWrappedStream</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#thresholdReached()">thresholdReached</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#updateCookiesBeforeRetransmit()">updateCookiesBeforeRetransmit</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#updateResponseHeaders(org.apache.cxf.message.Message)">updateResponseHeaders</A></B>(<A HREF="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;inMessage)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#usingProxy()">usingProxy</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;int</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html#write(java.nio.ByteBuffer)">write</A></B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio">ByteBuffer</A>&nbsp;src)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.transport.http.HTTPConduit.WrappedOutputStream"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.transport.http.<A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#authorizationRetransmit()">authorizationRetransmit</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#getMethod()">getMethod</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#handleHeadersTrustCaching()">handleHeadersTrustCaching</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#handleHttpRetryException(java.net.HttpRetryException)">handleHttpRetryException</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#handleResponse()">handleResponse</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#handleResponseInternal()">handleResponseInternal</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#handleResponseOnWorkqueue(boolean, boolean)">handleResponseOnWorkqueue</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#handleRetransmits()">handleRetransmits</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#makeTrustDecision()">makeTrustDecision</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#onFirstWrite()">onFirstWrite</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#processRetransmit()">processRetransmit</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#redirectRetransmit()">redirectRetransmit</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#retransmit(java.lang.String)">retransmit</A>, <A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#thresholdNotReached()">thresholdNotReached</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.io.AbstractThresholdOutputStream"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.io.<A HREF="../../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html" title="class in org.apache.cxf.io">AbstractThresholdOutputStream</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html#unBuffer()">unBuffer</A>, <A HREF="../../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html#write(byte[], int, int)">write</A>, <A HREF="../../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html#write(int)">write</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.io.AbstractWrappedOutputStream"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.io.<A HREF="../../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html" title="class in org.apache.cxf.io">AbstractWrappedOutputStream</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html#allowFlush(boolean)">allowFlush</A>, <A HREF="../../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html#flush()">flush</A>, <A HREF="../../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html#write(byte[])">write</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="AsyncHTTPConduit.AsyncWrappedOutputStream(org.apache.cxf.message.Message, boolean, boolean, int, java.lang.String, java.net.URI)"><!-- --></A><H3>
+AsyncHTTPConduit.AsyncWrappedOutputStream</H3>
+<PRE>
+public <B>AsyncHTTPConduit.AsyncWrappedOutputStream</B>(<A HREF="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;message,
+                                                 boolean&nbsp;needToCacheRequest,
+                                                 boolean&nbsp;isChunking,
+                                                 int&nbsp;chunkThreshold,
+                                                 <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;conduitName,
+                                                 <A HREF="http://download.oracle.com/javase/6/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</A>&nbsp;uri)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="retransmitable()"><!-- --></A><H3>
+retransmitable</H3>
+<PRE>
+public boolean <B>retransmitable</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getCachedStream()"><!-- --></A><H3>
+getCachedStream</H3>
+<PRE>
+public <A HREF="../../../../../../org/apache/cxf/io/CachedOutputStream.html" title="class in org.apache.cxf.io">CachedOutputStream</A> <B>getCachedStream</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setProtocolHeaders()"><!-- --></A><H3>
+setProtocolHeaders</H3>
+<PRE>
+protected void <B>setProtocolHeaders</B>()
+                           throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#setProtocolHeaders()">setProtocolHeaders</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setFixedLengthStreamingMode(int)"><!-- --></A><H3>
+setFixedLengthStreamingMode</H3>
+<PRE>
+protected void <B>setFixedLengthStreamingMode</B>(int&nbsp;i)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#setFixedLengthStreamingMode(int)">setFixedLengthStreamingMode</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="thresholdReached()"><!-- --></A><H3>
+thresholdReached</H3>
+<PRE>
+public void <B>thresholdReached</B>()
+                      throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html#thresholdReached()">thresholdReached</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html" title="class in org.apache.cxf.io">AbstractThresholdOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="handleNoOutput()"><!-- --></A><H3>
+handleNoOutput</H3>
+<PRE>
+protected void <B>handleNoOutput</B>()
+                       throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#handleNoOutput()">handleNoOutput</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isOpen()"><!-- --></A><H3>
+isOpen</H3>
+<PRE>
+public boolean <B>isOpen</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/channels/Channel.html?is-external=true#isOpen()" title="class or interface in java.nio.channels">isOpen</A></CODE> in interface <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/channels/Channel.html?is-external=true" title="class or interface in java.nio.channels">Channel</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="write(java.nio.ByteBuffer)"><!-- --></A><H3>
+write</H3>
+<PRE>
+public int <B>write</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/ByteBuffer.html?is-external=true" title="class or interface in java.nio">ByteBuffer</A>&nbsp;src)
+          throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/channels/WritableByteChannel.html?is-external=true#write(java.nio.ByteBuffer)" title="class or interface in java.nio.channels">write</A></CODE> in interface <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/channels/WritableByteChannel.html?is-external=true" title="class or interface in java.nio.channels">WritableByteChannel</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="copyFrom(java.io.InputStream)"><!-- --></A><H3>
+copyFrom</H3>
+<PRE>
+public int <B>copyFrom</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</A>&nbsp;in)
+             throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/io/CopyingOutputStream.html#copyFrom(java.io.InputStream)">copyFrom</A></CODE> in interface <CODE><A HREF="../../../../../../org/apache/cxf/io/CopyingOutputStream.html" title="interface in org.apache.cxf.io">CopyingOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="close()"><!-- --></A><H3>
+close</H3>
+<PRE>
+public void <B>close</B>()
+           throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#close()">HTTPConduit.WrappedOutputStream</A></CODE></B></DD>
+<DD>Perform any actions required on stream closure (handle response etc.)
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Closeable.html?is-external=true#close()" title="class or interface in java.io">close</A></CODE> in interface <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</A></CODE><DT><B>Specified by:</B><DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/channels/Channel.html?is-external=true#close()" title="class or interface in java.nio.channels">close</A></CODE> in interface <CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/nio/channels/Channel.html?is-external=true" title="class or interface in java.nio.channels">Channel</A></CODE><DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#close()">close</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setupWrappedStream()"><!-- --></A><H3>
+setupWrappedStream</H3>
+<PRE>
+protected void <B>setupWrappedStream</B>()
+                           throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#setupWrappedStream()">setupWrappedStream</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="connect(boolean)"><!-- --></A><H3>
+connect</H3>
+<PRE>
+protected void <B>connect</B>(boolean&nbsp;output)
+                throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setHttpResponse(org.apache.http.HttpResponse)"><!-- --></A><H3>
+setHttpResponse</H3>
+<PRE>
+protected void <B>setHttpResponse</B>(org.apache.http.HttpResponse&nbsp;r)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setException(java.lang.Exception)"><!-- --></A><H3>
+setException</H3>
+<PRE>
+protected void <B>setException</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</A>&nbsp;ex)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getHttpResponse()"><!-- --></A><H3>
+getHttpResponse</H3>
+<PRE>
+protected org.apache.http.HttpResponse <B>getHttpResponse</B>()
+                                                throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="handleResponseAsync()"><!-- --></A><H3>
+handleResponseAsync</H3>
+<PRE>
+protected void <B>handleResponseAsync</B>()
+                            throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#handleResponseAsync()">handleResponseAsync</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="closeInputStream()"><!-- --></A><H3>
+closeInputStream</H3>
+<PRE>
+protected void <B>closeInputStream</B>()
+                         throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#closeInputStream()">closeInputStream</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getInputStream()"><!-- --></A><H3>
+getInputStream</H3>
+<PRE>
+protected <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</A> <B>getInputStream</B>()
+                              throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#getInputStream()">getInputStream</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="usingProxy()"><!-- --></A><H3>
+usingProxy</H3>
+<PRE>
+protected boolean <B>usingProxy</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#usingProxy()">usingProxy</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getHttpsURLConnectionInfo()"><!-- --></A><H3>
+getHttpsURLConnectionInfo</H3>
+<PRE>
+protected <A HREF="../../../../../../org/apache/cxf/transport/https/HttpsURLConnectionInfo.html" title="class in org.apache.cxf.transport.https">HttpsURLConnectionInfo</A> <B>getHttpsURLConnectionInfo</B>()
+                                                    throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#getHttpsURLConnectionInfo()">getHttpsURLConnectionInfo</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getResponseCode()"><!-- --></A><H3>
+getResponseCode</H3>
+<PRE>
+protected int <B>getResponseCode</B>()
+                       throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#getResponseCode()">getResponseCode</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getResponseMessage()"><!-- --></A><H3>
+getResponseMessage</H3>
+<PRE>
+protected <A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getResponseMessage</B>()
+                             throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#getResponseMessage()">getResponseMessage</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="updateResponseHeaders(org.apache.cxf.message.Message)"><!-- --></A><H3>
+updateResponseHeaders</H3>
+<PRE>
+protected void <B>updateResponseHeaders</B>(<A HREF="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&nbsp;inMessage)
+                              throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#updateResponseHeaders(org.apache.cxf.message.Message)">updateResponseHeaders</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPartialResponse()"><!-- --></A><H3>
+getPartialResponse</H3>
+<PRE>
+protected <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</A> <B>getPartialResponse</B>()
+                                  throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#getPartialResponse()">getPartialResponse</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="updateCookiesBeforeRetransmit()"><!-- --></A><H3>
+updateCookiesBeforeRetransmit</H3>
+<PRE>
+protected void <B>updateCookiesBeforeRetransmit</B>()
+                                      throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#updateCookiesBeforeRetransmit()">updateCookiesBeforeRetransmit</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="retransmitStream()"><!-- --></A><H3>
+retransmitStream</H3>
+<PRE>
+protected void <B>retransmitStream</B>()
+                         throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#retransmitStream()">retransmitStream</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setupNewConnection(java.lang.String)"><!-- --></A><H3>
+setupNewConnection</H3>
+<PRE>
+protected void <B>setupNewConnection</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;newURL)
+                           throws <A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#setupNewConnection(java.lang.String)">setupNewConnection</A></CODE> in class <CODE><A HREF="../../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/6/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSSLSession(javax.net.ssl.SSLSession)"><!-- --></A><H3>
+setSSLSession</H3>
+<PRE>
+public void <B>setSSLSession</B>(<A HREF="http://download.oracle.com/javase/6/docs/api/javax/net/ssl/SSLSession.html?is-external=true" title="class or interface in javax.net.ssl">SSLSession</A>&nbsp;sslsession)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/AsyncHTTPConduit.AsyncWrappedOutputStream.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.html" title="class in org.apache.cxf.transport.http.asyncclient"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduitFactory.html" title="class in org.apache.cxf.transport.http.asyncclient"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="AsyncHTTPConduit.AsyncWrappedOutputStream.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.cxf.transport.http.HTTPConduit.WrappedOutputStream">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

@@ -1,0 +1,709 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+DefaultTypeMapping (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="DefaultTypeMapping (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/DefaultTypeMapping.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeCreator.html" title="class in org.apache.cxf.aegis.type"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/aegis/type/ParameterizedTypeFactory.html" title="class in org.apache.cxf.aegis.type"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/aegis/type/DefaultTypeMapping.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="DefaultTypeMapping.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.aegis.type</FONT>
+<BR>
+Class DefaultTypeMapping</H2>
+<PRE>
+<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.aegis.type.DefaultTypeMapping</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html" title="interface in org.apache.cxf.aegis.type">TypeMapping</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public class <B>DefaultTypeMapping</B><DT>extends <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A><DT>implements <A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html" title="interface in org.apache.cxf.aegis.type">TypeMapping</A></DL>
+</PRE>
+
+<P>
+The implementation of the Aegis type map. It maintains a map from
+ Java types <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect"><CODE>Type</CODE></A> and AegisType objects,
+ also indexed by the XML Schema QName of each type.
+<P>
+
+<P>
+<HR>
+
+<P>
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#DEFAULT_MAPPING_URI">DEFAULT_MAPPING_URI</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#DefaultTypeMapping()">DefaultTypeMapping</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#DefaultTypeMapping(java.lang.String)">DefaultTypeMapping</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;identifierURI)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#DefaultTypeMapping(java.lang.String, org.apache.cxf.aegis.type.TypeMapping)">DefaultTypeMapping</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;identifierURI,
+                   <A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html" title="interface in org.apache.cxf.aegis.type">TypeMapping</A>&nbsp;defaultTM)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html" title="class in org.apache.cxf.aegis.type">DefaultTypeMapping</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#createDefaultTypeMapping(boolean, boolean)">createDefaultTypeMapping</A></B>(boolean&nbsp;defaultNillable,
+                         boolean&nbsp;enableMtomXmime)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html" title="class in org.apache.cxf.aegis.type">DefaultTypeMapping</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#createDefaultTypeMapping(boolean, boolean, boolean)">createDefaultTypeMapping</A></B>(boolean&nbsp;defaultNillable,
+                         boolean&nbsp;enableMtomXmime,
+                         boolean&nbsp;enableJDOM)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a set of default type mappings.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html" title="class in org.apache.cxf.aegis.type">DefaultTypeMapping</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#createSoap11TypeMapping(boolean, boolean, boolean)">createSoap11TypeMapping</A></B>(boolean&nbsp;defaultNillable,
+                        boolean&nbsp;enableMtomXmime,
+                        boolean&nbsp;enableJDOM)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create a type mapping object with a stock set of mappings, including the SOAP 1.1 'encoded'
+ types.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#getMappingIdentifierURI()">getMappingIdentifierURI</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Each mapping has a URI that identifies it.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html" title="interface in org.apache.cxf.aegis.type">TypeMapping</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#getParent()">getParent</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/aegis/type/AegisType.html" title="class in org.apache.cxf.aegis.type">AegisType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#getType(javax.xml.namespace.QName)">getType</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;xmlType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/aegis/type/AegisType.html" title="class in org.apache.cxf.aegis.type">AegisType</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#getType(java.lang.reflect.Type)">getType</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;javaType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/aegis/type/TypeCreator.html" title="interface in org.apache.cxf.aegis.type">TypeCreator</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#getTypeCreator()">getTypeCreator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#getTypeQName(java.lang.reflect.Type)">getTypeQName</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;clazz)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#isRegistered(javax.xml.namespace.QName)">isRegistered</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;xmlType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a flag indicating if this type mapping has a mapping for a particular
+ XML Schema QName.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#isRegistered(java.lang.reflect.Type)">isRegistered</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;javaType)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a flag indicating if this type mapping has a mapping for a particular Java class.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#register(org.apache.cxf.aegis.type.AegisType)">register</A></B>(<A HREF="../../../../../org/apache/cxf/aegis/type/AegisType.html" title="class in org.apache.cxf.aegis.type">AegisType</A>&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register a type that self-describes the schema type and the Java class.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#register(java.lang.reflect.Type, javax.xml.namespace.QName, org.apache.cxf.aegis.type.AegisType)">register</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;javaType,
+         <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;xmlType,
+         <A HREF="../../../../../org/apache/cxf/aegis/type/AegisType.html" title="class in org.apache.cxf.aegis.type">AegisType</A>&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Register a type, manually specifying the java class, the schema type,
+ and the Aegis type object that provides serialization, deserialization,
+ and schema.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#removeType(org.apache.cxf.aegis.type.AegisType)">removeType</A></B>(<A HREF="../../../../../org/apache/cxf/aegis/type/AegisType.html" title="class in org.apache.cxf.aegis.type">AegisType</A>&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#setMappingIdentifierURI(java.lang.String)">setMappingIdentifierURI</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;uri)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This exists only to deal with an initialization order problem.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html#setTypeCreator(org.apache.cxf.aegis.type.TypeCreator)">setTypeCreator</A></B>(<A HREF="../../../../../org/apache/cxf/aegis/type/TypeCreator.html" title="interface in org.apache.cxf.aegis.type">TypeCreator</A>&nbsp;typeCreator)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/Object.html?is-external=true#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ FIELD DETAIL =========== -->
+
+<A NAME="field_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Field Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="DEFAULT_MAPPING_URI"><!-- --></A><H3>
+DEFAULT_MAPPING_URI</H3>
+<PRE>
+public static final <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>DEFAULT_MAPPING_URI</B></PRE>
+<DL>
+<DL>
+<DT><B>See Also:</B><DD><A HREF="../../../../../constant-values.html#org.apache.cxf.aegis.type.DefaultTypeMapping.DEFAULT_MAPPING_URI">Constant Field Values</A></DL>
+</DL>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="DefaultTypeMapping(java.lang.String, org.apache.cxf.aegis.type.TypeMapping)"><!-- --></A><H3>
+DefaultTypeMapping</H3>
+<PRE>
+public <B>DefaultTypeMapping</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;identifierURI,
+                          <A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html" title="interface in org.apache.cxf.aegis.type">TypeMapping</A>&nbsp;defaultTM)</PRE>
+<DL>
+</DL>
+<HR>
+
+<A NAME="DefaultTypeMapping()"><!-- --></A><H3>
+DefaultTypeMapping</H3>
+<PRE>
+public <B>DefaultTypeMapping</B>()</PRE>
+<DL>
+</DL>
+<HR>
+
+<A NAME="DefaultTypeMapping(java.lang.String)"><!-- --></A><H3>
+DefaultTypeMapping</H3>
+<PRE>
+public <B>DefaultTypeMapping</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;identifierURI)</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="isRegistered(java.lang.reflect.Type)"><!-- --></A><H3>
+isRegistered</H3>
+<PRE>
+public boolean <B>isRegistered</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;javaType)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html#isRegistered(java.lang.reflect.Type)">TypeMapping</A></CODE></B></DD>
+<DD>Returns a flag indicating if this type mapping has a mapping for a particular Java class.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html#isRegistered(java.lang.reflect.Type)">isRegistered</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html" title="interface in org.apache.cxf.aegis.type">TypeMapping</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>javaType</CODE> - the class.
+<DT><B>Returns:</B><DD><code>true</code> if there is a mapping for the type.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="isRegistered(javax.xml.namespace.QName)"><!-- --></A><H3>
+isRegistered</H3>
+<PRE>
+public boolean <B>isRegistered</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;xmlType)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html#isRegistered(javax.xml.namespace.QName)">TypeMapping</A></CODE></B></DD>
+<DD>Returns a flag indicating if this type mapping has a mapping for a particular
+ XML Schema QName.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html#isRegistered(javax.xml.namespace.QName)">isRegistered</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html" title="interface in org.apache.cxf.aegis.type">TypeMapping</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>xmlType</CODE> - the QName.
+<DT><B>Returns:</B><DD><code>true</code> if there is a mapping for the type.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="register(java.lang.reflect.Type, javax.xml.namespace.QName, org.apache.cxf.aegis.type.AegisType)"><!-- --></A><H3>
+register</H3>
+<PRE>
+public void <B>register</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;javaType,
+                     <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;xmlType,
+                     <A HREF="../../../../../org/apache/cxf/aegis/type/AegisType.html" title="class in org.apache.cxf.aegis.type">AegisType</A>&nbsp;type)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html#register(java.lang.reflect.Type, javax.xml.namespace.QName, org.apache.cxf.aegis.type.AegisType)">TypeMapping</A></CODE></B></DD>
+<DD>Register a type, manually specifying the java class, the schema type,
+ and the Aegis type object that provides serialization, deserialization,
+ and schema.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html#register(java.lang.reflect.Type, javax.xml.namespace.QName, org.apache.cxf.aegis.type.AegisType)">register</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html" title="interface in org.apache.cxf.aegis.type">TypeMapping</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>javaType</CODE> - Java class.<DD><CODE>xmlType</CODE> - XML Schema type QName.<DD><CODE>type</CODE> - Aegis type object.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="register(org.apache.cxf.aegis.type.AegisType)"><!-- --></A><H3>
+register</H3>
+<PRE>
+public void <B>register</B>(<A HREF="../../../../../org/apache/cxf/aegis/type/AegisType.html" title="class in org.apache.cxf.aegis.type">AegisType</A>&nbsp;type)</PRE>
+<DL>
+<DD>Register a type that self-describes the schema type and the Java class.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html#register(org.apache.cxf.aegis.type.AegisType)">register</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html" title="interface in org.apache.cxf.aegis.type">TypeMapping</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>type</CODE> - Aegis type object that</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="removeType(org.apache.cxf.aegis.type.AegisType)"><!-- --></A><H3>
+removeType</H3>
+<PRE>
+public void <B>removeType</B>(<A HREF="../../../../../org/apache/cxf/aegis/type/AegisType.html" title="class in org.apache.cxf.aegis.type">AegisType</A>&nbsp;type)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html#removeType(org.apache.cxf.aegis.type.AegisType)">removeType</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html" title="interface in org.apache.cxf.aegis.type">TypeMapping</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getType(java.lang.reflect.Type)"><!-- --></A><H3>
+getType</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/aegis/type/AegisType.html" title="class in org.apache.cxf.aegis.type">AegisType</A> <B>getType</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;javaType)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html#getType(java.lang.reflect.Type)">getType</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html" title="interface in org.apache.cxf.aegis.type">TypeMapping</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getType(javax.xml.namespace.QName)"><!-- --></A><H3>
+getType</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/aegis/type/AegisType.html" title="class in org.apache.cxf.aegis.type">AegisType</A> <B>getType</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;xmlType)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html#getType(javax.xml.namespace.QName)">getType</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html" title="interface in org.apache.cxf.aegis.type">TypeMapping</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTypeQName(java.lang.reflect.Type)"><!-- --></A><H3>
+getTypeQName</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A> <B>getTypeQName</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/reflect/Type.html?is-external=true" title="class or interface in java.lang.reflect">Type</A>&nbsp;clazz)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html#getTypeQName(java.lang.reflect.Type)">getTypeQName</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html" title="interface in org.apache.cxf.aegis.type">TypeMapping</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getTypeCreator()"><!-- --></A><H3>
+getTypeCreator</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/aegis/type/TypeCreator.html" title="interface in org.apache.cxf.aegis.type">TypeCreator</A> <B>getTypeCreator</B>()</PRE>
+<DL>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html#getTypeCreator()">getTypeCreator</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html" title="interface in org.apache.cxf.aegis.type">TypeMapping</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setTypeCreator(org.apache.cxf.aegis.type.TypeCreator)"><!-- --></A><H3>
+setTypeCreator</H3>
+<PRE>
+public void <B>setTypeCreator</B>(<A HREF="../../../../../org/apache/cxf/aegis/type/TypeCreator.html" title="interface in org.apache.cxf.aegis.type">TypeCreator</A>&nbsp;typeCreator)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getParent()"><!-- --></A><H3>
+getParent</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html" title="interface in org.apache.cxf.aegis.type">TypeMapping</A> <B>getParent</B>()</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createSoap11TypeMapping(boolean, boolean, boolean)"><!-- --></A><H3>
+createSoap11TypeMapping</H3>
+<PRE>
+public static <A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html" title="class in org.apache.cxf.aegis.type">DefaultTypeMapping</A> <B>createSoap11TypeMapping</B>(boolean&nbsp;defaultNillable,
+                                                         boolean&nbsp;enableMtomXmime,
+                                                         boolean&nbsp;enableJDOM)</PRE>
+<DL>
+<DD>Create a type mapping object with a stock set of mappings, including the SOAP 1.1 'encoded'
+ types.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>defaultNillable</CODE> - whether elements are nillable by default.<DD><CODE>enableMtomXmime</CODE> - whether to enable XMIME annotations with MTOM.<DD><CODE>enableJDOM</CODE> - whether to add mappings for JDOM.
+<DT><B>Returns:</B><DD></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createDefaultTypeMapping(boolean, boolean)"><!-- --></A><H3>
+createDefaultTypeMapping</H3>
+<PRE>
+public static <A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html" title="class in org.apache.cxf.aegis.type">DefaultTypeMapping</A> <B>createDefaultTypeMapping</B>(boolean&nbsp;defaultNillable,
+                                                          boolean&nbsp;enableMtomXmime)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="createDefaultTypeMapping(boolean, boolean, boolean)"><!-- --></A><H3>
+createDefaultTypeMapping</H3>
+<PRE>
+public static <A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeMapping.html" title="class in org.apache.cxf.aegis.type">DefaultTypeMapping</A> <B>createDefaultTypeMapping</B>(boolean&nbsp;defaultNillable,
+                                                          boolean&nbsp;enableMtomXmime,
+                                                          boolean&nbsp;enableJDOM)</PRE>
+<DL>
+<DD>Create a set of default type mappings.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>defaultNillable</CODE> - whether elements are nillable by default.<DD><CODE>enableMtomXmime</CODE> - whether to enable XMIME annotations on MTOM.<DD><CODE>enableJDOM</CODE> - whether to map JDOM types.
+<DT><B>Returns:</B><DD></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getMappingIdentifierURI()"><!-- --></A><H3>
+getMappingIdentifierURI</H3>
+<PRE>
+public <A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A> <B>getMappingIdentifierURI</B>()</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html#getMappingIdentifierURI()">TypeMapping</A></CODE></B></DD>
+<DD>Each mapping has a URI that identifies it.
+ The mapping for a service uses the service URI.
+ XML files can choose to only contribute mappings that match.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html#getMappingIdentifierURI()">getMappingIdentifierURI</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html" title="interface in org.apache.cxf.aegis.type">TypeMapping</A></CODE></DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the URI.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMappingIdentifierURI(java.lang.String)"><!-- --></A><H3>
+setMappingIdentifierURI</H3>
+<PRE>
+public void <B>setMappingIdentifierURI</B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;uri)</PRE>
+<DL>
+<DD><B>Description copied from interface: <CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html#setMappingIdentifierURI(java.lang.String)">TypeMapping</A></CODE></B></DD>
+<DD>This exists only to deal with an initialization order problem.
+<P>
+<DD><DL>
+<DT><B>Specified by:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html#setMappingIdentifierURI(java.lang.String)">setMappingIdentifierURI</A></CODE> in interface <CODE><A HREF="../../../../../org/apache/cxf/aegis/type/TypeMapping.html" title="interface in org.apache.cxf.aegis.type">TypeMapping</A></CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/DefaultTypeMapping.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/cxf/aegis/type/DefaultTypeCreator.html" title="class in org.apache.cxf.aegis.type"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/aegis/type/ParameterizedTypeFactory.html" title="class in org.apache.cxf.aegis.type"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/aegis/type/DefaultTypeMapping.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="DefaultTypeMapping.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;<A HREF="#field_summary">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;<A HREF="#field_detail">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

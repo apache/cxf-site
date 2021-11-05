@@ -1,0 +1,321 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - Fediz IDP 1.0">
+
+
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shCoreCXF.css">
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shThemeCXF.css">
+
+<script src='/resources/highlighter/scripts/shCore.js'></script>
+<script src='/resources/highlighter/scripts/shBrushBash.js'></script>
+<script src='/resources/highlighter/scripts/shBrushXml.js'></script>
+<script src='/resources/highlighter/scripts/shBrushJava.js'></script>
+<script>
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+
+    <title>
+Apache CXF -- Fediz IDP 1.0
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="fediz.html">Fediz</a>&nbsp;&gt;&nbsp;<a href="fediz-idp-10.html">Fediz IDP 1.0</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><h1 id="FedizIDP1.0-FedizIDP">Fediz IDP</h1><p><em>Note: This document describes the Fediz IdP in the 1.0 release. For more recent releases please go <a shape="rect" href="fediz-idp-11.html">here</a> instead.</em></p><p>The Fediz Identity Provider (IDP) consists of two WAR files. One is the Security Token Service (STS) component, fediz-idp-sts.war, which is responsible for validating credentials, getting the requested claims data and issuing a SAML token. There is no easy way for Web browsers to issue SOAP requests to the STS directly, necessitating the second component, an IDP WAR (fediz-idp.war) which allows browser-based applications to interact with the STS. The communication between the browser and the IDP must be performed within the confines of the base HTTP 1.1 functionality and conform as closely as possible to the WS-Trust protocols semantic.</p><p>The Fediz STS is based on a customized CXF STS configured to support standard Federation use cases demonstrated by the examples.</p><h3 id="FedizIDP1.0-Installation">Installation</h3><p>The Fediz IDP has been tested with Tomcat 6 and 7 but should be able to work with any commercial JEE application server.</p><p>It's recommended to set up a dedicated (separate) Tomcat instance for the IDP compared to the one hosting the RP (relying party) applications. Using one deployment of Tomcat with multiple CATALINA_BASE instances, as described <a shape="rect" class="external-link" href="http://www.shaunabram.com/multiple-tomcat-instances/" rel="nofollow">here</a> is one option but note any libs in $CATALINA_HOME/lib folder will be shared throughout each of the activated CATALINA_BASE instances. Another probably simpler alternative is to copy your Tomcat folder into a second location and edit its conf/server.xml file and change port values (discussed below) so they don't conflict with the original Tomcat installation.</p><p>To start and stop this second Tomcat instance, it is perhaps easiest to create small startup.sh and shutdown.sh scripts that temporarily redefine $CATALINA_HOME from the first to the second instance, for example:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+CATALINA_HOME=/path/to/second/tomcat
+$CATALINA_HOME/bin/startup.sh
+</pre>
+</div></div><p>and</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+CATALINA_HOME=/path/to/second/tomcat
+$CATALINA_HOME/bin/shutdown.sh
+</pre>
+</div></div><p>If you're using the one Tomcat with multiple instance option, it's $CATALINA_BASE instead that will need to be redefined above.</p><h5 id="FedizIDP1.0-Tomcatserver.xmlconfiguration">Tomcat server.xml configuration</h5><p>The Fediz examples use the following Tomcat port values for the IDP/STS, defined in the conf/server.xml file. We use ports different from the Tomcat defaults so as not to conflict with the Tomcat instance running the RP applications.</p><ul><li>HTTP port: 9080 (used for Maven deployment, mvn tomcat:redeploy)</li><li>HTTPS port: 9443 (where IDP and STS are accessed)</li><li>Server port (for shutdown and other commands): 9005</li></ul><p>Here is a sample snippet for showing the configuration of the above three values:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+&lt;Server port="9005" shutdown="SHUTDOWN"&gt;
+...
+
+   &lt;!-- http configuration --&gt;
+   &lt;Connector port="9080" protocol="HTTP/1.1"
+        connectionTimeout="20000"
+        redirectPort="9443" /&gt;
+
+   ...
+
+   &lt;!-- https configuration --&gt;
+   &lt;Connector port="9443" protocol="HTTP/1.1" SSLEnabled="true"
+        maxThreads="150" scheme="https" secure="true"
+        keystoreFile="tomcat-idp.jks"
+        keystorePass="tompass" sslProtocol="TLS" /&gt;
+   ...
+ 
+   &lt;Connector port="9009" protocol="AJP/1.3" redirectPort="9443" /&gt;
+
+...
+&lt;/Server&gt;
+</pre>
+</div></div><p>The keystoreFile is relative to $CATALINA_HOME. See <a shape="rect" class="external-link" href="http://tomcat.apache.org/tomcat-7.0-doc/ssl-howto.html">here</a> for the Tomcat 7 configuration reference. This page also describes how to create certificates. Sample Tomcat keystores (not for production use, but useful for demoing Fediz and running the sample applications) are provided in the examples/samplekeys folder of the Fediz distribution.</p><p>To establish trust, there are significant keystore/truststore requirements between the Tomcat instances and the various web applications (IDP, STS, Relying party applications, third party web services, etc.) See <a shape="rect" class="external-link" href="http://svn.apache.org/viewvc/cxf/fediz/trunk/examples/samplekeys/HowToGenerateKeysREADME.html?view=co">this page</a> for more details, it lists the trust requirements as well as sample scripts for creating your own (self-signed) keys.</p><p><strong>Warning: All sample keystores provided with Fediz (including in the WAR files for its services and examples) are for development/prototyping use only. They'll need to be replaced for production use, at a minimum with your own self-signed keys but strongly recommended to use third-party signed keys.</strong></p><p>Once you deploy the IDP WAR files to your Tomcat installation (&lt;catalina.home&gt;/webapps), you should be able to see the Fediz STS from a browser at <a shape="rect" class="external-link" href="http://localhost:9080/fediz-idp-sts/STSService?wsdl" rel="nofollow">http://localhost:9080/fediz-idp-sts/STSService?wsdl</a> (note that prior to 1.0.3 the war name is actually "fedizidpsts"), assuming you're using port 9080 as listed above.</p><h3 id="FedizIDP1.0-Configuration">Configuration</h3><p>You can manage the users, their claims and the claims per application in the IDP.</p><h5 id="FedizIDP1.0-Userandpassword">User and password</h5><p>The users and passwords are configured in a Spring configuration file in <code>webapps/fediz-idp-sts/WEB-INF/passwords.xml</code>. The following users are already configured and can easily be extended.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+    &lt;util:map id="passwords"&gt;
+        &lt;entry key="alice"
+            value="ecila" /&gt;
+        &lt;entry key="bob"
+            value="bob" /&gt;
+        &lt;entry key="ted"
+            value="det" /&gt;
+    &lt;/util:map&gt;
+</pre>
+</div></div><h5 id="FedizIDP1.0-UserClaims">User Claims</h5><p>The claims of each user are configured in a spring configuration file <code>webapps/fediz-idp-sts/WEB-INF/userClaims.xml</code>. The following claims are already configured:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+    &lt;util:map id="userClaims"&gt;
+        &lt;entry key="alice"
+            value-ref="aliceClaims" /&gt;
+        &lt;entry key="bob"
+            value-ref="bobClaims" /&gt;
+        &lt;entry key="ted"
+            value-ref="tedClaims" /&gt;
+    &lt;/util:map&gt;
+   
+    &lt;util:map id="aliceClaims"&gt;
+        &lt;entry key="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"
+            value="Alice" /&gt;
+        &lt;entry key="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"
+            value="Smith" /&gt;
+        &lt;entry key="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"
+            value="alice@mycompany.org" /&gt;
+        &lt;entry key="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/role"
+            value="user" /&gt;
+           
+    &lt;/util:map&gt;
+</pre>
+</div></div><p>The claim id's are configured according to Section 7.5 in the specification <a shape="rect" class="external-link" href="http://docs.oasis-open.org/imi/identity/v1.0/identity.html" rel="nofollow">Identity Metasystem Interoperability</a>. The mapping of claims to a SAML attribute statement are described in Section 7.2.</p><h5 id="FedizIDP1.0-Applicationclaims">Application claims</h5><p>The required claims per relying party are configured in the <code>webapps/fediz-idp/WEB-INF/RPClaims.xml</code>. The XML file has the following structure:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+    &lt;util:map id="realm2ClaimsMap"&gt;
+        &lt;entry key="https://localhost:8443/fedizhelloworld/"
+            value-ref="claimsWsfedhelloworld" /&gt;
+    &lt;/util:map&gt;
+
+    &lt;util:list id="claimsWsfedhelloworld"&gt;
+        &lt;value&gt;http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname&lt;/value&gt;
+        &lt;value&gt;http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname&lt;/value&gt;
+        &lt;value&gt;http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress&lt;/value&gt;
+        &lt;value&gt;http://schemas.xmlsoap.org/ws/2005/05/identity/claims/role&lt;/value&gt;
+    &lt;/util:list&gt;   
+</pre>
+</div></div><p>The key of each map entry must match with the <code>wtrealm</code> paramater in the redirect triggered by the relying party. The required claims for the different type of applications are grouped in beans which are a list of Strings as illustrated in <code>claimsWsfedhelloworld</code>.</p><p>The bean <code>realm2ClaimsMap</code> must be named realm2ClaimsMap and maps the different Relying Parties (applications) to one of the claim lists. This map is required to manage which claims are required for the applications.</p><p>The JIRA issue <a shape="rect" class="external-link" href="https://issues.apache.org/jira/browse/FEDIZ-1">FEDIZ-1</a> will provide another option to manage the required claims on the Relying Party side.</p><h3 id="FedizIDP1.0-ConfigureLDAPdirectory">Configure LDAP directory</h3><p>The Fediz IDP can be configured to attach an LDAP directory to authenticate users and to retrieve claims information of users.</p><h5 id="FedizIDP1.0-Usernameandpasswordauthentication">Username and password authentication</h5><p>WSS4J supports username/password authentication using JAAS. The JDK provides a JAAS LoginModule for LDAP which can be configured as illustrated here in a sample jaas configuration (jaas.config):</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+myldap {
+ com.sun.security.auth.module.LdapLoginModule REQUIRED
+ userProvider=ldap://ldap.mycompany.org:389/OU=Users,DC=mycompany,DC=org"
+ authIdentity="cn={USERNAME},OU=Users,DC=mycompany,DC=org"
+ useSSL=false
+ debug=true;
+};
+</pre>
+</div></div><p>You can get more information about this LoginModule <a shape="rect" class="external-link" href="http://download.oracle.com/javase/6/docs/jre/api/security/jaas/spec/com/sun/security/auth/module/LdapLoginModule.html" rel="nofollow">here</a>.</p><p>In this example, all the users are stored in the organization unit Users within mycompany.org. The configuration filename can be chosen, e.g. <code>jaas.config</code>. The filename must be configured as a JVM argument. JVM related configurations for Tomcat can be done in the file <code>setenv.sh/bat</code> located in directory <code>tomcat/bin</code>. This script is called implicitly by <code>catalina.bat/sh</code> and might look like this for UNIX:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+#!/bin/sh
+JAVA_OPTS="-Djava.security.auth.login.config=/opt/tomcat/conf/jaas.config"
+export JAVA_OPTS
+</pre>
+</div></div><p>Next, the STS endpoint has to be configured to use the JAAS LoginModule which is accomplished by the <code>JAASUsernameTokenValidator</code>.</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+&lt;bean
+  class="org.apache.ws.security.validate.JAASUsernameTokenValidator"
+      id="jaasUTValidator"&gt;
+   &lt;property name="contextName" value="myldap"/&gt;
+&lt;/bean&gt;
+
+&lt;jaxws:endpoint id="transportSTSUT"
+  endpointName="ns1:TransportUT_Port"
+  serviceName="ns1:SecurityTokenService"
+  xmlns:ns1=http://docs.oasis-open.org/ws-sx/ws-trust/200512/
+  wsdlLocation="/WEB-INF/wsdl/ws-trust-1.4-service.wsdl"
+  address="/STSServiceTransportUT"
+  implementor="#transportSTSProviderBean"&gt;
+
+  &lt;jaxws:properties&gt;
+    &lt;entry key="ws-security.ut.validator"
+         value-ref="jaasUTValidator"/&gt;
+  &lt;/jaxws:properties&gt;
+&lt;/jaxws:endpoint&gt;
+</pre>
+</div></div><p>The property <code>contextName</code> must match the context name defined in the JAAS configuration file which is <code>myldap</code> in this example.</p><h5 id="FedizIDP1.0-Claimsmanagement">Claims management</h5><p>When a STS client (IDP) requests a claim, the ClaimsManager in the STS checks every registered ClaimsHandler who can provide the data of the requested claim. The CXF STS provides <code>org.apache.cxf.sts.claims.LdapClaimsHandler</code> which is a claims handler implementation to get claims from user attributes in a LDAP directory.</p><p>You configure which claim URI maps to which LDAP user attribute. The implementation uses the Spring Ldap Module (LdapTemplate).</p><p>The following example illustrate the changes to be made in <code>webapps/fediz-idp-sts/WEB-INF/cxf-transport.xml</code>:</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+&lt;util:list id="claimHandlerList"&gt;
+  &lt;ref bean="ldapClaimsHandler" /&gt;
+&lt;/util:list&gt;
+
+&lt;bean id="contextSource"
+   class="org.springframework.ldap.core.support.LdapContextSource"&gt;
+  &lt;property name="url" value="ldap://ldap.mycompany.org:389" /&gt;
+  &lt;property name="userDn"
+    value="CN=techUser,OU=Users,DC=mycompany,DC=org" /&gt;
+  &lt;property name="password" value="mypassword" /&gt;
+&lt;/bean&gt;
+
+&lt;bean id="ldapTemplate"
+   class="org.springframework.ldap.core.LdapTemplate"&gt;
+  &lt;constructor-arg ref="contextSource" /&gt;
+&lt;/bean&gt;
+
+&lt;util:map id="claimsToLdapAttributeMapping"&gt;
+  &lt;entry
+key="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"
+value="givenName" /&gt;
+  &lt;entry key="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"
+value="sn" /&gt;
+  &lt;entry
+key="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"
+value="mail" /&gt;
+  &lt;entry key="http://schemas.xmlsoap.org/ws/2005/05/identity/claims/country"
+value="c" /&gt;
+&lt;/util:map&gt;
+
+&lt;bean id="ldapClaimsHandler"
+    class="org.apache.cxf.sts.claims.LdapClaimsHandler"&gt;
+  &lt;property name="ldapTemplate" ref="ldapTemplate" /&gt;
+  &lt;property name="claimsLdapAttributeMapping"
+            ref="claimsToLdapAttributeMapping" /&gt;
+  &lt;property name="userBaseDN"
+      value="OU=Users,DC=mycompany,DC=org" /&gt;
+&lt;/bean&gt;
+</pre>
+</div></div><p>You must deploy the library for the spring ldap module and its dependencies. The POM of the spring ldap module is available <a shape="rect" class="external-link" href="http://repo1.maven.org/maven2/org/springframework/ldap/spring-ldap/1.2/spring-ldap-1.2.pom" rel="nofollow">here</a>.</p><p>You can add the dependency to spring ldap module to the Fediz STS POM, add the above configuration and rebuild the STS component or do the configuration in the deployed STS directly and add the following JAR files:</p><ul><li>lang-2.1.0.jar</li><li>ldapbp-1.0.jar</li><li>spring-ldap-1.2.jar</li></ul></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=27846949">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=27846949&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

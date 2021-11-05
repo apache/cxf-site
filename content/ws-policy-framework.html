@@ -1,0 +1,296 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - WS-Policy Framework">
+
+
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shCoreCXF.css">
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shThemeCXF.css">
+
+<script src='/resources/highlighter/scripts/shCore.js'></script>
+<script src='/resources/highlighter/scripts/shBrushJava.js'></script>
+<script>
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+
+    <title>
+Apache CXF -- WS-Policy Framework
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="project-status.html">Project Status</a>&nbsp;&gt;&nbsp;<a href="ws-policy-framework.html">WS-Policy Framework</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><p><a shape="rect" class="external-link" href="http://ws.apache.org/commons/neethi/index.html">Apache Neethi</a> is the WS-Policy framework for Axis2. Building on top of it would have the advantage that we don't have to re-implement any of the policy normalization and merge logic. The downside however is its dependency on the Axis2 object model. But Neethi is a very small project (&lt; 20 files), so picking up some the ideas and implementing similar functionality in CXF  seems an acceptable solution.</p>
+
+<p>In any case, actual client and server side support for WS-Policy in runtime and code-generators is not part of the Neethi project and more deeply embedded  in Axis: stub code generation incl. for example startSequence(), generation of configuration files to engage specific modules. This will be different in CXF, where I envision the WS-Policy framework in CXF - like other WS-* components - to be interceptor based Roughly, this is how I can see it work:</p>
+
+<h2 id="WSPolicyFramework-ClientSide">Client Side</h2>
+
+<p>At the client side, a PolicyEvaluationInterceptor will be added as one of the first interceptors to the chain. Its purpose will be to:</p>
+<ul><li>determine the effective policy for the underlying operation.</li><li>look at the different alternatives, check if a list of AssertionBuilderFactories corresponding to the alternative's assertions is available, and choose one the alternatives for which this is the case (default: the first alternative).</li><li>for the selected alternative, use the AssertionBuilderFactories to obtain an AssertionBuilder for each of the required assertions, and ask the AssertionBuilder to contribute its interceptors to the chain (AssertionBuilder will extend the InterceptorProviderInterface).</li></ul>
+
+
+<h2 id="WSPolicyFramework-ServerSide">Server Side</h2>
+
+<p>On the server side, as long as we are dealing with service and endpoint specific policies, this is very similar. The PolicyEvaluationInterceptor at the begin of the inbound chain on the server side will also take care of adding any further interceptors to ensure that the requirements associated with the assertions of the effective policy are met. Although it is possible that such interceptors are subsequently removed, I'd say we can disregard that possibility for now. Maybe some time later we can make certain types of interceptors 'unremoveable'.</p>
+
+<p>It gets more complicated when we consider operation or even message policies. As we have determined the operation (and its parts) only after unmarshalling, we can calculate the effective policy for the operation/message also only at this point. On the other hand, at this point we must have already executed some of the policy related interceptors, i.e. all those that read headers like the addressing and RM SOAP interceptors. Another complicating factor is that in the case of multiple policy alternatives the server has no direct knowledge about which alternative was actually chosen by the client.<br clear="none">
+The first problem can be worked around by preemptively adding the interceptors for all AssertionBuilders for the policy vocabulary used by the endpoint are added to the chain: Generalizing the definitions in the WS-Policy specification we can define the vocabulary of an endpoint to be the merged vocabulary of the policies of its operations. Example: the RM interceptors would be added to the chain even if only some of the operations on the endpoint should be reliable, and these interceptors should be made robust w.r.t. to the absence of associated headers (respective changes required in the currently implemented addressing and RM interceptors are trivial) - they simply pass the message through.<br clear="none">
+We can weaken this to initially only add such interceptors if they belong to one of the pre-MARSHALLING phases, e.g. in that case the RMSoapInterceptor. Other interceptors can be added at a later stage, [once the operation is known and according to policy vocabulary used for that operation or message.<br clear="none">
+Finally, we can only determine which requirements have been asserted at the end of the interceptor chain: the execution of an interceptor alone is not enough, nor is the presence of specific headers  (although for well designed policies this should be enough). It is possible that we have to look at the header (or even message) content to check for a specific assertion. So, in order to decide at the end of the chain if everything that should have been asserted actually was asserted, we need to keep track of what was asserted by the individual interceptors. How can we do this?<br clear="none">
+At the end of the inbound chain, a PolicyVerificationInterceptor first of all computes the effective policy for that operation/message. It then iterates backwards over all interceptors executed thus far and checks which of them implement the AssertionBuilder interface, and thus can decide if the requirement for a particular assertion has been met. The candidates get then passed the set of assertions of the types known to them and return the subset of these assertions that they can assert. Now, the PolicyVerificationInterceptor can decide if all required assertions for any of the effective policy's alternatives are supported. If this is not the case, the interceptor throws an Exception. <br clear="none">
+This process can be sped up by initialising a message property with an empty list of AssertionBuilders, to which each interceptor that wants to participate in the final decision process can contribute itself (avoiding the instanceof AssertionBuilder).<br clear="none">
+The transport may be included in this decision process if it also implements the AssertionBuilder interface (see discussions on cxf-dev on class #1/class #2 assertions) (here the type check cannot be avoided though). </p>
+
+<h2 id="WSPolicyFramework-SupportedVersions">Supported Versions</h2>
+
+<p>There are several versions of the WS-Policy Framework and WS-Policy Attachment specifications out there at the moment:</p>
+
+<p>September 2004:</p>
+
+<p><a shape="rect" class="external-link" href="http://specs.xmlsoap.org/ws/2004/09/policy/ws-policy0904.pdf" rel="nofollow">Web Services Policy Framework</a><br clear="none">
+<a shape="rect" class="external-link" href="http://specs.xmlsoap.org/ws/2004/09/policy/ws-policyattachment0904.pdf" rel="nofollow">Web Services Policy Attachment</a></p>
+
+<p>These are superseded by Version 1.2 published in April 2006:</p>
+
+<p><a shape="rect" class="external-link" href="http://www.w3.org/Submission/2006/SUBM-WS-Policy-20060425/" rel="nofollow">Web Services Policy 1.2 - Framework</a><br clear="none">
+<a shape="rect" class="external-link" href="http://www.w3.org/Submission/2006/SUBM-WS-PolicyAttachment-20060425/" rel="nofollow">Web Services Policy 1.2 - Attachment</a></p>
+
+<p>and Version 1.5 published as working draft in September 2006:</p>
+
+<p><a shape="rect" class="external-link" href="http://www.w3.org/TR/2006/WD-ws-policy-20061117/" rel="nofollow">Web Services Policy 1.5 - Framework</a><br clear="none">
+<a shape="rect" class="external-link" href="http://www.w3.org/TR/2006/WD-ws-policy-attach-20061117/" rel="nofollow">Web Services Policy 1.5 - Attachment</a></p>
+
+<p>CXF supports Version 1.5 (but will not initially include support for WSDL 2.0 attachments). Version 1.2 is the one supported by Neethi.</p>
+
+<h2 id="WSPolicyFramework-APIs">APIs</h2>
+
+<p>The following are tentative suggestions for the APIs as part of the CXF policy framework.</p>
+
+<h3 id="WSPolicyFramework-AssertionBuilder">AssertionBuilder</h3>
+
+<p>The AssertionBuilder API is a concept from Neethi (slightly modified below as):</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+public interface AssertionBuilder {
+   // build an Assertion object from a given xml element
+   Assertion build(Element element);
+  // return the schema type names of assertions understood by this builder
+  Collection&lt;QName&gt; getSupportedTypes();
+}
+</pre>
+</div></div>
+<p>AssertionBuilder implementations are loaded by the &lt;Spring container&gt; and register themselves with the AssertionBuilderRegistry, which is a Bus extension. </p>
+
+<h3 id="WSPolicyFramework-Assertor">Assertor</h3>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+public interface Assertor {
+  // return the subset of assertions that this assertor can assert
+   List&lt;Assertion&gt; assert(List&lt;Assertion&gt; candidates);
+}
+</pre>
+</div></div>
+<p>This API would be used in the PolicyVerificationInterceptor to check which of the assertions have been asserted in order to decide if any of the policy alternatives of the effective policy is supported.<br clear="none">
+Interceptors like the RM interceptor would implement this interface, but also perhaps some transports.</p>
+
+<h3 id="WSPolicyFramework-AssertionInterceptorProvider">AssertionInterceptorProvider </h3>
+
+<p>This is simply an extension of the InterceptorProvder interface:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+public interface AssertionInterceptorProvider extends InterceptorProvider {
+}
+</pre>
+</div></div>
+
+<p>As with AssertionBuilders, concrete AssertionInterceptorProviders are loaded by the &lt;Spring container&gt; and register themselves with the AssertionInterceptorProviderRegistry, is a Bus extension.<br clear="none">
+This API would be used by the PolicyEvaluationInterceptor to dynamically add interceptors according to the needs of the effective policy (client side) or according to the potential needs (server side - as mentioned above we cannot determine the effective policy until after the operation has been determined).</p>
+
+<p>All APIs must be made available in the api module. </p>
+
+<h2 id="WSPolicyFramework-WS-Policyvs.Configuration">WS-Policy vs. Configuration</h2>
+
+<p>Some of the schema types currently used in configuring the http and jms transports may be used as assertions. One advantage would be these types do not have to extend wsdl:tExtensibilityElement any mor. Instead the content of these elements could be verified by their respective assertion builders. Also, the types can be used much more flexibly as assertions than as extension elements registered for say the wsdl:port element only (as assertions, they can be attached to the port type or the port, the service, and even appear outside of wsdl in PolicyAttachment elements). The preferred (but not mandatory) transition would be from:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+&lt;service name="GreeterService"&gt;
+    &lt;port binding="tns:GreeterSOAPBinding" name="GreeterPort"&gt;
+        &lt;http:address xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" location="http://localhost:9020/SoapContext/GreeterPort"/&gt;
+        &lt;http-conf:client xmlns:http-conf="http://cxf.apache.org/transports/http/configuration" ReceiveTimeout="60000"/&gt;
+    &lt;/port&gt;
+&lt;/service&gt;
+</pre>
+</div></div>
+<p>to:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+&lt;service name="GreeterService"&gt;
+    &lt;port binding="tns:GreeterSOAPBinding" name="GreeterPort"&gt;
+        &lt;http:address xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" location="http://localhost:9020/SoapContext/GreeterPort"/&gt;
+        &lt;wsp:Policy&gt;         
+            &lt;http-conf:client xmlns:http-conf="http://cxf.apache.org/transports/http/configuration" ReceiveTimeout="60000"/&gt;
+        &lt;wsp:Policy&gt;
+    &lt;/port&gt;
+&lt;/service&gt;
+</pre>
+</div></div>
+<p>or:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+&lt;definition...&gt;
+    ...
+    &lt;service name="GreeterService"&gt;
+        &lt;port binding="tns:GreeterSOAPBinding" name="GreeterPort"&gt;
+            &lt;http:address xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" location="http://localhost:9020/SoapContext/GreeterPort"/&gt;
+        &lt;/port&gt;
+    &lt;/service&gt;
+&lt;/definition&gt;
+
+&lt;wsp:PolicyAttachment&gt;
+    &lt;wsp:AppliesTo&gt;
+           &lt;wsp:URI&gt;http://cxf.apache.org/testutils/wsdl/greeter_control.wsdl#wsdl.port(GreeterService/GreeterPort)&lt;/wsp:URI&gt;
+    &lt;/wsp:AppliesTo&gt;
+    &lt;wsp:Policy&gt;         
+            &lt;http-conf:client xmlns:http-conf="http://cxf.apache.org/transports/http/configuration" ReceiveTimeout="60000"/&gt;
+        &lt;wsp:Policy&gt;
+&lt;/wsp:PolicyAttachment&gt; 
+</pre>
+</div></div>
+<p>with the PolicyAtachment element being defined in some external document.</p>
+</div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=34491">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=34491&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

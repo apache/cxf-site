@@ -1,0 +1,336 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - Distributed OSGi Greeter Demo Walkthrough">
+
+
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shCoreCXF.css">
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shThemeCXF.css">
+
+<script src='/resources/highlighter/scripts/shCore.js'></script>
+<script src='/resources/highlighter/scripts/shBrushBash.js'></script>
+<script src='/resources/highlighter/scripts/shBrushXml.js'></script>
+<script src='/resources/highlighter/scripts/shBrushJava.js'></script>
+<script>
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+
+    <title>
+Apache CXF -- Distributed OSGi Greeter Demo Walkthrough
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="distributed-osgi.html">Distributed OSGi</a>&nbsp;&gt;&nbsp;<a href="dosgi-demos.html">DOSGi Demos</a>&nbsp;&gt;&nbsp;<a href="distributed-osgi-greeter-demo-walkthrough.html">Distributed OSGi Greeter Demo Walkthrough</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><p>This is a walkthrough of the Distributed OSGi Greeter Demo. It should help users of the Distributed OSGi get started with it. </p>
+
+<p>The greeter demo can be found in the <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/greeter">samples/greeter directory</a> of the SVN code base and implements a simple OSGi Greeter Service and a consumer to that service with a trivial UI. <br clear="none">
+In this walkthrough all the required bundles are installed straight from the maven release repository, so no need to check out SVN and build anything to get started with the Greeter Demo.</p>
+
+<h3 id="DistributedOSGiGreeterDemoWalkthrough-TheGreeterdemodesign">The Greeter demo design</h3>
+<p>The demo is composed of 3 bundles:</p>
+<ul><li>The Greeter Interface bundle</li><li>The Greeter Service Implementation bundle</li><li>The Greeter Service Consumer bundle</li></ul>
+
+
+<p>The <strong>Greeter Interface</strong> bundle exports the <code>GreeterService</code> interface which both other bundles depend on. This is the interface:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">public interface GreeterService {
+    Map&lt;GreetingPhrase, String&gt; greetMe(String name);
+    GreetingPhrase [] greetMe(GreeterData name) throws GreeterException;
+}</pre>
+</div></div>
+<p>The <code>GreeterData</code> interface, <code>GreetingPhase</code> and <code>GreeterException</code> classes are custom types defined in the Greeter Interface bundle.</p>
+
+<p>In this walkthrough, the following setup will be used:<br clear="none">
+<span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="distributed-osgi-greeter-demo-walkthrough.data/dosgi_cxf.png"></span><br clear="none">
+The client side bundles will be running in Equinox, invoking on a Distributed OSGi Service running in Felix. Note that the choice of containers is completely trivial. Any OSGi container that implements the Service Registry Hooks (a new feature in OSGi 4.2) can be used on either side.</p>
+
+<h3 id="DistributedOSGiGreeterDemoWalkthrough-TheServerSide">The Server Side</h3>
+<p>The <strong>Greeter Service</strong> implementation bundle provides a <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/greeter/impl/src/main/java/org/apache/cxf/dosgi/samples/greeter/impl/GreeterServiceImpl.java">trivial implementation of the GreeterService interface</a>. Additionally, it has an <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/greeter/impl/src/main/java/org/apache/cxf/dosgi/samples/greeter/impl/Activator.java">Activator</a>:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">public class Activator implements BundleActivator {
+    private ServiceRegistration registration;
+
+    public void start(BundleContext bc) throws Exception {
+        Dictionary props = new Hashtable();
+
+        props.put("service.exported.interfaces", "*");
+        props.put("service.exported.configs", "org.apache.cxf.ws");
+        props.put("org.apache.cxf.ws.address", "http://localhost:9090/greeter");
+        
+        registration = bc.registerService(GreeterService.class.getName(), new GreeterServiceImpl(), props);
+    }
+
+    public void stop(BundleContext bc) throws Exception {
+        registration.unregister();
+    }
+}</pre>
+</div></div>
+<p>Besides creating the service instance, the activator sets the additional properties on the service that are required to make it available remotely:</p>
+<ul><li>The <code>service.exported.interfaces</code> property is set to <code>*</code>, which means that all the interfaces passes to registerService should be made accessible remotely. In this case it's just the <code>GreeterService</code> interface.</li><li>The <code>service.exported.configs</code> is set to <code>org.apache.cxf.ws</code>, which is a CXF specific configuration type that can be used to expose the OSGi Service as a Web Service over SOAP/HTTP. The address of the service is specified via the <code>org.apache.cxf.ws.address</code> property.</li></ul>
+
+
+<p>Let's run the server in Felix 3.0.1. As a prerequisite it requires some of the OSGi Compendium Specification interfaces. These don't come with the Felix download, but you can install a bundle that contains these interfaces straight from Maven.<br clear="none">
+In this walkthrough I'm using the single-bundle distribution of CXF/DOSGi which can be installed straight from the Maven release repository.</p>
+
+<p>To set up my Felix environment, I'm running the following commands:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">C:\felix-framework-3.0.1&gt;
+
+Welcome to Apache Felix Gogo
+g! install http://repo1.maven.org/maven2/org/osgi/org.osgi.compendium/4.2.0/org.osgi.compendium-4.2.0.jar
+g! start http://www.apache.org/dist/cxf/dosgi/1.2/cxf-dosgi-ri-singlebundle-distribution-1.2.jar
+... some log messages may appear...
+g! lb
+    0|Active     |    0|org.apache.felix.framework (3.0.1)
+    1|Active     |    1|org.apache.felix.bundlerepository (1.6.2)
+    2|Active     |    1|org.apache.felix.gogo.command (0.6.0)
+    3|Active     |    1|org.apache.felix.gogo.runtime (0.6.0)
+    4|Active     |    1|org.apache.felix.gogo.shell (0.6.0)
+    5|Resolved   |    1|osgi.cmpn (4.2.0.200908310645)
+    6|Active     |    1|cxf-dosgi-ri-singlebundle-distribution (1.2.0)</pre>
+</div></div>
+<p>Some log messages may come up now.</p>
+
+<p>Now let's start up the server-side greeter bundles. Like with the DOSGi bundle itself, I'm installing these straight from the Maven release repository.</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+g! start http://repo1.maven.org/maven2/org/apache/cxf/dosgi/samples/cxf-dosgi-ri-samples-greeter-interface/1.2/cxf-dosgi-ri-samples-greeter-interface-1.2.jar
+g! start http://repo1.maven.org/maven2/org/apache/cxf/dosgi/samples/cxf-dosgi-ri-samples-greeter-impl/1.2/cxf-dosgi-ri-samples-greeter-impl-1.2.jar
+... some log messages will appear ...
+g! lb
+START LEVEL 1
+   ID|State      |Level|Name
+    0|Active     |    0|System Bundle (3.0.1)
+    1|Active     |    1|Apache Felix Bundle Repository (1.6.2)
+    2|Active     |    1|Apache Felix Gogo Command (0.6.0)
+    3|Active     |    1|Apache Felix Gogo Runtime (0.6.0)
+    4|Active     |    1|Apache Felix Gogo Shell (0.6.0)
+    5|Resolved   |    1|osgi.cmpn (4.2.0.200908310645)
+    6|Active     |    1|Distributed OSGi Distribution Software Single-Bundle Distribution
+    7|Active     |    1|CXF Distributed OSGi Greeter Demo Interface Bundle
+    8|Active     |    1|CXF Distributed OSGi Greeter Demo Service Implementation Bundle</pre>
+</div></div>
+
+<p>At the end of the log messages you will see one appear that says: <br clear="none">
+<code>INFO: TopologyManager: export sucessful Endpoints: Endpoint Description for ServiceReference [org.apache.cxf.dosgi.samples.greeter.GreeterService]</code><br clear="none">
+This means that the service is successfully exposed remotely, and you can verify this by requesting the WSDL:</p>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="distributed-osgi-greeter-demo-walkthrough.data/greeter_wsdl.jpg"></span></p>
+
+<p>This WSDL was dynamically generated from the exposed <code>GreeterService</code> Java interface. Under the hood, the Aegis data binding is used for this.</p>
+
+<h3 id="DistributedOSGiGreeterDemoWalkthrough-TheServiceConsumerside.">The Service Consumer side.</h3>
+<p>The Service Consumer Java code contains no specific Distribution-related elements. It's simply an <code>Activator</code> that creates a <code>ServiceTracker</code> listening for services that implement the <code>GreeterService</code> interface. When the service becomes available it opens a little GUI window that asks you for an argument that can be sent to the Greeter service. <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/greeter/client/src/main/java/org/apache/cxf/dosgi/samples/greeter/client/Activator.java">See here for the actual code</a></p>
+
+<div class="confluence-information-macro confluence-information-macro-tip"><span class="aui-icon aui-icon-small aui-iconfont-approve confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p>Note that in many cases using an OSGi Component Framework such as Spring-DM, iPojo or OSGi DS is highly recommeded when writing OSGi Service Consumers. OSGi Services are highly dynamic in nature. They can come and go. Using a component framework will generally save you from writing <code>ServiceTracker</code> code as the framework will generally provide the service consumer with a reference to the service via injection.</p></div></div>
+
+<p>So the remote service is simply looked up the normal way, via the OSGi Service Registry. <br clear="none">
+<strong>How does it get there?</strong> The fact that a lookup on a service is done internally triggers a <strong>Service Registry Hook</strong>. This will go out to any registered Distributed OSGi Discovery implementations and query them for any matching services. <br clear="none">
+However, <strong>in our setup we haven't yet registered a Discovery implementation</strong>. There is an alternative, more static way to provide discovery type information, in case this info is not available via discovery. It can be specified in a <code>OSGI-INF/remote-service/*.xml</code> file. This the content of the Greeter Service Consumer <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/greeter/client/src/main/resources/OSGI-INF/remote-service/remote-services.xml">remote-services.xml</a> file:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">&lt;endpoint-descriptions xmlns="http://www.osgi.org/xmlns/rsa/v1.0.0"&gt;
+  &lt;endpoint-description&gt;
+    &lt;property name="objectClass"&gt;
+      &lt;array&gt;
+        &lt;value&gt;org.apache.cxf.dosgi.samples.greeter.GreeterService&lt;/value&gt;
+      &lt;/array&gt;
+    &lt;/property&gt;
+    &lt;property name="endpoint.id"&gt;http://localhost:9090/greeter&lt;/property&gt;
+    &lt;property name="service.imported.configs"&gt;org.apache.cxf.ws&lt;/property&gt;
+  &lt;/endpoint-description&gt;
+&lt;/endpoint-descriptions&gt;</pre>
+</div></div>
+
+<p>Let's run the consumer in Equinox, so that we have the bundles running in Equinox talking to a remoted service running in Felix!<br clear="none">
+As with Felix, we will have to load the bundle with the OSGi compendium interfaces. There's one that ships with Equinox.</p>
+
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+/eclipse&gt; java -jar plugins/org.eclipse.osgi_3.6.0.v20100517.jar -console
+osgi&gt; install install file:plugins/org.eclipse.osgi.services_3.2.100.v20100503.jar
+Bundle id is 1
+
+osgi&gt; install http://www.apache.org/dist/cxf/dosgi/1.2/cxf-dosgi-ri-singlebundle-distribution-1.2.jar
+Bundle id is 2
+
+osgi&gt; start 2
+... some log messages may appear...
+</pre>
+</div></div>
+<p>Some logging messages may appear. You can also automatically load the DOSGi bundles by appending the target/equinox.config.ini.append to you equinox config.ini file.</p>
+
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+osgi&gt; install http://repo1.maven.org/maven2/org/apache/cxf/dosgi/samples/cxf-dosgi-ri-samples-greeter-interface/1.2/cxf-dosgi-ri-samples-greeter-interface-1.2.jar
+Bundle id is 3
+osgi&gt; install http://repo1.maven.org/maven2/org/apache/cxf/dosgi/samples/cxf-dosgi-ri-samples-greeter-client/1.2/cxf-dosgi-ri-samples-greeter-client-1.2.jar
+Bundle id is 4
+osgi&gt; ss
+
+Framework is launched.
+
+id      State       Bundle
+0       ACTIVE      org.eclipse.osgi_3.6.0.v20100517
+1       RESOLVED    org.eclipse.osgi.services_3.2.100.v20100503
+2       ACTIVE      cxf-dosgi-ri-singlebundle-distribution
+3       INSTALLED   cxf-dosgi-ri-samples-greeter-interface
+4       INSTALLED   cxf-dosgi-ri-samples-greeter-client
+
+osgi&gt; start 4</pre>
+</div></div>
+<p>After a few moments the following window appears:</p>
+
+<p><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image" src="distributed-osgi-greeter-demo-walkthrough.data/greeterui2.jpg"></span></p>
+
+<p>The window appears once the ServiceTracker in the consumer has received a callback that the <code>GreeterService</code> has been found. The value entered will used to invoke the (remote) OSGi service, with a call like this:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">Map&lt;GreetingPhrase, String&gt; result = greeterService.greetMe("foobar");</pre>
+</div></div>
+<p>I can see that the invocation has been received by the service implementation as in the Felix window the following appears.</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">-&gt; Invoking: greetMe(foobar)</pre>
+</div></div>
+<p>In the Equinox window I can see the response:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">osgi&gt; greetMe("foobar") returns:
+  Hola foobar
+  Bonjour foobar
+  Hoi foobar
+  Hello foobar</pre>
+</div></div></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=107706">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=107706&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

@@ -1,0 +1,345 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+PhaseInterceptor (Apache CXF Bundle Jar 2.6.3 API)
+</TITLE>
+
+<META NAME="keywords" CONTENT="org.apache.cxf.phase.PhaseInterceptor interface">
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="PhaseInterceptor (Apache CXF Bundle Jar 2.6.3 API)";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/PhaseInterceptor.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../org/apache/cxf/phase/PhaseComparator.html" title="class in org.apache.cxf.phase"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?org/apache/cxf/phase/PhaseInterceptor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="PhaseInterceptor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.phase</FONT>
+<BR>
+Interface PhaseInterceptor&lt;T extends <A HREF="../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;</H2>
+<DL>
+<DT><B>All Superinterfaces:</B> <DD><A HREF="../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;T&gt;</DD>
+</DL>
+<DL>
+<DT><B>All Known Implementing Classes:</B> <DD><A HREF="../../../../org/apache/cxf/interceptor/security/AbstractAuthorizingInInterceptor.html" title="class in org.apache.cxf.interceptor.security">AbstractAuthorizingInInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/AbstractEndpointSelectionInterceptor.html" title="class in org.apache.cxf.interceptor">AbstractEndpointSelectionInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/AbstractInDatabindingInterceptor.html" title="class in org.apache.cxf.interceptor">AbstractInDatabindingInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxws/handler/AbstractJAXWSHandlerInterceptor.html" title="class in org.apache.cxf.jaxws.handler">AbstractJAXWSHandlerInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxrs/provider/jsonp/AbstractJsonpOutInterceptor.html" title="class in org.apache.cxf.jaxrs.provider.jsonp">AbstractJsonpOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/AbstractLoggingInterceptor.html" title="class in org.apache.cxf.interceptor">AbstractLoggingInterceptor</A>, <A HREF="../../../../org/apache/cxf/management/interceptor/AbstractMessageResponseTimeInterceptor.html" title="class in org.apache.cxf.management.interceptor">AbstractMessageResponseTimeInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/AbstractOutDatabindingInterceptor.html" title="class in org.apache.cxf.interceptor">AbstractOutDatabindingInterceptor</A>, <A HREF="../../../../org/apache/cxf/phase/AbstractPhaseInterceptor.html" title="class in org.apache.cxf.phase">AbstractPhaseInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/policy/AbstractPolicyInterceptor.html" title="class in org.apache.cxf.ws.policy">AbstractPolicyInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxws/handler/AbstractProtocolHandlerInterceptor.html" title="class in org.apache.cxf.jaxws.handler">AbstractProtocolHandlerInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/rm/AbstractRMInterceptor.html" title="class in org.apache.cxf.ws.rm">AbstractRMInterceptor</A>, <A HREF="../../../../org/apache/cxf/rs/security/saml/AbstractSamlOutInterceptor.html" title="class in org.apache.cxf.rs.security.saml">AbstractSamlOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/security/AbstractSecurityContextInInterceptor.html" title="class in org.apache.cxf.interceptor.security">AbstractSecurityContextInInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/AbstractSoapInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">AbstractSoapInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/security/wss4j/AbstractUsernameTokenAuthenticatingInterceptor.html" title="class in org.apache.cxf.ws.security.wss4j">AbstractUsernameTokenAuthenticatingInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/security/AbstractUsernameTokenInInterceptor.html" title="class in org.apache.cxf.interceptor.security">AbstractUsernameTokenInInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/security/wss4j/AbstractWSS4JInterceptor.html" title="class in org.apache.cxf.ws.security.wss4j">AbstractWSS4JInterceptor</A>, <A HREF="../../../../org/apache/cxf/rs/security/xml/AbstractXmlSecOutInterceptor.html" title="class in org.apache.cxf.rs.security.xml">AbstractXmlSecOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/aegis/databinding/AegisSchemaValidationInInterceptor.html" title="class in org.apache.cxf.aegis.databinding">AegisSchemaValidationInInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/AttachmentInInterceptor.html" title="class in org.apache.cxf.interceptor">AttachmentInInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxrs/interceptor/AttachmentInputInterceptor.html" title="class in org.apache.cxf.jaxrs.interceptor">AttachmentInputInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/AttachmentOutInterceptor.html" title="class in org.apache.cxf.interceptor">AttachmentOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/AttachmentOutInterceptor.AttachmentOutEndingInterceptor.html" title="class in org.apache.cxf.interceptor">AttachmentOutInterceptor.AttachmentOutEndingInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxrs/interceptor/AttachmentOutputInterceptor.html" title="class in org.apache.cxf.jaxrs.interceptor">AttachmentOutputInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/security/trust/AuthPolicyValidatingInterceptor.html" title="class in org.apache.cxf.ws.security.trust">AuthPolicyValidatingInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/BareInInterceptor.html" title="class in org.apache.cxf.interceptor">BareInInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/BareOutInterceptor.html" title="class in org.apache.cxf.interceptor">BareOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/transport/https/CertConstraintsInterceptor.html" title="class in org.apache.cxf.transport.https">CertConstraintsInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/CheckFaultInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">CheckFaultInterceptor</A>, <A HREF="../../../../org/apache/cxf/rs/security/saml/authorization/ClaimsAuthorizingInterceptor.html" title="class in org.apache.cxf.rs.security.saml.authorization">ClaimsAuthorizingInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/ClientFaultConverter.html" title="class in org.apache.cxf.interceptor">ClientFaultConverter</A>, <A HREF="../../../../org/apache/cxf/ws/policy/ClientPolicyInFaultInterceptor.html" title="class in org.apache.cxf.ws.policy">ClientPolicyInFaultInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/coloc/ColocInInterceptor.html" title="class in org.apache.cxf.binding.coloc">ColocInInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/coloc/ColocOutInterceptor.html" title="class in org.apache.cxf.binding.coloc">ColocOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/corba/interceptors/CorbaStreamFaultInInterceptor.html" title="class in org.apache.cxf.binding.corba.interceptors">CorbaStreamFaultInInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/corba/interceptors/CorbaStreamFaultOutInterceptor.html" title="class in org.apache.cxf.binding.corba.interceptors">CorbaStreamFaultOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/corba/interceptors/CorbaStreamInInterceptor.html" title="class in org.apache.cxf.binding.corba.interceptors">CorbaStreamInInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/corba/interceptors/CorbaStreamOutEndingInterceptor.html" title="class in org.apache.cxf.binding.corba.interceptors">CorbaStreamOutEndingInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/corba/interceptors/CorbaStreamOutInterceptor.html" title="class in org.apache.cxf.binding.corba.interceptors">CorbaStreamOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/security/wss4j/CryptoCoverageChecker.html" title="class in org.apache.cxf.ws.security.wss4j">CryptoCoverageChecker</A>, <A HREF="../../../../org/apache/cxf/ws/addressing/soap/DecoupledFaultHandler.html" title="class in org.apache.cxf.ws.addressing.soap">DecoupledFaultHandler</A>, <A HREF="../../../../org/apache/cxf/ws/security/wss4j/DefaultCryptoCoverageChecker.html" title="class in org.apache.cxf.ws.security.wss4j">DefaultCryptoCoverageChecker</A>, <A HREF="../../../../org/apache/cxf/interceptor/security/DepthRestrictingStreamInterceptor.html" title="class in org.apache.cxf.interceptor.security">DepthRestrictingStreamInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/DocLiteralInInterceptor.html" title="class in org.apache.cxf.interceptor">DocLiteralInInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/EndpointSelectionInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">EndpointSelectionInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/FaultOutInterceptor.html" title="class in org.apache.cxf.interceptor">FaultOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/FIStaxInInterceptor.html" title="class in org.apache.cxf.interceptor">FIStaxInInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/FIStaxOutInterceptor.html" title="class in org.apache.cxf.interceptor">FIStaxOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/transport/common/gzip/GZIPInInterceptor.html" title="class in org.apache.cxf.transport.common.gzip">GZIPInInterceptor</A>, <A HREF="../../../../org/apache/cxf/transport/common/gzip/GZIPOutInterceptor.html" title="class in org.apache.cxf.transport.common.gzip">GZIPOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxws/interceptors/HolderInInterceptor.html" title="class in org.apache.cxf.jaxws.interceptors">HolderInInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxws/interceptors/HolderOutInterceptor.html" title="class in org.apache.cxf.jaxws.interceptors">HolderOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/security/JAASLoginInterceptor.html" title="class in org.apache.cxf.interceptor.security">JAASLoginInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxb/attachment/JAXBAttachmentSchemaValidationHack.html" title="class in org.apache.cxf.jaxb.attachment">JAXBAttachmentSchemaValidationHack</A>, <A HREF="../../../../org/apache/cxf/jaxrs/interceptor/JAXRSInInterceptor.html" title="class in org.apache.cxf.jaxrs.interceptor">JAXRSInInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxrs/interceptor/JAXRSOutInterceptor.html" title="class in org.apache.cxf.jaxrs.interceptor">JAXRSOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxrs/provider/jsonp/JsonpInInterceptor.html" title="class in org.apache.cxf.jaxrs.provider.jsonp">JsonpInInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxrs/provider/jsonp/JsonpPostStreamInterceptor.html" title="class in org.apache.cxf.jaxrs.provider.jsonp">JsonpPostStreamInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxrs/provider/jsonp/JsonpPreStreamInterceptor.html" title="class in org.apache.cxf.jaxrs.provider.jsonp">JsonpPreStreamInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxrs/security/KerberosAuthOutInterceptor.html" title="class in org.apache.cxf.jaxrs.security">KerberosAuthOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/LoggingInInterceptor.html" title="class in org.apache.cxf.interceptor">LoggingInInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/LoggingOutInterceptor.html" title="class in org.apache.cxf.interceptor">LoggingOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxws/handler/logical/LogicalHandlerFaultInInterceptor.html" title="class in org.apache.cxf.jaxws.handler.logical">LogicalHandlerFaultInInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxws/handler/logical/LogicalHandlerFaultOutInterceptor.html" title="class in org.apache.cxf.jaxws.handler.logical">LogicalHandlerFaultOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxws/handler/logical/LogicalHandlerInInterceptor.html" title="class in org.apache.cxf.jaxws.handler.logical">LogicalHandlerInInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxws/handler/logical/LogicalHandlerOutInterceptor.html" title="class in org.apache.cxf.jaxws.handler.logical">LogicalHandlerOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/addressing/MAPAggregator.html" title="class in org.apache.cxf.ws.addressing">MAPAggregator</A>, <A HREF="../../../../org/apache/cxf/ws/addressing/impl/MAPAggregatorImpl.html" title="class in org.apache.cxf.ws.addressing.impl">MAPAggregatorImpl</A>, <A HREF="../../../../org/apache/cxf/ws/addressing/soap/MAPCodec.html" title="class in org.apache.cxf.ws.addressing.soap">MAPCodec</A>, <A HREF="../../../../org/apache/cxf/jaxws/interceptors/MessageModeInInterceptor.html" title="class in org.apache.cxf.jaxws.interceptors">MessageModeInInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxws/interceptors/MessageModeOutInterceptor.html" title="class in org.apache.cxf.jaxws.interceptors">MessageModeOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/MessageSenderInterceptor.html" title="class in org.apache.cxf.interceptor">MessageSenderInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/MessageSenderInterceptor.MessageSenderEndingInterceptor.html" title="class in org.apache.cxf.interceptor">MessageSenderInterceptor.MessageSenderEndingInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/mex/MEXInInterceptor.html" title="class in org.apache.cxf.ws.mex">MEXInInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/policy/mtom/MTOMPolicyInterceptor.html" title="class in org.apache.cxf.ws.policy.mtom">MTOMPolicyInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/MustUnderstandInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">MustUnderstandInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/MustUnderstandInterceptor.MustUnderstandEndingInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">MustUnderstandInterceptor.MustUnderstandEndingInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/object/ObjectDispatchInInterceptor.html" title="class in org.apache.cxf.binding.object">ObjectDispatchInInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/object/ObjectDispatchOutInterceptor.html" title="class in org.apache.cxf.binding.object">ObjectDispatchOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/OneWayProcessorInterceptor.html" title="class in org.apache.cxf.interceptor">OneWayProcessorInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/OutgoingChainInterceptor.html" title="class in org.apache.cxf.interceptor">OutgoingChainInterceptor</A>, <A HREF="../../../../org/apache/cxf/management/interceptor/PersistInInterceptor.html" title="class in org.apache.cxf.management.interceptor">PersistInInterceptor</A>, <A HREF="../../../../org/apache/cxf/management/interceptor/PersistOutInterceptor.html" title="class in org.apache.cxf.management.interceptor">PersistOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JInInterceptor.html" title="class in org.apache.cxf.ws.security.wss4j">PolicyBasedWSS4JInInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JOutInterceptor.html" title="class in org.apache.cxf.ws.security.wss4j">PolicyBasedWSS4JOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/security/wss4j/PolicyBasedWSS4JOutInterceptor.PolicyBasedWSS4JOutInterceptorInternal.html" title="class in org.apache.cxf.ws.security.wss4j">PolicyBasedWSS4JOutInterceptor.PolicyBasedWSS4JOutInterceptorInternal</A>, <A HREF="../../../../org/apache/cxf/ws/policy/PolicyInInterceptor.html" title="class in org.apache.cxf.ws.policy">PolicyInInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/policy/PolicyOutInterceptor.html" title="class in org.apache.cxf.ws.policy">PolicyOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/policy/PolicyVerificationInFaultInterceptor.html" title="class in org.apache.cxf.ws.policy">PolicyVerificationInFaultInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/policy/PolicyVerificationInInterceptor.html" title="class in org.apache.cxf.ws.policy">PolicyVerificationInInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/policy/PolicyVerificationOutInterceptor.html" title="class in org.apache.cxf.ws.policy">PolicyVerificationOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/ReadHeadersInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">ReadHeadersInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/ReadHeadersInterceptor.CheckClosingTagsInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">ReadHeadersInterceptor.CheckClosingTagsInterceptor</A>, <A HREF="../../../../org/apache/cxf/management/interceptor/ResponseTimeMessageInInterceptor.html" title="class in org.apache.cxf.management.interceptor">ResponseTimeMessageInInterceptor</A>, <A HREF="../../../../org/apache/cxf/management/interceptor/ResponseTimeMessageInvokerInterceptor.html" title="class in org.apache.cxf.management.interceptor">ResponseTimeMessageInvokerInterceptor</A>, <A HREF="../../../../org/apache/cxf/management/interceptor/ResponseTimeMessageOutInterceptor.html" title="class in org.apache.cxf.management.interceptor">ResponseTimeMessageOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/management/interceptor/ResponseTimeMessageOutInterceptor.EndingInterceptor.html" title="class in org.apache.cxf.management.interceptor">ResponseTimeMessageOutInterceptor.EndingInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/rm/RetransmissionInterceptor.html" title="class in org.apache.cxf.ws.rm">RetransmissionInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/rm/RMCaptureInInterceptor.html" title="class in org.apache.cxf.ws.rm">RMCaptureInInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/rm/RMDeliveryInterceptor.html" title="class in org.apache.cxf.ws.rm">RMDeliveryInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/rm/RMInInterceptor.html" title="class in org.apache.cxf.ws.rm">RMInInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/rm/RMOutInterceptor.html" title="class in org.apache.cxf.ws.rm">RMOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/rm/soap/RMSoapInterceptor.html" title="class in org.apache.cxf.ws.rm.soap">RMSoapInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/RPCInInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">RPCInInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/RPCOutInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">RPCOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/saaj/SAAJInInterceptor.html" title="class in org.apache.cxf.binding.soap.saaj">SAAJInInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/saaj/SAAJInInterceptor.SAAJPreInInterceptor.html" title="class in org.apache.cxf.binding.soap.saaj">SAAJInInterceptor.SAAJPreInInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/saaj/SAAJOutInterceptor.html" title="class in org.apache.cxf.binding.soap.saaj">SAAJOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/saaj/SAAJOutInterceptor.SAAJOutEndingInterceptor.html" title="class in org.apache.cxf.binding.soap.saaj">SAAJOutInterceptor.SAAJOutEndingInterceptor</A>, <A HREF="../../../../org/apache/cxf/rs/security/saml/SamlEnvelopedOutInterceptor.html" title="class in org.apache.cxf.rs.security.saml">SamlEnvelopedOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/rs/security/saml/SamlFormOutInterceptor.html" title="class in org.apache.cxf.rs.security.saml">SamlFormOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/rs/security/saml/SamlHeaderOutInterceptor.html" title="class in org.apache.cxf.rs.security.saml">SamlHeaderOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/security/wss4j/SamlTokenInterceptor.html" title="class in org.apache.cxf.ws.security.wss4j">SamlTokenInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/security/SecureAnnotationsInterceptor.html" title="class in org.apache.cxf.interceptor.security">SecureAnnotationsInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/security/policy/interceptors/SecurityVerificationOutInterceptor.html" title="class in org.apache.cxf.ws.security.policy.interceptors">SecurityVerificationOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/policy/ServerPolicyOutFaultInterceptor.html" title="class in org.apache.cxf.ws.policy">ServerPolicyOutFaultInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/ServiceInvokerInterceptor.html" title="class in org.apache.cxf.interceptor">ServiceInvokerInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/security/SimpleAuthorizingInterceptor.html" title="class in org.apache.cxf.interceptor.security">SimpleAuthorizingInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/Soap11FaultInInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">Soap11FaultInInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/Soap11FaultOutInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">Soap11FaultOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/Soap12FaultInInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">Soap12FaultInInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/Soap12FaultOutInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">Soap12FaultOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/SoapActionInInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">SoapActionInInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/SoapActionInInterceptor.SoapActionInAttemptTwoInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">SoapActionInInterceptor.SoapActionInAttemptTwoInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxws/handler/soap/SOAPHandlerFaultInInterceptor.html" title="class in org.apache.cxf.jaxws.handler.soap">SOAPHandlerFaultInInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxws/handler/soap/SOAPHandlerFaultOutInterceptor.html" title="class in org.apache.cxf.jaxws.handler.soap">SOAPHandlerFaultOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxws/handler/soap/SOAPHandlerInterceptor.html" title="class in org.apache.cxf.jaxws.handler.soap">SOAPHandlerInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/SoapHeaderInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">SoapHeaderInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/SoapHeaderOutFilterInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">SoapHeaderOutFilterInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/jms/interceptor/SoapJMSInInterceptor.html" title="class in org.apache.cxf.binding.soap.jms.interceptor">SoapJMSInInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/SoapOutInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">SoapOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/SoapOutInterceptor.SoapOutEndingInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">SoapOutInterceptor.SoapOutEndingInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/SoapPreProtocolOutInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">SoapPreProtocolOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/StartBodyInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">StartBodyInterceptor</A>, <A HREF="../../../../org/apache/cxf/databinding/stax/StaxDataBindingInterceptor.html" title="class in org.apache.cxf.databinding.stax">StaxDataBindingInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/StaxInEndingInterceptor.html" title="class in org.apache.cxf.interceptor">StaxInEndingInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/StaxInInterceptor.html" title="class in org.apache.cxf.interceptor">StaxInInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/StaxOutEndingInterceptor.html" title="class in org.apache.cxf.interceptor">StaxOutEndingInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/StaxOutInterceptor.html" title="class in org.apache.cxf.interceptor">StaxOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxws/interceptors/SwAInInterceptor.html" title="class in org.apache.cxf.jaxws.interceptors">SwAInInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxws/interceptors/SwAOutInterceptor.html" title="class in org.apache.cxf.jaxws.interceptors">SwAOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/soap/interceptor/TibcoSoapActionInterceptor.html" title="class in org.apache.cxf.binding.soap.interceptor">TibcoSoapActionInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/transform/TransformInInterceptor.html" title="class in org.apache.cxf.interceptor.transform">TransformInInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/transform/TransformOutInterceptor.html" title="class in org.apache.cxf.interceptor.transform">TransformOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/URIMappingInterceptor.html" title="class in org.apache.cxf.interceptor">URIMappingInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/security/wss4j/UsernameTokenInterceptor.html" title="class in org.apache.cxf.ws.security.wss4j">UsernameTokenInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/coloc/WebFaultInInterceptor.html" title="class in org.apache.cxf.binding.coloc">WebFaultInInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxws/interceptors/WebFaultOutInterceptor.html" title="class in org.apache.cxf.jaxws.interceptors">WebFaultOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/WrappedOutInterceptor.html" title="class in org.apache.cxf.interceptor">WrappedOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/interceptor/WrappedOutInterceptor.WrappedOutEndingInterceptor.html" title="class in org.apache.cxf.interceptor">WrappedOutInterceptor.WrappedOutEndingInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxws/interceptors/WrapperClassInInterceptor.html" title="class in org.apache.cxf.jaxws.interceptors">WrapperClassInInterceptor</A>, <A HREF="../../../../org/apache/cxf/jaxws/interceptors/WrapperClassOutInterceptor.html" title="class in org.apache.cxf.jaxws.interceptors">WrapperClassOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/frontend/WSDLGetInterceptor.html" title="class in org.apache.cxf.frontend">WSDLGetInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/security/wss4j/WSS4JInInterceptor.html" title="class in org.apache.cxf.ws.security.wss4j">WSS4JInInterceptor</A>, <A HREF="../../../../org/apache/cxf/ws/security/wss4j/WSS4JOutInterceptor.html" title="class in org.apache.cxf.ws.security.wss4j">WSS4JOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/rs/security/xml/XmlEncInInterceptor.html" title="class in org.apache.cxf.rs.security.xml">XmlEncInInterceptor</A>, <A HREF="../../../../org/apache/cxf/rs/security/xml/XmlEncOutInterceptor.html" title="class in org.apache.cxf.rs.security.xml">XmlEncOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/xml/interceptor/XMLFaultInInterceptor.html" title="class in org.apache.cxf.binding.xml.interceptor">XMLFaultInInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/xml/interceptor/XMLFaultOutInterceptor.html" title="class in org.apache.cxf.binding.xml.interceptor">XMLFaultOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/xml/interceptor/XMLMessageInInterceptor.html" title="class in org.apache.cxf.binding.xml.interceptor">XMLMessageInInterceptor</A>, <A HREF="../../../../org/apache/cxf/binding/xml/interceptor/XMLMessageOutInterceptor.html" title="class in org.apache.cxf.binding.xml.interceptor">XMLMessageOutInterceptor</A>, <A HREF="../../../../org/apache/cxf/rs/security/xml/XmlSigInInterceptor.html" title="class in org.apache.cxf.rs.security.xml">XmlSigInInterceptor</A>, <A HREF="../../../../org/apache/cxf/rs/security/xml/XmlSigOutInterceptor.html" title="class in org.apache.cxf.rs.security.xml">XmlSigOutInterceptor</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE>public interface <B>PhaseInterceptor&lt;T extends <A HREF="../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;</B><DT>extends <A HREF="../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A>&lt;T&gt;</DL>
+</PRE>
+
+<P>
+A phase interceptor is an intercetor that participates in a 
+ PhaseInterceptorChain.
+ The phase property controls the phase in which the interceptor is placed.
+ The before and after properties allow for fine grained control over where 
+ the phase the interceptor is placed. They specify the IDs of the 
+ interceptors that must be placed before and after the interceptor.
+<P>
+
+<P>
+<DL>
+<DT><B>Author:</B></DT>
+  <DD>Dan Diephouse</DD>
+<DT><B>See Also:</B><DD><A HREF="../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase"><CODE>PhaseInterceptorChain</CODE></A></DL>
+<HR>
+
+<P>
+
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../org/apache/cxf/phase/PhaseInterceptor.html" title="interface in org.apache.cxf.phase">PhaseInterceptor</A>&lt;? extends <A HREF="../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/phase/PhaseInterceptor.html#getAdditionalInterceptors()">getAdditionalInterceptors</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a collection of Interceptors that should be added to the chain 
+ whenever this interceptor is added.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Set.html" title="class or interface in java.util">Set</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/phase/PhaseInterceptor.html#getAfter()">getAfter</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a set containing the IDs of the interceptors that should be 
+ executed before this interceptor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Set.html" title="class or interface in java.util">Set</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/phase/PhaseInterceptor.html#getBefore()">getBefore</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns a set containing the IDs of the interceptors that should be 
+ executed after this interceptor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/phase/PhaseInterceptor.html#getId()">getId</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the ID of this interceptor.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../org/apache/cxf/phase/PhaseInterceptor.html#getPhase()">getPhase</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Returns the phase in which this interceptor is excecuted.</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.interceptor.Interceptor"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from interface org.apache.cxf.interceptor.<A HREF="../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../org/apache/cxf/interceptor/Interceptor.html#handleFault(T)">handleFault</A>, <A HREF="../../../../org/apache/cxf/interceptor/Interceptor.html#handleMessage(T)">handleMessage</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="getAfter()"><!-- --></A><H3>
+getAfter</H3>
+<PRE>
+<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Set.html" title="class or interface in java.util">Set</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt; <B>getAfter</B>()</PRE>
+<DL>
+<DD>Returns a set containing the IDs of the interceptors that should be 
+ executed before this interceptor. This interceptor will be placed 
+ in the chain after the interceptors in the set.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the IDs of the interceptors</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getBefore()"><!-- --></A><H3>
+getBefore</H3>
+<PRE>
+<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Set.html" title="class or interface in java.util">Set</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt; <B>getBefore</B>()</PRE>
+<DL>
+<DD>Returns a set containing the IDs of the interceptors that should be 
+ executed after this interceptor. This interceptor will be placed in 
+ the inteceptor chain before the interceptors in the set.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the ids of the interceptors</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getId()"><!-- --></A><H3>
+getId</H3>
+<PRE>
+<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A> <B>getId</B>()</PRE>
+<DL>
+<DD>Returns the ID of this interceptor.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the ID</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getPhase()"><!-- --></A><H3>
+getPhase</H3>
+<PRE>
+<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A> <B>getPhase</B>()</PRE>
+<DL>
+<DD>Returns the phase in which this interceptor is excecuted.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the phase</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getAdditionalInterceptors()"><!-- --></A><H3>
+getAdditionalInterceptors</H3>
+<PRE>
+<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Collection.html" title="class or interface in java.util">Collection</A>&lt;<A HREF="../../../../org/apache/cxf/phase/PhaseInterceptor.html" title="interface in org.apache.cxf.phase">PhaseInterceptor</A>&lt;? extends <A HREF="../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</A>&gt;&gt; <B>getAdditionalInterceptors</B>()</PRE>
+<DL>
+<DD>Returns a collection of Interceptors that should be added to the chain 
+ whenever this interceptor is added.   May return null.
+<P>
+<DD><DL>
+</DL>
+</DD>
+<DD><DL>
+
+<DT><B>Returns:</B><DD>the collection of interceptors</DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/PhaseInterceptor.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../org/apache/cxf/phase/PhaseComparator.html" title="class in org.apache.cxf.phase"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../org/apache/cxf/phase/PhaseInterceptorChain.html" title="class in org.apache.cxf.phase"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../index.html?org/apache/cxf/phase/PhaseInterceptor.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="PhaseInterceptor.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;NESTED&nbsp;|&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;CONSTR&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

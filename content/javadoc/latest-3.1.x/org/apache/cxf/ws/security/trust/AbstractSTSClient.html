@@ -1,0 +1,2429 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>AbstractSTSClient (Apache CXF JavaDoc 3.1.0 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="AbstractSTSClient (Apache CXF JavaDoc 3.1.0 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AbstractSTSClient.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.STSResponse.html" title="class in org.apache.cxf.ws.security.trust"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/apache/cxf/ws/security/trust/AbstractSTSClient.html" target="_top">Frames</a></li>
+<li><a href="AbstractSTSClient.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.cxf.ws.security.trust</div>
+<h2 title="Class AbstractSTSClient" class="title">Class AbstractSTSClient</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.cxf.ws.security.trust.AbstractSTSClient</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="../../../../../../org/apache/cxf/configuration/Configurable.html" title="interface in org.apache.cxf.configuration">Configurable</a>, <a href="../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html" title="interface in org.apache.cxf.interceptor">InterceptorProvider</a></dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../../../org/apache/cxf/ws/security/trust/STSClient.html" title="class in org.apache.cxf.ws.security.trust">STSClient</a></dd>
+</dl>
+<hr>
+<br>
+<pre>public abstract class <span class="strong">AbstractSTSClient</span>
+extends <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>
+implements <a href="../../../../../../org/apache/cxf/configuration/Configurable.html" title="interface in org.apache.cxf.configuration">Configurable</a>, <a href="../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html" title="interface in org.apache.cxf.interceptor">InterceptorProvider</a></pre>
+<div class="block">An abstract class with some functionality to invoke on a SecurityTokenService (STS) via the
+ WS-Trust protocol.</div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="nested_class_summary">
+<!--   -->
+</a>
+<h3>Nested Class Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Nested Class Summary table, listing nested classes, and an explanation">
+<caption><span>Nested Classes</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Class and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected static class&nbsp;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.STSResponse.html" title="class in org.apache.cxf.ws.security.trust">AbstractSTSClient.STSResponse</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#actAs">actAs</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#addressingNamespace">addressingNamespace</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected org.apache.wss4j.policy.model.AlgorithmSuite</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#algorithmSuite">algorithmSuite</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#allowRenewing">allowRenewing</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#allowRenewingAfterExpiry">allowRenewingAfterExpiry</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#bus">bus</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#claims">claims</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/javax/security/auth/callback/CallbackHandler.html?is-external=true" title="class or interface in javax.security.auth.callback">CallbackHandler</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#claimsCallbackHandler">claimsCallbackHandler</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#client">client</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#context">context</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#ctx">ctx</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#enableAppliesTo">enableAppliesTo</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#enableLifetime">enableLifetime</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#endpointName">endpointName</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/feature/Feature.html" title="interface in org.apache.cxf.feature">Feature</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#features">features</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#in">in</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#inFault">inFault</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isSecureConv">isSecureConv</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isSpnego">isSpnego</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#keySize">keySize</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#keyType">keyType</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#location">location</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#message">message</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#name">name</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#namespace">namespace</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#onBehalfOf">onBehalfOf</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#out">out</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#outFault">outFault</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected org.apache.neethi.Policy</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#policy">policy</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#requiresEntropy">requiresEntropy</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#sendKeyType">sendKeyType</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#sendRenewing">sendRenewing</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#serviceName">serviceName</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#soapVersion">soapVersion</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#template">template</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#tokenType">tokenType</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#ttl">ttl</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#useCertificateForConfirmationKeyInfo">useCertificateForConfirmationKeyInfo</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#useKeyCertificate">useKeyCertificate</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#wsdlLocation">wsdlLocation</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#wspNamespace">wspNamespace</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#AbstractSTSClient(org.apache.cxf.Bus)">AbstractSTSClient</a></strong>(<a href="../../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</a>&nbsp;b)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#addAppliesTo(javax.xml.stream.XMLStreamWriter,%20java.lang.String)">addAppliesTo</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamWriter.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamWriter</a>&nbsp;writer,
+            <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;appliesTo)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#addBinaryExchange(java.lang.String,%20org.apache.cxf.staxutils.W3CDOMStreamWriter)">addBinaryExchange</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;binaryExchange,
+                 <a href="../../../../../../org/apache/cxf/staxutils/W3CDOMStreamWriter.html" title="class in org.apache.cxf.staxutils">W3CDOMStreamWriter</a>&nbsp;writer)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#addClaims(javax.xml.stream.XMLStreamWriter)">addClaims</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamWriter.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamWriter</a>&nbsp;writer)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#addKeySize(int,%20org.apache.cxf.staxutils.W3CDOMStreamWriter)">addKeySize</a></strong>(int&nbsp;keysize,
+          <a href="../../../../../../org/apache/cxf/staxutils/W3CDOMStreamWriter.html" title="class in org.apache.cxf.staxutils">W3CDOMStreamWriter</a>&nbsp;writer)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#addLifetime(javax.xml.stream.XMLStreamWriter)">addLifetime</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamWriter.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamWriter</a>&nbsp;writer)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#addRequestType(java.lang.String,%20org.apache.cxf.staxutils.W3CDOMStreamWriter)">addRequestType</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;requestType,
+              <a href="../../../../../../org/apache/cxf/staxutils/W3CDOMStreamWriter.html" title="class in org.apache.cxf.staxutils">W3CDOMStreamWriter</a>&nbsp;writer)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#addTokenType(javax.xml.stream.XMLStreamWriter)">addTokenType</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamWriter.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamWriter</a>&nbsp;writer)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.STSResponse.html" title="class in org.apache.cxf.ws.security.trust">AbstractSTSClient.STSResponse</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#cancel(org.apache.cxf.ws.security.tokenstore.SecurityToken)">cancel</a></strong>(<a href="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</a>&nbsp;token)</code>
+<div class="block">Make an "Cancel" invocation and return the response as a STSResponse Object</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#configureViaEPR(org.apache.cxf.ws.addressing.EndpointReferenceType,%20boolean)">configureViaEPR</a></strong>(<a href="../../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing">EndpointReferenceType</a>&nbsp;ref,
+               boolean&nbsp;useEPRWSAAddrAsMEXLocation)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#createClient()">createClient</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected org.apache.wss4j.common.crypto.Crypto</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#createCrypto(boolean)">createCrypto</a></strong>(boolean&nbsp;decrypt)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/javax/security/auth/callback/CallbackHandler.html?is-external=true" title="class or interface in javax.security.auth.callback">CallbackHandler</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#createHandler()">createHandler</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#createSecurityToken(org.w3c.dom.Element,%20byte[])">createSecurityToken</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;el,
+                   byte[]&nbsp;requestorEntropy)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected byte[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#decryptKey(org.w3c.dom.Element)">decryptKey</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;child)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#findID(org.w3c.dom.Element,%20org.w3c.dom.Element,%20org.w3c.dom.Element)">findID</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;rar,
+      <a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;rur,
+      <a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;rst)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#findMEXLocation(org.w3c.dom.Element)">findMEXLocation</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;ref)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#findMEXLocation(org.apache.cxf.ws.addressing.EndpointReferenceType,%20boolean)">findMEXLocation</a></strong>(<a href="../../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing">EndpointReferenceType</a>&nbsp;ref,
+               boolean&nbsp;useEPRWSAAddrAsMEXLocation)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/apache/cxf/service/model/BindingOperationInfo.html" title="class in org.apache.cxf.service.model">BindingOperationInfo</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#findOperation(java.lang.String)">findOperation</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;suffix)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getActAsToken()">getActAsToken</a></strong>()</code>
+<div class="block">Get the "ActAs" element to be sent to the STS.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/apache/cxf/ws/policy/builder/primitive/PrimitiveAssertion.html" title="class in org.apache.cxf.ws.policy.builder.primitive">PrimitiveAssertion</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getAddressingAssertion()">getAddressingAssertion</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getBeanName()">getBeanName</a></strong>()</code>
+<div class="block">Get the configurable object's Bean name</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getCert(org.apache.wss4j.common.crypto.Crypto)">getCert</a></strong>(org.apache.wss4j.common.crypto.Crypto&nbsp;crypto)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/security/auth/callback/CallbackHandler.html?is-external=true" title="class or interface in javax.security.auth.callback">CallbackHandler</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getClaimsCallbackHandler()">getClaimsCallbackHandler</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getClient()">getClient</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getContext()">getContext</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getDelegationSecurityToken(java.lang.Object)">getDelegationSecurityToken</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;delegationObject)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getDocumentElement(javax.xml.transform.dom.DOMSource)">getDocumentElement</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/transform/dom/DOMSource.html?is-external=true" title="class or interface in javax.xml.transform.dom">DOMSource</a>&nbsp;ds)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getEndpointQName()">getEndpointQName</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/feature/Feature.html" title="interface in org.apache.cxf.feature">Feature</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getFeatures()">getFeatures</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getIDFromSTR(org.w3c.dom.Element)">getIDFromSTR</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;el)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getInFaultInterceptors()">getInFaultInterceptors</a></strong>()</code>
+<div class="block">Returns the list of interceptors attached to the incoming fault interceptor
+ chain of the object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getInInterceptors()">getInInterceptors</a></strong>()</code>
+<div class="block">Returns the list of interceptors attached to the incoming interceptor
+ chain of the object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getKeySize()">getKeySize</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getLocation()">getLocation</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getOnBehalfOfToken()">getOnBehalfOfToken</a></strong>()</code>
+<div class="block">Get the "OnBehalfOf" element to be sent to the STS.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getOutFaultInterceptors()">getOutFaultInterceptors</a></strong>()</code>
+<div class="block">Returns the list of interceptors attached to the outgoing fault interceptor
+ chain of the object.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getOutInterceptors()">getOutInterceptors</a></strong>()</code>
+<div class="block">Returns the list of interceptors attached to the outgoing interceptor
+ chain of the object.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getProperties()">getProperties</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getProperty(java.lang.String)">getProperty</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;s)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getRequestContext()">getRequestContext</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getServiceQName()">getServiceQName</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getTokenType()">getTokenType</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getUseKeyCertificate()">getUseKeyCertificate</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getWsdlLocation()">getWsdlLocation</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#getWspNamespace()">getWspNamespace</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isAllowRenewing()">isAllowRenewing</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isAllowRenewingAfterExpiry()">isAllowRenewingAfterExpiry</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isEnableAppliesTo()">isEnableAppliesTo</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isRequiresEntropy()">isRequiresEntropy</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isSecureConv()">isSecureConv</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isSpnego()">isSpnego</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.STSResponse.html" title="class in org.apache.cxf.ws.security.trust">AbstractSTSClient.STSResponse</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#issue(java.lang.String,%20java.lang.String,%20java.lang.String,%20java.lang.String)">issue</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;appliesTo,
+     <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;action,
+     <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;requestType,
+     <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;binaryExchange)</code>
+<div class="block">Make an "Issue" invocation and return the response as a STSResponse Object</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#isUseCertificateForConfirmationKeyInfo()">isUseCertificateForConfirmationKeyInfo</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.STSResponse.html" title="class in org.apache.cxf.ws.security.trust">AbstractSTSClient.STSResponse</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#renew(org.apache.cxf.ws.security.tokenstore.SecurityToken)">renew</a></strong>(<a href="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</a>&nbsp;tok)</code>
+<div class="block">Make an "Renew" invocation and return the response as a STSResponse Object</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setActAs(java.lang.Object)">setActAs</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;actAs)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setAddressingNamespace(java.lang.String)">setAddressingNamespace</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ad)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setAlgorithmSuite(org.apache.wss4j.policy.model.AlgorithmSuite)">setAlgorithmSuite</a></strong>(org.apache.wss4j.policy.model.AlgorithmSuite&nbsp;ag)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setAllowRenewing(boolean)">setAllowRenewing</a></strong>(boolean&nbsp;allowRenewing)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setAllowRenewingAfterExpiry(boolean)">setAllowRenewingAfterExpiry</a></strong>(boolean&nbsp;allowRenewingAfterExpiry)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setBeanName(java.lang.String)">setBeanName</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;s)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setClaims(java.lang.Object)">setClaims</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;rstClaims)</code>
+<div class="block">Set a Claims Object to be included in the request.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setClaimsCallbackHandler(javax.security.auth.callback.CallbackHandler)">setClaimsCallbackHandler</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/security/auth/callback/CallbackHandler.html?is-external=true" title="class or interface in javax.security.auth.callback">CallbackHandler</a>&nbsp;claimsCallbackHandler)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setContext(java.lang.String)">setContext</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;context)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setEnableAppliesTo(boolean)">setEnableAppliesTo</a></strong>(boolean&nbsp;enableAppliesTo)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setEnableLifetime(boolean)">setEnableLifetime</a></strong>(boolean&nbsp;enableLifetime)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setEndpointName(java.lang.String)">setEndpointName</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;qn)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setEndpointQName(javax.xml.namespace.QName)">setEndpointQName</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;qn)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setFeatures(java.util.List)">setFeatures</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../../../../org/apache/cxf/feature/Feature.html" title="interface in org.apache.cxf.feature">Feature</a>&gt;&nbsp;f)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setInFaultInterceptors(java.util.List)">setInFaultInterceptors</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;&nbsp;interceptors)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setInInterceptors(java.util.List)">setInInterceptors</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;&nbsp;interceptors)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setKeySize(int)">setKeySize</a></strong>(int&nbsp;i)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setKeyType(java.lang.String)">setKeyType</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;keyType)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setLocation(java.lang.String)">setLocation</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;location)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setMessage(org.apache.cxf.message.Message)">setMessage</a></strong>(<a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&nbsp;message)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setNamespace(java.lang.String)">setNamespace</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;namespace)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setOnBehalfOf(java.lang.Object)">setOnBehalfOf</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;onBehalfOf)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setOnBehalfOfElement(org.w3c.dom.Element)">setOnBehalfOfElement</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;onBehalfOfElement)</code>
+<div class="block"><strong>Deprecated.</strong>&nbsp;</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setOutFaultInterceptors(java.util.List)">setOutFaultInterceptors</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;&nbsp;interceptors)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setOutInterceptors(java.util.List)">setOutInterceptors</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;&nbsp;interceptors)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setPolicy(java.lang.Object)">setPolicy</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;newPolicy)</code>
+<div class="block">Sets the WS-P policy that is applied to communications between this client and the remote server
+ if no value is supplied for <a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setWsdlLocation(java.lang.String)"><code>setWsdlLocation(String)</code></a>.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setPolicyInternal(org.w3c.dom.Element)">setPolicyInternal</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;newPolicy)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setPolicyInternal(org.apache.neethi.Policy)">setPolicyInternal</a></strong>(org.apache.neethi.Policy&nbsp;newPolicy)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setPolicyInternal(java.lang.String)">setPolicyInternal</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;policyReference)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setProperties(java.util.Map)">setProperties</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;p)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setRequiresEntropy(boolean)">setRequiresEntropy</a></strong>(boolean&nbsp;requiresEntropy)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setSecureConv(boolean)">setSecureConv</a></strong>(boolean&nbsp;secureConv)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setSendKeyType(boolean)">setSendKeyType</a></strong>(boolean&nbsp;sendKeyType)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setSendRenewing(boolean)">setSendRenewing</a></strong>(boolean&nbsp;sendRenewing)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setServiceName(java.lang.String)">setServiceName</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;qn)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setServiceQName(javax.xml.namespace.QName)">setServiceQName</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;qn)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setSoap11()">setSoap11</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setSoap11(boolean)">setSoap11</a></strong>(boolean&nbsp;b)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setSoap12()">setSoap12</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setSpnego(boolean)">setSpnego</a></strong>(boolean&nbsp;spnego)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setTemplate(org.w3c.dom.Element)">setTemplate</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;rstTemplate)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setTokenType(java.lang.String)">setTokenType</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tokenType)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setTrust(org.apache.wss4j.policy.model.Trust10)">setTrust</a></strong>(org.apache.wss4j.policy.model.Trust10&nbsp;trust)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setTtl(int)">setTtl</a></strong>(int&nbsp;ttl)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setUseCertificateForConfirmationKeyInfo(boolean)">setUseCertificateForConfirmationKeyInfo</a></strong>(boolean&nbsp;useCertificate)</code>
+<div class="block">Indicate whether to use the signer's public X509 certificate for the subject confirmation key info 
+ when creating a RequestsSecurityToken message.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setUseKeyCertificate(java.security.cert.X509Certificate)">setUseKeyCertificate</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</a>&nbsp;useKeyCertificate)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setWsdlLocation(java.lang.String)">setWsdlLocation</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;wsdl)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setWspNamespace(java.lang.String)">setWspNamespace</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;wspNamespace)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#useSecondaryParameters()">useSecondaryParameters</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.STSResponse.html" title="class in org.apache.cxf.ws.security.trust">AbstractSTSClient.STSResponse</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#validate(org.apache.cxf.ws.security.tokenstore.SecurityToken,%20java.lang.String)">validate</a></strong>(<a href="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</a>&nbsp;tok,
+        <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tokentype)</code>
+<div class="block">Make an "Validate" invocation and return the response as a STSResponse Object</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#writeElementsForRSTPublicKey(org.apache.cxf.staxutils.W3CDOMStreamWriter,%20java.security.cert.X509Certificate)">writeElementsForRSTPublicKey</a></strong>(<a href="../../../../../../org/apache/cxf/staxutils/W3CDOMStreamWriter.html" title="class in org.apache.cxf.staxutils">W3CDOMStreamWriter</a>&nbsp;writer,
+                            <a href="http://docs.oracle.com/javase/7/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</a>&nbsp;cert)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected byte[]</code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#writeElementsForRSTSymmetricKey(org.apache.cxf.staxutils.W3CDOMStreamWriter,%20boolean)">writeElementsForRSTSymmetricKey</a></strong>(<a href="../../../../../../org/apache/cxf/staxutils/W3CDOMStreamWriter.html" title="class in org.apache.cxf.staxutils">W3CDOMStreamWriter</a>&nbsp;writer,
+                               boolean&nbsp;wroteKeySize)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#writeKeyType(org.apache.cxf.staxutils.W3CDOMStreamWriter,%20java.lang.String)">writeKeyType</a></strong>(<a href="../../../../../../org/apache/cxf/staxutils/W3CDOMStreamWriter.html" title="class in org.apache.cxf.staxutils">W3CDOMStreamWriter</a>&nbsp;writer,
+            <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;keyTypeToWrite)</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="bus">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>bus</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</a> bus</pre>
+</li>
+</ul>
+<a name="name">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>name</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> name</pre>
+</li>
+</ul>
+<a name="client">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>client</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</a> client</pre>
+</li>
+</ul>
+<a name="location">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>location</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> location</pre>
+</li>
+</ul>
+<a name="wsdlLocation">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>wsdlLocation</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> wsdlLocation</pre>
+</li>
+</ul>
+<a name="serviceName">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>serviceName</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a> serviceName</pre>
+</li>
+</ul>
+<a name="endpointName">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>endpointName</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a> endpointName</pre>
+</li>
+</ul>
+<a name="policy">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>policy</h4>
+<pre>protected&nbsp;org.apache.neethi.Policy policy</pre>
+</li>
+</ul>
+<a name="soapVersion">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>soapVersion</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> soapVersion</pre>
+</li>
+</ul>
+<a name="keySize">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>keySize</h4>
+<pre>protected&nbsp;int keySize</pre>
+</li>
+</ul>
+<a name="requiresEntropy">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>requiresEntropy</h4>
+<pre>protected&nbsp;boolean requiresEntropy</pre>
+</li>
+</ul>
+<a name="template">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>template</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a> template</pre>
+</li>
+</ul>
+<a name="claims">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>claims</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> claims</pre>
+</li>
+</ul>
+<a name="claimsCallbackHandler">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>claimsCallbackHandler</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/security/auth/callback/CallbackHandler.html?is-external=true" title="class or interface in javax.security.auth.callback">CallbackHandler</a> claimsCallbackHandler</pre>
+</li>
+</ul>
+<a name="algorithmSuite">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>algorithmSuite</h4>
+<pre>protected&nbsp;org.apache.wss4j.policy.model.AlgorithmSuite algorithmSuite</pre>
+</li>
+</ul>
+<a name="namespace">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>namespace</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> namespace</pre>
+</li>
+</ul>
+<a name="addressingNamespace">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addressingNamespace</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> addressingNamespace</pre>
+</li>
+</ul>
+<a name="wspNamespace">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>wspNamespace</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> wspNamespace</pre>
+</li>
+</ul>
+<a name="onBehalfOf">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onBehalfOf</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> onBehalfOf</pre>
+</li>
+</ul>
+<a name="enableAppliesTo">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>enableAppliesTo</h4>
+<pre>protected&nbsp;boolean enableAppliesTo</pre>
+</li>
+</ul>
+<a name="useCertificateForConfirmationKeyInfo">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>useCertificateForConfirmationKeyInfo</h4>
+<pre>protected&nbsp;boolean useCertificateForConfirmationKeyInfo</pre>
+</li>
+</ul>
+<a name="isSecureConv">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isSecureConv</h4>
+<pre>protected&nbsp;boolean isSecureConv</pre>
+</li>
+</ul>
+<a name="isSpnego">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isSpnego</h4>
+<pre>protected&nbsp;boolean isSpnego</pre>
+</li>
+</ul>
+<a name="enableLifetime">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>enableLifetime</h4>
+<pre>protected&nbsp;boolean enableLifetime</pre>
+</li>
+</ul>
+<a name="ttl">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ttl</h4>
+<pre>protected&nbsp;int ttl</pre>
+</li>
+</ul>
+<a name="sendRenewing">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sendRenewing</h4>
+<pre>protected&nbsp;boolean sendRenewing</pre>
+</li>
+</ul>
+<a name="allowRenewing">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>allowRenewing</h4>
+<pre>protected&nbsp;boolean allowRenewing</pre>
+</li>
+</ul>
+<a name="allowRenewingAfterExpiry">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>allowRenewingAfterExpiry</h4>
+<pre>protected&nbsp;boolean allowRenewingAfterExpiry</pre>
+</li>
+</ul>
+<a name="actAs">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>actAs</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a> actAs</pre>
+</li>
+</ul>
+<a name="tokenType">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>tokenType</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> tokenType</pre>
+</li>
+</ul>
+<a name="keyType">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>keyType</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> keyType</pre>
+</li>
+</ul>
+<a name="sendKeyType">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sendKeyType</h4>
+<pre>protected&nbsp;boolean sendKeyType</pre>
+</li>
+</ul>
+<a name="message">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>message</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a> message</pre>
+</li>
+</ul>
+<a name="context">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>context</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> context</pre>
+</li>
+</ul>
+<a name="useKeyCertificate">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>useKeyCertificate</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</a> useKeyCertificate</pre>
+</li>
+</ul>
+<a name="ctx">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ctx</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt; ctx</pre>
+</li>
+</ul>
+<a name="in">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>in</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt; in</pre>
+</li>
+</ul>
+<a name="out">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>out</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt; out</pre>
+</li>
+</ul>
+<a name="outFault">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>outFault</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt; outFault</pre>
+</li>
+</ul>
+<a name="inFault">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>inFault</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt; inFault</pre>
+</li>
+</ul>
+<a name="features">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>features</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/feature/Feature.html" title="interface in org.apache.cxf.feature">Feature</a>&gt; features</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="AbstractSTSClient(org.apache.cxf.Bus)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>AbstractSTSClient</h4>
+<pre>public&nbsp;AbstractSTSClient(<a href="../../../../../../org/apache/cxf/Bus.html" title="interface in org.apache.cxf">Bus</a>&nbsp;b)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="getBeanName()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBeanName</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getBeanName()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../org/apache/cxf/configuration/Configurable.html#getBeanName()">Configurable</a></code></strong></div>
+<div class="block">Get the configurable object's Bean name</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/cxf/configuration/Configurable.html#getBeanName()">getBeanName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/cxf/configuration/Configurable.html" title="interface in org.apache.cxf.configuration">Configurable</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd>the bean name</dd></dl>
+</li>
+</ul>
+<a name="setBeanName(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setBeanName</h4>
+<pre>public&nbsp;void&nbsp;setBeanName(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;s)</pre>
+</li>
+</ul>
+<a name="getLocation()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLocation</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getLocation()</pre>
+</li>
+</ul>
+<a name="setLocation(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLocation</h4>
+<pre>public&nbsp;void&nbsp;setLocation(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;location)</pre>
+</li>
+</ul>
+<a name="setMessage(org.apache.cxf.message.Message)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMessage</h4>
+<pre>public&nbsp;void&nbsp;setMessage(<a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&nbsp;message)</pre>
+</li>
+</ul>
+<a name="setTtl(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setTtl</h4>
+<pre>public&nbsp;void&nbsp;setTtl(int&nbsp;ttl)</pre>
+</li>
+</ul>
+<a name="setEnableLifetime(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEnableLifetime</h4>
+<pre>public&nbsp;void&nbsp;setEnableLifetime(boolean&nbsp;enableLifetime)</pre>
+</li>
+</ul>
+<a name="setSendRenewing(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSendRenewing</h4>
+<pre>public&nbsp;void&nbsp;setSendRenewing(boolean&nbsp;sendRenewing)</pre>
+</li>
+</ul>
+<a name="setPolicy(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPolicy</h4>
+<pre>public&nbsp;void&nbsp;setPolicy(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;newPolicy)</pre>
+<div class="block">Sets the WS-P policy that is applied to communications between this client and the remote server
+ if no value is supplied for <a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.html#setWsdlLocation(java.lang.String)"><code>setWsdlLocation(String)</code></a>.
+ <p/>
+ Accepts <code>Policy</code> or <a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom"><code>Element</code></a> as input.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>newPolicy</code> - the policy object</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/IllegalArgumentException.html?is-external=true" title="class or interface in java.lang">IllegalArgumentException</a></code> - if <code>newPolicy</code> is not one of the supported types.</dd></dl>
+</li>
+</ul>
+<a name="setSoap12()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSoap12</h4>
+<pre>public&nbsp;void&nbsp;setSoap12()</pre>
+</li>
+</ul>
+<a name="setSoap11()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSoap11</h4>
+<pre>public&nbsp;void&nbsp;setSoap11()</pre>
+</li>
+</ul>
+<a name="setSoap11(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSoap11</h4>
+<pre>public&nbsp;void&nbsp;setSoap11(boolean&nbsp;b)</pre>
+</li>
+</ul>
+<a name="setAddressingNamespace(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAddressingNamespace</h4>
+<pre>public&nbsp;void&nbsp;setAddressingNamespace(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;ad)</pre>
+</li>
+</ul>
+<a name="setTrust(org.apache.wss4j.policy.model.Trust10)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setTrust</h4>
+<pre>public&nbsp;void&nbsp;setTrust(org.apache.wss4j.policy.model.Trust10&nbsp;trust)</pre>
+</li>
+</ul>
+<a name="isRequiresEntropy()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isRequiresEntropy</h4>
+<pre>public&nbsp;boolean&nbsp;isRequiresEntropy()</pre>
+</li>
+</ul>
+<a name="setRequiresEntropy(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setRequiresEntropy</h4>
+<pre>public&nbsp;void&nbsp;setRequiresEntropy(boolean&nbsp;requiresEntropy)</pre>
+</li>
+</ul>
+<a name="isSecureConv()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isSecureConv</h4>
+<pre>public&nbsp;boolean&nbsp;isSecureConv()</pre>
+</li>
+</ul>
+<a name="setSecureConv(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSecureConv</h4>
+<pre>public&nbsp;void&nbsp;setSecureConv(boolean&nbsp;secureConv)</pre>
+</li>
+</ul>
+<a name="isSpnego()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isSpnego</h4>
+<pre>public&nbsp;boolean&nbsp;isSpnego()</pre>
+</li>
+</ul>
+<a name="setSpnego(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSpnego</h4>
+<pre>public&nbsp;void&nbsp;setSpnego(boolean&nbsp;spnego)</pre>
+</li>
+</ul>
+<a name="isAllowRenewing()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAllowRenewing</h4>
+<pre>public&nbsp;boolean&nbsp;isAllowRenewing()</pre>
+</li>
+</ul>
+<a name="setAllowRenewing(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAllowRenewing</h4>
+<pre>public&nbsp;void&nbsp;setAllowRenewing(boolean&nbsp;allowRenewing)</pre>
+</li>
+</ul>
+<a name="isAllowRenewingAfterExpiry()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isAllowRenewingAfterExpiry</h4>
+<pre>public&nbsp;boolean&nbsp;isAllowRenewingAfterExpiry()</pre>
+</li>
+</ul>
+<a name="setAllowRenewingAfterExpiry(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAllowRenewingAfterExpiry</h4>
+<pre>public&nbsp;void&nbsp;setAllowRenewingAfterExpiry(boolean&nbsp;allowRenewingAfterExpiry)</pre>
+</li>
+</ul>
+<a name="isEnableAppliesTo()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isEnableAppliesTo</h4>
+<pre>public&nbsp;boolean&nbsp;isEnableAppliesTo()</pre>
+</li>
+</ul>
+<a name="setEnableAppliesTo(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEnableAppliesTo</h4>
+<pre>public&nbsp;void&nbsp;setEnableAppliesTo(boolean&nbsp;enableAppliesTo)</pre>
+</li>
+</ul>
+<a name="getContext()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContext</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getContext()</pre>
+</li>
+</ul>
+<a name="setContext(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setContext</h4>
+<pre>public&nbsp;void&nbsp;setContext(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;context)</pre>
+</li>
+</ul>
+<a name="setAlgorithmSuite(org.apache.wss4j.policy.model.AlgorithmSuite)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAlgorithmSuite</h4>
+<pre>public&nbsp;void&nbsp;setAlgorithmSuite(org.apache.wss4j.policy.model.AlgorithmSuite&nbsp;ag)</pre>
+</li>
+</ul>
+<a name="getRequestContext()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRequestContext</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;getRequestContext()</pre>
+</li>
+</ul>
+<a name="setProperties(java.util.Map)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setProperties</h4>
+<pre>public&nbsp;void&nbsp;setProperties(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;p)</pre>
+</li>
+</ul>
+<a name="getProperties()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProperties</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</a>&lt;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>,<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&gt;&nbsp;getProperties()</pre>
+</li>
+</ul>
+<a name="setWsdlLocation(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setWsdlLocation</h4>
+<pre>public&nbsp;void&nbsp;setWsdlLocation(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;wsdl)</pre>
+</li>
+</ul>
+<a name="getWsdlLocation()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWsdlLocation</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getWsdlLocation()</pre>
+</li>
+</ul>
+<a name="setServiceName(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setServiceName</h4>
+<pre>public&nbsp;void&nbsp;setServiceName(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;qn)</pre>
+</li>
+</ul>
+<a name="setEndpointName(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEndpointName</h4>
+<pre>public&nbsp;void&nbsp;setEndpointName(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;qn)</pre>
+</li>
+</ul>
+<a name="setServiceQName(javax.xml.namespace.QName)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setServiceQName</h4>
+<pre>public&nbsp;void&nbsp;setServiceQName(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;qn)</pre>
+</li>
+</ul>
+<a name="getServiceQName()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getServiceQName</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;getServiceQName()</pre>
+</li>
+</ul>
+<a name="setEndpointQName(javax.xml.namespace.QName)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setEndpointQName</h4>
+<pre>public&nbsp;void&nbsp;setEndpointQName(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;qn)</pre>
+</li>
+</ul>
+<a name="getEndpointQName()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEndpointQName</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</a>&nbsp;getEndpointQName()</pre>
+</li>
+</ul>
+<a name="setActAs(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setActAs</h4>
+<pre>public&nbsp;void&nbsp;setActAs(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;actAs)</pre>
+</li>
+</ul>
+<a name="setKeySize(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setKeySize</h4>
+<pre>public&nbsp;void&nbsp;setKeySize(int&nbsp;i)</pre>
+</li>
+</ul>
+<a name="getKeySize()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getKeySize</h4>
+<pre>public&nbsp;int&nbsp;getKeySize()</pre>
+</li>
+</ul>
+<a name="setTokenType(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setTokenType</h4>
+<pre>public&nbsp;void&nbsp;setTokenType(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tokenType)</pre>
+</li>
+</ul>
+<a name="getTokenType()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTokenType</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getTokenType()</pre>
+</li>
+</ul>
+<a name="setSendKeyType(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSendKeyType</h4>
+<pre>public&nbsp;void&nbsp;setSendKeyType(boolean&nbsp;sendKeyType)</pre>
+</li>
+</ul>
+<a name="setKeyType(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setKeyType</h4>
+<pre>public&nbsp;void&nbsp;setKeyType(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;keyType)</pre>
+</li>
+</ul>
+<a name="setOnBehalfOfElement(org.w3c.dom.Element)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setOnBehalfOfElement</h4>
+<pre><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Deprecated.html?is-external=true" title="class or interface in java.lang">@Deprecated</a>
+public&nbsp;void&nbsp;setOnBehalfOfElement(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;onBehalfOfElement)</pre>
+<div class="block"><span class="strong">Deprecated.</span>&nbsp;</div>
+</li>
+</ul>
+<a name="setOnBehalfOf(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setOnBehalfOf</h4>
+<pre>public&nbsp;void&nbsp;setOnBehalfOf(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;onBehalfOf)</pre>
+</li>
+</ul>
+<a name="setUseCertificateForConfirmationKeyInfo(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setUseCertificateForConfirmationKeyInfo</h4>
+<pre>public&nbsp;void&nbsp;setUseCertificateForConfirmationKeyInfo(boolean&nbsp;useCertificate)</pre>
+<div class="block">Indicate whether to use the signer's public X509 certificate for the subject confirmation key info 
+ when creating a RequestsSecurityToken message. If the property is set to 'false', only the public key 
+ value will be provided in the request. If the property is set to 'true' the complete certificate will 
+ be sent in the request.
+ 
+ Note: this setting is only applicable for assertions that use an asymmetric proof key</div>
+</li>
+</ul>
+<a name="isUseCertificateForConfirmationKeyInfo()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isUseCertificateForConfirmationKeyInfo</h4>
+<pre>public&nbsp;boolean&nbsp;isUseCertificateForConfirmationKeyInfo()</pre>
+</li>
+</ul>
+<a name="setPolicyInternal(org.apache.neethi.Policy)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPolicyInternal</h4>
+<pre>protected&nbsp;void&nbsp;setPolicyInternal(org.apache.neethi.Policy&nbsp;newPolicy)</pre>
+</li>
+</ul>
+<a name="setPolicyInternal(org.w3c.dom.Element)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPolicyInternal</h4>
+<pre>protected&nbsp;void&nbsp;setPolicyInternal(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;newPolicy)</pre>
+</li>
+</ul>
+<a name="setPolicyInternal(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPolicyInternal</h4>
+<pre>protected&nbsp;void&nbsp;setPolicyInternal(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;policyReference)</pre>
+</li>
+</ul>
+<a name="getClient()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getClient</h4>
+<pre>public&nbsp;<a href="../../../../../../org/apache/cxf/endpoint/Client.html" title="interface in org.apache.cxf.endpoint">Client</a>&nbsp;getClient()
+                 throws <a href="../../../../../../org/apache/cxf/BusException.html" title="class in org.apache.cxf">BusException</a>,
+                        <a href="../../../../../../org/apache/cxf/endpoint/EndpointException.html" title="class in org.apache.cxf.endpoint">EndpointException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/cxf/BusException.html" title="class in org.apache.cxf">BusException</a></code></dd>
+<dd><code><a href="../../../../../../org/apache/cxf/endpoint/EndpointException.html" title="class in org.apache.cxf.endpoint">EndpointException</a></code></dd></dl>
+</li>
+</ul>
+<a name="configureViaEPR(org.apache.cxf.ws.addressing.EndpointReferenceType, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>configureViaEPR</h4>
+<pre>public&nbsp;void&nbsp;configureViaEPR(<a href="../../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing">EndpointReferenceType</a>&nbsp;ref,
+                   boolean&nbsp;useEPRWSAAddrAsMEXLocation)</pre>
+</li>
+</ul>
+<a name="findMEXLocation(org.apache.cxf.ws.addressing.EndpointReferenceType, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findMEXLocation</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;findMEXLocation(<a href="../../../../../../org/apache/cxf/ws/addressing/EndpointReferenceType.html" title="class in org.apache.cxf.ws.addressing">EndpointReferenceType</a>&nbsp;ref,
+                     boolean&nbsp;useEPRWSAAddrAsMEXLocation)</pre>
+</li>
+</ul>
+<a name="findMEXLocation(org.w3c.dom.Element)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findMEXLocation</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;findMEXLocation(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;ref)</pre>
+</li>
+</ul>
+<a name="createClient()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createClient</h4>
+<pre>protected&nbsp;void&nbsp;createClient()
+                     throws <a href="../../../../../../org/apache/cxf/BusException.html" title="class in org.apache.cxf">BusException</a>,
+                            <a href="../../../../../../org/apache/cxf/endpoint/EndpointException.html" title="class in org.apache.cxf.endpoint">EndpointException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/cxf/BusException.html" title="class in org.apache.cxf">BusException</a></code></dd>
+<dd><code><a href="../../../../../../org/apache/cxf/endpoint/EndpointException.html" title="class in org.apache.cxf.endpoint">EndpointException</a></code></dd></dl>
+</li>
+</ul>
+<a name="findOperation(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findOperation</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/apache/cxf/service/model/BindingOperationInfo.html" title="class in org.apache.cxf.service.model">BindingOperationInfo</a>&nbsp;findOperation(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;suffix)</pre>
+</li>
+</ul>
+<a name="issue(java.lang.String, java.lang.String, java.lang.String, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>issue</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.STSResponse.html" title="class in org.apache.cxf.ws.security.trust">AbstractSTSClient.STSResponse</a>&nbsp;issue(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;appliesTo,
+                                  <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;action,
+                                  <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;requestType,
+                                  <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;binaryExchange)
+                                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<div class="block">Make an "Issue" invocation and return the response as a STSResponse Object</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="getOnBehalfOfToken()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOnBehalfOfToken</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;getOnBehalfOfToken()
+                           throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<div class="block">Get the "OnBehalfOf" element to be sent to the STS.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="getActAsToken()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getActAsToken</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;getActAsToken()
+                      throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<div class="block">Get the "ActAs" element to be sent to the STS.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="getDelegationSecurityToken(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDelegationSecurityToken</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;getDelegationSecurityToken(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;delegationObject)
+                                      throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="writeElementsForRSTSymmetricKey(org.apache.cxf.staxutils.W3CDOMStreamWriter, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeElementsForRSTSymmetricKey</h4>
+<pre>protected&nbsp;byte[]&nbsp;writeElementsForRSTSymmetricKey(<a href="../../../../../../org/apache/cxf/staxutils/W3CDOMStreamWriter.html" title="class in org.apache.cxf.staxutils">W3CDOMStreamWriter</a>&nbsp;writer,
+                                     boolean&nbsp;wroteKeySize)
+                                          throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="writeElementsForRSTPublicKey(org.apache.cxf.staxutils.W3CDOMStreamWriter, java.security.cert.X509Certificate)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeElementsForRSTPublicKey</h4>
+<pre>protected&nbsp;void&nbsp;writeElementsForRSTPublicKey(<a href="../../../../../../org/apache/cxf/staxutils/W3CDOMStreamWriter.html" title="class in org.apache.cxf.staxutils">W3CDOMStreamWriter</a>&nbsp;writer,
+                                <a href="http://docs.oracle.com/javase/7/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</a>&nbsp;cert)
+                                     throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="addBinaryExchange(java.lang.String, org.apache.cxf.staxutils.W3CDOMStreamWriter)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addBinaryExchange</h4>
+<pre>protected&nbsp;void&nbsp;addBinaryExchange(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;binaryExchange,
+                     <a href="../../../../../../org/apache/cxf/staxutils/W3CDOMStreamWriter.html" title="class in org.apache.cxf.staxutils">W3CDOMStreamWriter</a>&nbsp;writer)
+                          throws <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code></dd></dl>
+</li>
+</ul>
+<a name="addKeySize(int, org.apache.cxf.staxutils.W3CDOMStreamWriter)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addKeySize</h4>
+<pre>protected&nbsp;void&nbsp;addKeySize(int&nbsp;keysize,
+              <a href="../../../../../../org/apache/cxf/staxutils/W3CDOMStreamWriter.html" title="class in org.apache.cxf.staxutils">W3CDOMStreamWriter</a>&nbsp;writer)
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code></dd></dl>
+</li>
+</ul>
+<a name="addRequestType(java.lang.String, org.apache.cxf.staxutils.W3CDOMStreamWriter)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addRequestType</h4>
+<pre>protected&nbsp;void&nbsp;addRequestType(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;requestType,
+                  <a href="../../../../../../org/apache/cxf/staxutils/W3CDOMStreamWriter.html" title="class in org.apache.cxf.staxutils">W3CDOMStreamWriter</a>&nbsp;writer)
+                       throws <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getDocumentElement(javax.xml.transform.dom.DOMSource)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDocumentElement</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;getDocumentElement(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/transform/dom/DOMSource.html?is-external=true" title="class or interface in javax.xml.transform.dom">DOMSource</a>&nbsp;ds)</pre>
+</li>
+</ul>
+<a name="renew(org.apache.cxf.ws.security.tokenstore.SecurityToken)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>renew</h4>
+<pre>public&nbsp;<a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.STSResponse.html" title="class in org.apache.cxf.ws.security.trust">AbstractSTSClient.STSResponse</a>&nbsp;renew(<a href="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</a>&nbsp;tok)
+                                    throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<div class="block">Make an "Renew" invocation and return the response as a STSResponse Object</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="getAddressingAssertion()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAddressingAssertion</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/apache/cxf/ws/policy/builder/primitive/PrimitiveAssertion.html" title="class in org.apache.cxf.ws.policy.builder.primitive">PrimitiveAssertion</a>&nbsp;getAddressingAssertion()</pre>
+</li>
+</ul>
+<a name="validate(org.apache.cxf.ws.security.tokenstore.SecurityToken, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>validate</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.STSResponse.html" title="class in org.apache.cxf.ws.security.trust">AbstractSTSClient.STSResponse</a>&nbsp;validate(<a href="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</a>&nbsp;tok,
+                                     <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;tokentype)
+                                          throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<div class="block">Make an "Validate" invocation and return the response as a STSResponse Object</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="cancel(org.apache.cxf.ws.security.tokenstore.SecurityToken)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cancel</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.STSResponse.html" title="class in org.apache.cxf.ws.security.trust">AbstractSTSClient.STSResponse</a>&nbsp;cancel(<a href="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</a>&nbsp;token)
+                                        throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<div class="block">Make an "Cancel" invocation and return the response as a STSResponse Object</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="useSecondaryParameters()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>useSecondaryParameters</h4>
+<pre>protected&nbsp;boolean&nbsp;useSecondaryParameters()</pre>
+</li>
+</ul>
+<a name="writeKeyType(org.apache.cxf.staxutils.W3CDOMStreamWriter, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>writeKeyType</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;writeKeyType(<a href="../../../../../../org/apache/cxf/staxutils/W3CDOMStreamWriter.html" title="class in org.apache.cxf.staxutils">W3CDOMStreamWriter</a>&nbsp;writer,
+                  <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;keyTypeToWrite)
+                       throws <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getCert(org.apache.wss4j.common.crypto.Crypto)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCert</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</a>&nbsp;getCert(org.apache.wss4j.common.crypto.Crypto&nbsp;crypto)
+                           throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="addLifetime(javax.xml.stream.XMLStreamWriter)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addLifetime</h4>
+<pre>protected&nbsp;void&nbsp;addLifetime(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamWriter.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamWriter</a>&nbsp;writer)
+                    throws <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code></dd></dl>
+</li>
+</ul>
+<a name="addAppliesTo(javax.xml.stream.XMLStreamWriter, java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addAppliesTo</h4>
+<pre>protected&nbsp;void&nbsp;addAppliesTo(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamWriter.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamWriter</a>&nbsp;writer,
+                <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;appliesTo)
+                     throws <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code></dd></dl>
+</li>
+</ul>
+<a name="addTokenType(javax.xml.stream.XMLStreamWriter)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addTokenType</h4>
+<pre>protected&nbsp;void&nbsp;addTokenType(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamWriter.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamWriter</a>&nbsp;writer)
+                     throws <a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamException.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamException</a></code></dd></dl>
+</li>
+</ul>
+<a name="addClaims(javax.xml.stream.XMLStreamWriter)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addClaims</h4>
+<pre>protected&nbsp;void&nbsp;addClaims(<a href="http://docs.oracle.com/javase/7/docs/api/javax/xml/stream/XMLStreamWriter.html?is-external=true" title="class or interface in javax.xml.stream">XMLStreamWriter</a>&nbsp;writer)
+                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Exception.html?is-external=true" title="class or interface in java.lang">Exception</a></code></dd></dl>
+</li>
+</ul>
+<a name="createSecurityToken(org.w3c.dom.Element, byte[])">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createSecurityToken</h4>
+<pre>protected&nbsp;<a href="../../../../../../org/apache/cxf/ws/security/tokenstore/SecurityToken.html" title="class in org.apache.cxf.ws.security.tokenstore">SecurityToken</a>&nbsp;createSecurityToken(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;el,
+                                byte[]&nbsp;requestorEntropy)
+                                     throws org.apache.wss4j.common.ext.WSSecurityException,
+                                            org.apache.xml.security.exceptions.Base64DecodingException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code>org.apache.wss4j.common.ext.WSSecurityException</code></dd>
+<dd><code>org.apache.xml.security.exceptions.Base64DecodingException</code></dd></dl>
+</li>
+</ul>
+<a name="decryptKey(org.w3c.dom.Element)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>decryptKey</h4>
+<pre>protected&nbsp;byte[]&nbsp;decryptKey(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;child)
+                     throws <a href="../../../../../../org/apache/cxf/ws/security/trust/TrustException.html" title="class in org.apache.cxf.ws.security.trust">TrustException</a>,
+                            org.apache.wss4j.common.ext.WSSecurityException,
+                            org.apache.xml.security.exceptions.Base64DecodingException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="../../../../../../org/apache/cxf/ws/security/trust/TrustException.html" title="class in org.apache.cxf.ws.security.trust">TrustException</a></code></dd>
+<dd><code>org.apache.wss4j.common.ext.WSSecurityException</code></dd>
+<dd><code>org.apache.xml.security.exceptions.Base64DecodingException</code></dd></dl>
+</li>
+</ul>
+<a name="createHandler()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createHandler</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/security/auth/callback/CallbackHandler.html?is-external=true" title="class or interface in javax.security.auth.callback">CallbackHandler</a>&nbsp;createHandler()</pre>
+</li>
+</ul>
+<a name="getProperty(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProperty</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;getProperty(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;s)</pre>
+</li>
+</ul>
+<a name="createCrypto(boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createCrypto</h4>
+<pre>protected&nbsp;org.apache.wss4j.common.crypto.Crypto&nbsp;createCrypto(boolean&nbsp;decrypt)
+                                                      throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a>,
+                                                             org.apache.wss4j.common.ext.WSSecurityException</pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd>
+<dd><code>org.apache.wss4j.common.ext.WSSecurityException</code></dd></dl>
+</li>
+</ul>
+<a name="findID(org.w3c.dom.Element, org.w3c.dom.Element, org.w3c.dom.Element)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findID</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;findID(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;rar,
+            <a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;rur,
+            <a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;rst)</pre>
+</li>
+</ul>
+<a name="getIDFromSTR(org.w3c.dom.Element)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIDFromSTR</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getIDFromSTR(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;el)</pre>
+</li>
+</ul>
+<a name="setTemplate(org.w3c.dom.Element)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setTemplate</h4>
+<pre>public&nbsp;void&nbsp;setTemplate(<a href="http://docs.oracle.com/javase/7/docs/api/org/w3c/dom/Element.html?is-external=true" title="class or interface in org.w3c.dom">Element</a>&nbsp;rstTemplate)</pre>
+</li>
+</ul>
+<a name="setClaims(java.lang.Object)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setClaims</h4>
+<pre>public&nbsp;void&nbsp;setClaims(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a>&nbsp;rstClaims)</pre>
+<div class="block">Set a Claims Object to be included in the request. This Object can be either a DOM Element, 
+ which will be copied "as is" into the request, or else a 
+ org.apache.cxf.rt.security.claims.ClaimCollection Object.</div>
+</li>
+</ul>
+<a name="getOutFaultInterceptors()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOutFaultInterceptors</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;&nbsp;getOutFaultInterceptors()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html#getOutFaultInterceptors()">InterceptorProvider</a></code></strong></div>
+<div class="block">Returns the list of interceptors attached to the outgoing fault interceptor
+ chain of the object.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html#getOutFaultInterceptors()">getOutFaultInterceptors</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html" title="interface in org.apache.cxf.interceptor">InterceptorProvider</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>List<Interceptor></code> outgoing fault interceptor chain</dd></dl>
+</li>
+</ul>
+<a name="getInFaultInterceptors()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInFaultInterceptors</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;&nbsp;getInFaultInterceptors()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html#getInFaultInterceptors()">InterceptorProvider</a></code></strong></div>
+<div class="block">Returns the list of interceptors attached to the incoming fault interceptor
+ chain of the object.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html#getInFaultInterceptors()">getInFaultInterceptors</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html" title="interface in org.apache.cxf.interceptor">InterceptorProvider</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>List<Interceptor></code> incoming fault interceptor chain</dd></dl>
+</li>
+</ul>
+<a name="getInInterceptors()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInInterceptors</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;&nbsp;getInInterceptors()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html#getInInterceptors()">InterceptorProvider</a></code></strong></div>
+<div class="block">Returns the list of interceptors attached to the incoming interceptor
+ chain of the object.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html#getInInterceptors()">getInInterceptors</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html" title="interface in org.apache.cxf.interceptor">InterceptorProvider</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>List<Interceptor></code> incoming interceptor chain</dd></dl>
+</li>
+</ul>
+<a name="getOutInterceptors()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOutInterceptors</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;&nbsp;getOutInterceptors()</pre>
+<div class="block"><strong>Description copied from interface:&nbsp;<code><a href="../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html#getOutInterceptors()">InterceptorProvider</a></code></strong></div>
+<div class="block">Returns the list of interceptors attached to the outgoing interceptor
+ chain of the object.</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html#getOutInterceptors()">getOutInterceptors</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../../org/apache/cxf/interceptor/InterceptorProvider.html" title="interface in org.apache.cxf.interceptor">InterceptorProvider</a></code></dd>
+<dt><span class="strong">Returns:</span></dt><dd><code>List<Interceptor></code> outgoing interceptor chain</dd></dl>
+</li>
+</ul>
+<a name="setInInterceptors(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setInInterceptors</h4>
+<pre>public&nbsp;void&nbsp;setInInterceptors(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;&nbsp;interceptors)</pre>
+</li>
+</ul>
+<a name="setInFaultInterceptors(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setInFaultInterceptors</h4>
+<pre>public&nbsp;void&nbsp;setInFaultInterceptors(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;&nbsp;interceptors)</pre>
+</li>
+</ul>
+<a name="setOutInterceptors(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setOutInterceptors</h4>
+<pre>public&nbsp;void&nbsp;setOutInterceptors(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;&nbsp;interceptors)</pre>
+</li>
+</ul>
+<a name="setOutFaultInterceptors(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setOutFaultInterceptors</h4>
+<pre>public&nbsp;void&nbsp;setOutFaultInterceptors(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/interceptor/Interceptor.html" title="interface in org.apache.cxf.interceptor">Interceptor</a>&lt;? extends <a href="../../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&gt;&gt;&nbsp;interceptors)</pre>
+</li>
+</ul>
+<a name="setFeatures(java.util.List)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setFeatures</h4>
+<pre>public&nbsp;void&nbsp;setFeatures(<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;? extends <a href="../../../../../../org/apache/cxf/feature/Feature.html" title="interface in org.apache.cxf.feature">Feature</a>&gt;&nbsp;f)</pre>
+</li>
+</ul>
+<a name="getFeatures()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFeatures</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</a>&lt;<a href="../../../../../../org/apache/cxf/feature/Feature.html" title="interface in org.apache.cxf.feature">Feature</a>&gt;&nbsp;getFeatures()</pre>
+</li>
+</ul>
+<a name="getClaimsCallbackHandler()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getClaimsCallbackHandler</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/javax/security/auth/callback/CallbackHandler.html?is-external=true" title="class or interface in javax.security.auth.callback">CallbackHandler</a>&nbsp;getClaimsCallbackHandler()</pre>
+</li>
+</ul>
+<a name="setClaimsCallbackHandler(javax.security.auth.callback.CallbackHandler)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setClaimsCallbackHandler</h4>
+<pre>public&nbsp;void&nbsp;setClaimsCallbackHandler(<a href="http://docs.oracle.com/javase/7/docs/api/javax/security/auth/callback/CallbackHandler.html?is-external=true" title="class or interface in javax.security.auth.callback">CallbackHandler</a>&nbsp;claimsCallbackHandler)</pre>
+</li>
+</ul>
+<a name="getWspNamespace()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWspNamespace</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getWspNamespace()</pre>
+</li>
+</ul>
+<a name="setWspNamespace(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setWspNamespace</h4>
+<pre>public&nbsp;void&nbsp;setWspNamespace(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;wspNamespace)</pre>
+</li>
+</ul>
+<a name="getUseKeyCertificate()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUseKeyCertificate</h4>
+<pre>public&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</a>&nbsp;getUseKeyCertificate()</pre>
+</li>
+</ul>
+<a name="setUseKeyCertificate(java.security.cert.X509Certificate)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setUseKeyCertificate</h4>
+<pre>public&nbsp;void&nbsp;setUseKeyCertificate(<a href="http://docs.oracle.com/javase/7/docs/api/java/security/cert/X509Certificate.html?is-external=true" title="class or interface in java.security.cert">X509Certificate</a>&nbsp;useKeyCertificate)</pre>
+</li>
+</ul>
+<a name="setNamespace(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setNamespace</h4>
+<pre>public&nbsp;void&nbsp;setNamespace(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;namespace)</pre>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/AbstractSTSClient.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li>Prev Class</li>
+<li><a href="../../../../../../org/apache/cxf/ws/security/trust/AbstractSTSClient.STSResponse.html" title="class in org.apache.cxf.ws.security.trust"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../../index.html?org/apache/cxf/ws/security/trust/AbstractSTSClient.html" target="_top">Frames</a></li>
+<li><a href="AbstractSTSClient.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li><a href="#nested_class_summary">Nested</a>&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Apache CXF</small></p>
+</body>
+</html>

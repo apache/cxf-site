@@ -1,0 +1,227 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - Distributed OSGi Reference">
+
+
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shCoreCXF.css">
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shThemeCXF.css">
+
+<script src='/resources/highlighter/scripts/shCore.js'></script>
+<script src='/resources/highlighter/scripts/shBrushXml.js'></script>
+<script src='/resources/highlighter/scripts/shBrushJava.js'></script>
+<script>
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+
+    <title>
+Apache CXF -- Distributed OSGi Reference
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="distributed-osgi.html">Distributed OSGi</a>&nbsp;&gt;&nbsp;<a href="distributed-osgi-reference.html">Distributed OSGi Reference</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><h1 id="DistributedOSGiReference-DistributedOSGiReferenceGuide">Distributed OSGi Reference Guide</h1><p><style type="text/css">/*<![CDATA[*/
+div.rbtoc1636141727749 {padding: 0px;}
+div.rbtoc1636141727749 ul {list-style: disc;margin-left: 0px;}
+div.rbtoc1636141727749 li {margin-left: 0px;padding-left: 0px;}
+
+/*]]>*/</style></p><div class="toc-macro rbtoc1636141727749">
+<ul class="toc-indentation"><li><a shape="rect" href="#DistributedOSGiReference-DistributedOSGiReferenceGuide">Distributed OSGi Reference Guide</a>
+<ul class="toc-indentation"><li><a shape="rect" href="#DistributedOSGiReference-ConfigurationProperties">Configuration Properties</a>
+<ul class="toc-indentation"><li><a shape="rect" href="#DistributedOSGiReference-ServiceProviderpropertiesForConfiguringSOAP-basedservicesandconsumers">Service Provider properties For Configuring SOAP-based services and consumers</a></li><li><a shape="rect" href="#DistributedOSGiReference-ServiceProviderpropertiesForConfiguringRESTfulJAXRS-basedendpointsandconsumers">Service Provider properties For Configuring RESTful JAXRS-based endpoints and consumers</a></li><li><a shape="rect" href="#DistributedOSGiReference-ServiceConsumerproperties">Service Consumer properties</a></li></ul>
+</li><li><a shape="rect" href="#DistributedOSGiReference-Customintents">Custom intents</a></li><li><a shape="rect" href="#DistributedOSGiReference-remote-services.xmlfiles">remote-services.xml files</a></li><li><a shape="rect" href="#DistributedOSGiReference-ContributingDistributionpropertiestoExistingServices(withoutchangingthem)">Contributing Distribution properties to Existing Services (without changing them)</a></li></ul>
+</li></ul>
+</div><h2 id="DistributedOSGiReference-ConfigurationProperties">Configuration Properties</h2><p><strong>New in DOSGI 1.2</strong>: Servlet Filters (javax.servlet.Filter) can be registered as OSGi services with the "org.apache.cxf.httpservice.filter" boolean<br clear="none"> property set to true and used to secure DOSGi server endpoints.Endpoints can enforce the registration of the filters by setting an "org.apache.cxf.httpservice.requirefilter" boolean property to true.</p><p>These properties are set on the Service Registration in the OSGi Service Registry.</p><h3 id="DistributedOSGiReference-ServiceProviderpropertiesForConfiguringSOAP-basedservicesandconsumers">Service Provider properties For Configuring SOAP-based services and consumers</h3><p><strong>Note:</strong> for backwards compatibility old values marked below are still supported.</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>Property Name</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Data Type</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Example</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Description</p></th></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>service.exported.interfaces<br clear="none"> (previously:<em>osgi.remote.interfaces</em>)</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><code>org.example.BarService,org.example.FooService</code> <code>*</code></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Denotes the interfaces to be exposed remotely. This is a comma-separated list of fully qualified Java interfaces that should be made available remotely. A special value of <code>*</code> can be provided meaning that <em>all</em> of the interfaces passed to the <code>BundleContext.registerService()</code> call are suitable for remoting.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>service.exported.configs (previously:<em>osgi.remote.configuration.type</em>)</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><code>org.apache.cxf.ws</code></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Specifies the mechanism for configuring the service exposure. Possible values:</p><ul><li><code>org.apache.cxf.ws</code> (previously: <code>pojo</code>) the OSGi Service is exposed as a Web Service.</li><li><code>wsdl</code> configuration driven from WSDL</li></ul></td></tr></tbody></table></div><h4 id="DistributedOSGiReference-org.apache.cxf.wsconfigurationtype"><code>org.apache.cxf.ws</code> configuration type</h4><p>When the <code>service.exported.configs=org.apache.cxf.ws</code> (or <code>osgi.remote.configuration.type=pojo</code>) property is specified, the following properties may also be specified.</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>Property Name</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Data Type</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Example</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Description</p></th></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.ws.address<br clear="none"> (previously:<em>osgi.remote.configuration.pojo.address</em>)</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String</p></td><td colspan="1" rowspan="1" class="confluenceTd"><a shape="rect" class="external-link" href="http://localhost:9090/greeter" rel="nofollow">http://localhost:9090/greeter</a></td><td colspan="1" rowspan="1" class="confluenceTd"><p>The address at which the service with be made available remotely. If this property is not specified, this defaults to <a shape="rect" class="external-link" href="http://localhost:9000/fully/qualified/ClassName" rel="nofollow">http://localhost:9000/fully/qualified/ClassName</a>.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.ws.httpservice.context<br clear="none"> (previously:<em>osgi.remote.configuration.pojo.httpservice.context</em>)</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><code>/auction</code></p></td><td colspan="1" rowspan="1" class="external-link confluenceTd"><p>When this property is specified, the OSGi HTTP Service is used to expose the service, rather than a dedicated Jetty HTTP Server. This property doesn't allow the specification of a port number, as this is provided by the HTTP Service. The Distributed OSGi distributions come with Pax-Web, for which configuration information can be found at <a shape="rect" class="external-link" href="http://wiki.ops4j.org/display/paxweb/Configuration" rel="nofollow">http://wiki.ops4j.org/display/paxweb/Configuration</a>, however other OSGi HTTP Service implementations are potentially configured differently.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.ws.frontend</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><code>jaxws</code></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>The CXF frontend which will be used to create endpoints. Defaults to 'simple' which is an Aegis-based simple frontend. Note that for JAXWS to work a javax.jws.* has to be imported into the interface and/or implementation and client bundles for annotations like @WebService and @WebMethod be recognized</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.ws.databinding</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><code>jaxb</code></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Supported values are 'aegis and 'jaxb', defaults to 'aegis'. Note that for JAXB to work JAXB packages like javax.xml.bind.annotation.* have to be imported</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd">org.apache.cxf.ws.databinding.bean</td><td colspan="1" rowspan="1" class="confluenceTd">DataBinding</td><td colspan="1" rowspan="1" class="confluenceTd">&#160;</td><td colspan="1" rowspan="1" class="confluenceTd">An actual DataBinding instance to use. If not specified, a default one is created according to the type specified in the org.apache.cxf.ws.databinding property.</td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.ws.wsdl.location</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><code>/wsdl/service.wsdl</code></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>WSDL location</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.ws.service.ns</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String</p></td><td colspan="1" rowspan="1" class="confluenceTd"><a shape="rect" class="external-link" href="http://services.org" rel="nofollow">http://services.org</a></td><td colspan="1" rowspan="1" class="confluenceTd"><p>WSDL service namespace</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.ws.service.name</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><code>SoapService</code></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>WSDL service name</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.ws.port.name</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><code>SoapServicePort</code></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>WSDL port name</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.ws.in.interceptors</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String, String[], List</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>&#160;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>List of CXF in interceptors</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.ws.out.interceptors</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String, String[], List</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>&#160;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>List of CXF out interceptors</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.ws.in.fault.interceptors</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String, String[], List</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>&#160;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>List of CXF in fault interceptors</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.ws.out.fault.interceptors</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String, String[], List</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>&#160;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>List of CXF out fault interceptors</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.ws.features</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String, String[], List, Object</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>&#160;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>List of CXF out features</p></td></tr></tbody></table></div><h3 id="DistributedOSGiReference-ServiceProviderpropertiesForConfiguringRESTfulJAXRS-basedendpointsandconsumers">Service Provider properties For Configuring RESTful JAXRS-based endpoints and consumers</h3><h4 id="DistributedOSGiReference-org.apache.cxf.rsconfigurationtype"><code>org.apache.cxf.rs</code> configuration type</h4><p>When the <code>service.exported.configs=org.apache.cxf.rs</code> property is specified, the following properties may also be specified.</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>Property Name</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Data Type</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Example</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Description</p></th></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.rs.address</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String</p></td><td colspan="1" rowspan="1" class="confluenceTd"><a shape="rect" class="external-link" href="http://localhost:9090/greeter" rel="nofollow">http://localhost:9090/greeter</a></td><td colspan="1" rowspan="1" class="external-link confluenceTd"><p>The address at which the service with be made available remotely. If this property is not specified, this defaults to <a shape="rect" class="external-link" href="http://localhost:9000/fully/qualified/ClassName" rel="nofollow">http://localhost:9000/fully/qualified/ClassName</a>.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.rs.httpservice.context</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><code>/auction</code></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>When this property is specified, the OSGi HTTP Service which is used to expose the service, rather than a dedicated Jetty HTTP Server. By default, absolute address may look like 'http://localhost:8080/auction'</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.rs.provider</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Boolean</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><code>true/false</code></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Can be used to identify a global JAXRS provider as CXF-compatible</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.rs.provider.expected</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Boolean</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><code>true/false</code></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Can be used to require global providers to set an 'org.apache.cxf.rs.provider' property with a value 'true'.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.rs.provider.globalquery</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Boolean</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><code>true/false</code></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>Can be used to disable queries for global providers, defaults to 'true'.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.rs.databinding</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><code>aegis</code></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>This property has a limited value for JAXRS services as JAXB is supported by default, the only supported value is 'aegis' and it is a shortcut for registering an Aegis provider, see below for more information on how to register custom providers for JAXRS services</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.rs.wadl.location</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><code>/wadl/service.wadl</code></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>WADL location</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.rs.provider</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String, String[], List</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>&#160;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>List of JAX-RS providers</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.rs.in.interceptors</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String, String[], List</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>&#160;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>List of CXF in interceptors</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.rs.out.interceptors</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String, String[], List</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>&#160;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>List of CXF out interceptors</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.rs.in.fault.interceptors</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String, String[], List</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>&#160;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>List of CXF in fault interceptors</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.rs.out.fault.interceptors</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String, String[], List</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>&#160;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>List of CXF out fault interceptors</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.rs.features</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String, String[], List</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>&#160;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>List of CXF out features</p></td></tr></tbody></table></div><p>Note that by default for JAXRS to work javax.ws.rs.* packages have to be imported into the interface and/or implementation and client bundles for annotations like @Path and @Context be recognized. You can avoid importing JAXRS annotations if you provide an out-of-band <a shape="rect" href="http://cxf.apache.org/docs/jax-rs.html#JAX-RS-RESTfulserviceswithoutannotations">model</a>. The way it is done in a greeter_rest demo is described <a shape="rect" href="http://cxf.apache.org/docs/jax-rs.html#JAX-RS-IntegrationwithDistributedOSGi">here</a>. The model files can be located in a OSGI-INF/cxf/jaxrs resource folder and can be named as model.xml or ServiceName-model.xml (ex : GreeterService-model.xml).<br clear="none"> If you use JAXB and you would like to avoid importing JAXB packages into your application bundles then you can try registering a custom JAXB provider which is configured as described <a shape="rect" href="http://cxf.apache.org/docs/jax-rs.html#JAX-RS-HandlingJAXBbeanswithoutXmlRootElementannotations">here</a>.</p><h4 id="DistributedOSGiReference-RegisteringcustomJAXRSproviders">Registering custom JAXRS providers</h4><p>Custom JAXRS providers including CXF-specific providers can be registered like regular OSGI services, for example :</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">Object provider = new CustomMessageBodyReaderWriter();
+bundleContext.registerService(
+  new String[]{"javax.ws.rs.ext.MessageBodyReader", "javax.ws.rs.ext.MessageBodyReader"}, provider);
+</pre>
+</div></div><p>Note that when registering a global provider, one may set an 'org.apache.cxf.rs.provider.expected' on a given service description thus requiring providers to confirm that they will reliably work with CXF JAX-RS by setting a 'org.apache.cxf.rs.provider' true property during the registration - this may be needed when multiple JAX-RS implementations are available and some custom providers depending on JAXRS implementation specific code.</p><p>Alternatively, one can register per-service specific providers during the application service registration :</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">CustomMessageBodyReaderWriter provider1 = new CustomMessageBodyReaderWriter();
+provider.setCustomProperty(true);
+CustomMessageBodyReaderWriter provider2 = new CustomMessageBodyReaderWriter();
+provider2.setCustomProperty(false);
+
+Dictionary properties = new Hashtable();
+properties.put("org.apache.cxf.rs.provider", provider);
+
+Dictionary properties2 = new Hashtable();
+properties.put("org.apache.cxf.rs.provider", provider2);
+
+
+bundleContext.registerService(
+  new String[]{"org.books.BookService"}, new BookServiceImpl(), properties);
+bundleContext.registerService(
+  new String[]{"org.books.BookService"}, new AdvancedBookServiceImpl(), properties2);
+</pre>
+</div></div><p>Finally, one can declare them using "org.apache.cxf.rs.provider" :</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">&lt;property name="org.apache.cxf.rs.provider" value="org.foo.bar.Provider1,org.foo.bar.Provider2"/&gt;
+</pre>
+</div></div><p>or, when using declarative services :</p><div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">&lt;property name="org.apache.cxf.rs.provider"&gt;
+  org.foo.bar.Provider1
+  org.foo.bar.Provider2
+&lt;/property&gt;
+</pre>
+</div></div><h3 id="DistributedOSGiReference-ServiceConsumerproperties">Service Consumer properties</h3><p>On client side proxies, typically the same properties are set as on set service provider side for both SOAP and RESTful clients. There are some additional properties too. Since the client-side proxy is registered by the DOSGi implementation, all these properties are read-only.</p><div class="table-wrap"><table class="confluenceTable"><tbody><tr><th colspan="1" rowspan="1" class="confluenceTh"><p>Property Name</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Data Type</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Example</p></th><th colspan="1" rowspan="1" class="confluenceTh"><p>Description</p></th></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>service.imported</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>boolean</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p><code>true</code></p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>This property is always set on a service proxy, indicating that the real service is remote.</p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p>org.apache.cxf.remote.dsw.client</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>String</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>&#160;</p></td><td colspan="1" rowspan="1" class="confluenceTd"><p>This property is set to the bundle name of the CXF-DOSGi implementation and can be used to find client side proxies created by the CXF DOSGi implementation.</p></td></tr></tbody></table></div><h2 id="DistributedOSGiReference-Customintents">Custom intents</h2><p>Intents allow to define custom configurations for DOSGi services. In the service exports the intents are listed by name in the property "service.exported.intents".</p><p>In version 1.4.0 and above custom intents are defined as OSGi services. The property name "org.apache.cxf.dosgi.IntentName" is used to mark the service as an intent. The intent name value then can be used to reference the intent in OSGi services. Custom intents can either be CXF Features or a CXF Binding Configuration.</p><h2 id="DistributedOSGiReference-remote-services.xmlfiles"><code>remote-services.xml</code> files</h2><p>The CXF DOSGi implementation provides a DSW (Distribution Software) implementation of Distributed OSGi. It is compatible with any Distributed OSGi Discovery implementation in order to discover remote services dynamically.</p><p>However, using a Discovery system is optional, it is also possible to statically configure remote services into the system. This is done by registering one or more bundles containing <code>remote-services.xml</code> files. By default the system looks for any files with the <code>.xml</code> extension in the <code>OSGI-INF/remote-service</code> directory of the bundle.</p><p>Here's an example:</p><div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre> 
+&lt;service-descriptions xmlns="http://www.osgi.org/xmlns/sd/v1.0.0"&gt;
+  &lt;service-description&gt;
+    &lt;provide interface="org.apache.cxf.dosgi.samples.greeter.GreeterService" /&gt;
+    &lt;property name="osgi.remote.interfaces"&gt;*&lt;/property&gt;
+    &lt;property name="osgi.remote.configuration.type"&gt;pojo&lt;/property&gt;
+    &lt;property name="osgi.remote.configuration.pojo.address"&gt;http://localhost:9090/greeter&lt;/property&gt;
+  &lt;/service-description&gt;
+
+  &lt;!-- further service-description tags are allowed here --&gt;
+&lt;/service-descriptions&gt;
+</pre>
+</div></div><p><strong>Alternative locations</strong></p><p>By default all <code>*.xml</code> files in the OSGI-INF/remote-service location are considered, this location can be changed by setting the <code>Remote-Service</code> header in the bundle manifest, e.g.</p><div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>Remote-Service: META-INF/osgi</pre>
+</div></div><h2 id="DistributedOSGiReference-ContributingDistributionpropertiestoExistingServices(withoutchangingthem)">Contributing Distribution properties to Existing Services (without changing them)</h2><p>@@@ TODO check that this still works with the 1.2 release.</p><p>CXF/DOSGi allows you to add the distribution properties to existing OSGi services. You can do this by installing a bundle that contains an XML file with the extra properties in the <code>OSGI-INF/remote-service</code> directory:</p><p>A sample <code>OSGI-INF/remote-service/sd.xml</code> file looks like this:</p><div class="preformatted panel" style="border-width: 1px;"><div class="preformattedContent panelContent">
+<pre>&lt;service-decorations xmlns="http://cxf.apache.org/xmlns/service-decoration/1.0.0"&gt;
+ &lt;service-decoration&gt;
+   &lt;match interface="org.apache.F(.*)"&gt;
+     &lt;match-property name="test.prop" value="xyz"/&gt;
+     &lt;add-property name="service.exported.interfaces" value="*"/&gt;
+   &lt;/match&gt;
+ &lt;/service-decoration&gt;
+&lt;/service-decorations&gt;
+</pre>
+</div></div><p>A service decorations file can have any number of <code>service-decoration</code> tags, each tag describing a <strong>match</strong> rule for services that are to be decorated.<br clear="none"> The match rules are defined as follows:</p><ul><li><code>match interface="org.apache.Foo"</code> matches any service that is registered under the <em>org.apache.Foo</em> class or interface. The <code>interface</code> attribute takes regular expressions, so specifying <code>org.apache(.)*</code> will match any service registered with an interface in a subpackage of <em>org.apache</em>.</li><li>The optional <code>match-property</code> tags allows you to declare extra conditions to be applied to services of which the interface matches. In the above example the rule will only match services that have the <code>test.prop</code> property set to the value <code>xyz</code>. Other services don't match. Any number of <code>match-property</code> tags can be specified.</li><li>The <code>add-property</code> specifies the extra property to be added to the remote service. The above example adds <code>service.exported.interfaces="*"</code> which will cause any matching service to be exposed remotely. The <code>add-property</code> has an optional <code>type</code> attribute which defaults to <code>java.lang.String</code>. You can specify other Java basic types such as <code>java.lang.Long</code> if needed. You can have any number of <code>add-property</code> tags.</li></ul><p>Note the bundle with the extra metadata will need to be started before the bundle with the service that is to be remoted is started (need to fix this).</p></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=114450">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=114450&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

@@ -1,0 +1,253 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - DOSGi Discovery">
+
+
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shCoreCXF.css">
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shThemeCXF.css">
+
+<script src='/resources/highlighter/scripts/shCore.js'></script>
+<script src='/resources/highlighter/scripts/shBrushBash.js'></script>
+<script src='/resources/highlighter/scripts/shBrushJava.js'></script>
+<script>
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+
+    <title>
+Apache CXF -- DOSGi Discovery
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="distributed-osgi.html">Distributed OSGi</a>&nbsp;&gt;&nbsp;<a href="dosgi-discovery.html">DOSGi Discovery</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><p>This page outlines setting up the Discovery implementation that is part of CXF Distributed OSGi.</p>
+
+<h2 id="DOSGiDiscovery-Introduction">Introduction</h2>
+<p>The Distributed OSGi document RFC 119 also describes a standard way publish and obtain remote service metadata. A primary use-cases for this is a Discovery system. How the discovery system works is not described, but the interaction with the Discovery system is. This interaction happens through OSGi services. </p>
+
+<p>The CXF/DOSGi project comes with a RFC 119 compliant Discovery implementation that uses Apache ZooKeeper as the underlying technology for the Discovery Server. This page outlines how to get started with CXF DOSGi/Discovery.</p>
+
+<h2 id="DOSGiDiscovery-InstallingandruntheZooKeeperserver">Installing and run the ZooKeeper server</h2>
+<p>Read the ZooKeeper Getting Started page: <a shape="rect" class="external-link" href="http://hadoop.apache.org/zookeeper/docs/current/zookeeperStarted.html">http://hadoop.apache.org/zookeeper/docs/current/zookeeperStarted.html</a></p>
+
+<p>The ZooKeeper distribution doesn't contain any Windows scripts yet. If you're on <a shape="rect" class="external-link" href="https://issues.apache.org/jira/browse/ZOOKEEPER-426">Windows you can download scripts to start the ZooKeeper server and the client program from here</a>.</p>
+
+<p>Once you have ZooKeeper installed (the current version used is 3.2.1), run its server:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">$ bin/zkServer
+... log messages ...
+2009-06-10 13:23:27,288 - INFO  [main:FileTxnSnapLog@198] - Snapshotting: 0
+</pre>
+</div></div>
+<p>The ZooKeeper server is now ready.</p>
+
+<p>You can check that all is well by running the client program:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">$ bin/zkCli -server localhost:2181
+--&gt; ls /
+Processing ls
+[zookeeper]</pre>
+</div></div>
+<p>So besides the zookeeper node, there is nothing in the ZooKeeper virtual filesystem yet.</p>
+
+<h2 id="DOSGiDiscovery-InstallingtheCXFDiscoveryBundles">Installing the CXF Discovery Bundles</h2>
+<p>The CXF/DOSGi Discovery implementation interacts with the ZooKeeper server. It's included in both the Single-bundle and Multi-bundle distributions of CXF-DOSGi.</p>
+
+<h3 id="DOSGiDiscovery-SingleBundleDistribution">Single Bundle Distribution</h3>
+<p>When you are using the CXF-DOSGi Single-Bundle distro, you automatically get the Discovery functionality with that.</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+-&gt; install http://repo1.maven.org/maven2/org/osgi/org.osgi.compendium/4.2.0/org.osgi.compendium-4.2.0.jar
+Bundle ID: 4
+-&gt; install http://www.apache.org/dist/cxf/dosgi/1.1/cxf-dosgi-ri-singlebundle-distribution-1.1.jar
+Bundle ID: 5
+-&gt; start 5
+... log messages ...
+-&gt; ps
+START LEVEL 1
+   ID   State         Level  Name
+[   0] [Active     ] [    0] System Bundle (1.8.0)
+[   1] [Active     ] [    1] Apache Felix Shell Service (1.2.0)
+[   2] [Active     ] [    1] Apache Felix Shell TUI (1.2.0)
+[   3] [Active     ] [    1] Apache Felix Bundle Repository (1.4.0)
+[   4] [Resolved   ] [    1] osgi.cmpn (4.2.0.200908310645)
+[   5] [Active     ] [    1] Distributed OSGi Distribution Software Single-Bundle Distribution (1.1)</pre>
+</div></div>
+<p>The Discovery bundle is now active, but it doesn't do anything yet since it's not yet configured. </p>
+
+<h3 id="DOSGiDiscovery-MultiBundleDistribution">Multi Bundle Distribution</h3>
+<p>TODO</p>
+
+<h2 id="DOSGiDiscovery-ConfiguringDiscovery">Configuring Discovery</h2>
+<p>The CXF/Discovery component is configured through the OSGi Configuration Admin Service. For convenience the CXF/Discovery distributions come with the Configuration Admin and FileInstall implementations from Felix, but you can also use another implementation of the Configuration Admin service.</p>
+
+<p>When you start up the bundle(s) in the CXF/Discovery distribution, the FileInstall bundle will create a 'load' directory in the current working directory. This is where you can put Config Admin configurations. </p>
+
+<p>To configure the ZooKeeper client in CXF/Discovery the following configuration variables apply. They need to be set on Configuration Admin PID <code>org.apache.cxf.dosgi.discovery.zookeeper</code>.</p>
+<div class="table-wrap"><table class="confluenceTable"><tbody><tr><th colspan="1" rowspan="1" class="confluenceTh"><p> Configuration property </p></th><th colspan="1" rowspan="1" class="confluenceTh"><p> Default </p></th><th colspan="1" rowspan="1" class="confluenceTh"><p> Description </p></th></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p> zookeeper.host </p></td><td colspan="1" rowspan="1" class="confluenceTd"><p> <em>no default</em> </p></td><td colspan="1" rowspan="1" class="confluenceTd"><p> The host where the ZooKeeper server is running. </p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p> zookeeper.port </p></td><td colspan="1" rowspan="1" class="confluenceTd"><p> 2181 </p></td><td colspan="1" rowspan="1" class="confluenceTd"><p> The port of the ZooKeeper server. </p></td></tr><tr><td colspan="1" rowspan="1" class="confluenceTd"><p> zookeeper.timeout </p></td><td colspan="1" rowspan="1" class="confluenceTd"><p> 3000 </p></td><td colspan="1" rowspan="1" class="confluenceTd"><p> Sets the ZooKeeper tick time. </p></td></tr></tbody></table></div>
+
+<p>For more information on the ZooKeeper configuration variables see the ZooKeeper administration guide: <a shape="rect" class="external-link" href="http://hadoop.apache.org/zookeeper/docs/current/zookeeperAdmin.html">http://hadoop.apache.org/zookeeper/docs/current/zookeeperAdmin.html</a></p>
+
+<p>An easy way to set the configuration, it by placing a file called <code>org.apache.cxf.dosgi.discovery.zookeeper.cfg</code> in the load directory created by the FileInstall bundle with the following content:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+zookeeper.host = 127.0.0.1
+</pre>
+</div></div>
+<p>As soon as you set the configuration, the Discovery will connect to the ZooKeeper server. You will see a few log messages on the ZooKeeper server console to reflect this.</p>
+
+<p>You can always check the configuration of the ZooKeeper client by looking at the ManagedService registered by the CXF/Discovery bundle:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">-&gt; services 5
+
+Distributed OSGi Zookeeper-Based Discovery Single-Bundle Distribution (6) provides:
+-----------------------------------------------------------------------------------
+... other services ...
+----
+objectClass = org.osgi.service.cm.ManagedService
+felix.fileinstall.filename = org.apache.cxf.dosgi.discovery.zookeeper.cfg
+service.id = 38
+service.pid = org.apache.cxf.dosgi.discovery.zookeeper
+zookeeper.host = localhost
+zookeeper.port = 2181
+zookeeper.timeout = 3000
+</pre>
+</div></div>
+
+<p>For further information and a walkthrough of the Discovery demo see the <a shape="rect" href="dosgi-discovery-demo-page.html">DOSGi Discovery Demo page</a>.</p></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=119937">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=119937&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

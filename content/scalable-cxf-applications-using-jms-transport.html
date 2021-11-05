@@ -1,0 +1,341 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - Scalable CXF applications using JMS transport">
+
+
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shCoreCXF.css">
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shThemeCXF.css">
+
+<script src='/resources/highlighter/scripts/shCore.js'></script>
+<script src='/resources/highlighter/scripts/shBrushBash.js'></script>
+<script src='/resources/highlighter/scripts/shBrushJava.js'></script>
+<script>
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+
+    <title>
+Apache CXF -- Scalable CXF applications using JMS transport
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="resources-and-articles.html">Resources and Articles</a>&nbsp;&gt;&nbsp;<a href="scalable-cxf-applications-using-jms-transport.html">Scalable CXF applications using JMS transport</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><p>Java Message Service (JMS) is wide spread and popular messaging API. As JMS is standardized, the same application code can successfully work with different JMS implementations: WS MQ, Active MQ, Tibco, Joram, BEA WebLogic, OpenJMS.<br clear="none">
+CXF provides a transport that enables endpoints to use JMS queues and topics. </p>
+
+<h2 id="ScalableCXFapplicationsusingJMStransport-DefaultCXFconsumerandproducerusingJMS">Default CXF consumer and producer using JMS</h2>
+<p>Implementing CXF client and service using JMS transport is trivial.<br clear="none">
+Basically, it is enough to configure two things in WSDL: <br clear="none">
+a) specify jms transport URI in binding element;<br clear="none">
+b) define jms address in port element.</p>
+
+<p>WSDL binding and port should look like:</p>
+
+<div class="code panel pdl" style="border-style: solid;border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+&lt;wsdl:definitions
+    xmlns:jms="http://cxf.apache.org/transports/jms" 
+...
+  &lt;wsdl:binding name="Greeter_SOAPBinding" type="tns:Greeter"&gt;
+        &lt;soap:binding style="document" transport="http://cxf.apache.org/transports/jms"/&gt;
+...
+ &lt;/wsdl:binding&gt;
+
+  &lt;wsdl:service name="JMSGreeterService"&gt;
+        &lt;wsdl:port binding="tns:JMSGreeterPortBinding" name="GreeterPort"&gt;
+            &lt;jms:address
+                destinationStyle="queue"
+                jndiConnectionFactoryName="ConnectionFactory" 
+jndiDestinationName="dynamicQueues/test.cxf.jmstransport.queue"&gt;
+               &lt;jms:JMSNamingProperty name="java.naming.factory.initial" value="org.apache.activemq.jndi.ActiveMQInitialContextFactory"/&gt;
+                  &lt;jms:JMSNamingProperty name="java.naming.provider.url" value="tcp://localhost:61616"/&gt;
+           &lt;/jms:address&gt;
+        &lt;/wsdl:port&gt;
+   &lt;/wsdl:service&gt;
+</pre>
+</div></div>
+<p>CXF clients and servers implemented in java or using Spring configuration magically work for this WSDL (under the hood CXF selects correct JMS Conduit and Destination based on address URL). <br clear="none">
+Details are described in <a shape="rect" href="http://cxf.apache.org/docs/jms-transport.html">http://cxf.apache.org/docs/jms-transport.html</a>.<br clear="none">
+CXF also delivers jms_queue and jms_pubsub examples illustrating using JMS transport with default settings for ActiveMQ.</p>
+
+<h2 id="ScalableCXFapplicationsusingJMStransport-Scalabilityproblems">Scalability problems</h2>
+<p>Unfortunately there are two main scalability drawbacks when using default JMS configuration:</p>
+<ol><li>It doesn't provide sessions pooling and consumers/producers cache <img class="emoticon emoticon-yellow-star" src="https://cwiki.apache.org/confluence/s/9h3cbz/8703/189cb2l/_/images/icons/emoticons/star_yellow.svg" data-emoticon-name="yellow-star" alt="(star)">.</li><li>Default JMS message consumer is single threaded. It means that only one thread will get messages from the queue or topic and pass them to further processing.</li></ol>
+
+
+<p>Both aspects are critical for enterprise applications and their implementation is not an easy task. Is there any solution? Yes: Spring JMS functionality and CXF Features. Let discuss them in detail.</p>
+
+
+<p><img class="emoticon emoticon-yellow-star" src="https://cwiki.apache.org/confluence/s/9h3cbz/8703/189cb2l/_/images/icons/emoticons/star_yellow.svg" data-emoticon-name="yellow-star" alt="(star)"> - Some JMS vendors provide integrated session pooling and consumers/producers cache in ConnectionFactory. In this case using Spring CachingConnectionFactory is not necessary. Please refer vendor documentation to clear it.</p>
+
+<h2 id="ScalableCXFapplicationsusingJMStransport-SpringJMSfunctionality">Spring JMS functionality</h2>
+<p>Spring provides a number of useful classes that helps to implement scalable JMS application. Important for us are: org.springframework.jms.connection.CachingConnectionFactory<br clear="none">
+org.springframework.jms.listener.DefaultMessageListenerContainer</p>
+
+<h3 id="ScalableCXFapplicationsusingJMStransport-CachingConnectionFactory">CachingConnectionFactory </h3>
+<p>CachingConnectionFactory provides session pooling, consumers and producers cache. Bellow is a sample configuration of CachingConnectionFactory:</p>
+
+<div class="code panel pdl" style="border-style: solid;border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+&lt;bean id="cachingConnectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory"&gt;
+	&lt;property name="targetConnectionFactory"&gt;
+		&lt;bean class="org.apache.activemq.ActiveMQConnectionFactory"&gt;
+			&lt;property name="brokerURL" value="tcp://localhost:61616" /&gt;
+		&lt;/bean&gt;
+	&lt;/property&gt;
+	&lt;property name="sessionCacheSize" value="20"/&gt;
+	&lt;property name="cacheProducers" value="true"/&gt;
+	&lt;property name="cacheConsumers" value="true"/&gt;
+&lt;/bean&gt;
+</pre>
+</div></div>
+
+<p>As you can see it is possible to set the size of the session pool and switch on producers and consumers caching.</p>
+
+<h3 id="ScalableCXFapplicationsusingJMStransport-DefaultMessageListenerContainer">DefaultMessageListenerContainer</h3>
+<p>DefaultMessageListenerContainer enables getting messages from the destination in parallel, using multiple threads.<br clear="none">
+Configuration of DefaultMessageListenerContainer looks like:</p>
+<div class="code panel pdl" style="border-style: solid;border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+&lt;bean id="queueContainerListener"
+	class="org.springframework.jms.listener.DefaultMessageListenerContainer"&gt;
+		&lt;property name="connectionFactory" ref="connectionFactory" /&gt;
+		&lt;property name="destinationName" value="Q_WM_OUT" /&gt;
+		&lt;property name="messageListener" ref="simpleListener" /&gt;
+		&lt;property name="cacheLevel" value="3" /&gt;
+		&lt;property name="concurrentConsumers" value="10" /&gt;
+		&lt;property name="maxConcurrentConsumers" value="50" /&gt;
+&lt;/bean&gt;	
+</pre>
+</div></div>
+<p>It is possible to define here:</p>
+<ol><li>Initial and maximal number of concurrent consumers. This tells the Spring to always start up a initial number of consumers (concurrentConsumers). When a new message has been received, if the maxConcurrentConsumers has not been reached, then a new consumer is created to process the message.</li><li>Cache level (3- cache connections, sessions and consumers; 2 &#8211; cache connections and sessions, 1 &#8211; cache connections only)</li><li>Specify message listener class (implementing MessageListener interface) and connection factory.</li></ol>
+
+
+<p>It is important to be aware of following things related to consumers caching:</p>
+<ul><li>it doesn't make sense to increase the number of concurrent consumers for a JMS topic. This just leads to concurrent consumption of the same message.</li><li>the concurrentConsumers property and the maxConcurrentConsumers property can be modified at runtime, for example, via JMX.<br clear="none">
+For the details you can refer following <a shape="rect" class="external-link" href="http://bsnyderblog.blogspot.com/2010/05/tuning-jms-message-consumption-in.html" rel="nofollow">Bruce Snider's blog</a>.</li></ul>
+
+
+<p>You can see that Spring provides solution for both mentioned scalability aspects. But how we can use it in CXF? </p>
+
+<h2 id="ScalableCXFapplicationsusingJMStransport-CXFFeatures">CXF Features</h2>
+<p>As the CXF JMS implementation is based the Spring JMS classes the user can benefit from described Spring JMS functionality.<br clear="none">
+CXF allows to configure details of the JMS transport using the JmsConfigFeature. A Feature is something that is able to customize a Server, Client, or Bus, typically adding capabilities. In our case we will add a feature in jaxws:endpoint and jaxws:client to tune the JMS transport.</p>
+
+<h3 id="ScalableCXFapplicationsusingJMStransport-Serverconfiguration">Server configuration</h3>
+
+<div class="code panel pdl" style="border-style: solid;border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+&lt;bean id="cachingConnectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory"&gt;
+	&lt;property name="targetConnectionFactory"&gt;
+		&lt;bean class="org.apache.activemq.ActiveMQConnectionFactory"&gt;
+			&lt;property name="brokerURL" value="tcp://localhost:61616" /&gt;
+		&lt;/bean&gt;
+	&lt;/property&gt;
+	&lt;property name="sessionCacheSize" value="20"/&gt;
+	&lt;property name="cacheConsumers" value="true"/&gt;
+&lt;/bean&gt;
+
+&lt;bean id="jmsConfig" class="org.apache.cxf.transport.jms.JMSConfiguration"
+		p:connectionFactory-ref="cachingConnectionFactory"
+		p:cacheLevel="3" 
+		p:concurrentConsumers="16"
+		p:maxConcurrentConsumers="16"
+		p:targetDestination="Q_HSC"
+		p:wrapInSingleConnectionFactory="false"
+	/&gt;
+
+&lt;jaxws:endpoint id=" JMSGreeterService" address="jms://"
+		implementor="#JMSGreeterServiceImpl"&gt;
+		&lt;jaxws:features&gt;
+			&lt;bean class="org.apache.cxf.transport.jms.JMSConfigFeature"&gt;
+				&lt;p:jmsConfig-ref="jmsConfig"&gt;
+			&lt;/bean&gt;
+		&lt;/jaxws:features&gt;
+&lt;/jaxws:endpoint&gt;
+</pre>
+</div></div>
+
+<p>You can see that the endpoint configuration contains the JMSConfigFeature that has a JMSConfiguration property.<br clear="none">
+JMSConfiguration supports all settings that we have seen in Spring DefaultMessageListenerContainer: cached connection factory with session pool size, number of concurrent consumers, cache level. All settings of JMSConfiguration are described in details in <a shape="rect" href="http://cxf.apache.org/docs/using-the-jmsconfigfeature.html">http://cxf.apache.org/docs/using-the-jmsconfigfeature.html</a>.<br clear="none">
+Using this configuration the server application can be tuned to achieve optimal performance in our target environment.</p>
+
+<h3 id="ScalableCXFapplicationsusingJMStransport-Clientconfiguration">Client configuration</h3>
+
+<div class="code panel pdl" style="border-style: solid;border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+&lt;bean id="cachingConnectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory"&gt;
+	&lt;property name="targetConnectionFactory"&gt;
+		&lt;bean class="org.apache.activemq.ActiveMQConnectionFactory"&gt;
+			&lt;property name="brokerURL" value="tcp://localhost:61616" /&gt;
+		&lt;/bean&gt;
+	&lt;/property&gt;
+	&lt;property name="sessionCacheSize" value="20"/&gt;
+	&lt;property name="cacheProducers" value="true"/&gt;
+&lt;/bean&gt;
+
+&lt;bean id="jmsConfig" class="org.apache.cxf.transport.jms.JMSConfiguration"
+p:connectionFactory-ref="connectionFactory" p:targetDestination="Q_HSC"
+		p:wrapInSingleConnectionFactory="false" /&gt; 
+
+&lt;jaxws:client id="JMSGreeterService" address="jms://"
+	serviceClass="com.sopera.services.tpoc.eventgenerator.EventGenerator&#8221;&gt;
+		&lt;jaxws:features&gt;
+			&lt;bean class="org.apache.cxf.transport.jms.JMSConfigFeature"&gt;
+				&lt;property name="jmsConfig" ref="jmsConfig"/&gt;
+			&lt;/bean&gt;
+		&lt;/jaxws:features&gt;
+	&lt;/jaxws:client&gt;
+</pre>
+</div></div>
+
+<p>Client configuration looks very similar to the server one except two things:</p>
+<ol><li>CachingConnectionFactory  activates producers caching instead consumers caching;</li><li>JMSConfiguration hasn&#8217;t concurrent consumers settings: client concurrency is under application control and can be implemented using standard Java concurrency API.</li></ol>
+
+
+
+<h2 id="ScalableCXFapplicationsusingJMStransport-Conclusion">Conclusion</h2>
+<p>It is possible to achieve scalability of a CXF client and service using Spring JMS functionality and the CXF JMS Configuration Feature. <br clear="none">
+It is not necessary to write any line of code, just configure and leverage already existing stuff.<br clear="none">
+Using this feature can have essential invluence on the performance for some environments: in one Prove Of Concept I have improved CXF service throughput on 360% (from 500 to 1800 msg/sec) just using session pool and multithread JMS consumer!<br clear="none">
+Reference performance numbers for SOAP over JMS are represented in <a shape="rect" class="external-link" href="http://www.liquid-reality.de/pages/viewpage.action?pageId=5865562" rel="nofollow">Christian Schneider's article</a>, so you can easily compare it with own results and make appropriate tunning if necessary.</p>
+
+<h2 id="ScalableCXFapplicationsusingJMStransport-References">References</h2>
+<ol><li>CXF JMS Transport: <a shape="rect" href="http://cxf.apache.org/docs/jms-transport.html">http://cxf.apache.org/docs/jms-transport.html</a></li><li>CXF Features: <a shape="rect" href="http://cxf.apache.org/docs/features.html">http://cxf.apache.org/docs/features.html</a></li><li>Spring JMS functionality: <a shape="rect" class="external-link" href="http://static.springsource.org/spring/docs/3.0.x/spring-framework-reference/html/jms.html" rel="nofollow">http://static.springsource.org/spring/docs/3.0.x/spring-framework-reference/html/jms.html</a></li><li>Spring JMS performance tunning: <a shape="rect" class="external-link" href="http://bsnyderblog.blogspot.com/2010/05/tuning-jms-message-consumption-in.html" rel="nofollow">http://bsnyderblog.blogspot.com/2010/05/tuning-jms-message-consumption-in.html</a></li><li>CXF performance: <a shape="rect" class="external-link" href="http://www.liquid-reality.de/pages/viewpage.action?pageId=5865562" rel="nofollow">http://www.liquid-reality.de/pages/viewpage.action?pageId=5865562</a></li></ol></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=27828015">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=27828015&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

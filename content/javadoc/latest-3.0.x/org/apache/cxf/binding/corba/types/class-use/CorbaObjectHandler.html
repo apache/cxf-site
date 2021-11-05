@@ -1,0 +1,1173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Class org.apache.cxf.binding.corba.types.CorbaObjectHandler (Apache CXF JavaDoc 3.0.0 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="Uses of Class org.apache.cxf.binding.corba.types.CorbaObjectHandler (Apache CXF JavaDoc 3.0.0 API)";
+    }
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+<HR>
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/binding/corba/types//class-useCorbaObjectHandler.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="CorbaObjectHandler.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Class<br>org.apache.cxf.binding.corba.types.CorbaObjectHandler</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.binding.corba"><B>org.apache.cxf.binding.corba</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.binding.corba.runtime"><B>org.apache.cxf.binding.corba.runtime</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.binding.corba.types"><B>org.apache.cxf.binding.corba.types</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.binding.corba"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A> in <A HREF="../../../../../../../org/apache/cxf/binding/corba/package-summary.html">org.apache.cxf.binding.corba</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/binding/corba/package-summary.html">org.apache.cxf.binding.corba</A> that return <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaStreamable.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaStreamable.html#getObject()">getObject</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/binding/corba/package-summary.html">org.apache.cxf.binding.corba</A> with parameters of type <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaStreamable.html" title="interface in org.apache.cxf.binding.corba">CorbaStreamable</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaMessage.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaMessage.html#createStreamableObject(org.apache.cxf.binding.corba.types.CorbaObjectHandler, javax.xml.namespace.QName)">createStreamableObject</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj,
+                       <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;elName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaStreamable.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaStreamable.html#setObject(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">setObject</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaMessage.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaMessage.html#setStreamableArgumentValue(org.apache.cxf.binding.corba.types.CorbaObjectHandler, int)">setStreamableArgumentValue</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;data,
+                           int&nbsp;idx)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaMessage.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaMessage.html#setStreamableArgumentValues(org.apache.cxf.binding.corba.types.CorbaObjectHandler[])">setStreamableArgumentValues</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>[]&nbsp;data)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaMessage.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaMessage.html#setStreamableExceptionValue(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">setStreamableExceptionValue</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;exData)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaMessage.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaMessage.html#setStreamableReturnValue(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">setStreamableReturnValue</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;data)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.binding.corba.runtime"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A> in <A HREF="../../../../../../../org/apache/cxf/binding/corba/runtime/package-summary.html">org.apache.cxf.binding.corba.runtime</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/binding/corba/runtime/package-summary.html">org.apache.cxf.binding.corba.runtime</A> that return <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>[]</CODE></FONT></TD>
+<TD><CODE><B>CorbaStreamWriter.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/runtime/CorbaStreamWriter.html#getCorbaObjects()">getCorbaObjects</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaStreamableImpl.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/runtime/CorbaStreamableImpl.html#getObject()">getObject</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/binding/corba/runtime/package-summary.html">org.apache.cxf.binding.corba.runtime</A> with parameters of type <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaObjectReader.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/runtime/CorbaObjectReader.html#read(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">read</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaObjectReader.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/runtime/CorbaObjectReader.html#readEnum(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">readEnum</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaObjectReader.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/runtime/CorbaObjectReader.html#readSequence(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">readSequence</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaStreamableImpl.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/runtime/CorbaStreamableImpl.html#setObject(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">setObject</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaObjectWriter.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/runtime/CorbaObjectWriter.html#write(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">write</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaObjectWriter.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/runtime/CorbaObjectWriter.html#writeSequence(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">writeSequence</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaObjectWriter.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/runtime/CorbaObjectWriter.html#writeUnion(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">writeUnion</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../../org/apache/cxf/binding/corba/runtime/package-summary.html">org.apache.cxf.binding.corba.runtime</A> with parameters of type <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/runtime/CorbaStreamableImpl.html#CorbaStreamableImpl(org.apache.cxf.binding.corba.types.CorbaObjectHandler, javax.xml.namespace.QName)">CorbaStreamableImpl</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj,
+                    <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;elName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.binding.corba.types"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A> in <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/package-summary.html">org.apache.cxf.binding.corba.types</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Subclasses of <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A> in <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/package-summary.html">org.apache.cxf.binding.corba.types</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaAnyHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaAnyHandler</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaArrayHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaArrayHandler</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaEnumHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaEnumHandler</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaExceptionHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaExceptionHandler</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaFixedHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaFixedHandler</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectReferenceHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectReferenceHandler</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaOctetSequenceHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaOctetSequenceHandler</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaPrimitiveHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaPrimitiveHandler</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaSequenceHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaSequenceHandler</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaStructHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaStructHandler</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaUnionHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaUnionHandler</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Fields in <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/package-summary.html">org.apache.cxf.binding.corba.types</A> declared as <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractCorbaTypeListener.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/AbstractCorbaTypeListener.html#handler">handler</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Fields in <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/package-summary.html">org.apache.cxf.binding.corba.types</A> with type parameters of type <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</A>&lt;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractNoStartEndEventProducer.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/AbstractNoStartEndEventProducer.html#iterator">iterator</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</A>&lt;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractStartEndEventProducer.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/AbstractStartEndEventProducer.html#iterator">iterator</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</A>&lt;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>ParameterEventProducer.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/ParameterEventProducer.html#iterator">iterator</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/package-summary.html">org.apache.cxf.binding.corba.types</A> that return <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaHandlerUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaHandlerUtils.html#createTypeHandler(org.omg.CORBA.ORB, javax.xml.namespace.QName, javax.xml.namespace.QName, org.apache.cxf.binding.corba.CorbaTypeMap)">createTypeHandler</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orb,
+                  <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;name,
+                  <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;idlType,
+                  <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;typeMap)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaAnyHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaAnyHandler.html#getAnyContainedType()">getAnyContainedType</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaUnionHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaUnionHandler.html#getBranchByName(java.lang.String)">getBranchByName</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;caseName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>AbstractCorbaTypeListener.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/AbstractCorbaTypeListener.html#getCorbaObject()">getCorbaObject</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaTypeListener.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaTypeListener.html#getCorbaObject()">getCorbaObject</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaUnionHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaUnionHandler.html#getDiscriminator()">getDiscriminator</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaArrayHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaArrayHandler.html#getElement(int)">getElement</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaSequenceHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaSequenceHandler.html#getElement(int)">getElement</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaExceptionHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaExceptionHandler.html#getMember(int)">getMember</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaStructHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaStructHandler.html#getMember(int)">getMember</A></B>(int&nbsp;index)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaExceptionHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaExceptionHandler.html#getMemberByName(java.lang.String)">getMemberByName</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaStructHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaStructHandler.html#getMemberByName(java.lang.String)">getMemberByName</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaSequenceHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaSequenceHandler.html#getTemplateElement()">getTemplateElement</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaUnionHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaUnionHandler.html#getValue()">getValue</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaHandlerUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaHandlerUtils.html#initializeObjectHandler(org.omg.CORBA.ORB, javax.xml.namespace.QName, javax.xml.namespace.QName, org.apache.cxf.binding.corba.CorbaTypeMap, org.apache.cxf.service.model.ServiceInfo)">initializeObjectHandler</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orb,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;name,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;idlType,
+                        <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;typeMap,
+                        <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;serviceInfo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaHandlerUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaHandlerUtils.html#initializeObjectHandler(org.omg.CORBA.ORB, javax.xml.namespace.QName, javax.xml.namespace.QName, org.apache.cxf.binding.corba.CorbaTypeMap, org.apache.cxf.service.model.ServiceInfo, java.util.Map)">initializeObjectHandler</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orb,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;name,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;idlType,
+                        <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;typeMap,
+                        <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;serviceInfo,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>,<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;&nbsp;seenTypes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>HandlerIterator.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/HandlerIterator.html#next()">next</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/package-summary.html">org.apache.cxf.binding.corba.types</A> that return types with arguments of type <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>CorbaUnionHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaUnionHandler.html#getCases()">getCases</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>CorbaArrayHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaArrayHandler.html#getElements()">getElements</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>CorbaSequenceHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaSequenceHandler.html#getElements()">getElements</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>CorbaExceptionHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaExceptionHandler.html#getMembers()">getMembers</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>CorbaStructHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaStructHandler.html#getMembers()">getMembers</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Iterator.html?is-external=true" title="class or interface in java.util">Iterator</A>&lt;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>AbstractStartEndEventProducer.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/AbstractStartEndEventProducer.html#getNestedTypes()">getNestedTypes</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/package-summary.html">org.apache.cxf.binding.corba.types</A> with parameters of type <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaUnionHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaUnionHandler.html#addCase(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">addCase</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;unionCase)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaArrayHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaArrayHandler.html#addElement(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">addElement</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;el)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaSequenceHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaSequenceHandler.html#addElement(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">addElement</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;el)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaExceptionHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaExceptionHandler.html#addMember(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">addMember</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;member)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaStructHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaStructHandler.html#addMember(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">addMember</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;member)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaTypeEventProducer.html" title="interface in org.apache.cxf.binding.corba.types">CorbaTypeEventProducer</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaHandlerUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaHandlerUtils.html#getTypeEventProducer(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.service.model.ServiceInfo, org.omg.CORBA.ORB)">getTypeEventProducer</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;handler,
+                     <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;serviceInfo,
+                     <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orb)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaHandlerUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaHandlerUtils.html#initializeArrayHandler(org.omg.CORBA.ORB, org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.binding.corba.CorbaTypeMap, org.apache.cxf.service.model.ServiceInfo, java.util.Map)">initializeArrayHandler</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orb,
+                       <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj,
+                       <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;typeMap,
+                       <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;serviceInfo,
+                       <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>,<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;&nbsp;seenTypes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaHandlerUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaHandlerUtils.html#initializeExceptionHandler(org.omg.CORBA.ORB, org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.binding.corba.CorbaTypeMap, org.apache.cxf.service.model.ServiceInfo, java.util.Map)">initializeExceptionHandler</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orb,
+                           <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj,
+                           <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;typeMap,
+                           <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;serviceInfo,
+                           <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>,<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;&nbsp;seenTypes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaHandlerUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaHandlerUtils.html#initializeSequenceHandler(org.omg.CORBA.ORB, org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.binding.corba.CorbaTypeMap, org.apache.cxf.service.model.ServiceInfo, java.util.Map)">initializeSequenceHandler</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orb,
+                          <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj,
+                          <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;typeMap,
+                          <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;serviceInfo,
+                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>,<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;&nbsp;seenTypes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaHandlerUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaHandlerUtils.html#initializeStructHandler(org.omg.CORBA.ORB, org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.binding.corba.CorbaTypeMap, org.apache.cxf.service.model.ServiceInfo, java.util.Map)">initializeStructHandler</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orb,
+                        <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj,
+                        <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;typeMap,
+                        <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;serviceInfo,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>,<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;&nbsp;seenTypes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaHandlerUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaHandlerUtils.html#initializeUnionHandler(org.omg.CORBA.ORB, org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.binding.corba.CorbaTypeMap, org.apache.cxf.service.model.ServiceInfo, java.util.Map)">initializeUnionHandler</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orb,
+                       <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj,
+                       <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;typeMap,
+                       <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;serviceInfo,
+                       <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>,<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;&nbsp;seenTypes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B>CorbaHandlerUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaHandlerUtils.html#isPrimitiveIDLTypeSequence(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">isPrimitiveIDLTypeSequence</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaAnyHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaAnyHandler.html#setAnyContainedType(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">setAnyContainedType</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaUnionHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaUnionHandler.html#setDiscriminator(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">setDiscriminator</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;disc)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaSequenceHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaSequenceHandler.html#setTemplateElement(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">setTemplateElement</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;el)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaUnionHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaUnionHandler.html#setValue(java.lang.String, org.apache.cxf.binding.corba.types.CorbaObjectHandler)">setValue</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</A>&nbsp;caseName,
+         <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;val)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Method parameters in <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/package-summary.html">org.apache.cxf.binding.corba.types</A> with type arguments of type <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaHandlerUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaHandlerUtils.html#initializeArrayHandler(org.omg.CORBA.ORB, org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.binding.corba.CorbaTypeMap, org.apache.cxf.service.model.ServiceInfo, java.util.Map)">initializeArrayHandler</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orb,
+                       <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj,
+                       <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;typeMap,
+                       <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;serviceInfo,
+                       <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>,<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;&nbsp;seenTypes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaHandlerUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaHandlerUtils.html#initializeExceptionHandler(org.omg.CORBA.ORB, org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.binding.corba.CorbaTypeMap, org.apache.cxf.service.model.ServiceInfo, java.util.Map)">initializeExceptionHandler</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orb,
+                           <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj,
+                           <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;typeMap,
+                           <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;serviceInfo,
+                           <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>,<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;&nbsp;seenTypes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></CODE></FONT></TD>
+<TD><CODE><B>CorbaHandlerUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaHandlerUtils.html#initializeObjectHandler(org.omg.CORBA.ORB, javax.xml.namespace.QName, javax.xml.namespace.QName, org.apache.cxf.binding.corba.CorbaTypeMap, org.apache.cxf.service.model.ServiceInfo, java.util.Map)">initializeObjectHandler</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orb,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;name,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>&nbsp;idlType,
+                        <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;typeMap,
+                        <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;serviceInfo,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>,<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;&nbsp;seenTypes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaHandlerUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaHandlerUtils.html#initializeSequenceHandler(org.omg.CORBA.ORB, org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.binding.corba.CorbaTypeMap, org.apache.cxf.service.model.ServiceInfo, java.util.Map)">initializeSequenceHandler</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orb,
+                          <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj,
+                          <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;typeMap,
+                          <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;serviceInfo,
+                          <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>,<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;&nbsp;seenTypes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaHandlerUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaHandlerUtils.html#initializeStructHandler(org.omg.CORBA.ORB, org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.binding.corba.CorbaTypeMap, org.apache.cxf.service.model.ServiceInfo, java.util.Map)">initializeStructHandler</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orb,
+                        <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj,
+                        <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;typeMap,
+                        <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;serviceInfo,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>,<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;&nbsp;seenTypes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaHandlerUtils.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaHandlerUtils.html#initializeUnionHandler(org.omg.CORBA.ORB, org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.binding.corba.CorbaTypeMap, org.apache.cxf.service.model.ServiceInfo, java.util.Map)">initializeUnionHandler</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orb,
+                       <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;obj,
+                       <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;typeMap,
+                       <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;serviceInfo,
+                       <A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/Map.html?is-external=true" title="class or interface in java.util">Map</A>&lt;<A HREF="http://docs.oracle.com/javase/6/docs/api/javax/xml/namespace/QName.html?is-external=true" title="class or interface in javax.xml.namespace">QName</A>,<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;&nbsp;seenTypes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CorbaSequenceHandler.</B><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaSequenceHandler.html#setElements(java.util.List)">setElements</A></B>(<A HREF="http://docs.oracle.com/javase/6/docs/api/java/util/List.html?is-external=true" title="class or interface in java.util">List</A>&lt;<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&gt;&nbsp;els)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Constructors in <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/package-summary.html">org.apache.cxf.binding.corba.types</A> with parameters of type <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/AbstractCorbaTypeListener.html#AbstractCorbaTypeListener(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">AbstractCorbaTypeListener</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;h)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaAnonStructEventProducer.html#CorbaAnonStructEventProducer(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.service.model.ServiceInfo, org.omg.CORBA.ORB)">CorbaAnonStructEventProducer</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;h,
+                             <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;service,
+                             <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orbRef)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaAnyEventProducer.html#CorbaAnyEventProducer(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.service.model.ServiceInfo, org.omg.CORBA.ORB)">CorbaAnyEventProducer</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;h,
+                      <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;info,
+                      <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orbRef)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaAnyListener.html#CorbaAnyListener(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.binding.corba.CorbaTypeMap, org.omg.CORBA.ORB, org.apache.cxf.service.model.ServiceInfo)">CorbaAnyListener</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;h,
+                 <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;map,
+                 <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orbRef,
+                 <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;info)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaArrayEventProducer.html#CorbaArrayEventProducer(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.service.model.ServiceInfo, org.omg.CORBA.ORB)">CorbaArrayEventProducer</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;h,
+                        <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;service,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orbRef)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaArrayListener.html#CorbaArrayListener(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.binding.corba.CorbaTypeMap, org.omg.CORBA.ORB, org.apache.cxf.service.model.ServiceInfo)">CorbaArrayListener</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;handler,
+                   <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;map,
+                   <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orbRef,
+                   <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;sInfo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaEnumEventProducer.html#CorbaEnumEventProducer(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">CorbaEnumEventProducer</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;h)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaEnumListener.html#CorbaEnumListener(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">CorbaEnumListener</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaExceptionEventProducer.html#CorbaExceptionEventProducer(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.service.model.ServiceInfo, org.omg.CORBA.ORB)">CorbaExceptionEventProducer</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;h,
+                            <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;service,
+                            <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orbRef)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaExceptionListener.html#CorbaExceptionListener(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.binding.corba.CorbaTypeMap, org.omg.CORBA.ORB, org.apache.cxf.service.model.ServiceInfo)">CorbaExceptionListener</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;handler,
+                       <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;map,
+                       <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orbRef,
+                       <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;serviceInfo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaFixedEventProducer.html#CorbaFixedEventProducer(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">CorbaFixedEventProducer</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;h)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaFixedListener.html#CorbaFixedListener(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">CorbaFixedListener</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectReferenceEventProducer.html#CorbaObjectReferenceEventProducer(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.service.model.ServiceInfo, org.omg.CORBA.ORB)">CorbaObjectReferenceEventProducer</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;h,
+                                  <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;service,
+                                  <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orbRef)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectReferenceListener.html#CorbaObjectReferenceListener(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.omg.CORBA.ORB)">CorbaObjectReferenceListener</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;handler,
+                             <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orbRef)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaOctetSequenceEventProducer.html#CorbaOctetSequenceEventProducer(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">CorbaOctetSequenceEventProducer</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;h)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaOctetSequenceListener.html#CorbaOctetSequenceListener(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">CorbaOctetSequenceListener</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaPrimitiveArrayEventProducer.html#CorbaPrimitiveArrayEventProducer(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.service.model.ServiceInfo, org.omg.CORBA.ORB)">CorbaPrimitiveArrayEventProducer</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;h,
+                                 <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;service,
+                                 <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orbRef)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaPrimitiveListener.html#CorbaPrimitiveListener(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">CorbaPrimitiveListener</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;handler)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaPrimitiveSequenceEventProducer.html#CorbaPrimitiveSequenceEventProducer(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.service.model.ServiceInfo, org.omg.CORBA.ORB)">CorbaPrimitiveSequenceEventProducer</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;h,
+                                    <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;service,
+                                    <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orbRef)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaPrimitiveTypeEventProducer.html#CorbaPrimitiveTypeEventProducer(org.apache.cxf.binding.corba.types.CorbaObjectHandler)">CorbaPrimitiveTypeEventProducer</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;h)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaSequenceEventProducer.html#CorbaSequenceEventProducer(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.service.model.ServiceInfo, org.omg.CORBA.ORB)">CorbaSequenceEventProducer</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;h,
+                           <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;service,
+                           <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orbRef)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaSequenceListener.html#CorbaSequenceListener(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.binding.corba.CorbaTypeMap, org.omg.CORBA.ORB, org.apache.cxf.service.model.ServiceInfo)">CorbaSequenceListener</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;handler,
+                      <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;map,
+                      <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orbRef,
+                      <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;sInfo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaStructEventProducer.html#CorbaStructEventProducer(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.service.model.ServiceInfo, org.omg.CORBA.ORB)">CorbaStructEventProducer</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;h,
+                         <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;service,
+                         <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orbRef)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaStructListener.html#CorbaStructListener(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.binding.corba.CorbaTypeMap, org.omg.CORBA.ORB, org.apache.cxf.service.model.ServiceInfo)">CorbaStructListener</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;handler,
+                    <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;map,
+                    <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;orbRef,
+                    <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;sInfo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaUnionEventProducer.html#CorbaUnionEventProducer(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.service.model.ServiceInfo, org.omg.CORBA.ORB)">CorbaUnionEventProducer</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;h,
+                        <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;sInfo,
+                        <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;o)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaUnionListener.html#CorbaUnionListener(org.apache.cxf.binding.corba.types.CorbaObjectHandler, org.apache.cxf.binding.corba.CorbaTypeMap, org.omg.CORBA.ORB, org.apache.cxf.service.model.ServiceInfo)">CorbaUnionListener</A></B>(<A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types">CorbaObjectHandler</A>&nbsp;handler,
+                   <A HREF="../../../../../../../org/apache/cxf/binding/corba/CorbaTypeMap.html" title="class in org.apache.cxf.binding.corba">CorbaTypeMap</A>&nbsp;tm,
+                   <A HREF="http://docs.oracle.com/javase/6/docs/api/org/omg/CORBA/ORB.html?is-external=true" title="class or interface in org.omg.CORBA">ORB</A>&nbsp;oorb,
+                   <A HREF="../../../../../../../org/apache/cxf/service/model/ServiceInfo.html" title="class in org.apache.cxf.service.model">ServiceInfo</A>&nbsp;sInfo)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../org/apache/cxf/binding/corba/types/CorbaObjectHandler.html" title="class in org.apache.cxf.binding.corba.types"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../../index.html?org/apache/cxf/binding/corba/types//class-useCorbaObjectHandler.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="CorbaObjectHandler.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

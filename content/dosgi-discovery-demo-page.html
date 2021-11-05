@@ -1,0 +1,357 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--
+
+    Licensed to the Apache Software Foundation (ASF) under one or more
+    contributor license agreements.  See the NOTICE file distributed with
+    this work for additional information regarding copyright ownership.
+    The ASF licenses this file to You under the Apache License, Version 2.0
+    (the "License"); you may not use this file except in compliance with
+    the License.  You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
+<html>
+  <head>
+
+<link type="text/css" rel="stylesheet" href="/resources/site.css">
+<script src='/resources/space.js'></script>
+
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+<meta name="keywords" content="business integration, EAI, SOA, Service Oriented Architecture, web services, SOAP, JBI, JMS, WSDL, XML, EDI, Electronic Data Interchange, standards support, integration standards, application integration, middleware, software, solutions, services, CXF, open source">
+<meta name="description" content="Apache CXF, Services Framework - DOSGi Discovery Demo page">
+
+
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shCoreCXF.css">
+<link type="text/css" rel="stylesheet" href="/resources/highlighter/styles/shThemeCXF.css">
+
+<script src='/resources/highlighter/scripts/shCore.js'></script>
+<script src='/resources/highlighter/scripts/shBrushBash.js'></script>
+<script src='/resources/highlighter/scripts/shBrushJava.js'></script>
+<script>
+  SyntaxHighlighter.defaults['toolbar'] = false;
+  SyntaxHighlighter.all();
+</script>
+
+
+    <title>
+Apache CXF -- DOSGi Discovery Demo page
+    </title>
+  </head>
+<body onload="init()">
+
+
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td id="cell-0-0" colspan="2">&nbsp;</td>
+    <td id="cell-0-1">&nbsp;</td>
+    <td id="cell-0-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-1-0">&nbsp;</td>
+    <td id="cell-1-1">&nbsp;</td>
+    <td id="cell-1-2">
+      <!-- Banner -->
+<div class="banner" id="banner"><div><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td align="left" colspan="1" nowrap>
+<a shape="rect" href="http://cxf.apache.org/" title="Apache CXF"><span style="font-weight: bold; font-size: 170%; color: white">Apache CXF</span></a>
+</td><td align="right" colspan="1" nowrap>
+<a shape="rect" href="http://www.apache.org/" title="The Apache Software Foundation"><img width="214px" height="88" border="0" alt="ASF Logo" src="https://apache.org/img/asf_logo.png"></a>
+</td></tr></table></div></div>
+      <!-- Banner -->
+      <div id="top-menu">
+        <table border="0" cellpadding="1" cellspacing="0" width="100%">
+          <tr>
+            <td>
+              <div align="left">
+                <!-- Breadcrumbs -->
+<a href="index.html">Index</a>&nbsp;&gt;&nbsp;<a href="distributed-osgi.html">Distributed OSGi</a>&nbsp;&gt;&nbsp;<a href="dosgi-demos.html">DOSGi Demos</a>&nbsp;&gt;&nbsp;<a href="dosgi-discovery-demo-page.html">DOSGi Discovery Demo page</a>
+                <!-- Breadcrumbs -->
+              </div>
+            </td>
+            <td>
+              <div align="right">
+                <!-- Quicklinks -->
+<div id="quicklinks"><p><a shape="rect" href="download.html">Download</a> | <a shape="rect" href="http://cxf.apache.org/docs/index.html">Documentation</a></p></div>
+                <!-- Quicklinks -->
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td id="cell-1-3">&nbsp;</td>
+    <td id="cell-1-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-2-0" colspan="2">&nbsp;</td>
+    <td id="cell-2-1">
+      <table>
+        <tr valign="top">
+          <td height="100%">
+            <div id="wrapper-menu-page-right">
+              <div id="wrapper-menu-page-top">
+                <div id="wrapper-menu-page-bottom">
+                  <div id="menu-page">
+                    <!-- NavigationBar -->
+<div id="navigation"><h3 id="Navigation-ApacheCXF"><a shape="rect" href="index.html">Apache CXF</a></h3><ul class="alternate"><li><a shape="rect" href="index.html">Home</a></li><li><a shape="rect" href="download.html">Download</a></li><li><a shape="rect" href="people.html">People</a></li><li><a shape="rect" href="project-status.html">Project Status</a></li><li><a shape="rect" href="roadmap.html">Roadmap</a></li><li><a shape="rect" href="mailing-lists.html">Mailing Lists</a></li><li><a shape="rect" class="external-link" href="http://issues.apache.org/jira/browse/CXF">Issue Reporting</a></li><li><a shape="rect" href="special-thanks.html">Special Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/licenses/">License</a></li><li><a shape="rect" href="security-advisories.html">Security Advisories</a></li></ul><h3 id="Navigation-Users">Users</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/index.html">User's Guide</a></li><li><a shape="rect" href="support.html">Support</a></li><li><a shape="rect" href="faq.html">FAQ</a></li><li><a shape="rect" href="resources-and-articles.html">Resources and Articles</a></li></ul><h3 id="Navigation-Search">Search</h3><form enctype="application/x-www-form-urlencoded" method="get" id="cse-search-box" action="http://www.google.com/cse"><div> <input type="hidden" name="cx" value="002890367768291051730:o99qiwa09y4"> <input type="hidden" name="ie" value="UTF-8"> <input type="text" name="q" size="21"> <input type="submit" name="sa" value="Search"> </div> </form> <script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script> <h3 id="Navigation-Developers">Developers</h3><ul class="alternate"><li><a shape="rect" href="http://cxf.apache.org/docs/cxf-architecture.html">Architecture Guide</a></li><li><a shape="rect" href="source-repository.html">Source Repository</a></li><li><a shape="rect" href="building.html">Building</a></li><li><a shape="rect" href="automated-builds.html">Automated Builds</a></li><li><a shape="rect" href="testing-debugging.html">Testing-Debugging</a></li><li><a shape="rect" href="coding-guidelines.html">Coding Guidelines</a></li><li><a shape="rect" href="getting-involved.html">Getting Involved</a></li><li><a shape="rect" href="release-management.html">Release Management</a></li></ul><h3 id="Navigation-Subprojects">Subprojects</h3><ul class="alternate"><li><a shape="rect" href="distributed-osgi.html">Distributed OSGi</a></li><li><a shape="rect" href="xjc-utils.html">XJC Utils</a></li><li><a shape="rect" href="build-utils.html">Build Utils</a></li><li><a shape="rect" href="fediz.html">Fediz</a></li></ul><h3 id="Navigation-ASF"><a shape="rect" class="external-link" href="http://www.apache.org">ASF</a></h3><ul class="alternate"><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/how-it-works.html">How Apache Works</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/">Foundation</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/sponsorship.html">Sponsor Apache</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/foundation/thanks.html">Thanks</a></li><li><a shape="rect" class="external-link" href="http://www.apache.org/security/">Security</a></li></ul><p>&#160;</p><p><a shape="rect" class="external-link" href="http://www.apache.org/events/current-event.html"><span class="confluence-embedded-file-wrapper"><img class="confluence-embedded-image confluence-external-resource" src="http://www.apache.org/events/current-event-125x125.png" data-image-src="http://www.apache.org/events/current-event-125x125.png"></span></a></p></div>
+                    <!-- NavigationBar -->
+                  </div>
+              </div>
+            </div>
+          </div>
+         </td>
+         <td height="100%">
+           <!-- Content -->
+           <div class="wiki-content">
+<div id="ConfluenceContent"><p>This page describes the demo that shows the Discovery functionality of Distributed OSGi.</p>
+
+<p>It assumes that you have set up your DOSGi/ZooKeeper based Discovery system as outlined in the <a shape="rect" href="dosgi-discovery.html">DOSGi Discovery</a> page.</p>
+
+
+<h2 id="DOSGiDiscoveryDemopage-Demodesign">Demo design</h2>
+
+<p>This demo consists of a display controller node that writes messages on all the available display instances. Display instances are realized as remote OSGi services, which are registered with the ZooKeeper-based Discovery system. The discovery system informs the controller, which is a consumer of the DisplayServices, of any available remote instances of this service.<br clear="none">
+@@@ add an image here @@@</p>
+
+<p>As with most of the other demos, the actual implementation consists of 3 bundles.</p>
+<ul><li>A DisplayService interface bundle.</li><li>A DisplayService implementation bundle.</li><li>A DisplayService client bundle, which takes the role of the display controller.</li></ul>
+
+
+<p>The <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/discovery/interface/src/main/java/org/apache/cxf/dosgi/samples/discovery/DisplayService.java">Display Service interface</a> is as follows:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">public interface DisplayService {
+    boolean displayText(String text);
+    String getID();
+}</pre>
+</div></div>
+
+<h2 id="DOSGiDiscoveryDemopage-TheDisplayController(serviceconsumer)">The Display Controller (service consumer)</h2>
+<p>Let's start with the controller, which is a consumer to the the DisplayService. It's simply using an OSGi ServiceTracker to consume all DisplayService services. It also uses a Scheduled Executor to periodically send test messages to all registered displays. Here's the <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/discovery/client/src/main/java/org/apache/cxf/dosgi/samples/discovery/consumer/Activator.java">Activator</a>:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">public class Activator implements BundleActivator {
+    private ServiceTracker tracker;
+    private Map&lt;DisplayService, String&gt; displays = new ConcurrentHashMap&lt;DisplayService, String&gt;();
+
+    public void start(BundleContext bc) throws Exception {
+        tracker = new ServiceTracker(bc, DisplayService.class.getName(), null) {
+            public Object addingService(ServiceReference reference) {
+                Object svc = super.addingService(reference);
+                if (svc instanceof DisplayService) {
+                    DisplayService d = (DisplayService) svc;
+                    System.out.println("Adding display: " + d.getID() + " (" + d + ")");
+                    displays.put(d, d.getID());
+                }
+                return svc;
+            }
+
+            public void removedService(ServiceReference reference, Object service) {
+                String value = displays.remove(service);
+                System.out.println("Removed display: " + value);
+                super.removedService(reference, service);
+            }            
+        };        
+        tracker.open();
+        // ... scheduler stuff that sends messages to all registered displays ommitted
+    }
+
+    public void stop(BundleContext bc) throws Exception {
+        tracker.close();
+    }
+}</pre>
+</div></div>
+<h3 id="DOSGiDiscoveryDemopage-Noremote-services.xmlfile!">No <code>remote-services.xml</code> file!</h3>
+<p>As we are using Discovery here, there is no static remote service metadata required. So no <code>remote-services.xml</code> file. Discovery will dynamically inform the DOSGi implementation of the locations of available remote services. The DOSGi implemenation will in turn register proxies for the remote services in the local service registry. As a service consumer you simply depend on the service - e.g. by using a ServiceTracker as above, or through a component framework such as Blueprint or DS. </p>
+
+<h3 id="DOSGiDiscoveryDemopage-Runningthecontroller">Running the controller</h3>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+-&gt; install http://repo1.maven.org/maven2/org/apache/cxf/dosgi/samples/cxf-dosgi-ri-samples-discovery-interface/1.2/cxf-dosgi-ri-samples-discovery-interface-1.2.jar
+-&gt; start http://repo1.maven.org/maven2/org/apache/cxf/dosgi/samples/cxf-dosgi-ri-samples-discovery-client/1.2/cxf-dosgi-ri-samples-discovery-client-1.2.jar
+
+-&gt; ps
+START LEVEL 1
+   ID   State         Level  Name
+[   0] [Active     ] [    0] System Bundle (1.8.0)
+[   1] [Active     ] [    1] Apache Felix Shell Service (1.2.0)
+[   2] [Active     ] [    1] Apache Felix Shell TUI (1.2.0)
+[   3] [Active     ] [    1] Apache Felix Bundle Repository (1.4.0)
+[   4] [Resolved   ] [    1] OSGi R4 Compendium Bundle (4.1.0)
+[   5] [Active     ] [    1] Distributed OSGi Distribution Software Single-Bundle Distribution
+[   6] [Active     ] [    1] Distributed OSGI Discovery Sample Client Bundle
+[   7] [Active     ] [    1] Distributed OSGI Discovery Sample Interface Bundle
+</pre>
+</div></div>
+<p>After a brief moment, you will see messages appearing on the controller side. These are the messages sent to all registered displays. Since there are none, they won't show up anywhere just yet.</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">Sending text to displays: some text 1
+Sending text to displays: some text 2
+Sending text to displays: some text 3
+...</pre>
+</div></div>
+
+<h2 id="DOSGiDiscoveryDemopage-TheRemoteDisplays(serviceimplementation)">The Remote Displays (service implementation)</h2>
+<p>Every Display in the system registers a <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/discovery/impl/src/main/java/org/apache/cxf/dosgi/samples/discovery/impl/DisplayServiceImpl.java">Display Service implementation</a> in the local Service Registry. This happens in the <a shape="rect" class="external-link" href="http://svn.apache.org/repos/asf/cxf/dosgi/trunk/samples/discovery/impl/src/main/java/org/apache/cxf/dosgi/samples/discovery/impl/Activator.java">Activator</a> of the service implementation bundle. It adds the properties to make the service available remotely as well:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">public class Activator implements BundleActivator {
+    private ServiceRegistration reg;
+
+    public void start(BundleContext bc) throws Exception {        
+        Dictionary props = new Hashtable();
+        
+        String host = getHostName(); // obtain the current host name
+        int port = getPort();        // find a free port
+        
+        props.put("service.exported.interfaces", "*");
+        props.put("service.exported.configs", "org.apache.cxf.ws");
+        props.put("org.apache.cxf.ws.address", "http://" + host + ":" + port + "/display");
+
+        reg = bc.registerService(DisplayService.class.getName(), 
+                new DisplayServiceImpl(host + ":" + port), props);
+    }
+
+    public void stop(BundleContext bc) throws Exception {
+        reg.unregister();
+    }
+}</pre>
+</div></div>
+<p>Note that the port where the service is made available is dynamically set to be any free port in the system. So you can safely run any number of remote Display Services on the same machine. Because we're using Discovery here, a well-known port is not needed. Registering the service as in the previous code snippet will make it available remotely <em>and</em> publish it to the installed Discovery system.</p>
+
+<p>Once the provider side bundles are started:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">-&gt; install http://repo1.maven.org/maven2/org/apache/cxf/dosgi/samples/cxf-dosgi-ri-samples-discovery-interface/1.2/cxf-dosgi-ri-samples-discovery-interface-1.2.jar
+-&gt; start http://repo1.maven.org/maven2/org/apache/cxf/dosgi/samples/cxf-dosgi-ri-samples-discovery-impl/1.2/cxf-dosgi-ri-samples-discovery-impl-1.2.jar
+
+-&gt; ps
+START LEVEL 1
+   ID   State         Level  Name
+[   0] [Active     ] [    0] System Bundle (1.8.0)
+[   1] [Active     ] [    1] Apache Felix Shell Service (1.2.0)
+[   2] [Active     ] [    1] Apache Felix Shell TUI (1.2.0)
+[   3] [Active     ] [    1] Apache Felix Bundle Repository (1.4.0)
+[   4] [Resolved   ] [    1] OSGi R4 Compendium Bundle (4.1.0)
+[   5] [Active     ] [    1] Distributed OSGi Distribution Software Single-Bundle Distribution
+[   6] [Active     ] [    1] Distributed OSGI Discovery Sample Interface Bundle
+[   7] [Active     ] [    1] Distributed OSGI Discovery Sample Implementation Bundle
+</pre>
+</div></div>
+<p>You will start seeing the messages appear on the remote display:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">DisplayService [myhost:1816]: some text 145
+DisplayService [myhost:1816]: some text 146
+... </pre>
+</div></div>
+<p>You can add more Display Services and they will also receive the messages. </p>
+<h2 id="DOSGiDiscoveryDemopage-UnderthehoodintheZooKeeperserver">Under the hood in the ZooKeeper server</h2>
+<p>The Discovery system uses standard OSGi mechanisms to publish the metadata of the services that are exposed remotely in a centralized server, a ZooKeeper server. On the consumer side, the services are looked up in Discovery through standard OSGi mechanisms as well. These mechanisms are independent of ZooKeeper, so they will work with any Distributed OSGi standards-compliant Dicovery implementation.</p>
+
+<p>ZooKeeper comes with a client program (<code>zkCli</code>) that allows you to look in the ZooKeeper virtual filesystem. All of the OSGi-registered services are stored in a virtual directory under the node <code>/osgi/service_registry</code>. The virtual directory name is based on the fully qualified name of the interface that is implemented by the remote service. So in the case of the DisplayService the remote service metadata is stored under <code>/osgi/service_registry/org/apache/cxf/dosgi/samples/discovery/DisplayService</code>:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">
+$ bin/zkCli localhost:2181
+
+-&gt; ls /osgi/service_registry/org/apache/cxf/dosgi/samples/discovery/DisplayService
+Processing ls
+[myhost#1816##display]
+</pre>
+</div></div>
+<p>Every instance of a remote service that implements the org.apache.cxf.dosgi.samples.discovery.DisplayService interface will get a virtual file in this location. The virtual file is only there for the lifetime of the service. If you stop the service, or kill the OSGi container that hosts it, its associated file in this directory will disappear.<br clear="none">
+You can obtain the information stored in the node, to get an idea of the metadata that's being communicated using the Discovery system:</p>
+<div class="code panel pdl" style="border-width: 1px;"><div class="codeContent panelContent pdl">
+<pre class="brush: java; gutter: false; theme: Default">-&gt; get /osgi/service_registry/org/apache/cxf/dosgi/samples/discovery/DisplayService/myhost#52807##display
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;endpoint-descriptions xmlns="http://www.osgi.org/xmlns/rsa/v1.0.0"&gt;
+  &lt;endpoint-description&gt;
+    &lt;property name="endpoint.framework.uuid" value="b151dd13-69fe-4d99-8006-fcdafeb48db8" /&gt;
+    &lt;property name="endpoint.id" value="http://myhost:52807/display" /&gt;
+    &lt;property name="endpoint.package.version.org.apache.cxf.dosgi.samples.discovery" value="0.0.0" /&gt;
+    &lt;property name="endpoint.service.id" value-type="Long" value="16" /&gt;
+    &lt;property name="objectClass"&gt;
+      &lt;array&gt;
+        &lt;value&gt;org.apache.cxf.dosgi.samples.discovery.DisplayService&lt;/value&gt;
+      &lt;/array&gt;
+    &lt;/property&gt;
+    &lt;property name="org.apache.cxf.ws.address" value="http://myhost:52807/display" /&gt;
+    &lt;property name="service.imported" value="true" /&gt;
+    &lt;property name="service.imported.configs"&gt;
+      &lt;array&gt;
+        &lt;value&gt;org.apache.cxf.ws&lt;/value&gt;
+      &lt;/array&gt;
+    &lt;/property&gt;
+    &lt;property name="service.intents"&gt;
+      &lt;array&gt;
+        &lt;value&gt;SOAP.1_1&lt;/value&gt;
+        &lt;value&gt;HTTP&lt;/value&gt;
+        &lt;value&gt;SOAP&lt;/value&gt;
+      &lt;/array&gt;
+    &lt;/property&gt;
+  &lt;/endpoint-description&gt;
+&lt;/endpoint-descriptions&gt;
+
+cZxid = 0x13
+ctime = Fri Jun 25 15:57:09 BST 2010
+mZxid = 0x13
+mtime = Fri Jun 25 15:57:09 BST 2010
+pZxid = 0x13
+cversion = 0
+dataVersion = 0
+aclVersion = 0
+ephemeralOwner = 0x1296f9228b40004
+dataLength = 1150
+numChildren = 0</pre>
+</div></div>
+
+<h2 id="DOSGiDiscoveryDemopage-OtherResources">Other Resources</h2>
+<p>Introducing Dynamic Discovery into OSGi Distributed Applications - <a shape="rect" class="external-link" href="http://blog.akquinet.de/2009/09/23/introducing-dynamic-discovery-into-osgi-distributed-applications/" rel="nofollow">http://blog.akquinet.de/2009/09/23/introducing-dynamic-discovery-into-osgi-distributed-applications/</a></p></div>
+           </div>
+           <!-- Content -->
+         </td>
+        </tr>
+      </table>
+   </td>
+   <td id="cell-2-2" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+   <td id="cell-3-0">&nbsp;</td>
+   <td id="cell-3-1">&nbsp;</td>
+   <td id="cell-3-2">
+     <div id="footer">
+       <!-- Footer -->
+       <div id="site-footer">
+         <a href="http://cxf.apache.org/privacy-policy.html">Privacy Policy</a> - 
+         (<a href="https://cwiki.apache.org/confluence/pages/editpage.action?pageId=119713">edit page</a>) 
+	 (<a href="https://cwiki.apache.org/confluence/pages/viewpage.action?pageId=119713&amp;showComments=true&amp;showCommentArea=true#addcomment">add comment</a>)<br>
+	Apache CXF, CXF, Apache, the Apache feather logo are trademarks of The Apache Software Foundation.<br>
+        All other marks mentioned may be trademarks or registered trademarks of their respective owners.
+       </div>
+       <!-- Footer -->
+     </div>
+   </td>
+   <td id="cell-3-3">&nbsp;</td>
+   <td id="cell-3-4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td id="cell-4-0" colspan="2">&nbsp;</td>
+    <td id="cell-4-1">&nbsp;</td>
+    <td id="cell-4-2" colspan="2">&nbsp;</td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4458903-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+

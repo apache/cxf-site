@@ -1,0 +1,952 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+JAXBElementProvider (Apache CXF Bundle Jar 2.6.3 API)
+</TITLE>
+
+<META NAME="keywords" CONTENT="org.apache.cxf.jaxrs.provider.JAXBElementProvider class">
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="JAXBElementProvider (Apache CXF Bundle Jar 2.6.3 API)";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/JAXBElementProvider.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBAttachmentUnmarshaller.html" title="class in org.apache.cxf.jaxrs.provider"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXRSDataBinding.html" title="class in org.apache.cxf.jaxrs.provider"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/jaxrs/provider/JAXBElementProvider.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="JAXBElementProvider.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_org.apache.cxf.jaxrs.provider.AbstractJAXBProvider">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.cxf.jaxrs.provider.AbstractJAXBProvider">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<!-- ======== START OF CLASS DATA ======== -->
+<H2>
+<FONT SIZE="-1">
+org.apache.cxf.jaxrs.provider</FONT>
+<BR>
+Class JAXBElementProvider&lt;T&gt;</H2>
+<PRE>
+<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">java.lang.Object</A>
+  <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html" title="class in org.apache.cxf.jaxrs.provider">org.apache.cxf.jaxrs.provider.AbstractConfigurableProvider</A>
+      <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html" title="class in org.apache.cxf.jaxrs.provider">org.apache.cxf.jaxrs.provider.AbstractJAXBProvider</A>&lt;T&gt;
+          <IMG SRC="../../../../../resources/inherit.gif" ALT="extended by "><B>org.apache.cxf.jaxrs.provider.JAXBElementProvider&lt;T&gt;</B>
+</PRE>
+<DL>
+<DT><B>All Implemented Interfaces:</B> <DD>javax.ws.rs.ext.MessageBodyReader&lt;T&gt;, javax.ws.rs.ext.MessageBodyWriter&lt;T&gt;</DD>
+</DL>
+<DL>
+<DT><B>Direct Known Subclasses:</B> <DD><A HREF="../../../../../org/apache/cxf/jaxrs/provider/XSLTJaxbProvider.html" title="class in org.apache.cxf.jaxrs.provider">XSLTJaxbProvider</A></DD>
+</DL>
+<HR>
+<DL>
+<DT><PRE><FONT SIZE="-1">@Provider
+</FONT>public class <B>JAXBElementProvider&lt;T&gt;</B><DT>extends <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html" title="class in org.apache.cxf.jaxrs.provider">AbstractJAXBProvider</A>&lt;T&gt;</DL>
+</PRE>
+
+<P>
+<HR>
+
+<P>
+<!-- ======== NESTED CLASS SUMMARY ======== -->
+
+<A NAME="nested_class_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Nested Class Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="nested_classes_inherited_from_class_org.apache.cxf.jaxrs.provider.AbstractJAXBProvider"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Nested classes/interfaces inherited from class org.apache.cxf.jaxrs.provider.<A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html" title="class in org.apache.cxf.jaxrs.provider">AbstractJAXBProvider</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.CollectionWrapper.html" title="class in org.apache.cxf.jaxrs.provider">AbstractJAXBProvider.CollectionWrapper</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.JAXBCollectionWrapperReader.html" title="class in org.apache.cxf.jaxrs.provider">AbstractJAXBProvider.JAXBCollectionWrapperReader</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- =========== FIELD SUMMARY =========== -->
+
+<A NAME="field_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Field Summary</B></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;<A NAME="fields_inherited_from_class_org.apache.cxf.jaxrs.provider.AbstractJAXBProvider"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Fields inherited from class org.apache.cxf.jaxrs.provider.<A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html" title="class in org.apache.cxf.jaxrs.provider">AbstractJAXBProvider</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#BUNDLE">BUNDLE</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#collectionContextClasses">collectionContextClasses</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#inAppendMap">inAppendMap</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#inDropElements">inDropElements</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#inElementsMap">inElementsMap</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#jaxbElementClassMap">jaxbElementClassMap</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#LOG">LOG</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#marshalAsJaxbElement">marshalAsJaxbElement</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#NS_MAPPER_PROPERTY">NS_MAPPER_PROPERTY</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#NS_MAPPER_PROPERTY_INT">NS_MAPPER_PROPERTY_INT</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#outAppendMap">outAppendMap</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#outDropElements">outDropElements</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#outElementsMap">outElementsMap</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#unmarshalAsJaxbElement">unmarshalAsJaxbElement</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+
+<A NAME="constructor_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Constructor Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#JAXBElementProvider()">JAXBElementProvider</A></B>()</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<!-- ========== METHOD SUMMARY =========== -->
+
+<A NAME="method_summary"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+<B>Method Summary</B></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#addAttachmentMarshaller(javax.xml.bind.Marshaller)">addAttachmentMarshaller</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.Marshaller.html" title="class or interface in javax.xml">javax.xml.bind.Marshaller</A>&nbsp;ms)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#addAttachmentUnmarshaller(javax.xml.bind.Unmarshaller)">addAttachmentUnmarshaller</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.Unmarshaller.html" title="class or interface in javax.xml">javax.xml.bind.Unmarshaller</A>&nbsp;um)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;boolean</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#canBeReadAsJaxbElement(java.lang.Class)">canBeReadAsJaxbElement</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#doUnmarshal(javax.xml.bind.Unmarshaller, java.lang.Class, java.io.InputStream, javax.ws.rs.core.MediaType)">doUnmarshal</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.Unmarshaller.html" title="class or interface in javax.xml">javax.xml.bind.Unmarshaller</A>&nbsp;unmarshaller,
+            <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;type,
+            <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html" title="class or interface in java.io">InputStream</A>&nbsp;is,
+            javax.ws.rs.core.MediaType&nbsp;mt)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/stream.XMLStreamReader.html" title="class or interface in javax.xml">javax.xml.stream.XMLStreamReader</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#getStreamReader(java.io.InputStream, java.lang.Class, javax.ws.rs.core.MediaType)">getStreamReader</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html" title="class or interface in java.io">InputStream</A>&nbsp;is,
+                <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;type,
+                javax.ws.rs.core.MediaType&nbsp;mt)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/stream.XMLStreamWriter.html" title="class or interface in javax.xml">javax.xml.stream.XMLStreamWriter</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#getStreamWriter(java.lang.Object, java.io.OutputStream, javax.ws.rs.core.MediaType)">getStreamWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+                <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html" title="class or interface in java.io">OutputStream</A>&nbsp;os,
+                javax.ws.rs.core.MediaType&nbsp;mt)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#marshal(java.lang.Object, java.lang.Class, java.lang.reflect.Type, java.lang.String, java.io.OutputStream, javax.ws.rs.core.MediaType)">marshal</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;cls,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;enc,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html" title="class or interface in java.io">OutputStream</A>&nbsp;os,
+        javax.ws.rs.core.MediaType&nbsp;mt)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#marshal(java.lang.Object, java.lang.Class, java.lang.reflect.Type, java.lang.String, java.io.OutputStream, javax.ws.rs.core.MediaType, java.lang.annotation.Annotation[])">marshal</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;cls,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;enc,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html" title="class or interface in java.io">OutputStream</A>&nbsp;os,
+        javax.ws.rs.core.MediaType&nbsp;mt,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation">Annotation</A>[]&nbsp;anns)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#marshal(java.lang.Object, java.lang.Class, java.lang.reflect.Type, java.lang.String, java.io.OutputStream, javax.ws.rs.core.MediaType, javax.xml.bind.Marshaller)">marshal</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;cls,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;enc,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html" title="class or interface in java.io">OutputStream</A>&nbsp;os,
+        javax.ws.rs.core.MediaType&nbsp;mt,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.Marshaller.html" title="class or interface in javax.xml">javax.xml.bind.Marshaller</A>&nbsp;ms)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#marshalCollection(java.lang.Class, java.lang.Object, java.lang.reflect.Type, java.lang.String, java.io.OutputStream, javax.ws.rs.core.MediaType, java.lang.annotation.Annotation[])">marshalCollection</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;originalCls,
+                  <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;collection,
+                  <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+                  <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;enc,
+                  <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html" title="class or interface in java.io">OutputStream</A>&nbsp;os,
+                  javax.ws.rs.core.MediaType&nbsp;m,
+                  <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation">Annotation</A>[]&nbsp;anns)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#marshalCollectionMember(java.lang.Object, java.lang.Class, java.lang.reflect.Type, java.lang.String, java.io.OutputStream, javax.ws.rs.core.MediaType, java.lang.String)">marshalCollectionMember</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+                        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;cls,
+                        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+                        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;enc,
+                        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html" title="class or interface in java.io">OutputStream</A>&nbsp;os,
+                        javax.ws.rs.core.MediaType&nbsp;mt,
+                        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;ns)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#marshalToOutputStream(javax.xml.bind.Marshaller, java.lang.Object, java.io.OutputStream, javax.ws.rs.core.MediaType)">marshalToOutputStream</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.Marshaller.html" title="class or interface in javax.xml">javax.xml.bind.Marshaller</A>&nbsp;ms,
+                      <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+                      <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html" title="class or interface in java.io">OutputStream</A>&nbsp;os,
+                      javax.ws.rs.core.MediaType&nbsp;mt)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#marshalToWriter(javax.xml.bind.Marshaller, java.lang.Object, javax.xml.stream.XMLStreamWriter, javax.ws.rs.core.MediaType)">marshalToWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.Marshaller.html" title="class or interface in javax.xml">javax.xml.bind.Marshaller</A>&nbsp;ms,
+                <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+                <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/stream.XMLStreamWriter.html" title="class or interface in javax.xml">javax.xml.stream.XMLStreamWriter</A>&nbsp;writer,
+                javax.ws.rs.core.MediaType&nbsp;mt)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html" title="type parameter in JAXBElementProvider">T</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#readFrom(java.lang.Class, java.lang.reflect.Type, java.lang.annotation.Annotation[], javax.ws.rs.core.MediaType, javax.ws.rs.core.MultivaluedMap, java.io.InputStream)">readFrom</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;<A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html" title="type parameter in JAXBElementProvider">T</A>&gt;&nbsp;type,
+         <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+         <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation">Annotation</A>[]&nbsp;anns,
+         javax.ws.rs.core.MediaType&nbsp;mt,
+         javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;headers,
+         <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html" title="class or interface in java.io">InputStream</A>&nbsp;is)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#setConsumeMediaTypes(java.util.List)">setConsumeMediaTypes</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;types)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets custom Consumes media types; can be used to override static
+ <CODE>Consumes</CODE> annotation value set on the provider.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#setEnableBuffering(boolean)">setEnableBuffering</A></B>(boolean&nbsp;enableBuf)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Enables the buffering mode.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#setMarshallerProperties(java.util.Map)">setMarshallerProperties</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Map.html" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&gt;&nbsp;marshallProperties)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#setMessageContext(org.apache.cxf.jaxrs.ext.MessageContext)">setMessageContext</A></B>(<A HREF="../../../../../org/apache/cxf/jaxrs/ext/MessageContext.html" title="interface in org.apache.cxf.jaxrs.ext">MessageContext</A>&nbsp;mc)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#setNamespacePrefixes(java.util.Map)">setNamespacePrefixes</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Map.html" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;prefixes)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#setProduceMediaTypes(java.util.List)">setProduceMediaTypes</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;types)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sets custom Produces media types; can be used to override static
+ <CODE>Produces</CODE> annotation value set on the provider.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#setSchemaLocation(java.lang.String)">setSchemaLocation</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;schemaLocation)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#setXmlResourceOffset(java.lang.String)">setXmlResourceOffset</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#unmarshalFromInputStream(javax.xml.bind.Unmarshaller, java.io.InputStream, javax.ws.rs.core.MediaType)">unmarshalFromInputStream</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.Unmarshaller.html" title="class or interface in javax.xml">javax.xml.bind.Unmarshaller</A>&nbsp;unmarshaller,
+                         <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html" title="class or interface in java.io">InputStream</A>&nbsp;is,
+                         javax.ws.rs.core.MediaType&nbsp;mt)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A></CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#unmarshalFromReader(javax.xml.bind.Unmarshaller, javax.xml.stream.XMLStreamReader, javax.ws.rs.core.MediaType)">unmarshalFromReader</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.Unmarshaller.html" title="class or interface in javax.xml">javax.xml.bind.Unmarshaller</A>&nbsp;unmarshaller,
+                    <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/stream.XMLStreamReader.html" title="class or interface in javax.xml">javax.xml.stream.XMLStreamReader</A>&nbsp;reader,
+                    javax.ws.rs.core.MediaType&nbsp;mt)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html#writeTo(T, java.lang.Class, java.lang.reflect.Type, java.lang.annotation.Annotation[], javax.ws.rs.core.MediaType, javax.ws.rs.core.MultivaluedMap, java.io.OutputStream)">writeTo</A></B>(<A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html" title="type parameter in JAXBElementProvider">T</A>&nbsp;obj,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;cls,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation">Annotation</A>[]&nbsp;anns,
+        javax.ws.rs.core.MediaType&nbsp;m,
+        javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&gt;&nbsp;headers,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html" title="class or interface in java.io">OutputStream</A>&nbsp;os)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.jaxrs.provider.AbstractJAXBProvider"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.jaxrs.provider.<A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html" title="class in org.apache.cxf.jaxrs.provider">AbstractJAXBProvider</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#checkAdapter(java.lang.Object, java.lang.Class, java.lang.annotation.Annotation[], boolean)">checkAdapter</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#clearContexts()">clearContexts</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#convertToJaxbElementIfNeeded(java.lang.Object, java.lang.Class, java.lang.reflect.Type)">convertToJaxbElementIfNeeded</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#createDepthReaderIfNeeded(javax.xml.stream.XMLStreamReader, java.io.InputStream)">createDepthReaderIfNeeded</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#createMarshaller(java.lang.Object, java.lang.Class, java.lang.reflect.Type, java.lang.String)">createMarshaller</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#createTransformReaderIfNeeded(javax.xml.stream.XMLStreamReader, java.io.InputStream)">createTransformReaderIfNeeded</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#createTransformWriterIfNeeded(javax.xml.stream.XMLStreamWriter, java.io.OutputStream)">createTransformWriterIfNeeded</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#createUnmarshaller(java.lang.Class, java.lang.reflect.Type)">createUnmarshaller</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#createUnmarshaller(java.lang.Class, java.lang.reflect.Type, boolean)">createUnmarshaller</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#getActualType(java.lang.Class, java.lang.reflect.Type, java.lang.annotation.Annotation[])">getActualType</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#getClassContext(java.lang.Class)">getClassContext</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#getCollectionContext(java.lang.Class)">getCollectionContext</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#getCollectionWrapperQName(java.lang.Class, java.lang.reflect.Type, java.lang.Object, boolean)">getCollectionWrapperQName</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#getContext()">getContext</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#getDepthProperties()">getDepthProperties</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#getJAXBContext(java.lang.Class, java.lang.reflect.Type)">getJAXBContext</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#getJaxbQName(java.lang.Class, java.lang.reflect.Type, java.lang.Object, boolean)">getJaxbQName</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#getPackageContext(java.lang.Class)">getPackageContext</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#getSchema()">getSchema</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#getSchema(java.lang.Class)">getSchema</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#getSize(T, java.lang.Class, java.lang.reflect.Type, java.lang.annotation.Annotation[], javax.ws.rs.core.MediaType)">getSize</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#getStackTrace(java.lang.Exception)">getStackTrace</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#getStreamHandlerFromCurrentMessage(java.lang.Class)">getStreamHandlerFromCurrentMessage</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#handleExceptionEnd(java.lang.Throwable, java.lang.String, boolean)">handleExceptionEnd</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#handleExceptionStart(java.lang.Exception)">handleExceptionStart</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#handleJAXBException(javax.xml.bind.JAXBException, boolean)">handleJAXBException</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#handleXMLStreamException(javax.xml.stream.XMLStreamException, boolean)">handleXMLStreamException</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#init(java.util.List)">init</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#isPayloadEmpty()">isPayloadEmpty</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#isReadable(java.lang.Class, java.lang.reflect.Type, java.lang.annotation.Annotation[], javax.ws.rs.core.MediaType)">isReadable</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#isSkipJaxbChecks()">isSkipJaxbChecks</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#isSupported(java.lang.Class, java.lang.reflect.Type, java.lang.annotation.Annotation[])">isSupported</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#isWriteable(java.lang.Class, java.lang.reflect.Type, java.lang.annotation.Annotation[], javax.ws.rs.core.MediaType)">isWriteable</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#isXmlRoot(java.lang.Class)">isXmlRoot</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#objectFactoryOrIndexAvailable(java.lang.Class)">objectFactoryOrIndexAvailable</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#reportEmptyContentLength()">reportEmptyContentLength</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setAttributesToElements(boolean)">setAttributesToElements</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setCatalogLocation(java.lang.String)">setCatalogLocation</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setCollectionWrapperMap(java.util.Map)">setCollectionWrapperMap</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setCollectionWrapperName(java.lang.String)">setCollectionWrapperName</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setContext(org.apache.cxf.jaxrs.ext.MessageContext)">setContext</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setContextProperties(java.util.Map)">setContextProperties</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setDepthProperties(org.apache.cxf.staxutils.DocumentDepthProperties)">setDepthProperties</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setExtraClass(java.lang.Class[])">setExtraClass</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setInAppendElements(java.util.Map)">setInAppendElements</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setInDropElements(java.util.List)">setInDropElements</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setInTransformElements(java.util.Map)">setInTransformElements</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setJaxbElementClassMap(java.util.Map)">setJaxbElementClassMap</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setJaxbElementClassNames(java.util.List)">setJaxbElementClassNames</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setMarshallAsJaxbElement(boolean)">setMarshallAsJaxbElement</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setMarshallerListener(javax.xml.bind.Marshaller.Listener)">setMarshallerListener</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setMarshallerProp(javax.xml.bind.Marshaller, java.lang.Object, java.lang.String, java.lang.String)">setMarshallerProp</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setNamespaceMapper(javax.xml.bind.Marshaller, java.util.Map)">setNamespaceMapper</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setOutAppendElements(java.util.Map)">setOutAppendElements</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setOutDropElements(java.util.List)">setOutDropElements</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setOutTransformElements(java.util.Map)">setOutTransformElements</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setSchema(javax.xml.validation.Schema)">setSchema</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setSchemaHandler(org.apache.cxf.jaxrs.utils.schemas.SchemaHandler)">setSchemaHandler</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setSchemaHandlers(java.util.Map)">setSchemaHandlers</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setSchemaLocations(java.util.List)">setSchemaLocations</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setSchemas(java.util.List)">setSchemas</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setSingleJaxbContext(boolean)">setSingleJaxbContext</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setSkipJaxbChecks(boolean)">setSkipJaxbChecks</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setUnmarshallAsJaxbElement(boolean)">setUnmarshallAsJaxbElement</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setUnmarshallerListener(javax.xml.bind.Unmarshaller.Listener)">setUnmarshallerListener</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setUnmarshallerProperties(java.util.Map)">setUnmarshallerProperties</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setValidateBeforeWrite(boolean)">setValidateBeforeWrite</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setValidateOutput(boolean)">setValidateOutput</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#setValidationHandler(javax.xml.bind.ValidationEventHandler)">setValidationHandler</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#validateObjectIfNeeded(javax.xml.bind.Marshaller, java.lang.Class, java.lang.Object)">validateObjectIfNeeded</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#writeTo(T, java.lang.reflect.Type, java.lang.annotation.Annotation[], javax.ws.rs.core.MediaType, javax.ws.rs.core.MultivaluedMap, java.io.OutputStream)">writeTo</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_org.apache.cxf.jaxrs.provider.AbstractConfigurableProvider"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class org.apache.cxf.jaxrs.provider.<A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html" title="class in org.apache.cxf.jaxrs.provider">AbstractConfigurableProvider</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#getBus()">getBus</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#getConsumeMediaTypes()">getConsumeMediaTypes</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#getEnableBuffering()">getEnableBuffering</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#getEnableStreaming()">getEnableStreaming</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#getProduceMediaTypes()">getProduceMediaTypes</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#isPayloadEmpty(javax.ws.rs.core.HttpHeaders)">isPayloadEmpty</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#setBus(org.apache.cxf.Bus)">setBus</A>, <A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#setEnableStreaming(boolean)">setEnableStreaming</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;<A NAME="methods_inherited_from_class_java.lang.Object"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#EEEEFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left"><B>Methods inherited from class java.lang.<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A></B></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#clone()" title="class or interface in java.lang">clone</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#equals(java.lang.Object)" title="class or interface in java.lang">equals</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#finalize()" title="class or interface in java.lang">finalize</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#getClass()" title="class or interface in java.lang">getClass</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#hashCode()" title="class or interface in java.lang">hashCode</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#notify()" title="class or interface in java.lang">notify</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#notifyAll()" title="class or interface in java.lang">notifyAll</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#toString()" title="class or interface in java.lang">toString</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait()" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait(long)" title="class or interface in java.lang">wait</A>, <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html#wait(long, int)" title="class or interface in java.lang">wait</A></CODE></TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+
+<A NAME="constructor_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Constructor Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="JAXBElementProvider()"><!-- --></A><H3>
+JAXBElementProvider</H3>
+<PRE>
+public <B>JAXBElementProvider</B>()</PRE>
+<DL>
+</DL>
+
+<!-- ============ METHOD DETAIL ========== -->
+
+<A NAME="method_detail"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="1"><FONT SIZE="+2">
+<B>Method Detail</B></FONT></TH>
+</TR>
+</TABLE>
+
+<A NAME="setXmlResourceOffset(java.lang.String)"><!-- --></A><H3>
+setXmlResourceOffset</H3>
+<PRE>
+public void <B>setXmlResourceOffset</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;value)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setNamespacePrefixes(java.util.Map)"><!-- --></A><H3>
+setNamespacePrefixes</H3>
+<PRE>
+public void <B>setNamespacePrefixes</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Map.html" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;prefixes)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="canBeReadAsJaxbElement(java.lang.Class)"><!-- --></A><H3>
+canBeReadAsJaxbElement</H3>
+<PRE>
+protected boolean <B>canBeReadAsJaxbElement</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;type)</PRE>
+<DL>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html#canBeReadAsJaxbElement(java.lang.Class)">canBeReadAsJaxbElement</A></CODE> in class <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractJAXBProvider.html" title="class in org.apache.cxf.jaxrs.provider">AbstractJAXBProvider</A>&lt;<A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html" title="type parameter in JAXBElementProvider">T</A>&gt;</CODE></DL>
+</DD>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMessageContext(org.apache.cxf.jaxrs.ext.MessageContext)"><!-- --></A><H3>
+setMessageContext</H3>
+<PRE>
+<FONT SIZE="-1">@Context
+</FONT>public void <B>setMessageContext</B>(<A HREF="../../../../../org/apache/cxf/jaxrs/ext/MessageContext.html" title="interface in org.apache.cxf.jaxrs.ext">MessageContext</A>&nbsp;mc)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setEnableBuffering(boolean)"><!-- --></A><H3>
+setEnableBuffering</H3>
+<PRE>
+public void <B>setEnableBuffering</B>(boolean&nbsp;enableBuf)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#setEnableBuffering(boolean)">AbstractConfigurableProvider</A></CODE></B></DD>
+<DD>Enables the buffering mode. If set to true then the runtime will ensure
+ that the provider writes to a cached stream.
+  
+ For example, the JAXB marshalling process may fail after the initial XML
+ tags have already been written out to the HTTP output stream. Enabling
+ the buffering ensures no incomplete payloads are sent back to clients
+ in case of marshalling errors at the cost of the initial buffering - which
+ might be negligible for small payloads.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#setEnableBuffering(boolean)">setEnableBuffering</A></CODE> in class <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html" title="class in org.apache.cxf.jaxrs.provider">AbstractConfigurableProvider</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>enableBuf</CODE> - the value of the buffering mode, false is default.</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setConsumeMediaTypes(java.util.List)"><!-- --></A><H3>
+setConsumeMediaTypes</H3>
+<PRE>
+public void <B>setConsumeMediaTypes</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;types)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#setConsumeMediaTypes(java.util.List)">AbstractConfigurableProvider</A></CODE></B></DD>
+<DD>Sets custom Consumes media types; can be used to override static
+ <CODE>Consumes</CODE> annotation value set on the provider.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#setConsumeMediaTypes(java.util.List)">setConsumeMediaTypes</A></CODE> in class <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html" title="class in org.apache.cxf.jaxrs.provider">AbstractConfigurableProvider</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>types</CODE> - the media types</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setProduceMediaTypes(java.util.List)"><!-- --></A><H3>
+setProduceMediaTypes</H3>
+<PRE>
+public void <B>setProduceMediaTypes</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;types)</PRE>
+<DL>
+<DD><B>Description copied from class: <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#setProduceMediaTypes(java.util.List)">AbstractConfigurableProvider</A></CODE></B></DD>
+<DD>Sets custom Produces media types; can be used to override static
+ <CODE>Produces</CODE> annotation value set on the provider.
+<P>
+<DD><DL>
+<DT><B>Overrides:</B><DD><CODE><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html#setProduceMediaTypes(java.util.List)">setProduceMediaTypes</A></CODE> in class <CODE><A HREF="../../../../../org/apache/cxf/jaxrs/provider/AbstractConfigurableProvider.html" title="class in org.apache.cxf.jaxrs.provider">AbstractConfigurableProvider</A></CODE></DL>
+</DD>
+<DD><DL>
+<DT><B>Parameters:</B><DD><CODE>types</CODE> - the media types</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setMarshallerProperties(java.util.Map)"><!-- --></A><H3>
+setMarshallerProperties</H3>
+<PRE>
+public void <B>setMarshallerProperties</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/Map.html" title="class or interface in java.util">Map</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&gt;&nbsp;marshallProperties)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="setSchemaLocation(java.lang.String)"><!-- --></A><H3>
+setSchemaLocation</H3>
+<PRE>
+public void <B>setSchemaLocation</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;schemaLocation)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="readFrom(java.lang.Class, java.lang.reflect.Type, java.lang.annotation.Annotation[], javax.ws.rs.core.MediaType, javax.ws.rs.core.MultivaluedMap, java.io.InputStream)"><!-- --></A><H3>
+readFrom</H3>
+<PRE>
+public <A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html" title="type parameter in JAXBElementProvider">T</A> <B>readFrom</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;<A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html" title="type parameter in JAXBElementProvider">T</A>&gt;&nbsp;type,
+                  <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+                  <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation">Annotation</A>[]&nbsp;anns,
+                  javax.ws.rs.core.MediaType&nbsp;mt,
+                  javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&gt;&nbsp;headers,
+                  <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html" title="class or interface in java.io">InputStream</A>&nbsp;is)
+           throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="doUnmarshal(javax.xml.bind.Unmarshaller, java.lang.Class, java.io.InputStream, javax.ws.rs.core.MediaType)"><!-- --></A><H3>
+doUnmarshal</H3>
+<PRE>
+protected <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A> <B>doUnmarshal</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.Unmarshaller.html" title="class or interface in javax.xml">javax.xml.bind.Unmarshaller</A>&nbsp;unmarshaller,
+                             <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;type,
+                             <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html" title="class or interface in java.io">InputStream</A>&nbsp;is,
+                             javax.ws.rs.core.MediaType&nbsp;mt)
+                      throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.JAXBException.html" title="class or interface in javax.xml">javax.xml.bind.JAXBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.JAXBException.html" title="class or interface in javax.xml">javax.xml.bind.JAXBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStreamReader(java.io.InputStream, java.lang.Class, javax.ws.rs.core.MediaType)"><!-- --></A><H3>
+getStreamReader</H3>
+<PRE>
+protected <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/stream.XMLStreamReader.html" title="class or interface in javax.xml">javax.xml.stream.XMLStreamReader</A> <B>getStreamReader</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html" title="class or interface in java.io">InputStream</A>&nbsp;is,
+                                                           <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;type,
+                                                           javax.ws.rs.core.MediaType&nbsp;mt)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unmarshalFromInputStream(javax.xml.bind.Unmarshaller, java.io.InputStream, javax.ws.rs.core.MediaType)"><!-- --></A><H3>
+unmarshalFromInputStream</H3>
+<PRE>
+protected <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A> <B>unmarshalFromInputStream</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.Unmarshaller.html" title="class or interface in javax.xml">javax.xml.bind.Unmarshaller</A>&nbsp;unmarshaller,
+                                          <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html" title="class or interface in java.io">InputStream</A>&nbsp;is,
+                                          javax.ws.rs.core.MediaType&nbsp;mt)
+                                   throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.JAXBException.html" title="class or interface in javax.xml">javax.xml.bind.JAXBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.JAXBException.html" title="class or interface in javax.xml">javax.xml.bind.JAXBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="unmarshalFromReader(javax.xml.bind.Unmarshaller, javax.xml.stream.XMLStreamReader, javax.ws.rs.core.MediaType)"><!-- --></A><H3>
+unmarshalFromReader</H3>
+<PRE>
+protected <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A> <B>unmarshalFromReader</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.Unmarshaller.html" title="class or interface in javax.xml">javax.xml.bind.Unmarshaller</A>&nbsp;unmarshaller,
+                                     <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/stream.XMLStreamReader.html" title="class or interface in javax.xml">javax.xml.stream.XMLStreamReader</A>&nbsp;reader,
+                                     javax.ws.rs.core.MediaType&nbsp;mt)
+                              throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.JAXBException.html" title="class or interface in javax.xml">javax.xml.bind.JAXBException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.JAXBException.html" title="class or interface in javax.xml">javax.xml.bind.JAXBException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="writeTo(java.lang.Object,java.lang.Class,java.lang.reflect.Type,java.lang.annotation.Annotation,javax.ws.rs.core.MediaType,javax.ws.rs.core.MultivaluedMap,java.io.OutputStream)"><!-- --></A><A NAME="writeTo(T, java.lang.Class, java.lang.reflect.Type, java.lang.annotation.Annotation[], javax.ws.rs.core.MediaType, javax.ws.rs.core.MultivaluedMap, java.io.OutputStream)"><!-- --></A><H3>
+writeTo</H3>
+<PRE>
+public void <B>writeTo</B>(<A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBElementProvider.html" title="type parameter in JAXBElementProvider">T</A>&nbsp;obj,
+                    <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;cls,
+                    <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+                    <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation">Annotation</A>[]&nbsp;anns,
+                    javax.ws.rs.core.MediaType&nbsp;m,
+                    javax.ws.rs.core.MultivaluedMap&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>,<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&gt;&nbsp;headers,
+                    <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html" title="class or interface in java.io">OutputStream</A>&nbsp;os)
+             throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html" title="class or interface in java.io">IOException</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/IOException.html" title="class or interface in java.io">IOException</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="marshalCollection(java.lang.Class, java.lang.Object, java.lang.reflect.Type, java.lang.String, java.io.OutputStream, javax.ws.rs.core.MediaType, java.lang.annotation.Annotation[])"><!-- --></A><H3>
+marshalCollection</H3>
+<PRE>
+protected void <B>marshalCollection</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;originalCls,
+                                 <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;collection,
+                                 <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+                                 <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;enc,
+                                 <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html" title="class or interface in java.io">OutputStream</A>&nbsp;os,
+                                 javax.ws.rs.core.MediaType&nbsp;m,
+                                 <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation">Annotation</A>[]&nbsp;anns)
+                          throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="marshalCollectionMember(java.lang.Object, java.lang.Class, java.lang.reflect.Type, java.lang.String, java.io.OutputStream, javax.ws.rs.core.MediaType, java.lang.String)"><!-- --></A><H3>
+marshalCollectionMember</H3>
+<PRE>
+protected void <B>marshalCollectionMember</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+                                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;cls,
+                                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+                                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;enc,
+                                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html" title="class or interface in java.io">OutputStream</A>&nbsp;os,
+                                       javax.ws.rs.core.MediaType&nbsp;mt,
+                                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;ns)
+                                throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="marshal(java.lang.Object, java.lang.Class, java.lang.reflect.Type, java.lang.String, java.io.OutputStream, javax.ws.rs.core.MediaType)"><!-- --></A><H3>
+marshal</H3>
+<PRE>
+protected void <B>marshal</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;cls,
+                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;enc,
+                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html" title="class or interface in java.io">OutputStream</A>&nbsp;os,
+                       javax.ws.rs.core.MediaType&nbsp;mt)
+                throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="marshal(java.lang.Object, java.lang.Class, java.lang.reflect.Type, java.lang.String, java.io.OutputStream, javax.ws.rs.core.MediaType, java.lang.annotation.Annotation[])"><!-- --></A><H3>
+marshal</H3>
+<PRE>
+protected void <B>marshal</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;cls,
+                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;enc,
+                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html" title="class or interface in java.io">OutputStream</A>&nbsp;os,
+                       javax.ws.rs.core.MediaType&nbsp;mt,
+                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/annotation/Annotation.html" title="class or interface in java.lang.annotation">Annotation</A>[]&nbsp;anns)
+                throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addAttachmentMarshaller(javax.xml.bind.Marshaller)"><!-- --></A><H3>
+addAttachmentMarshaller</H3>
+<PRE>
+protected void <B>addAttachmentMarshaller</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.Marshaller.html" title="class or interface in javax.xml">javax.xml.bind.Marshaller</A>&nbsp;ms)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="addAttachmentUnmarshaller(javax.xml.bind.Unmarshaller)"><!-- --></A><H3>
+addAttachmentUnmarshaller</H3>
+<PRE>
+protected void <B>addAttachmentUnmarshaller</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.Unmarshaller.html" title="class or interface in javax.xml">javax.xml.bind.Unmarshaller</A>&nbsp;um)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="marshal(java.lang.Object, java.lang.Class, java.lang.reflect.Type, java.lang.String, java.io.OutputStream, javax.ws.rs.core.MediaType, javax.xml.bind.Marshaller)"><!-- --></A><H3>
+marshal</H3>
+<PRE>
+protected void <B>marshal</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Class.html" title="class or interface in java.lang">Class</A>&lt;?&gt;&nbsp;cls,
+                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/reflect/Type.html" title="class or interface in java.lang.reflect">Type</A>&nbsp;genericType,
+                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;enc,
+                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html" title="class or interface in java.io">OutputStream</A>&nbsp;os,
+                       javax.ws.rs.core.MediaType&nbsp;mt,
+                       <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.Marshaller.html" title="class or interface in javax.xml">javax.xml.bind.Marshaller</A>&nbsp;ms)
+                throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="getStreamWriter(java.lang.Object, java.io.OutputStream, javax.ws.rs.core.MediaType)"><!-- --></A><H3>
+getStreamWriter</H3>
+<PRE>
+protected <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/stream.XMLStreamWriter.html" title="class or interface in javax.xml">javax.xml.stream.XMLStreamWriter</A> <B>getStreamWriter</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+                                                           <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html" title="class or interface in java.io">OutputStream</A>&nbsp;os,
+                                                           javax.ws.rs.core.MediaType&nbsp;mt)</PRE>
+<DL>
+<DD><DL>
+</DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="marshalToOutputStream(javax.xml.bind.Marshaller, java.lang.Object, java.io.OutputStream, javax.ws.rs.core.MediaType)"><!-- --></A><H3>
+marshalToOutputStream</H3>
+<PRE>
+protected void <B>marshalToOutputStream</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.Marshaller.html" title="class or interface in javax.xml">javax.xml.bind.Marshaller</A>&nbsp;ms,
+                                     <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+                                     <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/io/OutputStream.html" title="class or interface in java.io">OutputStream</A>&nbsp;os,
+                                     javax.ws.rs.core.MediaType&nbsp;mt)
+                              throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<HR>
+
+<A NAME="marshalToWriter(javax.xml.bind.Marshaller, java.lang.Object, javax.xml.stream.XMLStreamWriter, javax.ws.rs.core.MediaType)"><!-- --></A><H3>
+marshalToWriter</H3>
+<PRE>
+protected void <B>marshalToWriter</B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/bind.Marshaller.html" title="class or interface in javax.xml">javax.xml.bind.Marshaller</A>&nbsp;ms,
+                               <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;obj,
+                               <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/stream.XMLStreamWriter.html" title="class or interface in javax.xml">javax.xml.stream.XMLStreamWriter</A>&nbsp;writer,
+                               javax.ws.rs.core.MediaType&nbsp;mt)
+                        throws <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></PRE>
+<DL>
+<DD><DL>
+
+<DT><B>Throws:</B>
+<DD><CODE><A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Exception.html" title="class or interface in java.lang">Exception</A></CODE></DL>
+</DD>
+</DL>
+<!-- ========= END OF CLASS DATA ========= -->
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Class</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="class-use/JAXBElementProvider.html"><FONT CLASS="NavBarFont1"><B>Use</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="package-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXBAttachmentUnmarshaller.html" title="class in org.apache.cxf.jaxrs.provider"><B>PREV CLASS</B></A>&nbsp;
+&nbsp;<A HREF="../../../../../org/apache/cxf/jaxrs/provider/JAXRSDataBinding.html" title="class in org.apache.cxf.jaxrs.provider"><B>NEXT CLASS</B></A></FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../index.html?org/apache/cxf/jaxrs/provider/JAXBElementProvider.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="JAXBElementProvider.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+<TR>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+  SUMMARY:&nbsp;<A HREF="#nested_classes_inherited_from_class_org.apache.cxf.jaxrs.provider.AbstractJAXBProvider">NESTED</A>&nbsp;|&nbsp;<A HREF="#fields_inherited_from_class_org.apache.cxf.jaxrs.provider.AbstractJAXBProvider">FIELD</A>&nbsp;|&nbsp;<A HREF="#constructor_summary">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_summary">METHOD</A></FONT></TD>
+<TD VALIGN="top" CLASS="NavBarCell3"><FONT SIZE="-2">
+DETAIL:&nbsp;FIELD&nbsp;|&nbsp;<A HREF="#constructor_detail">CONSTR</A>&nbsp;|&nbsp;<A HREF="#method_detail">METHOD</A></FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

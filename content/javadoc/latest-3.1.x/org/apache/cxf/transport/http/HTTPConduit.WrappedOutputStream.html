@@ -1,0 +1,999 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>HTTPConduit.WrappedOutputStream (Apache CXF JavaDoc 3.1.0 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="HTTPConduit.WrappedOutputStream (Apache CXF JavaDoc 3.1.0 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/HTTPConduit.WrappedOutputStream.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.InterposedMessageObserver.html" title="class in org.apache.cxf.transport.http"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/cxf/transport/http/HTTPConduitConfigurer.html" title="interface in org.apache.cxf.transport.http"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" target="_top">Frames</a></li>
+<li><a href="HTTPConduit.WrappedOutputStream.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<!-- ======== START OF CLASS DATA ======== -->
+<div class="header">
+<div class="subTitle">org.apache.cxf.transport.http</div>
+<h2 title="Class HTTPConduit.WrappedOutputStream" class="title">Class HTTPConduit.WrappedOutputStream</h2>
+</div>
+<div class="contentContainer">
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">java.lang.Object</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="http://docs.oracle.com/javase/7/docs/api/java/io/OutputStream.html?is-external=true" title="class or interface in java.io">java.io.OutputStream</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html" title="class in org.apache.cxf.io">org.apache.cxf.io.AbstractWrappedOutputStream</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html" title="class in org.apache.cxf.io">org.apache.cxf.io.AbstractThresholdOutputStream</a></li>
+<li>
+<ul class="inheritance">
+<li>org.apache.cxf.transport.http.HTTPConduit.WrappedOutputStream</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<div class="description">
+<ul class="blockList">
+<li class="blockList">
+<dl>
+<dt>All Implemented Interfaces:</dt>
+<dd><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/io/Flushable.html?is-external=true" title="class or interface in java.io">Flushable</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang">AutoCloseable</a></dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../../../../org/apache/cxf/transport/websocket/ahc/AhcWebSocketConduit.AhcWebSocketWrappedOutputStream.html" title="class in org.apache.cxf.transport.websocket.ahc">AhcWebSocketConduit.AhcWebSocketWrappedOutputStream</a>, <a href="../../../../../org/apache/cxf/transport/http/asyncclient/AsyncHTTPConduit.AsyncWrappedOutputStream.html" title="class in org.apache.cxf.transport.http.asyncclient">AsyncHTTPConduit.AsyncWrappedOutputStream</a>, <a href="../../../../../org/apache/cxf/transport/http/netty/client/NettyHttpConduit.NettyWrappedOutputStream.html" title="class in org.apache.cxf.transport.http.netty.client">NettyHttpConduit.NettyWrappedOutputStream</a></dd>
+</dl>
+<dl>
+<dt>Enclosing class:</dt>
+<dd><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.html" title="class in org.apache.cxf.transport.http">HTTPConduit</a></dd>
+</dl>
+<hr>
+<br>
+<pre>protected abstract class <span class="strong">HTTPConduit.WrappedOutputStream</span>
+extends <a href="../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html" title="class in org.apache.cxf.io">AbstractThresholdOutputStream</a></pre>
+<div class="block">Wrapper output stream responsible for flushing headers and handling
+ the incoming HTTP-level response (not necessarily the MEP response).</div>
+</li>
+</ul>
+</div>
+<div class="summary">
+<ul class="blockList">
+<li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../org/apache/cxf/io/CacheAndWriteOutputStream.html" title="class in org.apache.cxf.io">CacheAndWriteOutputStream</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#cachedStream">cachedStream</a></strong></code>
+<div class="block">This field contains the output stream with which we cache
+ the request.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#cachingForRetransmission">cachingForRetransmission</a></strong></code>
+<div class="block">This boolean is true if the request must be cached.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#chunking">chunking</a></strong></code>
+<div class="block">If we are going to be chunking, we won't flush till close which causes
+ new chunks, small network packets, etc..</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#conduitName">conduitName</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#outMessage">outMessage</a></strong></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#url">url</a></strong></code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.apache.cxf.io.AbstractThresholdOutputStream">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.apache.cxf.io.<a href="../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html" title="class in org.apache.cxf.io">AbstractThresholdOutputStream</a></h3>
+<code><a href="../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html#buffer">buffer</a>, <a href="../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html#threshold">threshold</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="fields_inherited_from_class_org.apache.cxf.io.AbstractWrappedOutputStream">
+<!--   -->
+</a>
+<h3>Fields inherited from class&nbsp;org.apache.cxf.io.<a href="../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html" title="class in org.apache.cxf.io">AbstractWrappedOutputStream</a></h3>
+<code><a href="../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html#allowFlush">allowFlush</a>, <a href="../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html#wrappedStream">wrappedStream</a>, <a href="../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html#written">written</a></code></li>
+</ul>
+</li>
+</ul>
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier</th>
+<th class="colLast" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#HTTPConduit.WrappedOutputStream(org.apache.cxf.transport.http.HTTPConduit.WrappedOutputStream)">HTTPConduit.WrappedOutputStream</a></strong>(<a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</a>&nbsp;wos)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected </code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#HTTPConduit.WrappedOutputStream(org.apache.cxf.message.Message,%20boolean,%20boolean,%20int,%20java.lang.String,%20java.net.URI)">HTTPConduit.WrappedOutputStream</a></strong>(<a href="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&nbsp;outMessage,
+                               boolean&nbsp;possibleRetransmit,
+                               boolean&nbsp;isChunking,
+                               int&nbsp;chunkThreshold,
+                               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;conduitName,
+                               <a href="http://docs.oracle.com/javase/7/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;url)</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
+<!-- ========== METHOD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_summary">
+<!--   -->
+</a>
+<h3>Method Summary</h3>
+<table class="overviewSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
+<caption><span>Methods</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#authorizationRetransmit()">authorizationRetransmit</a></strong>()</code>
+<div class="block">This method performs a retransmit for authorization information.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#close()">close</a></strong>()</code>
+<div class="block">Perform any actions required on stream closure (handle response etc.)</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#closeInputStream()">closeInputStream</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected abstract <a href="../../../../../org/apache/cxf/transport/https/HttpsURLConnectionInfo.html" title="class in org.apache.cxf.transport.https">HttpsURLConnectionInfo</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#getHttpsURLConnectionInfo()">getHttpsURLConnectionInfo</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected abstract <a href="http://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#getInputStream()">getInputStream</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#getMethod()">getMethod</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected abstract <a href="http://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#getPartialResponse()">getPartialResponse</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected abstract int</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#getResponseCode()">getResponseCode</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected abstract <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a></code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#getResponseMessage()">getResponseMessage</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#handleHeadersTrustCaching()">handleHeadersTrustCaching</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#handleHttpRetryException(java.net.HttpRetryException)">handleHttpRetryException</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/net/HttpRetryException.html?is-external=true" title="class or interface in java.net">HttpRetryException</a>&nbsp;e)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#handleNoOutput()">handleNoOutput</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#handleResponse()">handleResponse</a></strong>()</code>
+<div class="block">This procedure is called on the close of the output stream so
+ we are ready to handle the response from the connection.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#handleResponseAsync()">handleResponseAsync</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#handleResponseInternal()">handleResponseInternal</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#handleResponseOnWorkqueue(boolean,%20boolean)">handleResponseOnWorkqueue</a></strong>(boolean&nbsp;allowCurrentThread,
+                         boolean&nbsp;forceWQ)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#handleRetransmits()">handleRetransmits</a></strong>()</code>
+<div class="block">This procedure handles all retransmits, if any.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#makeTrustDecision()">makeTrustDecision</a></strong>()</code>
+<div class="block">This call must take place before anything is written to the 
+ URLConnection.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#onFirstWrite()">onFirstWrite</a></strong>()</code>
+<div class="block">Perform any actions required on stream flush (freeze headers,
+ reset output stream ...</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#processRetransmit()">processRetransmit</a></strong>()</code>
+<div class="block">This function processes any retransmits at the direction of redirections
+ or "unauthorized" responses.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#propagateConduit(org.apache.cxf.message.Exchange,%20org.apache.cxf.message.Message)">propagateConduit</a></strong>(<a href="../../../../../org/apache/cxf/message/Exchange.html" title="interface in org.apache.cxf.message">Exchange</a>&nbsp;exchange,
+                <a href="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&nbsp;in)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#redirectRetransmit()">redirectRetransmit</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#retransmit(java.lang.String)">retransmit</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newURL)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#retransmitStream()">retransmitStream</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#setFixedLengthStreamingMode(int)">setFixedLengthStreamingMode</a></strong>(int&nbsp;i)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#setProtocolHeaders()">setProtocolHeaders</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#setupNewConnection(java.lang.String)">setupNewConnection</a></strong>(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newURL)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#setupWrappedStream()">setupWrappedStream</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#thresholdNotReached()">thresholdNotReached</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#updateCookiesBeforeRetransmit()">updateCookiesBeforeRetransmit</a></strong>()</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>protected abstract void</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#updateResponseHeaders(org.apache.cxf.message.Message)">updateResponseHeaders</a></strong>(<a href="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&nbsp;inMessage)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>protected abstract boolean</code></td>
+<td class="colLast"><code><strong><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html#usingProxy()">usingProxy</a></strong>()</code>&nbsp;</td>
+</tr>
+</table>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.cxf.io.AbstractThresholdOutputStream">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.apache.cxf.io.<a href="../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html" title="class in org.apache.cxf.io">AbstractThresholdOutputStream</a></h3>
+<code><a href="../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html#thresholdReached()">thresholdReached</a>, <a href="../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html#unBuffer()">unBuffer</a>, <a href="../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html#write(byte[],%20int,%20int)">write</a>, <a href="../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html#write(int)">write</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_org.apache.cxf.io.AbstractWrappedOutputStream">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;org.apache.cxf.io.<a href="../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html" title="class in org.apache.cxf.io">AbstractWrappedOutputStream</a></h3>
+<code><a href="../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html#allowFlush(boolean)">allowFlush</a>, <a href="../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html#flush()">flush</a>, <a href="../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html#write(byte[])">write</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods_inherited_from_class_java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true" title="class or interface in java.lang">Object</a></h3>
+<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#clone()" title="class or interface in java.lang">clone</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#equals(java.lang.Object)" title="class or interface in java.lang">equals</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#finalize()" title="class or interface in java.lang">finalize</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#getClass()" title="class or interface in java.lang">getClass</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#hashCode()" title="class or interface in java.lang">hashCode</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notify()" title="class or interface in java.lang">notify</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#notifyAll()" title="class or interface in java.lang">notifyAll</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#toString()" title="class or interface in java.lang">toString</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait()" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long)" title="class or interface in java.lang">wait</a>, <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/Object.html?is-external=true#wait(long,%20int)" title="class or interface in java.lang">wait</a></code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="details">
+<ul class="blockList">
+<li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field_detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="cachingForRetransmission">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cachingForRetransmission</h4>
+<pre>protected&nbsp;boolean cachingForRetransmission</pre>
+<div class="block">This boolean is true if the request must be cached.</div>
+</li>
+</ul>
+<a name="chunking">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>chunking</h4>
+<pre>protected final&nbsp;boolean chunking</pre>
+<div class="block">If we are going to be chunking, we won't flush till close which causes
+ new chunks, small network packets, etc..</div>
+</li>
+</ul>
+<a name="cachedStream">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>cachedStream</h4>
+<pre>protected&nbsp;<a href="../../../../../org/apache/cxf/io/CacheAndWriteOutputStream.html" title="class in org.apache.cxf.io">CacheAndWriteOutputStream</a> cachedStream</pre>
+<div class="block">This field contains the output stream with which we cache
+ the request. It maybe null if we are not caching.</div>
+</li>
+</ul>
+<a name="outMessage">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>outMessage</h4>
+<pre>protected&nbsp;<a href="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a> outMessage</pre>
+</li>
+</ul>
+<a name="conduitName">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>conduitName</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a> conduitName</pre>
+</li>
+</ul>
+<a name="url">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>url</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a> url</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor_detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="HTTPConduit.WrappedOutputStream(org.apache.cxf.message.Message, boolean, boolean, int, java.lang.String, java.net.URI)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>HTTPConduit.WrappedOutputStream</h4>
+<pre>protected&nbsp;HTTPConduit.WrappedOutputStream(<a href="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&nbsp;outMessage,
+                               boolean&nbsp;possibleRetransmit,
+                               boolean&nbsp;isChunking,
+                               int&nbsp;chunkThreshold,
+                               <a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;conduitName,
+                               <a href="http://docs.oracle.com/javase/7/docs/api/java/net/URI.html?is-external=true" title="class or interface in java.net">URI</a>&nbsp;url)</pre>
+</li>
+</ul>
+<a name="HTTPConduit.WrappedOutputStream(org.apache.cxf.transport.http.HTTPConduit.WrappedOutputStream)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>HTTPConduit.WrappedOutputStream</h4>
+<pre>protected&nbsp;HTTPConduit.WrappedOutputStream(<a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" title="class in org.apache.cxf.transport.http">HTTPConduit.WrappedOutputStream</a>&nbsp;wos)</pre>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ METHOD DETAIL ========== -->
+<ul class="blockList">
+<li class="blockList"><a name="method_detail">
+<!--   -->
+</a>
+<h3>Method Detail</h3>
+<a name="thresholdNotReached()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>thresholdNotReached</h4>
+<pre>public&nbsp;void&nbsp;thresholdNotReached()</pre>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html#thresholdNotReached()">thresholdNotReached</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html" title="class in org.apache.cxf.io">AbstractThresholdOutputStream</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setupWrappedStream()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setupWrappedStream</h4>
+<pre>protected abstract&nbsp;void&nbsp;setupWrappedStream()
+                                    throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getHttpsURLConnectionInfo()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getHttpsURLConnectionInfo</h4>
+<pre>protected abstract&nbsp;<a href="../../../../../org/apache/cxf/transport/https/HttpsURLConnectionInfo.html" title="class in org.apache.cxf.transport.https">HttpsURLConnectionInfo</a>&nbsp;getHttpsURLConnectionInfo()
+                                                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="setProtocolHeaders()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setProtocolHeaders</h4>
+<pre>protected abstract&nbsp;void&nbsp;setProtocolHeaders()
+                                    throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="setFixedLengthStreamingMode(int)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setFixedLengthStreamingMode</h4>
+<pre>protected abstract&nbsp;void&nbsp;setFixedLengthStreamingMode(int&nbsp;i)</pre>
+</li>
+</ul>
+<a name="getResponseCode()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getResponseCode</h4>
+<pre>protected abstract&nbsp;int&nbsp;getResponseCode()
+                                throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getResponseMessage()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getResponseMessage</h4>
+<pre>protected abstract&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getResponseMessage()
+                                      throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="updateResponseHeaders(org.apache.cxf.message.Message)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>updateResponseHeaders</h4>
+<pre>protected abstract&nbsp;void&nbsp;updateResponseHeaders(<a href="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&nbsp;inMessage)
+                                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="handleResponseAsync()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>handleResponseAsync</h4>
+<pre>protected abstract&nbsp;void&nbsp;handleResponseAsync()
+                                     throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="closeInputStream()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>closeInputStream</h4>
+<pre>protected abstract&nbsp;void&nbsp;closeInputStream()
+                                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="usingProxy()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>usingProxy</h4>
+<pre>protected abstract&nbsp;boolean&nbsp;usingProxy()</pre>
+</li>
+</ul>
+<a name="getInputStream()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInputStream</h4>
+<pre>protected abstract&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;getInputStream()
+                                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getPartialResponse()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPartialResponse</h4>
+<pre>protected abstract&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/io/InputStream.html?is-external=true" title="class or interface in java.io">InputStream</a>&nbsp;getPartialResponse()
+                                           throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="setupNewConnection(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setupNewConnection</h4>
+<pre>protected abstract&nbsp;void&nbsp;setupNewConnection(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newURL)
+                                    throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="retransmitStream()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>retransmitStream</h4>
+<pre>protected abstract&nbsp;void&nbsp;retransmitStream()
+                                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="updateCookiesBeforeRetransmit()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>updateCookiesBeforeRetransmit</h4>
+<pre>protected abstract&nbsp;void&nbsp;updateCookiesBeforeRetransmit()
+                                               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="handleNoOutput()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>handleNoOutput</h4>
+<pre>protected&nbsp;void&nbsp;handleNoOutput()
+                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="handleResponseOnWorkqueue(boolean, boolean)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>handleResponseOnWorkqueue</h4>
+<pre>protected&nbsp;void&nbsp;handleResponseOnWorkqueue(boolean&nbsp;allowCurrentThread,
+                             boolean&nbsp;forceWQ)
+                                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="retransmit(java.lang.String)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>retransmit</h4>
+<pre>protected&nbsp;void&nbsp;retransmit(<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;newURL)
+                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="onFirstWrite()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>onFirstWrite</h4>
+<pre>protected&nbsp;void&nbsp;onFirstWrite()
+                     throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Perform any actions required on stream flush (freeze headers,
+ reset output stream ... etc.)</div>
+<dl>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html#onFirstWrite()">onFirstWrite</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/io/AbstractWrappedOutputStream.html" title="class in org.apache.cxf.io">AbstractWrappedOutputStream</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="getMethod()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMethod</h4>
+<pre>protected&nbsp;<a href="http://docs.oracle.com/javase/7/docs/api/java/lang/String.html?is-external=true" title="class or interface in java.lang">String</a>&nbsp;getMethod()</pre>
+</li>
+</ul>
+<a name="handleHeadersTrustCaching()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>handleHeadersTrustCaching</h4>
+<pre>protected&nbsp;void&nbsp;handleHeadersTrustCaching()
+                                  throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="close()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>close</h4>
+<pre>public&nbsp;void&nbsp;close()
+           throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">Perform any actions required on stream closure (handle response etc.)</div>
+<dl>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Closeable.html?is-external=true#close()" title="class or interface in java.io">close</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/Closeable.html?is-external=true" title="class or interface in java.io">Closeable</a></code></dd>
+<dt><strong>Specified by:</strong></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/AutoCloseable.html?is-external=true#close()" title="class or interface in java.lang">close</a></code>&nbsp;in interface&nbsp;<code><a href="http://docs.oracle.com/javase/7/docs/api/java/lang/AutoCloseable.html?is-external=true" title="class or interface in java.lang">AutoCloseable</a></code></dd>
+<dt><strong>Overrides:</strong></dt>
+<dd><code><a href="../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html#close()">close</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../org/apache/cxf/io/AbstractThresholdOutputStream.html" title="class in org.apache.cxf.io">AbstractThresholdOutputStream</a></code></dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="handleRetransmits()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>handleRetransmits</h4>
+<pre>protected&nbsp;void&nbsp;handleRetransmits()
+                          throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">This procedure handles all retransmits, if any.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="processRetransmit()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>processRetransmit</h4>
+<pre>protected&nbsp;boolean&nbsp;processRetransmit()
+                             throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">This function processes any retransmits at the direction of redirections
+ or "unauthorized" responses.</div>
+<dl><dt><span class="strong">Returns:</span></dt><dd>true if there was a retransmit</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="redirectRetransmit()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>redirectRetransmit</h4>
+<pre>protected&nbsp;boolean&nbsp;redirectRetransmit()
+                              throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="authorizationRetransmit()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>authorizationRetransmit</h4>
+<pre>protected&nbsp;boolean&nbsp;authorizationRetransmit()
+                                   throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">This method performs a retransmit for authorization information.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>connection</code> - The currently active connection.</dd><dd><code>message</code> - The outbound message.</dd><dd><code>cachedStream</code> - The cached request.</dd>
+<dt><span class="strong">Returns:</span></dt><dd>A new connection if retransmitted. If not retransmitted
+         then this method returns the same connection.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="handleResponse()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>handleResponse</h4>
+<pre>protected&nbsp;void&nbsp;handleResponse()
+                       throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">This procedure is called on the close of the output stream so
+ we are ready to handle the response from the connection. 
+ We may retransmit until we finally get a response.</div>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="handleResponseInternal()">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>handleResponseInternal</h4>
+<pre>protected&nbsp;void&nbsp;handleResponseInternal()
+                               throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="propagateConduit(org.apache.cxf.message.Exchange, org.apache.cxf.message.Message)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>propagateConduit</h4>
+<pre>protected&nbsp;void&nbsp;propagateConduit(<a href="../../../../../org/apache/cxf/message/Exchange.html" title="interface in org.apache.cxf.message">Exchange</a>&nbsp;exchange,
+                    <a href="../../../../../org/apache/cxf/message/Message.html" title="interface in org.apache.cxf.message">Message</a>&nbsp;in)</pre>
+</li>
+</ul>
+<a name="handleHttpRetryException(java.net.HttpRetryException)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>handleHttpRetryException</h4>
+<pre>protected&nbsp;void&nbsp;handleHttpRetryException(<a href="http://docs.oracle.com/javase/7/docs/api/java/net/HttpRetryException.html?is-external=true" title="class or interface in java.net">HttpRetryException</a>&nbsp;e)
+                                 throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<dl><dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code></dd></dl>
+</li>
+</ul>
+<a name="makeTrustDecision()">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>makeTrustDecision</h4>
+<pre>protected&nbsp;void&nbsp;makeTrustDecision()
+                          throws <a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></pre>
+<div class="block">This call must take place before anything is written to the 
+ URLConnection. The URLConnection.connect() will be called in order 
+ to get the connection information. 
+ 
+ This method is invoked just after setURLRequestHeaders() from the 
+ WrappedOutputStream before it writes data to the URLConnection.
+ 
+ If trust cannot be established the Trust Decider implemenation
+ throws an IOException.</div>
+<dl><dt><span class="strong">Parameters:</span></dt><dd><code>message</code> - The message being sent.</dd>
+<dt><span class="strong">Throws:</span></dt>
+<dd><code><a href="http://docs.oracle.com/javase/7/docs/api/java/io/IOException.html?is-external=true" title="class or interface in java.io">IOException</a></code> - This exception is thrown if trust cannot be
+                     established by the configured MessageTrustDecider.</dd><dt><span class="strong">See Also:</span></dt><dd><a href="../../../../../org/apache/cxf/transport/http/MessageTrustDecider.html" title="class in org.apache.cxf.transport.http"><code>MessageTrustDecider</code></a></dd></dl>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<!-- ========= END OF CLASS DATA ========= -->
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li><a href="package-summary.html">Package</a></li>
+<li class="navBarCell1Rev">Class</li>
+<li><a href="class-use/HTTPConduit.WrappedOutputStream.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/cxf/transport/http/HTTPConduit.InterposedMessageObserver.html" title="class in org.apache.cxf.transport.http"><span class="strong">Prev Class</span></a></li>
+<li><a href="../../../../../org/apache/cxf/transport/http/HTTPConduitConfigurer.html" title="interface in org.apache.cxf.transport.http"><span class="strong">Next Class</span></a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/cxf/transport/http/HTTPConduit.WrappedOutputStream.html" target="_top">Frames</a></li>
+<li><a href="HTTPConduit.WrappedOutputStream.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<div>
+<ul class="subNavList">
+<li>Summary:&nbsp;</li>
+<li>Nested&nbsp;|&nbsp;</li>
+<li><a href="#field_summary">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_summary">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_summary">Method</a></li>
+</ul>
+<ul class="subNavList">
+<li>Detail:&nbsp;</li>
+<li><a href="#field_detail">Field</a>&nbsp;|&nbsp;</li>
+<li><a href="#constructor_detail">Constr</a>&nbsp;|&nbsp;</li>
+<li><a href="#method_detail">Method</a></li>
+</ul>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Apache CXF</small></p>
+</body>
+</html>

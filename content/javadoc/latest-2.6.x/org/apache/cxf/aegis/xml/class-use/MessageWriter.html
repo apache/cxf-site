@@ -1,0 +1,1089 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!--NewPage-->
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<TITLE>
+Uses of Interface org.apache.cxf.aegis.xml.MessageWriter (Apache CXF Bundle Jar 2.6.3 API)
+</TITLE>
+
+
+<LINK REL ="stylesheet" TYPE="text/css" HREF="../../../../../../stylesheet.css" TITLE="Style">
+
+<SCRIPT type="text/javascript">
+function windowTitle()
+{
+    parent.document.title="Uses of Interface org.apache.cxf.aegis.xml.MessageWriter (Apache CXF Bundle Jar 2.6.3 API)";
+}
+</SCRIPT>
+<NOSCRIPT>
+</NOSCRIPT>
+
+</HEAD>
+
+<BODY BGCOLOR="white" onload="windowTitle();">
+
+
+<!-- ========= START OF TOP NAVBAR ======= -->
+<A NAME="navbar_top"><!-- --></A>
+<A HREF="#skip-navbar_top" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_top_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/aegis/xml/class-use/MessageWriter.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MessageWriter.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_top"></A>
+<!-- ========= END OF TOP NAVBAR ========= -->
+
+<HR>
+<CENTER>
+<H2>
+<B>Uses of Interface<br>org.apache.cxf.aegis.xml.MessageWriter</B></H2>
+</CENTER>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Packages that use <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.aegis.type"><B>org.apache.cxf.aegis.type</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.aegis.type.basic"><B>org.apache.cxf.aegis.type.basic</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.aegis.type.collection"><B>org.apache.cxf.aegis.type.collection</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.aegis.type.encoded"><B>org.apache.cxf.aegis.type.encoded</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.aegis.type.java5"><B>org.apache.cxf.aegis.type.java5</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.aegis.type.mtom"><B>org.apache.cxf.aegis.type.mtom</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.aegis.type.xml"><B>org.apache.cxf.aegis.type.xml</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.aegis.xml"><B>org.apache.cxf.aegis.xml</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.aegis.xml.jdom"><B>org.apache.cxf.aegis.xml.jdom</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD><A HREF="#org.apache.cxf.aegis.xml.stax"><B>org.apache.cxf.aegis.xml.stax</B></A></TD>
+<TD>&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.aegis.type"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A> in <A HREF="../../../../../../org/apache/cxf/aegis/type/package-summary.html">org.apache.cxf.aegis.type</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/aegis/type/package-summary.html">org.apache.cxf.aegis.type</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>abstract &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AegisType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/AegisType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes the object to the MessageWriter.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.aegis.type.basic"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A> in <A HREF="../../../../../../org/apache/cxf/aegis/type/basic/package-summary.html">org.apache.cxf.aegis.type.basic</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/aegis/type/basic/package-summary.html">org.apache.cxf.aegis.type.basic</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>BeanType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/BeanType.html#writeElement(javax.xml.namespace.QName, java.lang.Object, org.apache.cxf.aegis.type.AegisType, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeElement</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html" title="class or interface in javax.xml.namespace">QName</A>&nbsp;name,
+             <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;value,
+             <A HREF="../../../../../../org/apache/cxf/aegis/type/AegisType.html" title="class in org.apache.cxf.aegis.type">AegisType</A>&nbsp;type,
+             <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+             <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ByteType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/ByteType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CalendarType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/CalendarType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ArrayType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/ArrayType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;values,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TimezoneLessDateType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/TimezoneLessDateType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>URIType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/URIType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>DateType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/DateType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TimestampType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/TimestampType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>LongType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/LongType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CharacterType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/CharacterType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CharacterAsStringType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/CharacterAsStringType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes the object to the MessageWriter.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>BooleanType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/BooleanType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>DoubleType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/DoubleType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>Base64Type.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/Base64Type.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SqlDateType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/SqlDateType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>IntType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/IntType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>TimeType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/TimeType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>BeanType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/BeanType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes the object to the MessageWriter.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ShortType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/ShortType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>StringType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/StringType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>FloatType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/FloatType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>BigIntegerType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/BigIntegerType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>DateTimeType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/DateTimeType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ObjectType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/ObjectType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>BigDecimalType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/BigDecimalType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ArrayType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/ArrayType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context, javax.xml.namespace.QName)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;values,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context,
+            <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html" title="class or interface in javax.xml.namespace">QName</A>&nbsp;flatElementName)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Write an array type, using the desired element name in the flattened case.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ArrayType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/basic/ArrayType.html#writeValue(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context, org.apache.cxf.aegis.type.AegisType, java.lang.String, java.lang.String)">writeValue</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;value,
+           <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+           <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context,
+           <A HREF="../../../../../../org/apache/cxf/aegis/type/AegisType.html" title="class in org.apache.cxf.aegis.type">AegisType</A>&nbsp;type,
+           <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;name,
+           <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;ns)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.aegis.type.collection"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A> in <A HREF="../../../../../../org/apache/cxf/aegis/type/collection/package-summary.html">org.apache.cxf.aegis.type.collection</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/aegis/type/collection/package-summary.html">org.apache.cxf.aegis.type.collection</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>CollectionType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/collection/CollectionType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>MapType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/collection/MapType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.aegis.type.encoded"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A> in <A HREF="../../../../../../org/apache/cxf/aegis/type/encoded/package-summary.html">org.apache.cxf.aegis.type.encoded</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/aegis/type/encoded/package-summary.html">org.apache.cxf.aegis.type.encoded</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>ArrayTypeInfo.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/encoded/ArrayTypeInfo.html#writeAttribute(org.apache.cxf.aegis.xml.MessageWriter)">writeAttribute</A></B>(<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapEncodingUtil.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/encoded/SoapEncodingUtil.html#writeAttribute(org.apache.cxf.aegis.xml.MessageWriter, javax.xml.namespace.QName, java.lang.String)">writeAttribute</A></B>(<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+               <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html" title="class or interface in javax.xml.namespace">QName</A>&nbsp;name,
+               <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;value)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/util/List.html" title="class or interface in java.util">List</A>&lt;<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&gt;</CODE></FONT></TD>
+<TD><CODE><B>TrailingBlocks.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/encoded/TrailingBlocks.html#writeBlocks(org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeBlocks</A></B>(<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes all of the unmarshalled objects in the MarshalRegistry.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>StructType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/encoded/StructType.html#writeElement(javax.xml.namespace.QName, java.lang.Object, org.apache.cxf.aegis.type.AegisType, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeElement</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html" title="class or interface in javax.xml.namespace">QName</A>&nbsp;name,
+             <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;value,
+             <A HREF="../../../../../../org/apache/cxf/aegis/type/AegisType.html" title="class in org.apache.cxf.aegis.type">AegisType</A>&nbsp;type,
+             <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+             <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes a nested element with an unqualified name.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapEncodingUtil.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/encoded/SoapEncodingUtil.html#writeId(org.apache.cxf.aegis.xml.MessageWriter, java.lang.String)">writeId</A></B>(<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+        <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;id)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes a SOAP 1.1 id attribute.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapArrayType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/encoded/SoapArrayType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;values,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapRefType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/encoded/SoapRefType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>static&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapEncodingUtil.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/encoded/SoapEncodingUtil.html#writeRef(org.apache.cxf.aegis.xml.MessageWriter, java.lang.String)">writeRef</A></B>(<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+         <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;refId)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Writes a SOAP 1.1 ref attribute.</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>protected &nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SoapArrayType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/encoded/SoapArrayType.html#writeValue(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context, org.apache.cxf.aegis.type.AegisType)">writeValue</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;value,
+           <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+           <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context,
+           <A HREF="../../../../../../org/apache/cxf/aegis/type/AegisType.html" title="class in org.apache.cxf.aegis.type">AegisType</A>&nbsp;type)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.aegis.type.java5"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A> in <A HREF="../../../../../../org/apache/cxf/aegis/type/java5/package-summary.html">org.apache.cxf.aegis.type.java5</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/aegis/type/java5/package-summary.html">org.apache.cxf.aegis.type.java5</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>EnumType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/java5/EnumType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>XMLGregorianCalendarType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/java5/XMLGregorianCalendarType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>DurationType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/java5/DurationType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.aegis.type.mtom"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A> in <A HREF="../../../../../../org/apache/cxf/aegis/type/mtom/package-summary.html">org.apache.cxf.aegis.type.mtom</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/aegis/type/mtom/package-summary.html">org.apache.cxf.aegis.type.mtom</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>AbstractXOPType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/mtom/AbstractXOPType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.aegis.type.xml"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A> in <A HREF="../../../../../../org/apache/cxf/aegis/type/xml/package-summary.html">org.apache.cxf.aegis.type.xml</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/aegis/type/xml/package-summary.html">org.apache.cxf.aegis.type.xml</A> with parameters of type <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>JDOMElementType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/xml/JDOMElementType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>XMLStreamReaderType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/xml/XMLStreamReaderType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>JDOMDocumentType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/xml/JDOMDocumentType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>SourceType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/xml/SourceType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;void</CODE></FONT></TD>
+<TD><CODE><B>DocumentType.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/type/xml/DocumentType.html#writeObject(java.lang.Object, org.apache.cxf.aegis.xml.MessageWriter, org.apache.cxf.aegis.Context)">writeObject</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/Object.html" title="class or interface in java.lang">Object</A>&nbsp;object,
+            <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A>&nbsp;writer,
+            <A HREF="../../../../../../org/apache/cxf/aegis/Context.html" title="class in org.apache.cxf.aegis">Context</A>&nbsp;context)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.aegis.xml"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A> in <A HREF="../../../../../../org/apache/cxf/aegis/xml/package-summary.html">org.apache.cxf.aegis.xml</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../../org/apache/cxf/aegis/xml/package-summary.html">org.apache.cxf.aegis.xml</A> that implement <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/AbstractMessageWriter.html" title="class in org.apache.cxf.aegis.xml">AbstractMessageWriter</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Basic type conversion functionality for writing messages.</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/aegis/xml/package-summary.html">org.apache.cxf.aegis.xml</A> that return <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>MessageWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html#getAttributeWriter(javax.xml.namespace.QName)">getAttributeWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html" title="class or interface in javax.xml.namespace">QName</A>&nbsp;qname)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>MessageWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html#getAttributeWriter(java.lang.String)">getAttributeWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>MessageWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html#getAttributeWriter(java.lang.String, java.lang.String)">getAttributeWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;name,
+                   <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;namespace)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>MessageWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html#getElementWriter(javax.xml.namespace.QName)">getElementWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html" title="class or interface in javax.xml.namespace">QName</A>&nbsp;qname)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>MessageWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html#getElementWriter(java.lang.String)">getElementWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>MessageWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html#getElementWriter(java.lang.String, java.lang.String)">getElementWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;name,
+                 <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;namespace)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.aegis.xml.jdom"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A> in <A HREF="../../../../../../org/apache/cxf/aegis/xml/jdom/package-summary.html">org.apache.cxf.aegis.xml.jdom</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../../org/apache/cxf/aegis/xml/jdom/package-summary.html">org.apache.cxf.aegis.xml.jdom</A> that implement <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/jdom/AttributeWriter.html" title="class in org.apache.cxf.aegis.xml.jdom">AttributeWriter</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/aegis/xml/jdom/package-summary.html">org.apache.cxf.aegis.xml.jdom</A> that return <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>AttributeWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/jdom/AttributeWriter.html#getAttributeWriter(javax.xml.namespace.QName)">getAttributeWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html" title="class or interface in javax.xml.namespace">QName</A>&nbsp;qname)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>AttributeWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/jdom/AttributeWriter.html#getAttributeWriter(java.lang.String)">getAttributeWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>AttributeWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/jdom/AttributeWriter.html#getAttributeWriter(java.lang.String, java.lang.String)">getAttributeWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;name,
+                   <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;namespace)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>AttributeWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/jdom/AttributeWriter.html#getElementWriter(javax.xml.namespace.QName)">getElementWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html" title="class or interface in javax.xml.namespace">QName</A>&nbsp;qname)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>AttributeWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/jdom/AttributeWriter.html#getElementWriter(java.lang.String)">getElementWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;name)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>AttributeWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/jdom/AttributeWriter.html#getElementWriter(java.lang.String, java.lang.String)">getElementWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;name,
+                 <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;namespace)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<A NAME="org.apache.cxf.aegis.xml.stax"><!-- --></A>
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableHeadingColor">
+<TH ALIGN="left" COLSPAN="2"><FONT SIZE="+2">
+Uses of <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A> in <A HREF="../../../../../../org/apache/cxf/aegis/xml/stax/package-summary.html">org.apache.cxf.aegis.xml.stax</A></FONT></TH>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Classes in <A HREF="../../../../../../org/apache/cxf/aegis/xml/stax/package-summary.html">org.apache.cxf.aegis.xml.stax</A> that implement <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;class</CODE></FONT></TD>
+<TD><CODE><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/stax/ElementWriter.html" title="class in org.apache.cxf.aegis.xml.stax">ElementWriter</A></B></CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+
+<TABLE BORDER="1" WIDTH="100%" CELLPADDING="3" CELLSPACING="0" SUMMARY="">
+<TR BGCOLOR="#CCCCFF" CLASS="TableSubHeadingColor">
+<TH ALIGN="left" COLSPAN="2">Methods in <A HREF="../../../../../../org/apache/cxf/aegis/xml/stax/package-summary.html">org.apache.cxf.aegis.xml.stax</A> that return <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></FONT></TH>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>AttributeWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/stax/AttributeWriter.html#getAttributeWriter(javax.xml.namespace.QName)">getAttributeWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html" title="class or interface in javax.xml.namespace">QName</A>&nbsp;qname)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>ElementWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/stax/ElementWriter.html#getAttributeWriter(javax.xml.namespace.QName)">getAttributeWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html" title="class or interface in javax.xml.namespace">QName</A>&nbsp;qname)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>AttributeWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/stax/AttributeWriter.html#getAttributeWriter(java.lang.String)">getAttributeWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;nm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>ElementWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/stax/ElementWriter.html#getAttributeWriter(java.lang.String)">getAttributeWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;nm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>AttributeWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/stax/AttributeWriter.html#getAttributeWriter(java.lang.String, java.lang.String)">getAttributeWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;nm,
+                   <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;ns)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>ElementWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/stax/ElementWriter.html#getAttributeWriter(java.lang.String, java.lang.String)">getAttributeWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;nm,
+                   <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;ns)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>AttributeWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/stax/AttributeWriter.html#getElementWriter(javax.xml.namespace.QName)">getElementWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html" title="class or interface in javax.xml.namespace">QName</A>&nbsp;qname)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>ElementWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/stax/ElementWriter.html#getElementWriter(javax.xml.namespace.QName)">getElementWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/javax/xml/namespace/QName.html" title="class or interface in javax.xml.namespace">QName</A>&nbsp;qname)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>AttributeWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/stax/AttributeWriter.html#getElementWriter(java.lang.String)">getElementWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;nm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>ElementWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/stax/ElementWriter.html#getElementWriter(java.lang.String)">getElementWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;nm)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>AttributeWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/stax/AttributeWriter.html#getElementWriter(java.lang.String, java.lang.String)">getElementWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;nm,
+                 <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;ns)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+<TR BGCOLOR="white" CLASS="TableRowColor">
+<TD ALIGN="right" VALIGN="top" WIDTH="1%"><FONT SIZE="-1">
+<CODE>&nbsp;<A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml">MessageWriter</A></CODE></FONT></TD>
+<TD><CODE><B>ElementWriter.</B><B><A HREF="../../../../../../org/apache/cxf/aegis/xml/stax/ElementWriter.html#getElementWriter(java.lang.String, java.lang.String)">getElementWriter</A></B>(<A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;nm,
+                 <A HREF="http://download.oracle.com/javase/1.5.0/docs/api/java/lang/String.html" title="class or interface in java.lang">String</A>&nbsp;ns)</CODE>
+
+<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</TD>
+</TR>
+</TABLE>
+&nbsp;
+<P>
+<HR>
+
+
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<A NAME="navbar_bottom"><!-- --></A>
+<A HREF="#skip-navbar_bottom" title="Skip navigation links"></A>
+<TABLE BORDER="0" WIDTH="100%" CELLPADDING="1" CELLSPACING="0" SUMMARY="">
+<TR>
+<TD COLSPAN=2 BGCOLOR="#EEEEFF" CLASS="NavBarCell1">
+<A NAME="navbar_bottom_firstrow"><!-- --></A>
+<TABLE BORDER="0" CELLPADDING="0" CELLSPACING="3" SUMMARY="">
+  <TR ALIGN="center" VALIGN="top">
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-summary.html"><FONT CLASS="NavBarFont1"><B>Overview</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../package-summary.html"><FONT CLASS="NavBarFont1"><B>Package</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../org/apache/cxf/aegis/xml/MessageWriter.html" title="interface in org.apache.cxf.aegis.xml"><FONT CLASS="NavBarFont1"><B>Class</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#FFFFFF" CLASS="NavBarCell1Rev"> &nbsp;<FONT CLASS="NavBarFont1Rev"><B>Use</B></FONT>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../overview-tree.html"><FONT CLASS="NavBarFont1"><B>Tree</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../deprecated-list.html"><FONT CLASS="NavBarFont1"><B>Deprecated</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../index-all.html"><FONT CLASS="NavBarFont1"><B>Index</B></FONT></A>&nbsp;</TD>
+  <TD BGCOLOR="#EEEEFF" CLASS="NavBarCell1">    <A HREF="../../../../../../help-doc.html"><FONT CLASS="NavBarFont1"><B>Help</B></FONT></A>&nbsp;</TD>
+  </TR>
+</TABLE>
+</TD>
+<TD ALIGN="right" VALIGN="top" ROWSPAN=3><EM>
+Apache CXF API</EM>
+</TD>
+</TR>
+
+<TR>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+&nbsp;PREV&nbsp;
+&nbsp;NEXT</FONT></TD>
+<TD BGCOLOR="white" CLASS="NavBarCell2"><FONT SIZE="-2">
+  <A HREF="../../../../../../index.html?org/apache/cxf/aegis/xml/class-use/MessageWriter.html" target="_top"><B>FRAMES</B></A>  &nbsp;
+&nbsp;<A HREF="MessageWriter.html" target="_top"><B>NO FRAMES</B></A>  &nbsp;
+&nbsp;<SCRIPT type="text/javascript">
+  <!--
+  if(window==top) {
+    document.writeln('<A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>');
+  }
+  //-->
+</SCRIPT>
+<NOSCRIPT>
+  <A HREF="../../../../../../allclasses-noframe.html"><B>All Classes</B></A>
+</NOSCRIPT>
+
+
+</FONT></TD>
+</TR>
+</TABLE>
+<A NAME="skip-navbar_bottom"></A>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+
+<HR>
+Apache CXF
+</BODY>
+</HTML>

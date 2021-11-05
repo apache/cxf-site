@@ -1,0 +1,358 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- NewPage -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>org.apache.cxf.ws.policy (Apache CXF JavaDoc 3.1.0 API)</title>
+<link rel="stylesheet" type="text/css" href="../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<script type="text/javascript"><!--
+    if (location.href.indexOf('is-external=true') == -1) {
+        parent.document.title="org.apache.cxf.ws.policy (Apache CXF JavaDoc 3.1.0 API)";
+    }
+//-->
+</script>
+<noscript>
+<div>JavaScript is disabled on your browser.</div>
+</noscript>
+<!-- ========= START OF TOP NAVBAR ======= -->
+<div class="topNav"><a name="navbar_top">
+<!--   -->
+</a><a href="#skip-navbar_top" title="Skip navigation links"></a><a name="navbar_top_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-use.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/cxf/ws/mex/model/_2004_09/package-summary.html">Prev Package</a></li>
+<li><a href="../../../../../org/apache/cxf/ws/policy/attachment/package-summary.html">Next Package</a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/cxf/ws/policy/package-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_top">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_top");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_top">
+<!--   -->
+</a></div>
+<!-- ========= END OF TOP NAVBAR ========= -->
+<div class="header">
+<h1 title="Package" class="title">Package&nbsp;org.apache.cxf.ws.policy</h1>
+</div>
+<div class="contentContainer">
+<ul class="blockList">
+<li class="blockList">
+<table class="packageSummary" border="0" cellpadding="3" cellspacing="0" summary="Interface Summary table, listing interfaces, and an explanation">
+<caption><span>Interface Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Interface</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/AlternativeSelector.html" title="interface in org.apache.cxf.ws.policy">AlternativeSelector</a></td>
+<td class="colLast">
+<div class="block">Used by the Policy engine to select the Policy alternative to use.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/AssertionBuilderLoader.html" title="interface in org.apache.cxf.ws.policy">AssertionBuilderLoader</a></td>
+<td class="colLast">
+<div class="block">Marker interface for objects that would load and register
+ additional AssertionBuilders when loaded.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/AssertionBuilderRegistry.html" title="interface in org.apache.cxf.ws.policy">AssertionBuilderRegistry</a></td>
+<td class="colLast">
+<div class="block">AssertionBuilderRegistry is used to manage AssertionBuilders and
+ create Assertion objects from given xml elements.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/Assertor.html" title="interface in org.apache.cxf.ws.policy">Assertor</a></td>
+<td class="colLast">
+<div class="block">API used in the WS-Policy framework to allow a message exchange participant to
+ assert its capabilities for the underlying message.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/EffectivePolicy.html" title="interface in org.apache.cxf.ws.policy">EffectivePolicy</a></td>
+<td class="colLast">
+<div class="block">Describes the effective policy of an outbound message.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/EndpointPolicy.html" title="interface in org.apache.cxf.ws.policy">EndpointPolicy</a></td>
+<td class="colLast">
+<div class="block">Describes the policy of an inbound message.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyAssertion.html" title="interface in org.apache.cxf.ws.policy">PolicyAssertion</a></td>
+<td class="colLast">
+<div class="block">Interface to mark Assertions that can participate in CXF's 
+ assertion mechanism to make sure the policies have been
+ applied.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyBuilder.html" title="interface in org.apache.cxf.ws.policy">PolicyBuilder</a></td>
+<td class="colLast">
+<div class="block">PolicyBuilder provides methods to create Policy and PolicyReferenceObjects
+ from DOM elements.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyEngine.html" title="interface in org.apache.cxf.ws.policy">PolicyEngine</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyInterceptorProvider.html" title="interface in org.apache.cxf.ws.policy">PolicyInterceptorProvider</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyInterceptorProviderLoader.html" title="interface in org.apache.cxf.ws.policy">PolicyInterceptorProviderLoader</a></td>
+<td class="colLast">
+<div class="block">Marker interface for objects that would load and register
+ additional PolicyInterceptorProviders when loaded.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyInterceptorProviderRegistry.html" title="interface in org.apache.cxf.ws.policy">PolicyInterceptorProviderRegistry</a></td>
+<td class="colLast">
+<div class="block">InterceptorProviderRegistry is used to manage InterceptorProviders that provide
+ assertion domain specific interceptors.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyProvider.html" title="interface in org.apache.cxf.ws.policy">PolicyProvider</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="packageSummary" border="0" cellpadding="3" cellspacing="0" summary="Class Summary table, listing classes, and an explanation">
+<caption><span>Class Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Class</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/AbstractPolicyInterceptor.html" title="class in org.apache.cxf.ws.policy">AbstractPolicyInterceptor</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/AbstractPolicyInterceptorProvider.html" title="class in org.apache.cxf.ws.policy">AbstractPolicyInterceptorProvider</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/AssertionBuilderRegistryImpl.html" title="class in org.apache.cxf.ws.policy">AssertionBuilderRegistryImpl</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/AssertionInfo.html" title="class in org.apache.cxf.ws.policy">AssertionInfo</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/AssertionInfoMap.html" title="class in org.apache.cxf.ws.policy">AssertionInfoMap</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/ClientPolicyInFaultInterceptor.html" title="class in org.apache.cxf.ws.policy">ClientPolicyInFaultInterceptor</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/EffectivePolicyImpl.html" title="class in org.apache.cxf.ws.policy">EffectivePolicyImpl</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/EndpointPolicyImpl.html" title="class in org.apache.cxf.ws.policy">EndpointPolicyImpl</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/IgnorablePolicyInterceptorProvider.html" title="class in org.apache.cxf.ws.policy">IgnorablePolicyInterceptorProvider</a></td>
+<td class="colLast">
+<div class="block">This policy interceptor provider can be used to implicitly handle unknown policy assertions.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyAnnotationListener.html" title="class in org.apache.cxf.ws.policy">PolicyAnnotationListener</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyBean.html" title="class in org.apache.cxf.ws.policy">PolicyBean</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyBuilderImpl.html" title="class in org.apache.cxf.ws.policy">PolicyBuilderImpl</a></td>
+<td class="colLast">
+<div class="block">PolicyBuilderImpl is an implementation of the PolicyBuilder interface,
+ provides methods to create Policy and PolicyReferenceObjects
+ from DOM elements, but also from an input stream etc.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyConstants.html" title="class in org.apache.cxf.ws.policy">PolicyConstants</a></td>
+<td class="colLast">
+<div class="block">Encapsulation of version-specific WS-Policy constants.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyDataEngineImpl.html" title="class in org.apache.cxf.ws.policy">PolicyDataEngineImpl</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyEngineImpl.html" title="class in org.apache.cxf.ws.policy">PolicyEngineImpl</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyInInterceptor.html" title="class in org.apache.cxf.ws.policy">PolicyInInterceptor</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyInterceptorProviderRegistryImpl.html" title="class in org.apache.cxf.ws.policy">PolicyInterceptorProviderRegistryImpl</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyOutInterceptor.html" title="class in org.apache.cxf.ws.policy">PolicyOutInterceptor</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyRegistryImpl.html" title="class in org.apache.cxf.ws.policy">PolicyRegistryImpl</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyUtils.html" title="class in org.apache.cxf.ws.policy">PolicyUtils</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyUtils.WrappedAssertor.html" title="class in org.apache.cxf.ws.policy">PolicyUtils.WrappedAssertor</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyVerificationInFaultInterceptor.html" title="class in org.apache.cxf.ws.policy">PolicyVerificationInFaultInterceptor</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyVerificationInInterceptor.html" title="class in org.apache.cxf.ws.policy">PolicyVerificationInInterceptor</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyVerificationOutInterceptor.html" title="class in org.apache.cxf.ws.policy">PolicyVerificationOutInterceptor</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/ServerPolicyOutFaultInterceptor.html" title="class in org.apache.cxf.ws.policy">ServerPolicyOutFaultInterceptor</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/ServiceModelPolicyUpdater.html" title="class in org.apache.cxf.ws.policy">ServiceModelPolicyUpdater</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/WSPolicyFeature.html" title="class in org.apache.cxf.ws.policy">WSPolicyFeature</a></td>
+<td class="colLast">
+<div class="block">Configures a Server, Client, Bus with the specified policies.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList">
+<table class="packageSummary" border="0" cellpadding="3" cellspacing="0" summary="Exception Summary table, listing exceptions, and an explanation">
+<caption><span>Exception Summary</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Exception</th>
+<th class="colLast" scope="col">Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../../org/apache/cxf/ws/policy/PolicyException.html" title="class in org.apache.cxf.ws.policy">PolicyException</a></td>
+<td class="colLast">
+<div class="block">PolicyException is the type of RuntimeException thrown by any exceptions encountered
+ by the policy framework.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+</div>
+<!-- ======= START OF BOTTOM NAVBAR ====== -->
+<div class="bottomNav"><a name="navbar_bottom">
+<!--   -->
+</a><a href="#skip-navbar_bottom" title="Skip navigation links"></a><a name="navbar_bottom_firstrow">
+<!--   -->
+</a>
+<ul class="navList" title="Navigation">
+<li><a href="../../../../../overview-summary.html">Overview</a></li>
+<li class="navBarCell1Rev">Package</li>
+<li>Class</li>
+<li><a href="package-use.html">Use</a></li>
+<li><a href="package-tree.html">Tree</a></li>
+<li><a href="../../../../../deprecated-list.html">Deprecated</a></li>
+<li><a href="../../../../../index-all.html">Index</a></li>
+<li><a href="../../../../../help-doc.html">Help</a></li>
+</ul>
+<div class="aboutLanguage"><em>Apache CXF API</em></div>
+</div>
+<div class="subNav">
+<ul class="navList">
+<li><a href="../../../../../org/apache/cxf/ws/mex/model/_2004_09/package-summary.html">Prev Package</a></li>
+<li><a href="../../../../../org/apache/cxf/ws/policy/attachment/package-summary.html">Next Package</a></li>
+</ul>
+<ul class="navList">
+<li><a href="../../../../../index.html?org/apache/cxf/ws/policy/package-summary.html" target="_top">Frames</a></li>
+<li><a href="package-summary.html" target="_top">No Frames</a></li>
+</ul>
+<ul class="navList" id="allclasses_navbar_bottom">
+<li><a href="../../../../../allclasses-noframe.html">All Classes</a></li>
+</ul>
+<div>
+<script type="text/javascript"><!--
+  allClassesLink = document.getElementById("allclasses_navbar_bottom");
+  if(window==top) {
+    allClassesLink.style.display = "block";
+  }
+  else {
+    allClassesLink.style.display = "none";
+  }
+  //-->
+</script>
+</div>
+<a name="skip-navbar_bottom">
+<!--   -->
+</a></div>
+<!-- ======== END OF BOTTOM NAVBAR ======= -->
+<p class="legalCopy"><small>Apache CXF</small></p>
+</body>
+</html>
