@@ -1,0 +1,29 @@
+<page>
+    <body>
+        <modified>2013-07-19T08:27:39</modified>
+        <content>
+            {code:plain|title=Register.properties}
+            thankyou=Thank you for registering %{personBean.firstName}.
+            {code}
+
+            {code:html|title=textfield tag}
+            <s:textfield name="personBean.firstName" label="First name"/>
+            {code}
+
+            {code:html|title=link to register.jsp}
+            <p>
+                <a href="register.jsp">Please register</a>
+                for our prize drawing.
+            </p>
+            {code}
+
+            {code:XML|title=registerInput action node for struts.xml}
+            <action name="registerInput" class="org.apache.struts.register.action.Register" method="input">
+                <result name="input">/register.jsp</result>
+            </action>
+            {code}
+        </content>
+        <attachments size="6"/>
+        <labels/>
+    </body>
+</page>

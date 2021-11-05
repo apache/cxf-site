@@ -1,0 +1,4 @@
+#!/bin/sh
+mvn -Pconfluence,nochecks -e package exec:java -Dsite.output=content $@
+[ $? -eq 0 ] || exit -1
+

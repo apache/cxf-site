@@ -1,0 +1,40 @@
+
+This is the start of an export utility to export the CXF
+confluence spaces to the sites.    To run this manually, you need to 
+have a copy of the CXF website checked out to a local directory:
+
+svn checkout https://svn.apache.org/repos/infra/websites/production/cxf/content
+
+Build:
+mvn install
+
+You will need to pass credentials for a valid confluence user.  This can be
+done in one of two ways:
+
+1) Command line:
+   -Dconfluence.user=username -Dconfluence.password=password
+
+2) Profile in .m2/settings.xml
+       <profile>
+            <id>confluence</id>
+            <properties>
+                <confluence.user>user</confluence.user>
+                <confluence.password>passwd</confluence.password>
+            </properties>
+        </profile>
+
+To export the space:
+mvn -Pconfluence exec:java -Dcxf.site.output=/path/to/content
+should appear in /path/to/content/
+
+In the confluence profile above, you could add a property like:
+   <cxf.site.output>/path/to/content</cxf.site.output>
+to simplify passing that into the command.
+
+When you commit any changes in the content directory, the changes 
+should be "live" fairly quickly due to the svnpubsub process.
+
+
+
+
+
