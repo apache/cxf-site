@@ -2,9 +2,20 @@ github:
   description: "Apache CXF website"
   homepage: https://cxf.apache.org/
 
+  rulesets:
+    - name: "Default Branch Protection"
+      type: branch
+      branches:
+        includes:
+          - "~DEFAULT_BRANCH"
+        excludes: []
+      bypass_teams:
+        - root
+      restrict_deletion: true
+      restrict_force_push: true
 staging:
-  profile: ~
-  whoami:  asf-staging
+  profile:
+  whoami: asf-staging
 
 
 notifications:
